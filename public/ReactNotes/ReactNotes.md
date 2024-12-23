@@ -1,23 +1,94 @@
+## React Basics
+<br>
+
+### What is React?
+---
+<br>
+
 React is a JavaScript library for building user interfaces or UI pieces that are also known as components.
 
-In React a componenet is flexible or reusable.
+- Components are flexible and reusable.
+- Define a component once, and it can be rendered multiple times with different data.
 
-- This means you define what a component should be once and then use it / render it as many times as you want.
+<br>
 
-To create a front-end React project you can use the Vite JavaScript build tool.
+### Component Reusability
+---
+<br>
 
-Props or (properties) let you pass data into a component.
+- React components are designed to be reusable across your application.
+- This reduces redundancy and improves maintainability.
 
-- They are a way of giving any attribute or piece of data to any component.
+<br>
 
-State is a built-in React object that is used to contain data or information about the component
+### Why Use Vite to Create a React App?
+---
+<br>
 
-A components state can change over time in response to user actions.
+- Vite is a fast development server with modern tooling.
+- It requires minimal configuration.
+- Excellent for small to medium-sized projects.
 
-Whenever a component's state changes, the component re-renders.
+<br>
 
-If you want to use Markdown in React and want it to render on the webpage. You should put the .md files inside your public folder. 
+### Differences Between .jsx and .tsx
+---
+<br>
 
-- This will allow the markdown to render on the webpage when you deploy it.
+#### File Extensions
+- .jsx is a JavaScript file with JSX syntax.
+- .tsx is a TypeScript file with JSX syntax and type annotations.
 
-- If you keep it in the source(src) folder it will render when you test it locally, but will not display on the deployed version of the webpage.
+#### Typing
+- .jsx: No type safety; runtime errors are common.
+- .tsx: Allows compile-time error checking with TypeScript.
+
+#### Use Cases
+- .jsx: Suitable for plain JavaScript projects.
+- .tsx: Recommended for TypeScript projects where type safety and strict checking are needed.
+
+<br>
+
+### Rendering Markdown in React
+---
+<br>
+
+#### Markdown Placement
+- Place .md files in the public folder to ensure they render in the deployed version of the webpage.
+- If placed in the src/ folder, Markdown files will render locally but not when deployed.
+
+<br>
+
+---
+
+## State and State Management
+---
+<br>
+
+### What is State?
+  - State is a built-in React object used to store data or information about a component.
+  - A component's state can change over time, typically in response to user actions.
+  - Whenever a component's state changes, it re-renders to reflect the updated state.
+
+### Managing State
+  - For local state, use useState for functional components.
+  - For complex state or shared state across components, use useReducer.
+
+### State Management with Context
+  - Context allows you to manage state globally without prop drilling.
+  - Combine useContext with useState or useReducer for complex applications.
+  - Ideal for managing themes, authentication states, or other global application data.
+
+<br>
+
+## Props (Properties)
+---
+<br>
+
+- Props allow you to pass data into a component.
+- They enable customization by providing any attribute or piece of data to a component.
+
+<br>
+
+---
+
