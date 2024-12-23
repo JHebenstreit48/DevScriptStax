@@ -55,4 +55,58 @@ When using a .env package in the front-end, you have to prefix the key value pai
 VITE_
 ```
  
- 
+ ## React Functional Components
+
+ ### Defining a React Functional Component with Props
+
+```typescript
+interface GreetingProps {
+  name: string;
+}
+
+const Greeting = ({ name }: GreetingProps) => <h1>Hello, {name}!</h1>;
+```
+
+- This functional component uses TypeScript to define the props parameter's structure with an interface.
+
+### Using Generics in Functional Components
+
+```typescript
+interface ListProps<T> {
+  items: T[];
+  render: (item: T) => JSX.Element;
+}
+
+const List = <T,>({ items, render }: ListProps<T>) => (
+  <ul>{items.map(render)}</ul>
+);
+```
+
+- Explanation: This component demonstrates how to use generics (<T>) for reusable, type-safe components.
+
+## Keys and TypeScript
+
+### Dynamic Key Mapping with TypeScript
+
+```typescript
+const dynamicKey = `${car.Brand.toLowerCase().replace(/\s+/g, "-")}-${car.Model.toLowerCase().replace(/\s+/g, "-")}`;
+return DynamicImageKeys[dynamicKey] && Images[DynamicImageKeys[dynamicKey]]
+  ? Images[DynamicImageKeys[dynamicKey]]
+  : Images["placeholder"];
+```
+
+- Explanation: This code uses TypeScript’s strong typing for backend data integration and ensures type-safe string manipulation.
+
+### Type-Safe Fallback Handling
+
+```typescript
+interface ImageMapping {
+  [key: string]: string;
+}
+
+const Images: ImageMapping = {
+  placeholder: "path/to/placeholder.png",
+};
+```
+
+- Explanation: This example demonstrates how to type object mappings and implement fallback logic with TypeScript.
