@@ -2,7 +2,7 @@ import Header from "../Components/Header";
 import PageSetup from "../Components/PageSetup";
 
 const  Python = () => {
-    const markdownFilePath = '/PythonNotes/PythonNotes.md';
+    const markdownFilePath = '/PythonNotes/Python.md';
 
     return (
 
