@@ -2,7 +2,7 @@ import Header from "../Components/Header";
 import PageSetup from "../Components/PageSetup";
 
 const ReactAndTypeScript = () => {
-    const markdownFilePath = "/ReactAndTS/ReactAndTypeScriptNotes.md";
+    const markdownFilePath = "/ReactAndTS/ReactAndTypeScript.md";
 
     return (
 

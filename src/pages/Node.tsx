@@ -2,7 +2,7 @@ import Header from "../Components/Header";
 import PageSetup from "../Components/PageSetup";
 
 const Node = () => {
-    const markdownFilePath = '/NodeNotes/NodeNotes.md';
+    const markdownFilePath = '/NodeNotes/Node.md';
 
     return (
 

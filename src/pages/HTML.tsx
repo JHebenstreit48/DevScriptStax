@@ -3,7 +3,7 @@ import PageSetup from "../Components/PageSetup";
 
 
 const HTML = () => {
-    const markdownFilePath = "/HTMLNotes/HTMLNotes.md";
+    const markdownFilePath = "/HTMLNotes/HTML.md";
 
     return (
 
