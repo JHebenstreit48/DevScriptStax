@@ -1,27 +1,82 @@
-<span class="emphasis">Fetch API</span> will make <span class="emphasis">requests</span> to specific API endpoints and process the response.
+## Server Basics
+---
 
-HTTP methods are a set of request methods that indicate the desired action to be performed on a resource.
+A server is a program or device that responds to client requests by delivering data, services, or other resources. Servers are essential in web development to handle HTTP requests and serve responses.
 
-HTTP methods perform the following actions of: Create, Read, Updated, and Delete.  
+---
 
-- This is known as the CRUD method.
+## HTTP Methods and CRUD Operations
+---
 
-Express.js is a lightweight framework for Node.js that allows you to write APIs handlers, HTTP requests, and implement middleware in your server-side applications.
+### HTTP Methods
+HTTP methods are a set of request types used to interact with resources. These include:
+- **Create**
+- **Read**
+- **Update**
+- **Delete**  
 
-Frameworks follow a strict set of instructions on how to implement them.
+This is collectively known as CRUD.
 
-In contrast to frameworks, a library is more loosely defined and doesn't follow a strict set of instructions.
+---
 
-Async/await is a feature that makes asynchronous code look and behave more like synchronous code.
+## Express.js Framework
+---
 
-- This therefore improves the readability and maintainability of code that involves asynchronous operations.
+### What is Express.js?
+Express.js is a lightweight framework for Node.js that allows developers to:
+- Write API handlers.
+- Handle HTTP requests.
+- Implement middleware for server-side applications.
 
-- It is built on top of promises but it provides a more elegant way to work with them.
+---
 
-- Async/await is usually preferred/recommended because it uses cleaner syntax compared to using .then() and .catch().
+### Frameworks vs Libraries
+- **Frameworks**: Follow a strict set of rules for implementation.
+- **Libraries**: Offer more flexibility and don't enforce strict rules.
 
-Syncronous code is where JavaScript is trying to run/executes the code from top to bottom as quickly as possible.
+---
 
-Asychronous code is where any real-world time is introduced to the application, which causes some kind of delay.
+## Fetch API
+---
 
+The **Fetch API** is used to make requests to specific API endpoints and process the response. It supports all HTTP methods (GET, POST, PUT, DELETE) and is commonly used for client-server communication.
 
+---
+
+## Handling Server Responses
+---
+
+### res.sendFile
+- Sends a file or webpage from the server to the client.
+- Useful for serving static assets like HTML, CSS, or image files.
+
+### res.json
+- Sends JSON-formatted data like objects or arrays as a response to the client.
+- Commonly used for APIs to return structured data.
+
+---
+
+## Asynchronous Code in Servers
+---
+
+### Synchronous vs Asynchronous Code
+- **Synchronous**: Executes code from top to bottom as quickly as possible.
+- **Asynchronous**: Handles tasks that require waiting (e.g., API calls) without blocking execution.
+
+### Async/Await
+- Built on Promises but offers a cleaner syntax.
+- Improves code readability for asynchronous operations.
+- Preferred over .then() and .catch() for its simplicity.
+
+---
+
+## Placeholder for Additional Notes
+---
+
+### Middleware
+- Handling JSON and raw data with middleware like express.json() and express.raw().
+
+### Error Handling
+- Techniques for logging and debugging server errors.
+
+---
