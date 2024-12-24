@@ -23,10 +23,10 @@ Apollo Server is an open-source, spec-compliant GraphQL server that helps you bu
 Apollo Client is a state management library for fetching and managing GraphQL data in your client application.  
 
 ### InMemoryCache  
-The `InMemoryCache` is the default caching solution for Apollo Client, allowing fast retrieval of previously fetched data.  
+The InMemoryCache is the default caching solution for Apollo Client, allowing fast retrieval of previously fetched data.  
 
 ### ApolloProvider  
-`ApolloProvider` makes Apollo Client available to your entire React application, enabling seamless data fetching.  
+ApolloProvider makes Apollo Client available to your entire React application, enabling seamless data fetching.  
 
 ---
 
@@ -34,10 +34,10 @@ The `InMemoryCache` is the default caching solution for Apollo Client, allowing 
 ---
 
 ### useMutation  
-The `useMutation` hook is used to send GraphQL mutations from your client application.  
+The useMutation hook is used to send GraphQL mutations from your client application.  
 
 ### refetchQueries  
-The `refetchQueries` option allows you to automatically refetch specified queries after a mutation has completed.
+The refetchQueries option allows you to automatically refetch specified queries after a mutation has completed.
 
 ---
 
