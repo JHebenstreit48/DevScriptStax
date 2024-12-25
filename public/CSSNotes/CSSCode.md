@@ -1,80 +1,67 @@
-# CSS Basics
+CSSCode.md code
+
+# CSS Code Examples
 
 ---
 
-## <span class="subheadingEmphasis1">Introduction to CSS</span>
+## Introduction to CSS
 
----
+### External Stylesheet
 
-<span class="emphasis">CSS</span> is used to determine how <span class="secondEmphasis">HTML elements</span> <span class="emphasis">appear</span> or are <span class="emphasis">displayed</span> on a <span class="emphasis">webpage</span>.
+This example shows how to link an external CSS file to an HTML document:
 
-### Example: <span class="subheadingEmphasis2">External Stylesheet</span>
-
-This example shows how to link an <span class="emphasis">external CSS file</span> to an <span class="secondEmphasis">HTML document</span>.
-
-```html
+html
 <head>
   <link rel="stylesheet" href="styles.css" />
 </head>
-```
 
 ---
 
-### Example: <span class="subheadingEmphasis2">Basic CSS Syntax</span>
+### Basic CSS Syntax
 
-Here is the <span class="secondEmphasis">basic structure</span> of a <span class="emphasis">CSS rule</span>. The <span class="emphasis">selector</span> targets <span class="secondEmphasis">elements</span>, and the <span class="emphasis">property</span> applies a specific style.
+Here is the basic structure of a CSS rule. The selector targets elements, and the property applies a specific style:
 
-```css
-/* Basic CSS Syntax */
+css
 p {
   color: blue; /* Property and Value */
 }
-```
 
 ---
 
-### Example: CSS Box Model
+## CSS Box Model
 
-The <span class="emphasis">box model</span> consists of the <span class="secondEmphasis">content</span>, <span class="emphasis">padding</span>, <span class="secondEmphasis">border</span>, and <span class="emphasis">margin</span>. It defines the <span class="emphasis">space</span> an element occupies.
+The box model consists of the content, padding, border, and margin. It defines the space an element occupies:
 
-```css
+css
 div {
   margin: 10px; /* Space outside the element */
   padding: 20px; /* Space inside the border */
   border: 1px solid black; /* Border width and color */
 }
-```
 
 ---
 
-## <span class="subheadingEmphasis1">CSS Selectors</span>
-
----
+## CSS Selectors
 
 ### Basic Selectors
 
-<span class="emphasis">CSS selectors</span> target specific <span class="secondEmphasis">HTML elements</span> for styling.
+CSS selectors target specific HTML elements for styling:
 
-```css
+css
 header {
   background-color: lightgray;
 }
 p {
   color: green;
 }
-```
-
-The selector <span class="codeSnip">&lt;header&gt;</span> applies a <span class="emphasis">background color</span>.  
-The selector <span class="codeSnip">&lt;p&gt;</span> changes the <span class="secondEmphasis">text color</span> to green.
 
 ---
 
-### <span class="subheadingEmphasis1">Descendant Selectors</span>
----
+### Descendant Selectors
 
-<span class="emphasis">Descendant selectors</span> target elements nested within a specific <span class="secondEmphasis">parent</span>.
+Descendant selectors target elements nested within a specific parent:
 
-```css
+css
 header p {
   color: green;
 }
@@ -82,166 +69,201 @@ header p {
 header p span {
   color: blue;
 }
-```
-
-The first rule targets <span class="codeSnip">&lt;p&gt;</span> elements inside a <span class="codeSnip">&lt;header&gt;</span> and sets their <span class="secondEmphasis">text color</span> to green.  
-The second rule specifically targets <span class="codeSnip">&lt;span&gt;</span> elements within those paragraphs and sets their <span class="emphasis">text color</span> to blue.
 
 ---
 
-## Class and ID Selectors
+## CSS Grid Layout
 
-### Class Selectors
+### Grid Template Areas
 
-<span class="emphasis">Class selectors</span> are <span class="secondEmphasis">reusable</span> and apply styles to multiple <span class="emphasis">elements</span>.
+If you have two columns in the grid layout, the first column word in the string defines the left column, and the word on the right defines the second or right column:
 
-```css
-/* Class Selector */
-.highlight {
-  color: red;
+css
+.layout {
+  grid-template-columns: 1fr 2.5fr;
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "sidebar footer";
 }
-```
-
-The class <span class="emphasis">highlight</span> applies <span class="secondEmphasis">red text color</span> to all elements with this class.
 
 ---
 
-### ID Selectors
+### Row Definition
 
-<span class="emphasis">ID selectors</span> uniquely style a <span class="secondEmphasis">single element</span>.
-
-```css
-/* ID Selector */
-#uniqueElement {
-  font-size: 20px;
-}
-```
-
-The ID <span class="emphasis">uniqueElement</span> applies a <span class="secondEmphasis">font size</span> of 20px to the targeted element.
+In the `grid-template-areas` property, each string defines a row.
 
 ---
 
-## Advanced CSS Properties
+### Grid Row Span
 
-### Margin Property
+To define a row span:
 
-The <span class="emphasis">margin</span> <span class="secondEmphasis">property</span> adds space <span class="secondEmphasis">outside</span> an element's border.
-
-```css
-div {
-  margin: 10px; /* Space on all four sides */
-}
-```
+css
+grid-row: 2 / 4;
 
 ---
 
-### Padding Property
+### Grid Column Span
 
-The <span class="emphasis">padding</span> <span class="secondEmphasis">property</span> adds space <span class="emphaiss">between</span> the <span class="secondEmphasis">content</span> and the element's <span class="emphasis">border</span>.
+The first number in the following grid display code is the line you start at, and the number after the `/` is the line you end at:
 
-```css
-div {
-  padding: 20px;
-}
-```
+css
+grid-column: 3 / 5;
 
 ---
 
-### Box Shadow
+## CSS Flexbox Layout
 
-The <span class="emphasis">box-shadow</span> <span class="secondEmphasis">property</span> adds <span class="secondEmphasis">shadows</span> to an element.
+### Flex Order
 
-```css
-div {
-  box-shadow: 5px 10px; /* Horizontal and vertical shadow */
+To specify the order in which elements flex, use the `order` property:
+
+css
+.main-column {
+  flex: 3;
+  order: 2;
 }
-```
-
-### Text Wrapping and Whitespace Control
-
-The <span class="emphasis">white-space</span> and <span class="emphasis">word-wrap</span> properties control how <span class="secondEmphasis">text behaves</span> inside an element, especially when the content exceeds the container's width.
-
-### <span class="subheadingEmphasis2">White-Space</span> Property
-
-```css
-p {
-  white-space: normal; /* Allows text to wrap to the next line */
+.sidebar-one {
+  flex: 1;
+  order: 1;
 }
-```
-
-- <span class="emphasis">Values</span>:
-
-  - <span class="secondEmphasis">normal</span>: Text wraps when necessary (default behavior).
-  - <span class="secondEmphasis">nowrap</span>: Prevents text from wrapping.
-  - <span class="secondEmphasis">pre</span>: Preserves whitespace and line breaks as in the source code.
-
-### <span class="subheadingEmphasis2">Word-Wrap</span> Property
-
-```css
-div {
-  word-wrap: break-word; /* Breaks long words onto the next line */
+.sidebar-two {
+  flex: 1;
+  order: 3;
 }
-```
-
-- <span class="secondEmphasis">Purpose</span>: Forces long words to break and wrap to the next line if they exceed the container's width.
-
-- <span class="emphasis">Use Case</span>: These properties are useful for ensuring text fits within a defined layout without overflow, especially for <span class="secondEmphasis">dynamic content</span>.
 
 ---
 
-## Responsive Design
+### Flex Grow
 
-### Media Queries
+If you use `flex: 1` in CSS, the `1` is the baseline value. Increasing it makes the element grow in size compared to other elements.
 
-<span class="emphasis">Media queries</span> enable <span class="secondEmphasis">responsive styling</span> for various <span class="emphasis">screen sizes</span>.
+---
 
-```css
-@media (max-width: 768px) {
-  body {
-    background-color: lightblue;
-  }
+## CSS Backgrounds
+
+### CSS Sprites
+
+CSS sprites can be used for small icon-based graphics to improve page load speed:
+
+css
+.sprite {
+  background-image: url('sprites.png');
+  background-position: -50px -25px;
 }
-```
-
-This rule changes the <span class="secondEmphasis">background color</span> when the screen width is <span class="emphasis">768px</span> or less.
 
 ---
 
-## Centering Elements
+### Gradient Fallbacks
 
-### Flexbox Layout
+Always include a fallback `background-color` for browsers that do not support CSS gradients:
 
-The <span class="emphasis">flex</span> <span class="emphasis">properties</span> center content both <span class="secondEmphasis">horizontally</span> and <span class="emphasis">vertically</span>.
-
-```css
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+css
+.fallback {
+  background-color: #c2bbb1;
+  background: linear-gradient(to bottom, #ffffff, #c2bbb1);
 }
-```
 
 ---
 
-## Additional Notes
+### Shorthand Background Property
 
-### Shorthand Properties
+Combine multiple properties into one shorthand property:
 
-<span class="emphasis">CSS</span> includes <span class="secondEmphasis">shorthand properties</span> to simplify styling multiple <span class="emphasis">aspects</span> at once:
-
-**Border Property**: Combines <span class="emphasis">width</span>, <span class="secondEmphasis">style</span>, and <span class="emphasis">color</span>.
-
-```css
-border: 1px solid black;
-```
-
-**Box Model Layers**:
-
-- <span class="emphasis">Margin</span>: Space outside the border.
-- <span class="secondEmphasis">Padding</span>: Space between content and border.
+css
+.shorthand {
+  background: #c2bbb1 url(../images/bird.jpg) center center no-repeat;
+}
 
 ---
 
-## Summary
+## Typography
 
-These examples showcase the <span class="emphasis">core features</span> of <span class="secondEmphasis">CSS</span> styling. From <span class="emphasis">basic syntax</span> to advanced techniques like <span class="secondEmphasis">flexbox</span> and <span class="emphasis">media queries</span>, CSS provides tools to control the <span class="secondEmphasis">layout</span> and design of a <span class="emphasis">webpage</span>.
+### Custom Fonts
+
+Use the `@font-face` rule to reference a font file:
+
+css
+@font-face {
+  font-family: 'PTSans';
+  src: url('fonts/PT-Sans.woff') format('woff');
+}
+
+---
+
+### Font Style Examples
+
+css
+/* To capitalize all letters */
+text-transform: uppercase;
+
+/* To control spacing between letters */
+letter-spacing: 2px;
+
+/* To control spacing between words */
+word-spacing: 5px;
+
+/* To add a text shadow */
+text-shadow: 1px 1px 2px #000000;
+
+---
+
+## Forms
+
+### Highlight Focus
+
+To highlight the focused form field:
+
+css
+input[type="email"]:focus {
+  border: 1px solid #cccccc;
+  box-shadow: inset 2px 2px 2px rgba(0, 0, 0, .1);
+}
+
+---
+
+### Hide Labels
+
+To hide labels but keep them accessible to screen readers:
+
+css
+.label-hidden {
+  position: absolute;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+---
+
+## Tables
+
+### Select Specific Rows or Columns
+
+To target specific rows or columns:
+
+css
+table tr:nth-child(2) {
+  background-color: #f0f0f0;
+}
+table tr:nth-child(3) {
+  color: #333333;
+}
+
+---
+
+### Collapsing Borders
+
+To collapse the borders of a table:
+
+css
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+---
+
+CSSCode.md code

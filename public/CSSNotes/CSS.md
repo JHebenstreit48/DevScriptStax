@@ -1,4 +1,5 @@
 # CSS Basics
+
 ---
 
 <span class="emphasis">CSS</span> stands for <span class="emphasis">Cascading Style Sheets</span>.
@@ -11,8 +12,7 @@
 
 ---
 
-### Key Features of CSS
----
+## Key Features of CSS
 
 1. **Styling Across Multiple Pages**:
    - <span class="emphasis">CSS</span> can style multiple webpages simultaneously, applying consistent design elements.
@@ -46,21 +46,23 @@
 ---
 
 # Advanced CSS Concepts
+
 ---
 
 ### CSS Specificity
----
 
 <span class="emphasis">Specificity</span> determines the priority of <span class="secondEmphasis">CSS rules</span>:
 - Inline styles > IDs > Classes > Element selectors.
 
-### CSS Inheritance
 ---
+
+### CSS Inheritance
 
 Some properties, like <span class="emphasis">color</span> and <span class="secondEmphasis">font-family</span>, are inherited by child elements, while others, like <span class="emphasis">padding</span> and <span class="secondEmphasis">margin</span>, are not.
 
-### CSS Positioning
 ---
+
+### CSS Positioning
 
 Positioning options allow you to control how <span class="secondEmphasis">elements</span> are placed:
 - <span class="emphasis">Static</span>: Default position.
@@ -68,14 +70,16 @@ Positioning options allow you to control how <span class="secondEmphasis">elemen
 - <span class="emphasis">Absolute</span>: Positioned relative to its closest positioned ancestor.
 - <span class="secondEmphasis">Fixed</span>: Positioned relative to the viewport.
 
-### CSS Flexbox
 ---
+
+### CSS Flexbox
 
 <span class="secondEmphasis">Flexbox</span> enables <span class="emphasis">responsive layouts</span>:
 - Align <span class="emphasis">elements</span> horizontally or vertically.
 
-### CSS Grid
 ---
+
+### CSS Grid
 
 <span class="emphasis">Grid</span> layouts create complex, <span class="secondEmphasis">grid-based designs</span>:
 - Define rows and columns using grid properties.
