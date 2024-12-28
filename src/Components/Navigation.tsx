@@ -39,24 +39,17 @@ const pages: Page[] = [
             ],
           },
           {
-            name: "CSS-in-JS",
-            subpages: [
-              { name: "CSS-in-JS Notes", path: "/cssinjs" },
-              { name: "CSS-in-JS Code Notes", path: "/cssinjs/cssinjscode" },
-            ],
-          },
-          {
             name: "LESS",
             subpages: [
-              { name: "LESS Notes", path: "/less" },
-              { name: "LESS Code Notes", path: "/less/lesscode" },
+              { name: "LESS Notes", path: "/css/less" },
+              { name: "LESS Code Notes", path: "/css/less/lesscode" },
             ],
           },
           {
             name: "PostCSS",
             subpages: [
-              { name: "PostCSS Notes", path: "/postcss" },
-              { name: "PostCSS Code Notes", path: "/postcss/postcsscode" },
+              { name: "PostCSS Notes", path: "/css/postcss" },
+              { name: "PostCSS Code Notes", path: "/css/postcss/postcsscode" },
             ],
           },
           {

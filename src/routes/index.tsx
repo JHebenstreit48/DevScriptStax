@@ -3,7 +3,6 @@ import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
 import ErrorPage from "../pages/Error.tsx";
 import Home from "../pages/Home.tsx";
-
 import Angular from "../pages/Angular.tsx";
 import AngularCode from "../pages/AngularCode.tsx";
 import APIs from "../pages/API.tsx";
@@ -56,6 +55,10 @@ import ApolloServer from "../pages/ApolloServer.tsx";
 import ApolloServerCode from "../pages/ApolloServerCode.tsx";
 import GraphQL from "../pages/GraphQL.tsx";
 import GraphQLCode from "../pages/GraphQLCode.tsx";
+import LESS from "../pages/LESS.tsx";
+import LESSCode from "../pages/LessCode.tsx";
+import PostCSSCode from "../pages/PostCSSCode.tsx";
+import PostCSS from "../pages/PostCSS.tsx";
 
 export const router = createBrowserRouter([
 
@@ -108,6 +111,28 @@ export const router = createBrowserRouter([
                 path: '/css/csscode',
                 element: <CSSCode />,
             },
+            {
+                path: '/css/less',
+                element: <LESS />,
+            },
+            {
+                path: '/css/less/lesscode',
+                element: <LESSCode />,
+            },
+            {
+                path: '/css/postcss',
+                element: <PostCSS />,
+            },
+            {
+                path: '/css/postcss/postcsscode',
+                element: <PostCSSCode />,
+            },
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
             {
                 path: '/git',
                 element: <Git />,
