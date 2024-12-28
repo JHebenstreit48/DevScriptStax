@@ -1,14 +1,13 @@
-/* Base Styles */
 .navigationMenu {
   position: fixed;
-  display: flex;
-  flex-direction: column;
   top: 0;
   left: 0;
   height: 100%;
   width: 25rem;
   background-color: rgb(38, 38, 39);
   z-index: 15;
+  display: flex;
+  flex-direction: column;
 }
 
 .navigationMenu.collapsed {
@@ -68,7 +67,6 @@
   margin: 5px auto;
 }
 
-/* Dropdown Arrows */
 .accordionButton::after {
   content: "\25B2"; /* Up arrow when collapsed */
   font-size: 0.8rem; /* Keep arrow size consistent */
@@ -83,7 +81,6 @@
 .accordionButton[aria-expanded="true"]::after {
   content: "\25BC"; /* Down arrow when expanded */
 }
-
 
 /* Home Button */
 #homeButton {
@@ -100,7 +97,6 @@
   box-sizing: border-box;
 }
 
-/* Remove Arrow for Home Button */
 #homeButton::after {
   content: none !important;
 }
@@ -109,25 +105,38 @@
 .subpageHeading {
   display: flex;
   justify-content: center;
-  align-items: center;
+  position: relative; /* For arrow positioning */
   width: 15rem;
   font-size: 1rem;
   color: rgb(77, 135, 245);
   border: 1px solid rgb(9, 174, 230);
   border-radius: 13px;
-  padding: 10px 0;
+  padding: 10px;
   margin: 0 auto 4px;
   background-color: transparent;
 }
 
+/* Nested Subpage Headings */
 .nestedSubpageHeading {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 12rem;
-  color: rgb(9, 174, 230);
-  border: 1px solid rgb(9, 174, 230);
-  margin: 0 auto;
+  width: 13rem; /* Maintain desired width */
+}
+
+/* Arrow for Subpage and Nested Subpage Headings */
+.subpageHeading::after,
+.nestedSubpageHeading::after {
+  content: "\25B2"; /* Up arrow when collapsed */
+  font-size: 0.8rem; /* Arrow size */
+  color: rgb(9, 174, 230); /* Match color */
+  position: absolute;
+  right: 10px; /* Align arrow to right */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Change arrow direction when expanded */
+.subpageHeading[aria-expanded="true"]::after,
+.nestedSubpageHeading[aria-expanded="true"]::after {
+  content: "\25BC"; /* Down arrow when expanded */
 }
 
 /* Links */
@@ -143,10 +152,9 @@
   color: rgb(133, 5, 252);
   text-align: center;
   white-space: normal;
-  text-wrap: break-word;
+  word-wrap: break-word; /* Wrap text */
 }
 
-/* Responsive Styles */
 @media only screen and (max-width: 390px) {
   .navigationMenu {
     width: 100%;

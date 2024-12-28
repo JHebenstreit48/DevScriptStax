@@ -47,13 +47,14 @@ div {
 
 CSS selectors target specific HTML elements for styling:
 
-css
+```css
 header {
   background-color: lightgray;
 }
 p {
   color: green;
 }
+```
 
 ---
 
