@@ -18,7 +18,7 @@ const pages: Page[] = [
     name: "Home",
     subpages: [],
   },
- {
+  {
     name: "Front-End",
     subpages: [
       {
@@ -67,24 +67,36 @@ const pages: Page[] = [
             ],
           },
           {
-            name: "React with TypeScript",
+            name: "React + TypeScript",
             subpages: [
-              { name: "React and TypeScript Notes", path: "/react/reactandtypescript" },
-              { name: "React and TypeScript Code", path: "/react/reactandtypescriptcode" },
+              {
+                name: "React and TypeScript Notes",
+                path: "/react/reactandtypescript",
+              },
+              {
+                name: "React and TypeScript Code",
+                path: "/react/reactandtypescriptcode",
+              },
             ],
           },
           {
             name: "React Full Stack",
             subpages: [
               { name: "React Full Stack Notes", path: "/react/reactfullstack" },
-              { name: "React Full Stack Code", path: "/react/reactfullstackcode" },
+              {
+                name: "React Full Stack Code",
+                path: "/react/reactfullstackcode",
+              },
             ],
           },
           {
             name: "React Native",
             subpages: [
               { name: "React Native Notes", path: "/react/reactnative" },
-              { name: "React Native Code Notes", path: "/react/reactnativecode" },
+              {
+                name: "React Native Code Notes",
+                path: "/react/reactnativecode",
+              },
             ],
           },
         ],
@@ -187,15 +199,24 @@ const pages: Page[] = [
           {
             name: "Cypress Testing",
             subpages: [
-              { name: "Cypress Testing Notes", path: "/testing/cypresstesting" },
-              { name: "Cypress Testing Code Notes", path: "/testing/cypresstestingcode" },
+              {
+                name: "Cypress Testing Notes",
+                path: "/testing/cypresstesting",
+              },
+              {
+                name: "Cypress Testing Code Notes",
+                path: "/testing/cypresstestingcode",
+              },
             ],
           },
           {
             name: "Vitest Testing",
             subpages: [
               { name: "Vitest Testing Notes", path: "/testing/vitesttesting" },
-              { name: "Vitest Testing Code Notes", path: "/testing/vitesttestingcode" },
+              {
+                name: "Vitest Testing Code Notes",
+                path: "/testing/vitesttestingcode",
+              },
             ],
           },
         ],
@@ -235,7 +256,10 @@ const pages: Page[] = [
         name: "Apollo Server",
         subpages: [
           { name: "Apollo Server Notes", path: "/apolloserver" },
-          { name: "Apollo Server Code Notes", path: "/apolloserver/apolloservercode" },
+          {
+            name: "Apollo Server Code Notes",
+            path: "/apolloserver/apolloservercode",
+          },
         ],
       },
     ],
@@ -243,48 +267,76 @@ const pages: Page[] = [
 ];
 
 const Navigation = () => {
-  const [expandedSections, setExpandedSections] = useState<Set<string>>(new Set());
+  const [expandedSections, setExpandedSections] = useState<Set<string>>(
+    new Set()
+  );
   const [isCollapsed, setIsCollapsed] = useState(true);
 
+  // Toggle expanded state for sections
   const toggleSection = (key: string) => {
     setExpandedSections((prev) => {
       const newSections = new Set(prev);
-      newSections.has(key) ? newSections.delete(key) : newSections.add(key);
+      if (newSections.has(key)) {
+        newSections.delete(key);
+      } else {
+        newSections.add(key);
+      }
       return newSections;
     });
   };
 
   const toggleSidebar = () => setIsCollapsed(!isCollapsed);
 
-  const renderSubpages = (subpages: Subpage[], parentKey: string, level: number = 1) =>
+  // Recursive rendering of subpages with arrows
+  const renderSubpages = (
+    subpages: Subpage[],
+    parentKey: string,
+    level: number = 1
+  ) =>
     subpages.map((subpage, index) => {
       const key = `${parentKey}-${index}`;
       const isExpanded = expandedSections.has(key);
-  
+
       return (
         <div key={key}>
           {subpage.path ? (
             <p>
-              <Link to={subpage.path} className={`navLink ${level > 1 ? "nestedLink" : ""}`}>
-                {subpage.name}
-              </Link>
+              {" "}
+              <Link
+                to={subpage.path}
+                className={`navLink ${level > 1 ? "nestedLink" : ""}`}
+              >
+                {" "}
+                {subpage.name.trim()}{" "}
+              </Link>{" "}
             </p>
           ) : (
             <>
+              {" "}
               <button
-                className={`subpageHeading ${level > 1 ? "nestedSubpageHeading" : ""}`}
+                className={`subpageHeading ${
+                  level > 1 ? "nestedSubpageHeading" : ""
+                }`}
                 onClick={() => toggleSection(key)}
+                aria-expanded={isExpanded ? "true" : "false"}
               >
-                {subpage.name}
-                <span className={`dropdownIcon ${isExpanded ? "expanded" : "collapsed"}`}></span>
-              </button>
+                {" "}
+                {subpage.name.trim()}{" "}
+                {/* Render arrows only if there are nested subpages */}{" "}
+                {subpage.subpages && subpage.subpages.length > 0 && (
+                  <span
+                    className={`dropdownArrow ${isExpanded ? "up" : "down"}`}
+                  ></span>
+                )}{" "}
+              </button>{" "}
               {isExpanded && subpage.subpages && (
                 <div className="nestedSubpages">
-                  {renderSubpages(subpage.subpages, key, level + 1)}
+                  {" "}
+                  {renderSubpages(subpage.subpages, key, level + 1)}{" "}
                 </div>
-              )}
+              )}{" "}
             </>
-          )}
+          )}{" "}
         </div>
       );
     });
@@ -300,7 +352,8 @@ const Navigation = () => {
       </button>
 
       {!isCollapsed && (
-        <div className="navigatonContent">
+        <div className="navigationContent">
+          {/* Accordion for Pages */}
           <div className="accordion">
             {pages.map((page, index) => {
               const pageKey = `page-${index}`;
@@ -309,8 +362,13 @@ const Navigation = () => {
               return (
                 <div key={pageKey} className="accordionItem">
                   <h2 className="accordionHeader">
+                    {/* Show arrows if the page has subpages */}
                     {page.subpages.length === 0 ? (
-                      <Link to="/" className="accordionButton noDropdown" id="homeButton">
+                      <Link
+                        to="/"
+                        className="accordionButton noDropdown"
+                        id="homeButton"
+                      >
                         {page.name}
                       </Link>
                     ) : (
@@ -318,15 +376,24 @@ const Navigation = () => {
                         className="accordionButton"
                         type="button"
                         onClick={() => toggleSection(pageKey)}
+                        aria-expanded={isExpanded ? "true" : "false"}
                       >
                         {page.name}
-                        <span className={`dropdownArrow ${isExpanded ? "up" : "down"}`}></span>
+                        <span
+                          className={`dropdownArrow ${
+                            isExpanded ? "up" : "down"
+                          }`}
+                        ></span>
                       </button>
                     )}
                   </h2>
+
+                  {/* Only render subpages if they exist */}
                   {isExpanded && (
                     <div className="accordionCollapse">
-                      <div className="accordionBody">{renderSubpages(page.subpages, pageKey)}</div>
+                      <div className="accordionBody">
+                        {renderSubpages(page.subpages, pageKey)}
+                      </div>
                     </div>
                   )}
                 </div>
