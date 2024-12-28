@@ -31,8 +31,58 @@ const pages: Page[] = [
       {
         name: "CSS",
         subpages: [
-          { name: "CSS Notes", path: "/css" },
-          { name: "CSS Code Notes", path: "/css/csscode" },
+          {
+            name: "CSS",
+            subpages: [
+              { name: "CSS Notes", path: "/css" },
+              { name: "CSS Code Notes", path: "/css/csscode" },
+            ],
+          },
+          {
+            name: "CSS-in-JS",
+            subpages: [
+              { name: "CSS-in-JS Notes", path: "/cssinjs" },
+              { name: "CSS-in-JS Code Notes", path: "/cssinjs/cssinjscode" },
+            ],
+          },
+          {
+            name: "LESS",
+            subpages: [
+              { name: "LESS Notes", path: "/less" },
+              { name: "LESS Code Notes", path: "/less/lesscode" },
+            ],
+          },
+          {
+            name: "PostCSS",
+            subpages: [
+              { name: "PostCSS Notes", path: "/postcss" },
+              { name: "PostCSS Code Notes", path: "/postcss/postcsscode" },
+            ],
+          },
+          {
+            name: "SASS",
+            subpages: [
+              { name: "SASS Notes", path: "/sass" },
+              { name: "SASS Code Notes", path: "/sass/sasscode" },
+            ],
+          },
+          {
+            name: "SCSS",
+            subpages: [
+              { name: "SCSS Notes", path: "/scss" },
+              { name: "SCSS Code Notes", path: "/scss/scsscode" },
+            ],
+          },
+          {
+            name: "Tailwind CSS",
+            subpages: [
+              { name: "Tailwind CSS Notes", path: "/tailwindcss" },
+              {
+                name: "Tailwind CSS Code Notes",
+                path: "/tailwindcss/tailwindcsscode",
+              },
+            ],
+          },
         ],
       },
       {
