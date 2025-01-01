@@ -1,8 +1,8 @@
-# Coding Notes - React
+# CodeQuest
 
 ## Description
 
-React version of coding notes from my coding boot camp
+React version of web development coding notes
 
 ## Table of Contents
 
@@ -20,10 +20,10 @@ N/A
 
 ## Usage
 
-To keep track of notes on various coding languages and topics.
+To keep track of notes on various web development coding notes.
 
 ## License
-  This project is licensed under the [MIT](https://opensource.org/license/MIT) license.
+This project is licensed under the [MIT](https://opensource.org/license/MIT) license.
 
 ## Contributions
 
@@ -42,5 +42,8 @@ I just used npm run dev to see what the website looked like as I made changes to
   
 ## Questions
 
-For any further questions you can contact me at [j.hebenstreit.developer@gmail.com](mailto:j.hebenstreit.developer@gmail.com). You can find projects I have created or participated in at [https://github.com/JHebenstreit48](https://github.com/https://github.com/JHebenstreit48).
+For any further questions you can contact me at:  
+[j.hebenstreit.developer@gmail.com](mailto:j.hebenstreit.developer@gmail.com).
 
+You can find projects I have created or participated in at:  
+[https://github.com/JHebenstreit48](https://github.com/https://github.com/JHebenstreit48).
