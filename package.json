@@ -10,7 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "docx": "^9.1.0",
     "font-awesome": "^4.7.0",
+    "html-docx-js": "^0.3.1",
+    "html2pdf.js": "^0.10.2",
     "prismjs": "^1.29.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",

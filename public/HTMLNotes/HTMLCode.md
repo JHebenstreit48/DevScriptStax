@@ -1,6 +1,5 @@
-# HTML Code Examples
-
-## Basic HTML Structure
+## HTML with Code
+---
 
 ### DOCTYPE Declaration
 The <span><</span>!DOCTYPE<span>></span> declaration defines the document type and version of HTML being used. It must be the first line of an HTML document to ensure proper rendering by the browser.
