@@ -1,6 +1,8 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import ReactMarkdown from 'react-markdown';
 import rehypeRaw from 'rehype-raw';
+// import html2pdf from 'html2pdf.js';
+// import { Document, Packer, Paragraph, TextRun } from 'docx';
 import '../CSS/NotesCard.css';
 import '../CSS/Notes.css';
 

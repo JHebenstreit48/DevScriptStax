@@ -1,10 +1,13 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import ReactMarkdown from 'react-markdown';
 import rehypeRaw from 'rehype-raw';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { materialLight } from 'react-syntax-highlighter/dist/esm/styles/prism';
+// import html2pdf from 'html2pdf.js';
+// import { Document, Packer, Paragraph, TextRun, HeadingLevel } from 'docx';
 import '../CSS/Notes.css';
 import '../CSS/NotesWithCode.css';
+import '../CSS/PDFStyles.css';
 
 interface CodePageSetupProps {
     filePath: string;
@@ -40,6 +43,7 @@ const darkGrayBackgroundTheme = {
 const CodePageSetup: React.FC<CodePageSetupProps> = ({ filePath, markdownContentCode }) => {
     const [markdownContent, setMarkdownContent] = useState<string>('');
     const [copiedCode, setCopiedCode] = useState(false);
+    const exportRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
         if (filePath) {
@@ -54,45 +58,59 @@ const CodePageSetup: React.FC<CodePageSetupProps> = ({ filePath, markdownContent
         setCopiedCode(true); // Show feedback
         setTimeout(() => setCopiedCode(false), 2000); // Reset feedback after 2 seconds
     };
-
+    
     return (
-        <div className="card">
-            <h2 className="card-header">Notes With Code</h2>
-            <div className={markdownContentCode || 'markdownContentCode'}>
-                <ReactMarkdown
-                    rehypePlugins={[rehypeRaw]}
-                    components={{
-                        code({ className, children, ...props }) {
-                            const language = className ? className.replace('language-', '') : '';
-                            const codeString = String(children).trim();
+        <div
+            className="card pdfCard"
+            ref={exportRef}
+            style={{ margin: '0 auto', width: '8.5in' }}
+        >
+            <h2 className="card-header pdfHeading pageBreakAvoid">Notes With Code</h2>
+            <div className='pdfMarkdownContent pageBreakAvoid'>
+                <div className={markdownContentCode || 'markdownContentCode'}>
+                    <ReactMarkdown
+                        rehypePlugins={[rehypeRaw]}
+                        components={{
+                            code({
+                                className, children, ...props }) {
+                                const language = className ? className.replace('language-', '') : '';
+                                const codeString = String(children).trim();
 
-                            return (
-                                <div className="code-block-wrapper">
-                                    <div className="code-block-header">
-                                        <span className="code-block-language">{language.toUpperCase()}</span>
-                                        <button
-                                            className="copy-code-button"
-                                            onClick={() => copyToClipboard(codeString)}
+                                return (
+                                    <div className="code-block-wrapper pdfCodeBlockWrapper pageBreakAvoid">
+                                        <div className="code-block-header pdfCodeBlockHeader">
+                                            <span className="code-block-language">{language.toUpperCase()}</span>
+                                            <button
+                                                className="copy-code-button pdfCopyCodeButton"
+                                                onClick={() => copyToClipboard(codeString)}
+                                            >
+                                                {copiedCode ? 'Copied!' : 'Copy Code'}
+                                            </button>
+                                        </div>
+                                        <SyntaxHighlighter
+                                            style={darkGrayBackgroundTheme}
+                                            language={language}
+                                            PreTag="div"
+                                            {...props}
                                         >
-                                            {copiedCode ? 'Copied!' : 'Copy Code'}
-                                        </button>
+                                            {codeString}
+                                        </SyntaxHighlighter>
                                     </div>
-                                    <SyntaxHighlighter
-                                        style={darkGrayBackgroundTheme}
-                                        language={language}
-                                        PreTag="div"
-                                        {...props}
-                                    >
-                                        {codeString}
-                                    </SyntaxHighlighter>
-                                </div>
-                            );
-                        },
-                    }}
-                >
-                    {markdownContent}
-                </ReactMarkdown>
+                                );
+                            },
+                        }}
+                    >
+                        {markdownContent}
+                    </ReactMarkdown>
+                </div>
+
             </div>
+
+            {/* <div className="pdfDownloadButtons">
+                <button onClick={downloadPDF}>Download PDF</button>
+                <button onClick={downloadWord}>Download Word Document</button>
+            </div> */}
+
         </div>
     );
 };
