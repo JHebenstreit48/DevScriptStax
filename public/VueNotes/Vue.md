@@ -58,3 +58,16 @@ Both Vite and Vue CLI are powerful tools for scaffolding and managing Vue applic
 - The public/ folder is for static assets like images or external files.
 - Configuration files like vite.config.js or package.json manage the project's setup and dependencies.
 
+<br>
+
+### Path Imports in Vue
+---
+
+Path imports in Vue projects allow developers to manage file imports efficiently. Relative paths, such as <span class="emphasis">./</span> or <span class="emphasis">../</span>, are commonly used but can become cumbersome in larger projects with deeply nested directories.
+
+- <span class="emphasis">Relative Paths:</span> Easy to use but may lead to lengthy and less readable imports in complex structures.
+- <span class="emphasis">Path Aliases (e.g., @/):</span> Provide a cleaner way to reference files. Aliases are typically defined in <span class="emphasis">vite.config.js</span> or <span class="emphasis">vue.config.js</span> and point to the <span class="emphasis">src/</span> folder.
+
+Using path aliases like <span class="emphasis">@/</span> enhances readability and simplifies refactoring in Vue projects.
+
+---
