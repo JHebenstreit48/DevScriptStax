@@ -142,6 +142,14 @@ This capability is achieved by bridging JavaScript code with native APIs, enabli
 
 ---
 
-## Placeholder for Additional Notes
+### Managing Import Paths in React Native
+---
+
+React Native uses JavaScript modules for imports, but large projects benefit from cleaner import paths. Relative paths (<span class="emphasis">./</span>, <span class="emphasis">../</span>) can be replaced with aliases like <span class="emphasis">@/</span> for simplicity.
+
+- **Setup:** Use <span class="emphasis">babel-plugin-module-resolver</span> to define aliases for directories like <span class="emphasis">src/</span>.
+- **Benefits:** Enhances readability, reduces complexity, and simplifies refactoring.
+
+Path aliases streamline navigation in React Native projects, especially when dealing with deeply nested files.
 
 ---

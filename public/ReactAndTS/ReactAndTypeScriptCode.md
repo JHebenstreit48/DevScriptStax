@@ -98,6 +98,50 @@ extends
 
 ## TypeScript Configuration Files
 
+### Configuring Path Aliases in tsconfig.json
+
+React projects using TypeScript can simplify imports with aliases configured in the `tsconfig.json` file. This is particularly useful in larger projects to manage imports efficiently.
+
+### tsconfig.json Configuration
+
+json
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@components/*": ["src/components/*"],
+      "@utils/*": ["src/utils/*"]
+    }
+  }
+}
+
+---
+
+### Example: Relative Path
+
+typescript
+import MyComponent from '../../components/MyComponent';
+
+---
+
+### Example: Using Alias
+
+typescript
+import MyComponent from '@components/MyComponent';
+
+---
+
+### Explanation
+
+- The `baseUrl` specifies the root directory for module resolution.
+- The `paths` map custom aliases (e.g., `@components/`) to directories within the project (e.g., `src/components/`).
+- In React projects, this simplifies importing frequently used files like components, hooks, or utility functions.
+- Path aliases improve readability, scalability, and ease of refactoring in React and TypeScript projects.
+
+---
+
+### Key Configuration Files in React with TypeScript
+
 1. The following file sets the configuration rules for the React application portion of the project:
 
 ```bash

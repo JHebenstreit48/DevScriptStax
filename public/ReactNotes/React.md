@@ -92,3 +92,14 @@ React is a JavaScript library for building user interfaces or UI pieces that are
 
 ---
 
+## Managing Import Paths in React
+---
+
+React projects often involve importing components and modules from various parts of the directory structure. These imports can use relative paths (<span class="emphasis">./</span>, <span class="emphasis">../</span>, <span class="emphasis">../../</span>) or path aliases (<span class="emphasis">@/</span>).
+
+- **Relative Paths:** Commonly used for small projects, but can lead to lengthy imports in larger projects.
+- **Path Aliases:** Typically set up in Webpack or Vite, aliases like <span class="emphasis">@/</span> map to directories (e.g., <span class="emphasis">src/</span>) for cleaner imports.
+
+Path aliases improve maintainability and make large projects easier to manage, especially when components or files are deeply nested.
+
+---

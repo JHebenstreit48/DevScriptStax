@@ -101,6 +101,43 @@ Explanation:
 
 ---
 
+
+## Path Aliases
+---
+
+React projects using Vite can simplify imports with aliases configured in the vite.config.js file.
+
+### Configuration in vite.config.js
+
+javascript
+import { defineConfig } from 'vite';
+import path from 'path';
+
+export default defineConfig({
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, 'src'),
+    },
+  },
+});
+
+#### Example: Relative Path
+
+javascript
+import MyComponent from '../../components/MyComponent';
+
+#### Example: Using Alias
+
+javascript
+import MyComponent from '@/components/MyComponent';
+
+### Explanation
+
+- The alias @/ maps to the src folder, making imports cleaner.
+- Path aliases improve scalability and refactoring in React projects.
+
+---
+
 ## Adding A Website Icon (Favicon)
 ---
 

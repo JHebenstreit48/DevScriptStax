@@ -43,6 +43,46 @@ sayHello(); // Outputs: Hello!
 
 ---
 
+### Using Webpack to Configure Path Aliases
+
+When working with JavaScript projects, managing file imports with relative paths like ./ and ../ can become complex in larger projects. To address this, Webpack allows developers to configure path aliases, simplifying file imports and improving code readability.
+
+#### Webpack Configuration
+
+javascript
+const path = require('path');
+
+module.exports = {
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, 'src'),
+    },
+  },
+};
+
+---
+
+#### Example: Relative Path
+
+javascript
+import MyComponent from '../../components/MyComponent';
+
+---
+
+#### Example: Using Alias
+
+javascript
+import MyComponent from '@/components/MyComponent';
+
+---
+
+#### Explanation
+
+- The alias @/ replaces the need for long relative paths.
+- Using aliases makes refactoring easier because you only update the alias definition, not every import.
+
+---
+
 ## Array Methods
 
 ### Generating a New Array with <span class="emphasis">.map()</span>

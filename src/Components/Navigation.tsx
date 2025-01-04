@@ -79,6 +79,13 @@ const pages: Page[] = [
         ],
       },
       {
+        name: "Gatsby",
+        subpages: [
+          { name: "Gatsby Notes", path: "/gatsby" },
+          { name: "Gatsby Code Notes", path: "/gatsby/gatsbycode" },
+        ],
+      },
+      {
         name: "HTML",
         subpages: [
           { name: "HTML Notes", path: "/html" },
@@ -97,6 +104,13 @@ const pages: Page[] = [
         subpages: [
           { name: "Markdown Notes", path: "/markdown" },
           { name: "Markdown Code Notes", path: "/markdown/markdowncode" },
+        ],
+      },
+      {
+        name: "Next.js",
+        subpages: [
+          { name: "Next.js Notes", path: "/nextjs" },
+          { name: "Next.js Code Notes", path: "/nextjs/nextjscode" },
         ],
       },
       {

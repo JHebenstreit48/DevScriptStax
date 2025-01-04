@@ -133,10 +133,57 @@ function StyledComponent() {
 
 export default StyledComponent;
 ```
+---
+
+## Path Aliases
+
+## Using babel-plugin-module-resolver for Path Aliases
+
+React Native projects rely on Babel, and the babel-plugin-module-resolver allows developers to configure path aliases for clean imports.
+
+### Steps to Configure:
+
+1. Install the plugin:
+
+shell
+npm install babel-plugin-module-resolver --save-dev
+
+2. Add configuration to babel.config.js:
+
+javascript
+module.exports = {
+  presets: ['module:metro-react-native-babel-preset'],
+  plugins: [
+    [
+      'module-resolver',
+      {
+        root: ['./'],
+        alias: {
+          '@': './src',
+        },
+      },
+    ],
+  ],
+};
+
+### Example: Relative Path
+
+javascript
+import MyComponent from '../../components/MyComponent';
+
+### Example: Using Alias
+
+javascript
+import MyComponent from '@/components/MyComponent';
+
+### Explanation
+
+- Path aliases make navigation and refactoring in React Native projects simpler.
+- The babel-plugin-module-resolver ensures compatibility with Babel’s transpilation process.
 
 ---
 
-## Navigation with <span class="emphasis">React Navigation</span>
+## React Navigation
 
 <span class="emphasis">React Navigation</span> allows you to handle <span class="secondEmphasis">navigation</span> in React Native apps. Here’s an example of using <span class="emphasis">stack navigation</span>:
 
