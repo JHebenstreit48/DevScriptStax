@@ -5,9 +5,9 @@ import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { materialLight } from 'react-syntax-highlighter/dist/esm/styles/prism';
 // import html2pdf from 'html2pdf.js';
 // import { Document, Packer, Paragraph, TextRun, HeadingLevel } from 'docx';
-import '../CSS/Notes.css';
-import '../CSS/NotesWithCode.css';
-import '../CSS/PDFStyles.css';
+import '@/CSS/Notes.css';
+import '@/CSS/NotesWithCode.css';
+import '@/CSS/PDFStyles.css';
 
 interface CodePageSetupProps {
     filePath: string;

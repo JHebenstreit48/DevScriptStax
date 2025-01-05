@@ -3,14 +3,14 @@ import { createBrowserRouter } from "react-router-dom";
 import App from "@/App";
 import ErrorPage from "@/pages/Error";
 import Home from "@/pages/Home";
-import Angular from "@/pages/Angular";
-import AngularCode from "@/pages/AngularCode";
+import Angular from "@/pages/AngularPages/Angular";
+import AngularCode from "@/pages/AngularPages/AngularCode";
 import APIs from "@/pages/API";
 import APICode from "@/pages/APICode";
 import CICDOpsCode from "@/pages/CICDOpsCode";
 import CICDOps from "@/pages/CICDOps";
-import CSS from "@/pages/CSS";
-import CSSCode from "@/pages/CSSCode";
+import CSS from "@/pages/CSSPages/CSS";
+import CSSCode from "@/pages/CSSPages/CSSCode";
 import Cypress from "@/pages/CypressTesting";
 import CypressCode from "@/pages/CypressTestingCode";
 import Git from "@/pages/Git";
@@ -55,8 +55,8 @@ import ApolloServer from "@/pages/ApolloServer";
 import ApolloServerCode from "@/pages/ApolloServerCode";
 import GraphQL from "@/pages/GraphQL";
 import GraphQLCode from "@/pages/GraphQLCode";
-import LESS from "@/pages/LESS";
-import LESSCode from "@/pages/LessCode";
+import LESS from "@/pages/CSSPages/LESS";
+// import LESSCode from "@/pages/CSSPages/LessCode";
 import PostCSSCode from "@/pages/PostCSSCode";
 import PostCSS from "@/pages/PostCSS";
 
@@ -117,7 +117,7 @@ export const router = createBrowserRouter([
             },
             {
                 path: '/css/less/lesscode',
-                element: <LESSCode />,
+                // element: <LESSCode />,
             },
             {
                 path: '/css/postcss',
