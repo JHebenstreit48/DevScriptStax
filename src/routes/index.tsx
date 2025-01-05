@@ -56,9 +56,10 @@ import ApolloServerCode from "@/pages/ApolloServerCode";
 import GraphQL from "@/pages/GraphQL";
 import GraphQLCode from "@/pages/GraphQLCode";
 import LESS from "@/pages/CSSPages/LESS";
-// import LESSCode from "@/pages/CSSPages/LessCode";
+import LESSCode from "@/pages/CSSPages/LessCode";
 import PostCSSCode from "@/pages/PostCSSCode";
 import PostCSS from "@/pages/PostCSS";
+
 
 export const router = createBrowserRouter([
 
@@ -117,7 +118,7 @@ export const router = createBrowserRouter([
             },
             {
                 path: '/css/less/lesscode',
-                // element: <LESSCode />,
+                element: <LESSCode />,
             },
             {
                 path: '/css/postcss',
