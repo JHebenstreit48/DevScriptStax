@@ -1,4 +1,3 @@
-import "../CSS/Header.css";
 import Navigation from "./Navigation";
 
 interface Header {

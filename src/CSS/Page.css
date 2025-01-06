@@ -39,6 +39,20 @@ body {
   min-height: 100vh;
 }
 
+/* Styles for App.tsx Layout */
+
+/* Main container for the entire app */
+.appContainer {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+/* Content wrapper to manage padding or offsets */
+.contentWrapper {
+  padding-top: 11rem;
+}
+
 /* Media Query for screens with max-width of 390px */
 @media only screen and (max-width: 390px) {
   body {
