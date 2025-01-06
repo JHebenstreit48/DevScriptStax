@@ -1,5 +1,5 @@
-import CodePageSetup from "../Components/CodePageSetup";
-import Header from "../Components/Header";
+import CodePageSetup from "@/Components/CodePageSetup";
+import Header from "@/Components/Header";
 
 const ReduxCode = () => {
     const markdownFilePath = '/ReduxNotes/ReduxCode.md';

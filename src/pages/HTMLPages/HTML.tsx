@@ -1,6 +1,5 @@
-import Header from "../Components/Header";
-import PageSetup from "../Components/PageSetup";
-
+import Header from "@/Components/Header";
+import PageSetup from "@/Components/PageSetup";
 
 const HTML = () => {
     const markdownFilePath = "/HTMLNotes/HTML.md";

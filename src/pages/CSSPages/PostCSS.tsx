@@ -1,7 +1,6 @@
-import "../CSS/Header.css";
-import "../CSS/NotesTables.css"
-import Header from "../Components/Header";
-import PageSetup from "../Components/PageSetup";
+import Header from "@/Components/Header";
+import PageSetup from "@/Components/PageSetup";
+import "@/CSS/NotesTables.css"
 
 const PostCSS = () => {
     const markdownFilePath = '/PostCSSNotes/PostCSS.md';

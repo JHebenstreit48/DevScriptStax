@@ -31,7 +31,7 @@ import Python from "@/pages/PythonPages/Python";
 import PythonCode from "@/pages/PythonPages/PythonCode";
 import React from "@/pages/ReactPages/React";
 import ReactCode from "@/pages/ReactPages/ReactCode";
-// import ReactAndTypeScript from "@/pages/ReactPages/ReactandTypeScript";
+import ReactAndTypeScript from "@/pages/ReactPages/ReactAndTypeScript";
 import ReactAndTypeScriptCode from "@/pages/ReactPages/ReactAndTypeScriptCode";
 import ReactFullStack from "@/pages/ReactPages/ReactFullStack";
 import ReactFullStackCode from "@/pages/ReactPages/ReactFullStackCode";
@@ -224,7 +224,7 @@ export const router = createBrowserRouter([
             },
             {
                 path: '/react/reactandtypescript',
-                // element: <ReactAndTypeScript />,
+                element: <ReactAndTypeScript />,
             },
             {
                 path: '/react/reactandtypescriptcode',

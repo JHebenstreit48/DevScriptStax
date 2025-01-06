@@ -1,6 +1,5 @@
-import CodePageSetup from '../Components/CodePageSetup';
-import Header from '../Components/Header';
-import '../CSS/Header.css';
+import CodePageSetup from '@/Components/CodePageSetup';
+import Header from '@/Components/Header';
 
 const APICode = () => {
     const markdownFilePath = '/APINotes/APICode.md';

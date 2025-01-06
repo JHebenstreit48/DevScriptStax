@@ -1,21 +1,19 @@
 import Header from "@/Components/Header";
 import PageSetup from "@/Components/PageSetup";
 
-const Testing = () => {
-    const markdownFilePath = './TestingNotes/Testing.md';
+const ReactAndTypeScript = () => {
+    const markdownFilePath = "/ReactAndTS/ReactAndTypeScript.md";
+
     return (
 
         <>
-        
-            <Header text="Testing" />
+            <Header text="React + TypeScript" />
             <PageSetup
                 filePath={markdownFilePath}
                 markdownContent="markdownContent"
             />
-
         </>
     );
-
 };
 
-export default Testing;
+export default ReactAndTypeScript;
