@@ -5,60 +5,60 @@ import ErrorPage from "@/pages/Error";
 import Home from "@/pages/Home";
 import Angular from "@/pages/AngularPages/Angular";
 import AngularCode from "@/pages/AngularPages/AngularCode";
-import APIs from "@/pages/API";
-import APICode from "@/pages/APICode";
-import CICDOpsCode from "@/pages/CICDOpsCode";
-import CICDOps from "@/pages/CICDOps";
+import APIs from "@/pages/APIPages/API";
+import APICode from "@/pages/APIPages/APICode";
+import CICDOps from "@/pages/CICDOpsPages/CICDOps";
+import CICDOpsCode from "@/pages/CICDOpsPages/CICDOpsCode";
 import CSS from "@/pages/CSSPages/CSS";
 import CSSCode from "@/pages/CSSPages/CSSCode";
-import Cypress from "@/pages/CypressTesting";
-import CypressCode from "@/pages/CypressTestingCode";
-import Git from "@/pages/Git";
-import GitCode from "@/pages/GitCode";
-import HTML from "@/pages/HTML";
-import HTMLCode from "@/pages/HTMLCode";
-import JavaScript from "@/pages/JavaScript";
-import JavascriptCode from "@/pages/JavaScriptCode";
-import MernAndAuth from "@/pages/MernAndAuth";
-import MernAndAuthCode from "@/pages/MernAndAuthCode";
-import MongoDB from "@/pages/MongoDB";
-import MongoDBCode from "@/pages/MongoDBCode";
-import Node from "@/pages/Node";
-import NodeCode from "@/pages/NodeCode";
-import PostgreSQL from "@/pages/PostgreSQL";
-import PostgreSQLCode from "@/pages/PostgreSQLCode";
-import Python from "@/pages/Python";
-import PythonCode from "@/pages/PythonCode";
-import React from "@/pages/React";
-import ReactCode from "@/pages/ReactCode";
-import ReactAndTypeScript from "@/pages/ReactandTypeScript";
-import ReactAndTypeScriptCode from "@/pages/ReactAndTypeScriptCode";
-import ReactFullStack from "@/pages/ReactFullStack";
-import ReactFullStackCode from "@/pages/ReactFullStackCode";
-import ReactNative from "@/pages/ReactNative";
-import ReactNativeCode from "@/pages/ReactNativeCode";
-import Redux from "@/pages/Redux";
-import ReduxCode from "@/pages/ReduxCode";
-import Servers from "@/pages/Servers";
-import ServerCode from "@/pages/ServerCode";
-import Testing from "@/pages/Testing";
-import TestingCode from "@/pages/TestingCode";
-import TypeScript from "@/pages/TypeScript";
-import TypeScriptCode from "@/pages/TypeScriptCode";
-import Vitest from "@/pages/VitestTesting";
-import VitestCode from "@/pages/VitestTestingCode";
-import Vue from "@/pages/Vue";
-import VueCode from "@/pages/VueCode";
-import Markdown from "@/pages/Markdown";
-import MarkdownCode from "@/pages/MarkdownCode";
-import ApolloServer from "@/pages/ApolloServer";
-import ApolloServerCode from "@/pages/ApolloServerCode";
-import GraphQL from "@/pages/GraphQL";
-import GraphQLCode from "@/pages/GraphQLCode";
+import Cypress from "@/pages/TestingPages/CypressTesting";
+import CypressCode from "@/pages/TestingPages/CypressTestingCode";
+import Git from "@/pages/GitPages/Git";
+import GitCode from "@/pages/GitPages/GitCode";
+import HTML from "@/pages/HTMLPages/HTML";
+import HTMLCode from "@/pages/HTMLPages/HTMLCode";
+import JavaScript from "@/pages/JavaScriptPages/JavaScript";
+import JavascriptCode from "@/pages/JavaScriptPages/JavaScriptCode";
+import MernAndAuth from "@/pages/MERNAuthPages/MernAndAuth";
+import MernAndAuthCode from "@/pages/MERNAuthPages/MernAndAuthCode";
+import MongoDB from "@/pages/MongoDBPages/MongoDB";
+import MongoDBCode from "@/pages/MongoDBPages/MongoDBCode";
+import Node from "@/pages/NodePages/Node";
+import NodeCode from "@/pages/NodePages/NodeCode";
+import PostgreSQL from "@/pages/PostgreSQLPages/PostgreSQL";
+import PostgreSQLCode from "@/pages/PostgreSQLPages/PostgreSQLCode";
+import Python from "@/pages/PythonPages/Python";
+import PythonCode from "@/pages/PythonPages/PythonCode";
+import React from "@/pages/ReactPages/React";
+import ReactCode from "@/pages/ReactPages/ReactCode";
+// import ReactAndTypeScript from "@/pages/ReactPages/ReactandTypeScript";
+import ReactAndTypeScriptCode from "@/pages/ReactPages/ReactAndTypeScriptCode";
+import ReactFullStack from "@/pages/ReactPages/ReactFullStack";
+import ReactFullStackCode from "@/pages/ReactPages/ReactFullStackCode";
+import ReactNative from "@/pages/ReactPages/ReactNative";
+import ReactNativeCode from "@/pages/ReactPages/ReactNativeCode";
+import Redux from "@/pages/ReduxPages/Redux";
+import ReduxCode from "@/pages/ReduxPages/ReduxCode";
+import Servers from "@/pages/ServerPages/Servers";
+import ServerCode from "@/pages/ServerPages/ServerCode";
+import Testing from "@/pages/TestingPages/Testing";
+import TestingCode from "@/pages/TestingPages/TestingCode";
+import TypeScript from "@/pages/TypeScriptPages/TypeScript";
+import TypeScriptCode from "@/pages/TypeScriptPages/TypeScriptCode";
+import Vitest from "@/pages/TestingPages/VitestTesting";
+import VitestCode from "@/pages/TestingPages/VitestTestingCode";
+import Vue from "@/pages/VuePages/Vue";
+import VueCode from "@/pages/VuePages/VueCode";
+import Markdown from "@/pages/MarkdownPages/Markdown";
+import MarkdownCode from "@/pages/MarkdownPages/MarkdownCode";
+import ApolloServer from "@/pages/ApolloServerPages/ApolloServer";
+import ApolloServerCode from "@/pages/ApolloServerPages/ApolloServerCode";
+import GraphQL from "@/pages/GraphQLPages/GraphQL";
+import GraphQLCode from "@/pages/GraphQLPages/GraphQLCode";
 import LESS from "@/pages/CSSPages/LESS";
-import LESSCode from "@/pages/CSSPages/LessCode";
-import PostCSSCode from "@/pages/PostCSSCode";
-import PostCSS from "@/pages/PostCSS";
+import LESSCode from "@/pages/CSSPages/LESSCode";
+import PostCSSCode from "@/pages/CSSPages/PostCSSCode";
+import PostCSS from "@/pages/CSSPages/PostCSS";
 
 
 export const router = createBrowserRouter([
@@ -224,7 +224,7 @@ export const router = createBrowserRouter([
             },
             {
                 path: '/react/reactandtypescript',
-                element: <ReactAndTypeScript />,
+                // element: <ReactAndTypeScript />,
             },
             {
                 path: '/react/reactandtypescriptcode',
