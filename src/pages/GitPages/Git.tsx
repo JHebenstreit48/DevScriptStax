@@ -1,6 +1,5 @@
-import Header from "../Components/Header";
-import PageSetup from "../Components/PageSetup";
-import "../CSS/Header.css";
+import Header from "@/Components/Header";
+import PageSetup from "@/Components/PageSetup";
 
 const Git = () => {
     const markdownFilePath = '/GitNotes/Git.md';

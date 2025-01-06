@@ -1,6 +1,5 @@
-import "../CSS/Header.css";
-import Header from "../Components/Header";
-import PageSetup from "../Components/PageSetup";
+import Header from "@/Components/Header";
+import PageSetup from "@/Components/PageSetup";
 
 const Redux = () => {
     const markdownFilePath = '/ReduxNotes/Redux.md';

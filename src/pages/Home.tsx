@@ -1,5 +1,5 @@
-import Header from '../Components/Header';
-import '../CSS/HomePage.css';
+import Header from '@/Components/Header';
+import '@/CSS/HomePage.css';
 
 const Home = () => {
 

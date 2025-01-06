@@ -1,5 +1,5 @@
-import CodePageSetup from '../Components/CodePageSetup';
-import Header from '../Components/Header';
+import CodePageSetup from '@/Components/CodePageSetup';
+import Header from '@/Components/Header';
 
 const ServerCode = () => {
     const markdownFilePath = '/ServerNotes/SeverCode.md';

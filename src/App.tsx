@@ -8,13 +8,13 @@ export default function App() {
 
   return (
 
-    <div>
+    <div className="appContainer">
 
-      <div>
+      <div className="contentWrapper">
 
       <Outlet />
 
-      </div>
+      </div >
       
       <Footer />
 
