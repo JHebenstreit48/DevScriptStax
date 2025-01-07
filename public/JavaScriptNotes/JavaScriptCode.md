@@ -49,7 +49,7 @@ When working with JavaScript projects, managing file imports with relative paths
 
 #### Webpack Configuration
 
-javascript
+```javascript
 const path = require('path');
 
 module.exports = {
@@ -59,13 +59,15 @@ module.exports = {
     },
   },
 };
+```
 
 ---
 
 #### Example: Relative Path
 
-javascript
+```javascript
 import MyComponent from '../../components/MyComponent';
+```
 
 ---
 
