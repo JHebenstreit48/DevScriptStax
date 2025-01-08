@@ -1,5 +1,5 @@
 import Header from "@/Components/Header";
-import PageSetup from "@/Components/PageSetup";
+import Notes from "@/Components/Notes";
 
 const ReactAndTypeScript = () => {
     const markdownFilePath = "/ReactAndTS/ReactAndTypeScript.md";
@@ -8,7 +8,7 @@ const ReactAndTypeScript = () => {
 
         <>
             <Header text="React + TypeScript" />
-            <PageSetup
+            <Notes
                 filePath={markdownFilePath}
                 markdownContent="markdownContent"
             />

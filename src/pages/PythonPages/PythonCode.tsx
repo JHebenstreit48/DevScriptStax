@@ -1,4 +1,4 @@
-import CodePageSetup from "@/Components/CodePageSetup";
+import CodePageSetup from "@/Components/Notes";
 import Header from "@/Components/Header";
 
 const PythonCode = () => {
@@ -7,7 +7,7 @@ const PythonCode = () => {
     return (
 
         <>
-        
+
             <Header text="Python Code" />
             <CodePageSetup
                 filePath={markdownFilePath}

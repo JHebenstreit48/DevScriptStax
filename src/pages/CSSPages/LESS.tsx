@@ -1,6 +1,5 @@
 import Header from "@/Components/Header";
-import PageSetup from "@/Components/PageSetup";
-import "@/CSS/NotesTables.css"
+import Notes from "@/Components/Notes";
 
 const LESS = () => {
     const markdownFilePath = '/LESSNotes/LESS.md';
@@ -9,7 +8,7 @@ const LESS = () => {
 
         <>
             <Header text="LESS" />
-            <PageSetup
+            <Notes
                 filePath={markdownFilePath}
                 markdownContent="markdownContent"
             />

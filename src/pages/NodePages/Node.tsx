@@ -1,5 +1,5 @@
 import Header from "@/Components/Header";
-import PageSetup from "@/Components/PageSetup";
+import Notes from "@/Components/Notes";
 
 const Node = () => {
     const markdownFilePath = '/NodeNotes/Node.md';
@@ -7,10 +7,10 @@ const Node = () => {
     return (
 
         <>
-             <Header text="Node JS" />
-            <PageSetup 
-            filePath={markdownFilePath}
-            markdownContent="markdownContent
+            <Header text="Node JS" />
+            <Notes
+                filePath={markdownFilePath}
+                markdownContent="markdownContent
             "/>
         </>
     );

@@ -13,7 +13,7 @@
   z-index: 1;
 }
 
-.card-header {
+.cardHeader {
   background: linear-gradient(
     to bottom,
     rgb(56, 4, 56),
@@ -109,33 +109,153 @@ hr {
   color: rgb(12, 217, 231)
 }
 
+/* General table styles */
+.comparisonTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 1rem;
+}
+
+/* Table header styles */
+.tableHeader {
+  background-color: #333;
+}
+
+.tableCellHeader {
+  text-align: left;
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+.tableCell {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+  background-color: #1b1b1b;
+}
+
+/* Hover effect */
+.tableRow:hover {
+  transition: background-color 0.3s ease-in-out;
+}
+
+.punctuationSymbol {
+  color: rgb(255, 56, 209);
+  font: italic 800 30px/1 sans-serif;
+  margin: 0 5px;
+}
+
+code.codeSnip {
+  color: rgb(255, 56, 209);
+  font: normal 18px/1.2 monospace;
+  padding: 2px 4px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  text-align: center;
+}
+
+/* Nullify padding on span.codeSnip to prevent double-styling */
+span.codeSnip {
+  padding: 0 !important;
+}
+
+.markdownContentCode {
+  width: 75%;
+  margin: 0 auto;
+  color: rgb(6, 159, 248);
+  text-shadow: 1px 2px 1px black;
+  font: normal 20px/1.5 sans-serif;
+}
+
+.markdownContentCode ul {
+  margin-top: 0;
+  padding-left: 3rem;
+}
+
+.markdownContentCode p,
+.markdownContentCode li {
+  margin-bottom: 1rem;
+}
+
+/* Code Block Styling */
+.codeBlockWrapper {
+  position: relative;
+  margin-bottom: 1.5rem;
+  border: 1px solid #444;
+  border-radius: 11px;
+  background-color: rgb(29, 31, 33);
+  overflow: hidden;
+}
+
+.codeBlockHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(40, 44, 52);
+  color: #fff;
+  font: bold 0.9rem/1 sans-serif;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #444;
+  border-radius: 11px 11px 0 0;
+}
+
+.copyCodeButton {
+  background: #444;
+  color: #fff;
+  font: normal 0.8rem/1 sans-serif;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+}
+
+.copyCodeButton:hover {
+  background: #555;
+}
+
+.codeBlockLanguage {
+  font: normal 0.8rem/1 sans-serif;
+  opacity: 0.7;
+  margin-right: auto;
+}
+
+.markdownContentCode div code {
+  display: block;
+  padding: 0.5rem;
+  max-width: 100%;
+  line-height: 1.5 !important;
+  overflow-x: auto;
+  background-color: inherit;
+}
+
 @media only screen and (max-width: 390px) {
   .card {
     text-align: center;
     width: 44rem;
     margin: 13rem 2.7rem 8rem;
   }
+}
 
-  /* .card-header {
-    font-size: 3rem;
+@media only screen and (max-width: 390px) {
+  .codeBlockHeader {
+    font: bold 0.75rem/1 sans-serif;
+    padding: 0.25rem 0.5rem;
   }
 
+  .copyCodeButton {
+    font: normal 0.7rem/1 sans-serif;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    padding: 0.2rem 0.4rem;
+  }
+}
+
+@media only screen and (max-width: 390px) {
   .markdownContent {
-    width: 100%;
-    font-size: 1.5rem;
+    width: 91% !important;
   }
-
-  .bullet1 ul,
-  .bullet4 ul {
-    column-count: 1;
-    width: 100%;
-    padding-left: 0;
+  .example {
+    margin-left: 25px;
   }
-
-  .bullet2 ul,
-  .bullet3 ul {
-    column-count: 1;
-    padding-left: 0;
-    width: 100%;
-  } */
 }

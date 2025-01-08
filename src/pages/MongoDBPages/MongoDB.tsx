@@ -1,5 +1,5 @@
 import Header from "@/Components/Header";
-import PageSetup from "@/Components/PageSetup";
+import Notes from "@/Components/Notes";
 
 const MongoDB = () => {
     const markdownFilePath = "/MongoDB/MongoDB.md";
@@ -7,12 +7,12 @@ const MongoDB = () => {
     return (
 
         <>
-        
+
             <Header text="MongoDB" />
-            <PageSetup
+            <Notes
                 filePath={markdownFilePath}
-            markdownContent="markdownContent"            
-             />
+                markdownContent="markdownContent"
+            />
 
         </>
     );

@@ -1,4 +1,4 @@
-import CodePageSetup from "@/Components/CodePageSetup";
+import Notes from "@/Components/Notes";
 import Header from "@/Components/Header";
 
 const AngularCode = () => {
@@ -9,9 +9,9 @@ const AngularCode = () => {
         <>
 
             <Header text="Angular Notes Code" />
-            <CodePageSetup
+            <Notes
                 filePath={markdownFilePath}
-                markdownContentCode="markdownContentCode"
+                markdownContent="markdownContentCode"
             />
 
         </>

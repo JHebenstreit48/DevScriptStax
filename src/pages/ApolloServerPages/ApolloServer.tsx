@@ -1,5 +1,5 @@
 import Header from "@/Components/Header";
-import PageSetup from "@/Components/PageSetup";
+import Notes from "@/Components/Notes";
 
 const ApolloServer = () => {
     const markdownFilePath = '/ApolloServerNotes/ApolloServer.md';
@@ -7,8 +7,8 @@ const ApolloServer = () => {
     return (
 
         <>
-           <Header text="Apollo Server" />
-            <PageSetup
+            <Header text="Apollo Server" />
+            <Notes
                 filePath={markdownFilePath}
                 markdownContent="markdownContent"
             />

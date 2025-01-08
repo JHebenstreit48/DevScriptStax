@@ -1,4 +1,4 @@
-import CodePageSetup from "@/Components/CodePageSetup";
+import CodePageSetup from "@/Components/Notes";
 import Header from "@/Components/Header";
 
 const JavascriptCode = () => {
@@ -7,7 +7,7 @@ const JavascriptCode = () => {
     return (
 
         <>
-             <Header text="JavaScript Code" />
+            <Header text="JavaScript Code" />
             <CodePageSetup
                 filePath={markdownFilePath}
                 markdownContentCode="markdownContentCode"

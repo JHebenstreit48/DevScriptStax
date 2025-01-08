@@ -1,5 +1,5 @@
 import Header from "@/Components/Header";
-import PageSetup from "@/Components/PageSetup";
+import Notes from "@/Components/Notes";
 
 const ReactNative = () => {
     const markdownFilePath = '/ReactNative/ReactNative.md';
@@ -8,7 +8,7 @@ const ReactNative = () => {
 
         <>
             <Header text="React Native" />
-            <PageSetup
+            <Notes
                 filePath={markdownFilePath}
                 markdownContent="markdownContent"
             />

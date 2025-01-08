@@ -1,5 +1,5 @@
 import Header from "@/Components/Header";
-import PageSetup from "@/Components/PageSetup";
+import Notes from "@/Components/Notes";
 
 const Redux = () => {
     const markdownFilePath = '/ReduxNotes/Redux.md';
@@ -8,7 +8,7 @@ const Redux = () => {
 
         <>
             <Header text="Redux" />
-            <PageSetup
+            <Notes
                 filePath={markdownFilePath}
                 markdownContent="markdownContent"
             />

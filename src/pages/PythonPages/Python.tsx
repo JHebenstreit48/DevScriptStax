@@ -1,15 +1,15 @@
 import Header from "@/Components/Header";
-import PageSetup from "@/Components/PageSetup";
+import Notes from "@/Components/Notes";
 
-const  Python = () => {
+const Python = () => {
     const markdownFilePath = '/PythonNotes/Python.md';
 
     return (
 
         <>
-        
+
             <Header text="Python" />
-            <PageSetup
+            <Notes
                 filePath={markdownFilePath}
                 markdownContent="markdownContent"
             />

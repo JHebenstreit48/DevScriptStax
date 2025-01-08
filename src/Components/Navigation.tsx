@@ -565,141 +565,83 @@ const pages: Page[] = [
 ];
 
 const Navigation = () => {
-  const [expandedSections, setExpandedSections] = useState<Set<string>>(
-    new Set()
-  );
-  const [isCollapsed, setIsCollapsed] = useState(true);
+  const [activeDropdown, setActiveDropdown] = useState<Set<string>>(new Set());
 
-  // Toggle expanded state for sections
-  const toggleSection = (key: string) => {
-    setExpandedSections((prev) => {
-      const newSections = new Set(prev);
-      if (newSections.has(key)) {
-        newSections.delete(key);
+  const toggleDropdown = (key: string) => {
+    setActiveDropdown((prev) => {
+      const newDropdowns = new Set(prev);
+      if (newDropdowns.has(key)) {
+        newDropdowns.delete(key); // Close the dropdown if it's already active
       } else {
-        newSections.add(key);
+        newDropdowns.add(key); // Open the dropdown
       }
-      return newSections;
+      return newDropdowns;
     });
   };
 
-  const toggleSidebar = () => setIsCollapsed(!isCollapsed);
-
-  // Recursive rendering of subpages with arrows
   const renderSubpages = (
     subpages: Subpage[],
     parentKey: string,
     level: number = 1
-  ) =>
-    subpages.map((subpage, index) => {
+  ) => {
+    return subpages.map((subpage, index) => {
       const key = `${parentKey}-${index}`;
-      const isExpanded = expandedSections.has(key);
+      const isActive = activeDropdown.has(key);
 
       return (
-        <div key={key}>
+        <div key={key} className={`dropdownItem level-${level}`}>
           {subpage.path ? (
-            <p>
-              {" "}
-              <Link
-                to={subpage.path}
-                className={`navLink ${level > 1 ? "nestedLink" : ""}`}
-              >
-                {" "}
-                {subpage.name.trim()}{" "}
-              </Link>{" "}
-            </p>
+            <Link to={subpage.path} className="dropdownLink">
+              {subpage.name}
+            </Link>
           ) : (
             <>
-              {" "}
               <button
-                className={`subpageHeading ${
-                  level > 1 ? "nestedSubpageHeading" : ""
-                }`}
-                onClick={() => toggleSection(key)}
-                aria-expanded={isExpanded ? "true" : "false"}
+                className={`dropdownButton level-${level}`}
+                onClick={() => toggleDropdown(key)}
               >
-                {" "}
-                {subpage.name.trim()}{" "}
-                {/* Render arrows only if there are nested subpages */}{" "}
-                {subpage.subpages && subpage.subpages.length > 0 && (
-                  <span
-                    className={`dropdownArrow ${isExpanded ? "up" : "down"}`}
-                  ></span>
-                )}{" "}
-              </button>{" "}
-              {isExpanded && subpage.subpages && (
-                <div className="nestedSubpages">
-                  {" "}
-                  {renderSubpages(subpage.subpages, key, level + 1)}{" "}
+                {subpage.name}
+                <span className={`dropdownArrow ${isActive ? "up" : "down"}`} />
+              </button>
+              {isActive && subpage.subpages && (
+                <div className={`dropdownMenu level-${level} active`}>
+                  {renderSubpages(subpage.subpages, key, level + 1)}
                 </div>
-              )}{" "}
+              )}
             </>
-          )}{" "}
+          )}
         </div>
       );
     });
+  };
 
   return (
-    <div className={`navigationMenu ${isCollapsed ? "collapsed" : ""}`}>
-      <button className="toggleButton" onClick={toggleSidebar}>
-        {isCollapsed ? (
-          <i className="menuIcon fas fa-bars"></i>
-        ) : (
-          <i className="closeIcon fas fa-times"></i>
-        )}
-      </button>
+    <div className="navigationMenu">
+      <div className="navigationContent">
+        {pages.map((page, index) => {
+          const pageKey = `page-${index}`;
+          const isActive = activeDropdown.has(pageKey);
 
-      {!isCollapsed && (
-        <div className="navigationContent">
-          {/* Accordion for Pages */}
-          <div className="accordion">
-            {pages.map((page, index) => {
-              const pageKey = `page-${index}`;
-              const isExpanded = expandedSections.has(pageKey);
-
-              return (
-                <div key={pageKey} className="accordionItem">
-                  <h2 className="accordionHeader">
-                    {/* Show arrows if the page has subpages */}
-                    {page.subpages.length === 0 ? (
-                      <Link
-                        to="/"
-                        className="accordionButton noDropdown"
-                        id="homeButton"
-                      >
-                        {page.name}
-                      </Link>
-                    ) : (
-                      <button
-                        className="accordionButton"
-                        type="button"
-                        onClick={() => toggleSection(pageKey)}
-                        aria-expanded={isExpanded ? "true" : "false"}
-                      >
-                        {page.name}
-                        <span
-                          className={`dropdownArrow ${
-                            isExpanded ? "up" : "down"
-                          }`}
-                        ></span>
-                      </button>
-                    )}
-                  </h2>
-
-                  {/* Only render subpages if they exist */}
-                  {isExpanded && (
-                    <div className="accordionCollapse">
-                      <div className="accordionBody">
-                        {renderSubpages(page.subpages, pageKey)}
-                      </div>
-                    </div>
-                  )}
+          return (
+            <div key={pageKey} className="dropdown">
+              <button
+                className="dropdownButton"
+                onClick={() => toggleDropdown(pageKey)}
+              >
+                {page.name}
+                {page.subpages.length > 0 && (
+                  <span className={`dropdownArrow ${isActive ? "up" : "down"}`} />
+                )}
+              </button>
+              {isActive && page.subpages.length > 0 && (
+                <div className="dropdownContent active">
+                  {renderSubpages(page.subpages, pageKey)}
                 </div>
-              );
-            })}
-          </div>
-        </div>
-      )}
+              )}
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 };

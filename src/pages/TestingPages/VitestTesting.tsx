@@ -1,5 +1,5 @@
 import Header from "@/Components/Header";
-import PageSetup from "@/Components/PageSetup";
+import Notes from "@/Components/Notes";
 
 const Vitest = () => {
     const markdownFilePath = '/VitestNotes/Vitest.md';
@@ -8,7 +8,7 @@ const Vitest = () => {
 
         <>
             <Header text="Vitest" />
-            <PageSetup
+            <Notes
                 filePath={markdownFilePath}
                 markdownContent="markdownContent"
             />

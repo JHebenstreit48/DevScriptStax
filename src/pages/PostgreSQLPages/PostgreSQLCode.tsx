@@ -1,4 +1,4 @@
-import CodePageSetup from "@/Components/CodePageSetup";
+import CodePageSetup from "@/Components/Notes";
 import Header from "@/Components/Header";
 
 const PostgreSQLCode = () => {

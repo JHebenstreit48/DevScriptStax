@@ -1,4 +1,4 @@
-import CodePageSetup from "@/Components/CodePageSetup";
+import CodePageSetup from "@/Components/Notes";
 import Header from "@/Components/Header";
 
 const CSSCode = () => {
@@ -8,7 +8,7 @@ const CSSCode = () => {
 
         <>
 
-            <Header text="CSS Code"/>
+            <Header text="CSS Code" />
             <CodePageSetup
                 filePath={CSSCodeMkdn}
                 markdownContentCode="markdownContentCode"
