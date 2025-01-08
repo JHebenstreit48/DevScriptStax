@@ -1,5 +1,5 @@
 import Header from "@/Components/Header";
-import PageSetup from "@/Components/PageSetup";
+import Notes from "@/Components/Notes";
 
 const Vue = () => {
     const markdownFilePath = '/VueNotes/Vue.md';
@@ -8,7 +8,7 @@ const Vue = () => {
 
         <>
             <Header text="Vue" />
-            <PageSetup
+            <Notes
                 filePath={markdownFilePath}
                 markdownContent="markdownContent"
             />

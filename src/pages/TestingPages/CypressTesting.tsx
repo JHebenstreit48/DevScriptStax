@@ -1,5 +1,5 @@
 import Header from "@/Components/Header";
-import PageSetup from "@/Components/PageSetup";
+import Notes from "@/Components/Notes";
 
 const Cypress = () => {
     const markdownFilePath = '/CypressTesting/CypressTesting.md';
@@ -8,7 +8,7 @@ const Cypress = () => {
 
         <>
             <Header text="Cypress" />
-            <PageSetup
+            <Notes
                 filePath={markdownFilePath}
                 markdownContent="markdownContent"
             />

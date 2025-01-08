@@ -1,5 +1,5 @@
 import Header from "@/Components/Header";
-import PageSetup from "@/Components/PageSetup";
+import Notes from "@/Components/Notes";
 
 const APIs = () => {
     const markdownFilePath = '/APINotes/API.md';
@@ -8,7 +8,7 @@ const APIs = () => {
 
         <>
             <Header text="API Notes" />
-            <PageSetup
+            <Notes
                 filePath={markdownFilePath}
                 markdownContent="markdownContent"
             />

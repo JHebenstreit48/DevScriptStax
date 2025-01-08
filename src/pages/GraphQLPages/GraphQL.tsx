@@ -1,5 +1,5 @@
 import Header from "@/Components/Header";
-import PageSetup from "@/Components/PageSetup";
+import Notes from "@/Components/Notes";
 
 const GraphQL = () => {
     const markdownFilePath = '/GraphQLNotes/GraphQL.md';
@@ -7,8 +7,8 @@ const GraphQL = () => {
     return (
 
         <>
-           <Header text="GraphQL" />
-            <PageSetup
+            <Header text="GraphQL" />
+            <Notes
                 filePath={markdownFilePath}
                 markdownContent="markdownContent"
             />

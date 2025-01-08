@@ -1,5 +1,5 @@
 import Header from "@/Components/Header";
-import PageSetup from "@/Components/PageSetup";
+import Notes from "@/Components/Notes";
 
 const Git = () => {
     const markdownFilePath = '/GitNotes/Git.md';
@@ -7,8 +7,8 @@ const Git = () => {
     return (
 
         <>
-            <Header text="Git Notes"/>
-            <PageSetup
+            <Header text="Git Notes" />
+            <Notes
                 filePath={markdownFilePath}
                 markdownContent="markdownContent"
             />

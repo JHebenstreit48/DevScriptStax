@@ -1,6 +1,6 @@
 import Header from "@/Components/Header";
-import PageSetup from "@/Components/PageSetup";
-import "@/CSS/NotesTables.css"
+import Notes from "@/Components/Notes";
+import "@/CSS/Notes.css"
 
 const Angular = () => {
     const markdownFilePath = '/AngularNotes/Angular.md';
@@ -9,7 +9,7 @@ const Angular = () => {
 
         <>
             <Header text="Angular" />
-            <PageSetup
+            <Notes
                 filePath={markdownFilePath}
                 markdownContent="markdownContent"
             />

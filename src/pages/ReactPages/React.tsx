@@ -1,5 +1,5 @@
 import Header from "@/Components/Header";
-import PageSetup from "@/Components/PageSetup";
+import Notes from "@/Components/Notes";
 
 const React = () => {
     const markdownFilePath = '/ReactNotes/React.md';
@@ -8,7 +8,7 @@ const React = () => {
 
         <>
             <Header text="React" />
-            <PageSetup
+            <Notes
                 filePath={markdownFilePath}
                 markdownContent="markdownContent"
             />

@@ -1,4 +1,4 @@
-import CodePageSetup from "@/Components/CodePageSetup";
+import CodePageSetup from "@/Components/Notes";
 import Header from "@/Components/Header";
 
 const MongoDBCode = () => {
@@ -7,12 +7,12 @@ const MongoDBCode = () => {
     return (
 
         <>
-             <Header text="MongoDB Code" />
+            <Header text="MongoDB Code" />
             <CodePageSetup
                 filePath={markdownFilePath}
                 markdownContentCode="markdownContentCode"
             />
-            
+
         </>
     );
 

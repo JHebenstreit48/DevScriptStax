@@ -1,5 +1,5 @@
 import Header from "@/Components/Header";
-import PageSetup from "@/Components/PageSetup";
+import Notes from "@/Components/Notes";
 
 const CSS = () => {
     const markdownFilePath = '/CSSNotes/CSS.md';
@@ -8,7 +8,7 @@ const CSS = () => {
 
         <>
            <Header text="CSS" />
-            <PageSetup
+            <Notes
                 filePath={markdownFilePath}
                 markdownContent="markdownContent"
             />

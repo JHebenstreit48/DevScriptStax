@@ -6,12 +6,11 @@ import { materialLight } from 'react-syntax-highlighter/dist/esm/styles/prism';
 // import html2pdf from 'html2pdf.js';
 // import { Document, Packer, Paragraph, TextRun, HeadingLevel } from 'docx';
 import '@/CSS/Notes.css';
-import '@/CSS/NotesWithCode.css';
-import '@/CSS/PDFStyles.css';
+// import '@/CSS/PDFStyles.css';
 
-interface CodePageSetupProps {
+interface NotesSetupProps {
     filePath: string;
-    markdownContentCode?: string;
+    markdownContent?: string; // Optional prop for preloaded content
 }
 
 // Utility function to load Markdown content from a file
@@ -40,48 +39,47 @@ const darkGrayBackgroundTheme = {
     },
 };
 
-const CodePageSetup: React.FC<CodePageSetupProps> = ({ filePath, markdownContentCode }) => {
-    const [markdownContent, setMarkdownContent] = useState<string>('');
+const NotesSetup: React.FC<NotesSetupProps> = ({ filePath, markdownContent }) => {
+    const [markdown, setMarkdown] = useState<string>(markdownContent || '');
     const [copiedCode, setCopiedCode] = useState(false);
     const exportRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
-        if (filePath) {
+        if (filePath && !markdownContent) {
             loadMarkdown(filePath)
-                .then(setMarkdownContent)
+                .then(setMarkdown)
                 .catch((error) => console.error('Error loading Markdown:', error));
         }
-    }, [filePath]);
+    }, [filePath, markdownContent]);
 
     const copyToClipboard = (code: string) => {
         navigator.clipboard.writeText(code);
         setCopiedCode(true); // Show feedback
         setTimeout(() => setCopiedCode(false), 2000); // Reset feedback after 2 seconds
     };
-    
+
     return (
         <div
             className="card pdfCard"
             ref={exportRef}
             style={{ margin: '0 auto', width: '8.5in' }}
         >
-            <h2 className="card-header pdfHeading pageBreakAvoid">Notes With Code</h2>
-            <div className='pdfMarkdownContent pageBreakAvoid'>
-                <div className={markdownContentCode || 'markdownContentCode'}>
+            <h2 className="cardHeader pdfHeading pageBreakAvoid">Notes</h2>
+            <div className="pdfMarkdownContent pageBreakAvoid">
+                <div className="markdownContent">
                     <ReactMarkdown
                         rehypePlugins={[rehypeRaw]}
                         components={{
-                            code({
-                                className, children, ...props }) {
+                            code({ className, children, ...props }) {
                                 const language = className ? className.replace('language-', '') : '';
                                 const codeString = String(children).trim();
 
                                 return (
-                                    <div className="code-block-wrapper pdfCodeBlockWrapper pageBreakAvoid">
-                                        <div className="code-block-header pdfCodeBlockHeader">
-                                            <span className="code-block-language">{language.toUpperCase()}</span>
+                                    <div className="codeBlockWrapper pdfCodeBlockWrapper pageBreakAvoid">
+                                        <div className="codeBlockHeader pdfCodeBlockHeader">
+                                            <span className="codeBlockLanguage">{language.toUpperCase()}</span>
                                             <button
-                                                className="copy-code-button pdfCopyCodeButton"
+                                                className="copyCodeButton pdfCopyCodeButton"
                                                 onClick={() => copyToClipboard(codeString)}
                                             >
                                                 {copiedCode ? 'Copied!' : 'Copy Code'}
@@ -100,19 +98,12 @@ const CodePageSetup: React.FC<CodePageSetupProps> = ({ filePath, markdownContent
                             },
                         }}
                     >
-                        {markdownContent}
+                        {markdown}
                     </ReactMarkdown>
                 </div>
-
             </div>
-
-            {/* <div className="pdfDownloadButtons">
-                <button onClick={downloadPDF}>Download PDF</button>
-                <button onClick={downloadWord}>Download Word Document</button>
-            </div> */}
-
         </div>
     );
 };
 
-export default CodePageSetup;
+export default NotesSetup;

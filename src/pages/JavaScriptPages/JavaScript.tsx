@@ -1,5 +1,5 @@
 import Header from "@/Components/Header";
-import PageSetup from "@/Components/PageSetup";
+import Notes from "@/Components/Notes";
 
 const Javascript = () => {
     const markdownFilePath = "/JavaScriptNotes/JavaScript.md";
@@ -8,9 +8,9 @@ const Javascript = () => {
 
         <>
             <Header text="JavaScript" />
-            <PageSetup
+            <Notes
                 filePath={markdownFilePath}
-            markdownContent="markdownContent"
+                markdownContent="markdownContent"
             />
         </>
     );

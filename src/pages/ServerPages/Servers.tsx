@@ -1,5 +1,5 @@
 import Header from "@/Components/Header";
-import PageSetup from "@/Components/PageSetup";
+import Notes from "@/Components/Notes";
 
 const Servers = () => {
     const markdownFilePath = '/ServerNotes/Server.md';
@@ -8,7 +8,7 @@ const Servers = () => {
 
         <>
             <Header text="Servers" />
-            <PageSetup
+            <Notes
                 filePath={markdownFilePath}
                 markdownContent="markdownContent"
             />

@@ -1,5 +1,5 @@
 import Header from "@/Components/Header";
-import PageSetup from "@/Components/PageSetup";
+import Notes from "@/Components/Notes";
 
 const MernAndAuth = () => {
     const markdownFilePath = "/MernAndAuth/MernAndAuth.md";
@@ -7,11 +7,11 @@ const MernAndAuth = () => {
     return (
 
         <>
-             <Header text="MERN Stack" />
-            <PageSetup
-            filePath={markdownFilePath}
-            markdownContent="markdownContent"            
-             />
+            <Header text="MERN Stack" />
+            <Notes
+                filePath={markdownFilePath}
+                markdownContent="markdownContent"
+            />
 
         </>
     );
