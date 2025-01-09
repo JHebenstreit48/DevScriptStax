@@ -20,7 +20,7 @@
 }
 
 .dropdownLink {
-  color: rgb(255, 187, 0);
+  color: rgb(240, 128, 128);
   text-decoration: none;
   display: block;
   padding: 10px 0;
@@ -33,19 +33,31 @@
 /* Dropdown Button */
 .dropdownButton {
   background-color: transparent;
-  color: white;
   border: none;
-  padding: 10px 20px;
+  padding: 9px 40px;
   font-size: 1.8rem;
   cursor: pointer;
-  border-radius: 5px;
   text-align: center;
   position: relative;
-  color: rgb(9, 174, 230);
+  color: rgb(7, 193, 255);
 }
 
 .dropdownButton.level-1 {
-  padding-bottom: 6px;
+  padding: 0;
+  margin: 0 auto;
+  color: #1E90FF;
+}
+
+.dropdownButton.level-2 {
+  padding-bottom: 3px;
+  font-size: 1.4rem;
+  color: rgb(218, 165, 32);
+}
+
+.dropdownButton.level-3 {
+  padding-bottom: 2px;
+  font-size: 1.5rem;
+  color: rgb(0, 255, 127);
 }
 
 /* Dropdown Arrow */
@@ -55,15 +67,14 @@
   align-items: center;
   position: absolute;
   left: 50%;
+  transform: translateX(-50%);
   border: solid white;
   border-width: 0 2px 2px 0;
   padding: 4px;
-
 }
 
 .dropdownArrow.up {
   transform: rotate(-135deg);
-  margin-top: 10px;
 }
 
 .dropdownArrow.down {
@@ -81,24 +92,44 @@
   z-index: 999;
   padding: 0;
   border-radius: 5px;
+  display: none;
 }
 
 .dropdownContent.active {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  margin: 25px auto 0 auto;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 1.5rem;
+  max-height: 30rem;
+  overflow-y: auto;
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: transparent transparent; /* Default transparent for Firefox */
+}
+
+/* WebKit Scrollbar Customization */
+.dropdownContent.active::-webkit-scrollbar {
+  width: 6px; /* Width of scrollbar */
+}
+
+.dropdownContent.active::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent thumb */
+  border-radius: 5px; /* Rounded thumb edges */
+}
+
+.dropdownContent.active::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.4); /* Slightly less transparent on hover */
+}
+
+.dropdownContent.active::-webkit-scrollbar-track {
+  background: transparent; /* Fully transparent track */
+}
+
+.dropdownContent.active::-webkit-scrollbar-button {
+  display: none; /* Hide up and down arrow buttons */
 }
 
 /* Sub-dropdown Menu */
 .dropdownMenu {
   display: none;
-  position: relative; /* Align under parent */
-  margin-top: 10px;
+  position: relative;
   padding: 10px;
   border-radius: 5px;
   z-index: 100;
@@ -107,21 +138,21 @@
 .dropdownMenu.active {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
 }
 
-  @media only screen and (max-width: 390px) {
-    .navigationMenu {
-      width: 100%;
-      height: 100%;
-    }
-  
-    .navigationContent {
-      overflow-y: auto;
-      padding: 0;
-      width: 100%;
-      margin: 7rem auto 1rem auto;
-      z-index: 10;
-    }
+@media only screen and (max-width: 390px) {
+  .navigationMenu {
+    width: 100%;
+    height: 100%;
   }
-  
+
+  .navigationContent {
+    overflow-y: auto;
+    padding: 0;
+    width: 100%;
+    margin: 7rem auto 1rem auto;
+    z-index: 10;
+  }
+}
