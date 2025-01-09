@@ -43,9 +43,13 @@
 }
 
 .dropdownButton.level-1 {
-  padding: 0;
+  display: flex;
+  justify-content: center;
   margin: 0 auto;
   color: #1E90FF;
+  font-size: 1.8rem;
+  text-align: center;
+  width: 11rem;
 }
 
 .dropdownButton.level-2 {
@@ -99,6 +103,7 @@
   display: flex;
   flex-direction: column;
   max-height: 30rem;
+  margin-top: 1rem;
   overflow-y: auto;
   scrollbar-width: thin; /* For Firefox */
   scrollbar-color: transparent transparent; /* Default transparent for Firefox */

@@ -1,4 +1,4 @@
-import { Subpage } from "@/Navigation/FrontEndPages/NavigationTypes";
+import { Subpage } from "@/Navigation/FrontEndNavigation/NavigationTypes";
 
 const AANavigation: Subpage = {
   name: "A + A",

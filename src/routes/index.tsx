@@ -5,27 +5,27 @@ import ErrorPage from "@/pages/Error";
 import Home from "@/pages/Home";
 
 // APIs
-import APIs from "@/pages/APIPages/API";
+import APIs from "@/pages/BackEndPages/APIPages/API";
 // import APICode from "@/pages/APIPages/APICode";
 
 // Apollo Server
-import ApolloServer from "@/pages/ApolloServerPages/ApolloServer";
+import ApolloServer from "@/pages/BackEndPages/ApolloServerPages/ApolloServer";
 // import ApolloServerCode from "@/pages/ApolloServerPages/ApolloServerCode";
 
 // Angular
-import Angular from "@/pages/AngularPages/Angular";
+import Angular from "@/pages/FrontEndPages/AngularPages/Angular";
 // import AngularCode from "@/pages/AngularPages/AngularCode";
 
 // CICD Ops
-import CICDOps from "@/pages/CICDOpsPages/CICDOps";
+import CICDOps from "@/pages/ToolsPages/CICDOpsPages/CICDOps";
 // import CICDOpsCode from "@/pages/CICDOpsPages/CICDOpsCode";
 
 // CSS and Frameworks
-import CSS from "@/pages/CSSPages/CSS";
+import CSS from "@/pages/FrontEndPages/CSSPages/CSS";
 // import CSSCode from "@/pages/CSSPages/CSSCode";
-import LESS from "@/pages/CSSPages/LESS";
+import LESS from "@/pages/FrontEndPages/CSSPages/LESS";
 // import LESSCode from "@/pages/CSSPages/LESSCode";
-import PostCSS from "@/pages/CSSPages/PostCSS";
+import PostCSS from "@/pages/FrontEndPages/CSSPages/PostCSS";
 // import PostCSSCode from "@/pages/CSSPages/PostCSSCode";
 
 // Cypress Testing
@@ -33,61 +33,61 @@ import Cypress from "@/pages/TestingPages/CypressTesting";
 // import CypressCode from "@/pages/TestingPages/CypressTestingCode";
 
 // Git
-import Git from "@/pages/GitPages/Git";
+import Git from "@/pages/ToolsPages/GitPages/Git";
 // import GitCode from "@/pages/GitPages/GitCode";
 
 // GraphQL
-import GraphQL from "@/pages/GraphQLPages/GraphQL";
+import GraphQL from "@/pages/BackEndPages/GraphQLPages/GraphQL";
 // import GraphQLCode from "@/pages/GraphQLPages/GraphQLCode";
 
 // HTML
-import HTML from "@/pages/HTMLPages/HTML";
+import HTML from "@/pages/FrontEndPages/HTMLPages/HTML";
 // import HTMLCode from "@/pages/HTMLPages/HTMLCode";
 
 // JavaScript
-import JavaScript from "@/pages/JavaScriptPages/JavaScript";
+import JavaScript from "@/pages/FrontEndPages/JavaScriptPages/JavaScript";
 // import JavaScriptCode from "@/pages/JavaScriptPages/JavaScriptCode";
 
 // Markdown
-import Markdown from "@/pages/MarkdownPages/Markdown";
+import Markdown from "@/pages/FrontEndPages/MarkdownPages/Markdown";
 // import MarkdownCode from "@/pages/MarkdownPages/MarkdownCode";
 
 // MERN and Auth
-import MernAndAuth from "@/pages/MERNAuthPages/MernAndAuth";
+import MernAndAuth from "@/pages/BackEndPages/MERNAuthPages/MernAndAuth";
 // import MernAndAuthCode from "@/pages/MERNAuthPages/MernAndAuthCode";
 
 // MongoDB
-import MongoDB from "@/pages/MongoDBPages/MongoDB";
+import MongoDB from "@/pages/BackEndPages/MongoDBPages/MongoDB";
 // import MongoDBCode from "@/pages/MongoDBPages/MongoDBCode";
 
 // Node.js
-import Node from "@/pages/NodePages/Node";
+import Node from "@/pages/BackEndPages/NodePages/Node";
 // import NodeCode from "@/pages/NodePages/NodeCode";
 
 // PostgreSQL
-import PostgreSQL from "@/pages/PostgreSQLPages/PostgreSQL";
+import PostgreSQL from "@/pages/BackEndPages/PostgreSQLPages/PostgreSQL";
 // import PostgreSQLCode from "@/pages/PostgreSQLPages/PostgreSQLCode";
 
 // Python
-import Python from "@/pages/PythonPages/Python";
+import Python from "@/pages/ProgrammingLanguagesPages/PythonPages/Python";
 // import PythonCode from "@/pages/PythonPages/PythonCode";
 
 // React and Related Frameworks
-import React from "@/pages/ReactPages/React";
+import React from "@/pages/FrontEndPages/ReactPages/React";
 // import ReactCode from "@/pages/ReactPages/ReactCode";
-import ReactAndTypeScript from "@/pages/ReactPages/ReactAndTypeScript";
+import ReactAndTypeScript from "@/pages/FrontEndPages/ReactPages/ReactAndTypeScript";
 // import ReactAndTypeScriptCode from "@/pages/ReactPages/ReactAndTypeScriptCode";
-import ReactFullStack from "@/pages/ReactPages/ReactFullStack";
+import ReactFullStack from "@/pages/FrontEndPages/ReactPages/ReactFullStack";
 // import ReactFullStackCode from "@/pages/ReactPages/ReactFullStackCode";
-import ReactNative from "@/pages/ReactPages/ReactNative";
+import ReactNative from "@/pages/FrontEndPages/ReactPages/ReactNative";
 // import ReactNativeCode from "@/pages/ReactPages/ReactNativeCode";
 
 // Redux
-import Redux from "@/pages/ReduxPages/Redux";
+import Redux from "@/pages/FrontEndPages/ReduxPages/Redux";
 // import ReduxCode from "@/pages/ReduxPages/ReduxCode";
 
 // Servers
-import Servers from "@/pages/ServerPages/Servers";
+import Servers from "@/pages/BackEndPages/ServerPages/Servers";
 // import ServerCode from "@/pages/ServerPages/ServerCode";
 
 // Testing
@@ -97,11 +97,11 @@ import Vitest from "@/pages/TestingPages/VitestTesting";
 // import VitestCode from "@/pages/TestingPages/VitestTestingCode";
 
 // TypeScript
-import TypeScript from "@/pages/TypeScriptPages/TypeScript";
+import TypeScript from "@/pages/ProgrammingLanguagesPages/TypeScriptPages/TypeScript";
 // import TypeScriptCode from "@/pages/TypeScriptPages/TypeScriptCode";
 
 // Vue
-import Vue from "@/pages/VuePages/Vue";
+import Vue from "@/pages/FrontEndPages/VuePages/Vue";
 // import VueCode from "@/pages/VuePages/VueCode";
 
 export const router = createBrowserRouter([
