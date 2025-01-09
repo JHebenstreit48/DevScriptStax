@@ -1,4 +1,4 @@
-import { Subpage } from "@/Navigation/FrontEndPages/NavigationTypes";
+import { Subpage } from "@/Navigation/FrontEndNavigation/NavigationTypes";
 
 const GatsbyNavigation: Subpage = {
   name: "Gatsby",
