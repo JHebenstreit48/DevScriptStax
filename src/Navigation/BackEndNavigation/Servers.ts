@@ -1,4 +1,4 @@
-import { Subpage } from "@/Navigation/FrontEndNavigation/NavigationTypes";
+import { Subpage } from "@/Navigation/NavigationTypes";
 
 const ServersNavigation: Subpage = {
   name: "Servers",
@@ -18,9 +18,15 @@ const ServersNavigation: Subpage = {
       subpages: [
         { name: "Introduction to Nginx", path: "/servers/nginx/intro" },
         { name: "Nginx Configuration", path: "/servers/nginx/configuration" },
-        { name: "Reverse Proxy with Nginx", path: "/servers/nginx/reverseproxy" },
+        {
+          name: "Reverse Proxy with Nginx",
+          path: "/servers/nginx/reverseproxy",
+        },
         { name: "Nginx Caching", path: "/servers/nginx/caching" },
-        { name: "Nginx Performance Optimization", path: "/servers/nginx/performance" },
+        {
+          name: "Nginx Performance Optimization",
+          path: "/servers/nginx/performance",
+        },
       ],
     },
     {
@@ -30,15 +36,27 @@ const ServersNavigation: Subpage = {
         { name: "Apache Configuration", path: "/servers/apache/configuration" },
         { name: "Modules in Apache", path: "/servers/apache/modules" },
         { name: "Apache Virtual Hosts", path: "/servers/apache/virtualhosts" },
-        { name: "Apache Security Best Practices", path: "/servers/apache/security" },
+        {
+          name: "Apache Security Best Practices",
+          path: "/servers/apache/security",
+        },
       ],
     },
     {
       name: "Advanced Server Topics",
       subpages: [
-        { name: "High Availability", path: "/servers/advanced/highavailability" },
-        { name: "Scaling Server Infrastructure", path: "/servers/advanced/scaling" },
-        { name: "Server Monitoring Tools", path: "/servers/advanced/monitoring" },
+        {
+          name: "High Availability",
+          path: "/servers/advanced/highavailability",
+        },
+        {
+          name: "Scaling Server Infrastructure",
+          path: "/servers/advanced/scaling",
+        },
+        {
+          name: "Server Monitoring Tools",
+          path: "/servers/advanced/monitoring",
+        },
         { name: "Server Automation", path: "/servers/advanced/automation" },
       ],
     },

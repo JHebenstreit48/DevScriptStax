@@ -1,4 +1,4 @@
-import { Subpage } from "@/Navigation/FrontEndNavigation/NavigationTypes";
+import { Subpage } from "@/Navigation/NavigationTypes";
 
 const ReduxNavigation: Subpage = {
   name: "Redux",
