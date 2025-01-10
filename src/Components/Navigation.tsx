@@ -7,56 +7,6 @@ import { Page, Subpage } from "@/Navigation/FrontEndNavigation/NavigationTypes";
 // Prepare the navigation data for rendering
 const navigationPages: Page[] = pages;
 
-//       {
-//         name: "Databases",
-//         subpages: [
-//           {
-//             name: "Firebase",
-//             subpages: [
-//               { name: "Firebase Notes", path: "/databases/firebase" },
-//               { name: "Firebase Code Notes", path: "/databases/firebase/firebasecode" },
-//             ],
-//           },
-//           {
-//             name: "MongoDB",
-//             subpages: [
-//               { name: "MongoDB Notes", path: "/databases/mongodb" },
-//               { name: "MongoDB Code Notes", path: "/databases/mongodb/mongodbcode" },
-//             ],
-//           },
-//           {
-//             name: "MySQL",
-//             subpages: [
-//               { name: "MySQL Notes", path: "/databases/mysql" },
-//               { name: "MySQL Code Notes", path: "/databases/mysql/mysqlcode" },
-//             ],
-//           },
-//           {
-//             name: "PostgreSQL",
-//             subpages: [
-//               { name: "PostgreSQL Notes", path: "/databases/postgresql" },
-//               { name: "PostgreSQL Code Notes", path: "/databases/postgresql/postgresqlcode" },
-//             ],
-//           },
-//           {
-//             name: "Redis",
-//             subpages: [
-//               { name: "Redis Notes", path: "/databases/redis" },
-//               { name: "Redis Code Notes", path: "/databases/redis/rediscode" },
-//             ],
-//           },
-//           {
-//             name: "SQLite",
-//             subpages: [
-//               { name: "SQLite Notes", path: "/databases/sqlite" },
-//               { name: "SQLite Code Notes", path: "/databases/sqlite/sqlitecode" },
-//             ],
-//           },
-//         ],
-//       },
-//     ],
-//   },  
-//   {
 //     name: "Tools",
 //     subpages: [
 //       {
