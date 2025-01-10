@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import pages from "@/Navigation/FrontEndNavigation/Pages";
-import { Page, Subpage } from "@/Navigation/FrontEndNavigation/NavigationTypes";
+import pages from "@/Navigation/Pages";
+import { Page, Subpage } from "@/Navigation/NavigationTypes";
 // Define an array of page objects with subpages
 
 // Prepare the navigation data for rendering

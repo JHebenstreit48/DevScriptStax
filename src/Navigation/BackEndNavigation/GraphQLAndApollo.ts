@@ -1,4 +1,4 @@
-import { Subpage } from "@/Navigation/FrontEndNavigation/NavigationTypes";
+import { Subpage } from "@/Navigation/NavigationTypes";
 
 const GraphQLAndApolloNavigation: Subpage = {
   name: "GraphQL & Apollo",
@@ -20,7 +20,10 @@ const GraphQLAndApolloNavigation: Subpage = {
         { name: "Setting Up Apollo Server", path: "/apolloserver/setup" },
         { name: "Resolvers", path: "/apolloserver/resolvers" },
         { name: "Apollo Middleware", path: "/apolloserver/middleware" },
-        { name: "Authentication with Apollo", path: "/apolloserver/authentication" },
+        {
+          name: "Authentication with Apollo",
+          path: "/apolloserver/authentication",
+        },
       ],
     },
     {
@@ -37,7 +40,10 @@ const GraphQLAndApolloNavigation: Subpage = {
       subpages: [
         { name: "Custom Scalars", path: "/graphql/advanced/customscalars" },
         { name: "Directives", path: "/graphql/advanced/directives" },
-        { name: "GraphQL Performance Optimization", path: "/graphql/advanced/performance" },
+        {
+          name: "GraphQL Performance Optimization",
+          path: "/graphql/advanced/performance",
+        },
         { name: "GraphQL Federation", path: "/graphql/advanced/federation" },
       ],
     },

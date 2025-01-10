@@ -1,4 +1,4 @@
-import { Subpage } from "@/Navigation/FrontEndNavigation/NavigationTypes";
+import { Subpage } from "@/Navigation/NavigationTypes";
 
 const CSSNavigation: Subpage = {
   name: "CSS",

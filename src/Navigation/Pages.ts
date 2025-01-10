@@ -1,4 +1,4 @@
-import { Page } from "@/Navigation/FrontEndNavigation/NavigationTypes";
+import { Page } from "@/Navigation/NavigationTypes";
 
 // Front-End Navigation Start
 import AngularNavigation from "@/Navigation/FrontEndNavigation/Angular";
@@ -18,9 +18,9 @@ import VueNavigation from "@/Navigation/FrontEndNavigation/Vue";
 import APINavigation from "@/Navigation/BackEndNavigation/APINavigation";
 import AANavigation from "@/Navigation/BackEndNavigation/AA";
 import FrameworksNavigation from "@/Navigation/BackEndNavigation/Frameworks";
-import GraphQLAndApolloNavigation from "../BackEndNavigation/GraphQLAndApollo";
-import ServersNavigation from "../BackEndNavigation/Servers";
-import DatabasesNavigation from "../BackEndNavigation/Databases";
+import GraphQLAndApolloNavigation from "@/Navigation/BackEndNavigation/GraphQLAndApollo";
+import ServersNavigation from "@/Navigation/BackEndNavigation/Servers";
+import DatabasesNavigation from "@/Navigation/BackEndNavigation/Databases";
 
 const pages: Page[] = [
   {
@@ -45,7 +45,14 @@ const pages: Page[] = [
   },
   {
     name: "Back-End",
-    subpages: [AANavigation, APINavigation, FrameworksNavigation, GraphQLAndApolloNavigation, ServersNavigation, DatabasesNavigation],
+    subpages: [
+      AANavigation,
+      APINavigation,
+      FrameworksNavigation,
+      GraphQLAndApolloNavigation,
+      ServersNavigation,
+      DatabasesNavigation,
+    ],
   },
   {
     name: "Tools",
