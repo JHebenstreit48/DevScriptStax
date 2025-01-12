@@ -12,8 +12,8 @@
   z-index: 10;
 }
 
-/* Dropdown Container */
 .dropdown {
+  margin: 0 auto;
   position: relative;
   display: inline-block;
   text-align: center;
@@ -23,22 +23,19 @@
   color: rgb(240, 128, 128);
   text-decoration: none;
   display: block;
-  padding: 10px 0;
 }
 
 .dropdownLink:hover {
   background-color: rgb(60, 60, 60);
 }
 
-/* Dropdown Button */
 .dropdownButton {
   background-color: transparent;
   border: none;
-  padding: 9px 40px;
+  padding: 0 40px;
   font-size: 1.8rem;
   cursor: pointer;
   text-align: center;
-  position: relative;
   color: rgb(7, 193, 255);
 }
 
@@ -64,46 +61,23 @@
   color: rgb(0, 255, 127);
 }
 
-/* Dropdown Arrow */
-.dropdownArrow {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  border: solid white;
-  border-width: 0 2px 2px 0;
-  padding: 4px;
-}
-
-.dropdownArrow.up {
-  transform: rotate(-135deg);
-}
-
-.dropdownArrow.down {
-  transform: rotate(45deg);
-}
-
 /* Dropdown Content */
 .dropdownContent {
   position: absolute;
-  top: 100%;
-  left: 0;
+  left: 81px;
   background-color: rgb(38, 38, 39);
-  min-width: 200px;
+  min-width: 15rem;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-  z-index: 999;
-  padding: 0;
   border-radius: 5px;
-  display: none;
 }
 
 .dropdownContent.active {
-  display: flex;
+  display: block;
   flex-direction: column;
-  max-height: 30rem;
-  margin-top: 1rem;
+  margin: 0 auto;
+  width: 17rem;
+  max-height: 31.2rem;
+  margin-top: 2rem;
   overflow-y: auto;
   scrollbar-width: thin; /* For Firefox */
   scrollbar-color: transparent transparent; /* Default transparent for Firefox */
@@ -133,15 +107,17 @@
 
 /* Sub-dropdown Menu */
 .dropdownMenu {
-  display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   padding: 10px;
-  border-radius: 5px;
-  z-index: 100;
 }
 
 .dropdownMenu.active {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   margin: 0;
   padding: 0;

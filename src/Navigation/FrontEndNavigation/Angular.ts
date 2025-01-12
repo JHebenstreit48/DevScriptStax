@@ -6,7 +6,7 @@ const AngularNavigation: Subpage = {
     {
       name: "Angular Basics",
       subpages: [
-        { name: "Overview", path: "/angular/overview" },
+        { name: "Overview", path: "/frontendpages/angularpages/angularoverview" },
         { name: "Creating an Angular App", path: "/angular/creating-app" },
         { name: "Angular CLI", path: "/angular/cli" },
         {
