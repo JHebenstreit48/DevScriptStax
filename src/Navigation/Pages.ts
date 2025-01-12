@@ -15,16 +15,44 @@ import VueNavigation from "@/Navigation/FrontEndNavigation/Vue";
 // Front-End Navigation End
 
 // Back-End Navigation Start
-import APINavigation from "@/Navigation/BackEndNavigation/APINavigation";
+import APINavigation from "@/Navigation/BackEndNavigation/API";
 import AANavigation from "@/Navigation/BackEndNavigation/AA";
-import FrameworksNavigation from "@/Navigation/BackEndNavigation/Frameworks";
+
+// Frameworks Navigation Start
+import DjangoNavigation from "@/Navigation/BackEndNavigation/FrameworksNavigation/Django";
+import ExpressJSNavigation from "@/Navigation/BackEndNavigation/FrameworksNavigation/ExpressJS";
+import FlaskNavigation from "@/Navigation/BackEndNavigation/FrameworksNavigation/Flask";
+import KoaJSNavigation from "@/Navigation/BackEndNavigation/FrameworksNavigation/KoaJS";
+import MERNNavigation from "@/Navigation/BackEndNavigation/FrameworksNavigation/MERN";
+import NodeJSNavigation from "./BackEndNavigation/FrameworksNavigation/NodeJS";
+import RubyNavigation from "./BackEndNavigation/FrameworksNavigation/Ruby";
+import SpringBootNavigation from "./BackEndNavigation/FrameworksNavigation/SpringBoot";
+import WebSocketsNavigation from "./BackEndNavigation/FrameworksNavigation/WebSockets";
+// Frameworks Navigation End
+
 import GraphQLAndApolloNavigation from "@/Navigation/BackEndNavigation/GraphQLAndApollo";
-import ServersNavigation from "@/Navigation/BackEndNavigation/Servers";
-import DatabasesNavigation from "@/Navigation/BackEndNavigation/Databases";
 // Back-End Navigation End
 
 // Programming Languages Navigation Start
-import PythonNavigation from "./ProgrammingLanguaguesNavigation/Python";
+import PythonNavigation from "@/Navigation/ProgrammingLanguaguesNavigation/Python";
+import RustNavigation from "@/Navigation/ProgrammingLanguaguesNavigation/Rust";
+import TypeScriptNavigation from "@/Navigation/ProgrammingLanguaguesNavigation/Typescript";
+//
+
+// Testing Navigation Start
+import E2ETestingNavigation from "@/Navigation/TestingNavigation/End2EndTesting";
+// Testing Navigation End
+
+// Tools Navigation Start
+import APIToolsNavigation from "@/Navigation/ToolsNavigation/APITools";
+import CICDToolsNavigation from "@/Navigation/ToolsNavigation/CIDCTools";
+
+
+
+
+
+
+// Tools Navigation End
 
 const pages: Page[] = [
   {
@@ -52,23 +80,46 @@ const pages: Page[] = [
     subpages: [
       AANavigation,
       APINavigation,
-      FrameworksNavigation,
+      {
+        name: "Frameworks",
+        subpages: [
+          DjangoNavigation,
+          ExpressJSNavigation,
+          FlaskNavigation,
+          KoaJSNavigation,
+          MERNNavigation,
+          NodeJSNavigation,
+          RubyNavigation,
+          SpringBootNavigation,
+          WebSocketsNavigation,
+        ],
+      },
       GraphQLAndApolloNavigation,
-      ServersNavigation,
-      DatabasesNavigation,
+      {
+        name: "Servers",
+        subpages: [
+
+        ]
+      },
+      {
+        name: "Databases",
+        subpages: [
+
+        ],
+      },
     ],
   },
   {
     name: "Tools",
-    subpages: [],
+    subpages: [APIToolsNavigation, CICDToolsNavigation],
   },
   {
     name: "Testing",
-    subpages: [],
+    subpages: [E2ETestingNavigation],
   },
   {
     name: "Programming Languages",
-    subpages: [PythonNavigation, ],
+    subpages: [PythonNavigation, RustNavigation, TypeScriptNavigation],
   },
 ];
 

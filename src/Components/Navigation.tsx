@@ -13,47 +13,6 @@ type DropdownDirection = "up" | "down" | "start" | "end";
 
 // Prepare the navigation data for rendering
 const navigationPages: Page[] = pages;
-
-//     name: "Tools",
-//     subpages: [
-//       {
-//         name: "API Tools",
-//         subpages: [
-//           {
-//             name: "Insomnia",
-//             subpages: [
-//               { name: "Insomnia Notes", path: "/tools/api/insomnia" },
-//               { name: "Insomnia Code Notes", path: "/tools/api/insomnia/insomniacode" },
-//             ],
-//           },
-//           {
-//             name: "Postman",
-//             subpages: [
-//               { name: "Postman Notes", path: "/tools/api/postman" },
-//               { name: "Postman Code Notes", path: "/tools/api/postman/postmancode" },
-//             ],
-//           },
-//         ],
-//       },
-//       {
-//         name: "CI/CD Tools",
-//         subpages: [
-//           {
-//             name: "CircleCI",
-//             subpages: [
-//               { name: "CircleCI Notes", path: "/tools/cicd/circleci" },
-//               { name: "CircleCI Code Notes", path: "/tools/cicd/circleci/circlecicode" },
-//             ],
-//           },
-//           {
-//             name: "Jenkins",
-//             subpages: [
-//               { name: "Jenkins Notes", path: "/tools/cicd/jenkins" },
-//               { name: "Jenkins Code Notes", path: "/tools/cicd/jenkins/jenkinscode" },
-//             ],
-//           },
-//         ],
-//       },
 //       {
 //         name: "Code Quality",
 //         subpages: [
@@ -115,26 +74,6 @@ const navigationPages: Page[] = pages;
 //   },
 //   {
 //     name: "Testing",
-//     subpages: [
-//       {
-//         name: "End-to-End Testing",
-//         subpages: [
-//           {
-//             name: "Cypress Testing",
-//             subpages: [
-//               { name: "Cypress Testing Notes", path: "/testing/e2e/cypress" },
-//               { name: "Cypress Testing Code Notes", path: "/testing/e2e/cypresscode" },
-//             ],
-//           },
-//           {
-//             name: "Playwright",
-//             subpages: [
-//               { name: "Playwright Notes", path: "/testing/e2e/playwright" },
-//               { name: "Playwright Code Notes", path: "/testing/e2e/playwrightcode" },
-//             ],
-//           },
-//         ],
-//       },
 //       {
 //         name: "Framework Testing",
 //         subpages: [
@@ -151,38 +90,6 @@ const navigationPages: Page[] = pages;
 //               { name: "Vitest Notes", path: "/testing/framework/vitest" },
 //               { name: "Vitest Code Notes", path: "/testing/framework/vitestcode" },
 //             ],
-//           },
-//         ],
-//       },
-//     ],
-//   },
-//   {
-//     name: "Programming Languages",
-//     subpages: [
-//       {
-//         name: "Python",
-//         subpages: [
-//           { name: "Python Notes", path: "/python" },
-//           { name: "Python Code Notes", path: "/python/pythoncode" },
-//         ],
-//       },
-//       {
-//         name: "Rust",
-//         subpages: [
-//           { name: "Rust Notes", path: "/rust" },
-//           { name: "Rust Code Notes", path: "/rust/rustcode" },
-//         ],
-//       },
-//       {
-//         name: "TypeScript",
-//         subpages: [
-//           { name: "TypeScript Notes", path: "/typescript" },
-//           { name: "TypeScript Code Notes", path: "/typescript/typescriptcode" },
-//         ],
-//       },
-//     ],
-//   },
-// ];
 
 interface NavigationProps {
   dropdownDirection?: DropdownDirection; // Define the dropdownDirection prop
@@ -330,6 +237,5 @@ const Navigation: React.FC<NavigationProps> = ({ dropdownDirection = "down" }) =
     </div>
   );
 };
-
 
 export default Navigation;
