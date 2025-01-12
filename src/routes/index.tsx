@@ -13,7 +13,7 @@ import ApolloServer from "@/pages/BackEndPages/ApolloServerPages/ApolloServer";
 // import ApolloServerCode from "@/pages/ApolloServerPages/ApolloServerCode";
 
 // Angular
-import Angular from "@/pages/FrontEndPages/AngularPages/Angular";
+import AngularOverview from "@/pages/FrontEndPages/AngularPages/AngularOverview";
 // import AngularCode from "@/pages/AngularPages/AngularCode";
 
 // CICD Ops
@@ -116,8 +116,8 @@ export const router = createBrowserRouter([
                 element: <Home />,
             },
             {
-                path: '/angular',
-                element: <Angular />,
+                path: '/frontendpages/angularpages/angularoverview',
+                element: <AngularOverview />,
             },
             // {
             //     path: '/angular/angularcode',

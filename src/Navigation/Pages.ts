@@ -21,6 +21,10 @@ import FrameworksNavigation from "@/Navigation/BackEndNavigation/Frameworks";
 import GraphQLAndApolloNavigation from "@/Navigation/BackEndNavigation/GraphQLAndApollo";
 import ServersNavigation from "@/Navigation/BackEndNavigation/Servers";
 import DatabasesNavigation from "@/Navigation/BackEndNavigation/Databases";
+// Back-End Navigation End
+
+// Programming Languages Navigation Start
+import PythonNavigation from "./ProgrammingLanguaguesNavigation/Python";
 
 const pages: Page[] = [
   {
@@ -28,7 +32,7 @@ const pages: Page[] = [
     subpages: [],
   },
   {
-    name: "Front-End",
+    name: "Front End",
     subpages: [
       AngularNavigation,
       CSSNavigation,
@@ -44,7 +48,7 @@ const pages: Page[] = [
     ],
   },
   {
-    name: "Back-End",
+    name: "Back End",
     subpages: [
       AANavigation,
       APINavigation,
@@ -64,7 +68,7 @@ const pages: Page[] = [
   },
   {
     name: "Programming Languages",
-    subpages: [],
+    subpages: [PythonNavigation, ],
   },
 ];
 

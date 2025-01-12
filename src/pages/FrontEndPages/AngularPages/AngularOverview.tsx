@@ -2,13 +2,13 @@ import Header from "@/Components/Header";
 import Notes from "@/Components/Notes";
 import "@/CSS/Notes.css"
 
-const Angular = () => {
+const AngularOverview = () => {
     const markdownFilePath = '/AngularNotes/Angular.md';
 
     return (
 
         <>
-            <Header text="Angular" />
+            <Header text="Angular Overview" />
             <Notes
                 filePath={markdownFilePath}
                 markdownContent="markdownContent"
@@ -18,4 +18,4 @@ const Angular = () => {
 
 };
 
-export default Angular;
+export default AngularOverview;
