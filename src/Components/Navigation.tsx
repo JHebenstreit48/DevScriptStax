@@ -14,33 +14,12 @@ type DropdownDirection = "up" | "down" | "start" | "end";
 // Prepare the navigation data for rendering
 const navigationPages: Page[] = pages;
 
-//       {
-//         name: "Package Management & Bundling",
-//         subpages: [
-//           {
-//             name: "Babel",
-//             subpages: [
-//               { name: "Babel Notes", path: "/tools/packaging/babel" },
-//               { name: "Babel Code Notes", path: "/tools/packaging/babel/babelcode" },
-//             ],
-//           },
-//           {
-//             name: "Webpack",
-//             subpages: [
-//               { name: "Webpack Notes", path: "/tools/packaging/webpack" },
-//               { name: "Webpack Code Notes", path: "/tools/packaging/webpack/webpackcode" },
-//             ],
-//           },
-//         ],
-//       },
-//       {
 //         name: "Containerization",
 //         subpages: [
 //           {
 //             name: "Docker",
 //             subpages: [
-//               { name: "Docker Notes", path: "/tools/containerization/docker" },
-//               { name: "Docker Code Notes", path: "/tools/containerization/docker/dockercode" },
+
 //             ],
 //           },
 //         ],
@@ -48,14 +27,12 @@ const navigationPages: Page[] = pages;
 //       {
 //         name: "Git",
 //         subpages: [
-//           { name: "Git Notes", path: "/git" },
-//           { name: "Git Code Notes", path: "/git/gitcode" },
+
 //         ],
 //       },
 //     ],
 //   },
 //   {
-
 interface NavigationProps {
   dropdownDirection?: DropdownDirection; // Define the dropdownDirection prop
 }
