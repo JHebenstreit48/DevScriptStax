@@ -84,11 +84,23 @@ import ESLintNavigation from "@/Navigation/ToolsNavigation/CodeQualityNavigation
 import PrettierNavigation from "@/Navigation/ToolsNavigation/CodeQualityNavigation/Prettier";
 // Code Quality Navigation End
 
+// Package Management & Bundling Navigation Start
+import BabelNavigation from "./ToolsNavigation/PackageManagementAndBundlingNavigation/Babel";
+import WebpackNavigation from "./ToolsNavigation/PackageManagementAndBundlingNavigation/WebpackPage";
+// Package Management & Bundling Navigation End
+
+// Containerization Navigation Start
+import DockerNavigation from "./ToolsNavigation/ContainerizationNavigation/Docker";
+import GitNavigation from "./ToolsNavigation/ContainerizationNavigation/Git";
+// Containerization Navigation End
+
 // Tools Navigation End
 
 // GraphQL & Apollo Navigation Start
 import GraphQLNavigation from "@/Navigation/GraphQLAndApolloNavigation/GraphQLPages";
 import ApolloNavigation from "@/Navigation/GraphQLAndApolloNavigation/Apollo";
+
+
 // GraphQL & Apollo Navigation End
 
 const pages: Page[] = [
@@ -109,7 +121,7 @@ const pages: Page[] = [
       ReactNavigation,
       ReduxNavigation,
       SvelteNavigation,
-      VueNavigation
+      VueNavigation,
     ],
   },
   {
@@ -128,16 +140,12 @@ const pages: Page[] = [
           NodeJSNavigation,
           RubyNavigation,
           SpringBootNavigation,
-          WebSocketsNavigation
+          WebSocketsNavigation,
         ],
       },
       {
         name: "Servers",
-        subpages: [
-          ServersGeneralNavigation,
-          NginxNavigation,
-          ApacheNavigation
-        ]
+        subpages: [ServersGeneralNavigation, NginxNavigation, ApacheNavigation],
       },
       {
         name: "Databases",
@@ -147,7 +155,7 @@ const pages: Page[] = [
           MySQLNavigation,
           PostgreSQLNavigation,
           RedisNavigation,
-          SQLiteNavigation
+          SQLiteNavigation,
         ],
       },
     ],
@@ -157,38 +165,23 @@ const pages: Page[] = [
     subpages: [
       {
         name: "API Tools",
-        subpages: [
-          InsomniaNavigation,
-          PostmanNavigation
-        ]
+        subpages: [InsomniaNavigation, PostmanNavigation],
       },
       {
         name: "CICD Tools",
-        subpages: [
-          CircleCINavigation,
-          JenkinsNavigation
-        ]
+        subpages: [CircleCINavigation, JenkinsNavigation],
       },
       {
         name: "Code Quality",
-        subpages: [
-          ESLintNavigation,
-          PrettierNavigation
-        ],
+        subpages: [ESLintNavigation, PrettierNavigation],
       },
       {
         name: "Package Management & Bundling",
-        subpages: [
-          BabelNavigation,
-          WebpackNavigation
-        ],
+        subpages: [BabelNavigation, WebpackNavigation],
       },
       {
         name: "Containerization",
-        subpages: [
-          DockerNavigation,
-          GitNavigation
-        ],
+        subpages: [DockerNavigation, GitNavigation],
       },
     ],
   },
@@ -197,34 +190,21 @@ const pages: Page[] = [
     subpages: [
       {
         name: "End To End Testing",
-        subpages: [
-          CypressNavigation,
-          PlaywrightNavigation
-        ],
+        subpages: [CypressNavigation, PlaywrightNavigation],
       },
       {
         name: "Framework Testing",
-        subpages: [
-          JestNavigation,
-          VitestNavigation
-        ]
+        subpages: [JestNavigation, VitestNavigation],
       },
     ],
   },
   {
     name: "Programming Languages",
-    subpages: [
-      PythonNavigation,
-      RustNavigation,
-      TypeScriptNavigation
-    ],
+    subpages: [PythonNavigation, RustNavigation, TypeScriptNavigation],
   },
   {
     name: "GraphQL & Apollo",
-    subpages: [
-      GraphQLNavigation,
-      ApolloNavigation
-    ],
+    subpages: [GraphQLNavigation, ApolloNavigation],
   },
 ];
 
