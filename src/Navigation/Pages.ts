@@ -12,6 +12,7 @@ import ReactNavigation from "@/Navigation/FrontEndNavigation/React";
 import ReduxNavigation from "@/Navigation/FrontEndNavigation/Redux";
 import SvelteNavigation from "@/Navigation/FrontEndNavigation/Svelte";
 import VueNavigation from "@/Navigation/FrontEndNavigation/Vue";
+import ViteNavigation from "@/Navigation/FrontEndNavigation/Vite"; // Added Vite
 // Front-End Navigation End
 
 // Back-End Navigation Start
@@ -39,19 +40,32 @@ import SpringBootNavigation from "@/Navigation/BackEndNavigation/FrameworksNavig
 import WebSocketsNavigation from "@/Navigation/BackEndNavigation/FrameworksNavigation/WebSockets";
 // Frameworks Navigation End
 
-// Servers Navigation Start
-import ServersGeneralNavigation from "@/Navigation/BackEndNavigation/ServersNavigation/ServersGeneral";
-import ApacheNavigation from "@/Navigation/BackEndNavigation/ServersNavigation/Apache";
-import NginxNavigation from "@/Navigation/BackEndNavigation/ServersNavigation/Nginx";
-// Servers Navigation End
+// Web Servers Navigation Start
+import ServersGeneralNavigation from "@/Navigation/BackEndNavigation/WebServersNavigation/ServersGeneral";
+import ApacheNavigation from "@/Navigation/BackEndNavigation/WebServersNavigation/Apache";
+import NginxNavigation from "@/Navigation/BackEndNavigation/WebServersNavigation/Nginx";
+// Web Servers Navigation End
 
 // Back-End Navigation End
 
+// Cloud Services Navigation Start
+import AWSLambdaNavigation from "@/Navigation/CloudServicesNavigation/AWSLambda";
+import GoogleCloudFunctionsNavigation from "@/Navigation/CloudServicesNavigation/GoogleCloudFunctions";
+import AzureFunctionsNavigation from "@/Navigation/CloudServicesNavigation/AzureFunctions";
+import FirebaseCloudNavigation from "@/Navigation/CloudServicesNavigation/FirebaseCloud";
+import CloudflareWorkersNavigation from "@/Navigation/CloudServicesNavigation/CloudflareWorkers";
+import ServerlessFrameworkNavigation from "@/Navigation/CloudServicesNavigation/ServerlessFramework";
+import NetlifyFunctionsNavigation from "@/Navigation/CloudServicesNavigation/NetlifyFunctions";
+import VercelFunctionsNavigation from "@/Navigation/CloudServicesNavigation/VercelFunctions";
+// Cloud Services Navigation End
+
 // Programming Languages Navigation Start
-import PythonNavigation from "@/Navigation/ProgrammingLanguaguesNavigation/Python";
-import RustNavigation from "@/Navigation/ProgrammingLanguaguesNavigation/Rust";
-import TypeScriptNavigation from "@/Navigation/ProgrammingLanguaguesNavigation/Typescript";
-//
+import PythonNavigation from "@/Navigation/ProgrammingLanguagesNavigation/Python";
+import RustNavigation from "@/Navigation/ProgrammingLanguagesNavigation/Rust";
+import TypeScriptNavigation from "@/Navigation/ProgrammingLanguagesNavigation/Typescript";
+import GoNavigation from "@/Navigation/ProgrammingLanguagesNavigation/Go"; // Added Go
+import DartNavigation from "@/Navigation/ProgrammingLanguagesNavigation/Dart"; // Added Dart
+// Programming Languages Navigation End
 
 // Testing Navigation Start
 
@@ -61,10 +75,18 @@ import PlaywrightNavigation from "@/Navigation/TestingNavigation/End2EndTestingN
 // End To End Testing Navigation End
 
 // Framework Testing Navigation Start
-
-// Framework Testing Navigation End
 import JestNavigation from "@/Navigation/TestingNavigation/FrameworkTestingNavigation/Jest";
 import VitestNavigation from "@/Navigation/TestingNavigation/FrameworkTestingNavigation/Vitest";
+import MochaNavigation from "@/Navigation/TestingNavigation/FrameworkTestingNavigation/Mocha"; // Added Mocha
+// Framework Testing Navigation End
+
+// Unit Testing Navigation Start
+import PytestNavigation from "@/Navigation/TestingNavigation/UnitTestingNavigation/Pytest"; // Python
+import RSpecNavigation from "@/Navigation/TestingNavigation/UnitTestingNavigation/RSpec"; // Ruby
+import PHPUnitNavigation from "@/Navigation/TestingNavigation/UnitTestingNavigation/PHPUnit"; // PHP
+import TestifyNavigation from "@/Navigation/TestingNavigation/UnitTestingNavigation/Testify"; // Go
+// Unit Testing Navigation End
+
 // Testing Navigation End
 
 // Tools Navigation Start
@@ -76,22 +98,24 @@ import PostmanNavigation from "@/Navigation/ToolsNavigation/APIToolsNavigation/P
 
 // CICD Tools Navigation Start
 import CircleCINavigation from "@/Navigation/ToolsNavigation/CICDToolsNavigation/CircleCI";
-import JenkinsNavigation from "@/Navigation/ToolsNavigation/CICDToolsNavigation/CircleCI";
+import JenkinsNavigation from "@/Navigation/ToolsNavigation/CICDToolsNavigation/Jenkins";
 // CICD Tools Navigation End
 
 // Code Quality Navigation Start
 import ESLintNavigation from "@/Navigation/ToolsNavigation/CodeQualityNavigation/ESLint";
 import PrettierNavigation from "@/Navigation/ToolsNavigation/CodeQualityNavigation/Prettier";
+import TSLintNavigation from "@/Navigation/ToolsNavigation/CodeQualityNavigation/TSLint"; // Added TSLint
+import StandardJSNavigation from "@/Navigation/ToolsNavigation/CodeQualityNavigation/StandardJS"; // Added StandardJS
 // Code Quality Navigation End
 
 // Package Management & Bundling Navigation Start
-import BabelNavigation from "./ToolsNavigation/PackageManagementAndBundlingNavigation/Babel";
-import WebpackNavigation from "./ToolsNavigation/PackageManagementAndBundlingNavigation/WebpackPage";
+import BabelNavigation from "@/Navigation/ToolsNavigation/PackageManagementAndBundlingNavigation/Babel";
+import WebpackNavigation from "@/Navigation/ToolsNavigation/PackageManagementAndBundlingNavigation/WebpackPage";
 // Package Management & Bundling Navigation End
 
 // Containerization Navigation Start
-import DockerNavigation from "./ToolsNavigation/ContainerizationNavigation/Docker";
-import GitNavigation from "./ToolsNavigation/ContainerizationNavigation/Git";
+import DockerNavigation from "@/Navigation/ToolsNavigation/ContainerizationNavigation/Docker";
+import GitNavigation from "@/Navigation/ToolsNavigation/ContainerizationNavigation/Git";
 // Containerization Navigation End
 
 // Tools Navigation End
@@ -99,8 +123,6 @@ import GitNavigation from "./ToolsNavigation/ContainerizationNavigation/Git";
 // GraphQL & Apollo Navigation Start
 import GraphQLNavigation from "@/Navigation/GraphQLAndApolloNavigation/GraphQLPages";
 import ApolloNavigation from "@/Navigation/GraphQLAndApolloNavigation/Apollo";
-
-
 // GraphQL & Apollo Navigation End
 
 const pages: Page[] = [
@@ -122,6 +144,7 @@ const pages: Page[] = [
       ReduxNavigation,
       SvelteNavigation,
       VueNavigation,
+      ViteNavigation, // Modern Build Tool
     ],
   },
   {
@@ -144,8 +167,12 @@ const pages: Page[] = [
         ],
       },
       {
-        name: "Servers",
-        subpages: [ServersGeneralNavigation, NginxNavigation, ApacheNavigation],
+        name: "Web Servers",
+        subpages: [
+          ServersGeneralNavigation,
+          NginxNavigation,
+          ApacheNavigation,
+        ],
       },
       {
         name: "Databases",
@@ -161,27 +188,35 @@ const pages: Page[] = [
     ],
   },
   {
-    name: "Tools",
+    name: "Cloud Services",
     subpages: [
       {
-        name: "API Tools",
-        subpages: [InsomniaNavigation, PostmanNavigation],
+        name: "Serverless Computing",
+        subpages: [
+          AWSLambdaNavigation,
+          GoogleCloudFunctionsNavigation,
+          AzureFunctionsNavigation,
+          FirebaseCloudNavigation,
+        ],
       },
       {
-        name: "CICD Tools",
-        subpages: [CircleCINavigation, JenkinsNavigation],
+        name: "Edge Computing",
+        subpages: [
+          CloudflareWorkersNavigation,
+        ],
       },
       {
-        name: "Code Quality",
-        subpages: [ESLintNavigation, PrettierNavigation],
+        name: "Frameworks",
+        subpages: [
+          ServerlessFrameworkNavigation,
+        ],
       },
       {
-        name: "Package Management & Bundling",
-        subpages: [BabelNavigation, WebpackNavigation],
-      },
-      {
-        name: "Containerization",
-        subpages: [DockerNavigation, GitNavigation],
+        name: "Full-Stack Tools",
+        subpages: [
+          NetlifyFunctionsNavigation,
+          VercelFunctionsNavigation,
+        ],
       },
     ],
   },
@@ -190,21 +225,88 @@ const pages: Page[] = [
     subpages: [
       {
         name: "End To End Testing",
-        subpages: [CypressNavigation, PlaywrightNavigation],
+        subpages: [
+          CypressNavigation,
+          PlaywrightNavigation,
+        ],
       },
       {
         name: "Framework Testing",
-        subpages: [JestNavigation, VitestNavigation],
+        subpages: [
+          JestNavigation,
+          VitestNavigation,
+          MochaNavigation,
+        ],
+      },
+      {
+        name: "Unit Testing",
+        subpages: [
+          PytestNavigation,
+          RSpecNavigation,
+          PHPUnitNavigation,
+          TestifyNavigation,
+        ],
+      },
+    ],
+  },
+  {
+    name: "Tools",
+    subpages: [
+      {
+        name: "API Tools",
+        subpages: [
+          InsomniaNavigation,
+          PostmanNavigation,
+        ],
+      },
+      {
+        name: "CICD Tools",
+        subpages: [
+          CircleCINavigation,
+          JenkinsNavigation,
+        ],
+      },
+      {
+        name: "Code Quality",
+        subpages: [
+          ESLintNavigation,
+          PrettierNavigation,
+          TSLintNavigation,
+          StandardJSNavigation,
+        ],
+      },
+      {
+        name: "Package Management & Bundling",
+        subpages: [
+          BabelNavigation,
+          WebpackNavigation,
+        ],
+      },
+      {
+        name: "Containerization",
+        subpages: [
+          DockerNavigation,
+          GitNavigation,
+        ],
       },
     ],
   },
   {
     name: "Programming Languages",
-    subpages: [PythonNavigation, RustNavigation, TypeScriptNavigation],
+    subpages: [
+      PythonNavigation,
+      RustNavigation,
+      TypeScriptNavigation,
+      GoNavigation,
+      DartNavigation,
+    ],
   },
   {
     name: "GraphQL & Apollo",
-    subpages: [GraphQLNavigation, ApolloNavigation],
+    subpages: [
+      GraphQLNavigation,
+      ApolloNavigation,
+    ],
   },
 ];
 
