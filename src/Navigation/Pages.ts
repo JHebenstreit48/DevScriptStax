@@ -16,7 +16,7 @@ import VueNavigation from "@/Navigation/FrontEndNavigation/Vue";
 
 // Back-End Navigation Start
 import APINavigation from "@/Navigation/BackEndNavigation/API";
-import AANavigation from "@/Navigation/BackEndNavigation/AA";
+import AANavigation from "@/Navigation/BackEndNavigation/AuthenticationAndAuthorization";
 
 // Databases Navigation Start
 import FirebaseNavigation from "@/Navigation/BackEndNavigation/DatabaseNavigation/Firebase";
@@ -54,12 +54,35 @@ import TypeScriptNavigation from "@/Navigation/ProgrammingLanguaguesNavigation/T
 //
 
 // Testing Navigation Start
-import E2ETestingNavigation from "@/Navigation/TestingNavigation/End2EndTesting";
+
+// End To End Testing Navigation Start
+import CypressNavigation from "@/Navigation/TestingNavigation/End2EndTestingNavigation/Cypress";
+import PlaywrightNavigation from "@/Navigation/TestingNavigation/End2EndTestingNavigation/Playwright";
+// End To End Testing Navigation End
+
+// Framework Testing Navigation Start
+
+// Framework Testing Navigation End
+import JestNavigation from "@/Navigation/TestingNavigation/FrameworkTestingNavigation/Jest";
+import VitestNavigation from "@/Navigation/TestingNavigation/FrameworkTestingNavigation/Vitest";
 // Testing Navigation End
 
 // Tools Navigation Start
-import APIToolsNavigation from "@/Navigation/ToolsNavigation/APITools";
-import CICDToolsNavigation from "@/Navigation/ToolsNavigation/CIDCTools";
+
+// API Tools Navigation Start
+import InsomniaNavigation from "@/Navigation/ToolsNavigation/APIToolsNavigation/Insomnia";
+import PostmanNavigation from "@/Navigation/ToolsNavigation/APIToolsNavigation/Postman";
+// API Tools Navigation End
+
+// CICD Tools Navigation Start
+import CircleCINavigation from "@/Navigation/ToolsNavigation/CICDToolsNavigation/CircleCI";
+import JenkinsNavigation from "@/Navigation/ToolsNavigation/CICDToolsNavigation/CircleCI";
+// CICD Tools Navigation End
+
+// Code Quality Navigation Start
+import ESLintNavigation from "@/Navigation/ToolsNavigation/CodeQualityNavigation/ESLint";
+import PrettierNavigation from "@/Navigation/ToolsNavigation/CodeQualityNavigation/Prettier";
+// Code Quality Navigation End
 
 // Tools Navigation End
 
@@ -132,13 +155,61 @@ const pages: Page[] = [
   {
     name: "Tools",
     subpages: [
-      APIToolsNavigation,
-      CICDToolsNavigation
+      {
+        name: "API Tools",
+        subpages: [
+          InsomniaNavigation,
+          PostmanNavigation
+        ]
+      },
+      {
+        name: "CICD Tools",
+        subpages: [
+          CircleCINavigation,
+          JenkinsNavigation
+        ]
+      },
+      {
+        name: "Code Quality",
+        subpages: [
+          ESLintNavigation,
+          PrettierNavigation
+        ],
+      },
+      {
+        name: "Package Management & Bundling",
+        subpages: [
+          BabelNavigation,
+          WebpackNavigation
+        ],
+      },
+      {
+        name: "Containerization",
+        subpages: [
+          DockerNavigation,
+          GitNavigation
+        ],
+      },
     ],
   },
   {
     name: "Testing",
-    subpages: [E2ETestingNavigation],
+    subpages: [
+      {
+        name: "End To End Testing",
+        subpages: [
+          CypressNavigation,
+          PlaywrightNavigation
+        ],
+      },
+      {
+        name: "Framework Testing",
+        subpages: [
+          JestNavigation,
+          VitestNavigation
+        ]
+      },
+    ],
   },
   {
     name: "Programming Languages",

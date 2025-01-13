@@ -13,25 +13,7 @@ type DropdownDirection = "up" | "down" | "start" | "end";
 
 // Prepare the navigation data for rendering
 const navigationPages: Page[] = pages;
-//       {
-//         name: "Code Quality",
-//         subpages: [
-//           {
-//             name: "ESLint",
-//             subpages: [
-//               { name: "ESLint Notes", path: "/tools/codequality/eslint" },
-//               { name: "ESLint Code Notes", path: "/tools/codequality/eslintcode" },
-//             ],
-//           },
-//           {
-//             name: "Prettier",
-//             subpages: [
-//               { name: "Prettier Notes", path: "/tools/codequality/prettier" },
-//               { name: "Prettier Code Notes", path: "/tools/codequality/prettiercode" },
-//             ],
-//           },
-//         ],
-//       },
+
 //       {
 //         name: "Package Management & Bundling",
 //         subpages: [
@@ -73,23 +55,6 @@ const navigationPages: Page[] = pages;
 //     ],
 //   },
 //   {
-//     name: "Testing",
-//       {
-//         name: "Framework Testing",
-//         subpages: [
-//           {
-//             name: "Jest",
-//             subpages: [
-//               { name: "Jest Notes", path: "/testing/framework/jest" },
-//               { name: "Jest Code Notes", path: "/testing/framework/jestcode" },
-//             ],
-//           },
-//           {
-//             name: "Vitest",
-//             subpages: [
-//               { name: "Vitest Notes", path: "/testing/framework/vitest" },
-//               { name: "Vitest Code Notes", path: "/testing/framework/vitestcode" },
-//             ],
 
 interface NavigationProps {
   dropdownDirection?: DropdownDirection; // Define the dropdownDirection prop
