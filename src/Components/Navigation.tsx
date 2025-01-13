@@ -14,25 +14,6 @@ type DropdownDirection = "up" | "down" | "start" | "end";
 // Prepare the navigation data for rendering
 const navigationPages: Page[] = pages;
 
-//         name: "Containerization",
-//         subpages: [
-//           {
-//             name: "Docker",
-//             subpages: [
-
-//             ],
-//           },
-//         ],
-//       },
-//       {
-//         name: "Git",
-//         subpages: [
-
-//         ],
-//       },
-//     ],
-//   },
-//   {
 interface NavigationProps {
   dropdownDirection?: DropdownDirection; // Define the dropdownDirection prop
 }
