@@ -2,8 +2,9 @@ import Header from "@/Components/Header";
 import Notes from "@/Components/Notes";
 import "@/CSS/Notes.css"
 
+
 const AngularOverview = () => {
-    const markdownFilePath = '/AngularNotes/Angular.md';
+    const markdownFilePath = '/FrontEndNotes/AngularNotes/Angular.md';
 
     return (
 

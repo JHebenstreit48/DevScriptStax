@@ -61,12 +61,11 @@
   color: rgb(0, 255, 127);
 }
 
-/* Dropdown Content */
 .dropdownContent {
   position: absolute;
-  left: 81px;
+  left: 82px;
   background-color: rgb(38, 38, 39);
-  min-width: 15rem;
+  min-width: 18rem;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
 }
@@ -79,48 +78,36 @@
   max-height: 31.2rem;
   margin-top: 2rem;
   overflow-y: auto;
-  scrollbar-width: thin; /* For Firefox */
-  scrollbar-color: transparent transparent; /* Default transparent for Firefox */
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
 }
 
-/* WebKit Scrollbar Customization */
-.dropdownContent.active::-webkit-scrollbar {
-  width: 6px; /* Width of scrollbar */
+/* .dropdownContent.active::-webkit-scrollbar {
+  width: 6px;
 }
 
 .dropdownContent.active::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.2); /* Semi-transparent thumb */
-  border-radius: 5px; /* Rounded thumb edges */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px; 
 }
 
 .dropdownContent.active::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.4); /* Slightly less transparent on hover */
+  background: rgba(255, 255, 255, 0.4);
 }
 
 .dropdownContent.active::-webkit-scrollbar-track {
-  background: transparent; /* Fully transparent track */
+  background: transparent;
 }
 
 .dropdownContent.active::-webkit-scrollbar-button {
-  display: none; /* Hide up and down arrow buttons */
-}
-
-/* Sub-dropdown Menu */
-.dropdownMenu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  padding: 10px;
-}
+  display: none;
+} */
 
 .dropdownMenu.active {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 0;
-  padding: 0;
 }
 
 @media only screen and (max-width: 390px) {
