@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 import rehypeRaw from 'rehype-raw';
-import '../CSS/Notes.css';
+import '@/CSS/Notes.css';
 import BackToTop from './BackToTopButton';
 
 
