@@ -144,7 +144,7 @@ const pages: Page[] = [
       ReduxNavigation,
       SvelteNavigation,
       VueNavigation,
-      ViteNavigation, // Modern Build Tool
+      ViteNavigation // Modern Build Tool
     ],
   },
   {
