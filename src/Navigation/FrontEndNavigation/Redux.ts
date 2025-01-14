@@ -4,7 +4,7 @@ const ReduxNavigation: Subpage = {
   name: "Redux",
   subpages: [
     { name: "Redux Notes", path: "/redux" },
-    { name: "Redux Code Notes", path: "/redux/reduxcode" },
+    // { name: "Redux Code Notes", path: "/redux/reduxcode" },
   ],
 };
 

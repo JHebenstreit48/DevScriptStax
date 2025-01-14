@@ -1,4 +1,4 @@
-import CodePageSetup from "@/Components/Notes";
+import Notes from "@/Components/Notes";
 import Header from "@/Components/Header";
 
 const ReduxCode = () => {
@@ -9,9 +9,8 @@ const ReduxCode = () => {
         <>
 
             <Header text="Redux Notes Code" />
-            <CodePageSetup
-                filePath={markdownFilePath}
-                markdownContentCode="markdownContentCode"
+            <Notes filePath={markdownFilePath}
+                markdownContent="markdownContent"
             />
 
         </>

@@ -3,13 +3,13 @@ import Notes from "@/Components/Notes";
 import "@/CSS/Notes.css"
 
 
-const AngularOverview = () => {
-    const markdownFilePath = '/FrontEndNotes/AngularNotes/Angular.md';
+const AngularStart = () => {
+    const markdownFilePath = '/FrontEndNotes/AngularNotes/AngularBasics/AngularGettingStarted.md';
 
     return (
 
         <>
-            <Header text="Angular Overview" />
+            <Header text="Angular Getting Started" />
             <Notes
                 filePath={markdownFilePath}
                 markdownContent="markdownContent"
@@ -19,4 +19,4 @@ const AngularOverview = () => {
 
 };
 
-export default AngularOverview;
+export default AngularStart;

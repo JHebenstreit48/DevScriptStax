@@ -49,22 +49,22 @@ import NginxNavigation from "@/Navigation/BackEndNavigation/WebServersNavigation
 // Back-End Navigation End
 
 // Cloud Services Navigation Start
-import AWSLambdaNavigation from "@/Navigation/CloudServicesNavigation/AWSLambda";
-import GoogleCloudFunctionsNavigation from "@/Navigation/CloudServicesNavigation/GoogleCloudFunctions";
-import AzureFunctionsNavigation from "@/Navigation/CloudServicesNavigation/AzureFunctions";
-import FirebaseCloudNavigation from "@/Navigation/CloudServicesNavigation/FirebaseCloud";
-import CloudflareWorkersNavigation from "@/Navigation/CloudServicesNavigation/CloudflareWorkers";
-import ServerlessFrameworkNavigation from "@/Navigation/CloudServicesNavigation/ServerlessFramework";
-import NetlifyFunctionsNavigation from "@/Navigation/CloudServicesNavigation/NetlifyFunctions";
-import VercelFunctionsNavigation from "@/Navigation/CloudServicesNavigation/VercelFunctions";
+// import AWSLambdaNavigation from "@/Navigation/CloudServicesNavigation/AWSLambda";
+// import GoogleCloudFunctionsNavigation from "@/Navigation/CloudServicesNavigation/GoogleCloudFunctions";
+// import AzureFunctionsNavigation from "@/Navigation/CloudServicesNavigation/AzureFunctions";
+// import FirebaseCloudNavigation from "@/Navigation/CloudServicesNavigation/FirebaseCloud";
+// import CloudflareWorkersNavigation from "@/Navigation/CloudServicesNavigation/CloudflareWorkers";
+// import ServerlessFrameworkNavigation from "@/Navigation/CloudServicesNavigation/ServerlessFramework";
+// import NetlifyFunctionsNavigation from "@/Navigation/CloudServicesNavigation/NetlifyFunctions";
+// import VercelFunctionsNavigation from "@/Navigation/CloudServicesNavigation/VercelFunctions";
 // Cloud Services Navigation End
 
 // Programming Languages Navigation Start
 import PythonNavigation from "@/Navigation/ProgrammingLanguagesNavigation/Python";
 import RustNavigation from "@/Navigation/ProgrammingLanguagesNavigation/Rust";
 import TypeScriptNavigation from "@/Navigation/ProgrammingLanguagesNavigation/Typescript";
-import GoNavigation from "@/Navigation/ProgrammingLanguagesNavigation/Go"; // Added Go
-import DartNavigation from "@/Navigation/ProgrammingLanguagesNavigation/Dart"; // Added Dart
+// import GoNavigation from "@/Navigation/ProgrammingLanguagesNavigation/Go";
+// import DartNavigation from "@/Navigation/ProgrammingLanguagesNavigation/Dart";
 // Programming Languages Navigation End
 
 // Testing Navigation Start
@@ -77,14 +77,14 @@ import PlaywrightNavigation from "@/Navigation/TestingNavigation/End2EndTestingN
 // Framework Testing Navigation Start
 import JestNavigation from "@/Navigation/TestingNavigation/FrameworkTestingNavigation/Jest";
 import VitestNavigation from "@/Navigation/TestingNavigation/FrameworkTestingNavigation/Vitest";
-import MochaNavigation from "@/Navigation/TestingNavigation/FrameworkTestingNavigation/Mocha"; // Added Mocha
+// import MochaNavigation from "@/Navigation/TestingNavigation/FrameworkTestingNavigation/Mocha"; // Added Mocha
 // Framework Testing Navigation End
 
 // Unit Testing Navigation Start
-import PytestNavigation from "@/Navigation/TestingNavigation/UnitTestingNavigation/Pytest"; // Python
-import RSpecNavigation from "@/Navigation/TestingNavigation/UnitTestingNavigation/RSpec"; // Ruby
-import PHPUnitNavigation from "@/Navigation/TestingNavigation/UnitTestingNavigation/PHPUnit"; // PHP
-import TestifyNavigation from "@/Navigation/TestingNavigation/UnitTestingNavigation/Testify"; // Go
+// import PytestNavigation from "@/Navigation/TestingNavigation/UnitTestingNavigation/Pytest";
+// import RSpecNavigation from "@/Navigation/TestingNavigation/UnitTestingNavigation/RSpec";
+// import PHPUnitNavigation from "@/Navigation/TestingNavigation/UnitTestingNavigation/PHPUnit";
+// import TestifyNavigation from "@/Navigation/TestingNavigation/UnitTestingNavigation/Testify";
 // Unit Testing Navigation End
 
 // Testing Navigation End
@@ -104,8 +104,8 @@ import JenkinsNavigation from "@/Navigation/ToolsNavigation/CICDToolsNavigation/
 // Code Quality Navigation Start
 import ESLintNavigation from "@/Navigation/ToolsNavigation/CodeQualityNavigation/ESLint";
 import PrettierNavigation from "@/Navigation/ToolsNavigation/CodeQualityNavigation/Prettier";
-import TSLintNavigation from "@/Navigation/ToolsNavigation/CodeQualityNavigation/TSLint"; // Added TSLint
-import StandardJSNavigation from "@/Navigation/ToolsNavigation/CodeQualityNavigation/StandardJS"; // Added StandardJS
+// import TSLintNavigation from "@/Navigation/ToolsNavigation/CodeQualityNavigation/TSLint";
+// import StandardJSNavigation from "@/Navigation/ToolsNavigation/CodeQualityNavigation/StandardJS";
 // Code Quality Navigation End
 
 // Package Management & Bundling Navigation Start
@@ -193,29 +193,29 @@ const pages: Page[] = [
       {
         name: "Serverless Computing",
         subpages: [
-          AWSLambdaNavigation,
-          GoogleCloudFunctionsNavigation,
-          AzureFunctionsNavigation,
-          FirebaseCloudNavigation,
+          // AWSLambdaNavigation,
+          // GoogleCloudFunctionsNavigation,
+          // AzureFunctionsNavigation,
+          // FirebaseCloudNavigation,
         ],
       },
       {
         name: "Edge Computing",
         subpages: [
-          CloudflareWorkersNavigation,
+          // CloudflareWorkersNavigation,
         ],
       },
       {
         name: "Frameworks",
         subpages: [
-          ServerlessFrameworkNavigation,
+          // ServerlessFrameworkNavigation,
         ],
       },
       {
         name: "Full-Stack Tools",
         subpages: [
-          NetlifyFunctionsNavigation,
-          VercelFunctionsNavigation,
+          // NetlifyFunctionsNavigation,
+          // VercelFunctionsNavigation,
         ],
       },
     ],
@@ -235,16 +235,16 @@ const pages: Page[] = [
         subpages: [
           JestNavigation,
           VitestNavigation,
-          MochaNavigation,
+          // MochaNavigation,
         ],
       },
       {
         name: "Unit Testing",
         subpages: [
-          PytestNavigation,
-          RSpecNavigation,
-          PHPUnitNavigation,
-          TestifyNavigation,
+          // PytestNavigation,
+          // RSpecNavigation,
+          // PHPUnitNavigation,
+          // TestifyNavigation,
         ],
       },
     ],
@@ -271,8 +271,8 @@ const pages: Page[] = [
         subpages: [
           ESLintNavigation,
           PrettierNavigation,
-          TSLintNavigation,
-          StandardJSNavigation,
+          // TSLintNavigation,
+          // StandardJSNavigation,
         ],
       },
       {
@@ -297,8 +297,8 @@ const pages: Page[] = [
       PythonNavigation,
       RustNavigation,
       TypeScriptNavigation,
-      GoNavigation,
-      DartNavigation,
+      // GoNavigation,
+      // DartNavigation,
     ],
   },
   {

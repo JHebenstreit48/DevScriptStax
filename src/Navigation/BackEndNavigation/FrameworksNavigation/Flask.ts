@@ -7,10 +7,10 @@ const FlaskNavigation: Subpage = {
       name: "Flask Notes",
       path: "/flask",
     },
-    {
-      name: "Flask Code Notes",
-      path: "/flask/flaskcode",
-    },
+    // {
+    //   name: "Flask Code Notes",
+    //   path: "/flask/flaskcode",
+    // },
   ],
 };
 

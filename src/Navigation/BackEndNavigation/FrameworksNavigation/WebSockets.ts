@@ -7,10 +7,10 @@ const WebSocketsNavigation: Subpage = {
         name: "WebSockets Notes",
         path: "/websockets"
     },
-    {
-        name: "WebSockets Code Notes",
-        path: "/websockets/websocketscode"
-    },
+    // {
+    //     name: "WebSockets Code Notes",
+    //     path: "/websockets/websocketscode"
+    // },
   ],
 };
 

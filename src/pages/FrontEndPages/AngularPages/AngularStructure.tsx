@@ -1,14 +1,14 @@
 import Notes from "@/Components/Notes";
 import Header from "@/Components/Header";
 
-const AngularCode = () => {
-    const markdownFilePath = '/AngularNotes/AngularCode.md';
+const AngularStructure = () => {
+    const markdownFilePath = '/FrontEndNotes/AngularNotes/AngularBasics/AngularStructure.md';
 
     return (
 
         <>
 
-            <Header text="Angular Notes Code" />
+            <Header text="Angular Project Structure" />
             <Notes
                 filePath={markdownFilePath}
                 markdownContent="markdownContentCode"
@@ -19,4 +19,4 @@ const AngularCode = () => {
     );
 };
 
-export default AngularCode;
+export default AngularStructure;

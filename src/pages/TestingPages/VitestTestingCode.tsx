@@ -1,4 +1,4 @@
-import CodePageSetup from "@/Components/Notes";
+import Notes from "@/Components/Notes";
 import Header from "@/Components/Header";
 
 const VitestCode = () => {
@@ -8,9 +8,8 @@ const VitestCode = () => {
 
         <>
             <Header text="Vitest Testing Code" />
-            <CodePageSetup
-                filePath={markdownFilePath}
-                markdownContentCode="markdownContentCode"
+            <Notes filePath={markdownFilePath}
+                markdownContent="markdownContent"
             />
 
         </>

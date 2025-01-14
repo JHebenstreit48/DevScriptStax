@@ -7,10 +7,10 @@ const DjangoNavigation: Subpage = {
       name: "Django Notes",
       path: "/django",
     },
-    {
-      name: "Django Code Notes",
-      path: "/django/djangocode",
-    },
+    // {
+    //   name: "Django Code Notes",
+    //   path: "/django/djangocode",
+    // },
   ],
 };
 

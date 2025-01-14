@@ -12,9 +12,10 @@ import APIs from "@/pages/BackEndPages/APIPages/API";
 import ApolloServer from "@/pages/BackEndPages/ApolloServerPages/ApolloServer";
 // import ApolloServerCode from "@/pages/ApolloServerPages/ApolloServerCode";
 
-// Angular
-import AngularOverview from "@/pages/FrontEndPages/AngularPages/AngularOverview";
-// import AngularCode from "@/pages/AngularPages/AngularCode";
+// Angular Notes Start
+import AngularStart from "@/pages/FrontEndPages/AngularPages/AngularStart";
+import AngularStructure from "@/pages/FrontEndPages/AngularPages/AngularStructure";
+// Angular Notes End
 
 // CICD Ops
 import CICDOps from "@/pages/ToolsPages/CICDOpsPages/CICDOps";
@@ -116,13 +117,13 @@ export const router = createBrowserRouter([
                 element: <Home />,
             },
             {
-                path: '/frontendpages/angularpages/angularoverview',
-                element: <AngularOverview />,
+                path: '/frontendpages/angularpages/gettingstarted',
+                element: <AngularStart />,
             },
-            // {
-            //     path: '/angular/angularcode',
-            //     element: <AngularCode />,
-            // },
+            {
+                path: '/frontendpages/angularpages/projectstructure',
+                element: <AngularStructure />,
+            },
             {
                 path: '/apis',
                 element: <APIs />,

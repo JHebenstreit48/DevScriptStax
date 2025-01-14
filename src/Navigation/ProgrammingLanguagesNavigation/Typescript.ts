@@ -7,10 +7,10 @@ const TypeScriptNavigation: Subpage = {
         name: "TypeScript Notes",
         path: "/typescript"
     },
-    {
-        name: "TypeScript Code Notes",
-        path: "/typescript/typescriptcode"
-    },
+    // {
+    //     name: "TypeScript Code Notes",
+    //     path: "/typescript/typescriptcode"
+    // },
   ],
 };
 

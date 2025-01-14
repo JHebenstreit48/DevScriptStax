@@ -7,10 +7,10 @@ const SpringBootNavigation: Subpage = {
       name: "Spring Boot Notes",
       path: "/springboot",
     },
-    {
-      name: "Spring Boot Code Notes",
-      path: "/springboot/springbootcode",
-    },
+    // {
+    //   name: "Spring Boot Code Notes",
+    //   path: "/springboot/springbootcode",
+    // },
   ],
 };
 

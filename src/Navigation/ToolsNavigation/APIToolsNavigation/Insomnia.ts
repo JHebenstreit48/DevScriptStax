@@ -7,10 +7,10 @@ const InsomniaNavigation: Subpage = {
       name: "Insomnia Notes",
       path: "/tools/api/insomnia",
     },
-    {
-      name: "Insomnia Code Notes",
-      path: "/tools/api/insomnia/insomniacode",
-    },
+    // {
+    //   name: "Insomnia Code Notes",
+    //   path: "/tools/api/insomnia/insomniacode",
+    // },
   ],
 };
 

@@ -4,10 +4,10 @@ const DockerNavigation: Subpage = {
   name: "Docker",
   subpages: [
     { name: "Docker Notes", path: "/tools/containerization/docker" },
-    {
-      name: "Docker Code Notes",
-      path: "/tools/containerization/docker/dockercode",
-    },
+    // {
+    //   name: "Docker Code Notes",
+    //   path: "/tools/containerization/docker/dockercode",
+    // },
   ],
 };
 

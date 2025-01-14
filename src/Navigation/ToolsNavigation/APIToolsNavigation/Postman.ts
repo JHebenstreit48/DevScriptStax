@@ -7,10 +7,10 @@ const PostmanNavigation: Subpage = {
       name: "Postman Notes",
       path: "/tools/api/postman",
     },
-    {
-      name: "Postman Code Notes",
-      path: "/tools/api/postman/postmancode",
-    },
+    // {
+    //   name: "Postman Code Notes",
+    //   path: "/tools/api/postman/postmancode",
+    // },
   ],
 };
 

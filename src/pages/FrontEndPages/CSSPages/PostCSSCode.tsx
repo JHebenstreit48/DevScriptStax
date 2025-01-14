@@ -1,4 +1,4 @@
-import CodePageSetup from "@/Components/Notes";
+import Notes from "@/Components/Notes";
 import Header from "@/Components/Header";
 
 const PostCSSCode = () => {
@@ -9,9 +9,8 @@ const PostCSSCode = () => {
         <>
 
             <Header text="Post CSS Notes Code" />
-            <CodePageSetup
-                filePath={markdownFilePath}
-                markdownContentCode="markdownContentCode"
+            <Notes filePath={markdownFilePath}
+                markdownContent="markdownContent"
             />
 
         </>

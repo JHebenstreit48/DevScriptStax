@@ -7,7 +7,7 @@ const Home = () => {
 
         <>
         
-                <Header text="Coding Notes" />
+                <Header text="CodeQuest" />
 
                 <div className='siteInfo'>
 

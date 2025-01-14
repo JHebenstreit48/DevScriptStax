@@ -7,10 +7,10 @@ const PlaywrightNavigation: Subpage = {
         name: "Playwright Notes",
         path: "/testing/e2e/playwright"
     },
-    {
-        name: "Playwright Code Notes",
-        path: "/testing/e2e/playwrightcode"
-    },
+    // {
+    //     name: "Playwright Code Notes",
+    //     path: "/testing/e2e/playwrightcode"
+    // },
   ],
 };
 

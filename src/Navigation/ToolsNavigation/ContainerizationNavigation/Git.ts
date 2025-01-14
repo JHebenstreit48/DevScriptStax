@@ -4,7 +4,7 @@ const GitNavigation: Subpage = {
   name: "Git",
   subpages: [
     { name: "Git Notes", path: "/git" },
-    { name: "Git Code Notes", path: "/git/gitcode" },
+    // { name: "Git Code Notes", path: "/git/gitcode" },
   ],
 };
 

@@ -1,4 +1,4 @@
-import CodePageSetup from "@/Components/Notes";
+import Notes from "@/Components/Notes";
 import Header from "@/Components/Header";
 
 const CICDOpsCode = () => {
@@ -9,9 +9,8 @@ const CICDOpsCode = () => {
         <>
 
             <Header text="CICD Ops Code" />
-            <CodePageSetup
-                filePath={markdownFilePath}
-                markdownContentCode="markdownContentCode"
+            <Notes filePath={markdownFilePath}
+                markdownContent="markdownContent"
             />
 
         </>
