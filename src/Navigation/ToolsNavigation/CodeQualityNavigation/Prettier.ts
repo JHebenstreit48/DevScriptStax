@@ -4,7 +4,7 @@ const PrettierNavigation: Subpage = {
   name: "Prettier",
   subpages: [
     { name: "Prettier Notes", path: "/tools/codequality/prettier" },
-    { name: "Prettier Code Notes", path: "/tools/codequality/prettiercode" },
+    // { name: "Prettier Code Notes", path: "/tools/codequality/prettiercode" },
   ],
 };
 

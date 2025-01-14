@@ -4,7 +4,7 @@ const KoaJSNavigation: Subpage = {
   name: "Koa.js",
   subpages: [
     { name: "KoaJS Notes", path: "/koajs" },
-    { name: "KoaJS Code Notes", path: "/koajs/koajscode" },
+    // { name: "KoaJS Code Notes", path: "/koajs/koajscode" },
   ],
 };
 

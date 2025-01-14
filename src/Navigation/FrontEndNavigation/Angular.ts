@@ -4,44 +4,67 @@ const AngularNavigation: Subpage = {
   name: "Angular",
   subpages: [
     {
-      name: "Angular Basics",
+      name: "Basics",
       subpages: [
-        { name: "Overview", path: "/frontendpages/angularpages/angularoverview" },
-        { name: "Creating an Angular App", path: "/angular/creating-app" },
-        { name: "Angular CLI", path: "/angular/cli" },
         {
-          name: "Angular Project Structure",
-          path: "/angular/project-structure",
+          name: "Getting Started",
+          path: "/frontendpages/angularpages/gettingstarted", // Combines Overview, Creating an Angular App, and Angular CLI
+        },
+        {
+          name: "Project Structure",
+          path: "/frontendpages/angularpages/projectstructure", // Shortened
         },
       ],
     },
     {
       name: "Core Concepts",
       subpages: [
-        { name: "Components", path: "/angular/components" },
-        { name: "Modules", path: "/angular/modules" },
         {
-          name: "Services and Dependency Injection",
+          name: "Components",
+          path: "/angular/components",
+        },
+        {
+          name: "Modules",
+          path: "/angular/modules",
+        },
+        {
+          name: "Services & DI", // Shortened
           path: "/angular/services",
         },
-        { name: "Routing and Navigation", path: "/angular/routing" },
+        {
+          name: "Routing", // Shortened
+          path: "/angular/routing",
+        },
       ],
     },
     {
-      name: "Advanced Topics",
+      name: "Advanced",
       subpages: [
-        { name: "Change Detection", path: "/angular/change-detection" },
-        { name: "RxJS and Observables", path: "/angular/rxjs" },
-        { name: "Angular Animations", path: "/angular/animations" },
-        { name: "Path Aliases", path: "/angular/path-aliases" },
+        {
+          name: "Change Detection",
+          path: "/angular/change-detection",
+        },
+        {
+          name: "RxJS",
+          path: "/angular/rxjs",
+        },
+        {
+          name: "Animations", // Shortened
+          path: "/angular/animations",
+        },
+        {
+          name: "Path Aliases",
+          path: "/angular/path-aliases",
+        },
       ],
     },
     {
       name: "Best Practices",
       subpages: [
-        { name: "Coding Standards", path: "/angular/coding-standards" },
-        { name: "Performance Optimization", path: "/angular/performance" },
-        { name: "Scalability Tips", path: "/angular/scalability" },
+        {
+          name: "Best Practices", // Combined and shortened
+          path: "/angular/best-practices",
+        },
       ],
     },
   ],

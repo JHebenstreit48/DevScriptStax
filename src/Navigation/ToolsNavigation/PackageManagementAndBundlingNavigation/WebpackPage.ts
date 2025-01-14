@@ -7,10 +7,10 @@ const WebpackNavigation: Subpage = {
         name: "Webpack Notes",
         path: "/tools/packaging/webpack"
     },
-    {
-      name: "Webpack Code Notes",
-      path: "/tools/packaging/webpack/webpackcode",
-    },
+    // {
+    //   name: "Webpack Code Notes",
+    //   path: "/tools/packaging/webpack/webpackcode",
+    // },
   ],
 };
 

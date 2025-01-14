@@ -4,7 +4,7 @@ const GatsbyNavigation: Subpage = {
   name: "Gatsby",
   subpages: [
     { name: "Gatsby Notes", path: "/gatsby" },
-    { name: "Gatsby Code Notes", path: "/gatsby/gatsbycode" },
+    // { name: "Gatsby Code Notes", path: "/gatsby/gatsbycode" },
   ],
 };
 

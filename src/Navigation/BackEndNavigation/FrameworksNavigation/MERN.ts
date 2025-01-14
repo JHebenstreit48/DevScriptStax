@@ -4,7 +4,7 @@ const MERNNavigation: Subpage = {
   name: "MERN Stack",
   subpages: [
     { name: "MERN Notes", path: "/mern" },
-    { name: "MERN Code Notes", path: "/mern/merncode" },
+    // { name: "MERN Code Notes", path: "/mern/merncode" },
   ],
 };
 

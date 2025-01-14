@@ -7,10 +7,10 @@ const CypressNavigation: Subpage = {
           name: "Cypress Testing Notes",
           path: "/testing/e2e/cypress"
         },
-        {
-          name: "Cypress Testing Code Notes",
-          path: "/testing/e2e/cypresscode",
-        },
+        // {
+        //   name: "Cypress Testing Code Notes",
+        //   path: "/testing/e2e/cypresscode",
+        // },
   ],
 };
 
