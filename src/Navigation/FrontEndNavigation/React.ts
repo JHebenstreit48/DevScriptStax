@@ -4,9 +4,9 @@ const ReactNavigation: Subpage = {
   name: "React",
   subpages: [
     {
-      name: "React Basics",
+      name: "Basics",
       subpages: [
-        { name: "Intro and Setup", path: "/react/basics/introandinstall" },
+        { name: "Intro & Setup", path: "/react/basics/introandsetup" }, // Combined
         { name: "JSX", path: "/react/basics/jsx" },
         { name: "Components", path: "/react/basics/components" },
         { name: "Props", path: "/react/basics/props" },
@@ -17,27 +17,24 @@ const ReactNavigation: Subpage = {
     {
       name: "React + TypeScript",
       subpages: [
-        { name: "Introduction", path: "/react/typescript/intro" },
+        { name: "Intro & Basics", path: "/react/typescript/intro" }, // Combined
         { name: "Props", path: "/react/typescript/props" },
         { name: "State Management", path: "/react/typescript/state" },
         { name: "Context API", path: "/react/typescript/context" },
       ],
     },
     {
-      name: "React Full Stack",
+      name: "Full Stack React",
       subpages: [
-        {
-          name: "Express Integration",
-          path: "/react/fullstack/expressintegration",
-        },
+        { name: "Express Integration", path: "/react/fullstack/express" }, // Simplified path
         { name: "MongoDB Integration", path: "/react/fullstack/mongodb" },
-        { name: "Deployment Tips", path: "/react/fullstack/deployment" },
+        { name: "Deployment", path: "/react/fullstack/deployment" }, // Shortened name
       ],
     },
     {
       name: "React Native",
       subpages: [
-        { name: "Intro and Setup", path: "/react/native/introandsetup" },
+        { name: "Intro & Setup", path: "/react/native/introandsetup" }, // Combined
         { name: "Components", path: "/react/native/components" },
         { name: "Navigation", path: "/react/native/navigation" },
       ],
