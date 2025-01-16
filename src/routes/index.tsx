@@ -1,127 +1,127 @@
 import { createBrowserRouter } from "react-router-dom";
 
 import App from "@/App";
-import ErrorPage from "Pages/Error";
-import Home from "Pages/Home";
+import ErrorPage from "@/Pages/Error";
+import Home from "@/Pages/Home";
 
 // APIs
-import APIs from "Pages/BackEndPages/APIPages/API";
+import APIs from "@/Pages/BackEndPages/APIPages/API";
 // import APICode from "@/pages/APIPages/APICode";
 
 // Apollo Server
-import ApolloServer from "Pages/BackEndPages/ApolloServerPages/ApolloServer";
+import ApolloServer from "@/Pages/BackEndPages/ApolloServerPages/ApolloServer";
 // import ApolloServerCode from "@/pages/ApolloServerPages/ApolloServerCode";
 
 // Angular Notes Start
-import AngularStart from "Pages/FrontEndPages/AngularPages/AngularStart";
-import AngularStructure from "Pages/FrontEndPages/AngularPages/AngularStructure";
+import AngularStart from "@/Pages/FrontEndPages/AngularPages/AngularStart";
+import AngularStructure from "@/Pages/FrontEndPages/AngularPages/AngularStructure";
 // Angular Notes End
 
 // CICD Ops
-import CICDOps from "Pages/ToolsPages/CICDOpsPages/CICDOps";
+import CICDOps from "@/Pages/ToolsPages/CICDOpsPages/CICDOps";
 // import CICDOpsCode from "@/pages/CICDOpsPages/CICDOpsCode";
 
 // CSS Start
 
 // CSS Basics Start
-import CSSIntro from "Pages/FrontEndPages/CSSVanillaPages/CSSBasics/CSSIntro";
-import CSSSelectors from "Pages/FrontEndPages/CSSVanillaPages/CSSBasics/CSSSelectors";
-import CSSBoxModel from "Pages/FrontEndPages/CSSVanillaPages/CSSBasics/CSSBoxModel";
-import CSSPositioning from "Pages/FrontEndPages/CSSVanillaPages/CSSBasics/CSSPositioning";
+import CSSIntro from "@/Pages/FrontEndPages/CSSVanillaPages/CSSBasics/CSSIntro";
+import CSSSelectors from "@/Pages/FrontEndPages/CSSVanillaPages/CSSBasics/CSSSelectors";
+import CSSBoxModel from "@/Pages/FrontEndPages/CSSVanillaPages/CSSBasics/CSSBoxModel";
+import CSSPositioning from "@/Pages/FrontEndPages/CSSVanillaPages/CSSBasics/CSSPositioning";
 // CSS Basics End
 
 // CSS Layouts Start
-import CSSFlexbox from "Pages/FrontEndPages/CSSVanillaPages/CSSLayout/CSSFlexbox";
-import CSSGrid from "Pages/FrontEndPages/CSSVanillaPages/CSSLayout/CSSGrid";
+import CSSFlexbox from "@/Pages/FrontEndPages/CSSVanillaPages/CSSLayout/CSSFlexbox";
+import CSSGrid from "@/Pages/FrontEndPages/CSSVanillaPages/CSSLayout/CSSGrid";
 // CSS Layouts End
 
 // CSS Advanced Start
-import CSSMediaQueries from "Pages/FrontEndPages/CSSVanillaPages/CSSAdvancedPages/CSSMediaQueries";
-import CSSVariables from "Pages/FrontEndPages/CSSVanillaPages/CSSAdvancedPages/CSSVariables";
-import CSSAnimations from "Pages/FrontEndPages/CSSVanillaPages/CSSAdvancedPages/CSSAnimations";
+import CSSMediaQueries from "@/Pages/FrontEndPages/CSSVanillaPages/CSSAdvancedPages/CSSMediaQueries";
+import CSSVariables from "@/Pages/FrontEndPages/CSSVanillaPages/CSSAdvancedPages/CSSVariables";
+import CSSAnimations from "@/Pages/FrontEndPages/CSSVanillaPages/CSSAdvancedPages/CSSAnimations";
 // CSS Advanced End
 
-import LESS from "Pages/FrontEndPages/CSSVanillaPages/LESS";
+import LESS from "@/Pages/FrontEndPages/CSSVanillaPages/LESS";
 // import LESSCode from "@/pages/CSSPages/LESSCode";
-import PostCSS from "Pages/FrontEndPages/CSSVanillaPages/PostCSS";
+import PostCSS from "@/Pages/FrontEndPages/CSSVanillaPages/PostCSS";
 // import PostCSSCode from "@/pages/CSSPages/PostCSSCode";
 
 // CSS End
 
 // Cypress Testing
-import Cypress from "Pages/TestingPages/CypressTesting";
+import Cypress from "@/Pages/TestingPages/CypressTesting";
 // import CypressCode from "@/pages/TestingPages/CypressTestingCode";
 
 // Git
-import Git from "Pages/ToolsPages/GitPages/Git";
+import Git from "@/Pages/ToolsPages/GitPages/Git";
 // import GitCode from "@/pages/GitPages/GitCode";
 
 // GraphQL
-import GraphQL from "Pages/BackEndPages/GraphQLPages/GraphQL";
+import GraphQL from "@/Pages/BackEndPages/GraphQLPages/GraphQL";
 // import GraphQLCode from "@/pages/GraphQLPages/GraphQLCode";
 
 // HTML
-import HTML from "Pages/FrontEndPages/HTMLPages/HTML";
+import HTML from "@/Pages/FrontEndPages/HTMLPages/HTML";
 // import HTMLCode from "@/pages/HTMLPages/HTMLCode";
 
 // JavaScript
-import JavaScript from "Pages/FrontEndPages/JavaScriptPages/JavaScript";
+import JavaScript from "@/Pages/FrontEndPages/JavaScriptPages/JavaScript";
 // import JavaScriptCode from "@/pages/JavaScriptPages/JavaScriptCode";
 
 // Markdown
-import Markdown from "Pages/FrontEndPages/MarkdownPages/Markdown";
+import Markdown from "@/Pages/FrontEndPages/MarkdownPages/Markdown";
 // import MarkdownCode from "@/pages/MarkdownPages/MarkdownCode";
 
 // MERN and Auth
-import MernAndAuth from "Pages/BackEndPages/MERNAuthPages/MernAndAuth";
+import MernAndAuth from "@/Pages/BackEndPages/MERNAuthPages/MernAndAuth";
 // import MernAndAuthCode from "@/pages/MERNAuthPages/MernAndAuthCode";
 
 // MongoDB
-import MongoDB from "Pages/BackEndPages/MongoDBPages/MongoDB";
+import MongoDB from "@/Pages/BackEndPages/MongoDBPages/MongoDB";
 // import MongoDBCode from "@/pages/MongoDBPages/MongoDBCode";
 
 // Node.js
-import Node from "Pages/BackEndPages/NodePages/Node";
+import Node from "@/Pages/BackEndPages/NodePages/Node";
 // import NodeCode from "@/pages/NodePages/NodeCode";
 
 // PostgreSQL
-import PostgreSQL from "Pages/BackEndPages/PostgreSQLPages/PostgreSQL";
+import PostgreSQL from "@/Pages/BackEndPages/PostgreSQLPages/PostgreSQL";
 // import PostgreSQLCode from "@/pages/PostgreSQLPages/PostgreSQLCode";
 
 // Python
-import Python from "Pages/ProgrammingLanguagesPages/PythonPages/Python";
+import Python from "@/Pages/ProgrammingLanguagesPages/PythonPages/Python";
 // import PythonCode from "@/pages/PythonPages/PythonCode";
 
 // React and Related Frameworks
-import React from "Pages/FrontEndPages/ReactPages/React";
+import React from "@/Pages/FrontEndPages/ReactPages/React";
 // import ReactCode from "@/pages/ReactPages/ReactCode";
-import ReactAndTypeScript from "Pages/FrontEndPages/ReactPages/ReactAndTypeScript";
+import ReactAndTypeScript from "@/Pages/FrontEndPages/ReactPages/ReactAndTypeScript";
 // import ReactAndTypeScriptCode from "@/pages/ReactPages/ReactAndTypeScriptCode";
-import ReactFullStack from "Pages/FrontEndPages/ReactPages/ReactFullStack";
+import ReactFullStack from "@/Pages/FrontEndPages/ReactPages/ReactFullStack";
 // import ReactFullStackCode from "@/pages/ReactPages/ReactFullStackCode";
-import ReactNative from "Pages/FrontEndPages/ReactPages/ReactNative";
+import ReactNative from "@/Pages/FrontEndPages/ReactPages/ReactNative";
 // import ReactNativeCode from "@/pages/ReactPages/ReactNativeCode";
 
 // Redux
-import Redux from "Pages/FrontEndPages/ReduxPages/Redux";
+import Redux from "@/Pages/FrontEndPages/ReduxPages/Redux";
 // import ReduxCode from "@/pages/ReduxPages/ReduxCode";
 
 // Servers
-import Servers from "Pages/BackEndPages/ServerPages/Servers";
+import Servers from "@/Pages/BackEndPages/ServerPages/Servers";
 // import ServerCode from "@/pages/ServerPages/ServerCode";
 
 // Testing
-import Testing from "Pages/TestingPages/Testing";
+import Testing from "@/Pages/TestingPages/Testing";
 // import TestingCode from "@/pages/TestingPages/TestingCode";
-import Vitest from "Pages/TestingPages/VitestTesting";
+import Vitest from "@/Pages/TestingPages/VitestTesting";
 // import VitestCode from "@/pages/TestingPages/VitestTestingCode";
 
 // TypeScript
-import TypeScript from "Pages/ProgrammingLanguagesPages/TypeScriptPages/TypeScript";
+import TypeScript from "@/Pages/ProgrammingLanguagesPages/TypeScriptPages/TypeScript";
 // import TypeScriptCode from "@/pages/TypeScriptPages/TypeScriptCode";
 
 // Vue
-import Vue from "Pages/FrontEndPages/VuePages/Vue";
+import Vue from "@/Pages/FrontEndPages/VuePages/Vue";
 
 // import VueCode from "@/pages/VuePages/VueCode";
 
