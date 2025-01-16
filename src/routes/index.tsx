@@ -60,9 +60,17 @@ import Git from "@/Pages/ToolsPages/GitPages/Git";
 import GraphQL from "@/Pages/BackEndPages/GraphQLPages/GraphQL";
 // import GraphQLCode from "@/pages/GraphQLPages/GraphQLCode";
 
-// HTML
-import HTML from "@/Pages/FrontEndPages/HTMLPages/HTML";
-// import HTMLCode from "@/pages/HTMLPages/HTMLCode";
+// HTML Notes Start
+
+// HTML Basics Start
+import HTML from "@/Pages/FrontEndPages/HTMLPages/HTMLBasics/HTMLIntro";
+import HTMLELements from "@/Pages/FrontEndPages/HTMLPages/HTMLBasics/HTMLElements";
+import HTMLAttributes from "@/Pages/FrontEndPages/HTMLPages/HTMLBasics/HTMLAttributes";
+import HTMLForms from "@/Pages/FrontEndPages/HTMLPages/HTMLBasics/HTMLForms";
+import HTMLSemantics from "@/Pages/FrontEndPages/HTMLPages/HTMLBasics/HTMLSemantics";
+// HTML Basics End
+
+// HTML Notes End
 
 // JavaScript
 import JavaScript from "@/Pages/FrontEndPages/JavaScriptPages/JavaScript";
@@ -237,13 +245,25 @@ export const router = createBrowserRouter([
             //     element: <GraphQLCode />,
             // },
             {
-                path: '/html',
+                path: '/html/basics/introduction',
                 element: <HTML />,
             },
-            // {
-            //     path: '/html/htmlcode',
-            //     element: <HTMLCode />,
-            // },
+            {
+                path: '/html/basics/elements',
+                element: <HTMLELements />,
+            },
+            {
+                path: '/html/basics/attributes',
+                element: <HTMLAttributes />,
+            },
+            {
+                path: '/html/basics/forms',
+                element: <HTMLForms />,
+            },
+            {
+                path: '/html/basics/semantic',
+                element: <HTMLSemantics />,
+            },
             {
                 path: '/javascript',
                 element: <JavaScript />,

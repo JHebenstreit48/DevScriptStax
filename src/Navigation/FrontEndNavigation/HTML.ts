@@ -22,6 +22,10 @@ const HTMLNavigation: Subpage = {
           name: "Forms",
           path: "/html/basics/forms", // Basics of form creation and input types
         },
+        {
+          name: "Semantic HTML",
+          path: "/html/basics/semantic", // Using semantic elements like <header>, <footer>
+        },
       ],
     },
     {
@@ -34,10 +38,6 @@ const HTMLNavigation: Subpage = {
         {
           name: "Tables",
           path: "/html/intermediate/tables", // Creating and styling tables
-        },
-        {
-          name: "Semantic HTML",
-          path: "/html/intermediate/semantic", // Using semantic elements like <header>, <footer>
         },
       ],
     },

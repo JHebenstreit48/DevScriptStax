@@ -2,13 +2,13 @@ import Notes from "@/Components/Notes";
 import Header from "@/Components/Header";
 
 
-const HTMLCode = () => {
-    const markdownFilePath = '/HTMLNotes/HTMLCode.md';
+const HTMLElements = () => {
+    const markdownFilePath = '/FrontEndNotes/HTMLNotes/HTMLBasics/HTMLElements.md';
 
     return (
 
         <>
-            <Header text="HTML Code" />
+            <Header text="HTML Elements" />
             <Notes filePath={markdownFilePath}
                 markdownContent="markdownContent"
             />
@@ -17,4 +17,4 @@ const HTMLCode = () => {
 
 };
 
-export default HTMLCode;
+export default HTMLElements;
