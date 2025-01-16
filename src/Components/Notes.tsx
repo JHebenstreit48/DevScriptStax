@@ -58,7 +58,7 @@ const Notes: React.FC<NotesProps> = ({ filePath }) => {
 
     return (
         <div className="card">
-            <h2 className="cardHeader">Notes With Code</h2>
+            <h2 className="cardHeader">Notes</h2>
             <div className='markdownContent'>
                 <ReactMarkdown
                     rehypePlugins={[rehypeRaw]}
