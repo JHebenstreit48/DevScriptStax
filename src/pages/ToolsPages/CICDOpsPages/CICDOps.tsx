@@ -7,7 +7,7 @@ const CICDOps = () => {
     return (
 
         <>
-        
+
             <Header text="CICD Ops" />
             <Notes
                 filePath={markdownFilePath}

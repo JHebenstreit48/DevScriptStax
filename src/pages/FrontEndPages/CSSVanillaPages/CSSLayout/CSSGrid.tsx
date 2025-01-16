@@ -1,14 +1,14 @@
 import Notes from "@/Components/Notes";
 import Header from "@/Components/Header";
 
-const CSSCode = () => {
-    const markdownFilePath = '/CSSNotes/CSSCode.md';
+const CSSGrid = () => {
+    const markdownFilePath = '/FrontEndNotes/CSSNotes/VanillaCSS/CSSLayoutsNotes/CSSGrid.md';
 
     return (
 
         <>
 
-            <Header text="CSS Code" />
+            <Header text="CSS Grid" />
             <Notes filePath={markdownFilePath}
                 markdownContent="markdownContent"
             />
@@ -18,4 +18,4 @@ const CSSCode = () => {
     );
 };
 
-export default CSSCode;
+export default CSSGrid;

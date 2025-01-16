@@ -21,13 +21,32 @@ import AngularStructure from "@/pages/FrontEndPages/AngularPages/AngularStructur
 import CICDOps from "@/pages/ToolsPages/CICDOpsPages/CICDOps";
 // import CICDOpsCode from "@/pages/CICDOpsPages/CICDOpsCode";
 
-// CSS and Frameworks
-import CSS from "@/pages/FrontEndPages/CSSPages/CSS";
-// import CSSCode from "@/pages/CSSPages/CSSCode";
-import LESS from "@/pages/FrontEndPages/CSSPages/LESS";
+// CSS Start
+
+// CSS Basics Start
+import CSSIntro from "@/pages/FrontEndPages/CSSVanillaPages/CSSBasics/CSSIntro";
+import CSSSelectors from "@/pages/FrontEndPages/CSSVanillaPages/CSSBasics/CSSSelectors";
+import CSSBoxModel from "@/pages/FrontEndPages/CSSVanillaPages/CSSBasics/CSSBoxModel";
+import CSSPositioning from "@/pages/FrontEndPages/CSSVanillaPages/CSSBasics/CSSPositioning";
+// CSS Basics End
+
+// CSS Layouts Start
+import CSSFlexbox from "@/pages/FrontEndPages/CSSVanillaPages/CSSLayout/CSSFlexbox";
+import CSSGrid from "@/pages/FrontEndPages/CSSVanillaPages/CSSLayout/CSSGrid";
+// CSS Layouts End
+
+// CSS Advanced Start
+import CSSMediaQueries from "@/pages/FrontEndPages/CSSVanillaPages/CSSAdvancedPages/CSSMediaQueries";
+import CSSVariables from "@/pages/FrontEndPages/CSSVanillaPages/CSSAdvancedPages/CSSVariables";
+import CSSAnimations from "@/pages/FrontEndPages/CSSVanillaPages/CSSAdvancedPages/CSSAnimations";
+// CSS Advanced End
+
+import LESS from "@/pages/FrontEndPages/CSSVanillaPages/LESS";
 // import LESSCode from "@/pages/CSSPages/LESSCode";
-import PostCSS from "@/pages/FrontEndPages/CSSPages/PostCSS";
+import PostCSS from "@/pages/FrontEndPages/CSSVanillaPages/PostCSS";
 // import PostCSSCode from "@/pages/CSSPages/PostCSSCode";
+
+// CSS End
 
 // Cypress Testing
 import Cypress from "@/pages/TestingPages/CypressTesting";
@@ -103,6 +122,7 @@ import TypeScript from "@/pages/ProgrammingLanguagesPages/TypeScriptPages/TypeSc
 
 // Vue
 import Vue from "@/pages/FrontEndPages/VuePages/Vue";
+
 // import VueCode from "@/pages/VuePages/VueCode";
 
 export const router = createBrowserRouter([
@@ -149,13 +169,41 @@ export const router = createBrowserRouter([
             //     element: <CICDOpsCode />,
             // },
             {
-                path: '/css',
-                element: <CSS />,
+                path: '/css/basics/intro',
+                element: <CSSIntro />,
             },
-            // {
-            //     path: '/css/csscode',
-            //     element: <CSSCode />,
-            // },
+            {
+                path: '/css/basics/selectors',
+                element: <CSSSelectors />,
+            },
+            {
+                path: '/css/basics/boxmodel',
+                element: <CSSBoxModel />,
+            },
+            {
+                path: '/css/basics/positioning',
+                element: <CSSPositioning />,
+            },
+            {
+                path: '/css/basics/layouts/flexbox',
+                element: <CSSFlexbox />,
+            },
+            {
+                path: '/css/basics/layouts/grid',
+                element: <CSSGrid />,
+            },
+            {
+                path: '/css/basics/advanced/mediaqueries',
+                element: <CSSMediaQueries />,
+            },
+            {
+                path: '/css/basics/advanced/variables',
+                element: <CSSVariables />,
+            },
+            {
+                path: '/css/basics/advanced/animations',
+                element: <CSSAnimations />,
+            },
             {
                 path: '/css/less',
                 element: <LESS />,

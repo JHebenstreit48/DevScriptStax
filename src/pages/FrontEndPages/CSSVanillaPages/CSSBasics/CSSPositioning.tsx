@@ -1,13 +1,13 @@
 import Header from "@/Components/Header";
 import Notes from "@/Components/Notes";
 
-const Testing = () => {
-    const markdownFilePath = './TestingNotes/Testing.md';
+const CSSPositioning = () => {
+    const markdownFilePath = '/FrontEndNotes/CSSNotes/VanillaCSS/CSSBasicsNotes/CSSPositioning.md';
+
     return (
 
         <>
-
-            <Header text="Testing" />
+            <Header text="CSS Positioning" />
             <Notes
                 filePath={markdownFilePath}
                 markdownContent="markdownContent"
@@ -18,4 +18,4 @@ const Testing = () => {
 
 };
 
-export default Testing;
+export default CSSPositioning;

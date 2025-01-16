@@ -1,13 +1,13 @@
 import Header from "@/Components/Header";
 import Notes from "@/Components/Notes";
 
-const Testing = () => {
-    const markdownFilePath = './TestingNotes/Testing.md';
+const CSSBoxModel = () => {
+    const markdownFilePath = '/FrontEndNotes/CSSNotes/VanillaCSS/CSSBasicsNotes/CSSBoxModel.md';
+
     return (
 
         <>
-
-            <Header text="Testing" />
+            <Header text="CSS Box Model" />
             <Notes
                 filePath={markdownFilePath}
                 markdownContent="markdownContent"
@@ -18,4 +18,4 @@ const Testing = () => {
 
 };
 
-export default Testing;
+export default CSSBoxModel;
