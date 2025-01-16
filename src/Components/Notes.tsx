@@ -9,7 +9,7 @@ import BackToTop from './BackToTopButton';
 
 interface NotesProps {
     filePath: string;
-    markdownContentNotes?: string;
+    markdownContent?: string;
 }
 
 // Utility function to load Markdown content from a file

@@ -10,7 +10,7 @@ const Vitest = () => {
             <Header text="Vitest" />
             <Notes
                 filePath={markdownFilePath}
-                markdownContentNotes="markdownContent"
+                markdownContent="markdownContent"
             />
 
         </>

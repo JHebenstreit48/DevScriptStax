@@ -10,7 +10,7 @@ const Testing = () => {
             <Header text="Testing" />
             <Notes
                 filePath={markdownFilePath}
-                markdownContentNotes="markdownContent"
+                markdownContent="markdownContent"
             />
 
         </>

@@ -10,7 +10,7 @@ const CSSAnimations = () => {
             <Header text="CSS Animations" />
             <Notes
                 filePath={markdownFilePath}
-                markdownContentNotes="markdownContent"
+                markdownContent="markdownContent"
             />
 
         </>

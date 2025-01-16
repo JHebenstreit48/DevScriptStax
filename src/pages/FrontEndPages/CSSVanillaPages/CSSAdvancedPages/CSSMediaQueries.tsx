@@ -10,7 +10,7 @@ const CSSMediaQueries = () => {
             <Header text="CSS Media Queries" />
             <Notes
                 filePath={markdownFilePath}
-                markdownContentNotes="markdownContent"
+                markdownContent="markdownContent"
             />
 
         </>

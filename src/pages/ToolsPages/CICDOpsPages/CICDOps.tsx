@@ -11,7 +11,7 @@ const CICDOps = () => {
             <Header text="CICD Ops" />
             <Notes
                 filePath={markdownFilePath}
-                markdownContentNotes="markdownContent"
+                markdownContent="markdownContent"
             />
 
         </>

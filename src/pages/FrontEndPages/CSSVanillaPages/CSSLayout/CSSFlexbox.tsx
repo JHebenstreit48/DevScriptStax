@@ -7,10 +7,10 @@ const CSSFlexbox = () => {
     return (
 
         <>
-           <Header text="CSS Flexbox" />
+            <Header text="CSS Flexbox" />
             <Notes
                 filePath={markdownFilePath}
-                markdownContentNotes="markdownContent"
+                markdownContent="markdownContent"
             />
 
         </>

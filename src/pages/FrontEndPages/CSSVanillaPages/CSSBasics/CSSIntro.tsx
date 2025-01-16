@@ -10,7 +10,7 @@ const CSSIntro = () => {
             <Header text="CSS Introduction and Syntax" />
             <Notes
                 filePath={markdownFilePath}
-                markdownContentNotes="markdownContent"
+                markdownContent="markdownContent"
             />
 
         </>

@@ -9,7 +9,7 @@ const MongoDBCode = () => {
         <>
             <Header text="MongoDB Code" />
             <Notes filePath={markdownFilePath}
-                markdownContentNotes="markdownContent"
+                markdownContent="markdownContent"
             />
 
         </>

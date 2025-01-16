@@ -12,7 +12,7 @@ const AngularStart = () => {
             <Header text="Angular Getting Started" />
             <Notes
                 filePath={markdownFilePath}
-                markdownContentNotes="markdownContent"
+                markdownContent="markdownContent"
             />
         </>
     );

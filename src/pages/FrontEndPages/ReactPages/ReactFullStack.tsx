@@ -10,7 +10,7 @@ const ReactFullStack = () => {
             <Header text="Full-Stack React" />
             <Notes
                 filePath={markdownFilePath}
-                markdownContentNotes="markdownContent"
+                markdownContent="markdownContent"
             />
 
         </>

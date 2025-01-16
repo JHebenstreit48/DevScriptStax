@@ -10,7 +10,7 @@ const CSSBoxModel = () => {
             <Header text="CSS Box Model" />
             <Notes
                 filePath={markdownFilePath}
-                markdownContentNotes="markdownContent"
+                markdownContent="markdownContent"
             />
 
         </>

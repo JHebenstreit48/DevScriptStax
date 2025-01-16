@@ -10,7 +10,7 @@ const ReactCode = () => {
 
             <Header text="React Code" />
             <Notes filePath={markdownFilePath}
-                markdownContentNotes="markdownContent"
+                markdownContent="markdownContent"
             />
 
         </>

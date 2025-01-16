@@ -9,7 +9,7 @@ const APICode = () => {
 
             <Header text="API Notes Code" />
             <Notes filePath={markdownFilePath}
-                markdownContentNotes="markdownContent"
+                markdownContent="markdownContent"
             />
 
         </>
