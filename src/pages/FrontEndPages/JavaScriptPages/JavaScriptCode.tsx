@@ -9,7 +9,7 @@ const JavascriptCode = () => {
         <>
             <Header text="JavaScript Code" />
             <Notes filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                markdownContentNotes="markdownContent"
             />
         </>
     );

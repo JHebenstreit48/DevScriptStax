@@ -10,7 +10,7 @@ const PythonCode = () => {
 
             <Header text="Python Code" />
             <Notes filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                markdownContentNotes="markdownContent"
             />
 
         </>

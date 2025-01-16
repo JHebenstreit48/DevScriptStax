@@ -10,7 +10,7 @@ const GitCode = () => {
 
             <Header text="Git Code" />
             <Notes filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                markdownContentNotes="markdownContent"
             />
 
         </>

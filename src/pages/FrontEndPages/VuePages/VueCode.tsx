@@ -10,7 +10,7 @@ const VueCode = () => {
 
             <Header text="Vue Notes Code" />
             <Notes filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                markdownContentNotes="markdownContent"
             />
 
         </>

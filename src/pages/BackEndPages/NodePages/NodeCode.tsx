@@ -10,7 +10,7 @@ const NodeCode = () => {
 
             <Header text="Node JS Code" />
             <Notes filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                markdownContentNotes="markdownContent"
             />
 
         </>

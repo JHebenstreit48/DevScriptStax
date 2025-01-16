@@ -10,7 +10,7 @@ const ReactAndTypeScript = () => {
             <Header text="React + TypeScript" />
             <Notes
                 filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                markdownContentNotes="markdownContent"
             />
         </>
     );

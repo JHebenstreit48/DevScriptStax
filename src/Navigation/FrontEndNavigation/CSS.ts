@@ -4,23 +4,40 @@ const CSSNavigation: Subpage = {
   name: "CSS",
   subpages: [
     {
-      name: "CSS", // Clicking this expands Basics, Layouts, and Advanced
+      name: "Vanilla CSS", // Clicking this expands Basics, Layouts, and Advanced
       subpages: [
         {
-          name: "Vanilla CSS",
+          name: "CSS Basics",
           subpages: [
-            { name: "Introduction to CSS", path: "/css/basics/intro" }, // Includes general overview
-            { name: "CSS Syntax", path: "/css/basics/syntax" },
-            { name: "Selectors", path: "/css/basics/selectors" },
-            { name: "Box Model", path: "/css/basics/boxmodel" },
-            { name: "Positioning", path: "/css/basics/positioning" },
+            {
+              name: "CSS Intro and Syntax",
+              path: "/css/basics/intro"
+            },
+            {
+              name: "Selectors",
+              path: "/css/basics/selectors"
+            },
+            {
+              name: "Box Model",
+              path: "/css/basics/boxmodel"
+            },
+            {
+              name: "Positioning",
+              path: "/css/basics/positioning"
+            },
           ],
         },
         {
           name: "Layouts",
           subpages: [
-            { name: "Flexbox", path: "/css/basics/layouts/flexbox" },
-            { name: "Grid", path: "/css/basics/layouts/grid" },
+            {
+              name: "Flexbox",
+              path: "/css/basics/layouts/flexbox"
+            },
+            {
+              name: "Grid",
+              path: "/css/basics/layouts/grid"
+            },
           ],
         },
         {
@@ -30,8 +47,14 @@ const CSSNavigation: Subpage = {
               name: "Media Queries",
               path: "/css/basics/advanced/mediaqueries",
             },
-            { name: "CSS Variables", path: "/css/basics/advanced/variables" },
-            { name: "Animations", path: "/css/basics/advanced/animations" },
+            {
+              name: "CSS Variables",
+              path: "/css/basics/advanced/variables"
+            },
+            {
+              name: "Animations",
+              path: "/css/basics/advanced/animations"
+            },
           ],
         },
       ],

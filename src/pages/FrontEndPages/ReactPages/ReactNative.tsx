@@ -10,7 +10,7 @@ const ReactNative = () => {
             <Header text="React Native" />
             <Notes
                 filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                markdownContentNotes="markdownContent"
             />
 
         </>

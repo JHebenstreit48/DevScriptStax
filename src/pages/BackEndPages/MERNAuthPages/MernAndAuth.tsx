@@ -10,7 +10,7 @@ const MernAndAuth = () => {
             <Header text="MERN Stack" />
             <Notes
                 filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                markdownContentNotes="markdownContent"
             />
 
         </>

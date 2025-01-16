@@ -11,7 +11,7 @@ const MongoDB = () => {
             <Header text="MongoDB" />
             <Notes
                 filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                markdownContentNotes="markdownContent"
             />
 
         </>

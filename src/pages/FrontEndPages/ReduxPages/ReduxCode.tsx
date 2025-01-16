@@ -10,7 +10,7 @@ const ReduxCode = () => {
 
             <Header text="Redux Notes Code" />
             <Notes filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                markdownContentNotes="markdownContent"
             />
 
         </>

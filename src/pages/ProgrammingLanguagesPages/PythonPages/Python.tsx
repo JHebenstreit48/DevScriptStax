@@ -11,7 +11,7 @@ const Python = () => {
             <Header text="Python" />
             <Notes
                 filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                markdownContentNotes="markdownContent"
             />
 
         </>

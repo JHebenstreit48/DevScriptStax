@@ -40,8 +40,9 @@
   font-size: 20px;
 }
 
+
 .markdownContent h1, h2 {
-  /* color: rgb(243, 175, 28); */
+  color: rgb(243, 175, 28);
   text-shadow: 1px 2px 1px black;
   text-align: center;
 }
@@ -72,16 +73,6 @@ hr {
 .subheadingEmphasis2 {
   color: rgb(243, 175, 28);
   font: italic bold 30px 'Arial', sans-serif;
-}
-
-.markdownContent ul {
-  margin-top: 0;
-  padding-left: 3rem;
-}
-
-.markdownContent p,
-.markdownContent li {
-  margin-bottom: 1rem;
 }
 
 /* Example bullet styles using shorthand */
@@ -157,35 +148,16 @@ code.codeSnip {
 
 /* Nullify padding on span.codeSnip to prevent double-styling */
 span.codeSnip {
-  padding: 0 !important;
-}
-
-.markdownContentCode {
-  width: 75%;
-  margin: 0 auto;
-  color: rgb(6, 159, 248);
-  text-shadow: 1px 2px 1px black;
-  font: normal 20px/1.5 sans-serif;
-}
-
-.markdownContentCode ul {
-  margin-top: 0;
-  padding-left: 3rem;
-}
-
-.markdownContentCode p,
-.markdownContentCode li {
-  margin-bottom: 1rem;
+  padding: 0;
 }
 
 /* Code Block Styling */
 .codeBlockWrapper {
   position: relative;
-  margin-bottom: 1.5rem;
   border: 1px solid #444;
   border-radius: 11px;
   background-color: rgb(29, 31, 33);
-  overflow: hidden;
+  line-height: 2rem;
 }
 
 .codeBlockHeader {
@@ -204,7 +176,6 @@ span.codeSnip {
   background: #444;
   color: #fff;
   font: normal 0.8rem/1 sans-serif;
-  border: 1px solid transparent;
   border-radius: 3px;
   padding: 0.25rem 0.5rem;
   cursor: pointer;
@@ -214,19 +185,9 @@ span.codeSnip {
   background: #555;
 }
 
-.codeBlockLanguage {
-  font: normal 0.8rem/1 sans-serif;
-  opacity: 0.7;
-  margin-right: auto;
-}
-
-.markdownContentCode div code {
-  display: block;
-  padding: 0.5rem;
-  max-width: 100%;
-  line-height: 1.5 !important;
-  overflow-x: auto;
-  background-color: inherit;
+.token {
+  width: 10rem;
+  line-height: 2.4rem;
 }
 
 @media only screen and (max-width: 390px) {
@@ -234,28 +195,5 @@ span.codeSnip {
     text-align: center;
     width: 44rem;
     margin: 13rem 2.7rem 8rem;
-  }
-}
-
-@media only screen and (max-width: 390px) {
-  .codeBlockHeader {
-    font: bold 0.75rem/1 sans-serif;
-    padding: 0.25rem 0.5rem;
-  }
-
-  .copyCodeButton {
-    font: normal 0.7rem/1 sans-serif;
-    border: 1px solid transparent;
-    border-radius: 3px;
-    padding: 0.2rem 0.4rem;
-  }
-}
-
-@media only screen and (max-width: 390px) {
-  .markdownContent {
-    width: 91% !important;
-  }
-  .example {
-    margin-left: 25px;
   }
 }

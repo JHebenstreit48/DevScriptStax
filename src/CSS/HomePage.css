@@ -28,9 +28,12 @@
 
 @media only screen and (max-width: 390px) {
     .siteInfo {
-        width: 100%;
+        width: 23rem;
     }
     .siteInfoContent {
-        width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
     }
 }

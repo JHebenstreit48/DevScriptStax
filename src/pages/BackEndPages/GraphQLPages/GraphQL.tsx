@@ -10,7 +10,7 @@ const GraphQL = () => {
             <Header text="GraphQL" />
             <Notes
                 filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                markdownContentNotes="markdownContent"
             />
 
         </>

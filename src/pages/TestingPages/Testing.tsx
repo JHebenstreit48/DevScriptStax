@@ -6,11 +6,11 @@ const Testing = () => {
     return (
 
         <>
-        
+
             <Header text="Testing" />
             <Notes
                 filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                markdownContentNotes="markdownContent"
             />
 
         </>

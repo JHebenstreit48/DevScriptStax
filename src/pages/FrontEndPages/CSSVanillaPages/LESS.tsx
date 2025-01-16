@@ -1,21 +1,20 @@
 import Header from "@/Components/Header";
 import Notes from "@/Components/Notes";
 
-const CSS = () => {
-    const markdownFilePath = '/CSSNotes/CSS.md';
+const LESS = () => {
+    const markdownFilePath = '/LESSNotes/LESS.md';
 
     return (
 
         <>
-           <Header text="CSS" />
+            <Header text="LESS" />
             <Notes
                 filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                markdownContentNotes="markdownContent"
             />
-
         </>
     );
 
 };
 
-export default CSS;
+export default LESS;

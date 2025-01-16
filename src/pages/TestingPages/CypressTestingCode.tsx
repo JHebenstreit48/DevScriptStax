@@ -9,7 +9,7 @@ const CypressCode = () => {
         <>
             <Header text="Cypress Testing Code" />
             <Notes filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                markdownContentNotes="markdownContent"
             />
 
         </>
