@@ -16,6 +16,6 @@
     "resolveJsonModule": true, // For importing JSON files if needed
     "typeRoots": ["./node_modules/@types", "./src/types"] // Ensure custom types are included
   },
-  "include": ["src", "Pages/BackEndPages", "Pages/FrontEndPages", "Pages/ProgrammingLanguagesPages", "Pages/TestingPages", "Pages/ToolsPages"],
+  "include": ["src", "Pages/BackEndPages", "Pages/FrontEndPages", "Pages/ProgrammingLanguagesPages", "Pages/TestingPages", "Pages/ToolsPages", "Pages/Error.tsx", "Pages/Home.tsx"],
   "exclude": ["node_modules"]
 }
