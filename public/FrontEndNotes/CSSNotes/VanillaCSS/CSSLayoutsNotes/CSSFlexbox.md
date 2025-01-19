@@ -165,3 +165,69 @@ Allow items to wrap onto multiple lines using flex-wrap:
   justify-content: space-around;
 }
 ```
+### Comparison: Flexbox vs. Grid Alignment  
+---
+
+Below is a comprehensive comparison table outlining the differences and similarities between Flexbox and Grid alignment properties:
+
+<table class="comparisonTable">
+    <thead>
+        <tr class="tableHeader">
+            <th class="tableCellHeader">Property</th>
+            <th class="tableCellHeader">Flexbox</th>
+            <th class="tableCellHeader">Grid</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="tableRow">
+            <td class="tableCell">justify-content</td>
+            <td class="tableCell">Aligns items as a group along the main axis (horizontal).</td>
+            <td class="tableCell">Aligns items as a group along the inline axis (horizontal).</td>
+        </tr>
+        <tr class="tableRow">
+            <td class="tableCell">align-items</td>
+            <td class="tableCell">Aligns items as a group along the cross axis (vertical).</td>
+            <td class="tableCell">Aligns items as a group along the block axis (vertical).</td>
+        </tr>
+        <tr class="tableRow">
+            <td class="tableCell">align-self</td>
+            <td class="tableCell">Aligns a single item along the cross axis (vertical).</td>
+            <td class="tableCell">Aligns a single item along the block axis (vertical).</td>
+        </tr>
+        <tr class="tableRow">
+            <td class="tableCell">justify-self</td>
+            <td class="tableCell"><strong>Not applicable</strong></td>
+            <td class="tableCell">Aligns a single item along the inline axis (horizontal).</td>
+        </tr>
+        <tr class="tableRow">
+            <td class="tableCell">justify-items</td>
+            <td class="tableCell"><strong>Not applicable</strong></td>
+            <td class="tableCell">Aligns all items horizontally within their grid cells.</td>
+        </tr>
+        <tr class="tableRow">
+            <td class="tableCell">align-content</td>
+            <td class="tableCell">Aligns rows in a multi-line flex container along the cross axis.</td>
+            <td class="tableCell">Aligns grid tracks (rows) along the block axis.</td>
+        </tr>
+        <tr class="tableRow">
+            <td class="tableCell">place-items</td>
+            <td class="tableCell"><strong>Not applicable</strong></td>
+            <td class="tableCell">Shorthand for combining align-items and justify-items.</td>
+        </tr>
+        <tr class="tableRow">
+            <td class="tableCell">place-self</td>
+            <td class="tableCell"><strong>Not applicable</strong></td>
+            <td class="tableCell">Shorthand for combining align-self and justify-self.</td>
+        </tr>
+        <tr class="tableRow">
+            <td class="tableCell">place-content</td>
+            <td class="tableCell">Shorthand for combining align-content and justify-content (multi-line containers only).</td>
+            <td class="tableCell">Shorthand for combining align-content and justify-content.</td>
+        </tr>
+    </tbody>
+</table>
+
+---
+
+### Related Notes on Grid
+For more information on Grid-specific alignment properties, refer to the [CSS Grid Layout Alignment](/css/basics/layouts/grid#self-vs-group-alignment) file.
