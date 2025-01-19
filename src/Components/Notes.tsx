@@ -1,6 +1,10 @@
 import { useEffect, useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 import rehypeRaw from 'rehype-raw';
+import rehypeSlug from 'rehype-slug';
+import { HashLink } from 'react-router-hash-link';
+import rehypeAutolinkHeadings from 'rehype-autolink-headings';
+import remarkGfm from 'remark-gfm';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { materialLight } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import '@/CSS/Notes.css';
@@ -61,7 +65,8 @@ const Notes: React.FC<NotesProps> = ({ filePath }) => {
             <h2 className="cardHeader">Notes</h2>
             <div className='markdownContent'>
                 <ReactMarkdown
-                    rehypePlugins={[rehypeRaw]}
+                    rehypePlugins={[rehypeRaw, rehypeSlug, rehypeAutolinkHeadings]}
+                    remarkPlugins={[remarkGfm]}
                     components={{
                         code({ className, children, ...props }) {
                             const language = className ? className.replace('language-', '') : '';
@@ -87,6 +92,21 @@ const Notes: React.FC<NotesProps> = ({ filePath }) => {
                                         {codeString}
                                     </SyntaxHighlighter>
                                 </div>
+                            );
+                        },
+                        // Add custom handling for <a> tags
+                        a({ href, children, ...props }) {
+                            if (href && href.startsWith('/')) {
+                                return (
+                                    <HashLink to={href} {...props}>
+                                        {children}
+                                    </HashLink>
+                                );
+                            }
+                            return (
+                                <a href={href} {...props}>
+                                    {children}
+                                </a>
                             );
                         },
                     }}

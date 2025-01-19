@@ -67,18 +67,17 @@ The grid system can automatically create rows and columns if not explicitly defi
 - **Explicit Grid**: Defined using grid-template-rows and grid-template-columns.
 - **Implicit Grid**: Rows or columns are automatically created as needed.
 
-#### Alignments
-
-```css
-.container {
-  justify-items: center; /* Horizontal alignment */
-  align-items: center;   /* Vertical alignment */
-}
-```
-
+### Alignments  
 ---
 
-### Row and Column Span
+#### Self vs. Group Alignment
+
+CSS Grid offers alignment options similar to Flexbox, but with additional control over individual grid items through justify-self and align-self. These properties complement the group alignment properties justify-content and align-items.
+
+For a detailed comparison of alignment properties between Grid and Flexbox, refer to the [CSS Flexbox Layout Alignment](/css/basics/layouts/flexbox#comparison-flexbox-vs-grid-alignment) file.  
+
+### Row and Column Span  
+---
 
 Grid items can span multiple rows or columns:
 
