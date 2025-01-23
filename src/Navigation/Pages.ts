@@ -292,7 +292,7 @@ const pages: Page[] = [
     ],
   },
   {
-    name: "Programming Languages",
+    name: "Web Languages",
     subpages: [
       PythonNavigation,
       RustNavigation,
