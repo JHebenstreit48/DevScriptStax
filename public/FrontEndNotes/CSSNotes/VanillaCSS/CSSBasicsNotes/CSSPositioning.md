@@ -51,3 +51,31 @@ The z-index property specifies the stacking order of elements. Elements with a h
   left: 30px;
 }
 ```
+### Transform-Origin and Placement (Brief Overview)
+
+The transform-origin property controls where transformations start from, such as the center or a specific edge of an element.
+
+For a **full explanation of transform-origin**, including practical examples, visit the **[CSS Transform Page](/css/basics/transform)**.
+
+---
+
+### Practical Example: Floating Elements
+
+css
+.container {
+  position: relative;
+}
+
+.box {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+}
+
+---
+
+## Final Thoughts
+
+- Use transform-origin to control how transformations behave.
+- z-index only applies to positioned elements (relative, absolute, fixed).
+- Absolute and fixed elements are removed from normal document flow.

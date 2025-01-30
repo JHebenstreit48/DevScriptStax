@@ -4,61 +4,65 @@ const CSSNavigation: Subpage = {
   name: "CSS",
   subpages: [
     {
-      name: "Vanilla CSS", // Clicking this expands Basics, Layouts, and Advanced
-      subpages: [
+      "name": "Vanilla CSS",
+      "subpages": [
         {
-          name: "CSS Basics",
-          subpages: [
+          "name": "CSS Basics",
+          "subpages": [
             {
-              name: "CSS Intro and Syntax",
-              path: "/css/basics/intro"
+              "name": "CSS Intro and Syntax",
+              "path": "/css/basics/intro"
             },
             {
-              name: "Selectors",
-              path: "/css/basics/selectors"
+              "name": "Selectors",
+              "path": "/css/basics/selectors"
             },
             {
-              name: "Box Model",
-              path: "/css/basics/boxmodel"
+              "name": "Box Model",
+              "path": "/css/basics/boxmodel" // Add border-radius and box-shadow here
             },
             {
-              name: "Positioning",
-              path: "/css/basics/positioning"
-            },
-          ],
+              "name": "Positioning",
+              "path": "/css/basics/positioning"
+            }
+          ]
         },
         {
-          name: "Layouts",
-          subpages: [
+          "name": "Layouts",
+          "subpages": [
             {
-              name: "Flexbox",
-              path: "/css/basics/layouts/flexbox"
+              "name": "Flexbox",
+              "path": "/css/vanillacss/layouts/flexbox"
             },
             {
-              name: "Grid",
-              path: "/css/basics/layouts/grid"
-            },
-          ],
+              "name": "Grid",
+              "path": "/css/vanillacss/layouts/grid" // No new page needed
+            }
+          ]
         },
         {
-          name: "Advanced",
-          subpages: [
+          "name": "Advanced",
+          "subpages": [
             {
-              name: "Media Queries",
-              path: "/css/basics/advanced/mediaqueries",
+              "name": "Media Queries",
+              "path": "/css/vanillcss/advanced/mediaqueries"
             },
             {
-              name: "CSS Variables",
-              path: "/css/basics/advanced/variables"
+              "name": "CSS Variables",
+              "path": "/css/vanillacss/advanced/variables"
             },
             {
-              name: "Animations",
-              path: "/css/basics/advanced/animations"
+              "name": "Transitions & Animations",
+              "path": "/css/vanillacss/advanced/animations" // Rename to include Transitions
             },
-          ],
-        },
-      ],
-    },
+            {
+              "name": "Transform",
+              "path": "/css/vanillacss/advanced/transforms" // New page for transforms
+            }
+          ]
+        }
+      ]
+    },    
     {
       name: "Frameworks",
       subpages: [

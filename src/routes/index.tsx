@@ -38,7 +38,8 @@ import CSSGrid from "@/Pages/FrontEndPages/CSSVanillaPages/CSSLayout/CSSGrid";
 // CSS Advanced Start
 import CSSMediaQueries from "@/Pages/FrontEndPages/CSSVanillaPages/CSSAdvancedPages/CSSMediaQueries";
 import CSSVariables from "@/Pages/FrontEndPages/CSSVanillaPages/CSSAdvancedPages/CSSVariables";
-import CSSAnimations from "@/Pages/FrontEndPages/CSSVanillaPages/CSSAdvancedPages/CSSAnimations";
+import CSSTransitionsAndAnimations from "@/Pages/FrontEndPages/CSSVanillaPages/CSSAdvancedPages/CSSTransitionsAndAnimations";
+import CSSTransform from "@/Pages/FrontEndPages/CSSVanillaPages/CSSAdvancedPages/CSSTransform";
 // CSS Advanced End
 
 import LESS from "@/Pages/FrontEndPages/CSSVanillaPages/LESS";
@@ -131,6 +132,7 @@ import TypeScript from "@/Pages/ProgrammingLanguagesPages/TypeScriptPages/TypeSc
 // Vue
 import Vue from "@/Pages/FrontEndPages/VuePages/Vue";
 
+
 // import VueCode from "@/pages/VuePages/VueCode";
 
 export const router = createBrowserRouter([
@@ -193,24 +195,28 @@ export const router = createBrowserRouter([
                 element: <CSSPositioning />,
             },
             {
-                path: '/css/basics/layouts/flexbox',
+                path: '/css/vanillacss/layouts/flexbox',
                 element: <CSSFlexbox />,
             },
             {
-                path: '/css/basics/layouts/grid',
+                path: '/css/vanillacss/layouts/grid',
                 element: <CSSGrid />,
             },
             {
-                path: '/css/basics/advanced/mediaqueries',
+                path: '/css/vanillacss/advanced/mediaqueries',
                 element: <CSSMediaQueries />,
             },
             {
-                path: '/css/basics/advanced/variables',
+                path: '/css/vanillacss/advanced/variables',
                 element: <CSSVariables />,
             },
             {
-                path: '/css/basics/advanced/animations',
-                element: <CSSAnimations />,
+                path: '/css/vanillacss/advanced/animations',
+                element: <CSSTransitionsAndAnimations />,
+            },
+            {
+                path: '/css/vanillacss/advanced/transforms',
+                element: <CSSTransform />,
             },
             {
                 path: '/css/less',
