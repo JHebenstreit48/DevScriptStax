@@ -1,13 +1,13 @@
 import Header from "@/Components/Header";
 import Notes from "@/Components/Notes";
 
-const CSSAnimations = () => {
-    const markdownFilePath = '/FrontEndNotes/CSSNotes/VanillaCSS/CSSAdvancedNotes/CSSAnimations.md';
+const CSSTransform = () => {
+    const markdownFilePath = '/FrontEndNotes/CSSNotes/VanillaCSS/CSSAdvancedNotes/CSSTransform.md';
 
     return (
 
         <>
-            <Header text="CSS Animations" />
+            <Header text="CSS Transform" />
             <Notes
                 filePath={markdownFilePath}
                 markdownContent="markdownContent"
@@ -18,4 +18,4 @@ const CSSAnimations = () => {
 
 };
 
-export default CSSAnimations;
+export default CSSTransform;

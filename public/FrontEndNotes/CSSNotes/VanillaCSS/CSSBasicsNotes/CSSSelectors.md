@@ -64,7 +64,7 @@ input[type="text"] {
 
 <br>
 
-#### Pseudo-classes
+#### Pseudo-Classes
 
 ```css
 a:hover {
@@ -76,7 +76,7 @@ a:hover {
 
 <br>
 
-#### Pseudo-elements
+#### Pseudo-Elements
 
 ```css
 p::first-line {
