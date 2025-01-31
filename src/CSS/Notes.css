@@ -40,9 +40,14 @@
   font-size: 20px;
 }
 
-
-.markdownContent h1, h2 {
+.markdownContent h1 {
   color: rgb(243, 175, 28);
+  text-align: center;
+  font-size: 3rem;
+}
+
+.markdownContent h2, h3, h4, h5, h6 {
+  color: rgb(255, 77, 77);
   text-shadow: 1px 2px 1px black;
   text-align: center;
 }
@@ -60,6 +65,7 @@ hr {
 
 .secondEmphasis {
   color: rgb(47, 185, 20);
+  font: italic bold 23px 'Arial', sans-serif;
 }
 
 .subheadingEmphasis1 {
