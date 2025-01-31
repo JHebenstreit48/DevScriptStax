@@ -88,6 +88,63 @@ transition-delay: 1s;
 - **Negative values** → Transition starts **midway**.
 
 ---
+### Real-World Example: Hover Effect with Transform and Opacity
+---
+
+The following example demonstrates **how transitions work with positioning, overflow handling, and transforms**.
+
+```css
+.image-banner {
+  position: relative;
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+
+.image-banner img {
+  display: block;
+  transition: all 1.7s;
+}
+
+.image-banner:hover img {
+  transform: scale(1.5);
+}
+
+.banner-description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.65);
+  padding: 15px 25px;
+  opacity: 0;
+  transition-property: all;
+  transition-duration: 1s;
+  transform: translateY(100%);
+}
+
+.image-banner:hover .banner-description {
+  opacity: 1;
+  transform: translateY(0);
+}
+```
+---
+### Explanation of the Example
+---
+
+- **Positioning & Overflow:**
+  - The .image-banner container uses position: relative; so that the description can be **absolutely positioned** inside it.
+  - overflow: hidden; ensures that the scaled image doesn’t extend beyond its container.
+
+- **Image Scaling:**
+  - transition: all 1.7s; allows the image to scale smoothly when hovered.
+  - transform: scale(1.5); enlarges the image by 1.5 times.
+
+- **Text Reveal Effect:**
+  - .banner-description starts at opacity: 0; and transform: translateY(100%);, positioning it **below the visible area**.
+  - On hover, opacity: 1; and transform: translateY(0); **fade in** and **move it into view** smoothly over 1s.
+
+
+---
 ### Comparison: Transition vs. No Transition
 ---
 
@@ -161,8 +218,6 @@ div:hover {
 
 - The <span class="emphasis">color</span> transition occurs over <span class="emphasis">1 second</span> <span class="secondEmphasis">instead of</span> changing <span class="emphasis">instantly</span>.
 - Using <span class="emphasis">all</span> applies the transition effect to <span class="emphasis">every</span> animatable property on the element.
-
----
 
 ---
 ### Comparison: Transition Timing Functions
