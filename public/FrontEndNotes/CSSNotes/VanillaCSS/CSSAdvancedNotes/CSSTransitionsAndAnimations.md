@@ -67,62 +67,60 @@ transition-timing-function: ease-out;
 transition-timing-function: ease-in-out;
 ```
 
-- **ease** (default) → Starts slow, speeds up, then slows down.
-- **linear** → Moves at a **constant speed** from start to finish.
-- **ease-in** → Starts slow, then speeds up.
-- **ease-out** → Starts fast, then slows down.
-- **ease-in-out** → Slow at both the start and end.
+- <span class="emphasis">ease</span> <span class="secondEmphasis">(default)</span> : Starts <span class="emphasis">slow</span>, <span class="emphasis">speeds up</span>, then <span class="emphasis">slows down</span>.
+- <span class="emphasis">linear</span> : Moves at a <span class="emphasis">constant</span> speed from <span class="emphasis">start</span> to <span class="emphasis">finish</span>.
+- <span class="emphasis">ease-in</span> : Starts <span class="emphasis">slow</span>, then <span class="emphasis">speeds up</span>.
+- <span class="emphasis">ease-out</span> : Starts <span class="emphasis">fast</span>, then <span class="emphasis">slows down</span>.
+- <span class="emphasis">ease-in-out</span> : <span class="emphasis">Slow</span> at <span class="secondEmphasis">both</span> the <span class="emphasis">start</span> and <span class="emphasis">end</span>.
 
 ---
 ### Transition-Delay
 ---
 
-The <span class="emphasis">transition-delay</span> property adds a pause before a transition begins.
+The <span class="emphasis">transition-delay</span> property adds a <span class="emphasis">pause</span> <span class="secondEmphasis">before</span> a transition <span class="emphasis">begins</span>.
 
 ```css
 /* Waits 1 second before transitioning */
 transition-delay: 1s;
 ```
 
-- **Positive values** → Delay before transition starts.
-- **Negative values** → Transition starts **midway**.
+- <span class="emphasis">Positive values</span> : Delay before transition starts.
+- <span class="emphasis">Negative values</span> : Transition starts **midway**.
 
 ---
 ### Real-World Example: Hover Effect with Transform and Opacity
 ---
 
-The following example demonstrates **how transitions work with positioning, overflow handling, and transforms**.
+The following example demonstrates how transitions work with <span class="emphasis">positioning</span>, <span class="emphasis">overflow handling</span>, and <span class="emphasis">transforms</span>.
 
 ```css
-.image-banner {
+/* Container: establishes relative positioning and hides overflow */
+.box {
   position: relative;
   margin-bottom: 40px;
   overflow: hidden;
 }
 
-.image-banner img {
-  display: block;
+/* Image: applies a smooth transition for scaling */
+.box img {
   transition: all 1.7s;
 }
 
-.image-banner:hover img {
+/* Image hover effect: enlarges the image by scaling up */
+.box:hover img {
   transform: scale(1.5);
 }
 
-.banner-description {
+/* Text: initially hidden with opacity 0 and positioned below view */
+.text {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0.65);
-  padding: 15px 25px;
   opacity: 0;
-  transition-property: all;
-  transition-duration: 1s;
   transform: translateY(100%);
+  transition: opacity 1s, transform 1s;
 }
 
-.image-banner:hover .banner-description {
+/* Text hover effect: fades in and moves into view */
+.box:hover .text {
   opacity: 1;
   transform: translateY(0);
 }
@@ -184,7 +182,7 @@ The following example demonstrates **how transitions work with positioning, over
 ### Combining Transition Properties
 ---
 
-By using <span class="emphasis">transition-property</span>, <span class="emphasis">transition-duration</span>, <span class="emphasis">transition-timing-function</span>, and <span class="emphasis">transition-delay</span> together, developers can create **precise** and **controlled** animations.
+By using <span class="emphasis">transition-property</span>, <span class="emphasis">transition-duration</span>, <span class="emphasis">transition-timing-function</span>, and <span class="emphasis">transition-delay</span> together, developers can create <span class="secondEmphasis">precise</span> and <span class="secondEmphasis">controlled</span> animations.
 
 ```css
 div {
