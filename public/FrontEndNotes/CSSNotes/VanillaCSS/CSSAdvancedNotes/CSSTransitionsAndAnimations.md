@@ -91,7 +91,7 @@ transition-delay: 1s;
 ### Real-World Example: Hover Effect with Transform and Opacity
 ---
 
-The following example demonstrates how transitions work with <span class="emphasis">positioning</span>, <span class="emphasis">overflow handling</span>, and <span class="emphasis">transforms</span>.
+The following example demonstrates how transitions work with **positioning**, **overflow handling**, and **transforms**.
 
 ```css
 /* Container: establishes relative positioning and hides overflow */
@@ -115,8 +115,9 @@ The following example demonstrates how transitions work with <span class="emphas
 .text {
   position: absolute;
   opacity: 0;
+  transition-property: all;
+  transition-duration: 1s;
   transform: translateY(100%);
-  transition: opacity 1s, transform 1s;
 }
 
 /* Text hover effect: fades in and moves into view */
@@ -129,18 +130,18 @@ The following example demonstrates how transitions work with <span class="emphas
 ### Explanation of the Example
 ---
 
-- **Positioning & Overflow:**
-  - The .image-banner container uses position: relative; so that the description can be **absolutely positioned** inside it.
-  - overflow: hidden; ensures that the scaled image doesn’t extend beyond its container.
+#### Positioning & Overflow:
+- The .box container uses position: relative so that its child elements (such as .text) can be absolutely positioned within it.
+- overflow: hidden ensures that any scaling of the image remains contained within the boundaries of .box.
 
-- **Image Scaling:**
-  - transition: all 1.7s; allows the image to scale smoothly when hovered.
-  - transform: scale(1.5); enlarges the image by 1.5 times.
+#### Image Scaling:
+- The image inside .box is set to transition with "transition: all 1.7s", allowing it to animate smoothly when its properties change.
+- On hover, the image scales up via "transform: scale(1.5)", enlarging it by 1.5 times for a dynamic effect.
 
-- **Text Reveal Effect:**
-  - .banner-description starts at opacity: 0; and transform: translateY(100%);, positioning it **below the visible area**.
-  - On hover, opacity: 1; and transform: translateY(0); **fade in** and **move it into view** smoothly over 1s.
-
+#### Text Reveal Effect:
+- The .text element is initially hidden by setting opacity: 0 and positioning it off-screen with "transform: translateY(100%)".
+- By defining "transition-property: all" and "transition-duration: 1s", the element’s opacity and transform properties animate smoothly.
+- On hover, the .text element transitions to opacity: 1 and transform: translateY(0), causing it to fade in and slide into view over 1 second.
 
 ---
 ### Comparison: Transition vs. No Transition
