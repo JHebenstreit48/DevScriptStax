@@ -1,13 +1,13 @@
 import Header from "@/Components/Header";
 import Notes from "@/Components/Notes";
 
-const CSSVariables = () => {
-    const markdownFilePath = '/FrontEndNotes/CSSNotes/VanillaCSS/CSSAdvancedNotes/CSSVariables.md';
+const Transform = () => {
+    const markdownFilePath = '/FrontEndNotes/CSSNotes/VanillaCSS/CSSAdvancedNotes/Transform.md';
 
     return (
 
         <>
-            <Header text="CSS Variables" />
+            <Header text="Transform" />
             <Notes
                 filePath={markdownFilePath}
                 markdownContent="markdownContent"
@@ -18,4 +18,4 @@ const CSSVariables = () => {
 
 };
 
-export default CSSVariables;
+export default Transform;
