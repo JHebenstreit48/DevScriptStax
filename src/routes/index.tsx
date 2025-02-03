@@ -13,8 +13,20 @@ import ApolloServer from "@/Pages/BackEndPages/ApolloServerPages/ApolloServer";
 // import ApolloServerCode from "@/pages/ApolloServerPages/ApolloServerCode";
 
 // Angular Notes Start
-import AngularStart from "@/Pages/FrontEndPages/AngularPages/AngularStart";
-import AngularStructure from "@/Pages/FrontEndPages/AngularPages/AngularStructure";
+
+// Angular Basics Start
+import GettingStarted from "@/Pages/FrontEndPages/AngularPages/Basics/AngularStart";
+import Structure from "@/Pages/FrontEndPages/AngularPages/Basics/AngularStructure";
+// Angular Basics End
+
+// Angular Core Concepts Start
+import Components from "@/Pages/FrontEndPages/AngularPages/CoreConcepts/AngularComponents";
+import Modules from "@/Pages/FrontEndPages/AngularPages/CoreConcepts/AngularModules";
+import Services from "@/Pages/FrontEndPages/AngularPages/CoreConcepts/AngularServices";
+import Routing from "@/Pages/FrontEndPages/AngularPages/CoreConcepts/AngularRouting";
+// Angular Core Concepts End
+
+
 // Angular Notes End
 
 // CICD Ops
@@ -148,12 +160,28 @@ export const router = createBrowserRouter([
                 element: <Home />,
             },
             {
-                path: '/frontendpages/angularpages/gettingstarted',
-                element: <AngularStart />,
+                path: '/angular/basics/gettingstarted',
+                element: <GettingStarted />,
             },
             {
-                path: '/frontendpages/angularpages/projectstructure',
-                element: <AngularStructure />,
+                path: '/angular/basics/projectstructure',
+                element: <Structure />,
+            },
+            {
+                path: '/angular/coreconcepts/components',
+                element: <Components />,
+            },
+            {
+                path: '/angular/coreconcepts/modules',
+                element: <Modules />,
+            },
+            {
+                path: '/angular/coreconcepts/services',
+                element: <Services />,
+            },
+            {
+                path: '/angular/coreconcepts/routing',
+                element: <Routing />,
             },
             {
                 path: '/apis',
