@@ -8,11 +8,11 @@ const AngularNavigation: Subpage = {
       subpages: [
         {
           name: "Getting Started",
-          path: "/frontendpages/angularpages/gettingstarted", // Combines Overview, Creating an Angular App, and Angular CLI
+          path: "/angular/basics/gettingstarted", // Combines Overview, Creating an Angular App, and Angular CLI
         },
         {
           name: "Project Structure",
-          path: "/frontendpages/angularpages/projectstructure", // Shortened
+          path: "/angular/basics/projectstructure", // Shortened
         },
       ],
     },
@@ -21,19 +21,19 @@ const AngularNavigation: Subpage = {
       subpages: [
         {
           name: "Components",
-          path: "/angular/components",
+          path: "/angular/coreconcepts/components",
         },
         {
           name: "Modules",
-          path: "/angular/modules",
+          path: "/angular/coreconcepts/modules",
         },
         {
           name: "Services & DI", // Shortened
-          path: "/angular/services",
+          path: "/angular/coreconcepts/services",
         },
         {
           name: "Routing", // Shortened
-          path: "/angular/routing",
+          path: "/angular/coreconcepts/routing",
         },
       ],
     },
