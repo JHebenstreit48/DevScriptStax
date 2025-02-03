@@ -2,7 +2,12 @@ import { Page } from "@/Navigation/NavigationTypes";
 
 // Front-End Navigation Start
 import AngularNavigation from "@/Navigation/FrontEndNavigation/Angular";
-import CSSNavigation from "@/Navigation/FrontEndNavigation/CSS";
+
+// CSS Navigation Start
+
+
+// CSS Navigation End
+
 import GatsbyNavigation from "@/Navigation/FrontEndNavigation/Gatsby";
 import HTMLNavigation from "@/Navigation/FrontEndNavigation/HTML";
 import JavaScriptNavigation from "@/Navigation/FrontEndNavigation/JavaScript";
@@ -123,6 +128,10 @@ import GitNavigation from "@/Navigation/ToolsNavigation/ContainerizationNavigati
 // GraphQL & Apollo Navigation Start
 import GraphQLNavigation from "@/Navigation/GraphQLAndApolloNavigation/GraphQLPages";
 import ApolloNavigation from "@/Navigation/GraphQLAndApolloNavigation/Apollo";
+import VanillaNavigation from "./FrontEndNavigation/CSSNavigation/Vanilla";
+import FrameworksNavigation from "./FrontEndNavigation/CSSNavigation/Frameworks";
+import PreprocessorsNavigation from "./FrontEndNavigation/CSSNavigation/Preprocessors";
+import PostprocessorsNavigation from "./FrontEndNavigation/CSSNavigation/Postprocessors";
 // GraphQL & Apollo Navigation End
 
 const pages: Page[] = [
@@ -134,7 +143,15 @@ const pages: Page[] = [
     name: "Front End",
     subpages: [
       AngularNavigation,
-      CSSNavigation,
+      {
+        name: "CSS",
+        subpages: [
+          VanillaNavigation,
+          FrameworksNavigation,
+          PreprocessorsNavigation,
+          PostprocessorsNavigation
+        ]
+      },
       GatsbyNavigation,
       HTMLNavigation,
       JavaScriptNavigation,
@@ -144,7 +161,7 @@ const pages: Page[] = [
       ReduxNavigation,
       SvelteNavigation,
       VueNavigation,
-      ViteNavigation // Modern Build Tool
+      ViteNavigation
     ],
   },
   {

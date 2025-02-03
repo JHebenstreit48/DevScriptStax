@@ -1,7 +1,7 @@
 import Header from "@/Components/Header";
 import Notes from "@/Components/Notes";
 
-const PostCSS = () => {
+const WhatArePost = () => {
     const markdownFilePath = '/PostCSSNotes/PostCSS.md';
 
     return (
@@ -17,4 +17,4 @@ const PostCSS = () => {
 
 };
 
-export default PostCSS;
+export default WhatArePost;
