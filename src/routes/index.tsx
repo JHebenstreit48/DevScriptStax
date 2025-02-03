@@ -24,27 +24,27 @@ import CICDOps from "@/Pages/ToolsPages/CICDOpsPages/CICDOps";
 // CSS Start
 
 // CSS Basics Start
-import CSSIntro from "@/Pages/FrontEndPages/CSSVanillaPages/CSSBasics/CSSIntro";
-import CSSSelectors from "@/Pages/FrontEndPages/CSSVanillaPages/CSSBasics/CSSSelectors";
-import CSSBoxModel from "@/Pages/FrontEndPages/CSSVanillaPages/CSSBasics/CSSBoxModel";
-import CSSPositioning from "@/Pages/FrontEndPages/CSSVanillaPages/CSSBasics/CSSPositioning";
+import CSSIntro from "@/Pages/FrontEndPages/CSSPages/CSSVanillaPages/CSSBasics/CSSIntro";
+import CSSSelectors from "@/Pages/FrontEndPages/CSSPages/CSSVanillaPages/CSSBasics/CSSSelectors";
+import CSSBoxModel from "@/Pages/FrontEndPages/CSSPages/CSSVanillaPages/CSSBasics/CSSBoxModel";
+import CSSPositioning from "@/Pages/FrontEndPages/CSSPages/CSSVanillaPages/CSSBasics/CSSPositioning";
 // CSS Basics End
 
 // CSS Layouts Start
-import CSSFlexbox from "@/Pages/FrontEndPages/CSSVanillaPages/CSSLayout/CSSFlexbox";
-import CSSGrid from "@/Pages/FrontEndPages/CSSVanillaPages/CSSLayout/CSSGrid";
+import CSSFlexbox from "@/Pages/FrontEndPages/CSSPages/CSSVanillaPages/CSSLayout/CSSFlexbox";
+import CSSGrid from "@/Pages/FrontEndPages/CSSPages/CSSVanillaPages/CSSLayout/CSSGrid";
 // CSS Layouts End
 
 // CSS Advanced Start
-import CSSMediaQueries from "@/Pages/FrontEndPages/CSSVanillaPages/CSSAdvancedPages/CSSMediaQueries";
-import CSSVariables from "@/Pages/FrontEndPages/CSSVanillaPages/CSSAdvancedPages/CSSVariables";
-import CSSTransitionsAndAnimations from "@/Pages/FrontEndPages/CSSVanillaPages/CSSAdvancedPages/CSSTransitionsAndAnimations";
-import CSSTransform from "@/Pages/FrontEndPages/CSSVanillaPages/CSSAdvancedPages/CSSTransform";
+import CSSMediaQueries from "@/Pages/FrontEndPages/CSSPages/CSSVanillaPages/CSSAdvancedPages/CSSMediaQueries";
+import CSSVariables from "@/Pages/FrontEndPages/CSSPages/CSSVanillaPages/CSSAdvancedPages/CSSVariables";
+import CSSTransitionsAndAnimations from "@/Pages/FrontEndPages/CSSPages/CSSVanillaPages/CSSAdvancedPages/CSSTransitionsAndAnimations";
+import CSSTransform from "@/Pages/FrontEndPages/CSSPages/CSSVanillaPages/CSSAdvancedPages/CSSTransform";
 // CSS Advanced End
 
-import LESS from "@/Pages/FrontEndPages/CSSVanillaPages/LESS";
+import LESS from "@/Pages/FrontEndPages/CSSPages/CSSPreprocessorsPages/LESS";
 // import LESSCode from "@/pages/CSSPages/LESSCode";
-import PostCSS from "@/Pages/FrontEndPages/CSSVanillaPages/PostCSS";
+import WhatArePost from "@/Pages/FrontEndPages/CSSPages/CSSPostprocessorsPages/PostCSS";
 // import PostCSSCode from "@/pages/CSSPages/PostCSSCode";
 
 // CSS End
@@ -179,19 +179,19 @@ export const router = createBrowserRouter([
             //     element: <CICDOpsCode />,
             // },
             {
-                path: '/css/basics/intro',
+                path: '/css/vanillacss/basics/intro',
                 element: <CSSIntro />,
             },
             {
-                path: '/css/basics/selectors',
+                path: '/css/vanillacss/basics/selectors',
                 element: <CSSSelectors />,
             },
             {
-                path: '/css/basics/boxmodel',
+                path: '/css/vanillacss/basics/boxmodel',
                 element: <CSSBoxModel />,
             },
             {
-                path: '/css/basics/positioning',
+                path: '/css/vanillacss/basics/positioning',
                 element: <CSSPositioning />,
             },
             {
@@ -211,7 +211,7 @@ export const router = createBrowserRouter([
                 element: <CSSVariables />,
             },
             {
-                path: '/css/vanillacss/advanced/animations',
+                path: '/css/vanillacss/advanced/transitionsandanimations',
                 element: <CSSTransitionsAndAnimations />,
             },
             {
@@ -219,16 +219,16 @@ export const router = createBrowserRouter([
                 element: <CSSTransform />,
             },
             {
-                path: '/css/less',
+                path: '/css/preprocessors/less/intro',
                 element: <LESS />,
             },
             // {
-            //     path: '/css/less/lesscode',
+            //     path: '/css/preprocessors/less/syntax',
             //     element: <LESSCode />,
             // },
             {
-                path: '/css/postcss',
-                element: <PostCSS />,
+                path: '/css/postprocessors/overview/whatarepostprocessors',
+                element: <WhatArePost />,
             },
             // {
             //     path: '/css/postcss/postcsscode',
