@@ -1,28 +1,28 @@
-## Media Queries
-
 ### What are Media Queries?
 
-<span class="emphasis">Media Queries</span> allow you to apply styles based on the characteristics of the user's device, such as screen size, resolution, or orientation. They are essential for creating responsive web designs.
+<span class="emphasis">Media Queries</span> allow you to apply styles based on the <span class="emphasis">characteristics</span> of the <span class="secondEmphasis">user's device</span>, such as <span class="emphasis">screen size</span>, <span class="emphasis">resolution</span>, or <span class="emphasis">orientation</span>. They are essential for creating <span class="secondEmphasis">responsive web designs</span>.
 
 ---
 
 ### Basic Syntax
 
-css
+```css
 @media (condition) {
   selector {
     property: value;
   }
 }
+```
 
 Example:
 
-css
+```css
 @media (max-width: 768px) {
   body {
     background-color: lightgray;
   }
 }
+```
 
 - This rule applies when the viewport width is **768px or smaller**.
 
@@ -31,28 +31,31 @@ css
 ### Common Media Query Features
 
 1. **Width and Height**:
-   css
+```css
    @media (min-width: 1024px) {
      .container {
        width: 80%;
      }
    }
+```
 
 2. **Orientation**:
-   css
+```css
    @media (orientation: landscape) {
      .image {
        height: 300px;
      }
    }
+```
 
 3. **Resolution**:
-   css
+```css
    @media (min-resolution: 2dppx) {
      .icon {
        background-image: url('high-res.png');
      }
    }
+```
 
 ---
 
@@ -60,12 +63,13 @@ css
 
 Combine multiple conditions using and, not, and only.
 
-css
+```css
 @media (min-width: 768px) and (max-width: 1024px) {
   .sidebar {
     display: none;
   }
 }
+```
 
 ---
 
@@ -73,13 +77,14 @@ css
 
 Target devices in dark mode using prefers-color-scheme:
 
-css
+```css
 @media (prefers-color-scheme: dark) {
   body {
     background-color: black;
     color: white;
   }
 }
+```
 
 ---
 
@@ -87,17 +92,19 @@ css
 
 Default styles for larger screens:
 
-css
+```css
 .container {
   display: flex;
   flex-direction: row;
 }
+```
 
 Styles for smaller screens:
 
-css
+```css
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
   }
 }
+```

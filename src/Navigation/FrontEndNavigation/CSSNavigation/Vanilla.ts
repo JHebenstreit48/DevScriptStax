@@ -46,7 +46,7 @@ const VanillaNavigation: Subpage = {
         },
         {
           name: "Media Queries",
-          path: "/css/vanillcss/advanced/mediaqueries",
+          path: "/css/vanillacss/advanced/mediaqueries",
         },
         {
           name: "Transform",
