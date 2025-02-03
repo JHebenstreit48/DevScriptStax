@@ -1,13 +1,13 @@
 import Header from "@/Components/Header";
 import Notes from "@/Components/Notes";
 
-const CSSTransform = () => {
-    const markdownFilePath = '/FrontEndNotes/CSSNotes/VanillaCSS/CSSAdvancedNotes/CSSTransform.md';
+const MediaQueries = () => {
+    const markdownFilePath = '/FrontEndNotes/CSSNotes/VanillaCSS/CSSAdvancedNotes/MediaQueries.md';
 
     return (
 
         <>
-            <Header text="CSS Transform" />
+            <Header text="Media Queries" />
             <Notes
                 filePath={markdownFilePath}
                 markdownContent="markdownContent"
@@ -18,4 +18,4 @@ const CSSTransform = () => {
 
 };
 
-export default CSSTransform;
+export default MediaQueries;

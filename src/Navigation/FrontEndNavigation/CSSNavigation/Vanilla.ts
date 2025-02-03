@@ -41,20 +41,24 @@ const VanillaNavigation: Subpage = {
       name: "Advanced",
       subpages: [
         {
+          name: "Animations",
+          path: "/css/vanillacss/advanced/animations",
+        },
+        {
           name: "Media Queries",
           path: "/css/vanillcss/advanced/mediaqueries",
         },
         {
-          name: "CSS Variables",
-          path: "/css/vanillacss/advanced/variables",
-        },
-        {
-          name: "Transitions & Animations",
-          path: "/css/vanillacss/advanced/transitionsandanimations",
-        },
-        {
           name: "Transform",
           path: "/css/vanillacss/advanced/transforms",
+        },
+        {
+          name: "Transitions",
+          path: "/css/vanillacss/advanced/transitions",
+        },
+        {
+          name: "Variables",
+          path: "/css/vanillacss/advanced/variables",
         },
       ],
     },

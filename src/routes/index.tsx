@@ -36,10 +36,11 @@ import CSSGrid from "@/Pages/FrontEndPages/CSSPages/CSSVanillaPages/CSSLayout/CS
 // CSS Layouts End
 
 // CSS Advanced Start
-import CSSMediaQueries from "@/Pages/FrontEndPages/CSSPages/CSSVanillaPages/CSSAdvancedPages/CSSMediaQueries";
-import CSSVariables from "@/Pages/FrontEndPages/CSSPages/CSSVanillaPages/CSSAdvancedPages/CSSVariables";
-import CSSTransitionsAndAnimations from "@/Pages/FrontEndPages/CSSPages/CSSVanillaPages/CSSAdvancedPages/CSSTransitionsAndAnimations";
-import CSSTransform from "@/Pages/FrontEndPages/CSSPages/CSSVanillaPages/CSSAdvancedPages/CSSTransform";
+import Animations from "@/Pages/FrontEndPages/CSSPages/CSSVanillaPages/CSSAdvancedPages/Animations";
+import MediaQueries from "@/Pages/FrontEndPages/CSSPages/CSSVanillaPages/CSSAdvancedPages/MediaQueries";
+import Transform from "@/Pages/FrontEndPages/CSSPages/CSSVanillaPages/CSSAdvancedPages/Transform";
+import Transitions from "@/Pages/FrontEndPages/CSSPages/CSSVanillaPages/CSSAdvancedPages/Transition";
+import Variables from "@/Pages/FrontEndPages/CSSPages/CSSVanillaPages/CSSAdvancedPages/Variables";
 // CSS Advanced End
 
 import LESS from "@/Pages/FrontEndPages/CSSPages/CSSPreprocessorsPages/LESS";
@@ -203,20 +204,25 @@ export const router = createBrowserRouter([
                 element: <CSSGrid />,
             },
             {
-                path: '/css/vanillacss/advanced/mediaqueries',
-                element: <CSSMediaQueries />,
+                path: '/css/vanillacss/advanced/animations',
+                element: <Animations />,
             },
             {
-                path: '/css/vanillacss/advanced/variables',
-                element: <CSSVariables />,
+                path: '/css/vanillacss/advanced/mediaqueries',
+                element: <MediaQueries />,
+            },
+
+            {
+                path: '/css/vanillacss/advanced/transforms',
+                element: <Transform />,
             },
             {
                 path: '/css/vanillacss/advanced/transitionsandanimations',
-                element: <CSSTransitionsAndAnimations />,
+                element: <Transitions />,
             },
             {
-                path: '/css/vanillacss/advanced/transforms',
-                element: <CSSTransform />,
+                path: '/css/vanillacss/advanced/variables',
+                element: <Variables />,
             },
             {
                 path: '/css/preprocessors/less/intro',
