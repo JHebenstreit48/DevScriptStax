@@ -1,39 +1,17 @@
 .card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 5rem auto;
-  width: 75rem;
-  border: 1px solid gray;
-  box-shadow: 6px 10px #888888;
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 40%;
+  margin: 3.5rem auto 0 auto;
   line-height: 2rem;
   padding: 0 0 2rem;
-  background-color: rgb(43, 41, 41);
+  background-color: rgb(41, 40, 40);
   z-index: 1;
 }
 
-.cardHeader {
-  background: linear-gradient(
-    to bottom,
-    rgb(56, 4, 56),
-    rgb(123, 1, 160),
-    rgb(195, 0, 255)
-  );
-  display: flex;
-  width: 100%;
-  margin: 0 0 4rem;
-  padding: 2rem 0;
-  align-items: center;
-  justify-content: center;
-  font: bold 48px/1 'Arial', sans-serif;
-  color: rgb(255, 214, 10);
-  text-shadow: 2px 3px 3px black;
-}
-
 .markdownContent {
-  width: 75%;
-  margin: 0 auto;
+  width: 70%;
+  margin: 4rem auto;
   color: rgb(6, 159, 248);
   text-shadow: 1px 2px 1px black;
   line-height: 1.5;
