@@ -19,12 +19,6 @@
   text-align: center;
 }
 
-.dropdownLink {
-  color: rgb(240, 128, 128);
-  text-decoration: none;
-  display: block;
-}
-
 .dropdownLink:hover {
   background-color: rgb(60, 60, 60);
 }
@@ -59,6 +53,13 @@
   padding-bottom: 2px;
   font-size: 1.5rem;
   color: rgb(0, 255, 127);
+}
+
+.dropdownButton.level-4 {
+  color: rgb(240, 128, 128);
+  font-size: 1.2rem;
+  text-decoration: none;
+  display: block;
 }
 
 .dropdownContent {
