@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -10,93 +10,105 @@ import { Page, Subpage } from "@/Navigation/NavigationTypes";
 
 type DropdownDirection = "up" | "down" | "start" | "end";
 
-// Prepare the navigation data for rendering
 const navigationPages: Page[] = pages;
 
 interface NavigationProps {
-  dropdownDirection?: DropdownDirection; // Define the dropdownDirection prop
+  dropdownDirection?: DropdownDirection;
 }
 
-const Navigation: React.FC<NavigationProps> = ({
-  dropdownDirection = "down",
-}) => {
+const Navigation: React.FC<NavigationProps> = ({ dropdownDirection = "down" }) => {
   const [activeDropdown, setActiveDropdown] = useState<Set<string>>(new Set());
-  const [filterValues, setFilterValues] = useState<{ [key: string]: string }>(
-    {}
-  );
+  const [searchTerm, setSearchTerm] = useState<string>("");
+  const [expandedKeys, setExpandedKeys] = useState<Set<string>>(new Set());
+
+  useEffect(() => {
+    if (!searchTerm) {
+      setExpandedKeys(new Set());
+    }
+  }, [searchTerm]);
 
   const toggleDropdown = (key: string) => {
     setActiveDropdown((prev) => {
       const newDropdowns = new Set(prev);
       if (newDropdowns.has(key)) {
-        newDropdowns.delete(key); // Close the dropdown if it's already active
+        newDropdowns.delete(key);
       } else {
-        newDropdowns.add(key); // Open the dropdown
+        newDropdowns.add(key);
       }
       return newDropdowns;
     });
   };
 
-  const handleFilterChange = (key: string, value: string) => {
-    setFilterValues((prev) => ({ ...prev, [key]: value }));
-  };
-
   const searchSubpages = (subpages: Subpage[], filterText: string): Subpage[] => {
-    const lowerFilter = filterText.toLowerCase();
+    const lowerFilter = filterText.toLowerCase().trim();
 
     return subpages.flatMap((subpage) => {
-      const matches = subpage.name.toLowerCase().includes(lowerFilter);
+      const matches = subpage.name.toLowerCase() === lowerFilter;
       const matchingChildren = subpage.subpages
         ? searchSubpages(subpage.subpages, filterText)
         : [];
 
-      if (matches) {
+      if (matches || matchingChildren.length > 0) {
         return [{ ...subpage, subpages: matchingChildren }];
       }
 
-      return matchingChildren;
+      return [];
     });
   };
 
-  const renderSubpages = (
-    subpages: Subpage[],
-    parentKey: string,
-    level: number = 1
-  ): React.ReactNode[] => {
-    const filterText = filterValues[parentKey] || "";
+  const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const value = e.target.value;
+    setSearchTerm(value);
 
-    const filteredSubpages = filterText
-      ? searchSubpages(subpages, filterText)
-      : subpages;
+    if (!value) {
+      setExpandedKeys(new Set());
+      return;
+    }
+
+    const newExpandedKeys = new Set<string>();
+
+    navigationPages.forEach((page, pageIndex) => {
+      const pageKey = `page-${pageIndex}`;
+      const results = searchSubpages(page.subpages, value);
+
+      if (results.length > 0) {
+        newExpandedKeys.add(pageKey); // Expand only matching dropdowns
+      }
+
+      results.forEach((result, resultIndex) => {
+        const resultKey = `${pageKey}-${resultIndex}`;
+        newExpandedKeys.add(resultKey);
+      });
+    });
+
+    setExpandedKeys(newExpandedKeys);
+  };
+
+  const renderSubpages = (subpages: Subpage[], parentKey: string, level: number = 1): React.ReactNode[] => {
+    const filteredSubpages = searchTerm ? searchSubpages(subpages, searchTerm) : subpages;
 
     return filteredSubpages.map((subpage, index) => {
       const key = `${parentKey}-${index}`;
-      const isActive = activeDropdown.has(key);
+      const isActive = expandedKeys.has(key) || activeDropdown.has(key);
+      const hasChildren = subpage.subpages && subpage.subpages.length > 0;
 
       return (
-        <div
-          key={key}
-          className={`dropdownItem level-${level}`} // Keeps the level-based CSS classes
-        >
+        <div key={key} className={`dropdownItem level-${level}`} data-level={level}>
           {subpage.path ? (
-            <Dropdown.Item
-              as={Link}
-              to={subpage.path}
-              className="dropdownLink" // Keeps the clickable link style
-            >
+            <Link to={subpage.path} className={`dropdownButton level-4`}>
               {subpage.name}
-            </Dropdown.Item>
+            </Link>
           ) : (
             <>
-              <Dropdown.ItemText
-                className={`dropdownButton level-${level}`} // Keeps the hierarchical button styling
+              <div
+                className={`dropdownButton level-${level} ${isActive ? "active" : ""}`}
                 onClick={() => toggleDropdown(key)}
               >
                 {subpage.name}
-              </Dropdown.ItemText>
-              {isActive && subpage.subpages && (
+              </div>
+              {isActive && hasChildren && (
                 <div className={`dropdownMenu level-${level} active`}>
-                  {renderSubpages(subpage.subpages, key, level + 1)}
+                  {renderSubpages(subpage.subpages ?? [], key, level + 1)}
                 </div>
               )}
             </>
@@ -114,64 +126,45 @@ const Navigation: React.FC<NavigationProps> = ({
             <Navbar.Toggle aria-controls="navbar-dark-example" />
             <Navbar.Collapse id="navbar-dark-example">
               <Nav className="me-auto">
+                <div className="searchContainer">
+                  <Form.Control
+                    className="filterInput"
+                    placeholder="Type to filter..."
+                    onChange={handleSearch}
+                    value={searchTerm}
+                  />
+                </div>
                 {navigationPages.map((page, index) => {
                   const pageKey = `page-${index}`;
-                  const isActive = activeDropdown.has(pageKey);
+                  const isActive = expandedKeys.has(pageKey) || activeDropdown.has(pageKey);
 
-                  // Special handling for Home: no dropdown
                   if (page.name === "Home" && page.subpages.length === 0) {
                     return (
-                      <Nav.Link
-                        key={pageKey}
-                        as={Link}
-                        to="/"
-                        className="dropdownButton homeButton" // Applies Home-specific CSS
-                      >
+                      <Nav.Link key={pageKey} as={Link} to="/" className="dropdownButton homeButton">
                         {page.name}
                       </Nav.Link>
                     );
                   }
 
-                  // Render other pages with subpages
                   return (
                     <Dropdown
                       key={pageKey}
                       show={isActive}
-                      onToggle={(isOpen) => toggleDropdown(pageKey)}
-                      className="dropdown" // Keeps the dropdown styling
+                      onToggle={() => toggleDropdown(pageKey)}
+                      className="dropdown"
                       drop={dropdownDirection}
                     >
                       <Dropdown.Toggle
                         as="button"
                         id={`dropdown-toggle-${pageKey}`}
-                        className={`dropdownButton ${isActive ? "active" : ""}`} // Keeps toggle button style
+                        className={`dropdownButton ${isActive ? "active" : ""}`}
                       >
                         {page.name}
-                        {page.subpages.length > 0 && (
-                          <span
-                            className={`dropdownArrow ${
-                              isActive ? "up" : "down"
-                            }`} // Keeps the arrow styling
-                          />
-                        )}
                       </Dropdown.Toggle>
 
                       {page.subpages.length > 0 && (
-                        <Dropdown.Menu
-                          className={`dropdownContent ${
-                            isActive ? "active" : ""
-                          }`} // Keeps dropdown content styling
-                        >
-                          <Form.Control
-                            autoFocus
-                            className="mx-3 my-2 w-auto filterInput" // Keeps search bar styling
-                            placeholder="Type to filter..."
-                            onChange={(e) =>
-                              handleFilterChange(pageKey, e.target.value)
-                            }
-                            value={filterValues[pageKey] || ""}
-                          />
-                          {renderSubpages(page.subpages, pageKey)}
+                        <Dropdown.Menu className={`dropdownContent ${isActive ? "active" : ""}`}>
+                          {renderSubpages(page.subpages ?? [], pageKey)}
                         </Dropdown.Menu>
                       )}
                     </Dropdown>
