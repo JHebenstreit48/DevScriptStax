@@ -68,6 +68,27 @@ Next, you would have to apply the animation to the appropriate element for the a
     animation-duration: 1s;
 }
 ```
+---
+### animation-delay: Controlling Animation Timing  
+---  
+
+The <span class="emphasis">animation-delay</span> property specifies <span class="emphasis">how long</span> an element should <span class="emphasis">wait</span> before <span class="emphasis">starting</span> its animation. This is useful for <span class="emphasis">staggering</span> animations of <span class="emphasis">multiple</span> elements on <span class="emphasis">page load</span> or in relation to <span class="emphasis">each other</span>.   
+
+```css  
+.boxes :nth-child(2) .box-a {  
+    animation-delay: .5s;  
+}  
+
+.boxes :nth-child(3) .box-a {  
+    animation-delay: 1s;  
+}  
+
+.boxes :nth-child(4) .box-a {  
+    animation-delay: 1.5s;  
+}  
+```
+
+Here, the <span class="emphasis">second child</span> starts after <span class="secondEmphasis">0.5 seconds</span>, the <span class="emphasis">third child</span> after <span class="secondEmphasis">1 second</span>, and the <span class="emphasis">fourth child</span> after <span class="secondEmphasis">1.5 seconds</span>, creating a <span class="emphasis">staggered</span> animation effect.  
 
 ---
 ### Adding Intermediate States to Create a Bounce Effect

@@ -1,6 +1,4 @@
-## CSS Basics and Syntax
-
-### What is CSS?
+## What is CSS?
 
 <span class="emphasis">CSS</span> stands for <span class="emphasis">Cascading Style Sheets</span>. It functions as the "skin" or styling of a <span class="emphasis">webpage</span>.
 
@@ -10,7 +8,7 @@
 
 ---
 
-### Key Features of CSS
+## Key Features of CSS
 
 1. **Styling Across Multiple Pages**:
    - <span class="emphasis">CSS</span> can style multiple webpages simultaneously, applying consistent design elements.
@@ -26,13 +24,15 @@
 
 ---
 
-### Basic CSS Syntax
+## Basic CSS Syntax
 
 Here is the basic structure of a CSS rule. The selector targets elements, and the property applies a specific style:
 
+```css
 p {
   color: blue; /* Property and Value */
 }
+```
 
 - <span class="emphasis">Selector</span>: Targets <span class="secondEmphasis">HTML elements</span>.
 - <span class="emphasis">Property</span>: Specifies the style to apply.
