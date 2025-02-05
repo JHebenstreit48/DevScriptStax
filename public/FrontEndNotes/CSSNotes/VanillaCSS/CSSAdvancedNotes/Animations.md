@@ -68,6 +68,51 @@ Next, you would have to apply the animation to the appropriate element for the a
     animation-duration: 1s;
 }
 ```
+
+### **Keeping the Final State with animation-fill-mode**  
+---  
+
+By default, once an animation completes, the element will **return to its original state** before the animation started. However, you can **retain the final keyframe styles** by using the **animation-fill-mode** property.  
+
+```css  
+.box-a {  
+    opacity: 0;  
+    animation-name: fadeBounce;  
+    animation-duration: 1s;  
+    animation-fill-mode: forwards;  
+    background-color: black;  
+}  
+```
+
+Here, animation-fill-mode: forwards; ensures that **after the animation ends**, the element **keeps the styles from the 100% stage** of the animation. Without it, the element would **revert back to its initial state**.  
+
+---  
+
+### **Using the animation Shorthand**  
+---  
+
+Instead of setting **each animation property separately**, you can combine them into a **single shorthand property**. This reduces repetition while keeping the same functionality.  
+
+```css  
+.box-a {  
+    opacity: 0;  
+    animation: fadeBounce 1s forwards;  
+    background-color: black;  
+}  
+```
+
+This is equivalent to:  
+
+```css  
+.box-a {  
+    animation-name: fadeBounce;  
+    animation-duration: 1s;  
+    animation-fill-mode: forwards;  
+}  
+```
+
+Using the shorthand property **keeps the code cleaner** while maintaining the same animation behavior.
+
 ---
 ### animation-delay: Controlling Animation Timing  
 ---  
