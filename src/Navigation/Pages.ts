@@ -7,10 +7,10 @@ import { Page } from "@/Navigation/NavigationTypes";
 import AngularNavigation from "@/Navigation/FrontEndNavigation/Angular";
 
 // ---------- CSS Navigation Start ----------
-import VanillaNavigation from "./FrontEndNavigation/CSSNavigation/Vanilla";
-import FrameworksNavigation from "./FrontEndNavigation/CSSNavigation/Frameworks";
-import PostprocessorsNavigation from "./FrontEndNavigation/CSSNavigation/Postprocessors";
-import PreprocessorsNavigation from "./FrontEndNavigation/CSSNavigation/Preprocessors";
+import VanillaNavigation from "@/Navigation/FrontEndNavigation/CSSNavigation/Vanilla";
+import FrameworksNavigation from "@/Navigation/FrontEndNavigation/CSSNavigation/Frameworks";
+import PostprocessorsNavigation from "@/Navigation/FrontEndNavigation/CSSNavigation/Postprocessors";
+import PreprocessorsNavigation from "@/Navigation/FrontEndNavigation/CSSNavigation/Preprocessors";
 // ---------- CSS Navigation End ----------
 
 import GatsbyNavigation from "@/Navigation/FrontEndNavigation/Gatsby";
@@ -32,10 +32,34 @@ import ViteNavigation from "@/Navigation/FrontEndNavigation/Vite"; // Added Vite
 // Back-End Navigation Start
 // ========================================
 
-import APINavigation from "@/Navigation/BackEndNavigation/API";
+// ---------- APIs Navigation Start ----------
+
+// ---------- API Introduction Navigation Start ----------
+import WhatIsAnAPINavigation from "@/Navigation/BackEndNavigation/APINavigation/APIIntroduction/WhatIsAPI";
+import TypesOfAPIsNavigation from "@/Navigation/BackEndNavigation/APINavigation/APIIntroduction/TypesOfAPIs";
+import APIDocumentationNavigation from "@/Navigation/BackEndNavigation/APINavigation/APIIntroduction/APIDocumentation";
+// ---------- API Introduction Navigation End ----------
+
+// ---------- REST APIs Navigation Start ----------
+import WhatIsRestNavigation from "@/Navigation/BackEndNavigation/APINavigation/RESTAPIs/WhatIsRest";
+import HTTPMethodsNavigation from "@/Navigation/BackEndNavigation/APINavigation/RESTAPIs/HTTPMethods";
+import EndpointsAndResourcesNavigation from "@/Navigation/BackEndNavigation/APINavigation/RESTAPIs/EndpointsAndResources";
+import RESTfulDesignPrinciplesNavigation from "@/Navigation/BackEndNavigation/APINavigation/RESTAPIs/RESTfulDesignPrinciples";
+import ErrorHandlingNavigation from "@/Navigation/BackEndNavigation/APINavigation/RESTAPIs/ErrorHandling";
+// ---------- REST APIs Navigation End ----------
+
+// ---------- Advanced API Concepts Navigation Start ----------
+import RateLimitingNavigation from "@/Navigation/BackEndNavigation/APINavigation/AdvancedConcepts/RateLimiting";
+import APIVersioningNavigation from "@/Navigation/BackEndNavigation/APINavigation/AdvancedConcepts/APIVersioning";
+import APICachingNavigation from "@/Navigation/BackEndNavigation/APINavigation/AdvancedConcepts/APICaching";
+import APIGatewaysNavigation from "@/Navigation/BackEndNavigation/APINavigation/AdvancedConcepts/APIGateways";
+import WebhooksNavigation from "@/Navigation/BackEndNavigation/APINavigation/AdvancedConcepts/Webhooks";
+// ---------- Advanced API Concepts Navigation End ----------
+
+// ---------- APIs Navigation End ----------
 
 // ---------- Authentication & Authorization Navigation Start ----------
-import AuthorizationNavigation from "./BackEndNavigation/AuthenAndAuthorNavigation/Authorization";
+import AuthorizationNavigation from "@/Navigation/BackEndNavigation/AuthenAndAuthorNavigation/Authorization";
 import AuthenticationNavigation from "@/Navigation/BackEndNavigation/AuthenAndAuthorNavigation/Authentication";
 // ---------- Authentication & Authorization Navigation End ----------
 
@@ -230,13 +254,45 @@ const pages: Page[] = [
     name: "Back End",
     subpages: [
       {
+        name: "APIs",
+        subpages: [
+          {
+            name: "Introduction to APIs",
+            subpages: [
+              WhatIsAnAPINavigation,
+              TypesOfAPIsNavigation,
+              APIDocumentationNavigation,
+            ],
+          },
+          {
+            name: "REST APIs",
+            subpages: [
+              WhatIsRestNavigation,
+              HTTPMethodsNavigation,
+              EndpointsAndResourcesNavigation,
+              RESTfulDesignPrinciplesNavigation,
+              ErrorHandlingNavigation, 
+            ],
+          },
+          {
+            name: "Advanced API Concepts",
+            subpages: [
+              RateLimitingNavigation,
+              APIVersioningNavigation,
+              APICachingNavigation,
+              APIGatewaysNavigation,
+              WebhooksNavigation,
+            ],
+          },
+        ],
+      },
+      {
         name: "Authentication & Authorization",
         subpages: [
           AuthenticationNavigation,
           AuthorizationNavigation,
         ],
       },
-      APINavigation,
       {
         name: "Frameworks",
         subpages: [
