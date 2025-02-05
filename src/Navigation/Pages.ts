@@ -77,13 +77,13 @@ import NginxNavigation from "@/Navigation/BackEndNavigation/WebServersNavigation
 // ---------- Deployment Platforms Navigation Start ----------
 
 // ---------- Front-End Deployment Navigation Start ----------
-// import NetlifyNavigation from "@/Navigation/CloudServicesNavigation/DeploymentPlatforms/FrontEnd/Netlify";
+import NetlifyNavigation from "@/Navigation/CloudServicesNavigation/DeploymentPlatformsNavigation/FrontEndNavigation/Netlify";
 // import VercelNavigation from "@/Navigation/CloudServicesNavigation/DeploymentPlatforms/FrontEnd/Vercel";
 // import CloudflarePagesNavigation from "@/Navigation/CloudServicesNavigation/DeploymentPlatforms/FrontEnd/CloudflarePages";
 // ---------- Front-End Deployment Navigation End ----------
 
 // ---------- Full-Stack Deployment Navigation Start ----------
-// import RenderNavigation from "@/Navigation/CloudServicesNavigation/DeploymentPlatforms/FullStack/Render";
+import RenderNavigation from "@/Navigation/CloudServicesNavigation/DeploymentPlatformsNavigation/FullStackNavigation/Render";
 // import RailwayNavigation from "@/Navigation/CloudServicesNavigation/DeploymentPlatforms/FullStack/Railway";
 // import FlyNavigation from "@/Navigation/CloudServicesNavigation/DeploymentPlatforms/FullStack/Fly";
 // ---------- Full-Stack Deployment Navigation End ----------
@@ -281,7 +281,7 @@ const pages: Page[] = [
           {
             name: "Front-End Deployment",
             subpages: [
-              // NetlifyNavigation,
+              NetlifyNavigation,
               // VercelNavigation,
               // CloudflarePagesNavigation,
             ],
@@ -289,7 +289,7 @@ const pages: Page[] = [
           {
             name: "Full-Stack Deployment",
             subpages: [
-              // RenderNavigation,
+              RenderNavigation,
               // RailwayNavigation,
               // FlyNavigation,
             ],
