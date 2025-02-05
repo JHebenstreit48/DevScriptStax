@@ -5,7 +5,7 @@ import ErrorPage from "@/Pages/Error";
 import Home from "@/Pages/Home";
 
 // APIs
-import APIs from "@/Pages/BackEndPages/APIPages/API";
+import APIIntro from "@/Pages/BackEndPages/APIPages/APIIntro";
 // import APICode from "@/pages/APIPages/APICode";
 
 // Apollo Server
@@ -71,7 +71,7 @@ import Git from "@/Pages/ToolsPages/GitPages/Git";
 // import GitCode from "@/pages/GitPages/GitCode";
 
 // GraphQL
-import GraphQL from "@/Pages/BackEndPages/GraphQLPages/GraphQL";
+import GraphQL from "@/Pages/GraphQLPages/GraphQL";
 // import GraphQLCode from "@/pages/GraphQLPages/GraphQLCode";
 
 // HTML Notes Start
@@ -95,19 +95,19 @@ import Markdown from "@/Pages/FrontEndPages/MarkdownPages/Markdown";
 // import MarkdownCode from "@/pages/MarkdownPages/MarkdownCode";
 
 // MERN and Auth
-import MernAndAuth from "@/Pages/BackEndPages/MERNAuthPages/MernAndAuth";
+import MernAndAuth from "@/Pages/BackEndPages/FrameworksPages/MERNAuthPages/MernAndAuth";
 // import MernAndAuthCode from "@/pages/MERNAuthPages/MernAndAuthCode";
 
 // MongoDB
-import MongoDB from "@/Pages/BackEndPages/MongoDBPages/MongoDB";
+import MongoDB from "@/Pages/BackEndPages/DatabasesPages/MongoDBPages/MongoDB";
 // import MongoDBCode from "@/pages/MongoDBPages/MongoDBCode";
 
 // Node.js
-import Node from "@/Pages/BackEndPages/NodePages/Node";
+import Node from "@/Pages/BackEndPages/FrameworksPages/NodePages/Node";
 // import NodeCode from "@/pages/NodePages/NodeCode";
 
 // PostgreSQL
-import PostgreSQL from "@/Pages/BackEndPages/PostgreSQLPages/PostgreSQL";
+import PostgreSQL from "@/Pages/BackEndPages/DatabasesPages/PostgreSQLPages/PostgreSQL";
 // import PostgreSQLCode from "@/pages/PostgreSQLPages/PostgreSQLCode";
 
 // Python
@@ -129,7 +129,7 @@ import Redux from "@/Pages/FrontEndPages/ReduxPages/Redux";
 // import ReduxCode from "@/pages/ReduxPages/ReduxCode";
 
 // Servers
-import Servers from "@/Pages/BackEndPages/ServerPages/Servers";
+import Servers from "@/Pages/BackEndPages/WebServersPages/ServerPages/Servers";
 // import ServerCode from "@/pages/ServerPages/ServerCode";
 
 // Testing
@@ -184,8 +184,8 @@ export const router = createBrowserRouter([
                 element: <Routing />,
             },
             {
-                path: '/apis',
-                element: <APIs />,
+                path: '/apis/intro/whatis/overview',
+                element: <APIIntro />,
             },
             // {
             //     path: '/apis/apicode',
