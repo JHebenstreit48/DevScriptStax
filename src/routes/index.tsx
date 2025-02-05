@@ -4,9 +4,18 @@ import App from "@/App";
 import ErrorPage from "@/Pages/Error";
 import Home from "@/Pages/Home";
 
-// APIs
-import APIIntro from "@/Pages/BackEndPages/APIPages/APIIntro";
-// import APICode from "@/pages/APIPages/APICode";
+// APIs Start
+
+// API Introduction Start
+import APIIntro from "@/Pages/BackEndPages/APIPages/APIIntroduction/APIIntro";
+// API Introduction End
+
+// Types of APIs Start
+import PublicVPrivate from "@/Pages/BackEndPages/APIPages/TypesOfAPIs/PubVSPrivate";
+
+// Types of APIs End
+
+// APIs End
 
 // Apollo Server
 import ApolloServer from "@/Pages/BackEndPages/ApolloServerPages/ApolloServer";
@@ -144,8 +153,6 @@ import TypeScript from "@/Pages/ProgrammingLanguagesPages/TypeScriptPages/TypeSc
 
 // Vue
 import Vue from "@/Pages/FrontEndPages/VuePages/Vue";
-
-
 // import VueCode from "@/pages/VuePages/VueCode";
 
 export const router = createBrowserRouter([
@@ -187,10 +194,10 @@ export const router = createBrowserRouter([
                 path: '/apis/intro/whatis/overview',
                 element: <APIIntro />,
             },
-            // {
-            //     path: '/apis/apicode',
-            //     element: <APICode />,
-            // },
+            {
+                path: '/apis/intro/types/public-private',
+                element: <PublicVPrivate />,
+            },
             {
                 path: '/apolloserver',
                 element: <ApolloServer />,

@@ -1,13 +1,13 @@
 import { Subpage } from "@/Navigation/NavigationTypes";
 
-const WhatIsAnAPINavigation: Subpage = {
-  name: "What is an API?",
+const APIFundamentalsNavigation: Subpage = {
+  name: "API Fundamentals",
   subpages: [
-    { name: "Introduction to APIs", path: "/apis/intro/whatis/overview" }, // Merged definition & purpose
+    { name: "Core API Concepts", path: "/apis/intro/whatis/overview" },
     { name: "Common API Use Cases", path: "/apis/intro/whatis/use-cases" },
     { name: "APIs in Web Development", path: "/apis/intro/whatis/web-development" },
     { name: "Common API Misconceptions", path: "/apis/intro/whatis/misconceptions" },
   ],
 };
 
-export default WhatIsAnAPINavigation;
+export default APIFundamentalsNavigation;

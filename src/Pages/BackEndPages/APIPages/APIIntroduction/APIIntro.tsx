@@ -2,7 +2,7 @@ import Header from "@/Components/Header";
 import Notes from "@/Components/Notes";
 
 const APIIntro = () => {
-    const markdownFilePath = '/APINotes/API.md';
+    const markdownFilePath = '/BackEndNotes/APINotes/APIFundamentals/APIIntro.md';
 
     return (
 

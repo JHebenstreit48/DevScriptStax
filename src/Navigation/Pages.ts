@@ -35,13 +35,13 @@ import ViteNavigation from "@/Navigation/FrontEndNavigation/Vite"; // Added Vite
 // ---------- APIs Navigation Start ----------
 
 // ---------- API Introduction Navigation Start ----------
-import WhatIsAnAPINavigation from "@/Navigation/BackEndNavigation/APINavigation/APIIntroduction/WhatIsAPI";
+import APIFundamentalsNavigation from "@/Navigation/BackEndNavigation/APINavigation/APIIntroduction/APIFundamentals";
 import TypesOfAPIsNavigation from "@/Navigation/BackEndNavigation/APINavigation/APIIntroduction/TypesOfAPIs";
 import APIDocumentationNavigation from "@/Navigation/BackEndNavigation/APINavigation/APIIntroduction/APIDocumentation";
 // ---------- API Introduction Navigation End ----------
 
 // ---------- REST APIs Navigation Start ----------
-import WhatIsRestNavigation from "@/Navigation/BackEndNavigation/APINavigation/RESTAPIs/WhatIsRest";
+import RESTFundamentalsNavigation from "@/Navigation/BackEndNavigation/APINavigation/RESTAPIs/RESTFundamentals";
 import HTTPMethodsNavigation from "@/Navigation/BackEndNavigation/APINavigation/RESTAPIs/HTTPMethods";
 import EndpointsAndResourcesNavigation from "@/Navigation/BackEndNavigation/APINavigation/RESTAPIs/EndpointsAndResources";
 import RESTfulDesignPrinciplesNavigation from "@/Navigation/BackEndNavigation/APINavigation/RESTAPIs/RESTfulDesignPrinciples";
@@ -259,7 +259,7 @@ const pages: Page[] = [
           {
             name: "Introduction to APIs",
             subpages: [
-              WhatIsAnAPINavigation,
+              APIFundamentalsNavigation,
               TypesOfAPIsNavigation,
               APIDocumentationNavigation,
             ],
@@ -267,7 +267,7 @@ const pages: Page[] = [
           {
             name: "REST APIs",
             subpages: [
-              WhatIsRestNavigation,
+              RESTFundamentalsNavigation,
               HTTPMethodsNavigation,
               EndpointsAndResourcesNavigation,
               RESTfulDesignPrinciplesNavigation,

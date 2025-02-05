@@ -1,13 +1,13 @@
 import Notes from '@/Components/Notes';
 import Header from '@/Components/Header';
 
-const APICode = () => {
-    const markdownFilePath = '/APINotes/APICode.md';
+const PublicVSPrivate = () => {
+    const markdownFilePath = '/BackEndNotes/APINotes/TypesOfAPIs/PublicVSPrivate.md';
 
     return (
         <>
 
-            <Header text="API Notes Code" />
+            <Header text="Public vs. Private APIs" />
             <Notes filePath={markdownFilePath}
                 markdownContent="markdownContent"
             />
@@ -17,4 +17,4 @@ const APICode = () => {
     );
 };
 
-export default APICode;
+export default PublicVSPrivate;
