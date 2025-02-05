@@ -1,20 +1,21 @@
 import Header from "@/Components/Header";
 import Notes from "@/Components/Notes";
 
-const PostgreSQL = () => {
-    const markdownFilePath = '/BackEndNotes/PostgreSQLNotes/PostgreSQL.md';
+const ServerVSToken = () => {
+    const markdownFilePath = '/BackEndNotes/AuthenAndAuthorNotes/AuthenticationNotes/ServerVSToken.md';
 
     return (
 
         <>
-            <Header text="PostgreSQL" />
+            <Header text="Server vs Token" />
             <Notes
                 filePath={markdownFilePath}
                 markdownContent="markdownContent"
             />
+
         </>
     );
 
 };
 
-export default PostgreSQL;
+export default ServerVSToken;
