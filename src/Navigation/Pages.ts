@@ -1,12 +1,17 @@
 import { Page } from "@/Navigation/NavigationTypes";
 
+// ========================================
 // Front-End Navigation Start
+// ========================================
+
 import AngularNavigation from "@/Navigation/FrontEndNavigation/Angular";
 
-// CSS Navigation Start
-
-
-// CSS Navigation End
+// ---------- CSS Navigation Start ----------
+import VanillaNavigation from "./FrontEndNavigation/CSSNavigation/Vanilla";
+import FrameworksNavigation from "./FrontEndNavigation/CSSNavigation/Frameworks";
+import PostprocessorsNavigation from "./FrontEndNavigation/CSSNavigation/Postprocessors";
+import PreprocessorsNavigation from "./FrontEndNavigation/CSSNavigation/Preprocessors";
+// ---------- CSS Navigation End ----------
 
 import GatsbyNavigation from "@/Navigation/FrontEndNavigation/Gatsby";
 import HTMLNavigation from "@/Navigation/FrontEndNavigation/HTML";
@@ -18,22 +23,32 @@ import ReduxNavigation from "@/Navigation/FrontEndNavigation/Redux";
 import SvelteNavigation from "@/Navigation/FrontEndNavigation/Svelte";
 import VueNavigation from "@/Navigation/FrontEndNavigation/Vue";
 import ViteNavigation from "@/Navigation/FrontEndNavigation/Vite"; // Added Vite
+
+// ========================================
 // Front-End Navigation End
+// ========================================
 
+// ========================================
 // Back-End Navigation Start
-import APINavigation from "@/Navigation/BackEndNavigation/API";
-import AANavigation from "@/Navigation/BackEndNavigation/AuthenticationAndAuthorization";
+// ========================================
 
-// Databases Navigation Start
+import APINavigation from "@/Navigation/BackEndNavigation/API";
+
+// ---------- Authentication & Authorization Navigation Start ----------
+import AuthorizationNavigation from "./BackEndNavigation/AuthenAndAuthorNavigation/Authorization";
+import AuthenticationNavigation from "@/Navigation/BackEndNavigation/AuthenAndAuthorNavigation/Authentication";
+// ---------- Authentication & Authorization Navigation End ----------
+
+// ---------- Databases Navigation Start ----------
 import FirebaseNavigation from "@/Navigation/BackEndNavigation/DatabaseNavigation/Firebase";
 import MongoDBNavigation from "@/Navigation/BackEndNavigation/DatabaseNavigation/MongoDB";
 import MySQLNavigation from "@/Navigation/BackEndNavigation/DatabaseNavigation/MySQL";
 import PostgreSQLNavigation from "@/Navigation/BackEndNavigation/DatabaseNavigation/PostgreSQL";
 import RedisNavigation from "@/Navigation/BackEndNavigation/DatabaseNavigation/Redis";
 import SQLiteNavigation from "@/Navigation/BackEndNavigation/DatabaseNavigation/SQLite";
-// Databases Navigation End
+// ---------- Databases Navigation End ----------
 
-// Frameworks Navigation Start
+// ---------- Frameworks Navigation Start ----------
 import DjangoNavigation from "@/Navigation/BackEndNavigation/FrameworksNavigation/Django";
 import ExpressJSNavigation from "@/Navigation/BackEndNavigation/FrameworksNavigation/ExpressJS";
 import FlaskNavigation from "@/Navigation/BackEndNavigation/FrameworksNavigation/Flask";
@@ -43,96 +58,143 @@ import NodeJSNavigation from "@/Navigation/BackEndNavigation/FrameworksNavigatio
 import RubyNavigation from "@/Navigation/BackEndNavigation/FrameworksNavigation/Ruby";
 import SpringBootNavigation from "@/Navigation/BackEndNavigation/FrameworksNavigation/SpringBoot";
 import WebSocketsNavigation from "@/Navigation/BackEndNavigation/FrameworksNavigation/WebSockets";
-// Frameworks Navigation End
+// ---------- Frameworks Navigation End ----------
 
-// Web Servers Navigation Start
+// ---------- Web Servers Navigation Start ----------
 import ServersGeneralNavigation from "@/Navigation/BackEndNavigation/WebServersNavigation/ServersGeneral";
 import ApacheNavigation from "@/Navigation/BackEndNavigation/WebServersNavigation/Apache";
 import NginxNavigation from "@/Navigation/BackEndNavigation/WebServersNavigation/Nginx";
-// Web Servers Navigation End
+// ---------- Web Servers Navigation End ----------
 
+// ========================================
 // Back-End Navigation End
+// ========================================
 
+// ========================================
 // Cloud Services Navigation Start
-// import AWSLambdaNavigation from "@/Navigation/CloudServicesNavigation/AWSLambda";
-// import GoogleCloudFunctionsNavigation from "@/Navigation/CloudServicesNavigation/GoogleCloudFunctions";
-// import AzureFunctionsNavigation from "@/Navigation/CloudServicesNavigation/AzureFunctions";
-// import FirebaseCloudNavigation from "@/Navigation/CloudServicesNavigation/FirebaseCloud";
-// import CloudflareWorkersNavigation from "@/Navigation/CloudServicesNavigation/CloudflareWorkers";
-// import ServerlessFrameworkNavigation from "@/Navigation/CloudServicesNavigation/ServerlessFramework";
-// import NetlifyFunctionsNavigation from "@/Navigation/CloudServicesNavigation/NetlifyFunctions";
-// import VercelFunctionsNavigation from "@/Navigation/CloudServicesNavigation/VercelFunctions";
-// Cloud Services Navigation End
+// ========================================
 
+// ---------- Deployment Platforms Navigation Start ----------
+
+// ---------- Front-End Deployment Navigation Start ----------
+// import NetlifyNavigation from "@/Navigation/CloudServicesNavigation/DeploymentPlatforms/FrontEnd/Netlify";
+// import VercelNavigation from "@/Navigation/CloudServicesNavigation/DeploymentPlatforms/FrontEnd/Vercel";
+// import CloudflarePagesNavigation from "@/Navigation/CloudServicesNavigation/DeploymentPlatforms/FrontEnd/CloudflarePages";
+// ---------- Front-End Deployment Navigation End ----------
+
+// ---------- Full-Stack Deployment Navigation Start ----------
+// import RenderNavigation from "@/Navigation/CloudServicesNavigation/DeploymentPlatforms/FullStack/Render";
+// import RailwayNavigation from "@/Navigation/CloudServicesNavigation/DeploymentPlatforms/FullStack/Railway";
+// import FlyNavigation from "@/Navigation/CloudServicesNavigation/DeploymentPlatforms/FullStack/Fly";
+// ---------- Full-Stack Deployment Navigation End ----------
+
+// ---------- Deployment Platforms Navigation End ----------
+
+// ---------- Serverless Computing Navigation Start ----------
+// import AWSLambdaNavigation from "@/Navigation/CloudServicesNavigation/ServerlessComputing/AWSLambda";
+// import GoogleCloudFunctionsNavigation from "@/Navigation/CloudServicesNavigation/ServerlessComputing/GoogleCloudFunctions";
+// import AzureFunctionsNavigation from "@/Navigation/CloudServicesNavigation/ServerlessComputing/AzureFunctions";
+// import FirebaseCloudNavigation from "@/Navigation/CloudServicesNavigation/ServerlessComputing/FirebaseCloud";
+// ---------- Serverless Computing Navigation End ----------
+
+// ---------- Edge Computing Navigation Start ----------
+// import CloudflareWorkersNavigation from "@/Navigation/CloudServicesNavigation/EdgeComputing/CloudflareWorkers";
+// ---------- Edge Computing Navigation End ----------
+
+// ---------- Frameworks Navigation Start ----------
+// import ServerlessFrameworkNavigation from "@/Navigation/CloudServicesNavigation/Frameworks/ServerlessFramework";
+// ---------- Frameworks Navigation End ----------
+
+// ========================================
+// Cloud Services Navigation End
+// ========================================
+
+
+// ========================================
 // Programming Languages Navigation Start
+// ========================================
+
 import PythonNavigation from "@/Navigation/ProgrammingLanguagesNavigation/Python";
 import RustNavigation from "@/Navigation/ProgrammingLanguagesNavigation/Rust";
 import TypeScriptNavigation from "@/Navigation/ProgrammingLanguagesNavigation/Typescript";
 // import GoNavigation from "@/Navigation/ProgrammingLanguagesNavigation/Go";
 // import DartNavigation from "@/Navigation/ProgrammingLanguagesNavigation/Dart";
+
+// ========================================
 // Programming Languages Navigation End
+// ========================================
 
+// ========================================
 // Testing Navigation Start
+// ========================================
 
-// End To End Testing Navigation Start
+// ---------- End To End Testing Navigation Start ----------
 import CypressNavigation from "@/Navigation/TestingNavigation/End2EndTestingNavigation/Cypress";
 import PlaywrightNavigation from "@/Navigation/TestingNavigation/End2EndTestingNavigation/Playwright";
-// End To End Testing Navigation End
+// ---------- End To End Testing Navigation End ----------
 
-// Framework Testing Navigation Start
+// ---------- Framework Testing Navigation Start ----------
 import JestNavigation from "@/Navigation/TestingNavigation/FrameworkTestingNavigation/Jest";
 import VitestNavigation from "@/Navigation/TestingNavigation/FrameworkTestingNavigation/Vitest";
 // import MochaNavigation from "@/Navigation/TestingNavigation/FrameworkTestingNavigation/Mocha"; // Added Mocha
-// Framework Testing Navigation End
+// ---------- Framework Testing Navigation End ----------
 
-// Unit Testing Navigation Start
+// ---------- Unit Testing Navigation Start ----------
 // import PytestNavigation from "@/Navigation/TestingNavigation/UnitTestingNavigation/Pytest";
 // import RSpecNavigation from "@/Navigation/TestingNavigation/UnitTestingNavigation/RSpec";
 // import PHPUnitNavigation from "@/Navigation/TestingNavigation/UnitTestingNavigation/PHPUnit";
 // import TestifyNavigation from "@/Navigation/TestingNavigation/UnitTestingNavigation/Testify";
-// Unit Testing Navigation End
+// ---------- Unit Testing Navigation End ----------
 
+// ========================================
 // Testing Navigation End
+// ========================================
 
+// ========================================
 // Tools Navigation Start
+// ========================================
 
-// API Tools Navigation Start
+// ---------- API Tools Navigation Start ----------
 import InsomniaNavigation from "@/Navigation/ToolsNavigation/APIToolsNavigation/Insomnia";
 import PostmanNavigation from "@/Navigation/ToolsNavigation/APIToolsNavigation/Postman";
-// API Tools Navigation End
+// ---------- API Tools Navigation End ----------
 
-// CICD Tools Navigation Start
+// ---------- CICD Tools Navigation Start ----------
 import CircleCINavigation from "@/Navigation/ToolsNavigation/CICDToolsNavigation/CircleCI";
 import JenkinsNavigation from "@/Navigation/ToolsNavigation/CICDToolsNavigation/Jenkins";
-// CICD Tools Navigation End
+// ---------- CICD Tools Navigation End ----------
 
-// Code Quality Navigation Start
+// ---------- Code Quality Navigation Start ----------
 import ESLintNavigation from "@/Navigation/ToolsNavigation/CodeQualityNavigation/ESLint";
 import PrettierNavigation from "@/Navigation/ToolsNavigation/CodeQualityNavigation/Prettier";
 // import TSLintNavigation from "@/Navigation/ToolsNavigation/CodeQualityNavigation/TSLint";
 // import StandardJSNavigation from "@/Navigation/ToolsNavigation/CodeQualityNavigation/StandardJS";
-// Code Quality Navigation End
+// ---------- Code Quality Navigation End ----------
 
-// Package Management & Bundling Navigation Start
+// ---------- Package Management & Bundling Navigation Start ----------
 import BabelNavigation from "@/Navigation/ToolsNavigation/PackageManagementAndBundlingNavigation/Babel";
 import WebpackNavigation from "@/Navigation/ToolsNavigation/PackageManagementAndBundlingNavigation/WebpackPage";
-// Package Management & Bundling Navigation End
+// ---------- Package Management & Bundling Navigation End ----------
 
-// Containerization Navigation Start
+// ---------- Containerization Navigation Start ----------
 import DockerNavigation from "@/Navigation/ToolsNavigation/ContainerizationNavigation/Docker";
 import GitNavigation from "@/Navigation/ToolsNavigation/ContainerizationNavigation/Git";
-// Containerization Navigation End
+// ---------- Containerization Navigation End ----------
 
+// ========================================
 // Tools Navigation End
+// ========================================
 
+// ========================================
 // GraphQL & Apollo Navigation Start
+// ========================================
+
 import GraphQLNavigation from "@/Navigation/GraphQLAndApolloNavigation/GraphQLPages";
 import ApolloNavigation from "@/Navigation/GraphQLAndApolloNavigation/Apollo";
-import VanillaNavigation from "./FrontEndNavigation/CSSNavigation/Vanilla";
-import FrameworksNavigation from "./FrontEndNavigation/CSSNavigation/Frameworks";
-import PreprocessorsNavigation from "./FrontEndNavigation/CSSNavigation/Preprocessors";
-import PostprocessorsNavigation from "./FrontEndNavigation/CSSNavigation/Postprocessors";
+
+// ========================================
 // GraphQL & Apollo Navigation End
+// ========================================
 
 const pages: Page[] = [
   {
@@ -167,7 +229,13 @@ const pages: Page[] = [
   {
     name: "Back End",
     subpages: [
-      AANavigation,
+      {
+        name: "Authentication & Authorization",
+        subpages: [
+          AuthenticationNavigation,
+          AuthorizationNavigation,
+        ],
+      },
       APINavigation,
       {
         name: "Frameworks",
@@ -208,6 +276,27 @@ const pages: Page[] = [
     name: "Cloud Services",
     subpages: [
       {
+        name: "Deployment Platforms",
+        subpages: [
+          {
+            name: "Front-End Deployment",
+            subpages: [
+              // NetlifyNavigation,
+              // VercelNavigation,
+              // CloudflarePagesNavigation,
+            ],
+          },
+          {
+            name: "Full-Stack Deployment",
+            subpages: [
+              // RenderNavigation,
+              // RailwayNavigation,
+              // FlyNavigation,
+            ],
+          },
+        ],
+      },
+      {
         name: "Serverless Computing",
         subpages: [
           // AWSLambdaNavigation,
@@ -228,15 +317,8 @@ const pages: Page[] = [
           // ServerlessFrameworkNavigation,
         ],
       },
-      {
-        name: "Full-Stack Tools",
-        subpages: [
-          // NetlifyFunctionsNavigation,
-          // VercelFunctionsNavigation,
-        ],
-      },
     ],
-  },
+  },  
   {
     name: "Testing",
     subpages: [
