@@ -69,6 +69,124 @@ Next, you would have to apply the animation to the appropriate element for the a
 }
 ```
 
+### **animation-name: Defining the Animation to Use**  
+---  
+
+The animation-name property specifies **which keyframes animation** an element should use. If this property is not set, the animation **will not run**, even if other animation properties are present.  
+
+```css  
+.star {  
+    animation-name: fadeBounce;  
+    animation-duration: 2s;  
+}  
+```
+
+This tells the element to use **the fadeBounce keyframes**, making it animate **according to the defined rules**.  
+
+If an invalid or non-existent animation name is provided, **the element will remain unchanged**.  
+
+---
+
+### **animation-iteration-count: Controlling Looping**  
+---  
+
+The animation-iteration-count property controls **how many times** an animation will **repeat** before stopping. By default, an animation runs **once** unless specified otherwise.  
+
+```css  
+.star {  
+    animation-name: fadeBounce;  
+    animation-duration: 1s;  
+    animation-iteration-count: 3;  
+}  
+```
+
+In this example, the animation will **play three times** and then stop.  
+
+If you want the animation to **loop endlessly**, you can set the value to infinite.  
+
+```css  
+.star {  
+    animation: fadeBounce 1s infinite;  
+}  
+```
+
+Here, the animation will **run forever** without stopping.  
+
+---
+
+### **animation-direction: Controlling Play Direction**  
+---  
+
+The animation-direction property determines **whether an animation plays forward, backward, or alternates direction** on each loop.  
+
+```css  
+.star {  
+    animation: fadeBounce 2s infinite;  
+    animation-direction: reverse;  
+}  
+```
+
+In this example, the animation will **start from the end (100%) and play backward to the beginning (0%)** on each loop.  
+
+If you set the value to alternate, the animation will **switch directions on each iteration**—first playing **forward (0% → 100%)**, then **backward (100% → 0%)**, and repeating.  
+
+```css  
+.star {  
+    animation: fadeBounce 2s infinite alternate;  
+}  
+```
+
+This creates a **smooth back-and-forth effect** without needing extra keyframes.  
+
+<table class="comparisonTable">  
+    <thead>  
+        <tr class="tableHeader">  
+            <th class="tableCellHeader">Value</th>  
+            <th class="tableCellHeader">Effect</th>  
+        </tr>  
+    </thead>  
+    <tbody>  
+        <tr class="tableRow">  
+            <td class="tableCell"><strong>normal</strong></td>  
+            <td class="tableCell">Default. The animation plays **from 0% to 100%**, then restarts.</td>  
+        </tr>  
+        <tr class="tableRow">  
+            <td class="tableCell"><strong>reverse</strong></td>  
+            <td class="tableCell">The animation **plays backward**, starting at 100% and ending at 0%.</td>  
+        </tr>  
+        <tr class="tableRow">  
+            <td class="tableCell"><strong>alternate</strong></td>  
+            <td class="tableCell">The animation **switches direction** on each loop—first forward (0% → 100%), then backward (100% → 0%).</td>  
+        </tr>  
+        <tr class="tableRow">  
+            <td class="tableCell"><strong>alternate-reverse</strong></td>  
+            <td class="tableCell">Like `alternate`, but **starts in reverse** (100% → 0%) before switching directions.</td>  
+        </tr>  
+    </tbody>  
+</table>  
+
+---
+### **Using animation Shorthand for Multiple Effects**  
+---  
+
+The animation property can **combine multiple animation settings** into a **single line**, making the code **more concise and readable**.  
+
+```css  
+.star {  
+    animation: slideSpin 2s infinite alternate forwards;  
+}  
+```
+
+This shorthand achieves the following:  
+- slideSpin → Uses a predefined animation name.  
+- 2s → Runs for **2 seconds** per loop.  
+- infinite → Loops **endlessly**.  
+- alternate → **Reverses direction** on each loop.  
+- forwards → Keeps the **final animation state** after finishing.  
+
+Using shorthand makes it **easier to manage** multiple animation properties at once.  
+
+---
 ### **Keeping the Final State with animation-fill-mode**  
 ---  
 
