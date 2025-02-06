@@ -141,8 +141,8 @@ import RenderNavigation from "@/Navigation/CloudServicesNavigation/DeploymentPla
 import PythonNavigation from "@/Navigation/ProgrammingLanguagesNavigation/Python";
 import RustNavigation from "@/Navigation/ProgrammingLanguagesNavigation/Rust";
 import TypeScriptNavigation from "@/Navigation/ProgrammingLanguagesNavigation/Typescript";
-// import GoNavigation from "@/Navigation/ProgrammingLanguagesNavigation/Go";
-// import DartNavigation from "@/Navigation/ProgrammingLanguagesNavigation/Dart";
+import GoNavigation from "@/Navigation/ProgrammingLanguagesNavigation/Go";
+import DartNavigation from "@/Navigation/ProgrammingLanguagesNavigation/Dart";
 
 // ========================================
 // Programming Languages Navigation End
@@ -153,21 +153,21 @@ import TypeScriptNavigation from "@/Navigation/ProgrammingLanguagesNavigation/Ty
 // ========================================
 
 // ---------- End To End Testing Navigation Start ----------
-import CypressNavigation from "@/Navigation/TestingNavigation/End2EndTestingNavigation/Cypress";
-import PlaywrightNavigation from "@/Navigation/TestingNavigation/End2EndTestingNavigation/Playwright";
+import CypressNavigation from "@/Navigation/TestingNavigation/End2EndNavigation/Cypress";
+import PlaywrightNavigation from "@/Navigation/TestingNavigation/End2EndNavigation/Playwright";
 // ---------- End To End Testing Navigation End ----------
 
 // ---------- Framework Testing Navigation Start ----------
-import JestNavigation from "@/Navigation/TestingNavigation/FrameworkTestingNavigation/Jest";
-import VitestNavigation from "@/Navigation/TestingNavigation/FrameworkTestingNavigation/Vitest";
-// import MochaNavigation from "@/Navigation/TestingNavigation/FrameworkTestingNavigation/Mocha"; // Added Mocha
+import JestNavigation from "@/Navigation/TestingNavigation/FrameworkNavigation/Jest";
+import VitestNavigation from "@/Navigation/TestingNavigation/FrameworkNavigation/Vitest";
+import MochaNavigation from "@/Navigation/TestingNavigation/FrameworkNavigation/Mocha";
 // ---------- Framework Testing Navigation End ----------
 
 // ---------- Unit Testing Navigation Start ----------
-// import PytestNavigation from "@/Navigation/TestingNavigation/UnitTestingNavigation/Pytest";
-// import RSpecNavigation from "@/Navigation/TestingNavigation/UnitTestingNavigation/RSpec";
-// import PHPUnitNavigation from "@/Navigation/TestingNavigation/UnitTestingNavigation/PHPUnit";
-// import TestifyNavigation from "@/Navigation/TestingNavigation/UnitTestingNavigation/Testify";
+import PytestNavigation from "@/Navigation/TestingNavigation/UnitTestingNavigation/Pytest";
+import RSpecNavigation from "@/Navigation/TestingNavigation/UnitTestingNavigation/RSpec";
+import PHPUnitNavigation from "@/Navigation/TestingNavigation/UnitTestingNavigation/PHPUnit";
+import TestifyNavigation from "@/Navigation/TestingNavigation/UnitTestingNavigation/Testify";
 // ---------- Unit Testing Navigation End ----------
 
 // ========================================
@@ -191,8 +191,8 @@ import JenkinsNavigation from "@/Navigation/ToolsNavigation/CICDToolsNavigation/
 // ---------- Code Quality Navigation Start ----------
 import ESLintNavigation from "@/Navigation/ToolsNavigation/CodeQualityNavigation/ESLint";
 import PrettierNavigation from "@/Navigation/ToolsNavigation/CodeQualityNavigation/Prettier";
-// import TSLintNavigation from "@/Navigation/ToolsNavigation/CodeQualityNavigation/TSLint";
-// import StandardJSNavigation from "@/Navigation/ToolsNavigation/CodeQualityNavigation/StandardJS";
+import TSLintNavigation from "@/Navigation/ToolsNavigation/CodeQualityNavigation/TSLint";
+import StandardJSNavigation from "@/Navigation/ToolsNavigation/CodeQualityNavigation/StandardJS";
 // ---------- Code Quality Navigation End ----------
 
 // ---------- Package Management & Bundling Navigation Start ----------
@@ -390,16 +390,16 @@ const pages: Page[] = [
         subpages: [
           JestNavigation,
           VitestNavigation,
-          // MochaNavigation,
+          MochaNavigation,
         ],
       },
       {
         name: "Unit Testing",
         subpages: [
-          // PytestNavigation,
-          // RSpecNavigation,
-          // PHPUnitNavigation,
-          // TestifyNavigation,
+          PytestNavigation,
+          RSpecNavigation,
+          PHPUnitNavigation,
+          TestifyNavigation,
         ],
       },
     ],
@@ -426,8 +426,8 @@ const pages: Page[] = [
         subpages: [
           ESLintNavigation,
           PrettierNavigation,
-          // TSLintNavigation,
-          // StandardJSNavigation,
+          TSLintNavigation,
+          StandardJSNavigation,
         ],
       },
       {
@@ -452,8 +452,8 @@ const pages: Page[] = [
       PythonNavigation,
       RustNavigation,
       TypeScriptNavigation,
-      // GoNavigation,
-      // DartNavigation,
+      GoNavigation,
+      DartNavigation,
     ],
   },
   {

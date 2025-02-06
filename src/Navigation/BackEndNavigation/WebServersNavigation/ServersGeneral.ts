@@ -1,36 +1,59 @@
 import { Subpage } from "@/Navigation/NavigationTypes";
 
 const ServersGeneralNavigation: Subpage = {
-  name: "Servers General Notes",
+  name: "General Server Concepts",
   subpages: [
+    // ---------- Server Fundamentals Navigation Start ----------
     {
-      name: "General Server Concepts",
+      name: "Server Fundamentals",
       subpages: [
         { name: "Introduction to Servers", path: "/servers/general/intro" },
-        { name: "Server Architecture", path: "/servers/general/architecture" },
-        { name: "Web Server Basics", path: "/servers/general/basics" },
-        { name: "Load Balancing", path: "/servers/general/loadbalancing" },
-        { name: "Server Security Basics", path: "/servers/general/security" },
+        { name: "Types of Servers", path: "/servers/general/types" },
+        { name: "Web Servers vs Application Servers", path: "/servers/general/web-vs-app" },
+        { name: "Client-Server Model", path: "/servers/general/client-server" },
+        { name: "Understanding DNS & Hosting", path: "/servers/general/dns-hosting" },
       ],
     },
+    // ---------- Server Fundamentals Navigation End ----------
+
+    // ---------- Server Infrastructure & Deployment Navigation Start ----------
     {
-      name: "Advanced Server Topics",
+      name: "Server Infrastructure & Deployment",
       subpages: [
-        {
-          name: "High Availability",
-          path: "/servers/advanced/highavailability",
-        },
-        {
-          name: "Scaling Server Infrastructure",
-          path: "/servers/advanced/scaling",
-        },
-        {
-          name: "Server Monitoring Tools",
-          path: "/servers/advanced/monitoring",
-        },
-        { name: "Server Automation", path: "/servers/advanced/automation" },
+        { name: "Server Architecture & Components", path: "/servers/infrastructure/architecture" },
+        { name: "Setting Up a Web Server", path: "/servers/infrastructure/setup" },
+        { name: "Server Operating Systems", path: "/servers/infrastructure/os" },
+        { name: "Cloud vs On-Premise Servers", path: "/servers/infrastructure/cloud-vs-onprem" },
+        { name: "Virtualization & Containers", path: "/servers/infrastructure/virtualization" },
       ],
     },
+    // ---------- Server Infrastructure & Deployment Navigation End ----------
+
+    // ---------- Load Balancing & Scalability Navigation Start ----------
+    {
+      name: "Load Balancing & Scalability",
+      subpages: [
+        { name: "Introduction to Load Balancing", path: "/servers/scalability/loadbalancing" },
+        { name: "Types of Load Balancers", path: "/servers/scalability/types" },
+        { name: "Horizontal vs Vertical Scaling", path: "/servers/scalability/scaling-methods" },
+        { name: "High Availability & Fault Tolerance", path: "/servers/scalability/high-availability" },
+        { name: "Auto Scaling Strategies", path: "/servers/scalability/auto-scaling" },
+      ],
+    },
+    // ---------- Load Balancing & Scalability Navigation End ----------
+
+    // ---------- Server Security & Monitoring Navigation Start ----------
+    {
+      name: "Server Security & Monitoring",
+      subpages: [
+        { name: "Basic Security Best Practices", path: "/servers/security/best-practices" },
+        { name: "Firewalls & Network Security", path: "/servers/security/firewalls" },
+        { name: "DDoS Protection Strategies", path: "/servers/security/ddos-protection" },
+        { name: "Server Monitoring Tools", path: "/servers/security/monitoring" },
+        { name: "Automating Server Security", path: "/servers/security/automation" },
+      ],
+    },
+    // ---------- Server Security & Monitoring Navigation End ----------
   ],
 };
 
