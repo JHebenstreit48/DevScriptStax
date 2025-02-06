@@ -1,13 +1,13 @@
 import Header from "@/Components/Header";
 import Notes from "@/Components/Notes";
 
-const APIIntro = () => {
-    const markdownFilePath = '/BackEndNotes/APINotes/APIFundamentals/APIIntro.md';
+const CoreConcepts = () => {
+    const markdownFilePath = '/BackEndNotes/APINotes/APIFundamentals/CoreConcepts.md';
 
     return (
 
         <>
-            <Header text="API Introduction" />
+            <Header text="Core API Concepts" />
             <Notes
                 filePath={markdownFilePath}
                 markdownContent="markdownContent"
@@ -17,4 +17,4 @@ const APIIntro = () => {
 
 };
 
-export default APIIntro;
+export default CoreConcepts;
