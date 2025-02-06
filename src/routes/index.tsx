@@ -7,12 +7,12 @@ import Home from "@/Pages/Home";
 // APIs Start
 
 // API Introduction Start
-import APIIntro from "@/Pages/BackEndPages/APIPages/APIIntroduction/APIIntro";
+import CoreConcepts from "@/Pages/BackEndPages/APIPages/APIFundamentals/CoreAPIConcepts";
 // API Introduction End
 
 // Types of APIs Start
 import PublicVPrivate from "@/Pages/BackEndPages/APIPages/TypesOfAPIs/PubVSPrivate";
-
+import RESTVSGraphQLVSSOAP from "@/Pages/BackEndPages/APIPages/TypesOfAPIs/RestVSGraphVSSOAP";
 // Types of APIs End
 
 // APIs End
@@ -166,6 +166,7 @@ export const router = createBrowserRouter([
                 index: true,
                 element: <Home />,
             },
+            // Angular Start
             {
                 path: '/angular/basics/gettingstarted',
                 element: <GettingStarted />,
@@ -190,13 +191,18 @@ export const router = createBrowserRouter([
                 path: '/angular/coreconcepts/routing',
                 element: <Routing />,
             },
+            // Angular End
             {
-                path: '/apis/intro/whatis/overview',
-                element: <APIIntro />,
+                path: '/apis/intro/fundamentals/overview',
+                element: <CoreConcepts />,
             },
             {
-                path: '/apis/intro/types/public-private',
+                path: '/apis/intro/types/publicvsprivate',
                 element: <PublicVPrivate />,
+            },
+            {
+                path: '/apis/intro/types/comparison',
+                element: <RESTVSGraphQLVSSOAP />,
             },
             {
                 path: '/apolloserver',
