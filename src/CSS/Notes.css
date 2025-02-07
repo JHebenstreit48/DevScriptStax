@@ -176,8 +176,16 @@ span.codeSnip {
 
 @media only screen and (max-width: 390px) {
   .card {
-    text-align: center;
-    width: 44rem;
-    margin: 13rem 2.7rem 8rem;
+    width: 95%;
+    margin: 3rem auto;
+    background-color: rgb(41, 40, 40);
+    z-index: 15;
+  }
+  .markdownContent {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 98%;
+    margin: 0 auto;
+    font-size: 1rem;
   }
 }
