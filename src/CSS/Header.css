@@ -19,7 +19,11 @@
   .Header {
     position: fixed;
     margin: 0 auto;
+    height: 10rem;
+    padding: 1.5rem 0;
+    text-align: center;
     width: 100%;
     font-size: 3rem;
+    z-index: 18;
   }
 }
