@@ -4,7 +4,12 @@ import { Page } from "@/Navigation/NavigationTypes";
 // Front-End Navigation Start
 // ========================================
 
-import AngularNavigation from "@/Navigation/FrontEndNavigation/Angular";
+// ---------- Angular Navigation Start ----------
+import AngularBasicsNavigation from "@/Navigation/FrontEndNavigation/AngularNavigation/Basics";
+import AngularCoreConceptsNavigation from "./FrontEndNavigation/AngularNavigation/CoreConcepts";
+import AngularAdvancedNavigation from "./FrontEndNavigation/AngularNavigation/Advanced";
+import AngularBestPracticesNavigation from "./FrontEndNavigation/AngularNavigation/BestPractices";
+// ---------- Angular Navigation End ----------
 
 // ---------- CSS Navigation Start ----------
 import VanillaNavigation from "@/Navigation/FrontEndNavigation/CSSNavigation/Vanilla";
@@ -13,16 +18,23 @@ import PostprocessorsNavigation from "@/Navigation/FrontEndNavigation/CSSNavigat
 import PreprocessorsNavigation from "@/Navigation/FrontEndNavigation/CSSNavigation/Preprocessors";
 // ---------- CSS Navigation End ----------
 
-import GatsbyNavigation from "@/Navigation/FrontEndNavigation/Gatsby";
-import HTMLNavigation from "@/Navigation/FrontEndNavigation/HTML";
-import JavaScriptNavigation from "@/Navigation/FrontEndNavigation/JavaScript";
-import MarkdownNavigation from "@/Navigation/FrontEndNavigation/Markdown";
-import NextJSNavigation from "@/Navigation/FrontEndNavigation/Nextjs";
-import ReactNavigation from "@/Navigation/FrontEndNavigation/React";
-import ReduxNavigation from "@/Navigation/FrontEndNavigation/Redux";
-import SvelteNavigation from "@/Navigation/FrontEndNavigation/Svelte";
-import VueNavigation from "@/Navigation/FrontEndNavigation/Vue";
-import ViteNavigation from "@/Navigation/FrontEndNavigation/Vite"; // Added Vite
+import GatsbyNavigation from "@/Navigation/FrontEndNavigation/GatsbyNavigation/Gatsby";
+import HTMLNavigation from "@/Navigation/FrontEndNavigation/HTMLNavigation/HTMLBasics";
+
+// ---------- JavaScript Navigation Start ----------
+import JavaScriptBasicsNavigation from "@/Navigation/FrontEndNavigation/JavaScriptPages/Basics";
+import JavaScriptIntermediateNavigation from "./FrontEndNavigation/JavaScriptPages/Intermediate";
+import JavaScriptAdvancedNavigation from "./FrontEndNavigation/JavaScriptPages/Advanced";
+import JavaScriptBestPracticesNavigation from "./FrontEndNavigation/JavaScriptPages/BestPractices";
+// ---------- JavaScript Navigation End ----------
+
+import MarkdownNavigation from "@/Navigation/FrontEndNavigation/MarkdownPages/Markdown";
+import NextJSNavigation from "@/Navigation/FrontEndNavigation/NextJSPages/Nextjs";
+import ReactNavigation from "@/Navigation/FrontEndNavigation/ReactJSPages/React";
+import ReduxNavigation from "@/Navigation/FrontEndNavigation/ReduxPages/Redux";
+import SvelteNavigation from "@/Navigation/FrontEndNavigation/SveltePages/Svelte";
+import VueNavigation from "@/Navigation/FrontEndNavigation/VuePages/Vue";
+import ViteNavigation from "@/Navigation/FrontEndNavigation/VitePages/Vite"; // Added Vite
 
 // ========================================
 // Front-End Navigation End
@@ -228,7 +240,15 @@ const pages: Page[] = [
   {
     name: "Front End",
     subpages: [
-      AngularNavigation,
+      {
+      name: "Angular",
+      subpages: [
+        AngularBasicsNavigation,
+        AngularCoreConceptsNavigation,
+        AngularAdvancedNavigation,
+        AngularBestPracticesNavigation
+      ]
+      },
       {
         name: "CSS",
         subpages: [
@@ -240,7 +260,15 @@ const pages: Page[] = [
       },
       GatsbyNavigation,
       HTMLNavigation,
-      JavaScriptNavigation,
+      {
+        name: "JavaScript",
+        subpages: [
+          JavaScriptBasicsNavigation,
+          JavaScriptIntermediateNavigation,
+          JavaScriptAdvancedNavigation,
+          JavaScriptBestPracticesNavigation
+        ],
+      },
       MarkdownNavigation,
       NextJSNavigation,
       ReactNavigation,
