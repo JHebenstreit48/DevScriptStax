@@ -18,9 +18,16 @@ import PostprocessorsNavigation from "@/Navigation/FrontEndNavigation/CSSNavigat
 import PreprocessorsNavigation from "@/Navigation/FrontEndNavigation/CSSNavigation/Preprocessors";
 // ---------- CSS Navigation End ----------
 
-import GatsbyNavigation from "@/Navigation/FrontEndNavigation/Gatsby";
-import HTMLNavigation from "@/Navigation/FrontEndNavigation/HTML";
-import JavaScriptNavigation from "@/Navigation/FrontEndNavigation/JavaScript";
+import GatsbyNavigation from "@/Navigation/FrontEndNavigation/GatsbyNavigation/Gatsby";
+import HTMLNavigation from "@/Navigation/FrontEndNavigation/HTMLNavigation/HTMLBasics";
+
+// ---------- JavaScript Navigation Start ----------
+import JavaScriptBasicsNavigation from "@/Navigation/FrontEndNavigation/JavaScriptPages/Basics";
+import JavaScriptIntermediateNavigation from "./FrontEndNavigation/JavaScriptPages/Intermediate";
+import JavaScriptAdvancedNavigation from "./FrontEndNavigation/JavaScriptPages/Advanced";
+import JavaScriptBestPracticesNavigation from "./FrontEndNavigation/JavaScriptPages/BestPractices";
+// ---------- JavaScript Navigation End ----------
+
 import MarkdownNavigation from "@/Navigation/FrontEndNavigation/Markdown";
 import NextJSNavigation from "@/Navigation/FrontEndNavigation/Nextjs";
 import ReactNavigation from "@/Navigation/FrontEndNavigation/React";
@@ -253,7 +260,15 @@ const pages: Page[] = [
       },
       GatsbyNavigation,
       HTMLNavigation,
-      JavaScriptNavigation,
+      {
+        name: "JavaScript",
+        subpages: [
+          JavaScriptBasicsNavigation,
+          JavaScriptIntermediateNavigation,
+          JavaScriptAdvancedNavigation,
+          JavaScriptBestPracticesNavigation
+        ],
+      },
       MarkdownNavigation,
       NextJSNavigation,
       ReactNavigation,
