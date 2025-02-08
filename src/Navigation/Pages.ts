@@ -28,13 +28,13 @@ import JavaScriptAdvancedNavigation from "./FrontEndNavigation/JavaScriptPages/A
 import JavaScriptBestPracticesNavigation from "./FrontEndNavigation/JavaScriptPages/BestPractices";
 // ---------- JavaScript Navigation End ----------
 
-import MarkdownNavigation from "@/Navigation/FrontEndNavigation/Markdown";
-import NextJSNavigation from "@/Navigation/FrontEndNavigation/Nextjs";
-import ReactNavigation from "@/Navigation/FrontEndNavigation/React";
-import ReduxNavigation from "@/Navigation/FrontEndNavigation/Redux";
-import SvelteNavigation from "@/Navigation/FrontEndNavigation/Svelte";
-import VueNavigation from "@/Navigation/FrontEndNavigation/Vue";
-import ViteNavigation from "@/Navigation/FrontEndNavigation/Vite"; // Added Vite
+import MarkdownNavigation from "@/Navigation/FrontEndNavigation/MarkdownPages/Markdown";
+import NextJSNavigation from "@/Navigation/FrontEndNavigation/NextJSPages/Nextjs";
+import ReactNavigation from "@/Navigation/FrontEndNavigation/ReactJSPages/React";
+import ReduxNavigation from "@/Navigation/FrontEndNavigation/ReduxPages/Redux";
+import SvelteNavigation from "@/Navigation/FrontEndNavigation/SveltePages/Svelte";
+import VueNavigation from "@/Navigation/FrontEndNavigation/VuePages/Vue";
+import ViteNavigation from "@/Navigation/FrontEndNavigation/VitePages/Vite"; // Added Vite
 
 // ========================================
 // Front-End Navigation End
