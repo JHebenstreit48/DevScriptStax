@@ -4,7 +4,12 @@ import { Page } from "@/Navigation/NavigationTypes";
 // Front-End Navigation Start
 // ========================================
 
-import AngularNavigation from "@/Navigation/FrontEndNavigation/Angular";
+// ---------- Angular Navigation Start ----------
+import AngularBasicsNavigation from "@/Navigation/FrontEndNavigation/AngularNavigation/Basics";
+import AngularCoreConceptsNavigation from "./FrontEndNavigation/AngularNavigation/CoreConcepts";
+import AngularAdvancedNavigation from "./FrontEndNavigation/AngularNavigation/Advanced";
+import AngularBestPracticesNavigation from "./FrontEndNavigation/AngularNavigation/BestPractices";
+// ---------- Angular Navigation End ----------
 
 // ---------- CSS Navigation Start ----------
 import VanillaNavigation from "@/Navigation/FrontEndNavigation/CSSNavigation/Vanilla";
@@ -228,7 +233,15 @@ const pages: Page[] = [
   {
     name: "Front End",
     subpages: [
-      AngularNavigation,
+      {
+      name: "Angular",
+      subpages: [
+        AngularBasicsNavigation,
+        AngularCoreConceptsNavigation,
+        AngularAdvancedNavigation,
+        AngularBestPracticesNavigation
+      ]
+      },
       {
         name: "CSS",
         subpages: [
