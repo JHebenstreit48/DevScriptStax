@@ -124,13 +124,13 @@ import Python from "@/Pages/ProgrammingLanguagesPages/PythonPages/Python";
 // import PythonCode from "@/pages/PythonPages/PythonCode";
 
 // React and Related Frameworks
-import React from "@/Pages/FrontEndPages/ReactPages/React";
+import React from "@/Pages/FrontEndPages/ReactPages/ReactBasics/IntroAndSetup";
 // import ReactCode from "@/pages/ReactPages/ReactCode";
-import ReactAndTypeScript from "@/Pages/FrontEndPages/ReactPages/ReactAndTypeScript";
+import ReactAndTypeScript from "@/Pages/FrontEndPages/ReactPages/ReactAndTypeScript/ReactAndTypeScript";
 // import ReactAndTypeScriptCode from "@/pages/ReactPages/ReactAndTypeScriptCode";
-import ReactFullStack from "@/Pages/FrontEndPages/ReactPages/ReactFullStack";
+import ReactFullStack from "@/Pages/FrontEndPages/ReactPages/ReactFullStack/ReactFullStack";
 // import ReactFullStackCode from "@/pages/ReactPages/ReactFullStackCode";
-import ReactNative from "@/Pages/FrontEndPages/ReactPages/ReactNative";
+import ReactNative from "@/Pages/FrontEndPages/ReactPages/ReactNative/ReactNative";
 // import ReactNativeCode from "@/pages/ReactPages/ReactNativeCode";
 
 // Redux
