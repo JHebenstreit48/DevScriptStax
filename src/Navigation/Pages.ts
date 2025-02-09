@@ -30,7 +30,7 @@ import JavaScriptBestPracticesNavigation from "./FrontEndNavigation/JavaScriptPa
 
 import MarkdownNavigation from "@/Navigation/FrontEndNavigation/MarkdownPages/Markdown";
 import NextJSNavigation from "@/Navigation/FrontEndNavigation/NextJSPages/Nextjs";
-import ReactNavigation from "@/Navigation/FrontEndNavigation/ReactJSPages/React";
+import ReactNavigation from "@/Navigation/FrontEndNavigation/ReactJSPages/ReactBasics";
 import ReduxNavigation from "@/Navigation/FrontEndNavigation/ReduxPages/Redux";
 import SvelteNavigation from "@/Navigation/FrontEndNavigation/SveltePages/Svelte";
 import VueNavigation from "@/Navigation/FrontEndNavigation/VuePages/Vue";
