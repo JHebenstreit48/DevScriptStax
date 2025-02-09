@@ -1,6 +1,6 @@
 import { Subpage } from "@/Navigation/NavigationTypes";
 
-const ReactNavigation: Subpage = {
+const ReactFullStackNavigation: Subpage = {
   name: "React Full Stack",
   subpages: [
     { name: "Express Integration", path: "/react/fullstack/express" }, // Simplified path
@@ -9,4 +9,4 @@ const ReactNavigation: Subpage = {
   ],
 };
 
-export default ReactNavigation;
+export default ReactFullStackNavigation;

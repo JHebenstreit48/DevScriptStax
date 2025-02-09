@@ -1,6 +1,6 @@
 import { Subpage } from "@/Navigation/NavigationTypes";
 
-const ReactNavigation: Subpage = {
+const ReactBasicsNavigation: Subpage = {
   name: "React Basics",
   subpages: [
     { name: "Intro & Setup", path: "/react/basics/introandsetup" }, // Combined
@@ -12,4 +12,4 @@ const ReactNavigation: Subpage = {
   ],
 };
 
-export default ReactNavigation;
+export default ReactBasicsNavigation;

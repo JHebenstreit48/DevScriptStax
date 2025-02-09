@@ -1,6 +1,6 @@
 import { Subpage } from "@/Navigation/NavigationTypes";
 
-const ReactNavigation: Subpage = {
+const ReactAndTypeScriptNavigation: Subpage = {
   name: "React and TypeScript",
   subpages: [
     { name: "Intro & Basics", path: "/react/typescript/intro" },
@@ -10,4 +10,4 @@ const ReactNavigation: Subpage = {
   ],
 };
 
-export default ReactNavigation;
+export default ReactAndTypeScriptNavigation;
