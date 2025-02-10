@@ -6,9 +6,9 @@ import { Page } from "@/Navigation/NavigationTypes";
 
 // ---------- Angular Navigation Start ----------
 import AngularBasicsNavigation from "@/Navigation/FrontEndNavigation/AngularNavigation/Basics";
-import AngularCoreConceptsNavigation from "./FrontEndNavigation/AngularNavigation/CoreConcepts";
-import AngularAdvancedNavigation from "./FrontEndNavigation/AngularNavigation/Advanced";
-import AngularBestPracticesNavigation from "./FrontEndNavigation/AngularNavigation/BestPractices";
+import AngularCoreConceptsNavigation from "@/Navigation/FrontEndNavigation/AngularNavigation/CoreConcepts";
+import AngularAdvancedNavigation from "@/Navigation/FrontEndNavigation/AngularNavigation/Advanced";
+import AngularBestPracticesNavigation from "@/Navigation/FrontEndNavigation/AngularNavigation/BestPractices";
 // ---------- Angular Navigation End ----------
 
 // ---------- CSS Navigation Start ----------
@@ -23,19 +23,27 @@ import HTMLNavigation from "@/Navigation/FrontEndNavigation/HTMLNavigation/HTMLB
 
 // ---------- JavaScript Navigation Start ----------
 import JavaScriptBasicsNavigation from "@/Navigation/FrontEndNavigation/JavaScriptPages/Basics";
-import JavaScriptIntermediateNavigation from "./FrontEndNavigation/JavaScriptPages/Intermediate";
-import JavaScriptAdvancedNavigation from "./FrontEndNavigation/JavaScriptPages/Advanced";
-import JavaScriptBestPracticesNavigation from "./FrontEndNavigation/JavaScriptPages/BestPractices";
+import JavaScriptIntermediateNavigation from "@/Navigation/FrontEndNavigation/JavaScriptPages/Intermediate";
+import JavaScriptAdvancedNavigation from "@/Navigation/FrontEndNavigation/JavaScriptPages/Advanced";
+import JavaScriptBestPracticesNavigation from "@/Navigation/FrontEndNavigation/JavaScriptPages/BestPractices";
 // ---------- JavaScript Navigation End ----------
 
 import MarkdownNavigation from "@/Navigation/FrontEndNavigation/MarkdownPages/Markdown";
 import NextJSNavigation from "@/Navigation/FrontEndNavigation/NextJSPages/Nextjs";
 
 // ---------- React Navigation Start ----------
-import ReactBasicsNavigation from "@/Navigation/FrontEndNavigation/ReactJSPages/ReactBasics";
-import ReactAndTypeScriptNavigation from "@/Navigation/FrontEndNavigation/ReactJSPages/ReactAndTypeScript";
-import ReactFullStackNavigation from "@/Navigation/FrontEndNavigation/ReactJSPages/ReactFullStack";
-import ReactNativeNavigation from "@/Navigation/FrontEndNavigation/ReactJSPages/ReactNative";
+
+// ---------- React Basics Navigation Start ----------
+import GettingStartedNavigation from "@/Navigation/FrontEndNavigation/ReactJSPages/ReactBasics/GettingStarted";
+import FundamentalsNavigation from "./FrontEndNavigation/ReactJSPages/ReactBasics/Fundamentals";
+import ComponentBehaviorNavigation from "@/Navigation/FrontEndNavigation/ReactJSPages/ReactBasics/ComponentBehavior";
+import WorkingWithDataNavigation from "@/Navigation/FrontEndNavigation/ReactJSPages/ReactBasics/WorkingWithData";
+import AdvancedTopicsNavigation from "@/Navigation/FrontEndNavigation/ReactJSPages/ReactBasics/Advanced";
+// ---------- React Basics Navigation End ---------
+
+import ReactAndTypeScriptNavigation from "@/Navigation/FrontEndNavigation/ReactJSPages/ReactAndTypeScript/ReactAndTypeScript";
+import ReactFullStackNavigation from "@/Navigation/FrontEndNavigation/ReactJSPages/ReactFullStack/ReactFullStack";
+import ReactNativeNavigation from "@/Navigation/FrontEndNavigation/ReactJSPages/ReactNative/ReactNative";
 // ---------- React Navigation End ----------
 
 import ReduxNavigation from "@/Navigation/FrontEndNavigation/ReduxPages/Redux";
@@ -233,7 +241,6 @@ import GitNavigation from "@/Navigation/ToolsNavigation/ContainerizationNavigati
 
 import GraphQLNavigation from "@/Navigation/GraphQLAndApolloNavigation/GraphQLPages";
 import ApolloNavigation from "@/Navigation/GraphQLAndApolloNavigation/Apollo";
-
 // ========================================
 // GraphQL & Apollo Navigation End
 // ========================================
@@ -280,7 +287,25 @@ const pages: Page[] = [
       {
         name: "React",
         subpages: [
-          ReactBasicsNavigation,
+          {
+            name: "React Basics",
+            subpages: [
+              GettingStartedNavigation,
+              FundamentalsNavigation,
+              ComponentBehaviorNavigation,
+              WorkingWithDataNavigation,
+              AdvancedTopicsNavigation
+            ]
+          },
+          {
+
+          },
+          {
+
+          },
+          {
+
+          },
           ReactAndTypeScriptNavigation,
           ReactFullStackNavigation,
           ReactNativeNavigation,
