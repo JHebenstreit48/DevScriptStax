@@ -1,6 +1,5 @@
 import Header from "@/Components/Header";
 import Notes from "@/Components/Notes";
-import "@/CSS/Notes.css"
 
 
 const Components = () => {
