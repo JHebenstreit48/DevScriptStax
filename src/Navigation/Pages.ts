@@ -22,57 +22,57 @@ import GatsbyNavigation from "@/Navigation/FrontEndNavigation/GatsbyNavigation/G
 import HTMLNavigation from "@/Navigation/FrontEndNavigation/HTMLNavigation/HTMLBasics";
 
 // ---------- JavaScript Navigation Start ----------
-import JavaScriptBasicsNavigation from "@/Navigation/FrontEndNavigation/JavaScriptPages/Basics";
-import JavaScriptIntermediateNavigation from "@/Navigation/FrontEndNavigation/JavaScriptPages/Intermediate";
-import JavaScriptAdvancedNavigation from "@/Navigation/FrontEndNavigation/JavaScriptPages/Advanced";
-import JavaScriptBestPracticesNavigation from "@/Navigation/FrontEndNavigation/JavaScriptPages/BestPractices";
+import JavaScriptBasicsNavigation from "@/Navigation/FrontEndNavigation/JavaScriptNavigation/Basics";
+import JavaScriptIntermediateNavigation from "@/Navigation/FrontEndNavigation/JavaScriptNavigation/Intermediate";
+import JavaScriptAdvancedNavigation from "@/Navigation/FrontEndNavigation/JavaScriptNavigation/Advanced";
+import JavaScriptBestPracticesNavigation from "@/Navigation/FrontEndNavigation/JavaScriptNavigation/BestPractices";
 // ---------- JavaScript Navigation End ----------
 
-import MarkdownNavigation from "@/Navigation/FrontEndNavigation/MarkdownPages/Markdown";
-import NextJSNavigation from "@/Navigation/FrontEndNavigation/NextJSPages/Nextjs";
+import MarkdownNavigation from "@/Navigation/FrontEndNavigation/MarkdownNavigation/Markdown";
+import NextJSNavigation from "@/Navigation/FrontEndNavigation/NextJSNavigation/Nextjs";
 
 // ---------- React Navigation Start ----------
 
 // ---------- React Basics Navigation Start ----------
-import GettingStartedNavigation from "@/Navigation/FrontEndNavigation/ReactJSPages/ReactBasics/GettingStarted";
-import FundamentalsNavigation from "./FrontEndNavigation/ReactJSPages/ReactBasics/Fundamentals";
-import ComponentBehaviorNavigation from "@/Navigation/FrontEndNavigation/ReactJSPages/ReactBasics/ComponentBehavior";
-import WorkingWithDataNavigation from "@/Navigation/FrontEndNavigation/ReactJSPages/ReactBasics/WorkingWithData";
-import AdvancedTopicsNavigation from "@/Navigation/FrontEndNavigation/ReactJSPages/ReactBasics/Advanced";
+import GettingStartedNavigation from "@/Navigation/FrontEndNavigation/ReactJSNavigation/ReactBasics/GettingStarted";
+import FundamentalsNavigation from "./FrontEndNavigation/ReactJSNavigation/ReactBasics/Fundamentals";
+import ComponentBehaviorNavigation from "@/Navigation/FrontEndNavigation/ReactJSNavigation/ReactBasics/ComponentBehavior";
+import WorkingWithDataNavigation from "@/Navigation/FrontEndNavigation/ReactJSNavigation/ReactBasics/WorkingWithData";
+import AdvancedTopicsNavigation from "@/Navigation/FrontEndNavigation/ReactJSNavigation/ReactBasics/Advanced";
 // ---------- React Basics Navigation End ---------
 
 // ---------- React With TypeScript Navigation Start ----------
-import RWTGettingStartedNavigation from "@/Navigation/FrontEndNavigation/ReactJSPages/ReactAndTypeScript/GettingStarted";
-import TypeScriptInReactNavigation from "@/Navigation/FrontEndNavigation/ReactJSPages/ReactAndTypeScript/TypeScriptInReact";
-import AdvancedConceptsNavigation from "@/Navigation/FrontEndNavigation/ReactJSPages/ReactAndTypeScript/AdvancedConcepts";
-import StateManagementNavigation from "@/Navigation/FrontEndNavigation/ReactJSPages/ReactAndTypeScript/StateManagement";
-import BestPracticesNavigation from "@/Navigation/FrontEndNavigation/ReactJSPages/ReactAndTypeScript/BestPractices";
+import RWTGettingStartedNavigation from "@/Navigation/FrontEndNavigation/ReactJSNavigation/ReactAndTypeScript/GettingStarted";
+import TypeScriptInReactNavigation from "@/Navigation/FrontEndNavigation/ReactJSNavigation/ReactAndTypeScript/TypeScriptInReact";
+import AdvancedConceptsNavigation from "@/Navigation/FrontEndNavigation/ReactJSNavigation/ReactAndTypeScript/AdvancedConcepts";
+import StateManagementNavigation from "@/Navigation/FrontEndNavigation/ReactJSNavigation/ReactAndTypeScript/StateManagement";
+import BestPracticesNavigation from "@/Navigation/FrontEndNavigation/ReactJSNavigation/ReactAndTypeScript/BestPractices";
 // ---------- React With TypeScript Navigation End ----------
 
 // ---------- React Full Stack Navigation Start ----------
-import FSRGettingStartedNavigation from "@/Navigation/FrontEndNavigation/ReactJSPages/ReactFullStack/GettingStarted";
-import FSFrontAndBackEndNavigation from "@/Navigation/FrontEndNavigation/ReactJSPages/ReactFullStack/FrontEndToBackEnd";
-import FSLargeScaleAppsNavigation from "@/Navigation/FrontEndNavigation/ReactJSPages/ReactFullStack/LargeScaleApps";
-import FSServerSideNavigation from "@/Navigation/FrontEndNavigation/ReactJSPages/ReactFullStack/ServerSide";
-import FSProductionReadinessNavigation from "@/Navigation/FrontEndNavigation/ReactJSPages/ReactFullStack/ProductionReadiness";
+import FSRGettingStartedNavigation from "@/Navigation/FrontEndNavigation/ReactJSNavigation/ReactFullStack/GettingStarted";
+import FSFrontAndBackEndNavigation from "@/Navigation/FrontEndNavigation/ReactJSNavigation/ReactFullStack/FrontEndToBackEnd";
+import FSLargeScaleAppsNavigation from "@/Navigation/FrontEndNavigation/ReactJSNavigation/ReactFullStack/LargeScaleApps";
+import FSServerSideNavigation from "@/Navigation/FrontEndNavigation/ReactJSNavigation/ReactFullStack/ServerSide";
+import FSProductionReadinessNavigation from "@/Navigation/FrontEndNavigation/ReactJSNavigation/ReactFullStack/ProductionReadiness";
 // ---------- React Full Stack Navigation End ----------
 
 // ---------- React Native Navigation Start ----------
-import RNGettingStartedNavigation from "@/Navigation/FrontEndNavigation/ReactJSPages/ReactNative/GettingStarted";
-import RNCoreConceptsNavigation from "@/Navigation/FrontEndNavigation/ReactJSPages/ReactNative/CoreConcepts";
-import RNNavigationAndRoutingNavigation from "@/Navigation/FrontEndNavigation/ReactJSPages/ReactNative/NavAndRouting";
-import RNWorkingWithNativeFeaturesNavigation from "@/Navigation/FrontEndNavigation/ReactJSPages/ReactNative/WorkingWithFeatures";
-import RNStateManagementNavigation from "@/Navigation/FrontEndNavigation/ReactJSPages/ReactNative/StateManagement";
-import RNPerformanceNavigation from "@/Navigation/FrontEndNavigation/ReactJSPages/ReactNative/PerformanceAndOptimization";
-import RNBuildingNavigation from "@/Navigation/FrontEndNavigation/ReactJSPages/ReactNative/BuildingAndDeploy";
+import RNGettingStartedNavigation from "@/Navigation/FrontEndNavigation/ReactJSNavigation/ReactNative/GettingStarted";
+import RNCoreConceptsNavigation from "@/Navigation/FrontEndNavigation/ReactJSNavigation/ReactNative/CoreConcepts";
+import RNNavigationAndRoutingNavigation from "@/Navigation/FrontEndNavigation/ReactJSNavigation/ReactNative/NavAndRouting";
+import RNWorkingWithNativeFeaturesNavigation from "@/Navigation/FrontEndNavigation/ReactJSNavigation/ReactNative/WorkingWithFeatures";
+import RNStateManagementNavigation from "@/Navigation/FrontEndNavigation/ReactJSNavigation/ReactNative/StateManagement";
+import RNPerformanceNavigation from "@/Navigation/FrontEndNavigation/ReactJSNavigation/ReactNative/PerformanceAndOptimization";
+import RNBuildingNavigation from "@/Navigation/FrontEndNavigation/ReactJSNavigation/ReactNative/BuildingAndDeploy";
 // ---------- React Native Navigation End ----------
 
 // ---------- React Navigation End ----------
 
-import ReduxNavigation from "@/Navigation/FrontEndNavigation/ReduxPages/Redux";
-import SvelteNavigation from "@/Navigation/FrontEndNavigation/SveltePages/Svelte";
-import VueNavigation from "@/Navigation/FrontEndNavigation/VuePages/Vue";
-import ViteNavigation from "@/Navigation/FrontEndNavigation/VitePages/Vite"; // Added Vite
+import ReduxNavigation from "@/Navigation/FrontEndNavigation/ReduxNavigation/Redux";
+import SvelteNavigation from "@/Navigation/FrontEndNavigation/SvelteNavigation/Svelte";
+import VueNavigation from "@/Navigation/FrontEndNavigation/VueNavigation/Vue";
+import ViteNavigation from "@/Navigation/FrontEndNavigation/ViteNavigation/Vite"; // Added Vite
 
 // ======================================================================================================================================
 // Front-End Navigation End
