@@ -8,7 +8,7 @@ const Components = () => {
     return (
 
         <>
-            <Header text="Components" />
+            <Header text="Angular Components" />
             <Notes
                 filePath={markdownFilePath}
                 markdownContent="markdownContent"

@@ -1,6 +1,5 @@
 import Header from "@/Components/Header";
 import Notes from "@/Components/Notes";
-import "@/CSS/Notes.css"
 
 
 const Services = () => {
@@ -9,7 +8,7 @@ const Services = () => {
     return (
 
         <>
-            <Header text="Services & DI" />
+            <Header text="Angular Services & Dependency Injection" />
             <Notes
                 filePath={markdownFilePath}
                 markdownContent="markdownContent"

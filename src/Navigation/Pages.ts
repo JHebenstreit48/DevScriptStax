@@ -202,21 +202,21 @@ import DartNavigation from "@/Navigation/ProgrammingLanguagesNavigation/Dart";
 // ======================================================================================================================================
 
 // ---------- End To End Testing Navigation Start ----------
-import CypressNavigation from "@/Navigation/TestingNavigation/End2EndNavigation/Cypress";
-import PlaywrightNavigation from "@/Navigation/TestingNavigation/End2EndNavigation/Playwright";
+import CypressNavigation from "@/Navigation/TestingNavigation/End2End/Cypress";
+import PlaywrightNavigation from "@/Navigation/TestingNavigation/End2End/Playwright";
 // ---------- End To End Testing Navigation End ----------
 
 // ---------- Framework Testing Navigation Start ----------
-import JestNavigation from "@/Navigation/TestingNavigation/FrameworkNavigation/Jest";
-import VitestNavigation from "@/Navigation/TestingNavigation/FrameworkNavigation/Vitest";
-import MochaNavigation from "@/Navigation/TestingNavigation/FrameworkNavigation/Mocha";
+import JestNavigation from "@/Navigation/TestingNavigation/Framework/Jest";
+import VitestNavigation from "@/Navigation/TestingNavigation/Framework/Vitest";
+import MochaNavigation from "@/Navigation/TestingNavigation/Framework/Mocha";
 // ---------- Framework Testing Navigation End ----------
 
 // ---------- Unit Testing Navigation Start ----------
-import PytestNavigation from "@/Navigation/TestingNavigation/UnitTestingNavigation/Pytest";
-import RSpecNavigation from "@/Navigation/TestingNavigation/UnitTestingNavigation/RSpec";
-import PHPUnitNavigation from "@/Navigation/TestingNavigation/UnitTestingNavigation/PHPUnit";
-import TestifyNavigation from "@/Navigation/TestingNavigation/UnitTestingNavigation/Testify";
+import PytestNavigation from "@/Navigation/TestingNavigation/UnitTesting/Pytest";
+import RSpecNavigation from "@/Navigation/TestingNavigation/UnitTesting/RSpec";
+import PHPUnitNavigation from "@/Navigation/TestingNavigation/UnitTesting/PHPUnit";
+import TestifyNavigation from "@/Navigation/TestingNavigation/UnitTesting/Testify";
 // ---------- Unit Testing Navigation End ----------
 
 // ======================================================================================================================================
@@ -228,30 +228,30 @@ import TestifyNavigation from "@/Navigation/TestingNavigation/UnitTestingNavigat
 // ======================================================================================================================================
 
 // ---------- API Tools Navigation Start ----------
-import InsomniaNavigation from "@/Navigation/ToolsNavigation/APIToolsNavigation/Insomnia";
-import PostmanNavigation from "@/Navigation/ToolsNavigation/APIToolsNavigation/Postman";
+import InsomniaNavigation from "@/Navigation/ToolsNavigation/APITools/Insomnia";
+import PostmanNavigation from "@/Navigation/ToolsNavigation/APITools/Postman";
 // ---------- API Tools Navigation End ----------
 
 // ---------- CICD Tools Navigation Start ----------
-import CircleCINavigation from "@/Navigation/ToolsNavigation/CICDToolsNavigation/CircleCI";
-import JenkinsNavigation from "@/Navigation/ToolsNavigation/CICDToolsNavigation/Jenkins";
+import CircleCINavigation from "@/Navigation/ToolsNavigation/CICDTools/CircleCI";
+import JenkinsNavigation from "@/Navigation/ToolsNavigation/CICDTools/Jenkins";
 // ---------- CICD Tools Navigation End ----------
 
 // ---------- Code Quality Navigation Start ----------
-import ESLintNavigation from "@/Navigation/ToolsNavigation/CodeQualityNavigation/ESLint";
-import PrettierNavigation from "@/Navigation/ToolsNavigation/CodeQualityNavigation/Prettier";
-import TSLintNavigation from "@/Navigation/ToolsNavigation/CodeQualityNavigation/TSLint";
-import StandardJSNavigation from "@/Navigation/ToolsNavigation/CodeQualityNavigation/StandardJS";
+import ESLintNavigation from "@/Navigation/ToolsNavigation/CodeQuality/ESLint";
+import PrettierNavigation from "@/Navigation/ToolsNavigation/CodeQuality/Prettier";
+import TSLintNavigation from "@/Navigation/ToolsNavigation/CodeQuality/TSLint";
+import StandardJSNavigation from "@/Navigation/ToolsNavigation/CodeQuality/StandardJS";
 // ---------- Code Quality Navigation End ----------
 
 // ---------- Package Management & Bundling Navigation Start ----------
-import BabelNavigation from "@/Navigation/ToolsNavigation/PackageManagementAndBundlingNavigation/Babel";
-import WebpackNavigation from "@/Navigation/ToolsNavigation/PackageManagementAndBundlingNavigation/WebpackPage";
+import BabelNavigation from "@/Navigation/ToolsNavigation/PackageManagementAndBundling/Babel";
+import WebpackNavigation from "@/Navigation/ToolsNavigation/PackageManagementAndBundling/WebpackPage";
 // ---------- Package Management & Bundling Navigation End ----------
 
 // ---------- Containerization Navigation Start ----------
-import DockerNavigation from "@/Navigation/ToolsNavigation/ContainerizationNavigation/Docker";
-import GitNavigation from "@/Navigation/ToolsNavigation/ContainerizationNavigation/Git";
+import DockerNavigation from "@/Navigation/ToolsNavigation/Containerization/Docker";
+import GitNavigation from "@/Navigation/ToolsNavigation/Containerization/Git";
 // ---------- Containerization Navigation End ----------
 
 // ======================================================================================================================================

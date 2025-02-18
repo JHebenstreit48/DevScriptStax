@@ -7,7 +7,7 @@ const MediaQueries = () => {
     return (
 
         <>
-            <Header text="Media Queries" />
+            <Header text="CSS Media Queries" />
             <Notes
                 filePath={markdownFilePath}
                 markdownContent="markdownContent"

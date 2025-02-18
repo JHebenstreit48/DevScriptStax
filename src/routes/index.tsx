@@ -24,8 +24,16 @@ import ApolloServer from "@/Pages/BackEndPages/ApolloServerPages/ApolloServer";
 // Angular Notes Start
 
 // Angular Basics Start
+// Angular Getting Started Start
 import AngularIntro from "@/Pages/FrontEndPages/AngularPages/Basics/GettingStarted/Introduction";
+import AngularAppCreate from "@/Pages/FrontEndPages/AngularPages/Basics/GettingStarted/CreatingRunningApp";
+import AngularCLI from "@/Pages/FrontEndPages/AngularPages/Basics/GettingStarted/CLI";
+// Angular Getting Started End
+
+// Angular Project Structure Start
 import AngularStructure from "@/Pages/FrontEndPages/AngularPages/Basics/ProjectStructure/FolderFileStructure";
+import AngularConfigFiles from "@/Pages/FrontEndPages/AngularPages/Basics/ProjectStructure/ConfigurationFiles";
+// Angular Project Structure End
 // Angular Basics End
 
 // Angular Core Concepts Start
@@ -167,14 +175,33 @@ export const router = createBrowserRouter([
                 element: <Home />,
             },
             // Angular Start
+            // Angular Basics Start
+            // Getting Started Start
             {
-                path: '/angular/basics/gettingstarted',
+                path: '/angular/basics/gettingstarted/intro',
                 element: <AngularIntro />,
             },
             {
-                path: '/angular/basics/projectstructure',
+                path: '/angular/basics/gettingstarted/creatingrunning',
+                element: <AngularAppCreate />,
+            },
+            {
+                path: '/angular/basics/gettingstarted/angularcli',
+                element: <AngularCLI />,
+            },
+            // Getting Started End
+
+            // Project Structure Start
+            {
+                path: '/angular/basics/projectstructure/folderfilestructure',
                 element: <AngularStructure />,
             },
+            {
+                path: '/angular/basics/projectstructure/configfiles',
+                element: <AngularConfigFiles />,
+            },
+            // Project Structure End
+            // Angular Basics End
             {
                 path: '/angular/coreconcepts/components',
                 element: <Components />,

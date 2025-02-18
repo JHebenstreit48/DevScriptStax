@@ -9,7 +9,7 @@ const Routing = () => {
     return (
 
         <>
-            <Header text="Routing" />
+            <Header text="Angular Routing" />
             <Notes
                 filePath={markdownFilePath}
                 markdownContent="markdownContent"
