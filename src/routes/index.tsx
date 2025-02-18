@@ -24,8 +24,8 @@ import ApolloServer from "@/Pages/BackEndPages/ApolloServerPages/ApolloServer";
 // Angular Notes Start
 
 // Angular Basics Start
-import GettingStarted from "@/Pages/FrontEndPages/AngularPages/Basics/AngularStart";
-import Structure from "@/Pages/FrontEndPages/AngularPages/Basics/AngularStructure";
+import AngularIntro from "@/Pages/FrontEndPages/AngularPages/Basics/GettingStarted/Introduction";
+import AngularStructure from "@/Pages/FrontEndPages/AngularPages/Basics/ProjectStructure/FolderFileStructure";
 // Angular Basics End
 
 // Angular Core Concepts Start
@@ -169,11 +169,11 @@ export const router = createBrowserRouter([
             // Angular Start
             {
                 path: '/angular/basics/gettingstarted',
-                element: <GettingStarted />,
+                element: <AngularIntro />,
             },
             {
                 path: '/angular/basics/projectstructure',
-                element: <Structure />,
+                element: <AngularStructure />,
             },
             {
                 path: '/angular/coreconcepts/components',
