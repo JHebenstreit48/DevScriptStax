@@ -9,7 +9,7 @@ const Modules = () => {
     return (
 
         <>
-            <Header text="Modules" />
+            <Header text="Angular Modules" />
             <Notes
                 filePath={markdownFilePath}
                 markdownContent="markdownContent"

@@ -7,7 +7,7 @@ const Animations = () => {
     return (
 
         <>
-            <Header text="Animations" />
+            <Header text="CSS Animations" />
             <Notes
                 filePath={markdownFilePath}
                 markdownContent="markdownContent"

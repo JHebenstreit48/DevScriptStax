@@ -7,7 +7,7 @@ const Variables = () => {
     return (
 
         <>
-            <Header text="Variables" />
+            <Header text="CSS Variables" />
             <Notes
                 filePath={markdownFilePath}
                 markdownContent="markdownContent"

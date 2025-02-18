@@ -7,7 +7,7 @@ const Transform = () => {
     return (
 
         <>
-            <Header text="Transform" />
+            <Header text="CSS Transform" />
             <Notes
                 filePath={markdownFilePath}
                 markdownContent="markdownContent"
