@@ -2,13 +2,13 @@ import Header from "@/Components/Header";
 import Notes from "@/Components/Notes";
 
 
-const GettingStarted = () => {
-    const markdownFilePath = '/FrontEndNotes/AngularNotes/AngularBasics/GettingStarted.md';
+const AngularIntro = () => {
+    const markdownFilePath = '/FrontEndNotes/AngularNotes/AngularBasics/GettingStarted/Introduction.md';
 
     return (
 
         <>
-            <Header text="Getting Started" />
+            <Header text="Angular Introduction" />
             <Notes
                 filePath={markdownFilePath}
                 markdownContent="markdownContent"
@@ -18,4 +18,4 @@ const GettingStarted = () => {
 
 };
 
-export default GettingStarted;
+export default AngularIntro;
