@@ -2,19 +2,17 @@
 
 ### Form Tag
 
-The <span><</span>form<span>></span> element creates a form for collecting user input. The `action` attribute specifies where to send the form data.
+The <span class="emphasis">&lt;form&gt;</span> element creates a form for collecting user input. The action attribute specifies where to send the form data.
 
 ```html
-<form>
-  ...
-</form>
+<form>...</form>
 ```
 
 ---
 
 ### Label Tag
 
-The <span><</span>label<span>></span> element provides a description for form inputs, improving accessibility.
+The <span class="emphasis">&lt;label&gt;</span> element provides a description for form inputs, improving accessibility.
 
 ```html
 <label for="name">Name:</label>
@@ -24,17 +22,17 @@ The <span><</span>label<span>></span> element provides a description for form in
 
 ### Input Tag
 
-The <span><</span>input<span>></span> element creates various types of form fields, such as text fields, email inputs, and checkboxes.
+The <span class="emphasis">&lt;input&gt;</span> element creates various types of form fields, such as text fields, email inputs, and checkboxes.
 
 ```html
-<input type="text" id="name" name="name">
+<input type="text" id="name" name="name" />
 ```
 
 ---
 
 ### Textarea Tag
 
-The <span><</span>textarea<span>></span> element allows users to input multi-line text.
+The <span class="emphasis">&lt;textarea&gt;</span> element allows users to input multi-line text.
 
 ```html
 <textarea rows="4" cols="50">Enter your text here...</textarea>
@@ -44,9 +42,8 @@ The <span><</span>textarea<span>></span> element allows users to input multi-lin
 
 ### Button Tag
 
-The <span><</span>button<span>></span> element creates a clickable button, often used to submit forms.
+The <span class="emphasis">&lt;button&gt;</span> element creates a clickable button, often used to submit forms.
 
 ```html
 <button type="submit">Submit</button>
 ```
-

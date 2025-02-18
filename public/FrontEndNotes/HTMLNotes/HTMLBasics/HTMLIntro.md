@@ -27,7 +27,7 @@ HTML is composed of <span class="emphasis">elements</span>, which define the <sp
 
 ## DOCTYPE Declaration
 
-The <span><</span>!DOCTYPE<span>></span> declaration defines the document type and version of HTML being used. It must be the first line of an HTML document for proper browser rendering.
+The <span class="emphasis">&lt;!DOCTYPE&gt;</span> declaration defines the document type and version of HTML being used. It must be the first line of an HTML document for proper browser rendering.
 
 ```html
 <!DOCTYPE html>
@@ -37,11 +37,10 @@ The <span><</span>!DOCTYPE<span>></span> declaration defines the document type a
 
 ## HTML Element
 
-The <span><</span>html<span>></span> element serves as the root of an HTML document. All other elements must be contained within this tag.
+The <span class="emphasis">&lt;html&gt;</span> element serves as the root of an HTML document. All other elements must be contained within this tag.
 
 ```html
 <html>
   ...
 </html>
 ```
-
