@@ -27,7 +27,7 @@ The <span class="secondEmphasis"><</span><span class="emphasis">article</span><s
 
 ### Footer Tag
 
-The <span><</span>footer<span>></span> element represents footer content, often containing copyright or contact information.
+The <span class="emphasis">&lt;footer&gt;</span> element represents footer content, often containing copyright or contact information.
 
 ```html
 <footer>
