@@ -8,7 +8,7 @@ const LESSCode = () => {
 
         <>
 
-            <Header text="LESS Code" />
+            <Header text="LESS" />
             <Notes filePath={markdownFilePath}
                 markdownContent="markdownContent"
             />
