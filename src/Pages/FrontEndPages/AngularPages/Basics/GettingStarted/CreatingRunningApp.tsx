@@ -2,13 +2,13 @@ import Header from "@/Components/Header";
 import Notes from "@/Components/Notes";
 
 
-const AngularRunningServing = () => {
-    const markdownFilePath = '/FrontEndNotes/AngularNotes/AngularBasics/GettingStarted/RunningAndServing.md';
+const AngularAppCreate = () => {
+    const markdownFilePath = '/FrontEndNotes/AngularNotes/AngularBasics/GettingStarted/CreatingRunning.md';
 
     return (
 
         <>
-            <Header text="Running & Serving An App" />
+            <Header text="Creating & Running An Angular Application" />
             <Notes
                 filePath={markdownFilePath}
                 markdownContent="markdownContent"
@@ -18,4 +18,4 @@ const AngularRunningServing = () => {
 
 };
 
-export default AngularRunningServing;
+export default AngularAppCreate;

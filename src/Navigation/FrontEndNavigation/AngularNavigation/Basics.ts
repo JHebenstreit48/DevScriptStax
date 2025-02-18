@@ -6,17 +6,16 @@ const AngularBasicsNavigation: Subpage = {
     {
       name: "Getting Started",
       subpages: [
-        { name: "Introduction to Angular", path: "/angular/basics/intro" }, // What is Angular, why use it?
-        { name: "Scaffolding a Project", path: "/angular/basics/scaffolding-project" }, // Using CLI, directory structure, base files
-        { name: "Running & Serving an App", path: "/angular/basics/running-serving" }, // ng serve, live reloading, debugging basics
-        { name: "Understanding Angular CLI", path: "/angular/basics/angular-cli" }, // CLI commands and best practices
+        { name: "Introduction to Angular", path: "/angular/basics/gettingstarted/intro" },
+        { name: "Creating & Running an Angular Application", path: "/angular/basics/gettingstarted/creatingrunning" },
+        { name: "Understanding Angular CLI", path: "/angular/basics/gettingstarted/angularcli" },
       ],
     },
     {
       name: "Project Structure",
       subpages: [
-        { name: "Folder & File Structure", path: "/angular/basics/projectstructure" }, // Organizing Angular projects
-        { name: "Angular Configuration Files", path: "/angular/basics/config-files" }, // angular.json, tsconfig.json
+        { name: "Understanding Angular Project Structure", path: "/angular/basics/projectstructure/folderfilestructure" },
+        { name: "Angular Configuration Files", path: "/angular/basics/projectstructure/configfiles" },
       ],
     },
   ],
