@@ -47,6 +47,10 @@ const FrameworksNavigation: Subpage = {
               path: "/css/frameworks/bootstrap/components/cards",
             },
             {
+              name: "Carousel",
+              path: "/css/frameworks/bootstrap/components/carousel",
+            },
+            {
               name: "Dropdowns",
               path: "/css/frameworks/bootstrap/components/dropdowns",
             },
