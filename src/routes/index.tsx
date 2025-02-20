@@ -63,6 +63,17 @@ import BootstrapTypography from "@/Pages/FrontEndPages/CSSPages/CSSFrameworksPag
 import BootstrapUtilities from "@/Pages/FrontEndPages/CSSPages/CSSFrameworksPages/Bootstrap/GettingStarted/BootstrapUtilities";
 // Bootstrap Getting Started End
 
+// Bootstrap Components Start
+import BootstrapAccordions from "@/Pages/FrontEndPages/CSSPages/CSSFrameworksPages/Bootstrap/BootstrapComponents/Accordions";
+import BootstrapAlerts from "@/Pages/FrontEndPages/CSSPages/CSSFrameworksPages/Bootstrap/BootstrapComponents/Alerts";
+import BootstrapButtons from "@/Pages/FrontEndPages/CSSPages/CSSFrameworksPages/Bootstrap/BootstrapComponents/Buttons";
+import BootstrapCards from "@/Pages/FrontEndPages/CSSPages/CSSFrameworksPages/Bootstrap/BootstrapComponents/Cards";
+import BootstrapCarousel from "@/Pages/FrontEndPages/CSSPages/CSSFrameworksPages/Bootstrap/BootstrapComponents/Carousel";
+import BootstrapDropdowns from "@/Pages/FrontEndPages/CSSPages/CSSFrameworksPages/Bootstrap/BootstrapComponents/Dropdowns";
+import BootstrapModals from "@/Pages/FrontEndPages/CSSPages/CSSFrameworksPages/Bootstrap/BootstrapComponents/Modals";
+import BootstrapTooltips from "@/Pages/FrontEndPages/CSSPages/CSSFrameworksPages/Bootstrap/BootstrapComponents/Tooltips";
+// Bootstrap Components End
+
 // CSS Bootstrap End
 
 // CSS Frameworks End
@@ -262,6 +273,12 @@ export const router = createBrowserRouter([
             //     path: '/cicdops/cicdopscode',
             //     element: <CICDOpsCode />,
             // },
+
+            // CSS Frameworks Start
+
+            // Bootstrap Start
+
+            // Bootstrap Getting Started Start
             {
                 path: '/css/frameworks/bootstrap/gettingstarted/intro',
                 element: <BootstrapIntro />,
@@ -278,6 +295,46 @@ export const router = createBrowserRouter([
                 path: '/css/frameworks/bootstrap/gettingstarted/utilities',
                 element: <BootstrapUtilities />,
             },
+            // Bootstrap Getting Started End
+
+            // Bootstrap Components Start
+            {
+                path: '/css/frameworks/bootstrap/components/accordions',
+                element: <BootstrapAccordions />,
+            },
+            {
+                path: '/css/frameworks/bootstrap/components/alerts',
+                element: <BootstrapAlerts />,
+            },
+            {
+                path: '/css/frameworks/bootstrap/components/buttons',
+                element: <BootstrapButtons />,
+            },
+            {
+                path: '/css/frameworks/bootstrap/components/cards',
+                element: <BootstrapCards />,
+            },
+            {
+                path: '/css/frameworks/bootstrap/components/carousel',
+                element: <BootstrapCarousel />,
+            },
+            {
+                path: '/css/frameworks/bootstrap/components/dropdowns',
+                element: <BootstrapDropdowns />,
+            },
+            {
+                path: '/css/frameworks/bootstrap/components/modals',
+                element: <BootstrapModals />,
+            },
+            {
+                path: '/css/frameworks/bootstrap/components/tooltips',
+                element: <BootstrapTooltips />,
+            },
+            // Bootstrap Components End
+
+            // Bootstrap End
+
+            // CSS Frameworks End
             {
                 path: '/css/vanillacss/basics/intro',
                 element: <CSSIntro />,

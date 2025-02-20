@@ -1,13 +1,13 @@
 import Header from "@/Components/Header";
 import Notes from "@/Components/Notes";
 
-const BootstrapAccordions = () => {
-    const markdownFilePath = '/FrontEndNotes/CSSNotes/Frameworks/BootstrapComponents/Accordions.md';
+const BootstrapCarousel = () => {
+    const markdownFilePath = '/FrontEndNotes/CSSNotes/Frameworks/BootstrapComponents/Carousel.md';
 
     return (
 
         <>
-            <Header text="Bootstrap Accordions" />
+            <Header text="Bootstrap Carousel" />
             <Notes
                 filePath={markdownFilePath}
                 markdownContent="markdownContent"
@@ -17,4 +17,4 @@ const BootstrapAccordions = () => {
 
 };
 
-export default BootstrapAccordions;
+export default BootstrapCarousel;
