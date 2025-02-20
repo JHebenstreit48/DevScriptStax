@@ -23,7 +23,7 @@ const FrameworksNavigation: Subpage = {
             },
             {
               name: "Utilities",
-              path: "/css/frameworks/bootstrap/getting/started/utilities",
+              path: "/css/frameworks/bootstrap/gettingstarted/utilities",
             },
           ],
         },
