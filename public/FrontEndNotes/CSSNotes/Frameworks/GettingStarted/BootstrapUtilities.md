@@ -262,9 +262,124 @@ To have content **visible by default**, add show inside the collapse class.
 ✅ This **toggles multiple sections** at the same time.
 
 ---
-### **Key Takeaways**
+## **Bootstrap data-toggle Attribute (Deprecated)**
 ---
-✅ **.collapse hides content** until triggered.  
-✅ **Use data-bs-toggle="collapse"** to enable the feature.  
-✅ **Adding .show makes it expanded by default.**  
-✅ **You can toggle multiple elements** with the same data-bs-target.  
+The **data-toggle** attribute was used in **Bootstrap 4 and earlier** to enable JavaScript-based behaviors **without custom JavaScript**.
+
+### **Why Was data-toggle Deprecated?**
+---
+- ❌ **Deprecated in Bootstrap 5** → **Replaced by <span class="codeSnip">data-bs-toggle</span>**
+- ✅ **Still used in Bootstrap 4 and below**
+- **The new format ensures consistency with Bootstrap 5’s naming conventions.**
+
+---
+### **Old vs. New Syntax**
+---
+<table class="notesTable">
+    <thead>
+        <tr class="tableHeader">
+            <th class="tableCellHeader">Version</th>
+            <th class="tableCellHeader">Old (Bootstrap 4)</th>
+            <th class="tableCellHeader">New (Bootstrap 5)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="tableRow">
+            <td class="tableCell"><span class="tableEmphasis">Collapse Example</span></td>
+            <td class="tableCell">
+                <span class="codeSnip">data-toggle="collapse"</span>
+            </td>
+            <td class="tableCell">
+                <span class="codeSnip">data-bs-toggle="collapse"</span>
+            </td>
+        </tr>
+        <tr class="tableRow">
+            <td class="tableCell"><span class="tableEmphasis">Modal Example</span></td>
+            <td class="tableCell">
+                <span class="codeSnip">data-toggle="modal"</span>
+            </td>
+            <td class="tableCell">
+                <span class="codeSnip">data-bs-toggle="modal"</span>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+---
+### **Example Using data-bs-toggle**
+---
+```html  
+<button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#exampleCollapse">
+    Toggle Content
+</button>
+<div id="exampleCollapse" class="collapse">
+    This content will appear when the button is clicked.
+</div>
+```
+
+✅ **This is the correct Bootstrap 5 syntax.**  
+❌ **Do not use data-toggle in Bootstrap 5.**  
+
+---
+## **Bootstrap data-target Attribute (Deprecated)**
+---
+
+The **data-target** attribute was used in **Bootstrap 4 and earlier** to define the **element that should be affected by data-toggle**.  
+
+### **Why Was data-target Deprecated?**
+---
+
+- ❌ **Deprecated in Bootstrap 5** → **Replaced by <span class="codeSnip">data-bs-target</span>**.  
+- ✅ **Still used in Bootstrap 4 and below**.  
+- **The new format follows Bootstrap 5’s naming convention for consistency**.  
+
+---
+### **Old vs. New Syntax**
+---
+
+<table class="notesTable">
+    <thead>
+        <tr class="tableHeader">
+            <th class="tableCellHeader">Version</th>
+            <th class="tableCellHeader">Old (Bootstrap 4)</th>
+            <th class="tableCellHeader">New (Bootstrap 5)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="tableRow">
+            <td class="tableCell"><span class="tableEmphasis">Collapse Example</span></td>
+            <td class="tableCell">
+                <span class="codeSnip">data-target="#exampleCollapse"</span>
+            </td>
+            <td class="tableCell">
+                <span class="codeSnip">data-bs-target="#exampleCollapse"</span>
+            </td>
+        </tr>
+        <tr class="tableRow">
+            <td class="tableCell"><span class="tableEmphasis">Modal Example</span></td>
+            <td class="tableCell">
+                <span class="codeSnip">data-target="#myModal"</span>
+            </td>
+            <td class="tableCell">
+                <span class="codeSnip">data-bs-target="#myModal"</span>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+---
+### **Example Using data-bs-target**
+---
+```html  
+<button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#exampleCollapse">
+    Toggle Content
+</button>
+<div id="exampleCollapse" class="collapse">
+    This content will appear when the button is clicked.
+</div>
+
+✅ **This is the correct Bootstrap 5 syntax.**  
+❌ **Do not use <span class="codeSnip">data-target</span> in Bootstrap 5.**  
+```
+
+---
