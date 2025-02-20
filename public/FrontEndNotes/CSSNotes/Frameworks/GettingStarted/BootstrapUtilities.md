@@ -208,3 +208,63 @@ Bootstrap provides predefined classes for **padding and margins**.
         </tr>
     </tbody>
 </table>
+
+## **Bootstrap Collapse Utility**
+---
+The **collapse** class is used to **show and hide content dynamically** without JavaScript.
+
+### **How collapse Works**
+---
+- **Allows toggling content visibility** with a button or link.
+- **Requires data-bs-toggle="collapse"** for functionality.
+- **Uses id to link the trigger element to the collapsible content.
+
+---
+
+### **Example of Basic Collapse**
+---
+```html  
+<button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#exampleCollapse">
+    Toggle Content
+</button>
+<div id="exampleCollapse" class="collapse">
+    This content will appear when the button is clicked.
+</div>
+```
+
+✅ Clicking the button **toggles the visibility** of the <div>.  
+
+---
+### **Making a Section Expand by Default**
+---
+To have content **visible by default**, add show inside the collapse class.
+
+```html  
+<div id="exampleCollapse" class="collapse show">
+    This content is visible by default.
+</div>
+```
+
+✅ The **show class** makes the section **expanded on page load**.
+
+---
+
+### **Using collapse with Multiple Elements**
+---
+```html  
+<button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target=".multiCollapse">
+    Toggle Both Sections
+</button>
+<div class="collapse multiCollapse">Content 1</div>
+<div class="collapse multiCollapse">Content 2</div>
+```
+
+✅ This **toggles multiple sections** at the same time.
+
+---
+### **Key Takeaways**
+---
+✅ **.collapse hides content** until triggered.  
+✅ **Use data-bs-toggle="collapse"** to enable the feature.  
+✅ **Adding .show makes it expanded by default.**  
+✅ **You can toggle multiple elements** with the same data-bs-target.  
