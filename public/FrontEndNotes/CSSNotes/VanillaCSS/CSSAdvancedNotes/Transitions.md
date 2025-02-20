@@ -1,9 +1,11 @@
 # Transitions
 
-CSS <span class="emphasis">transitions</span> allow properties to change <span class="emphasis">smoothly</span> over a <span class="emphasis">specified duration</span>, <span class="secondEmphasis">instead of</span> happening <span class="emphasis">instantly</span>.  
+CSS <span class="emphasis">transitions</span> allow properties to change <span class="emphasis">smoothly</span> over a <span class="emphasis">specified duration</span>, <span class="secondEmphasis">instead of</span> happening <span class="emphasis">instantly</span>.
 
 ---
+
 ### Transition Syntax
+
 ---
 
 ```css
@@ -11,7 +13,9 @@ transition: property duration timing-function delay;
 ```
 
 ---
+
 ### Transition-Property
+
 ---
 
 The <span class="emphasis">transition-property</span> property determines which CSS properties will animate when their values change.
@@ -31,7 +35,9 @@ transition-property: all;
 - Setting <span class="emphasis">transition-property: all;</span> will apply transitions to <span class="emphasis">all</span> animatable properties.
 
 ---
+
 ### Transition-Duration
+
 ---
 
 The <span class="emphasis">transition-duration</span> property defines how long a transition takes.
@@ -45,7 +51,9 @@ transition-duration: 2s;
 - If omitted, the transition happens instantly.
 
 ---
+
 ### Transition-Timing-Function
+
 ---
 
 The <span class="emphasis">transition-timing-function</span> property controls how the transition progresses over time.
@@ -74,7 +82,9 @@ transition-timing-function: ease-in-out;
 - <span class="emphasis">ease-in-out</span> : <span class="emphasis">Slow</span> at <span class="secondEmphasis">both</span> the <span class="emphasis">start</span> and <span class="emphasis">end</span>.
 
 ---
+
 ### Transition-Delay
+
 ---
 
 The <span class="emphasis">transition-delay</span> property adds a <span class="emphasis">pause</span> <span class="secondEmphasis">before</span> a transition <span class="emphasis">begins</span>.
@@ -88,7 +98,9 @@ transition-delay: 1s;
 - <span class="emphasis">Negative values</span> : Transition starts **midway**.
 
 ---
+
 ### Real-World Example: Hover Effect with Transform and Opacity
+
 ---
 
 The following example demonstrates how transitions work with **positioning**, **overflow handling**, and **transforms**.
@@ -126,28 +138,36 @@ The following example demonstrates how transitions work with **positioning**, **
   transform: translateY(0);
 }
 ```
+
 ---
+
 ### Explanation of the Example
+
 ---
 
 #### Positioning & Overflow:
+
 - The .box container uses position: relative so that its child elements (such as .text) can be absolutely positioned within it.
 - overflow: hidden ensures that any scaling of the image remains contained within the boundaries of .box.
 
 #### Image Scaling:
+
 - The image inside .box is set to transition with "transition: all 1.7s", allowing it to animate smoothly when its properties change.
 - On hover, the image scales up via "transform: scale(1.5)", enlarging it by 1.5 times for a dynamic effect.
 
 #### Text Reveal Effect:
+
 - The .text element is initially hidden by setting opacity: 0 and positioning it off-screen with "transform: translateY(100%)".
 - By defining "transition-property: all" and "transition-duration: 1s", the element’s opacity and transform properties animate smoothly.
 - On hover, the .text element transitions to opacity: 1 and transform: translateY(0), causing it to fade in and slide into view over 1 second.
 
 ---
+
 ### Comparison: Transition vs. No Transition
+
 ---
 
-<table class="comparisonTable">
+<table class="notesTable">
     <thead>
         <tr class="tableHeader">
             <th class="tableCellHeader">Feature</th>
@@ -180,7 +200,9 @@ The following example demonstrates how transitions work with **positioning**, **
 </table>
 
 ---
+
 ### Combining Transition Properties
+
 ---
 
 By using <span class="emphasis">transition-property</span>, <span class="emphasis">transition-duration</span>, <span class="emphasis">transition-timing-function</span>, and <span class="emphasis">transition-delay</span> together, developers can create <span class="secondEmphasis">precise</span> and <span class="secondEmphasis">controlled</span> animations.
@@ -198,7 +220,9 @@ div:hover {
 - The <span class="emphasis">color</span> transition occurs over <span class="emphasis">1 second</span>, using <span class="emphasis">ease-in-out</span>, **after** a <span class="emphasis">0.5-second delay</span>.
 
 ---
+
 ### Combining Transition-Property and Transition-Duration
+
 ---
 
 By using <span class="emphasis">transition-property</span> and <span class="emphasis">transition-duration</span> <span class="secondEmphasis">together</span>, developers can create <span class="emphasis">smooth</span>, controlled animations instead of <span class="emphasis">abrupt</span> property changes.
@@ -219,10 +243,12 @@ div:hover {
 - Using <span class="emphasis">all</span> applies the transition effect to <span class="emphasis">every</span> animatable property on the element.
 
 ---
+
 ### Comparison: Transition Timing Functions
+
 ---
 
-<table class="comparisonTable">
+<table class="notesTable">
     <thead>
         <tr class="tableHeader">
             <th class="tableCellHeader">Timing Function</th>

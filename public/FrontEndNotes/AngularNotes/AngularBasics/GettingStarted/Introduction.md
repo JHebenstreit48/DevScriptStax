@@ -1,37 +1,41 @@
 ## Introduction to Angular
+
 ---
 
 ### What is Angular?
+
 Angular is a **TypeScript-based front-end framework** for building dynamic, scalable web applications. Developed by Google, it provides powerful tools for handling components, state management, and client-server communication.
 
 ---
 
 ### Why Use Angular?
+
 ✅ **Component-Based Architecture** → Code is modular and reusable.  
 ✅ **Two-Way Data Binding** → Automatically syncs data between model & UI.  
 ✅ **Dependency Injection (DI)** → Improves maintainability & testing.  
 ✅ **Built-in Routing & HTTP Services** → No need for third-party libraries.  
 ✅ **Reactive Forms & RxJS** → Enables efficient event handling & state management.  
-✅ **Optimized for Performance** → Uses Ahead-of-Time (AOT) compilation.  
+✅ **Optimized for Performance** → Uses Ahead-of-Time (AOT) compilation.
 
 ---
 
 ### Core Angular Concepts
+
 🔹 **Components** → The building blocks of UI.  
 🔹 **Modules** → Organize Angular applications.  
 🔹 **Services & Dependency Injection** → Share logic across components.  
 🔹 **Directives** → Extend HTML with additional behavior.  
 🔹 **Routing** → Manage navigation between views.  
 🔹 **Forms** → Handle user input efficiently.  
-🔹 **State Management (RxJS)** → Handle asynchronous data streams.  
+🔹 **State Management (RxJS)** → Handle asynchronous data streams.
 
 ---
 
-### Angular vs. Other Frameworks  
+### Angular vs. Other Frameworks
 
-#### **Key Differences Between Angular and React JS**  
+#### **Key Differences Between Angular and React JS**
 
-<table class="comparisonTable">
+<table class="notesTable">
     <thead>
         <tr class="tableHeader">
             <th class="tableCellHeader">Aspect</th>
@@ -79,9 +83,10 @@ Angular is a **TypeScript-based front-end framework** for building dynamic, scal
 </table>
 
 #### **When to Choose Angular vs. React JS**
-- **Angular:** Best for **enterprise-scale applications** needing structure and built-in features.  
-- **React JS:** Best for **lightweight, flexible projects** requiring UI focus.  
-- **Angular** includes routing, state management, and DI **out of the box**.  
-- **React** relies on **third-party libraries** for routing and state management.  
+
+- **Angular:** Best for **enterprise-scale applications** needing structure and built-in features.
+- **React JS:** Best for **lightweight, flexible projects** requiring UI focus.
+- **Angular** includes routing, state management, and DI **out of the box**.
+- **React** relies on **third-party libraries** for routing and state management.
 
 ---

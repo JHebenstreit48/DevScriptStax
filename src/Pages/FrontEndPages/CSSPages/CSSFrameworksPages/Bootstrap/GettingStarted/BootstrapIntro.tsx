@@ -2,7 +2,7 @@ import Header from "@/Components/Header";
 import Notes from "@/Components/Notes";
 
 const BootstrapIntro = () => {
-    const markdownFilePath = '/FrontEndNotes/CSSNotes/Frameworks/BootstrapIntro.md';
+    const markdownFilePath = '/FrontEndNotes/CSSNotes/Frameworks/GettingStarted/BootstrapIntro.md';
 
     return (
 

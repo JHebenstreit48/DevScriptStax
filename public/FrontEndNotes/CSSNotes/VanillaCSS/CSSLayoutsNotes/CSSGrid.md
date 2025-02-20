@@ -51,6 +51,7 @@ Assign child elements to specific areas using the grid-area property:
   grid-area: footer;
 }
 ```
+
 ---
 
 ### Grid Template Columns with repeat()
@@ -59,7 +60,6 @@ The repeat() function allows defining multiple columns dynamically.
 
 - **Definition:** repeat() simplifies grid setup by avoiding manually defining each column size.
 - **Example Usage:**
-
 
 ```css
 grid-template-columns: repeat(3, 1fr);
@@ -81,10 +81,12 @@ The grid system can automatically create rows and columns if not explicitly defi
 ```
 
 - **Explicit Grid**: Defined using grid-template-rows and grid-template-columns.
-- **Implicit Grid**: Rows or columns are automatically created as needed.  
+- **Implicit Grid**: Rows or columns are automatically created as needed.
+
 ---
 
-### Alignments  
+### Alignments
+
 ---
 
 #### Self vs. Group Alignment
@@ -102,9 +104,10 @@ CSS Grid offers alignment options similar to Flexbox, but with additional contro
 }
 ```
 
-For a detailed comparison of alignment properties between Grid and Flexbox, refer to the [CSS Flexbox Layout Alignment](/css/basics/layouts/flexbox#comparison-flexbox-vs-grid-alignment) file.  
+For a detailed comparison of alignment properties between Grid and Flexbox, refer to the [CSS Flexbox Layout Alignment](/css/basics/layouts/flexbox#comparison-flexbox-vs-grid-alignment) file.
 
-### Row and Column Span  
+### Row and Column Span
+
 ---
 
 Grid items can span multiple rows or columns:
@@ -113,11 +116,12 @@ Grid items can span multiple rows or columns:
 grid-row: 2 / 4; /* Spans rows from line 2 to line 4 */
 grid-column: 3 / 5; /* Spans columns from line 3 to line 5 */
 ```
+
 ---
 
 ### Comparison: auto-fit vs. auto-fill
 
-<table class="comparisonTable">
+<table class="notesTable">
     <thead>
         <tr class="tableHeader">
             <th class="tableCellHeader">Feature</th>

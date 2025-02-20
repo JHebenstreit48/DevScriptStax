@@ -41,7 +41,7 @@ Using transform: translate(); is the preferred method when animating or transiti
 
 ### Comparison: transform vs. position relative for movement
 
-<table class="comparisonTable">
+<table class="notesTable">
     <thead>
         <tr class="tableHeader">
             <th class="tableCellHeader">Feature</th>

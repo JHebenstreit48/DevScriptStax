@@ -11,19 +11,19 @@ const FrameworksNavigation: Subpage = {
           subpages: [
             {
               name: "Introduction",
-              path: "/css/frameworks/bootstrap/intro",
+              path: "/css/frameworks/bootstrap/gettingstarted/intro",
             }, // Includes CDN links
             {
               name: "Grid System",
-              path: "/css/frameworks/bootstrap/grid",
+              path: "/css/frameworks/bootstrap/gettingstarted/grid",
             },
             {
               name: "Typography",
-              path: "/css/frameworks/bootstrap/typography",
+              path: "/css/frameworks/bootstrap/gettingstarted/typography",
             },
             {
               name: "Utilities",
-              path: "/css/frameworks/bootstrap/utilities",
+              path: "/css/frameworks/bootstrap/getting/started/utilities",
             },
           ],
         },
