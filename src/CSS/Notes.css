@@ -124,7 +124,7 @@
   }
   
   .tableCellHeader {
-    text-align: left;
+    text-align: center;
     padding: 12px;
     border: 1px solid #ddd;
     background-color: #444; /* Added background for better contrast */
@@ -139,6 +139,13 @@
   .tableCell {
     padding: 10px;
     text-align: left;
+    border: 1px solid #ddd;
+    background-color: #1b1b1b;
+  }
+
+  .centeredCell {
+    padding: 10px;
+    text-align: center;
     border: 1px solid #ddd;
     background-color: #1b1b1b;
   }
