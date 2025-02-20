@@ -57,6 +57,25 @@ Bootstrap’s grid system is based on <span class="emphasis">12 columns</span>. 
 If <span class="codeSnip">col-8</span> and <span class="codeSnip">col-4</span> were used together in a row, the total would be **12 columns**, meaning they would fit **perfectly** in a single line.
 
 ---
+### **What Happens If You Exceed 12 Columns?**
+---
+
+If your total column count **exceeds 12**, Bootstrap will force elements to **wrap to the next line**.
+<br><br>
+
+#### **Example (Will Wrap to the Next Line)**
+
+```html
+<div class="row">
+    <div class="col-8">This div takes up 8 columns</div>
+    <div class="col-6">This div takes up 6 columns</div>
+    <!-- 8 + 6 = 14 (too big) -->
+</div>
+```
+
+💡 Since 8 + 6 = 14 (which is **greater than 12**), the second div will **move to the next row automatically**.
+
+---
 ### **Making It Responsive (col-sm-8, col-md-8, etc.)**
 ---
 You can use <span class="emphasis">responsive column classes</span> to <span class="secondEmphasis">change layouts for different screen sizes</span>.
