@@ -52,12 +52,27 @@ import CICDOps from "@/Pages/ToolsPages/CICDOpsPages/CICDOps";
 
 // CSS Start
 
-// CSS Basics Start
+// CSS Frameworks Start
+
+// CSS Bootstrap Start
+
+// Bootstrap Getting Started Start
+import BootstrapIntro from "@/Pages/FrontEndPages/CSSPages/CSSFrameworksPages/Bootstrap/GettingStarted/BootstrapIntro";
+import BootstrapGrid from "@/Pages/FrontEndPages/CSSPages/CSSFrameworksPages/Bootstrap/GettingStarted/BootstrapGrid";
+import BootstrapTypography from "@/Pages/FrontEndPages/CSSPages/CSSFrameworksPages/Bootstrap/GettingStarted/BootstrapTypography";
+import BootstrapUtilities from "@/Pages/FrontEndPages/CSSPages/CSSFrameworksPages/Bootstrap/GettingStarted/BootstrapUtilities";
+// Bootstrap Getting Started End
+
+// CSS Bootstrap End
+
+// CSS Frameworks End
+
+// CSS Vanilla Start
 import CSSIntro from "@/Pages/FrontEndPages/CSSPages/CSSVanillaPages/CSSBasics/CSSIntro";
 import CSSSelectors from "@/Pages/FrontEndPages/CSSPages/CSSVanillaPages/CSSBasics/CSSSelectors";
 import CSSBoxModel from "@/Pages/FrontEndPages/CSSPages/CSSVanillaPages/CSSBasics/CSSBoxModel";
 import CSSPositioning from "@/Pages/FrontEndPages/CSSPages/CSSVanillaPages/CSSBasics/CSSPositioning";
-// CSS Basics End
+// CSS Vanilla End
 
 // CSS Layouts Start
 import CSSFlexbox from "@/Pages/FrontEndPages/CSSPages/CSSVanillaPages/CSSLayout/CSSFlexbox";
@@ -247,6 +262,22 @@ export const router = createBrowserRouter([
             //     path: '/cicdops/cicdopscode',
             //     element: <CICDOpsCode />,
             // },
+            {
+                path: '/css/frameworks/bootstrap/gettingstarted/intro',
+                element: <BootstrapIntro />,
+            },
+            {
+                path: '/css/frameworks/bootstrap/gettingstarted/grid',
+                element: <BootstrapGrid />,
+            },
+            {
+                path: '/css/frameworks/bootstrap/gettingstarted/typography',
+                element: <BootstrapTypography />,
+            },
+            {
+                path: '/css/frameworks/bootstrap/gettingstarted/utilities',
+                element: <BootstrapUtilities />,
+            },
             {
                 path: '/css/vanillacss/basics/intro',
                 element: <CSSIntro />,

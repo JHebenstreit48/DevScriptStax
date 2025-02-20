@@ -12,9 +12,9 @@
    - An element becomes a flex container when you set its display property to flex or inline-flex.
 
 ```css
-   .container {
-     display: flex;
-   }
+.container {
+  display: flex;
+}
 ```
 
 2. **Flex Items**:
@@ -52,30 +52,30 @@ To specify the order in which items appear, use the order property:
    - Defines how much a flex item should grow relative to the other items in the container.
 
 ```css
-   .flex-item {
-     flex-grow: 2;
-     /* This item grows twice as much as others */
-   }
+.flex-item {
+  flex-grow: 2;
+  /* This item grows twice as much as others */
+}
 ```
 
 2. **Flex Shrink**:
    - Defines how much a flex item should shrink relative to the others when space is limited.
 
 ```css
-   .flex-item {
-     flex-shrink: 1;
-     /* This item shrinks with the others */
-   }
+.flex-item {
+  flex-shrink: 1;
+  /* This item shrinks with the others */
+}
 ```
 
 3. **Flex Basis**:
    - Defines the default size of an element before the remaining space is distributed.
 
 ```css
-   .flex-item {
-     flex-basis: 200px;
-     /* Default size is 200px */
-   }
+.flex-item {
+  flex-basis: 200px;
+  /* Default size is 200px */
+}
 ```
 
 ---
@@ -165,12 +165,14 @@ Allow items to wrap onto multiple lines using flex-wrap:
   justify-content: space-around;
 }
 ```
-### Comparison: Flexbox vs. Grid Alignment  
+
+### Comparison: Flexbox vs. Grid Alignment
+
 ---
 
 Below is a comprehensive comparison table outlining the differences and similarities between Flexbox and Grid alignment properties:
 
-<table class="comparisonTable">
+<table class="notesTable">
     <thead>
         <tr class="tableHeader">
             <th class="tableCellHeader">Property</th>
@@ -230,4 +232,5 @@ Below is a comprehensive comparison table outlining the differences and similari
 ---
 
 ### Related Notes on Grid
+
 For more information on Grid-specific alignment properties, refer to the [CSS Grid Layout Alignment](/css/basics/layouts/grid#self-vs-group-alignment) file.
