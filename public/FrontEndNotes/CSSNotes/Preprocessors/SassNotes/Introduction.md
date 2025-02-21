@@ -82,9 +82,9 @@ Sass uses **two different file extensions**:
 2️⃣ **Compile Sass into standard CSS** using a preprocessor.  
 3️⃣ **Link the compiled <span class="codeSnip">.css</span> file** to your HTML page.
 
-Example Sass (<span class="codeSnip">.sass</span>):
+Example Sass (<span class="codeSnip">.scss</span>):
 
-```sass  
+```scss  
 $primary-color: blue
 
 button  
@@ -105,3 +105,126 @@ button {
 
 ✅ **Sass variables make code reusable and easier to maintain.**
 
+---
+### **Compiling Sass into CSS**
+---
+Before using Sass in a project, you need to **compile** your <span class="codeSnip">.sass</span> files into standard <span class="codeSnip">.css</span>.
+
+---
+#### **Installing Sass**
+---
+To install Sass in your Node.js project, run:  
+
+```sh
+npm install sass --save-dev  
+```
+
+---
+#### **Compiling Sass to CSS**
+---
+To manually compile a **single** Sass file:  
+
+```sh
+npx sass Sass/main.sass Sass/main.css  
+```
+
+- **Sass/main.sass** → Input Sass file  
+- **Sass/main.css** → Output CSS file  
+
+For an **entire directory**, use:  
+
+```sh
+npx sass Sass:dist  
+```
+
+- **Sass/** → Folder containing <span class="codeSnip">.sass</span> files  
+- **dist/** → Folder where compiled <span class="codeSnip">.css</span> files are saved  
+
+---
+#### **Watching for Changes**
+---
+To **automatically recompile** when changes are made:  
+
+```sh
+npx sass --watch Sass/main.sass Sass/main.css  
+```
+
+For an **entire folder**, use:  
+
+```sh
+npx sass --watch Sass:dist  
+```
+
+---
+#### **Adding Compilation to package.json**
+---
+To automate Sass compilation, add this to your <span class="codeSnip">package.json</span>:
+
+```json
+{
+  "scripts": {
+    "sass": "sass Sass/main.sass Sass/main.css",
+    "sass:watch": "sass --watch Sass/main.sass Sass/main.css",
+    "sass:watch-all": "sass --watch Sass:dist"
+  }
+}  
+```
+
+---
+#### **Running the Scripts**
+---
+Compile manually:  
+
+```sh
+npm run sass  
+
+Watch for changes:  
+```
+
+```sh
+npm run sass:watch  
+
+Watch all .sass files:  
+```
+
+```sh
+npm run sass:watch-all  
+```
+---
+#### **Identifying Watched Files**
+---
+When using --watch, Sass provides real-time feedback.
+
+1️⃣ If watching **one file**, you’ll see:  
+
+<span class="shell">
+Sass is watching for changes...<br>  
+Compiled Sass/main.sass to Sass/main.css.
+</span>
+<br><br>
+
+If you modify <span class="codeSnip">Sass/main.sass</span>, it automatically recompiles:  
+
+<span class="shell">
+Change detected. Recompiling...<br>  
+Compiled Sass/main.sass to Sass/main.css.  
+</span>
+<br><br>
+
+2️⃣ If watching <span class="emphasis">multiple files</span>, you’ll see:  
+
+<span class="shell">
+Sass is watching for changes...<br>  
+Watching Sass/*.sass
+</span>
+<br><br>
+
+If any file inside <span class="codeSnip">Sass/</span> changes:  
+
+<span class="shell">
+Change detected in Sass/header.sass. Recompiling...<br>  
+Compiled Sass/header.sass to dist/header.css.  
+</span>
+<br><br>
+
+✅ **Now your Sass files are automatically compiled into CSS whenever changes are made!** 🚀
