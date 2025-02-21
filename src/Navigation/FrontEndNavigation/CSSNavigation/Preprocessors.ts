@@ -7,57 +7,107 @@ const PreprocessorsNavigation: Subpage = {
       name: "LESS",
       subpages: [
         {
-          name: "Introduction & Core Concepts",
-          path: "/css/preprocessors/less/intro",
+          name: "Getting Started",
+          subpages: [
+            {
+              name: "Introduction",
+              path: "/css/preprocessors/less/gettingstarted/intro",
+            },
+            {
+              name: "LESS Syntax & Basics",
+              path: "/css/preprocessors/less/gettingstarted/syntax",
+            },
+            {
+              name: "Variables & Nesting",
+              path: "/css/preprocessors/less/gettingstarted/variables",
+            },
+            {
+              name: "Mixins & Functions",
+              path: "/css/preprocessors/less/gettingstarted/mixins",
+            },
+          ],
         },
         {
-          name: "LESS Syntax & Basics",
-          path: "/css/preprocessors/less/syntax",
+          name: "Advanced Concepts",
+          subpages: [
+            {
+              name: "Operations & Color Functions",
+              path: "/css/preprocessors/less/advanced/operations",
+            },
+            {
+              name: "Imports & Scope",
+              path: "/css/preprocessors/less/advanced/imports",
+            },
+          ],
         },
         {
-          name: "Variables & Data Types",
-          path: "/css/preprocessors/less/variables",
-        },
-        {
-          name: "Mixins, Functions & Operations",
-          path: "/css/preprocessors/less/mixins",
-        },
-        {
-          name: "Advanced LESS Techniques",
-          path: "/css/preprocessors/less/advanced",
-        },
-        {
-          name: "Best Practices & Troubleshooting",
-          path: "/css/preprocessors/less/best-practices",
+          name: "Best Practices",
+          subpages: [
+            {
+              name: "Optimization & Performance",
+              path: "/css/preprocessors/less/best-practices/optimization",
+            },
+            {
+              name: "Common Mistakes & Debugging",
+              path: "/css/preprocessors/less/best-practices/debugging",
+            },
+          ],
         },
       ],
     },
     {
-      name: "SASS",
+      name: "Sass",
       subpages: [
         {
-          name: "Introduction & Core Concepts",
-          path: "/css/preprocessors/sass/intro",
+          name: "Getting Started",
+          subpages: [
+            {
+              name: "Introduction",
+              path: "/css/preprocessors/sass/gettingstarted/intro",
+            },
+            {
+              name: "Syntax & Indentation",
+              path: "/css/preprocessors/sass/gettingstarted/syntax",
+            },
+            {
+              name: "Variables & Nesting",
+              path: "/css/preprocessors/sass/gettingstarted/variables",
+            },
+            {
+              name: "Mixins & Functions",
+              path: "/css/preprocessors/sass/gettingstarted/mixins",
+            },
+          ],
         },
         {
-          name: "SASS Syntax & Basics",
-          path: "/css/preprocessors/sass/syntax",
+          name: "Advanced Concepts",
+          subpages: [
+            {
+              name: "Control Directives & Loops",
+              path: "/css/preprocessors/sass/advanced/control-directives",
+            },
+            {
+              name: "Partials & Imports",
+              path: "/css/preprocessors/sass/advanced/partials",
+            },
+            {
+              name: "Extend & Placeholder Selectors",
+              path: "/css/preprocessors/sass/advanced/extend",
+            },
+          ],
         },
         {
-          name: "Variables & Data Types",
-          path: "/css/preprocessors/sass/variables",
-        },
-        {
-          name: "Mixins, Functions & Control Directives",
-          path: "/css/preprocessors/sass/mixins",
-        },
-        {
-          name: "Advanced SASS Techniques",
-          path: "/css/preprocessors/sass/advanced",
-        },
-        {
-          name: "Best Practices & Troubleshooting",
-          path: "/css/preprocessors/sass/best-practices",
+          name: "Best Practices",
+          subpages: [
+            {
+              name: "Optimization & Performance",
+              path: "/css/preprocessors/sass/best-practices/optimization",
+            },
+            {
+              name: "Common Mistakes & Debugging",
+              path: "/css/preprocessors/sass/best-practices/debugging",
+            },
+          ],
         },
       ],
     },
@@ -65,28 +115,30 @@ const PreprocessorsNavigation: Subpage = {
       name: "SCSS",
       subpages: [
         {
-          name: "Introduction & Core Concepts",
-          path: "/css/preprocessors/scss/intro",
+          name: "Getting Started",
+          subpages: [
+            {
+              name: "Introduction & How It Differs from Sass",
+              path: "/css/preprocessors/scss/gettingstarted/intro",
+            },
+            {
+              name: "SCSS Syntax vs. Sass",
+              path: "/css/preprocessors/scss/gettingstarted/syntax",
+            },
+            {
+              name: "Why SCSS Is Preferred Today",
+              path: "/css/preprocessors/scss/gettingstarted/why-scss",
+            },
+          ],
         },
         {
-          name: "SCSS Syntax & Basics",
-          path: "/css/preprocessors/scss/syntax",
-        },
-        {
-          name: "Variables & Data Types",
-          path: "/css/preprocessors/scss/variables",
-        },
-        {
-          name: "Mixins, Functions & Nesting",
-          path: "/css/preprocessors/scss/mixins",
-        },
-        {
-          name: "Advanced SCSS Techniques",
-          path: "/css/preprocessors/scss/advanced",
-        },
-        {
-          name: "Best Practices & Troubleshooting",
-          path: "/css/preprocessors/scss/best-practices",
+          name: "Best Practices",
+          subpages: [
+            {
+              name: "Best Practices for SCSS",
+              path: "/css/preprocessors/scss/best-practices/optimization",
+            },
+          ],
         },
       ],
     },
