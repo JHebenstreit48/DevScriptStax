@@ -80,6 +80,13 @@
     padding: 2px 4px;
     border-radius: 3px;
   }
+
+  .shell {
+    color: rgb(56, 255, 156);
+    font: normal 1.3rem/1.5 monospace !important;
+    padding: 2px 4px;
+    border-radius: 3px;
+  }
   
   /* =============================
      Bullet List Styling
