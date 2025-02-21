@@ -2,7 +2,7 @@ import Header from "@/Components/Header";
 import Notes from "@/Components/Notes";
 
 const SassIntro = () => {
-    const markdownFilePath = '/FrontEndNotes/CSSNotes/Preprocessors/Sass/Introduction.md';
+    const markdownFilePath = '/FrontEndNotes/CSSNotes/Preprocessors/SassNotes/Introduction.md';
 
     return (
 
