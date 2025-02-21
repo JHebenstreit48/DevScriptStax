@@ -78,6 +78,27 @@ import BootstrapTooltips from "@/Pages/FrontEndPages/CSSPages/CSSFrameworksPages
 
 // CSS Frameworks End
 
+// CSS Preprocessors Start
+
+// LESS Start
+import LESS from "@/Pages/FrontEndPages/CSSPages/CSSPreprocessorsPages/LESSPages/LESS";
+// import LESSCode from "@/pages/CSSPages/LESSCode";
+// LESS End
+
+// Sass Start
+import SassIntro from "@/Pages/FrontEndPages/CSSPages/CSSPreprocessorsPages/SassPages/SassIntro";
+
+// Sass End
+
+
+// CSS Preprocessors End
+
+// CSS Postprocessors Start
+import WhatArePost from "@/Pages/FrontEndPages/CSSPages/CSSPostprocessorsPages/PostCSS";
+// import PostCSSCode from "@/pages/CSSPages/PostCSSCode";
+
+// CSS Preprocessors End
+
 // CSS Vanilla Start
 import CSSIntro from "@/Pages/FrontEndPages/CSSPages/CSSVanillaPages/CSSBasics/CSSIntro";
 import CSSSelectors from "@/Pages/FrontEndPages/CSSPages/CSSVanillaPages/CSSBasics/CSSSelectors";
@@ -98,10 +119,7 @@ import Transitions from "@/Pages/FrontEndPages/CSSPages/CSSVanillaPages/CSSAdvan
 import Variables from "@/Pages/FrontEndPages/CSSPages/CSSVanillaPages/CSSAdvancedPages/Variables";
 // CSS Advanced End
 
-import LESS from "@/Pages/FrontEndPages/CSSPages/CSSPreprocessorsPages/LESS";
-// import LESSCode from "@/pages/CSSPages/LESSCode";
-import WhatArePost from "@/Pages/FrontEndPages/CSSPages/CSSPostprocessorsPages/PostCSS";
-// import PostCSSCode from "@/pages/CSSPages/PostCSSCode";
+// CSS Vanilla End
 
 // CSS End
 
@@ -335,6 +353,33 @@ export const router = createBrowserRouter([
             // Bootstrap End
 
             // CSS Frameworks End
+
+            // CSS Preprocessors Start
+
+            // LESS Start
+            {
+                path: '/css/preprocessors/less/gettingstarted/intro',
+                element: <LESS />,
+            },
+            // {
+            //     path: '/css/preprocessors/less/syntax',
+            //     element: <LESSCode />,
+            // },
+
+            // LESS End
+
+            // Sass Start
+            {
+                path: '/css/preprocessors/sass/gettingstarted/intro',
+                element: <SassIntro />,
+            },
+
+
+            // Sass End
+
+            // CSS Preprocessors End
+
+            // CSS Vanilla Start
             {
                 path: '/css/vanillacss/basics/intro',
                 element: <CSSIntro />,
@@ -380,14 +425,10 @@ export const router = createBrowserRouter([
                 path: '/css/vanillacss/advanced/variables',
                 element: <Variables />,
             },
-            {
-                path: '/css/preprocessors/less/intro',
-                element: <LESS />,
-            },
-            // {
-            //     path: '/css/preprocessors/less/syntax',
-            //     element: <LESSCode />,
-            // },
+
+            // CSS Vanilla End
+
+            // CSS End
             {
                 path: '/css/postprocessors/overview/whatarepostprocessors',
                 element: <WhatArePost />,
