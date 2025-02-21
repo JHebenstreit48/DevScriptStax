@@ -82,16 +82,15 @@ Sass uses **two different file extensions**:
 2️⃣ **Compile Sass into standard CSS** using a preprocessor.  
 3️⃣ **Link the compiled <span class="codeSnip">.css</span> file** to your HTML page.
 
-Example Sass (<span class="codeSnip">.scss</span>):
+Example Sass (<span class="codeSnip">.sass</span>):
 
-```scss  
-$primary-color: blue;  
+```sass  
+$primary-color: blue
 
-button {  
-  background-color: $primary-color;  
-  color: white;  
-  padding: 10px;  
-}  
+button  
+  background-color: $primary-color  
+  color: white  
+  padding: 10px 
 ```
 
 After compilation, it turns into standard CSS:
@@ -104,15 +103,5 @@ button {
 }  
 ```
 
-✅ **Sass variables make code reusable and easier to maintain.**  
+✅ **Sass variables make code reusable and easier to maintain.**
 
----
-### **Key Takeaways**
----
-✅ **Sass is a CSS extension language** that adds extra features.  
-✅ **It is NOT an official part of CSS** and must be **compiled** before use.  
-✅ **Browsers do not understand Sass directly—only compiled CSS.**  
-✅ **Sass files use <span class="codeSnip">.scss</span> (most common) or <span class="codeSnip">.sass</span> (less common).**  
-✅ **SCSS is covered separately in the SCSS section of this site.**  
-
----
