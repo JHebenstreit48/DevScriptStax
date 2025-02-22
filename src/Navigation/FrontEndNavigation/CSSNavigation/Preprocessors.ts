@@ -66,10 +66,6 @@ const PreprocessorsNavigation: Subpage = {
               path: "/css/preprocessors/sass/gettingstarted/intro",
             },
             {
-              name: "Syntax & Indentation",
-              path: "/css/preprocessors/sass/gettingstarted/syntax",
-            },
-            {
               name: "Variables & Nesting",
               path: "/css/preprocessors/sass/gettingstarted/variables",
             },
