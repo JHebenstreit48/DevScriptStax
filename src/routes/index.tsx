@@ -87,7 +87,7 @@ import LESS from "@/Pages/FrontEndPages/CSSPages/CSSPreprocessorsPages/LESSPages
 
 // Sass Start
 import SassIntro from "@/Pages/FrontEndPages/CSSPages/CSSPreprocessorsPages/SassPages/GettingStarted/SassIntro";
-import SassSyntax from "@/Pages/FrontEndPages/CSSPages/CSSPreprocessorsPages/SassPages/GettingStarted/SassSyntax";
+import SassVariables from "@/Pages/FrontEndPages/CSSPages/CSSPreprocessorsPages/SassPages/GettingStarted/SassVariables";
 // Sass End
 
 
@@ -375,7 +375,7 @@ export const router = createBrowserRouter([
             },
             {
                 path: '/css/preprocessors/sass/gettingstarted/syntax',
-                element: <SassSyntax />,
+                element: <SassVariables />,
             },
             // Sass End
 
