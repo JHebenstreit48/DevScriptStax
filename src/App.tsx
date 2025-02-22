@@ -1,9 +1,10 @@
 import { Outlet } from 'react-router-dom';
 import Footer from '@/Components/Footer';
 import '@/SCSS/Page.scss';
-import '@/CSS/Header.css';
+import '@/SCSS/Header.scss';
 import '@/SCSS/Navigation.scss';
-import '@/CSS/Footer.css';
+import '@/SCSS/Footer.scss';
+import '@/SCSS/Error.scss';
 
 export default function App() {
 

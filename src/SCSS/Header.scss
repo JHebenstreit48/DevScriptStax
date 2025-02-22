@@ -1,0 +1,48 @@
+/* =============================
+   Variables
+   ============================= */
+   $header-bg-color: rgb(8, 8, 103);
+   $text-color: rgb(255, 255, 255);
+   $box-shadow-color: black;
+   
+   $header-height: 7.5rem;
+   $header-mobile-height: 10rem;
+   $font-size-lg: 60px;
+   $font-size-sm: 3rem;
+   
+   /* =============================
+      Header Styling
+      ============================= */
+   .Header {
+     display: flex;
+     position: fixed;
+     top: 0;
+     left: 0;
+     justify-content: center;
+     width: 100%;
+     align-items: center;
+     background-color: $header-bg-color;
+     height: $header-height;
+     text-shadow: 10px 5px 0 $box-shadow-color;
+     color: $text-color;
+     font-size: $font-size-lg;
+     padding-bottom: 1rem;
+     z-index: 10;
+   }
+   
+   /* =============================
+      Responsive Styles (Mobile)
+      ============================= */
+   @media only screen and (max-width: 390px) {
+     .Header {
+       position: fixed;
+       margin: 0 auto;
+       height: $header-mobile-height;
+       padding: 1.5rem 0;
+       text-align: center;
+       width: 100%;
+       font-size: $font-size-sm;
+       z-index: 18;
+     }
+   }
+   
