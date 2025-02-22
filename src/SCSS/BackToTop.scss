@@ -1,0 +1,55 @@
+/* =============================
+   Variables
+   ============================= */
+   $primary-color: #007bff;
+   $hover-color: #0056b3;
+   $text-color: #ffffff;
+   $box-shadow: rgba(0, 0, 0, 0.2);
+   
+   $scroll-width: 5rem;
+   $scroll-height: 5rem;
+   $scroll-font-size: 4rem;
+   $scroll-padding: 10px 15px;
+   $scroll-border-radius: 50%;
+   $scroll-z-index: 1000;
+   
+   /* =============================
+      Scroll to Top Button
+      ============================= */
+   .scrollToTop {
+     position: fixed;
+     bottom: 4rem; // Distance from the bottom of the viewport
+     right: 1rem; // Distance from the right edge of the viewport
+     width: $scroll-width;
+     height: $scroll-height;
+     padding: $scroll-padding;
+     font-size: $scroll-font-size;
+     background-color: $primary-color;
+     color: $text-color;
+     border: none;
+     border-radius: $scroll-border-radius;
+     box-shadow: 0 4px 6px $box-shadow;
+     cursor: pointer;
+     z-index: $scroll-z-index;
+   
+     &:hover {
+       background-color: $hover-color;
+     }
+   
+     &:active {
+       transform: scale(0.95);
+     }
+   }
+   
+   /* =============================
+      Responsive Styles (Mobile)
+      ============================= */
+   @media (max-width: 768px) {
+     .scrollToTop {
+       bottom: 15px;
+       right: 15px;
+       font-size: 16px;
+       padding: 8px 12px;
+     }
+   }
+   

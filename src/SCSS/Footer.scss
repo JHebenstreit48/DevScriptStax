@@ -1,0 +1,41 @@
+/* =============================
+   Variables
+   ============================= */
+   $footer-bg-color: #333;
+   $text-color: white;
+   $font-size-lg: 26px;
+   $font-size-sm: 3rem;
+   
+   $footer-height: 60px;
+   $footer-mobile-height: 7rem;
+   $footer-padding: 10px;
+   $footer-mobile-padding: 2rem;
+   
+   /* =============================
+      Footer Styling
+      ============================= */
+   .Footer {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: $font-size-lg;
+     height: $footer-height;
+     margin-top: auto; // Pushes footer to the bottom
+     margin-bottom: 0;
+     color: $text-color;
+     background-color: $footer-bg-color;
+     padding: $footer-padding;
+     max-height: 100vh;
+   }
+   
+   /* =============================
+      Responsive Styles (Mobile)
+      ============================= */
+   @media only screen and (max-width: 390px) {
+     .Footer {
+       font-size: $font-size-sm;
+       height: $footer-mobile-height;
+       padding-bottom: $footer-mobile-padding;
+     }
+   }
+   
