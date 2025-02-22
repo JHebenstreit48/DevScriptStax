@@ -86,8 +86,8 @@ import LESS from "@/Pages/FrontEndPages/CSSPages/CSSPreprocessorsPages/LESSPages
 // LESS End
 
 // Sass Start
-import SassIntro from "@/Pages/FrontEndPages/CSSPages/CSSPreprocessorsPages/SassPages/SassIntro";
-
+import SassIntro from "@/Pages/FrontEndPages/CSSPages/CSSPreprocessorsPages/SassPages/GettingStarted/SassIntro";
+import SassSyntax from "@/Pages/FrontEndPages/CSSPages/CSSPreprocessorsPages/SassPages/GettingStarted/SassSyntax";
 // Sass End
 
 
@@ -373,8 +373,10 @@ export const router = createBrowserRouter([
                 path: '/css/preprocessors/sass/gettingstarted/intro',
                 element: <SassIntro />,
             },
-
-
+            {
+                path: '/css/preprocessors/sass/gettingstarted/syntax',
+                element: <SassSyntax />,
+            },
             // Sass End
 
             // CSS Preprocessors End
