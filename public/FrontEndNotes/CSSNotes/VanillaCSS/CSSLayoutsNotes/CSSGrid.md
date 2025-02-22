@@ -104,7 +104,7 @@ CSS Grid offers alignment options similar to Flexbox, but with additional contro
 }
 ```
 
-For a detailed comparison of alignment properties between Grid and Flexbox, refer to the [CSS Flexbox Layout Alignment](/css/basics/layouts/flexbox#comparison-flexbox-vs-grid-alignment) file.
+For a detailed comparison of alignment properties between Grid and Flexbox, refer to the [CSS Flexbox Layout Alignment](/css/vanillacss/layouts/flexbox#comparison-flexbox-vs-grid-alignment) file.
 
 ### Row and Column Span
 
