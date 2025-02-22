@@ -1,13 +1,13 @@
 import Header from "@/Components/Header";
 import Notes from "@/Components/Notes";
 
-const SassSyntax = () => {
-    const markdownFilePath = '/FrontEndNotes/CSSNotes/Preprocessors/SassNotes/GettingStarted/Syntax.md';
+const SassVariables = () => {
+    const markdownFilePath = '/FrontEndNotes/CSSNotes/Preprocessors/SassNotes/GettingStarted/Variables.md';
 
     return (
 
         <>
-            <Header text="Sass Syntax & Indentation" />
+            <Header text="Sass Variables and Indentation" />
             <Notes
                 filePath={markdownFilePath}
                 markdownContent="markdownContent"
@@ -17,4 +17,4 @@ const SassSyntax = () => {
 
 };
 
-export default SassSyntax;
+export default SassVariables;

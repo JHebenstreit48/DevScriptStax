@@ -374,7 +374,7 @@ export const router = createBrowserRouter([
                 element: <SassIntro />,
             },
             {
-                path: '/css/preprocessors/sass/gettingstarted/syntax',
+                path: '/css/preprocessors/sass/gettingstarted/variables',
                 element: <SassVariables />,
             },
             // Sass End
