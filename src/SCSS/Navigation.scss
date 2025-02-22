@@ -138,42 +138,22 @@
    }
    
    /* =============================
-      Responsive Styles (Mobile)
-      ============================= */
-   @media only screen and (max-width: 390px) {
-     .navigationMenu {
-       display: flex;
-       position: absolute;
-       height: 1rem;
-       padding: 0;
-       z-index: 17;
-       margin-top: 1.7rem;
-     }
-   
-     .container-fluid {
-       padding: 0;
-       width: 95%;
-     }
-   
-     .navbar-toggler.collapsed {
-       margin-top: 5rem;
-     }
-   
-     .navbar-collapse.show {
-       margin-top: -6.4rem;
-       border-radius: 10px;
-       background-color: $dropdown-hover;
-       padding-bottom: 1rem;
-     }
-   
-     .me-auto {
-       margin-top: 30rem;
-     }
-   
-     .dropdownContent.active {
-       background-color: transparent !important;
-       box-shadow: unset !important;
-       border: unset !important;
-     }
-   }
-   
+   Responsive Styles (Mobile)
+   ============================= */
+@media only screen and (max-width: 390px) {
+  .navigationMenu {
+    display: flex;
+    position: absolute;
+    height: 1rem;
+    padding: 0;
+    z-index: 17;
+    margin-top: 1.7rem;
+  }
+}
+
+@media only screen and (max-width: 1694px) {
+  .dropdownButton {
+    font-size: 1.3rem;
+    padding: 0 1.5rem;
+  }
+}
