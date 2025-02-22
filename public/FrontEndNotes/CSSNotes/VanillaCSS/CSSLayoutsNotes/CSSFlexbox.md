@@ -233,4 +233,4 @@ Below is a comprehensive comparison table outlining the differences and similari
 
 ### Related Notes on Grid
 
-For more information on Grid-specific alignment properties, refer to the [CSS Grid Layout Alignment](/css/basics/layouts/grid#self-vs-group-alignment) file.
+For more information on Grid-specific alignment properties, refer to the [CSS Grid Layout Alignment](/css/vanillacss/layouts/grid#self-vs-group-alignment) file.

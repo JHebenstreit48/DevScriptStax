@@ -2,7 +2,8 @@ import { Outlet } from 'react-router-dom';
 import Footer from '@/Components/Footer';
 import '@/CSS/Page.css';
 import '@/CSS/Header.css';
-import '@/CSS/Navigation.css'
+import '@/SCSS/Navigation.scss';
+// import '@/CSS/Navigation.css'
 import '@/CSS/Footer.css';
 
 export default function App() {

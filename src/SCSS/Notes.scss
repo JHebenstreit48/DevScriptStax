@@ -1,0 +1,249 @@
+/* =============================
+   Variables
+   ============================= */
+   $primary-color: rgb(6, 159, 248);
+   $secondary-color: rgb(243, 175, 28);
+   $danger-color: rgb(255, 77, 77);
+   $emphasis-color: rgb(255, 56, 209);
+   $success-color: rgb(47, 185, 20);
+   $highlight-color: rgb(175, 28, 243);
+   $info-color: rgb(12, 217, 231);
+   $bullet-color: rgb(0, 255, 60);
+   
+   $background-dark: rgb(41, 40, 40);
+   $background-code: rgb(29, 31, 33);
+   $background-table: #1b1b1b;
+   $background-header: rgb(40, 44, 52);
+   $table-border: #ddd;
+   $table-header-bg: #333;
+   $table-cell-bg: #444;
+   
+   $font-main: 'Arial', sans-serif;
+   $font-monospace: monospace;
+   
+   /* =============================
+      Mixins
+      ============================= */
+   @mixin flex-center {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+   
+   @mixin text-emphasis($color, $size) {
+     color: $color;
+     font: italic bold $size $font-main;
+   }
+   
+   /* =============================
+      General Layout & Containers
+      ============================= */
+   .card {
+     display: grid;
+     grid-template-columns: 1fr;
+     width: 40%;
+     margin: 3.5rem auto 0 auto;
+     line-height: 2rem;
+     padding: 0 0 2rem;
+     background-color: $background-dark;
+     z-index: 1;
+   }
+   
+   .markdownContent {
+     width: 70%;
+     margin: 4rem auto;
+     color: $primary-color;
+     text-shadow: 1px 2px 1px black;
+     line-height: 1.5;
+     font-size: 20px;
+   
+     /* =============================
+        Headings & Text Formatting
+        ============================= */
+     h1 {
+       color: $secondary-color;
+       text-align: center;
+       font-size: 3rem;
+     }
+   
+     h2, h3, h4, h5, h6 {
+       color: $danger-color;
+       text-shadow: 1px 2px 1px black;
+       text-align: center;
+     }
+   }
+   
+   /* Horizontal rule */
+   hr {
+     border: 1.5px solid $primary-color !important;
+     opacity: 1;
+     box-shadow: 2px 2px 2px black;
+   }
+   
+   /* =============================
+      Emphasis Styles
+      ============================= */
+   .emphasis {
+     @include text-emphasis($secondary-color, 23px);
+   }
+   
+   .secondEmphasis {
+     @include text-emphasis($success-color, 23px);
+   }
+   
+   .subheadingEmphasis1 {
+     @include flex-center;
+     @include text-emphasis($highlight-color, 40px);
+     margin: 1.6rem auto;
+   }
+   
+   .subheadingEmphasis2 {
+     @include text-emphasis($secondary-color, 30px);
+   }
+   
+   /* Inline Code Emphasis */
+   .codeSnip, .shell {
+     color: $emphasis-color;
+     font: normal 1.3rem/1.5 $font-monospace !important;
+     padding: 2px 4px;
+     border-radius: 3px;
+   }
+   
+   /* =============================
+      Bullet List Styling
+      ============================= */
+   .bullet1, .bullet2, .bullet3 {
+     display: inline-block;
+     padding-left: 50px !important;
+   }
+   
+   .bullet1 {
+     column-count: 2;
+     width: 44rem;
+     color: $bullet-color;
+   }
+   
+   .bullet2 {
+     column-count: 1;
+     width: 36rem;
+   }
+   
+   .bullet3 {
+     column-count: 3;
+     width: 40rem;
+     color: $info-color;
+   }
+   
+   /* =============================
+      Table Styling
+      ============================= */
+   .notesTable {
+     width: 100%;
+     border-collapse: collapse;
+     margin: 1rem 0;
+     font-size: 1.3rem;
+   
+     .tableHeader {
+       background-color: $table-header-bg;
+     }
+   
+     .tableCellHeader {
+       text-align: center;
+       padding: 12px;
+       border: 1px solid $table-border;
+       background-color: $table-cell-bg;
+     }
+   
+     .tableRow:hover {
+       background-color: rgba(255, 255, 255, 0.1);
+       transition: background-color 0.3s ease-in-out;
+     }
+   
+     .tableCell, .centeredCell {
+       padding: 10px;
+       text-align: left;
+       border: 1px solid $table-border;
+       background-color: $background-table;
+     }
+   
+     .tableEmphasis {
+       @include text-emphasis($secondary-color, 1.4rem);
+     }
+   }
+   
+   /* =============================
+      Code Block Styling
+      ============================= */
+   .codeBlockWrapper {
+     position: relative;
+     border: 1px solid #444;
+     border-radius: 11px;
+     background-color: $background-code;
+     line-height: 1.5;
+     overflow-x: auto;
+   
+     .codeBlockHeader {
+       @include flex-center;
+       justify-content: space-between;
+       background: $background-header;
+       color: #fff;
+       font: bold 0.9rem/1 $font-main;
+       padding: 0.5rem 1rem;
+       border-bottom: 1px solid #444;
+       border-radius: 11px 11px 0 0;
+     }
+   
+     .copyCodeButton {
+       background: #444;
+       color: #fff;
+       font: normal 0.8rem/1 $font-main;
+       border-radius: 3px;
+       padding: 0.25rem 0.5rem;
+       cursor: pointer;
+   
+       &:hover {
+         background: #555;
+       }
+     }
+   
+     pre, code {
+       line-height: 1.7 !important;
+       white-space: pre-wrap;
+       word-break: break-word;
+       overflow-x: auto;
+     }
+   }
+   
+   /* =============================
+      Miscellaneous
+      ============================= */
+   .punctuationSymbol {
+     @include text-emphasis($emphasis-color, 30px);
+     margin: 0 5px;
+   }
+   
+   .token {
+     width: 10rem;
+     line-height: 2.4rem;
+   }
+   
+   /* =============================
+      Responsive Styles
+      ============================= */
+   @media only screen and (max-width: 390px) {
+     .card {
+       width: 95%;
+       margin: 3rem auto;
+       background-color: $background-dark;
+       z-index: 15;
+     }
+   
+     .markdownContent {
+       display: grid;
+       grid-template-columns: 1fr;
+       width: 98%;
+       margin: 0 auto;
+       font-size: 1rem;
+     }
+   }
+   
