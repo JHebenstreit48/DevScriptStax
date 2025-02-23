@@ -86,8 +86,17 @@ import LESS from "@/Pages/FrontEndPages/CSSPages/CSSPreprocessorsPages/LESSPages
 // LESS End
 
 // Sass Start
+
+// Getting Started Start
 import SassIntro from "@/Pages/FrontEndPages/CSSPages/CSSPreprocessorsPages/SassPages/GettingStarted/SassIntro";
 import SassVariables from "@/Pages/FrontEndPages/CSSPages/CSSPreprocessorsPages/SassPages/GettingStarted/SassVariables";
+import MixinsAndFunctions from "@/Pages/FrontEndPages/CSSPages/CSSPreprocessorsPages/SassPages/GettingStarted/SassMixinsAndFuctions";
+// Getting Started End
+
+// Advanced Concepts Start
+import PartialsAndImports from "@/Pages/FrontEndPages/CSSPages/CSSPreprocessorsPages/SassPages/Advanced/PartialsAndImports";
+import ExtendAndPlaceholders from "@/Pages/FrontEndPages/CSSPages/CSSPreprocessorsPages/SassPages/Advanced/ExtendAndPlaceholders";
+// Advanced Concepts End
 // Sass End
 
 
@@ -369,6 +378,8 @@ export const router = createBrowserRouter([
             // LESS End
 
             // Sass Start
+
+            // Getting Started Start
             {
                 path: '/css/preprocessors/sass/gettingstarted/intro',
                 element: <SassIntro />,
@@ -377,6 +388,21 @@ export const router = createBrowserRouter([
                 path: '/css/preprocessors/sass/gettingstarted/variables',
                 element: <SassVariables />,
             },
+            {
+                path: '/css/preprocessors/sass/gettingstarted/mixins',
+            },
+            // Getting Started End
+
+            // Advanced Concepts Start
+            {
+                path: '/css/preprocessors/sass/advanced/partials',
+                element: <PartialsAndImports />,
+            },
+            {
+                path: '/css/preprocessors/sass/advanced/extend',
+                element: <ExtendAndPlaceholders />,
+            },
+            // Advanced Concepts End
             // Sass End
 
             // CSS Preprocessors End
