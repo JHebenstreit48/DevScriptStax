@@ -9,13 +9,14 @@ Partials are **smaller Sass files** that can be imported into other Sass files.
 - A partial file **starts with an underscore (_)** to indicate it should be included in another file.
 
 ✅ **Example Sass Partial (_buttons.sass)**
-scss
+```scss
 $buttonColor: blue
 
 .button
   background-color: $buttonColor
   color: white
   padding: 10px
+```
 
 ---
 ### **Using @import to Include Partials**
@@ -23,18 +24,20 @@ $buttonColor: blue
 Sass provides the @import directive to include **partials** inside other Sass files.
 
 #### **Syntax:**
-scss
+```scss
 @import "filename"
+```
 
 - **Do NOT include the underscore (_) or file extension (.sass)** when importing.
 - Sass automatically looks for a file named _filename.sass.
 
 ✅ **Example Importing _buttons.sass into styles.sass:**
-scss
+```scss
 @import "buttons"
 
 body
   font-family: Arial, sans-serif
+```
 
 ---
 ### **Why @import is Deprecated?**
@@ -87,12 +90,16 @@ Instead of @import, use @use to **import partials** in a modular way.
 
 ✅ **Converting from @import to @use**
 ❌ **Old (using @import)**
-scss
+
+```scss
 @import "buttons"
+```
 
 ✅ **New (using @use)**
-scss
+
+```scss
 @use "buttons"
+```
 
 ---
 ### **Using @forward for Shared Modules**
@@ -100,13 +107,16 @@ scss
 If you have a **central Sass file** that imports multiple files, use @forward to expose styles.
 
 ✅ **Example: Using @forward in _all.sass**
-scss
+
+```scss
 @forward "buttons"
 @forward "typography"
+```
 
 ✅ **Then, in styles.sass, you can import everything at once:**
-scss
+```scss
 @use "all"
+```
 
 ---
 ### **Best Practices for Imports in Sass**
@@ -123,5 +133,3 @@ scss
 - **@import is deprecated—use @use and @forward instead.**  
 - **@use prevents global namespace pollution.**  
 - **@forward is useful for sharing styles across multiple files.**  
-
-✅ **Now you understand how Sass imports work!** 🚀  

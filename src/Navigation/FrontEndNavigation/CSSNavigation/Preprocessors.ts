@@ -83,6 +83,10 @@ const PreprocessorsNavigation: Subpage = {
               path: "/css/preprocessors/sass/advanced/control-directives",
             },
             {
+              name: "Operators & Calculations",
+              path: "/css/preprocessors/sass/advanced/operators",
+            },
+            {
               name: "Partials & Imports",
               path: "/css/preprocessors/sass/advanced/partials",
             },

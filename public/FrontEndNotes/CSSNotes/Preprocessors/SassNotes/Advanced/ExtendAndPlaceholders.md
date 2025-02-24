@@ -8,7 +8,8 @@ The @extend directive allows elements to **share styles without duplicating code
 - Useful for **inheritance-based styling** (e.g., buttons, alerts, common utilities).  
 
 ✅ **Example of @extend:**
-scss
+
+```scss
 .button
   background-color: blue
   color: white
@@ -16,13 +17,16 @@ scss
 
 .button-primary
   @extend .button
+```
 
 ✅ **CSS Output:**
-scss
+
+```scss
 .button, .button-primary
   background-color: blue
   color: white
   padding: 10px
+```
 
 ---
 ### **Benefits of @extend**
@@ -41,7 +45,8 @@ Placeholders (%) work **like @extend** but **do not appear in the final CSS** un
 - **Keeps CSS clean**—only added when extended.  
 
 ✅ **Example:**
-scss
+
+```scss
 %button-styles
   background-color: blue
   color: white
@@ -49,13 +54,16 @@ scss
 
 .button-primary
   @extend %button-styles
+```
 
 ✅ **CSS Output (Only When Used):**
-scss
+
+```scss
 .button-primary
   background-color: blue
   color: white
   padding: 10px
+```
 
 ✅ **Unlike @extend, placeholders (%) do not generate unused CSS.**
 
@@ -101,24 +109,30 @@ scss
 ---
 ### **Common Mistakes with @extend**
 ---
-❌ **Overusing @extend inside deep structures**  
-scss
+❌ **Overusing @extend inside deep structures**
+
+```scss
 .nav
   @extend .container
+```
 
-❌ **Extending classes that change frequently**  
-scss
+❌ **Extending classes that change frequently**
+
+```scss
 .box
   @extend .old-box-style  /* Risky if .old-box-style changes later */
+```
 
 ✅ **Correct Usage:**
-scss
+
+```scss
 %shared-button
   background: blue
   color: white
 
 .button-primary
   @extend %shared-button
+```
 
 ✅ **Placeholders prevent unnecessary styles from appearing in the final CSS.**
 

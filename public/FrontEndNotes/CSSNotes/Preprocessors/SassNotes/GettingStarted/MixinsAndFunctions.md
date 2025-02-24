@@ -130,6 +130,4 @@ Functions in Sass allow you to **process values** and **return a result**.
 ---
 - **Mixins allow reusable styles with dynamic values.**  
 - **Use @extend for shared styles and @mixin for dynamic styles.**  
-- **Functions process values and return results for calculations.**  
-
-✅ **Now you understand how to use Mixins & Functions in Sass!** 🚀  
+- **Functions process values and return results for calculations.**
