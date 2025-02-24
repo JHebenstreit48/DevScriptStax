@@ -1,155 +1,99 @@
-# Basics
+## **Getting Started**
+---
+### **Introduction**
+---
+<span class="emphasis">React Native</span> enables developers to build **mobile applications** using **JavaScript** and **React**. It allows for **cross-platform development** on both **iOS** and **Android** from a **single codebase**.
 
 ---
-
-<span class="emphasis">React Native</span> enables developers to build <span class="emphasis">mobile applications</span> using <span class="emphasis">JavaScript</span> and <span class="emphasis">React</span>. It allows cross-platform development for <span class="emphasis">iOS</span> and <span class="emphasis">Android</span> using a single codebase.
+### **What is React Native?**
+---
+<table class="notesTable">
+    <thead>
+        <tr class="tableHeader">
+            <th class="tableCellHeader">Feature</th>
+            <th class="tableCellHeader">React.js</th>
+            <th class="tableCellHeader">React Native</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="tableRow">
+            <td class="tableCell"><strong>Purpose</strong></td>
+            <td class="tableCell">Builds web applications</td>
+            <td class="tableCell">Builds mobile applications</td>
+        </tr>
+        <tr class="tableRow">
+            <td class="tableCell"><strong>Platform</strong></td>
+            <td class="tableCell">Web (Browsers)</td>
+            <td class="tableCell">iOS & Android</td>
+        </tr>
+        <tr class="tableRow">
+            <td class="tableCell"><strong>Rendering</strong></td>
+            <td class="tableCell">Uses React-DOM to render HTML & CSS</td>
+            <td class="tableCell">Compiles to native UI elements</td>
+        </tr>
+        <tr class="tableRow">
+            <td class="tableCell"><strong>Access to Native APIs</strong></td>
+            <td class="tableCell">Limited (browser APIs only)</td>
+            <td class="tableCell">Full access (e.g., Camera, GPS, etc.)</td>
+        </tr>
+        <tr class="tableRow">
+            <td class="tableCell"><strong>Bridge Mechanism</strong></td>
+            <td class="tableCell">Directly manipulates the DOM</td>
+            <td class="tableCell">Uses a JavaScript-to-Native bridge</td>
+        </tr>
+    </tbody>
+</table>
 
 ---
+### **Setup & Installation**
+---
+React Native provides **two primary ways** to create a new project:
 
-## What is React Native?
+1. **React Native CLI** – Full control over native code.
+2. **Expo CLI** – Simplifies development but has limitations.
+
+#### **Using React Native CLI**
+1. Ensure dependencies are installed.
+2. Create a new project:
+
+```shell  
+npx react-native init MyReactNativeApp  
+```
+
+3. Navigate to the project directory and run:
+
+- **For Android:**
+
+```shell  
+  npx react-native run-android  
+```
+
+- **For iOS:**  
+```shell  
+  npx react-native run-ios  
+```
+
+💡 **Tip:** Ensure an **Android Emulator or iOS Simulator** is set up.
+
+#### **Using Expo CLI**
+1. Install Expo CLI.
+2. Create a new project:
+
+```shell  
+npx expo-cli init MyExpoApp  
+```
+
+3. Start the project:
+
+```shell  
+npx expo start  
+```
+
+4. Use the **Expo Go app** to scan the QR code and preview your app.
 
 ---
-
-React Native builds upon React.js, which is:
-
-- **React.js**: A JavaScript library for building user interfaces, primarily used for web development.
-  - Note: React.js is made web-compatible by **React-DOM**, not React itself.
-  - React itself is platform-agnostic.
-
-- **React Native**: A collection of special React components designed to compile down to native UI elements for mobile platforms.
-  - React Native enables creating real native mobile apps for **iOS** and **Android**.
-  - Unlike React-DOM, React Native components are compiled into native mobile UI elements.
-  - Provides access to **native platform APIs** (e.g., Camera, Geolocation) to interact with mobile hardware and system features directly via JavaScript.
-  - Acts as a bridge, connecting React to native platforms like iOS and Android, similar to how React-DOM connects React to the web.
-
+### **Conclusion**
 ---
-
-## Differences Between React JS and React Native
-
----
-
-React JS and React Native share a foundation in React but differ significantly in their purpose, components, and styling.
-
-### Purpose
-
-<span class="bullet2">
-
-- **React JS**: Used to build web applications that run in the browser.
-- **React Native**: Used to build mobile applications, including:
-  1. **Non-game applications**: Business apps, social apps, productivity tools.
-  2. **Games**: Simple or 2D games, such as puzzles, quizzes, or turn-based games.
-
-</span>
-
----
-
-### Games vs Non-Game Applications in React Native
-
-React Native’s suitability for games depends on the complexity and performance requirements of the game:
-
-#### **Games**
-<span class="bullet3">
-- Best for lightweight, 2D games or games with simple interactivity.
-- Examples: Quiz games, card games, turn-based games.
-- Limited for graphics-intensive or real-time 3D games due to performance constraints.
-</span>
-
-#### **Non-Game Applications**
-<span class="bullet3">
-- Ideal for creating cross-platform mobile apps.
-- Examples: Messaging apps, e-commerce platforms, productivity tools, or social networking apps.
-- Offers seamless integration with native mobile APIs like Camera and Geolocation.
-</span>
-
----
-
-## Tools and Extensions
-
----
-
-<span class="emphasis">VS Code Extensions</span> that enhance React Native development:
-
-<span class="bullet1">
-
-- **React Native Tools**: Debug and run React Native apps.
-- **Prettier**: Format your code consistently.
-- **ESLint**: Ensure code quality.
-- **Expo Tools**: Specifically for Expo projects.
-
-</span>
-
----
-
-## React and Platform Agnosticism
-
----
-
-<span class="emphasis">React</span> is platform-agnostic, providing tools for managing state and building virtual component trees. For actual rendering, external libraries are used:
-
-- **React-DOM**: Converts React components to browser-compatible HTML, CSS, and JavaScript.
-- **React Native**: Converts React components into native UI elements for mobile platforms.
-
-React itself focuses on defining the logic and structure of components, leaving the platform-specific rendering to libraries like React-DOM and React Native.
-
----
-
-## How to Create a React Native App
-
----
-
-React Native apps can be created using either the **React Native CLI** or **Expo CLI**. Both approaches provide tools for developing cross-platform mobile applications.
-
----
-
-### Using React Native CLI
-
----
-
-1. Ensure you have the required tools installed for React Native CLI, including a development environment for Android or iOS.
-2. Set up a new React Native project by following the official React Native documentation for the CLI.
-3. Use an emulator or a connected mobile device to run and test your project.
-
----
-
-### Using Expo CLI
-
----
-
-1. Make sure you have the tools required for Expo development.
-2. Create a new React Native project using Expo by following the guidelines in the Expo documentation.
-3. Open the project in the Expo Go app on your mobile device to preview and test your application.
-
----
-
-### Notes
-
-- React Native CLI offers full access to native code and customization but requires setting up Android Studio or Xcode.
-- Expo CLI simplifies the setup process and is ideal for beginners but has limited access to native code.
-
----
-
-## Leveraging Native APIs with React Native
-
----
-
-React Native allows developers to interact with a device’s native features, such as:
-
-- **Camera**: Access the device's camera to capture photos or videos.
-- **Location Services**: Use GPS to get the device's location.
-- **Other Features**: Access hardware like accelerometers, gyroscopes, and more.
-
-This capability is achieved by bridging JavaScript code with native APIs, enabling seamless integration of mobile hardware into your application.
-
----
-
-### Managing Import Paths in React Native
----
-
-React Native uses JavaScript modules for imports, but large projects benefit from cleaner import paths. Relative paths (<span class="emphasis">./</span>, <span class="emphasis">../</span>) can be replaced with aliases like <span class="emphasis">@/</span> for simplicity.
-
-- **Setup:** Use <span class="emphasis">babel-plugin-module-resolver</span> to define aliases for directories like <span class="emphasis">src/</span>.
-- **Benefits:** Enhances readability, reduces complexity, and simplifies refactoring.
-
-Path aliases streamline navigation in React Native projects, especially when dealing with deeply nested files.
-
----
+- **React Native allows mobile development with JavaScript.**  
+- **Two installation methods:** React Native CLI (full control) & Expo CLI (easier setup).  
+- **React.js and React Native differ in platform, rendering, and native API access.**  

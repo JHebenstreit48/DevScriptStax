@@ -18,7 +18,6 @@ const RNCoreAndStateNavigation: Subpage = {
           name: "Advanced Concepts",
           subpages: [
             { name: "Advanced Component Patterns", path: "/react/native/coreconcepts/advanced/componentpatterns" },
-            { name: "Hooks & Lifecycle Management", path: "/react/native/coreconcepts/advanced/hooks-lifecycle" },
             { name: "Performance Considerations for Components", path: "/react/native/coreconcepts/advanced/performance" }
           ],
         },

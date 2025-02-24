@@ -9,6 +9,7 @@ Partials are **smaller Sass files** that can be imported into other Sass files.
 - A partial file **starts with an underscore (_)** to indicate it should be included in another file.
 
 ✅ **Example Sass Partial (_buttons.sass)**
+
 ```scss
 $buttonColor: blue
 
