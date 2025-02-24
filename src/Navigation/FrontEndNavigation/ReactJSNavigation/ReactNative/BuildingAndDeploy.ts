@@ -5,15 +5,15 @@ const RNBuildingNavigation: Subpage = {
   subpages: [
     {
       name: "Debugging & Testing",
-      path: "/react/native/debugging-testing"
+      path: "/react/native/buildinganddeploy/debuggingtesting"
     }, // Debugging tools & Jest testing
     {
       name: "Building for iOS & Android",
-      path: "/react/native/building-ios-android"
+      path: "/react/native/buildinganddeploy/buildingiosandroid"
     }, // Generating APKs & iOS builds
     {
       name: "Publishing Apps",
-      path: "/react/native/publishing"
+      path: "/react/native/buildinganddeploy/publishingapps"
     }, // Play Store, App Store submission process
   ],
 };

@@ -5,15 +5,15 @@ const RNStateManagementNavigation: Subpage = {
   subpages: [
     {
       name: "Managing State",
-      path: "/react/native/state-management"
+      path: "/react/native/statemanagement/managingstate"
     }, // Redux, Zustand, Context API
     {
       name: "Networking & API Calls",
-      path: "/react/native/networking"
+      path: "/react/native/statemanagement/networking"
     }, // Fetching data from APIs
     {
       name: "Local Storage & Databases",
-      path: "/react/native/local-storage"
+      path: "/react/native/statemanagement/localstorage"
     }, // AsyncStorage, SQLite, Realm DB
   ],
 };

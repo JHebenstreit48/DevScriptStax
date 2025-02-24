@@ -5,16 +5,16 @@ const RNGettingStartedNavigation: Subpage = {
   subpages: [
     {
       name: "Introduction",
-      path: "/react/native/introduction"
+      path: "/react/native/gettingstarted/intro"
     }, // What is React Native? Use cases & benefits
     {
       name: "Setup & Installation",
-      path: "/react/native/setup"
+      path: "/react/native/gettingstarted/setup"
     }, // Installing React Native CLI & Expo
     {
-      name: "Project Structure",
-      path: "/react/native/project-structure"
-    }, // Organizing files & folders
+      name: "Folder Structure & Best Practices",
+      path: "/react/native/gettingstarted/project-structure"
+    }, // Organizing files & folders in React Native projects
   ],
 };
 
