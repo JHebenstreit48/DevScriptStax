@@ -5,15 +5,15 @@ const RNWorkingWithNativeFeaturesNavigation: Subpage = {
   subpages: [
     {
       name: "Accessing Device APIs",
-      path: "/react/native/device-apis"
+      path: "/react/native/workingwithfeatures/deviceapis"
     }, // Camera, GPS, Sensors, etc.
     {
       name: "Handling Permissions",
-      path: "/react/native/permissions"
+      path: "/react/native/workingwithfeatures/permissions"
     }, // Managing iOS & Android permissions
     {
       name: "Using Native Modules",
-      path: "/react/native/native-modules"
+      path: "/react/native/workingwithfeatures/nativemodules"
     }, // Writing custom modules in Swift/Kotlin
   ],
 };

@@ -4,16 +4,16 @@ const RNCoreConceptsNavigation: Subpage = {
   name: "Core Concepts",
   subpages: [
     {
-      name: "Components & Styling",
-      path: "/react/native/components-styling"
+      name: "Core Components & Styling",
+      path: "/react/native/coreconcepts/componentsandstyling"
     }, // Core components & StyleSheet API
     {
-      name: "Props & State",
-      path: "/react/native/props-state"
+      name: "Managing State & Props",
+      path: "/react/native/coreconcepts/propsandstate"
     }, // Managing component state & passing props
     {
       name: "Event Handling",
-      path: "/react/native/event-handling"
+      path: "/react/native/coreconcepts/eventhandling"
     }, // Handling touch gestures & user input
   ],
 };

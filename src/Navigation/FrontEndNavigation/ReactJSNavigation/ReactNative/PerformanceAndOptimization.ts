@@ -5,15 +5,15 @@ const RNPerformanceNavigation: Subpage = {
   subpages: [
     {
       name: "Optimizing Performance",
-      path: "/react/native/performance"
+      path: "/react/native/performanceandoptimization/optimizingperformance"
     }, // Avoiding re-renders, using FlatList
     {
       name: "Handling Large Lists",
-      path: "/react/native/large-lists"
+      path: "/react/native/performanceandoptimization/largelists"
     }, // Virtualization & infinite scrolling
     {
       name: "Animations & Gestures",
-      path: "/react/native/animations-gestures"
+      path: "/react/native/performanceandoptimization/animationsandgestures"
     }, // React Native Reanimated, Gesture Handler
   ],
 };
