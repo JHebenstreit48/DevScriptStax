@@ -4,17 +4,40 @@ const RNWorkingWithNativeFeaturesNavigation: Subpage = {
   name: "Working with Native Features",
   subpages: [
     {
-      name: "Accessing Device APIs",
-      path: "/react/native/workingwithfeatures/deviceapis"
-    }, // Camera, GPS, Sensors, etc.
+      name: "Basics",
+      subpages: [
+        {
+          name: "Accessing Device APIs",
+          path: "/react/native/features/deviceapis"
+        },
+        {
+          name: "Handling Permissions",
+          path: "/react/native/features/permissions"
+        },
+        {
+          name: "Using Native Modules",
+          path: "/react/native/features/nativemodules"
+        }
+      ]
+    },
     {
-      name: "Handling Permissions",
-      path: "/react/native/workingwithfeatures/permissions"
-    }, // Managing iOS & Android permissions
+      name: "Advanced Concepts",
+      subpages: [
+        {
+          name: "Deep Integration with Native Code",
+          path: "/react/native/features/advanced/nativeintegration"
+        }
+      ]
+    },
     {
-      name: "Using Native Modules",
-      path: "/react/native/workingwithfeatures/nativemodules"
-    }, // Writing custom modules in Swift/Kotlin
+      name: "Best Practices",
+      subpages: [
+        {
+          name: "Best Practices for Handling Native Features",
+          path: "/react/native/features/best-practices"
+        }
+      ]
+    }
   ],
 };
 

@@ -4,17 +4,31 @@ const RNBuildingNavigation: Subpage = {
   name: "Building & Deployment",
   subpages: [
     {
-      name: "Debugging & Testing",
-      path: "/react/native/buildinganddeploy/debuggingtesting"
-    }, // Debugging tools & Jest testing
+      name: "Basics",
+      subpages: [
+        {
+          name: "Debugging & Testing",
+          path: "/react/native/buildinganddeploy/debuggingtesting"
+        },
+        {
+          name: "Building for iOS & Android",
+          path: "/react/native/buildinganddeploy/buildingiosandroid"
+        },
+        {
+          name: "Publishing Apps",
+          path: "/react/native/buildinganddeploy/publishingapps"
+        }
+      ]
+    },
     {
-      name: "Building for iOS & Android",
-      path: "/react/native/buildinganddeploy/buildingiosandroid"
-    }, // Generating APKs & iOS builds
-    {
-      name: "Publishing Apps",
-      path: "/react/native/buildinganddeploy/publishingapps"
-    }, // Play Store, App Store submission process
+      name: "Best Practices",
+      subpages: [
+        {
+          name: "Build & Deployment Best Practices",
+          path: "/react/native/buildinganddeploy/best-practices"
+        }
+      ]
+    }
   ],
 };
 

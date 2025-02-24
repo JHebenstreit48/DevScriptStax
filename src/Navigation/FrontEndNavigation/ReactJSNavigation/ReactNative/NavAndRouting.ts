@@ -4,17 +4,56 @@ const RNNavigationAndRoutingNavigation: Subpage = {
   name: "Navigation & Routing",
   subpages: [
     {
-      name: "React Navigation Basics",
-      path: "/react/native/navandrouting/navigationbasics"
-    }, // Stack, Tab, Drawer navigation
+      name: "Basics",
+      subpages: [
+        {
+          name: "Stack Navigation",
+          path: "/react/native/navandrouting/basics/stack"
+        },
+        {
+          name: "Tab Navigation",
+          path: "/react/native/navandrouting/basics/tab"
+        },
+        {
+          name: "Drawer Navigation",
+          path: "/react/native/navandrouting/basics/drawer"
+        }
+      ]
+    },
     {
-      name: "Navigation Params",
-      path: "/react/native/navandrouting/navigationparams"
-    }, // Passing data between screens
+      name: "Advanced Concepts",
+      subpages: [
+        {
+          name: "Dynamic Navigation & Conditional Routes",
+          path: "/react/native/navandrouting/advanced/dynamicroutes"
+        },
+        {
+          name: "Advanced Linking Strategies",
+          path: "/react/native/navandrouting/advanced/linkingstrategies"
+        },
+        {
+          name: "Optimizing Navigation Performance",
+          path: "/react/native/navandrouting/advanced/performance"
+        }
+      ]
+    },
     {
-      name: "Deep Linking",
-      path: "/react/native/navandrouting/deeplinking"
-    }, // Handling deep links & universal links
+      name: "Best Practices",
+      subpages: [
+        {
+          name: "Best Practices for Routing in Large Apps",
+          path: "/react/native/navandrouting/best-practices/largeapps"
+        },
+        {
+          name: "Avoiding Navigation Bugs & Pitfalls",
+          path: "/react/native/navandrouting/best-practices/navigationbugs"
+        },
+        {
+          name: "Consistent Navigation UX Patterns",
+          path: "/react/native/navandrouting/best-practices/navigationux"
+        }
+      ]
+    }
   ],
 };
 

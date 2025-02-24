@@ -6,15 +6,33 @@ const RNPerformanceNavigation: Subpage = {
     {
       name: "Optimizing Performance",
       path: "/react/native/performanceandoptimization/optimizingperformance"
-    }, // Avoiding re-renders, using FlatList
+    },
     {
       name: "Handling Large Lists",
       path: "/react/native/performanceandoptimization/largelists"
-    }, // Virtualization & infinite scrolling
+    },
     {
       name: "Animations & Gestures",
       path: "/react/native/performanceandoptimization/animationsandgestures"
-    }, // React Native Reanimated, Gesture Handler
+    },
+    {
+      name: "Advanced Concepts",
+      subpages: [
+        {
+          name: "Advanced Performance Profiling",
+          path: "/react/native/performanceandoptimization/advanced/profiling"
+        }
+      ]
+    },
+    {
+      name: "Best Practices",
+      subpages: [
+        {
+          name: "Performance Optimization Best Practices",
+          path: "/react/native/performanceandoptimization/best-practices"
+        }
+      ]
+    }
   ],
 };
 
