@@ -59,12 +59,9 @@ import FSProductionReadinessNavigation from "@/Navigation/FrontEndNavigation/Rea
 
 // ---------- React Native Navigation Start ----------
 import RNGettingStartedNavigation from "@/Navigation/FrontEndNavigation/ReactJSNavigation/ReactNative/GettingStarted";
-import RNCoreConceptsNavigation from "@/Navigation/FrontEndNavigation/ReactJSNavigation/ReactNative/CoreConcepts";
-import RNNavigationAndRoutingNavigation from "@/Navigation/FrontEndNavigation/ReactJSNavigation/ReactNative/NavAndRouting";
-import RNWorkingWithNativeFeaturesNavigation from "@/Navigation/FrontEndNavigation/ReactJSNavigation/ReactNative/WorkingWithFeatures";
-import RNStateManagementNavigation from "@/Navigation/FrontEndNavigation/ReactJSNavigation/ReactNative/StateManagement";
-import RNPerformanceNavigation from "@/Navigation/FrontEndNavigation/ReactJSNavigation/ReactNative/PerformanceAndOptimization";
-import RNBuildingNavigation from "@/Navigation/FrontEndNavigation/ReactJSNavigation/ReactNative/BuildingAndDeploy";
+import RNCoreAndStateNavigation from "@/Navigation/FrontEndNavigation/ReactJSNavigation/ReactNative/CoreAndState";
+import RNNavAndFeaturesNavigation from "@/Navigation/FrontEndNavigation/ReactJSNavigation/ReactNative/NavAndFeatures";
+import RNBuildingAndPerformNavigation from "@/Navigation/FrontEndNavigation/ReactJSNavigation/ReactNative/BuildingAndPerformance";
 // ---------- React Native Navigation End ----------
 
 // ---------- React Navigation End ----------
@@ -344,12 +341,9 @@ const pages: Page[] = [
             name: "React Native",
             subpages: [
               RNGettingStartedNavigation,
-              RNCoreConceptsNavigation,
-              RNNavigationAndRoutingNavigation,
-              RNWorkingWithNativeFeaturesNavigation,
-              RNStateManagementNavigation,
-              RNPerformanceNavigation,
-              RNBuildingNavigation
+              RNCoreAndStateNavigation,
+              RNNavAndFeaturesNavigation,
+              RNBuildingAndPerformNavigation
             ],
           },
         ],
