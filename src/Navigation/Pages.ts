@@ -401,6 +401,17 @@ const pages: Page[] = [
         subpages: [AuthenticationNavigation, AuthorizationNavigation],
       },
       {
+        name: "Databases",
+        subpages: [
+          FirebaseNavigation,
+          MongoDBNavigation,
+          MySQLNavigation,
+          PostgreSQLNavigation,
+          RedisNavigation,
+          SQLiteNavigation,
+        ],
+      },
+      {
         name: "Frameworks",
         subpages: [
           DjangoNavigation,
@@ -417,17 +428,6 @@ const pages: Page[] = [
       {
         name: "Web Servers",
         subpages: [ServersGeneralNavigation, NginxNavigation, ApacheNavigation],
-      },
-      {
-        name: "Databases",
-        subpages: [
-          FirebaseNavigation,
-          MongoDBNavigation,
-          MySQLNavigation,
-          PostgreSQLNavigation,
-          RedisNavigation,
-          SQLiteNavigation,
-        ],
       },
     ],
   },
