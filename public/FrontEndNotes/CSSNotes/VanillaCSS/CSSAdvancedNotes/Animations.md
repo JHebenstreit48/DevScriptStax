@@ -158,20 +158,20 @@ This creates a **smooth back-and-forth effect** without needing extra keyframes.
     </thead>  
     <tbody>  
         <tr class="tableRow">  
-            <td class="tableCell"><strong>normal</strong></td>  
+            <td class="tableCell"><span class="codeSnip">normal</span></td>  
             <td class="tableCell">Default. The animation plays **from 0% to 100%**, then restarts.</td>  
         </tr>  
         <tr class="tableRow">  
-            <td class="tableCell"><strong>reverse</strong></td>  
+            <td class="tableCell"><span class="codeSnip">reverse</span></td>  
             <td class="tableCell">The animation **plays backward**, starting at 100% and ending at 0%.</td>  
         </tr>  
         <tr class="tableRow">  
-            <td class="tableCell"><strong>alternate</strong></td>  
+            <td class="tableCell"><span class="codeSnip">alternate</span></td>  
             <td class="tableCell">The animation **switches direction** on each loop—first forward (0% → 100%), then backward (100% → 0%).</td>  
         </tr>  
         <tr class="tableRow">  
-            <td class="tableCell"><strong>alternate-reverse</strong></td>  
-            <td class="tableCell">Like `alternate`, but **starts in reverse** (100% → 0%) before switching directions.</td>  
+            <td class="tableCell"><span class="codeSnip">alternate-reverse</span></td>  
+            <td class="tableCell">Like <span class="codeSnip">alternate</span>, but **starts in reverse** (100% → 0%) before switching directions.</td>  
         </tr>  
     </tbody>  
 </table>
