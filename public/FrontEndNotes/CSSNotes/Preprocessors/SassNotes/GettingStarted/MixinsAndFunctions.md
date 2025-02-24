@@ -9,7 +9,8 @@ Mixins allow you to **reuse groups of styles** without repeating code.
 - They are useful for **responsive design, utility styles, and vendor prefixes**.  
 
 ✅ **Example of a Mixin:**
-scss
+
+```scss
 @mixin button-styles($bgColor)
   background-color: $bgColor
   color: white
@@ -17,20 +18,24 @@ scss
 
 .button
   @include button-styles(blue)
+```
 
 ---
 ### **Creating and Using Mixins**
 ---
+
 #### **Basic Mixin Syntax**
-scss
+```scss
 @mixin mixin-name(parameters)
   property: value
 
 @include mixin-name(arguments)
+```
 
 ---
 #### **Example: Mixin for Buttons**
-scss
+
+```scss
 @mixin button-styles($bgColor, $textColor: white)
   background-color: $bgColor
   color: $textColor
@@ -41,6 +46,7 @@ scss
 
 .button-danger
   @include button-styles(red, black)
+```
 
 ✅ **Mixins allow reusable styles with dynamic values.**
 
@@ -90,7 +96,7 @@ Both @mixin and @extend allow code reuse, but they work differently.
 ---
 Mixins are useful for **media queries** and **responsive layouts**.
 
-scss
+```scss
 @mixin mobile
   @media screen and (max-width: 600px)
     @content
@@ -100,6 +106,7 @@ scss
 
   @include mobile
     width: 100%
+```
 
 ✅ **@content inside mixins allows dynamic blocks of CSS.**
 
@@ -108,12 +115,13 @@ scss
 ---
 Functions in Sass allow you to **process values** and **return a result**.
 
-scss
+```scss
 @function calculate-padding($size)
   @return $size * 2
 
 .box
   padding: calculate-padding(10px)
+```
 
 ✅ **Use functions for calculations, color manipulation, or custom logic.**
 

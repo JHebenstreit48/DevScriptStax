@@ -18,7 +18,7 @@ import RESTVSGraphQLVSSOAP from "@/Pages/BackEndPages/APIPages/TypesOfAPIs/RestV
 // APIs End
 
 // Apollo Server
-import ApolloServer from "@/Pages/BackEndPages/ApolloServerPages/ApolloServer";
+import ApolloServer from "@/Pages/GraphQLPages/ApolloServerPages/ApolloServer";
 // import ApolloServerCode from "@/pages/ApolloServerPages/ApolloServerCode";
 
 // Angular Notes Start
@@ -141,7 +141,7 @@ import Git from "@/Pages/ToolsPages/GitPages/Git";
 // import GitCode from "@/pages/GitPages/GitCode";
 
 // GraphQL
-import GraphQL from "@/Pages/GraphQLPages/GraphQL";
+import GraphQL from "@/Pages/GraphQLPages/GraphQLPages/GraphQL";
 // import GraphQLCode from "@/pages/GraphQLPages/GraphQLCode";
 
 // HTML Notes Start
