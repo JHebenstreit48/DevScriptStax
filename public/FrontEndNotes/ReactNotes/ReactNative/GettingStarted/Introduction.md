@@ -45,6 +45,21 @@
 </table>
 
 ---
+### **Games vs Non-Game Applications in React Native**
+---
+React Native’s suitability for games depends on the complexity and performance requirements of the game.
+
+#### **Games**
+- Best for lightweight, 2D games or games with simple interactivity.
+- Examples: Quiz games, card games, turn-based games.
+- Limited for graphics-intensive or real-time 3D games due to performance constraints.
+
+#### **Non-Game Applications**
+- Ideal for creating cross-platform mobile apps.
+- Examples: Messaging apps, e-commerce platforms, productivity tools, or social networking apps.
+- Offers seamless integration with native mobile APIs like Camera and Geolocation.
+
+---
 ### **Setup & Installation**
 ---
 React Native provides **two primary ways** to create a new project:
