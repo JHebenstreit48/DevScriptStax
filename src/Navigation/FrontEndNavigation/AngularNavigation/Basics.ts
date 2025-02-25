@@ -4,7 +4,7 @@ const AngularBasicsNavigation: Subpage = {
   name: "Angular Basics",
   subpages: [
     {
-      name: "Getting Started",
+      name: "Angular Fundamentals",
       subpages: [
         { name: "Introduction to Angular", path: "/angular/basics/gettingstarted/intro" },
         { name: "Creating & Running an Angular Application", path: "/angular/basics/gettingstarted/creatingrunning" },
