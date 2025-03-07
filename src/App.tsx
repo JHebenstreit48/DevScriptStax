@@ -5,6 +5,8 @@ import '@/SCSS/Header.scss';
 import '@/SCSS/Navigation.scss';
 import '@/SCSS/Footer.scss';
 import '@/SCSS/Error.scss';
+import '@/SCSS/BackToTop.scss';
+import '@/SCSS/Notes.scss';
 
 export default function App() {
 
