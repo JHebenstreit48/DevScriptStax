@@ -7,7 +7,7 @@ import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import remarkGfm from 'remark-gfm';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { materialLight } from 'react-syntax-highlighter/dist/esm/styles/prism';
-import BackToTop from './BackToTopButton';
+import BackToTop from '@/Components/BackToTopButton'; // Assuming you have a BackToTop component for scrolling back to the top
 
 
 interface NotesProps {
