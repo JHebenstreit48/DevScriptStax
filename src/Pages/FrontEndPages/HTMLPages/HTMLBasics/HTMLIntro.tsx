@@ -1,5 +1,5 @@
 import Header from "@/Components/Header";
-import Notes from "@/Components/Notes";
+import Notes from "@/Components/Notes/NotesRender";
 
 const HTMLIntro = () => {
     const markdownFilePath = "/FrontEndNotes/HTMLNotes/HTMLBasics/HTMLIntro.md";

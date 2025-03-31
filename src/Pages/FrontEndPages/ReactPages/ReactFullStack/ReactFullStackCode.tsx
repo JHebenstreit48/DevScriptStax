@@ -1,4 +1,4 @@
-import Notes from "@/Components/Notes";
+import Notes from "@/Components/Notes/NotesRender";
 import Header from "@/Components/Header";
 
 const ReactFullStackCode = () => {

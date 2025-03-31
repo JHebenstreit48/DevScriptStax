@@ -6,8 +6,8 @@ import { HashLink } from 'react-router-hash-link';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import remarkGfm from 'remark-gfm';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { materialLight } from 'react-syntax-highlighter/dist/esm/styles/prism';
-import BackToTop from '@/Components/BackToTopButton'; // Assuming you have a BackToTop component for scrolling back to the top
+import materialLight from "react-syntax-highlighter/dist/esm/styles/prism/material-light";
+import BackToTop from '@/Components/Notes/BackToTopButton';
 
 
 interface NotesProps {
@@ -41,7 +41,7 @@ const darkGrayBackgroundTheme = {
     },
 };
 
-const Notes: React.FC<NotesProps> = ({ filePath }) => {
+const NotesRender: React.FC<NotesProps> = ({ filePath }) => {
     const [markdownContent, setMarkdownContent] = useState<string>('');
     const [copiedCode, setCopiedCode] = useState(false);
 
@@ -118,4 +118,4 @@ const Notes: React.FC<NotesProps> = ({ filePath }) => {
     );
 };
 
-export default Notes;
+export default NotesRender;
