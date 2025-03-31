@@ -28,7 +28,7 @@
       Site Info Box
       ============================= */
    .siteInfo {
-     margin: 20rem auto; // Same as .header height
+     margin: 8rem auto 2rem auto; // Same as .header height
      padding: $site-info-padding;
      text-align: center;
      width: $site-info-width;
@@ -40,10 +40,17 @@
    
    /* Site Info Content */
    .siteInfoContent {
-     display: flex;
-     width: $site-info-content-width;
-     margin: 0 auto 2rem auto;
-   }
+    max-width: $site-info-content-width;
+    margin: 0 auto 2rem auto;
+    text-align: left;
+    line-height: 1.6;
+    word-break: break-word;
+    box-sizing: border-box;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-sizing: border-box;
+  }
+  
    
    /* =============================
       Responsive Styles (Mobile)

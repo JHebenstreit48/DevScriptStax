@@ -6,21 +6,27 @@ const Home = () => {
     return (
 
         <>
-        
-                <Header text="Code Quest" />
 
-                <div className='siteInfo'>
+            <Header text="Code Quest" />
 
-                    <p className='siteInfoContent'>
-                        This site is a React JS version of an original vanilla HTML website I created for a boot camp I recently completed in web development coding/programming.
-                    </p>
+            <div className='siteInfo'>
 
-                    <p className='siteInfoContent'>
-                       The site has pages for the different topics I have learned so far. Each page is split up into regular notes without large code snippets and a second page with code snippets.
-                       I will continue to expand this site as I learn more about coding and add additional pages for new topics as well as new notes.
-                    </p>
+                <p className='siteInfoContent'>
+                    This site serves as a personal reference for full stack web development. Originally built as a React.js version of a vanilla HTML project from a web development bootcamp, it has since evolved into a long-term learning hub.
+                </p>
 
-                </div>
+                <p className='siteInfoContent'>
+                    It contains detailed, topic-specific notes and code snippets organized by language, technology, and development domain. The site is continuously updated as I expand my knowledge across frontend, backend, cloud services, tooling, and mobile development.
+                </p>
+
+                <p className='siteInfoContent'>
+                    Use the navigation menu above to explore different categories. This site is structured for clarity, speed, and growth as I continue learning new concepts and refining my skills.
+                </p>
+
+
+
+
+            </div>
         </>
     );
 
