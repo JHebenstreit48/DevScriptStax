@@ -1,5 +1,5 @@
-import Notes from '@/Components/Notes';
-import Header from '@/Components/Header';
+import Notes from "@/Components/Notes/NotesRender";
+import Header from "@/Components/Header";
 
 const ApolloServerCode = () => {
     const markdownFilePath = '/ApolloServerNotes/ApolloServerCode.md';

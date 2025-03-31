@@ -1,5 +1,5 @@
 import Header from "@/Components/Header";
-import Notes from "@/Components/Notes";
+import Notes from "@/Components/Notes/NotesRender";
 
 const HTMLForms = () => {
     const markdownFilePath = "/FrontEndNotes/HTMLNotes/HTMLBasics/HTMLForms.md";

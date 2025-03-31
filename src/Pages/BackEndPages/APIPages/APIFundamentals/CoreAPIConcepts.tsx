@@ -1,5 +1,5 @@
 import Header from "@/Components/Header";
-import Notes from "@/Components/Notes";
+import Notes from "@/Components/Notes/NotesRender";
 
 const CoreConcepts = () => {
     const markdownFilePath = '/BackEndNotes/APINotes/APIFundamentals/CoreConcepts.md';

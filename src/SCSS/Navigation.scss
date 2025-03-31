@@ -37,52 +37,68 @@
      background-color: transparent !important;
    }
    
-   /* Dropdown Styles */
+   /* Global Dropdown Button Style */
+   .dropdownButton {
+     background-color: transparent;
+     border: none;
+     padding: 0 $dropdown-button-padding;
+     font-size: $font-lg;
+     cursor: pointer;
+     text-align: center;
+     color: $primary-color;
+     text-decoration: none;
+     display: inline-block;
+   
+     &:hover {
+       text-decoration: underline;
+     }
+   
+     &.level-1 {
+       display: flex;
+       justify-content: center;
+       margin: 0 auto;
+       color: #1e90ff;
+     }
+   
+     &.level-2 {
+       padding-bottom: 3px;
+       font-size: 1.4rem;
+       color: $secondary-color;
+     }
+   
+     &.level-3 {
+       padding-bottom: 2px;
+       font-size: $font-md;
+       color: $tertiary-color;
+     }
+   
+     &.level-4 {
+       color: $danger-color;
+       font-size: $font-sm;
+       text-decoration: none;
+       display: block;
+     }
+   }
+   
+   /* You can remove this if it's now redundant */
+   .homeButton {
+     text-decoration: none;
+     color: $primary-color;
+     font-size: $font-lg;
+     padding: 0 $dropdown-button-padding;
+     display: inline-block;
+   
+     &:hover {
+       text-decoration: underline;
+     }
+   }
+   
+   /* Dropdown Container Style */
    .dropdown {
      margin: 0 auto;
      position: relative;
      display: inline-block;
      text-align: center;
-   
-     &Link:hover {
-       background-color: $dropdown-hover;
-     }
-   
-     &Button {
-       background-color: transparent;
-       border: none;
-       padding: 0 $dropdown-button-padding;
-       font-size: $font-lg;
-       cursor: pointer;
-       text-align: center;
-       color: $primary-color;
-   
-       &.level-1 {
-         display: flex;
-         justify-content: center;
-         margin: 0 auto;
-         color: #1e90ff;
-       }
-   
-       &.level-2 {
-         padding-bottom: 3px;
-         font-size: 1.4rem;
-         color: $secondary-color;
-       }
-   
-       &.level-3 {
-         padding-bottom: 2px;
-         font-size: $font-md;
-         color: $tertiary-color;
-       }
-   
-       &.level-4 {
-         color: $danger-color;
-         font-size: $font-sm;
-         text-decoration: none;
-         display: block;
-       }
-     }
    }
    
    /* Dropdown Content */
@@ -99,7 +115,7 @@
        grid-template-columns: 1fr;
        width: $dropdown-width;
        max-height: 31.2rem;
-       margin: 2rem auto; // ✅ Fix: Combined margin
+       margin: 2rem auto;
        overflow-y: auto;
        scrollbar-width: thin;
        scrollbar-color: $dropdown-hover $scrollbar-track;
@@ -136,22 +152,23 @@
    }
    
    /* =============================
-   Responsive Styles (Mobile)
-   ============================= */
-@media only screen and (max-width: 390px) {
-  .navigationMenu {
-    display: flex;
-    position: absolute;
-    height: 1rem;
-    padding: 0;
-    z-index: 17;
-    margin-top: 1.7rem;
-  }
-}
-
-@media only screen and (max-width: 1694px) {
-  .dropdownButton {
-    font-size: 1.3rem;
-    padding: 0 1.5rem;
-  }
-}
+      Responsive Styles (Mobile)
+      ============================= */
+   @media only screen and (max-width: 390px) {
+     .navigationMenu {
+       display: flex;
+       position: absolute;
+       height: 1rem;
+       padding: 0;
+       z-index: 17;
+       margin-top: 1.7rem;
+     }
+   }
+   
+   @media only screen and (max-width: 1694px) {
+     .dropdownButton {
+       font-size: 1.3rem;
+       padding: 0 1.5rem;
+     }
+   }
+   

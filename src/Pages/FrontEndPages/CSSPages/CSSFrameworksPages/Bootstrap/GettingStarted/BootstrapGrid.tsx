@@ -1,5 +1,5 @@
 import Header from "@/Components/Header";
-import Notes from "@/Components/Notes";
+import Notes from "@/Components/Notes/NotesRender";
 
 const BootstrapGrid = () => {
     const markdownFilePath = '/FrontEndNotes/CSSNotes/Frameworks/GettingStarted/BootstrapGrid.md';
