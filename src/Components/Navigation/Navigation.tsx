@@ -7,6 +7,7 @@ import SearchModal from "@/Components/Navigation/SearchModal";
 
 const Navigation = () => {
   const [activeDropdown, setActiveDropdown] = useState<Set<string>>(new Set());
+  const [isMenuOpen, setIsMenuOpen] = useState(false); // NEW STATE
   const [searchTerm, setSearchTerm] = useState("");
   const [searchResults, setSearchResults] = useState<
     { name: string; path: string; breadcrumbs: string[] }[]
@@ -16,7 +17,7 @@ const Navigation = () => {
     () => (localStorage.getItem("searchMode") as "instant" | "manual") || "instant"
   );
 
-  const navRef = useRef<HTMLDivElement | null>(null); // ✅ for detecting outside clicks
+  const navRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     const savedTerm = localStorage.getItem("lastSearchTerm") || "";
@@ -35,14 +36,12 @@ const Navigation = () => {
     }
   }, [searchTerm, searchMode]);
 
-  // ✅ Close dropdown on outside click
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (navRef.current && !navRef.current.contains(event.target as Node)) {
         setActiveDropdown(new Set());
       }
     };
-
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
@@ -54,6 +53,8 @@ const Navigation = () => {
       return updated;
     });
   };
+
+  const toggleMenu = () => setIsMenuOpen((prev) => !prev); // NEW TOGGLE
 
   const searchSubpages = (
     subpages: Subpage[],
@@ -126,7 +127,11 @@ const Navigation = () => {
 
   return (
     <div className="navigationMenu" ref={navRef}>
-      <div className="navigationContent">
+      <button className="hamburgerButton" onClick={toggleMenu}>
+        ☰
+      </button>
+
+      <div className={`navigationContent ${isMenuOpen ? "open" : ""}`}>
         <SearchIcon onClick={() => setShowModal(true)} />
         {showModal && (
           <SearchModal

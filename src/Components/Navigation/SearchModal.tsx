@@ -114,7 +114,7 @@ const SearchModal: React.FC<SearchModalProps> = ({
               Manual
             </label>
             <button className="resetButton" onClick={handleClearLocal}>
-              Reset Local Search
+              Reset
             </button>
           </div>
         </div>

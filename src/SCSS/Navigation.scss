@@ -1,6 +1,9 @@
-/* =============================
-   Variables
-   ============================= */
+/* ==============================
+            Variables           
+   ============================== */
+
+   @use "sass:color";
+
    $primary-color: rgb(7, 193, 255);
    $secondary-color: rgb(218, 165, 32);
    $tertiary-color: rgb(0, 255, 127);
@@ -15,30 +18,96 @@
    $font-sm: 1.2rem;
    $dropdown-width: 17rem;
    
-   /* =============================
-      Navigation Menu
-      ============================= */
+   /* ==============================
+                 Breakpoints          
+         ============================== */
+   $cellphone-portrait: 390px;
+   $cellphone-landscape: 390px;
+   
+   /* ==============================
+             Hamburger Menu Button    
+         ============================== */
+   .hamburgerButton {
+     display: none;
+   
+     @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
+       display: block;
+       background: none;
+       border: none;
+       font-size: 2rem;
+       color: $primary-color;
+       cursor: pointer;
+       z-index: 15;
+       align-self: center;
+     }
+   }
+   
+   /* ==============================
+               Navigation Menu         
+         ============================== */
    .navigationMenu {
      position: fixed;
-     top: 120px;
+     top: 6rem;
      width: 100%;
-     height: 7rem;
      background-color: $background-dark;
      display: flex;
-     justify-content: center;
+     flex-direction: column;
      align-items: center;
-     padding: 10px 0;
      z-index: 10;
+     padding: 0;
+     transition: all 0.3s ease;
    }
-
+   
+   /* ==============================
+          Navigation Content         
+      ============================== */
+   .navigationContent {
+     // Show normally on large screens
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     gap: 0;
+     width: auto;
+     padding-top: 0;
+   
+     // ✅ MOBILE ONLY – hide by default, show when .open
+     @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
+       display: none;
+   
+       &.open {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         gap: 1rem;
+         width: 70%;
+         text-align: center;
+         margin-top: 2.9rem;
+         padding-bottom: 1rem;
+       }
+     }
+   }
+   
+   /* ==============================
+          Search Icon Container        
+         ============================== */
    .searchIconContainer {
-      position: absolute;
-      left: 8rem;
-      top: 50%;
-      transform: translateY(-50%);
-      z-index: 11;
+     position: absolute;
+     left: 8rem;
+     top: 50%;
+     transform: translateY(-50%);
+     z-index: 11;
+   
+     @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
+       display: flex;
+       flex-direction: column;
+       left: 45%;
+       top: 5rem;
+     }
    }
-
+   
+   /* ==============================
+           Search Icon Button          
+         ============================== */
    .searchIconButton {
      background-color: transparent;
      border: none;
@@ -47,13 +116,15 @@
      color: $primary-color;
      font-size: 1.5rem;
      transition: color 0.3s ease;
-
+   
      &:hover {
-       color: lighten($primary-color, 10%);
+       color: color.adjust($primary-color, $lightness: 10%);
      }
    }
    
-   /* Global Dropdown Button Style */
+   /* ==============================
+           Dropdown Button Style       
+         ============================== */
    .dropdownButton {
      background-color: transparent;
      border: none;
@@ -69,46 +140,68 @@
        text-decoration: underline;
      }
    
+     @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
+       font-size: 1.3rem;
+       padding: 0.5rem;
+     }
+   
+     &.level-1,
+     &.level-2,
+     &.level-3,
+     &.level-4 {
+       text-align: center;
+       display: block;
+       padding: 0.3rem 0;
+     }
+   
      &.level-1 {
        color: #1e90ff;
        font-size: $font-lg;
-       padding: 0.5rem 0;
-       text-align: center;
        margin: 0 auto;
+       padding: 0.5rem 0;
+   
+       @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
+         flex-direction: column;
+         align-items: center;
+         gap: 1rem;
+         margin-top: 0.3rem;
+         padding: 0 auto;
+       }
      }
    
      &.level-2 {
        color: $secondary-color;
        font-size: 1.4rem;
-       padding: 0.3rem 0;
-       text-align: center;
      }
    
      &.level-3 {
        color: $tertiary-color;
        font-size: $font-md;
-       padding: 0.3rem 0;
-       text-align: center;
      }
    
      &.level-4 {
        color: $danger-color;
        font-size: $font-sm;
-       text-align: center;
-       display: block;
-       padding: 0.3rem 0;
      }
    }
    
-   /* Dropdown Wrapper */
+   /* ==============================
+              Dropdown Layout          
+         ============================== */
    .dropdown {
      position: relative;
      display: inline-block;
      text-align: center;
      margin: 0 1rem;
+   
+     @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
+       margin: 0;
+     }
    }
    
-   /* Dropdown Menu Content */
+   /* ==============================
+          Dropdown Menu Content        
+         ============================== */
    .dropdownContent {
      position: absolute;
      top: 100%;
@@ -140,7 +233,7 @@
          border-radius: 5px;
    
          &:hover {
-           background: lighten($dropdown-hover, 10%);
+           background: color.adjust($dropdown-hover, $lightness: 10%);
          }
        }
    
@@ -151,28 +244,25 @@
        &::-webkit-scrollbar-button {
          display: none;
        }
+   
+       @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
+         position: static;
+         transform: none;
+         background: transparent;
+         box-shadow: none;
+         padding: 0;
+         margin-top: 0.5rem;
+       }
      }
    }
    
-   /* Active Nested Menus */
+   /* ==============================
+        Active Nested Dropdown Menu  
+       ============================== */
    .dropdownMenu.active {
      display: flex;
      flex-direction: column;
      align-items: center;
      justify-content: center;
-   }
-   
-   /* Responsive Styles */
-   @media only screen and (max-width: 390px) {
-     .navigationMenu {
-       flex-direction: column;
-       height: auto;
-       padding: 0.5rem;
-     }
-   
-     .dropdownButton {
-       font-size: 1.3rem;
-       padding: 0.5rem;
-     }
    }
    
