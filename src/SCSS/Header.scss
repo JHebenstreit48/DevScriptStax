@@ -1,21 +1,28 @@
-/* =============================
-   Variables
-   ============================= */
-   $header-bg-color: rgba(0, 0, 0, 0.6);
-   $text-color: #032c2c;
+/* ==============================
+            Variables           
+   ============================== */
+   $header-bg-color: rgba(0, 0, 0, 0.9);
    $header-border-color: rgba(0, 255, 255, 0.2);
    $header-blur: 10px;
    
+   $text-color: #032c2c;
    $text-glow: #00ffff; // Neon aqua
    
    $header-height: 7.5rem;
-   $header-mobile-height: 10rem;
+   $header-mobile-height: 6rem;
+   
    $font-size-lg: 60px;
    $font-size-sm: 3rem;
    
-   /* =============================
-      Header Styling
-      ============================= */
+   /* ==============================
+                 Breakpoints        
+      ============================== */
+   $cellphone-portrait: 390px;
+   $cellphone-landscape: 390px; // Height-based for landscape mode
+   
+   /* ==============================
+               Header Styling       
+      ============================== */
    .Header {
      display: flex;
      position: fixed;
@@ -33,22 +40,20 @@
      border-bottom: 1px solid $header-border-color;
      color: $text-color;
      z-index: 10;
-   
-     // Layered neon glow
      text-shadow:
        0 0 6px $text-glow,
        0 0 4px $text-glow,
        0 0 10px $text-glow;
-   }
    
-   /* =============================
-      Responsive Styles (Mobile)
-      ============================= */
-   @media only screen and (max-width: 390px) {
-     .Header {
+     /* ==============================
+                   Responsive        
+        ============================== */
+     /* ==============================
+              Cellphone Portrait     
+        ============================== */
+     @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
        margin: 0 auto;
        height: $header-mobile-height;
-       padding: 1.5rem 0;
        text-align: center;
        font-size: $font-size-sm;
      }
