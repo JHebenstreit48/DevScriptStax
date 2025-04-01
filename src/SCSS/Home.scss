@@ -1,9 +1,12 @@
 /* =============================
    Variables
    ============================= */
-   $primary-bg-color: rgb(87, 81, 81);
+   $primary-bg-color: rgba(12, 22, 76, 0.21);
    $text-color: white;
    $box-shadow-color: black;
+   
+   $default-box-shadow: black;
+   $accent-glow: rgba(0, 255, 255, 0.2); // Aqua glow
    
    $site-info-width: 50rem;
    $site-info-mobile-width: 23rem;
@@ -28,29 +31,40 @@
       Site Info Box
       ============================= */
    .siteInfo {
-     margin: 8rem auto 2rem auto; // Same as .header height
+     margin: 7rem auto 2rem auto;
      padding: $site-info-padding;
      text-align: center;
      width: $site-info-width;
      color: $text-color;
      font-size: 1.5rem;
      background-color: $primary-bg-color;
-     box-shadow: 0px 0px 5px 4px $box-shadow-color;
+     box-shadow: 0px 0px 15px 4px $accent-glow;
+     border: 1px solid rgba(0, 255, 255, 0.25); // Slight aqua tint to echo the glow
+     border-radius: 1rem;
+     transition: box-shadow 0.3s ease;
+   
+     &:hover {
+       box-shadow: 0px 0px 20px 6px rgba(0, 255, 255, 0.4);
+     }
    }
    
-   /* Site Info Content */
+   /* =============================
+      Site Info Content
+      ============================= */
    .siteInfoContent {
-    max-width: $site-info-content-width;
-    margin: 0 auto 2rem auto;
-    text-align: left;
-    line-height: 1.6;
-    word-break: break-word;
-    box-sizing: border-box;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    box-sizing: border-box;
-  }
-  
+     max-width: $site-info-content-width;
+     margin: 0 auto 2rem auto;
+     text-align: left;
+     line-height: 1.6;
+     word-break: break-word;
+     box-sizing: border-box;
+     padding-left: 1rem;
+     padding-right: 1rem;
+   
+     p:first-of-type {
+       font-weight: 600; // Bold first paragraph
+     }
+   }
    
    /* =============================
       Responsive Styles (Mobile)

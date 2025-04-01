@@ -1,31 +1,31 @@
 /* =============================
    Variables
    ============================= */
-   $gradient-start: #4158d0;
-   $gradient-middle: #c850c0;
-   $gradient-end: #ffcc70;
+   $gradient-start: #402e00;     // rich bronze-brown
+   $gradient-middle: #784d0a;    // gold-burnished amber
+   $gradient-end: #190029;       // deep plum/purple for contrast
    
    /* =============================
       Body Background Styling
       ============================= */
    body {
-     /* Fallback for unsupported browsers */
      background-color: $gradient-start;
    
-     /* Gradient Background (Supports Multiple Browsers) */
-     background: linear-gradient(180deg, $gradient-start 14%, $gradient-middle 84%, $gradient-end 100%);
+     background: linear-gradient(
+       180deg,
+       $gradient-start 28%,
+       $gradient-middle 70%,
+       $gradient-end 111%
+     );
      background-repeat: no-repeat;
      background-size: cover;
-   
-     /* Ensure Full Height */
      min-height: 100vh;
    
-     /* Older Browser Support */
      @supports not (background: linear-gradient(180deg, $gradient-start, $gradient-end)) {
-       background: -webkit-linear-gradient(180deg, $gradient-start 14%, $gradient-middle 84%, $gradient-end 100%);
-       background: -moz-linear-gradient(180deg, $gradient-start 14%, $gradient-middle 84%, $gradient-end 100%);
-       background: -o-linear-gradient(180deg, $gradient-start 14%, $gradient-middle 84%, $gradient-end 100%);
-       background: -ms-linear-gradient(180deg, $gradient-start 14%, $gradient-middle 84%, $gradient-end 100%);
+       background: -webkit-linear-gradient(180deg, $gradient-start 0%, $gradient-middle 50%, $gradient-end 100%);
+       background: -moz-linear-gradient(180deg, $gradient-start 0%, $gradient-middle 50%, $gradient-end 100%);
+       background: -o-linear-gradient(180deg, $gradient-start 0%, $gradient-middle 50%, $gradient-end 100%);
+       background: -ms-linear-gradient(180deg, $gradient-start 0%, $gradient-middle 50%, $gradient-end 100%);
      }
    }
    
@@ -38,7 +38,6 @@
      min-height: 100vh;
    }
    
-   /* Content wrapper to manage padding or offsets */
    .contentWrapper {
      padding-top: 11rem;
    }
@@ -48,7 +47,6 @@
       ============================= */
    @media only screen and (max-width: 390px) {
      body {
-       /* Adjust background for small screens */
        background-size: auto;
        background-position: center;
        background: linear-gradient(180deg, $gradient-start 30%, $gradient-end 100%);

@@ -1,9 +1,12 @@
 /* =============================
    Variables
    ============================= */
-   $header-bg-color: rgb(8, 8, 103);
-   $text-color: rgb(255, 255, 255);
-   $box-shadow-color: black;
+   $header-bg-color: rgba(0, 0, 0, 0.6);
+   $text-color: #032c2c;
+   $header-border-color: rgba(0, 255, 255, 0.2);
+   $header-blur: 10px;
+   
+   $text-glow: #00ffff; // Neon aqua
    
    $header-height: 7.5rem;
    $header-mobile-height: 10rem;
@@ -19,15 +22,23 @@
      top: 0;
      left: 0;
      justify-content: center;
-     width: 100%;
      align-items: center;
-     background-color: $header-bg-color;
+     width: 100%;
      height: $header-height;
-     text-shadow: 10px 5px 0 $box-shadow-color;
-     color: $text-color;
-     font-size: $font-size-lg;
      padding-bottom: 1rem;
+     font-size: $font-size-lg;
+     background-color: $header-bg-color;
+     backdrop-filter: blur($header-blur);
+     -webkit-backdrop-filter: blur($header-blur);
+     border-bottom: 1px solid $header-border-color;
+     color: $text-color;
      z-index: 10;
+   
+     // Layered neon glow
+     text-shadow:
+       0 0 6px $text-glow,
+       0 0 4px $text-glow,
+       0 0 10px $text-glow;
    }
    
    /* =============================
@@ -35,14 +46,11 @@
       ============================= */
    @media only screen and (max-width: 390px) {
      .Header {
-       position: fixed;
        margin: 0 auto;
        height: $header-mobile-height;
        padding: 1.5rem 0;
        text-align: center;
-       width: 100%;
        font-size: $font-size-sm;
-       z-index: 18;
      }
    }
    
