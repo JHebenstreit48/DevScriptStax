@@ -1,9 +1,9 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import pages from "@/Navigation/Pages";
 import { Subpage } from "@/Navigation/NavigationTypes";
 import SearchIcon from "@/Components/Navigation/SearchIcon";
-import SearchModal from "@/Components/Navigation/SearchResultModal";
+import SearchModal from "@/Components/Navigation/SearchModal";
 
 const Navigation = () => {
   const [activeDropdown, setActiveDropdown] = useState<Set<string>>(new Set());
@@ -16,7 +16,8 @@ const Navigation = () => {
     () => (localStorage.getItem("searchMode") as "instant" | "manual") || "instant"
   );
 
-  // Load saved term/results on mount
+  const navRef = useRef<HTMLDivElement | null>(null); // ✅ for detecting outside clicks
+
   useEffect(() => {
     const savedTerm = localStorage.getItem("lastSearchTerm") || "";
     const savedResults = localStorage.getItem("lastSearchResults");
@@ -29,10 +30,22 @@ const Navigation = () => {
   }, [searchMode]);
 
   useEffect(() => {
-    if (searchMode === "instant" && searchTerm) {
+    if (searchMode === "instant" && searchTerm.trim()) {
       performSearch(searchTerm);
     }
   }, [searchTerm, searchMode]);
+
+  // ✅ Close dropdown on outside click
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (navRef.current && !navRef.current.contains(event.target as Node)) {
+        setActiveDropdown(new Set());
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
 
   const toggleDropdown = (key: string) => {
     setActiveDropdown((prev) => {
@@ -49,7 +62,7 @@ const Navigation = () => {
   ): { name: string; path: string; breadcrumbs: string[] }[] => {
     const lowerTerm = term.toLowerCase().trim();
 
-    return subpages.flatMap((sp): { name: string; path: string; breadcrumbs: string[] }[] => {
+    return subpages.flatMap((sp) => {
       const currentTrail = [...breadcrumbs, sp.name];
       const matches =
         sp.name.toLowerCase().includes(lowerTerm) && sp.path !== undefined;
@@ -79,8 +92,40 @@ const Navigation = () => {
     localStorage.setItem("lastSearchResults", JSON.stringify(results));
   };
 
+  const renderSubpages = (subpages: Subpage[], parentKey: string, level = 1): React.ReactNode[] => {
+    return subpages.map((sp, index) => {
+      const key = `${parentKey}-${index}`;
+      const isActive = activeDropdown.has(key);
+      const hasChildren = sp.subpages && sp.subpages.length > 0;
+
+      return (
+        <div key={key} className={`dropdownItem level-${level}`}>
+          {sp.path ? (
+            <Link to={sp.path} className={`dropdownButton level-${level}`}>
+              {sp.name}
+            </Link>
+          ) : (
+            <>
+              <div
+                className={`dropdownButton level-${level} ${isActive ? "active" : ""}`}
+                onClick={() => toggleDropdown(key)}
+              >
+                {sp.name}
+              </div>
+              {isActive && sp.subpages && (
+                <div className="dropdownMenu active">
+                  {renderSubpages(sp.subpages, key, level + 1)}
+                </div>
+              )}
+            </>
+          )}
+        </div>
+      );
+    });
+  };
+
   return (
-    <div className="navigationMenu">
+    <div className="navigationMenu" ref={navRef}>
       <div className="navigationContent">
         <SearchIcon onClick={() => setShowModal(true)} />
         {showModal && (
@@ -107,30 +152,20 @@ const Navigation = () => {
             return (
               <div key={pageKey} className="dropdown">
                 {page.subpages.length === 0 ? (
-                  <Link to="/" className="dropdownButton homeButton">
+                  <Link to="/" className="dropdownButton level-1">
                     {page.name}
                   </Link>
                 ) : (
                   <>
                     <button
-                      className={`dropdownButton ${isActive ? "active" : ""}`}
+                      className={`dropdownButton level-1 ${isActive ? "active" : ""}`}
                       onClick={() => toggleDropdown(pageKey)}
                     >
                       {page.name}
                     </button>
                     {isActive && (
                       <div className="dropdownContent active">
-                        {page.subpages.map((sp, i) =>
-                          sp.path ? (
-                            <Link key={i} to={sp.path} className="dropdownButton level-4">
-                              {sp.name}
-                            </Link>
-                          ) : (
-                            <div key={i} className="dropdownItem level-1">
-                              {sp.name}
-                            </div>
-                          )
-                        )}
+                        {renderSubpages(page.subpages, pageKey)}
                       </div>
                     )}
                   </>
