@@ -2,267 +2,278 @@
             Variables           
    ============================== */
 
-   @use "sass:color";
+@use "sass:color";
 
-   $primary-color: rgb(7, 193, 255);
-   $secondary-color: rgb(218, 165, 32);
-   $tertiary-color: rgb(0, 255, 127);
-   $danger-color: rgb(240, 128, 128);
-   $background-dark: rgb(22, 22, 22);
-   $dropdown-bg: rgb(38, 38, 39);
-   $dropdown-hover: rgb(60, 60, 60);
-   $scrollbar-track: rgb(73, 73, 73);
-   
-   $font-lg: 1.8rem;
-   $font-md: 1.5rem;
-   $font-sm: 1.2rem;
-   $dropdown-width: 17rem;
-   
-   /* ==============================
+$primary-color: rgb(7, 193, 255);
+$secondary-color: rgb(218, 165, 32);
+$tertiary-color: rgb(0, 255, 127);
+$danger-color: rgb(240, 128, 128);
+$background-dark: rgb(22, 22, 22);
+$dropdown-bg: rgb(38, 38, 39);
+$dropdown-hover: rgb(60, 60, 60);
+$scrollbar-track: rgb(73, 73, 73);
+
+$font-lg: 1.8rem;
+$font-md: 1.5rem;
+$font-sm: 1.2rem;
+$dropdown-width: 17rem;
+
+/* ==============================
                  Breakpoints          
          ============================== */
-   $cellphone-portrait: 390px;
-   $cellphone-landscape: 390px;
-   
-   /* ==============================
+$cellphone-portrait: 390px;
+$cellphone-landscape: 390px;
+$small-laptop-max: 1366px;
+$small-laptop-min: 1024px;
+
+/* ==============================
              Hamburger Menu Button    
          ============================== */
-   .hamburgerButton {
-     display: none;
-   
-     @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
-       display: block;
-       background: none;
-       border: none;
-       font-size: 2rem;
-       color: $primary-color;
-       cursor: pointer;
-       z-index: 15;
-       align-self: center;
-     }
-   }
-   
-   /* ==============================
+.hamburgerButton {
+  display: none;
+
+  @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: $primary-color;
+    cursor: pointer;
+    z-index: 15;
+    align-self: center;
+  }
+}
+
+/* ==============================
                Navigation Menu         
          ============================== */
-   .navigationMenu {
-     position: fixed;
-     top: 6rem;
-     width: 100%;
-     background-color: $background-dark;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     z-index: 10;
-     padding: 0;
-     transition: all 0.3s ease;
-   }
-   
-   /* ==============================
+.navigationMenu {
+  position: fixed;
+  top: 6rem;
+  width: 100%;
+  background-color: $background-dark;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 10;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+
+/* ==============================
           Navigation Content         
       ============================== */
-   .navigationContent {
-     // Show normally on large screens
-     display: flex;
-     flex-direction: row;
-     align-items: center;
-     gap: 0;
-     width: auto;
-     padding-top: 0;
-   
-     // ✅ MOBILE ONLY – hide by default, show when .open
-     @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
-       display: none;
-   
-       &.open {
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-         gap: 1rem;
-         width: 70%;
-         text-align: center;
-         margin-top: 2.9rem;
-         padding-bottom: 1rem;
-       }
-     }
-   }
-   
-   /* ==============================
+.navigationContent {
+  // Show normally on large screens
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0;
+  width: auto;
+  padding-top: 0;
+
+  // ✅ MOBILE ONLY – hide by default, show when .open
+  @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
+    display: none;
+
+    &.open {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      width: 70%;
+      text-align: center;
+      margin-top: 2.9rem;
+      padding-bottom: 1rem;
+    }
+  }
+}
+
+/* ==============================
           Search Icon Container        
          ============================== */
-   .searchIconContainer {
-     position: absolute;
-     left: 8rem;
-     top: 50%;
-     transform: translateY(-50%);
-     z-index: 11;
-   
-     @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
-       display: flex;
-       flex-direction: column;
-       left: 45%;
-       top: 5rem;
-     }
-   }
-   
-   /* ==============================
+.searchIconContainer {
+  position: absolute;
+  left: 8rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 11;
+
+  @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
+    display: flex;
+    flex-direction: column;
+    left: 45%;
+    top: 5rem;
+  }
+
+  @media only screen and (min-width: $small-laptop-min) and (max-width: $small-laptop-max) {
+    left: 2.5rem;
+  }
+}
+
+/* ==============================
            Search Icon Button          
          ============================== */
-   .searchIconButton {
-     background-color: transparent;
-     border: none;
-     cursor: pointer;
-     outline: none;
-     color: $primary-color;
-     font-size: 1.5rem;
-     transition: color 0.3s ease;
-   
-     &:hover {
-       color: color.adjust($primary-color, $lightness: 10%);
-     }
-   }
-   
-   /* ==============================
+.searchIconButton {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  color: $primary-color;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: color.adjust($primary-color, $lightness: 10%);
+  }
+}
+
+/* ==============================
            Dropdown Button Style       
          ============================== */
-   .dropdownButton {
-     background-color: transparent;
-     border: none;
-     padding: 0 2rem;
-     font-size: $font-lg;
-     cursor: pointer;
-     color: $primary-color;
-     text-align: center;
-     text-decoration: none;
-     display: inline-block;
-   
-     &:hover {
-       text-decoration: underline;
-     }
-   
-     @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
-       font-size: 1.3rem;
-       padding: 0.5rem;
-     }
-   
-     &.level-1,
-     &.level-2,
-     &.level-3,
-     &.level-4 {
-       text-align: center;
-       display: block;
-       padding: 0.3rem 0;
-     }
-   
-     &.level-1 {
-       color: #1e90ff;
-       font-size: $font-lg;
-       margin: 0 auto;
-       padding: 0.5rem 0;
-   
-       @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
-         flex-direction: column;
-         align-items: center;
-         gap: 1rem;
-         margin-top: 0.3rem;
-         padding: 0 auto;
-       }
-     }
-   
-     &.level-2 {
-       color: $secondary-color;
-       font-size: 1.4rem;
-     }
-   
-     &.level-3 {
-       color: $tertiary-color;
-       font-size: $font-md;
-     }
-   
-     &.level-4 {
-       color: $danger-color;
-       font-size: $font-sm;
-     }
-   }
-   
-   /* ==============================
+.dropdownButton {
+  background-color: transparent;
+  border: none;
+  padding: 0 2rem;
+  font-size: $font-lg;
+  cursor: pointer;
+  color: $primary-color;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
+    font-size: 1.3rem;
+    padding: 0.5rem;
+  }
+
+
+
+  &.level-1,
+  &.level-2,
+  &.level-3,
+  &.level-4 {
+    text-align: center;
+    display: block;
+    padding: 0.3rem 0;
+  }
+
+  &.level-1 {
+    color: #1e90ff;
+    font-size: $font-lg;
+    margin: 0 auto;
+    padding: 0.5rem 0;
+
+    @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      margin-top: 0.3rem;
+      padding: 0 auto;
+    }
+
+    @media only screen and (min-width: $small-laptop-min) and (max-width: $small-laptop-max) {
+      font-size: 1.6rem;
+    }
+  }
+
+  &.level-2 {
+    color: $secondary-color;
+    font-size: 1.4rem;
+  }
+
+  &.level-3 {
+    color: $tertiary-color;
+    font-size: $font-md;
+  }
+
+  &.level-4 {
+    color: $danger-color;
+    font-size: $font-sm;
+  }
+}
+
+/* ==============================
               Dropdown Layout          
          ============================== */
-   .dropdown {
-     position: relative;
-     display: inline-block;
-     text-align: center;
-     margin: 0 1rem;
-   
-     @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
-       margin: 0;
-     }
-   }
-   
-   /* ==============================
+.dropdown {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  margin: 0 1rem;
+
+  @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
+    margin: 0;
+  }
+}
+
+/* ==============================
           Dropdown Menu Content        
          ============================== */
-   .dropdownContent {
-     position: absolute;
-     top: 100%;
-     left: 50%;
-     transform: translateX(-50%);
-     background-color: $dropdown-bg;
-     min-width: $dropdown-width;
-     border-radius: 5px;
-     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-     text-align: center;
-     padding: 1rem 0;
-     display: none;
-     z-index: 12;
-   
-     &.active {
-       display: grid;
-       grid-template-columns: 1fr;
-       max-height: 31.2rem;
-       overflow-y: auto;
-       scrollbar-width: thin;
-       scrollbar-color: $dropdown-hover $scrollbar-track;
-   
-       &::-webkit-scrollbar {
-         width: 6px;
-       }
-   
-       &::-webkit-scrollbar-thumb {
-         background: $dropdown-hover;
-         border-radius: 5px;
-   
-         &:hover {
-           background: color.adjust($dropdown-hover, $lightness: 10%);
-         }
-       }
-   
-       &::-webkit-scrollbar-track {
-         background: transparent;
-       }
-   
-       &::-webkit-scrollbar-button {
-         display: none;
-       }
-   
-       @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
-         position: static;
-         transform: none;
-         background: transparent;
-         box-shadow: none;
-         padding: 0;
-         margin-top: 0.5rem;
-       }
-     }
-   }
-   
-   /* ==============================
+.dropdownContent {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: $dropdown-bg;
+  min-width: $dropdown-width;
+  border-radius: 5px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 1rem 0;
+  display: none;
+  z-index: 12;
+
+  &.active {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-height: 31.2rem;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: $dropdown-hover $scrollbar-track;
+
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: $dropdown-hover;
+      border-radius: 5px;
+
+      &:hover {
+        background: color.adjust($dropdown-hover, $lightness: 10%);
+      }
+    }
+
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    &::-webkit-scrollbar-button {
+      display: none;
+    }
+
+    @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
+      position: static;
+      transform: none;
+      background: transparent;
+      box-shadow: none;
+      padding: 0;
+      margin-top: 0.5rem;
+    }
+  }
+}
+
+/* ==============================
         Active Nested Dropdown Menu  
        ============================== */
-   .dropdownMenu.active {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: center;
-   }
-   
+.dropdownMenu.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
