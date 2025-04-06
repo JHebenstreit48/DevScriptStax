@@ -4,10 +4,10 @@
    $footer-bg-color: #333;
    $text-color: white;
    $font-size-lg: 26px;
-   $font-size-sm: 3rem;
+   $font-size-sm: 1.5rem;
    
    $footer-height: 60px;
-   $footer-mobile-height: 7rem;
+   $footer-mobile-height: 3.5rem;
    $footer-padding: 10px;
    $footer-mobile-padding: 2rem;
    
@@ -35,7 +35,7 @@
      .Footer {
        font-size: $font-size-sm;
        height: $footer-mobile-height;
-       padding-bottom: $footer-mobile-padding;
+       padding: $footer-mobile-padding;
      }
    }
    
