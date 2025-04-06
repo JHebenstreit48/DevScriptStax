@@ -8,7 +8,7 @@ const AngularIntro = () => {
     return (
 
         <>
-            <Header text="Angular Introduction" />
+            <Header text="Angular Introduction" size="md" />
             <Notes
                 filePath={markdownFilePath}
                 markdownContent="markdownContent"
