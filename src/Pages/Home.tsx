@@ -12,21 +12,19 @@ const Home = () => {
             <div className='siteInfo'>
 
                 <p className='siteInfoContent'>
-                    This site serves as a personal reference for full stack web development. Originally built as a React.js version of a vanilla HTML project from a web development bootcamp, it has since evolved into a long-term learning hub.
+                    CodeQuest is a personal reference site for full stack web development. It began as a React.js version of a vanilla HTML project from a web development bootcamp and has since grown into a structured space for long-term learning.
                 </p>
 
                 <p className='siteInfoContent'>
-                    It contains detailed, topic-specific notes and code snippets organized by language, technology, and development domain. The site is continuously updated as I expand my knowledge across frontend, backend, cloud services, tooling, and mobile development.
+                    The content is continuously updated as I explore new topics, tools, and techniques across frontend, backend, cloud services, and development workflows. It evolves alongside my skills as both a developer and a learner.
                 </p>
 
                 <p className='siteInfoContent'>
-                    Use the navigation menu above to explore different categories. This site is structured for clarity, speed, and growth as I continue learning new concepts and refining my skills.
+                    Use the navigation menu above to explore different categories. The site is organized for clarity, speed, and ongoing growth as I continue deepening my understanding of modern web development.
                 </p>
-
-
-
 
             </div>
+
         </>
     );
 
