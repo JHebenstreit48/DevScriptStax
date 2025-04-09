@@ -35,7 +35,7 @@ import NextJSNavigation from "@/Navigation/FrontEndNavigation/NextJSNavigation/N
 
 // ---------- React Basics Navigation Start ----------
 import GettingStartedNavigation from "@/Navigation/FrontEndNavigation/ReactJSNavigation/ReactBasics/GettingStarted";
-import FundamentalsNavigation from "./FrontEndNavigation/ReactJSNavigation/ReactBasics/Fundamentals";
+import FundamentalsNavigation from "@/Navigation/FrontEndNavigation/ReactJSNavigation/ReactBasics/Fundamentals";
 import ComponentBehaviorNavigation from "@/Navigation/FrontEndNavigation/ReactJSNavigation/ReactBasics/ComponentBehavior";
 import WorkingWithDataNavigation from "@/Navigation/FrontEndNavigation/ReactJSNavigation/ReactBasics/WorkingWithData";
 import AdvancedTopicsNavigation from "@/Navigation/FrontEndNavigation/ReactJSNavigation/ReactBasics/Advanced";

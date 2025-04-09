@@ -2,7 +2,7 @@ import Header from "@/Components/Header";
 import Notes from "@/Components/Notes/NotesRender";
 
 const Testing = () => {
-    const markdownFilePath = './TestingNotes/Testing.md';
+    const markdownFilePath = '/TestingNotes/Testing.md';
     return (
 
         <>
