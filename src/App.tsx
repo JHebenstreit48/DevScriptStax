@@ -10,7 +10,7 @@ import '@/SCSS/Footer.scss';
 import '@/SCSS/Error.scss';
 import '@/SCSS/BackToTop.scss';
 import '@/SCSS/Notes.scss';
-import '@/SCSS/SplashScren.scss';
+import '@/SCSS/SplashScreen.scss';
 
 export default function App() {
   const [showSplash, setShowSplash] = useState(true);
