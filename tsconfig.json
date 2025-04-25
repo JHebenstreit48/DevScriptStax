@@ -16,6 +16,6 @@
     "resolveJsonModule": true, // For importing JSON files if needed
     "typeRoots": ["./node_modules/@types", "./src/types"] // Ensure custom types are included
   },
-  "include": ["src", "src/Pages/BackEndPages", "src/Pages/FrontEndPages", "src/Pages/ProgrammingLanguagesPages", "src/Pages/TestingPages", "src/Pages/ToolsPages", "src/Pages/Error.tsx", "src/Pages/Home.tsx"],
+  "include": ["src", "src/Pages/BackEndPages", "src/Pages/FrontEndPages", "src/Pages/ProgrammingLanguagesPages", "src/Pages/TestingPages", "src/Pages/ToolsPages", "src/Pages/ErrorHomeSplash/Error.tsx", "src/Pages/ErrorHomeSplash/Home.tsx", "src/Pages/ErrorHomeSplash/SplashScreen.tsx"],
   "exclude": ["node_modules"]
 }
