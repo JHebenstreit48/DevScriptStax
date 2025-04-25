@@ -3,11 +3,11 @@ import { useState, useEffect } from "react";
 import Footer from '@/Components/Footer';
 import SplashScreen from '@/Pages/ErrorHomeSplash/SplashScreen';
 
-import '@/SCSS/Page.scss';
-import '@/SCSS/Header.scss';
-import '@/SCSS/Navigation.scss';
-import '@/SCSS/Footer.scss';
-import '@/SCSS/Error.scss';
+import '@/SCSS/HomeErrorPage/Page.scss';
+import '@/SCSS/HeaderFooterNav/Header.scss';
+import '@/SCSS/HeaderFooterNav/Navigation.scss';
+import '@/SCSS/HeaderFooterNav/Footer.scss';
+import '@/SCSS/HomeErrorPage/Error.scss';
 import '@/SCSS/BackToTop.scss';
 import '@/SCSS/Notes.scss';
 import '@/SCSS/SplashScreen.scss';
