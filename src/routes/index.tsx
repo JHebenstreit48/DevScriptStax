@@ -3,7 +3,6 @@ import { createBrowserRouter } from "react-router-dom";
 import App from "@/App";
 import ErrorPage from "@/Pages/ErrorHomeSplash/Error";
 import Home from "@/Pages/ErrorHomeSplash/Home";
-import SplashScreen from "@/Pages/ErrorHomeSplash/SplashScreen";
 
 // APIs Start
 
@@ -390,6 +389,7 @@ export const router = createBrowserRouter([
             },
             {
                 path: '/css/preprocessors/sass/gettingstarted/mixins',
+                element: <MixinsAndFunctions />,
             },
             // Getting Started End
 
