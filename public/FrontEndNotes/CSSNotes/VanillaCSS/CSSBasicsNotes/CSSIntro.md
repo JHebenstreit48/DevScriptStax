@@ -1,4 +1,5 @@
 ## What is CSS?
+---
 
 <span class="emphasis">CSS</span> stands for <span class="emphasis">Cascading Style Sheets</span>. It functions as the "skin" or styling of a <span class="emphasis">webpage</span>.
 

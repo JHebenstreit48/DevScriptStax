@@ -128,7 +128,7 @@ import Animations from "@/Pages/FrontEndPages/CSSPages/CSSVanillaPages/CSSAdvanc
 import MediaQueries from "@/Pages/FrontEndPages/CSSPages/CSSVanillaPages/CSSAdvancedPages/MediaQueries";
 import Transform from "@/Pages/FrontEndPages/CSSPages/CSSVanillaPages/CSSAdvancedPages/Transform";
 import Transitions from "@/Pages/FrontEndPages/CSSPages/CSSVanillaPages/CSSAdvancedPages/Transition";
-import Variables from "@/Pages/FrontEndPages/CSSPages/CSSVanillaPages/CSSAdvancedPages/Variables";
+import CSSVariables from "@/Pages/FrontEndPages/CSSPages/CSSVanillaPages/CSSAdvancedPages/CSSVariables";
 // CSS Advanced End
 
 // CSS Vanilla End
@@ -156,11 +156,25 @@ import HTMLSemantics from "@/Pages/FrontEndPages/HTMLPages/HTMLBasics/HTMLSemant
 // HTML Notes End
 
 // JavaScript
+
 // Basics Start
+
 // Introduction Start
+
 import JSOverview from "@/Pages/FrontEndPages/JavaScriptPages/Basics/Introduction/JSOverview";
 import JSHistory from "@/Pages/FrontEndPages/JavaScriptPages/Basics/Introduction/JSHistory";
-// import JavaScriptCode from "@/pages/JavaScriptPages/JavaScriptCode";
+
+// Introduction End
+
+// ========================================
+//      Core Language Concepts Start
+// =========================================
+import SyntaxStructure from "@/Pages/FrontEndPages/JavaScriptPages/Basics/CoreConcepts/SyntaxAndStructure";
+import DataTypes from "@/Pages/FrontEndPages/JavaScriptPages/Basics/CoreConcepts/DataTypes";
+import JSVariables from "@/Pages/FrontEndPages/JavaScriptPages/Basics/CoreConcepts/Variables";
+// ========================================
+//      Core Language Concepts End
+// =========================================
 
 // Markdown
 import Markdown from "@/Pages/FrontEndPages/MarkdownPages/Markdown";
@@ -454,7 +468,7 @@ export const router = createBrowserRouter([
             },
             {
                 path: '/css/vanillacss/advanced/variables',
-                element: <Variables />,
+                element: <CSSVariables />,
             },
 
             // CSS Vanilla End
@@ -516,10 +530,23 @@ export const router = createBrowserRouter([
                 path: '/javascript/basics/intro/history',
                 element: <JSHistory />,
             },
-            // {
-            //     path: '/javascript/javascriptcode',
-            //     element: <JavaScriptCode />,
-            // },
+            // Introduction End
+
+            // Core Language Concepts Start
+            {
+                path: '/javascript/basics/core/syntax',
+                element: <SyntaxStructure />,
+            },
+            {
+                path: '/javascript/basics/core/datatypes',
+                element: <DataTypes />,
+            },
+            {
+                path: '/javascript/basics/core/variables',
+                element: <JSVariables />,
+            },
+            // Core Language Concepts End
+
             {
                 path: '/markdown',
                 element: <Markdown />,
