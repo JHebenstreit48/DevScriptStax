@@ -1,10 +1,3 @@
-## Key Concepts
----
-
-### Variables
-
-Variables are containers used to store data values. In JavaScript, you can declare variables using the <span class="emphasis">var</span>, <span class="emphasis">let</span>, or <span class="emphasis">const</span> keywords.
-
 ### Methods
 
 A method is a function that is associated with an object in JavaScript. These methods are used to perform specific operations on the object they belong to. JavaScript provides a wide range of built-in methods for various objects, such as strings, arrays, and numbers, which simplify common programming tasks.

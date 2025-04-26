@@ -1,7 +1,7 @@
 import Header from "@/Components/Header";
 import Notes from "@/Components/Notes/NotesRender";
 
-const Variables = () => {
+const CSSVariables = () => {
     const markdownFilePath = '/FrontEndNotes/CSSNotes/VanillaCSS/CSSAdvancedNotes/Variables.md';
 
     return (
@@ -18,4 +18,4 @@ const Variables = () => {
 
 };
 
-export default Variables;
+export default CSSVariables;
