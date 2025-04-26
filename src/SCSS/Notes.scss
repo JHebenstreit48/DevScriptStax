@@ -173,6 +173,8 @@ $small-laptop-min: 1024px;
 
     .tableWrapper {
       display: flex;
+      justify-content: center;
+      align-items: center;
 
       @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
         width: 100%;

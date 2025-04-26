@@ -172,6 +172,7 @@ import JSHistory from "@/Pages/FrontEndPages/JavaScriptPages/Basics/Introduction
 import SyntaxStructure from "@/Pages/FrontEndPages/JavaScriptPages/Basics/CoreConcepts/SyntaxAndStructure";
 import DataTypes from "@/Pages/FrontEndPages/JavaScriptPages/Basics/CoreConcepts/DataTypes";
 import JSVariables from "@/Pages/FrontEndPages/JavaScriptPages/Basics/CoreConcepts/Variables";
+import Operators from "@/Pages/FrontEndPages/JavaScriptPages/Basics/CoreConcepts/Operators";
 // ========================================
 //      Core Language Concepts End
 // =========================================
@@ -544,6 +545,10 @@ export const router = createBrowserRouter([
             {
                 path: '/javascript/basics/core/variables',
                 element: <JSVariables />,
+            },
+            {
+                path: '/javascript/basics/core/operators',
+                element: <Operators />,
             },
             // Core Language Concepts End
 
