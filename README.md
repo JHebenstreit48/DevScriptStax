@@ -36,7 +36,8 @@ I used videos of the class sessions, ChatGPT, GitHub CoPilot, resources from W3S
 [Python Lists](https://www.w3schools.com/python/python_lists.asp)  
 [.ico files in React JS](https://www.google.com/search?q=what+is+a+.ico+file+in+React+JS&oq=what+is+a+.ico+file+in+React+JS&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRigATIHCAIQIRigATIHCAMQIRigATIHCAQQIRigATIHCAUQIRigAdIBCTcwNDBqMGoxNagCCLACAfEFlz0RF4gGaJzxBZc9EReIBmic&sourceid=chrome&ie=UTF-8)  
 [Favicon Sizes in React JS](https://www.google.com/search?q=what+sizes+can+the+favicon+be+in+a+React+JS+project&oq=what+sizes+can+the+favicon+be+in+a+React+JS+project&gs_lcrp=EgZjaHJvbWUyCQgAEEUYORigATIHCAEQIRigATIHCAIQIRigATIHCAMQIRigATIHCAQQIRiPAjIHCAUQIRiPAtIBCjExMjU4ajBqMTWoAgiwAgHxBZ4ztrYhpyGi&sourceid=chrome&ie=UTF-8)  
-[Changing Favicon in React JS](https://www.geeksforgeeks.org/how-to-change-the-favicon-in-react-js/)
+[Changing Favicon in React JS](https://www.geeksforgeeks.org/how-to-change-the-favicon-in-react-js/)  
+[JavaScript Functions Parenthesis](https://www.google.com/search?q=In+JavaScript+functions+parenthesis+are+used+to+call+the+function+correct%3F+Also+what+is+the+purpose+of+the+parenthesis+immediately+following+the+function+name%3F&num=10&sca_esv=98a6bd07f428894a&ei=jwgNaNTeMKSG0PEP_u_kwQw&ved=0ahUKEwiU4pD_jfaMAxUkAzQIHf43OcgQ4dUDCBE&uact=5&oq=In+JavaScript+functions+parenthesis+are+used+to+call+the+function+correct%3F+Also+what+is+the+purpose+of+the+parenthesis+immediately+following+the+function+name%3F&gs_lp=Egxnd3Mtd2l6LXNlcnAinwFJbiBKYXZhU2NyaXB0IGZ1bmN0aW9ucyBwYXJlbnRoZXNpcyBhcmUgdXNlZCB0byBjYWxsIHRoZSBmdW5jdGlvbiBjb3JyZWN0PyBBbHNvIHdoYXQgaXMgdGhlIHB1cnBvc2Ugb2YgdGhlIHBhcmVudGhlc2lzIGltbWVkaWF0ZWx5IGZvbGxvd2luZyB0aGUgZnVuY3Rpb24gbmFtZT9I1p0BUKQNWOubAXABeAGQAQCYAVigAYsKqgECMTm4AQPIAQD4AQGYAgGgAgjCAgoQABiwAxjWBBhHmAMAiAYBkAYIkgcBMaAH4zayBwC4BwA&sclient=gws-wiz-serp&zx=1745685271462&no_sw_cr=1)
 
 
 

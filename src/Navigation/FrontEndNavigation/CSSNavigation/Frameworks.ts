@@ -1,147 +1,147 @@
-import { Subpage } from "@/Navigation/NavigationTypes";
+import { Subpage } from '@/Navigation/NavigationTypes';
 
 const FrameworksNavigation: Subpage = {
-  name: "Frameworks",
+  name: 'Frameworks',
   subpages: [
     {
-      name: "Bootstrap",
+      name: 'Bootstrap',
       subpages: [
         {
-          name: "Getting Started",
+          name: 'Getting Started',
           subpages: [
             {
-              name: "Introduction",
-              path: "/css/frameworks/bootstrap/gettingstarted/intro",
+              name: 'Introduction',
+              path: '/css/frameworks/bootstrap/gettingstarted/intro',
             }, // Includes CDN links
             {
-              name: "Grid System",
-              path: "/css/frameworks/bootstrap/gettingstarted/grid",
+              name: 'Grid System',
+              path: '/css/frameworks/bootstrap/gettingstarted/grid',
             },
             {
-              name: "Typography",
-              path: "/css/frameworks/bootstrap/gettingstarted/typography",
+              name: 'Typography',
+              path: '/css/frameworks/bootstrap/gettingstarted/typography',
             },
             {
-              name: "Utilities",
-              path: "/css/frameworks/bootstrap/gettingstarted/utilities",
+              name: 'Utilities',
+              path: '/css/frameworks/bootstrap/gettingstarted/utilities',
             },
           ],
         },
         {
-          name: "Components",
+          name: 'Components',
           subpages: [
             {
-              name: "Accordions",
-              path: "/css/frameworks/bootstrap/components/accordions",
+              name: 'Accordions',
+              path: '/css/frameworks/bootstrap/components/accordions',
             },
             {
-              name: "Alerts",
-              path: "/css/frameworks/bootstrap/components/alerts",
+              name: 'Alerts',
+              path: '/css/frameworks/bootstrap/components/alerts',
             },
             {
-              name: "Buttons",
-              path: "/css/frameworks/bootstrap/components/buttons",
+              name: 'Buttons',
+              path: '/css/frameworks/bootstrap/components/buttons',
             },
             {
-              name: "Cards",
-              path: "/css/frameworks/bootstrap/components/cards",
+              name: 'Cards',
+              path: '/css/frameworks/bootstrap/components/cards',
             },
             {
-              name: "Carousel",
-              path: "/css/frameworks/bootstrap/components/carousel",
+              name: 'Carousel',
+              path: '/css/frameworks/bootstrap/components/carousel',
             },
             {
-              name: "Dropdowns",
-              path: "/css/frameworks/bootstrap/components/dropdowns",
+              name: 'Dropdowns',
+              path: '/css/frameworks/bootstrap/components/dropdowns',
             },
             {
-              name: "Modals",
-              path: "/css/frameworks/bootstrap/components/modals",
+              name: 'Modals',
+              path: '/css/frameworks/bootstrap/components/modals',
             },
             {
-              name: "Tooltips",
-              path: "/css/frameworks/bootstrap/components/tooltips",
+              name: 'Tooltips',
+              path: '/css/frameworks/bootstrap/components/tooltips',
             },
           ],
         },
       ],
     },
     {
-      name: "React Bootstrap",
+      name: 'React Bootstrap',
       subpages: [
         {
-          name: "Introduction",
-          path: "/css/frameworks/reactbootstrap/intro",
+          name: 'Introduction',
+          path: '/css/frameworks/reactbootstrap/intro',
         }, // Includes CDN links
         {
-          name: "Grid System",
-          path: "/css/frameworks/reactbootstrap/grid",
+          name: 'Grid System',
+          path: '/css/frameworks/reactbootstrap/grid',
         },
         {
-          name: "Typography",
-          path: "/css/frameworks/reactbootstrap/typography",
+          name: 'Typography',
+          path: '/css/frameworks/reactbootstrap/typography',
         },
         {
-          name: "Utilities",
-          path: "/css/frameworks/reactbootstrap/utilities",
+          name: 'Utilities',
+          path: '/css/frameworks/reactbootstrap/utilities',
         },
         {
-          name: "Components",
+          name: 'Components',
           subpages: [
             {
-              name: "Accordions",
-              path: "/css/frameworks/reactbootstrap/components/accordions",
+              name: 'Accordions',
+              path: '/css/frameworks/reactbootstrap/components/accordions',
             },
             {
-              name: "Alerts",
-              path: "/css/frameworks/reactbootstrap/components/alerts",
+              name: 'Alerts',
+              path: '/css/frameworks/reactbootstrap/components/alerts',
             },
             {
-              name: "Buttons",
-              path: "/css/frameworks/reactbootstrap/components/buttons",
+              name: 'Buttons',
+              path: '/css/frameworks/reactbootstrap/components/buttons',
             },
             {
-              name: "Cards",
-              path: "/css/frameworks/reactbootstrap/components/cards",
+              name: 'Cards',
+              path: '/css/frameworks/reactbootstrap/components/cards',
             },
             {
-              name: "Dropdowns",
-              path: "/css/frameworks/reactbootstrap/components/dropdowns",
+              name: 'Dropdowns',
+              path: '/css/frameworks/reactbootstrap/components/dropdowns',
             },
             {
-              name: "Modals",
-              path: "/css/frameworks/reactbootstrap/components/modals",
+              name: 'Modals',
+              path: '/css/frameworks/reactbootstrap/components/modals',
             },
             {
-              name: "Tooltips",
-              path: "/css/frameworks/reactbootstrap/components/tooltips",
+              name: 'Tooltips',
+              path: '/css/frameworks/reactbootstrap/components/tooltips',
             },
           ],
         },
       ],
     },
     {
-      name: "Tailwind CSS",
+      name: 'Tailwind CSS',
       subpages: [
         {
-          name: "Introduction",
-          path: "/css/frameworks/tailwind/intro",
+          name: 'Introduction',
+          path: '/css/frameworks/tailwind/intro',
         }, // Includes CDN links
         {
-          name: "Layout Utilities",
-          path: "/css/frameworks/tailwind/layout",
+          name: 'Layout Utilities',
+          path: '/css/frameworks/tailwind/layout',
         },
         {
-          name: "Typography Utilities",
-          path: "/css/frameworks/tailwind/typography",
+          name: 'Typography Utilities',
+          path: '/css/frameworks/tailwind/typography',
         },
         {
-          name: "Color Utilities",
-          path: "/css/frameworks/tailwind/colors",
+          name: 'Color Utilities',
+          path: '/css/frameworks/tailwind/colors',
         },
         {
-          name: "Custom Components",
-          path: "/css/frameworks/tailwind/components",
+          name: 'Custom Components',
+          path: '/css/frameworks/tailwind/components',
         },
       ],
     },
