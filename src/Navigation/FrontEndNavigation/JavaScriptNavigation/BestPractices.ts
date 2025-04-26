@@ -1,7 +1,7 @@
 import { Subpage } from "@/Navigation/NavigationTypes";
 
 const JavaScriptBestPracticesNavigation: Subpage = {
-  name: "JavaScript Best Practices",
+  name: "Best Practices",
   subpages: [
     {
       name: "Code Quality",

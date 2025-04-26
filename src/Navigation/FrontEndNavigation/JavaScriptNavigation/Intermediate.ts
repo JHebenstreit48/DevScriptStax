@@ -1,7 +1,7 @@
 import { Subpage } from "@/Navigation/NavigationTypes";
 
 const JavaScriptIntermediateNavigation: Subpage = {
-  name: "JavaScript Intermediate",
+  name: "Intermediate",
   subpages: [
     {
       name: "DOM and Events",

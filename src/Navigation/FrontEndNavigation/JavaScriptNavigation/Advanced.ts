@@ -1,7 +1,7 @@
 import { Subpage } from "@/Navigation/NavigationTypes";
 
 const JavaScriptAdvancedNavigation: Subpage = {
-  name: "JavaScript Advanced",
+  name: "Advanced",
   subpages: [
     {
       name: "Advanced Functions",

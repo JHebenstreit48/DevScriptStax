@@ -1,7 +1,7 @@
 import { Subpage } from "@/Navigation/NavigationTypes";
 
 const JavaScriptBasicsNavigation: Subpage = {
-  name: "JavaScript Basics",
+  name: "Basics",
   subpages: [
     {
       name: "Introduction",
