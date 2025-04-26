@@ -156,7 +156,10 @@ import HTMLSemantics from "@/Pages/FrontEndPages/HTMLPages/HTMLBasics/HTMLSemant
 // HTML Notes End
 
 // JavaScript
-import JavaScript from "@/Pages/FrontEndPages/JavaScriptPages/JavaScript";
+// Basics Start
+// Introduction Start
+import JSOverview from "@/Pages/FrontEndPages/JavaScriptPages/Basics/Introduction/JSOverview";
+import JSHistory from "@/Pages/FrontEndPages/JavaScriptPages/Basics/Introduction/JSHistory";
 // import JavaScriptCode from "@/pages/JavaScriptPages/JavaScriptCode";
 
 // Markdown
@@ -501,9 +504,17 @@ export const router = createBrowserRouter([
                 path: '/html/basics/semantic',
                 element: <HTMLSemantics />,
             },
+
+            // JavaScript Start
+            // Basics Start
+            // Introduction Start
             {
-                path: '/javascript',
-                element: <JavaScript />,
+                path: '/javascript/basics/intro/overview',
+                element: <JSOverview />,
+            },
+            {
+                path: '/javascript/basics/intro/history',
+                element: <JSHistory />,
             },
             // {
             //     path: '/javascript/javascriptcode',

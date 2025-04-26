@@ -1,13 +1,13 @@
 import Header from "@/Components/Header";
 import Notes from "@/Components/Notes/NotesRender";
 
-const Javascript = () => {
-    const markdownFilePath = "/JavaScriptNotes/JavaScript.md";
+const JSOverview = () => {
+    const markdownFilePath = "/FrontEndNotes/JavaScriptNotes/Basics/Introduction/Overview.md";
 
     return (
 
         <>
-            <Header text="JavaScript" />
+            <Header text="JavaScript Overview" />
             <Notes
                 filePath={markdownFilePath}
                 markdownContent="markdownContent"
@@ -17,4 +17,4 @@ const Javascript = () => {
 
 };
 
-export default Javascript;
+export default JSOverview;
