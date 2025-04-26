@@ -38,6 +38,36 @@ const JavaScriptBasicsNavigation: Subpage = {
       ]
     },
     {
+      name: "Arrays and Array Methods",
+      subpages: [
+        {
+          name: "Introduction to Arrays",
+          path: "/javascript/basics/arrays/intro"
+        },
+        {
+          name: "Common Array Methods",
+          path: "/javascript/basics/arrays/methods"
+        }
+      ]
+    },
+    {
+      name: "Objects and JSON",
+      subpages: [
+        {
+          name: "Introduction to Objects",
+          path: "/javascript/basics/objects/intro"
+        },
+        {
+          name: "Object Properties and Methods",
+          path: "/javascript/basics/objects/propertiesmethods"
+        },
+        {
+          name: "Working with JSON",
+          path: "/javascript/basics/objects/json"
+        }
+      ]
+    },
+    {
       name: "Functions",
       subpages: [
         {
