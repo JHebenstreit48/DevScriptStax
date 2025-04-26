@@ -273,11 +273,6 @@ $small-laptop-min: 1024px;
       }
     }
   
-    .punctuationSymbol {
-      @include text-emphasis($emphasis-color, 30px);
-      margin: 0 5px;
-    }
-  
     .token {
       width: 10rem;
       line-height: 2.4rem;

@@ -1,31 +1,9 @@
-# JavaScript Basics
-
-## Overview
----
-
-JavaScript serves as the brain or nervous system of a web page. It provides the logic and extra functionality that enhances a webpage’s interactivity and user experience.
-
----
-
 ## Key Concepts
 ---
 
 ### Variables
 
 Variables are containers used to store data values. In JavaScript, you can declare variables using the <span class="emphasis">var</span>, <span class="emphasis">let</span>, or <span class="emphasis">const</span> keywords.
-
----
-
-### Data Types
-
-JavaScript supports several data types, including:
-- <span class="emphasis">Number</span>: Represents both integers and floating-point numbers.
-- <span class="emphasis">String</span>: Represents textual data.
-- <span class="emphasis">Boolean</span>: Represents true or false values.
-- <span class="emphasis">Object</span>: Represents collections of properties.
-- <span class="emphasis">Undefined</span>: Represents a variable that has been declared but not assigned a value.
-
----
 
 ### Methods
 

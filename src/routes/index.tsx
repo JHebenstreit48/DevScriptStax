@@ -156,11 +156,20 @@ import HTMLSemantics from "@/Pages/FrontEndPages/HTMLPages/HTMLBasics/HTMLSemant
 // HTML Notes End
 
 // JavaScript
+
 // Basics Start
+
 // Introduction Start
+
 import JSOverview from "@/Pages/FrontEndPages/JavaScriptPages/Basics/Introduction/JSOverview";
 import JSHistory from "@/Pages/FrontEndPages/JavaScriptPages/Basics/Introduction/JSHistory";
-// import JavaScriptCode from "@/pages/JavaScriptPages/JavaScriptCode";
+
+// Introduction End
+
+// Core Language Concepts Start
+import SyntaxStructure from "@/Pages/FrontEndPages/JavaScriptPages/Basics/CoreConcepts/SyntaxAndStructure";
+import DataTypes from "@/Pages/FrontEndPages/JavaScriptPages/Basics/CoreConcepts/DataTypes";
+// Core Language Concepts End
 
 // Markdown
 import Markdown from "@/Pages/FrontEndPages/MarkdownPages/Markdown";
@@ -516,10 +525,19 @@ export const router = createBrowserRouter([
                 path: '/javascript/basics/intro/history',
                 element: <JSHistory />,
             },
-            // {
-            //     path: '/javascript/javascriptcode',
-            //     element: <JavaScriptCode />,
-            // },
+            // Introduction End
+
+            // Core Language Concepts Start
+            {
+                path: '/javascript/basics/core/syntax',
+                element: <SyntaxStructure />,
+            },
+            {
+                path: '/javascript/basics/core/datatypes',
+                element: <DataTypes />,
+            },
+            // Core Language Concepts End
+
             {
                 path: '/markdown',
                 element: <Markdown />,
