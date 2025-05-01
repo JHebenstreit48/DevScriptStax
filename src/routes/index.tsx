@@ -4,234 +4,231 @@ import App from "@/App";
 import ErrorPage from "@/Pages/ErrorHomeSplash/Error";
 import Home from "@/Pages/ErrorHomeSplash/Home";
 
-// APIs Start
+// ========================================================
+//                    Front End Routes Start
+// ========================================================
+import frontEndRoutes from "@/routes/frontEndRoutes";
 
-// API Introduction Start
+// ========================================================
+//                      API Pages Start
+// ========================================================
+
+// ---------- API Introduction Start ----------
 import CoreConcepts from "@/Pages/BackEndPages/APIPages/APIFundamentals/CoreAPIConcepts";
-// API Introduction End
+// ---------- API Introduction End ----------
 
-// Types of APIs Start
+// ---------- Types of APIs Start ----------
 import PublicVPrivate from "@/Pages/BackEndPages/APIPages/TypesOfAPIs/PubVSPrivate";
 import RESTVSGraphQLVSSOAP from "@/Pages/BackEndPages/APIPages/TypesOfAPIs/RestVSGraphVSSOAP";
-// Types of APIs End
+// ---------- Types of APIs End ----------
 
-// APIs End
+// ========================================================
+//                       API Pages End
+// ========================================================
 
-// GraphQL and Apollo Start
+// ========================================================
+//               GraphQL and Apollo Pages Start
+// ========================================================
+
 import ApolloServer from "@/Pages/GraphQLAndApolloPages/ApolloServerPages/ApolloServer";
 // import ApolloServerCode from "@/pages/ApolloServerPages/ApolloServerCode";
+
 import GraphQL from "@/Pages/GraphQLAndApolloPages/GraphQLPages/GraphQL";
 // import GraphQLCode from "@/pages/GraphQLPages/GraphQLCode";
-// GraphQL and Apollo End
 
-// Angular Notes Start
-
-// Angular Basics Start
-// Angular Getting Started Start
-import AngularIntro from "@/Pages/FrontEndPages/AngularPages/Basics/GettingStarted/Introduction";
-import AngularAppCreate from "@/Pages/FrontEndPages/AngularPages/Basics/GettingStarted/CreatingRunningApp";
-import AngularCLI from "@/Pages/FrontEndPages/AngularPages/Basics/GettingStarted/CLI";
-// Angular Getting Started End
-
-// Angular Project Structure Start
-import AngularStructure from "@/Pages/FrontEndPages/AngularPages/Basics/ProjectStructure/FolderFileStructure";
-import AngularConfigFiles from "@/Pages/FrontEndPages/AngularPages/Basics/ProjectStructure/ConfigurationFiles";
-// Angular Project Structure End
-// Angular Basics End
-
-// Angular Core Concepts Start
-import Components from "@/Pages/FrontEndPages/AngularPages/CoreConcepts/AngularComponents";
-import Modules from "@/Pages/FrontEndPages/AngularPages/CoreConcepts/AngularModules";
-import Services from "@/Pages/FrontEndPages/AngularPages/CoreConcepts/AngularServices";
-import Routing from "@/Pages/FrontEndPages/AngularPages/CoreConcepts/AngularRouting";
-// Angular Core Concepts End
+// ========================================================
+//                GraphQL and Apollo Pages End
+// ========================================================
 
 
-// Angular Notes End
+// ========================================================
+//                        CI/CD Ops Start
+// ========================================================
 
-// CICD Ops
 import CICDOps from "@/Pages/ToolsPages/CICDOpsPages/CICDOps";
 // import CICDOpsCode from "@/pages/CICDOpsPages/CICDOpsCode";
 
-// CSS Start
-
-// CSS Frameworks Start
-
-// CSS Bootstrap Start
-
-// Bootstrap Getting Started Start
-import BootstrapIntro from "@/Pages/FrontEndPages/CSSPages/CSSFrameworksPages/Bootstrap/GettingStarted/BootstrapIntro";
-import BootstrapGrid from "@/Pages/FrontEndPages/CSSPages/CSSFrameworksPages/Bootstrap/GettingStarted/BootstrapGrid";
-import BootstrapTypography from "@/Pages/FrontEndPages/CSSPages/CSSFrameworksPages/Bootstrap/GettingStarted/BootstrapTypography";
-import BootstrapUtilities from "@/Pages/FrontEndPages/CSSPages/CSSFrameworksPages/Bootstrap/GettingStarted/BootstrapUtilities";
-// Bootstrap Getting Started End
-
-// Bootstrap Components Start
-import BootstrapAccordions from "@/Pages/FrontEndPages/CSSPages/CSSFrameworksPages/Bootstrap/BootstrapComponents/Accordions";
-import BootstrapAlerts from "@/Pages/FrontEndPages/CSSPages/CSSFrameworksPages/Bootstrap/BootstrapComponents/Alerts";
-import BootstrapButtons from "@/Pages/FrontEndPages/CSSPages/CSSFrameworksPages/Bootstrap/BootstrapComponents/Buttons";
-import BootstrapCards from "@/Pages/FrontEndPages/CSSPages/CSSFrameworksPages/Bootstrap/BootstrapComponents/Cards";
-import BootstrapCarousel from "@/Pages/FrontEndPages/CSSPages/CSSFrameworksPages/Bootstrap/BootstrapComponents/Carousel";
-import BootstrapDropdowns from "@/Pages/FrontEndPages/CSSPages/CSSFrameworksPages/Bootstrap/BootstrapComponents/Dropdowns";
-import BootstrapModals from "@/Pages/FrontEndPages/CSSPages/CSSFrameworksPages/Bootstrap/BootstrapComponents/Modals";
-import BootstrapTooltips from "@/Pages/FrontEndPages/CSSPages/CSSFrameworksPages/Bootstrap/BootstrapComponents/Tooltips";
-// Bootstrap Components End
-
-// CSS Bootstrap End
-
-// CSS Frameworks End
-
-// CSS Preprocessors Start
-
-// LESS Start
-import LESS from "@/Pages/FrontEndPages/CSSPages/CSSPreprocessorsPages/LESSPages/LESS";
-// import LESSCode from "@/pages/CSSPages/LESSCode";
-// LESS End
-
-// Sass Start
-
-// Getting Started Start
-import SassIntro from "@/Pages/FrontEndPages/CSSPages/CSSPreprocessorsPages/SassPages/GettingStarted/SassIntro";
-import SassVariables from "@/Pages/FrontEndPages/CSSPages/CSSPreprocessorsPages/SassPages/GettingStarted/SassVariables";
-import MixinsAndFunctions from "@/Pages/FrontEndPages/CSSPages/CSSPreprocessorsPages/SassPages/GettingStarted/SassMixinsAndFuctions";
-// Getting Started End
-
-// Advanced Concepts Start
-import PartialsAndImports from "@/Pages/FrontEndPages/CSSPages/CSSPreprocessorsPages/SassPages/Advanced/PartialsAndImports";
-import ExtendAndPlaceholders from "@/Pages/FrontEndPages/CSSPages/CSSPreprocessorsPages/SassPages/Advanced/ExtendAndPlaceholders";
-// Advanced Concepts End
-// Sass End
+// ========================================================
+//                         CI/CD Ops End
+// ========================================================
 
 
-// CSS Preprocessors End
+// ========================================================
+//                    Cypress Testing Start
+// ========================================================
 
-// CSS Postprocessors Start
-import WhatArePost from "@/Pages/FrontEndPages/CSSPages/CSSPostprocessorsPages/PostCSS";
-// import PostCSSCode from "@/pages/CSSPages/PostCSSCode";
-
-// CSS Preprocessors End
-
-// CSS Vanilla Start
-import CSSIntro from "@/Pages/FrontEndPages/CSSPages/CSSVanillaPages/CSSBasics/CSSIntro";
-import CSSSelectors from "@/Pages/FrontEndPages/CSSPages/CSSVanillaPages/CSSBasics/CSSSelectors";
-import CSSBoxModel from "@/Pages/FrontEndPages/CSSPages/CSSVanillaPages/CSSBasics/CSSBoxModel";
-import CSSPositioning from "@/Pages/FrontEndPages/CSSPages/CSSVanillaPages/CSSBasics/CSSPositioning";
-// CSS Vanilla End
-
-// CSS Layouts Start
-import CSSFlexbox from "@/Pages/FrontEndPages/CSSPages/CSSVanillaPages/CSSLayout/CSSFlexbox";
-import CSSGrid from "@/Pages/FrontEndPages/CSSPages/CSSVanillaPages/CSSLayout/CSSGrid";
-// CSS Layouts End
-
-// CSS Advanced Start
-import Animations from "@/Pages/FrontEndPages/CSSPages/CSSVanillaPages/CSSAdvancedPages/Animations";
-import MediaQueries from "@/Pages/FrontEndPages/CSSPages/CSSVanillaPages/CSSAdvancedPages/MediaQueries";
-import Transform from "@/Pages/FrontEndPages/CSSPages/CSSVanillaPages/CSSAdvancedPages/Transform";
-import Transitions from "@/Pages/FrontEndPages/CSSPages/CSSVanillaPages/CSSAdvancedPages/Transition";
-import CSSVariables from "@/Pages/FrontEndPages/CSSPages/CSSVanillaPages/CSSAdvancedPages/CSSVariables";
-// CSS Advanced End
-
-// CSS Vanilla End
-
-// CSS End
-
-// Cypress Testing
 import Cypress from "@/Pages/TestingPages/CypressTesting";
 // import CypressCode from "@/pages/TestingPages/CypressTestingCode";
 
-// Git
+// ========================================================
+//                     Cypress Testing End
+// ========================================================
+
+
+// ========================================================
+//                          Git Notes Start
+// ========================================================
+
 import Git from "@/Pages/ToolsPages/GitPages/Git";
 // import GitCode from "@/pages/GitPages/GitCode";
 
-// HTML Notes Start
+// ========================================================
+//                           Git Notes End
+// ========================================================
 
-// HTML Basics Start
-import HTML from "@/Pages/FrontEndPages/HTMLPages/HTMLBasics/HTMLIntro";
-import HTMLELements from "@/Pages/FrontEndPages/HTMLPages/HTMLBasics/HTMLElements";
-import HTMLAttributes from "@/Pages/FrontEndPages/HTMLPages/HTMLBasics/HTMLAttributes";
-import HTMLForms from "@/Pages/FrontEndPages/HTMLPages/HTMLBasics/HTMLForms";
-import HTMLSemantics from "@/Pages/FrontEndPages/HTMLPages/HTMLBasics/HTMLSemantics";
-// HTML Basics End
+// ========================================================
+//                      Markdown Notes Start
+// ========================================================
 
-// HTML Notes End
-
-// JavaScript
-
-// Basics Start
-
-// Introduction Start
-
-import JSOverview from "@/Pages/FrontEndPages/JavaScriptPages/Basics/Introduction/JSOverview";
-import JSHistory from "@/Pages/FrontEndPages/JavaScriptPages/Basics/Introduction/JSHistory";
-
-// Introduction End
-
-// ========================================
-//      Core Language Concepts Start
-// =========================================
-import SyntaxStructure from "@/Pages/FrontEndPages/JavaScriptPages/Basics/CoreConcepts/SyntaxAndStructure";
-import DataTypes from "@/Pages/FrontEndPages/JavaScriptPages/Basics/CoreConcepts/DataTypes";
-import JSVariables from "@/Pages/FrontEndPages/JavaScriptPages/Basics/CoreConcepts/Variables";
-import Operators from "@/Pages/FrontEndPages/JavaScriptPages/Basics/CoreConcepts/Operators";
-// ========================================
-//      Core Language Concepts End
-// =========================================
-
-// Markdown
 import Markdown from "@/Pages/FrontEndPages/MarkdownPages/Markdown";
 // import MarkdownCode from "@/pages/MarkdownPages/MarkdownCode";
 
-// MERN and Auth
+// ========================================================
+//                       Markdown Notes End
+// ========================================================
+
+
+// ========================================================
+//                   MERN and Auth Notes Start
+// ========================================================
+
 import MernAndAuth from "@/Pages/BackEndPages/FrameworksPages/MERNAuthPages/MernAndAuth";
 // import MernAndAuthCode from "@/pages/MERNAuthPages/MernAndAuthCode";
 
-// MongoDB
+// ========================================================
+//                    MERN and Auth Notes End
+// ========================================================
+
+
+// ========================================================
+//                     MongoDB Notes Start
+// ========================================================
+
 import MongoDB from "@/Pages/BackEndPages/DatabasesPages/MongoDBPages/MongoDB";
 // import MongoDBCode from "@/pages/MongoDBPages/MongoDBCode";
 
-// Node.js
+// ========================================================
+//                      MongoDB Notes End
+// ========================================================
+
+
+// ========================================================
+//                      Node.js Notes Start
+// ========================================================
+
 import Node from "@/Pages/BackEndPages/FrameworksPages/NodePages/Node";
 // import NodeCode from "@/pages/NodePages/NodeCode";
 
-// PostgreSQL
+// ========================================================
+//                       Node.js Notes End
+// ========================================================
+
+
+// ========================================================
+//                    PostgreSQL Notes Start
+// ========================================================
+
 import PostgreSQL from "@/Pages/BackEndPages/DatabasesPages/PostgreSQLPages/PostgreSQL";
 // import PostgreSQLCode from "@/pages/PostgreSQLPages/PostgreSQLCode";
 
-// Python
+// ========================================================
+//                     PostgreSQL Notes End
+// ========================================================
+
+
+// ========================================================
+//                      Python Notes Start
+// ========================================================
+
 import Python from "@/Pages/ProgrammingLanguagesPages/PythonPages/Python";
 // import PythonCode from "@/pages/PythonPages/PythonCode";
 
-// React and Related Frameworks
+// ========================================================
+//                       Python Notes End
+// ========================================================
+
+// ========================================================
+//              React and Related Frameworks Start
+// ========================================================
+
 import React from "@/Pages/FrontEndPages/ReactPages/ReactBasics/IntroAndSetup";
 // import ReactCode from "@/pages/ReactPages/ReactCode";
+
 import ReactAndTypeScript from "@/Pages/FrontEndPages/ReactPages/ReactAndTypeScript/ReactAndTypeScript";
 // import ReactAndTypeScriptCode from "@/pages/ReactPages/ReactAndTypeScriptCode";
+
 import ReactFullStack from "@/Pages/FrontEndPages/ReactPages/ReactFullStack/ReactFullStack";
 // import ReactFullStackCode from "@/pages/ReactPages/ReactFullStackCode";
+
 import ReactNative from "@/Pages/FrontEndPages/ReactPages/ReactNative/ReactNative";
 // import ReactNativeCode from "@/pages/ReactPages/ReactNativeCode";
 
-// Redux
+// ========================================================
+//               React and Related Frameworks End
+// ========================================================
+
+
+// ========================================================
+//                        Redux Notes Start
+// ========================================================
+
 import Redux from "@/Pages/FrontEndPages/ReduxPages/Redux";
 // import ReduxCode from "@/pages/ReduxPages/ReduxCode";
 
-// Servers
+// ========================================================
+//                         Redux Notes End
+// ========================================================
+
+
+// ========================================================
+//                       Servers Notes Start
+// ========================================================
+
 import Servers from "@/Pages/BackEndPages/WebServersPages/ServerPages/Servers";
 // import ServerCode from "@/pages/ServerPages/ServerCode";
 
-// Testing
+// ========================================================
+//                        Servers Notes End
+// ========================================================
+
+
+// ========================================================
+//                       Testing Notes Start
+// ========================================================
+
 import Testing from "@/Pages/TestingPages/Testing";
 // import TestingCode from "@/pages/TestingPages/TestingCode";
+
 import Vitest from "@/Pages/TestingPages/VitestTesting";
 // import VitestCode from "@/pages/TestingPages/VitestTestingCode";
 
-// TypeScript
+// ========================================================
+//                        Testing Notes End
+// ========================================================
+
+
+// ========================================================
+//                     TypeScript Notes Start
+// ========================================================
+
 import TypeScript from "@/Pages/ProgrammingLanguagesPages/TypeScriptPages/TypeScript";
 // import TypeScriptCode from "@/pages/TypeScriptPages/TypeScriptCode";
 
-// Vue
+// ========================================================
+//                      TypeScript Notes End
+// ========================================================
+
+
+// ========================================================
+//                         Vue Notes Start
+// ========================================================
+
 import Vue from "@/Pages/FrontEndPages/VuePages/Vue";
 // import VueCode from "@/pages/VuePages/VueCode";
+
+// ========================================================
+//                          Vue Notes End
+// ========================================================
 
 export const router = createBrowserRouter([
 
@@ -244,51 +241,7 @@ export const router = createBrowserRouter([
                 index: true,
                 element: <Home />,
             },
-            // Angular Start
-            // Angular Basics Start
-            // Getting Started Start
-            {
-                path: '/angular/basics/gettingstarted/intro',
-                element: <AngularIntro />,
-            },
-            {
-                path: '/angular/basics/gettingstarted/creatingrunning',
-                element: <AngularAppCreate />,
-            },
-            {
-                path: '/angular/basics/gettingstarted/angularcli',
-                element: <AngularCLI />,
-            },
-            // Getting Started End
-
-            // Project Structure Start
-            {
-                path: '/angular/basics/projectstructure/folderfilestructure',
-                element: <AngularStructure />,
-            },
-            {
-                path: '/angular/basics/projectstructure/configfiles',
-                element: <AngularConfigFiles />,
-            },
-            // Project Structure End
-            // Angular Basics End
-            {
-                path: '/angular/coreconcepts/components',
-                element: <Components />,
-            },
-            {
-                path: '/angular/coreconcepts/modules',
-                element: <Modules />,
-            },
-            {
-                path: '/angular/coreconcepts/services',
-                element: <Services />,
-            },
-            {
-                path: '/angular/coreconcepts/routing',
-                element: <Routing />,
-            },
-            // Angular End
+            ...frontEndRoutes,
             {
                 path: '/apis/intro/fundamentals/overview',
                 element: <CoreConcepts />,
@@ -318,171 +271,6 @@ export const router = createBrowserRouter([
             //     element: <CICDOpsCode />,
             // },
 
-            // CSS Frameworks Start
-
-            // Bootstrap Start
-
-            // Bootstrap Getting Started Start
-            {
-                path: '/css/frameworks/bootstrap/gettingstarted/intro',
-                element: <BootstrapIntro />,
-            },
-            {
-                path: '/css/frameworks/bootstrap/gettingstarted/grid',
-                element: <BootstrapGrid />,
-            },
-            {
-                path: '/css/frameworks/bootstrap/gettingstarted/typography',
-                element: <BootstrapTypography />,
-            },
-            {
-                path: '/css/frameworks/bootstrap/gettingstarted/utilities',
-                element: <BootstrapUtilities />,
-            },
-            // Bootstrap Getting Started End
-
-            // Bootstrap Components Start
-            {
-                path: '/css/frameworks/bootstrap/components/accordions',
-                element: <BootstrapAccordions />,
-            },
-            {
-                path: '/css/frameworks/bootstrap/components/alerts',
-                element: <BootstrapAlerts />,
-            },
-            {
-                path: '/css/frameworks/bootstrap/components/buttons',
-                element: <BootstrapButtons />,
-            },
-            {
-                path: '/css/frameworks/bootstrap/components/cards',
-                element: <BootstrapCards />,
-            },
-            {
-                path: '/css/frameworks/bootstrap/components/carousel',
-                element: <BootstrapCarousel />,
-            },
-            {
-                path: '/css/frameworks/bootstrap/components/dropdowns',
-                element: <BootstrapDropdowns />,
-            },
-            {
-                path: '/css/frameworks/bootstrap/components/modals',
-                element: <BootstrapModals />,
-            },
-            {
-                path: '/css/frameworks/bootstrap/components/tooltips',
-                element: <BootstrapTooltips />,
-            },
-            // Bootstrap Components End
-
-            // Bootstrap End
-
-            // CSS Frameworks End
-
-            // CSS Preprocessors Start
-
-            // LESS Start
-            {
-                path: '/css/preprocessors/less/gettingstarted/intro',
-                element: <LESS />,
-            },
-            // {
-            //     path: '/css/preprocessors/less/syntax',
-            //     element: <LESSCode />,
-            // },
-
-            // LESS End
-
-            // Sass Start
-
-            // Getting Started Start
-            {
-                path: '/css/preprocessors/sass/gettingstarted/intro',
-                element: <SassIntro />,
-            },
-            {
-                path: '/css/preprocessors/sass/gettingstarted/variables',
-                element: <SassVariables />,
-            },
-            {
-                path: '/css/preprocessors/sass/gettingstarted/mixins',
-                element: <MixinsAndFunctions />,
-            },
-            // Getting Started End
-
-            // Advanced Concepts Start
-            {
-                path: '/css/preprocessors/sass/advanced/partials',
-                element: <PartialsAndImports />,
-            },
-            {
-                path: '/css/preprocessors/sass/advanced/extend',
-                element: <ExtendAndPlaceholders />,
-            },
-            // Advanced Concepts End
-            // Sass End
-
-            // CSS Preprocessors End
-
-            // CSS Vanilla Start
-            {
-                path: '/css/vanillacss/basics/intro',
-                element: <CSSIntro />,
-            },
-            {
-                path: '/css/vanillacss/basics/selectors',
-                element: <CSSSelectors />,
-            },
-            {
-                path: '/css/vanillacss/basics/boxmodel',
-                element: <CSSBoxModel />,
-            },
-            {
-                path: '/css/vanillacss/basics/positioning',
-                element: <CSSPositioning />,
-            },
-            {
-                path: '/css/vanillacss/layouts/flexbox',
-                element: <CSSFlexbox />,
-            },
-            {
-                path: '/css/vanillacss/layouts/grid',
-                element: <CSSGrid />,
-            },
-            {
-                path: '/css/vanillacss/advanced/animations',
-                element: <Animations />,
-            },
-            {
-                path: '/css/vanillacss/advanced/mediaqueries',
-                element: <MediaQueries />,
-            },
-
-            {
-                path: '/css/vanillacss/advanced/transforms',
-                element: <Transform />,
-            },
-            {
-                path: '/css/vanillacss/advanced/transitionsandanimations',
-                element: <Transitions />,
-            },
-            {
-                path: '/css/vanillacss/advanced/variables',
-                element: <CSSVariables />,
-            },
-
-            // CSS Vanilla End
-
-            // CSS End
-            {
-                path: '/css/postprocessors/overview/whatarepostprocessors',
-                element: <WhatArePost />,
-            },
-            // {
-            //     path: '/css/postcss/postcsscode',
-            //     element: <PostCSSCode />,
-            // },
             {
                 path: '/git',
                 element: <Git />,
@@ -499,58 +287,6 @@ export const router = createBrowserRouter([
             //     path: '/graphql/graphqlcode',
             //     element: <GraphQLCode />,
             // },
-            {
-                path: '/html/basics/introduction',
-                element: <HTML />,
-            },
-            {
-                path: '/html/basics/elements',
-                element: <HTMLELements />,
-            },
-            {
-                path: '/html/basics/attributes',
-                element: <HTMLAttributes />,
-            },
-            {
-                path: '/html/basics/forms',
-                element: <HTMLForms />,
-            },
-            {
-                path: '/html/basics/semantic',
-                element: <HTMLSemantics />,
-            },
-
-            // JavaScript Start
-            // Basics Start
-            // Introduction Start
-            {
-                path: '/javascript/basics/intro/overview',
-                element: <JSOverview />,
-            },
-            {
-                path: '/javascript/basics/intro/history',
-                element: <JSHistory />,
-            },
-            // Introduction End
-
-            // Core Language Concepts Start
-            {
-                path: '/javascript/basics/core/syntax',
-                element: <SyntaxStructure />,
-            },
-            {
-                path: '/javascript/basics/core/datatypes',
-                element: <DataTypes />,
-            },
-            {
-                path: '/javascript/basics/core/variables',
-                element: <JSVariables />,
-            },
-            {
-                path: '/javascript/basics/core/operators',
-                element: <Operators />,
-            },
-            // Core Language Concepts End
 
             {
                 path: '/markdown',
