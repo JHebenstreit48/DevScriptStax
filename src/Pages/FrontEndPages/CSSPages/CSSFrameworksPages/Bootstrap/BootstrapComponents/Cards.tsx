@@ -1,5 +1,5 @@
-import Header from "@/Components/Header";
-import Notes from "@/Components/Notes/NotesRender";
+import Header from "@/Components/PageComponents/Header";
+import Notes from "@/Components/PageComponents/Notes/NotesRender";
 
 const BootstrapCards = () => {
     const markdownFilePath = '/FrontEndNotes/CSSNotes/Frameworks/BootstrapComponents/Cards.md';

@@ -1,5 +1,5 @@
-import Header from "@/Components/Header";
-import Notes from "@/Components/Notes/NotesRender";
+import Header from "@/Components/PageComponents/Header";
+import Notes from "@/Components/PageComponents/Notes/NotesRender";
 
 const PartialsAndImports = () => {
     const markdownFilePath = '/FrontEndNotes/CSSNotes/Preprocessors/SassNotes/Advanced/PartialsAndImports.md';

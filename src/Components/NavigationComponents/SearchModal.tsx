@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom";
 import { Link } from "react-router-dom";
-import "@/SCSS/SearchModal.scss";
+import "@/SCSS/SharedStyles/NavigationStyles/SearchModal.scss";
 
 interface SearchModalProps {
   searchTerm: string;
@@ -37,7 +37,8 @@ const SearchModal: React.FC<SearchModalProps> = ({
       }, 300);
       return () => clearTimeout(delay);
     }
-  }, [inputValue, searchMode]);
+  }, [inputValue, searchMode, onSearch]);
+  
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setInputValue(e.target.value);
