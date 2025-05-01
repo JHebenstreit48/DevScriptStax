@@ -4,27 +4,8 @@ import App from "@/App";
 import ErrorPage from "@/Pages/ErrorHomeSplash/Error";
 import Home from "@/Pages/ErrorHomeSplash/Home";
 
-// ========================================================
-//                    Front End Routes Start
-// ========================================================
-import frontEndRoutes from "@/routes/frontEndRoutes";
+import frontEndRoutes from "@/routes/RoutesDirectories/frontEndRoutes";
 
-// ========================================================
-//                      API Pages Start
-// ========================================================
-
-// ---------- API Introduction Start ----------
-import CoreConcepts from "@/Pages/BackEndPages/APIPages/APIFundamentals/CoreAPIConcepts";
-// ---------- API Introduction End ----------
-
-// ---------- Types of APIs Start ----------
-import PublicVPrivate from "@/Pages/BackEndPages/APIPages/TypesOfAPIs/PubVSPrivate";
-import RESTVSGraphQLVSSOAP from "@/Pages/BackEndPages/APIPages/TypesOfAPIs/RestVSGraphVSSOAP";
-// ---------- Types of APIs End ----------
-
-// ========================================================
-//                       API Pages End
-// ========================================================
 
 // ========================================================
 //               GraphQL and Apollo Pages Start
@@ -242,18 +223,7 @@ export const router = createBrowserRouter([
                 element: <Home />,
             },
             ...frontEndRoutes,
-            {
-                path: '/apis/intro/fundamentals/overview',
-                element: <CoreConcepts />,
-            },
-            {
-                path: '/apis/intro/types/publicvsprivate',
-                element: <PublicVPrivate />,
-            },
-            {
-                path: '/apis/intro/types/comparison',
-                element: <RESTVSGraphQLVSSOAP />,
-            },
+            
             {
                 path: '/apolloserver',
                 element: <ApolloServer />,
