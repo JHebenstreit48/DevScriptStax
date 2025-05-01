@@ -1,5 +1,5 @@
-import Notes from "@/Components/Notes/NotesRender";
-import Header from "@/Components/Header";
+import Notes from "@/Components/PageComponents/Notes/NotesRender";
+import Header from "@/Components/PageComponents/Header";
 
 const DataTypes = () => {
     const markdownFilePath = "/FrontEndNotes/JavaScriptNotes/Basics/CoreLanguageConcepts/DataTypes.md";

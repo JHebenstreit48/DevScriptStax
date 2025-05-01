@@ -1,5 +1,5 @@
-import Header from "@/Components/Header";
-import '@/SCSS/HomeErrorPage/Home.scss';
+import Header from "@/Components/PageComponents/Header";
+import '@/SCSS/PageStyles/Home.scss';
 
 const Home = () => {
 

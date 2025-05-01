@@ -1,13 +1,13 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import { Link } from "react-router-dom";
 import pages from "@/Navigation/Pages";
 import { Subpage } from "@/Navigation/NavigationTypes";
-import SearchIcon from "@/Components/Navigation/SearchIcon";
-import SearchModal from "@/Components/Navigation/SearchModal";
+import SearchIcon from "@/Components/NavigationComponents/SearchIcon";
+import SearchModal from "@/Components/NavigationComponents/SearchModal";
 
 const Navigation = () => {
   const [activeDropdown, setActiveDropdown] = useState<Set<string>>(new Set());
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // NEW STATE
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
   const [searchResults, setSearchResults] = useState<
     { name: string; path: string; breadcrumbs: string[] }[]
@@ -30,11 +30,54 @@ const Navigation = () => {
     localStorage.setItem("searchMode", searchMode);
   }, [searchMode]);
 
+  const searchSubpages = useCallback(
+    (
+      subpages: Subpage[],
+      term: string,
+      breadcrumbs: string[] = []
+    ): { name: string; path: string; breadcrumbs: string[] }[] => {
+      const lowerTerm = term.toLowerCase().trim();
+
+      return subpages.flatMap((sp) => {
+        const currentTrail = [...breadcrumbs, sp.name];
+        const matches =
+          sp.name.toLowerCase().includes(lowerTerm) && sp.path !== undefined;
+
+        const childMatches = sp.subpages
+          ? searchSubpages(sp.subpages, term, currentTrail)
+          : [];
+
+        return [
+          ...(matches && sp.path
+            ? [{ name: sp.name, path: sp.path, breadcrumbs }]
+            : []),
+          ...childMatches,
+        ];
+      });
+    },
+    []
+  );
+
+  const performSearch = useCallback(
+    (value: string) => {
+      const results: { name: string; path: string; breadcrumbs: string[] }[] = [];
+
+      pages.forEach((page) => {
+        results.push(...searchSubpages(page.subpages, value, [page.name]));
+      });
+
+      setSearchResults(results);
+      localStorage.setItem("lastSearchTerm", value);
+      localStorage.setItem("lastSearchResults", JSON.stringify(results));
+    },
+    [searchSubpages]
+  );
+
   useEffect(() => {
     if (searchMode === "instant" && searchTerm.trim()) {
       performSearch(searchTerm);
     }
-  }, [searchTerm, searchMode]);
+  }, [searchTerm, searchMode, performSearch]);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -49,55 +92,25 @@ const Navigation = () => {
   const toggleDropdown = (key: string) => {
     setActiveDropdown((prev) => {
       const updated = new Set(prev);
-      updated.has(key) ? updated.delete(key) : updated.add(key);
+      if (updated.has(key)) {
+        updated.delete(key);
+      } else {
+        updated.add(key);
+      }
       return updated;
     });
   };
 
-  const toggleMenu = () => setIsMenuOpen((prev) => !prev); // NEW TOGGLE
+  const toggleMenu = () => setIsMenuOpen((prev) => !prev);
 
-  const searchSubpages = (
+  const renderSubpages = (
     subpages: Subpage[],
-    term: string,
-    breadcrumbs: string[] = []
-  ): { name: string; path: string; breadcrumbs: string[] }[] => {
-    const lowerTerm = term.toLowerCase().trim();
-
-    return subpages.flatMap((sp) => {
-      const currentTrail = [...breadcrumbs, sp.name];
-      const matches =
-        sp.name.toLowerCase().includes(lowerTerm) && sp.path !== undefined;
-
-      const childMatches = sp.subpages
-        ? searchSubpages(sp.subpages, term, currentTrail)
-        : [];
-
-      return [
-        ...(matches && sp.path
-          ? [{ name: sp.name, path: sp.path, breadcrumbs }]
-          : []),
-        ...childMatches,
-      ];
-    });
-  };
-
-  const performSearch = (value: string) => {
-    const results: { name: string; path: string; breadcrumbs: string[] }[] = [];
-
-    pages.forEach((page) => {
-      results.push(...searchSubpages(page.subpages, value, [page.name]));
-    });
-
-    setSearchResults(results);
-    localStorage.setItem("lastSearchTerm", value);
-    localStorage.setItem("lastSearchResults", JSON.stringify(results));
-  };
-
-  const renderSubpages = (subpages: Subpage[], parentKey: string, level = 1): React.ReactNode[] => {
+    parentKey: string,
+    level = 1
+  ): React.ReactNode[] => {
     return subpages.map((sp, index) => {
       const key = `${parentKey}-${index}`;
       const isActive = activeDropdown.has(key);
-      const hasChildren = sp.subpages && sp.subpages.length > 0;
 
       return (
         <div key={key} className={`dropdownItem level-${level}`}>
@@ -108,7 +121,9 @@ const Navigation = () => {
           ) : (
             <>
               <div
-                className={`dropdownButton level-${level} ${isActive ? "active" : ""}`}
+                className={`dropdownButton level-${level} ${
+                  isActive ? "active" : ""
+                }`}
                 onClick={() => toggleDropdown(key)}
               >
                 {sp.name}
@@ -163,7 +178,9 @@ const Navigation = () => {
                 ) : (
                   <>
                     <button
-                      className={`dropdownButton level-1 ${isActive ? "active" : ""}`}
+                      className={`dropdownButton level-1 ${
+                        isActive ? "active" : ""
+                      }`}
                       onClick={() => toggleDropdown(pageKey)}
                     >
                       {page.name}
