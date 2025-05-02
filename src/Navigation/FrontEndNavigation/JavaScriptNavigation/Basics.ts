@@ -38,7 +38,7 @@ const JavaScriptBasicsNavigation: Subpage = {
       ]
     },
     {
-      name: "Arrays and Array Methods",
+      name: "Arrays",
       subpages: [
         {
           name: "Introduction to Arrays",
@@ -47,6 +47,10 @@ const JavaScriptBasicsNavigation: Subpage = {
         {
           name: "Common Array Methods",
           path: "/javascript/basics/arrays/methods"
+        },
+        {
+          name: "Advanced Array Techniques", // reduce, sort, slice, etc.
+          path: "/javascript/basics/arrays/advanced"
         }
       ]
     },
@@ -60,6 +64,10 @@ const JavaScriptBasicsNavigation: Subpage = {
         {
           name: "Object Properties and Methods",
           path: "/javascript/basics/objects/propertiesmethods"
+        },
+        {
+          name: "Object Utilities and Patterns", // ← NEW
+          path: "/javascript/basics/objects/utilities"
         },
         {
           name: "Working with JSON",
