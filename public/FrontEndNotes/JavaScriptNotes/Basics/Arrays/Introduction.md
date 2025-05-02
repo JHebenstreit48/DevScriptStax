@@ -1,4 +1,4 @@
-## Arrays and Array Methods
+## Arrays
 
 ---
 
@@ -12,165 +12,97 @@ Each item in an array is known as an <span class="secondEmphasis">element</span>
 
 ---
 
+### Array Characteristics
+
+- JavaScript arrays are dynamic — they can grow or shrink during runtime.
+- Arrays are zero-indexed (the first element is at position <span class="codeSnip">0</span>).
+- They can contain elements of any type, including other arrays and objects.
+
+---
+
 ### Creating an Array
 
-let colors = ["red", "green", "blue"];
-let numbers = [1, 2, 3, 4];
-let mixed = [42, "hello", true, null];
+```javascript  
+let empty = [];  
+let colors = ["red", "green", "blue"];  
+let numbers = [1, 2, 3];  
+let mixed = [true, "hello", 42, null];  
+let fruits = new Array("apple", "banana", "cherry");
+```
+
+⚠️ Prefer array literals ([] syntax) for clarity and reliability.
 
 ---
 
-### Accessing and Modifying Elements
+### Accessing Elements
 
-let fruits = ["apple", "banana", "cherry"];
+Use bracket notation with the index to access elements:
 
-console.log(fruits[0]);  // "apple"
-fruits[1] = "mango";     // Replaces "banana" with "mango"
-console.log(fruits);     // ["apple", "mango", "cherry"]
+```javascript  
+let animals = ["dog", "cat", "bird"];  
+console.log(animals[0]); // "dog"  
+console.log(animals[2]); // "bird"  
+```
 
----
+You can also modify values at a specific index:
 
-### Common Array Methods
-
-#### <span class="codeSnip">.push()</span>
-Adds one or more elements to the end of the array.
-
-let colors = ["red", "green"];
-colors.push("blue");
-console.log(colors); // ["red", "green", "blue"]
+```javascript  
+animals[1] = "rabbit";  
+console.log(animals); // ["dog", "rabbit", "bird"]
+```
 
 ---
 
-#### <span class="codeSnip">.pop()</span>
-Removes the last element of the array and returns it.
+### Array Length
 
-let numbers = [1, 2, 3];
-let last = numbers.pop();
-console.log(last);    // 3
-console.log(numbers); // [1, 2]
+The <span class="codeSnip">length</span> property shows how many elements the array contains:
 
----
+```javascript  
+let nums = [10, 20, 30];  
+console.log(nums.length); // 3  
+```
 
-#### <span class="codeSnip">.shift()</span> and <span class="codeSnip">.unshift()</span>
-- <span class="codeSnip">.shift()</span> removes the first element.  
-- <span class="codeSnip">.unshift()</span> adds elements to the beginning.
+You can also use it to truncate an array:
 
-let names = ["Alice", "Bob"];
-names.shift();         // Removes "Alice"
-names.unshift("Zara"); // Adds "Zara" to the start
-console.log(names);    // ["Zara", "Bob"]
+```javascript  
+nums.length = 1;  
+console.log(nums); // [10]
+```
 
 ---
 
-#### <span class="codeSnip">.includes()</span>
-Checks if the array contains a specific value.
+### Arrays with Holes
 
-let pets = ["dog", "cat", "rabbit"];
-console.log(pets.includes("cat"));  // true
-console.log(pets.includes("bird")); // false
+JavaScript allows sparse arrays:
 
----
+```javascript  
+let sparse = [];  
+sparse[3] = "hi";  
+console.log(sparse); // [empty × 3, "hi"]  
+console.log(sparse.length); // 4  
+```
 
-### Functional Array Methods
-
-These methods take a <span class="emphasis">callback function</span> and apply it to each element:
-
----
-
-#### <span class="codeSnip">.forEach()</span>
-Runs a function on every element of the array.
-
-let nums = [1, 2, 3];
-nums.forEach((n) => {
-  console.log(n * 2); // 2, 4, 6
-});
+⚠️ Not recommended for most use cases — use dense arrays unless sparse data is intentional.
 
 ---
 
-#### <span class="codeSnip">.map()</span>
-Creates a new array by applying a function to each element.
+### typeof and Array Check
 
-let nums = [1, 2, 3];
-let doubled = nums.map(n => n * 2);
-console.log(doubled); // [2, 4, 6]
+The <span class="codeSnip">typeof</span> operator returns <span class="codeSnip">"object"</span> for arrays, so use <span class="codeSnip">Array.isArray()</span> to check:
 
----
-
-#### <span class="codeSnip">.filter()</span>
-Returns a new array with elements that pass a test.
-
-let nums = [1, 2, 3, 4, 5];
-let even = nums.filter(n => n % 2 === 0);
-console.log(even); // [2, 4]
+```javascript  
+let list = ["a", "b"];  
+console.log(typeof list);         // "object"  
+console.log(Array.isArray(list)); // true
+```
 
 ---
 
-#### <span class="codeSnip">.find()</span>
-Returns the first element that matches a condition.
+### Summary
 
-let people = ["Adam", "Eve", "Zoe"];
-let match = people.find(name => name.startsWith("Z"));
-console.log(match); // "Zoe"
-
----
-
-### Summary Table: Common Array Methods
-
-<table class="notesTable">
-  <thead>
-    <tr class="tableHeader">
-      <th class="tableCellHeader">Method</th>
-      <th class="tableCellHeader">Purpose</th>
-      <th class="tableCellHeader">Returns</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr class="tableRow">
-      <td class="tableCell"><span class="codeSnip">push()</span></td>
-      <td class="tableCell">Adds item(s) to the end</td>
-      <td class="tableCell">New length of array</td>
-    </tr>
-    <tr class="tableRow">
-      <td class="tableCell"><span class="codeSnip">pop()</span></td>
-      <td class="tableCell">Removes last item</td>
-      <td class="tableCell">Removed item</td>
-    </tr>
-    <tr class="tableRow">
-      <td class="tableCell"><span class="codeSnip">shift()</span></td>
-      <td class="tableCell">Removes first item</td>
-      <td class="tableCell">Removed item</td>
-    </tr>
-    <tr class="tableRow">
-      <td class="tableCell"><span class="codeSnip">unshift()</span></td>
-      <td class="tableCell">Adds item(s) to the beginning</td>
-      <td class="tableCell">New length of array</td>
-    </tr>
-    <tr class="tableRow">
-      <td class="tableCell"><span class="codeSnip">includes()</span></td>
-      <td class="tableCell">Checks if value exists</td>
-      <td class="tableCell">Boolean</td>
-    </tr>
-    <tr class="tableRow">
-      <td class="tableCell"><span class="codeSnip">forEach()</span></td>
-      <td class="tableCell">Runs function on each item</td>
-      <td class="tableCell">undefined</td>
-    </tr>
-    <tr class="tableRow">
-      <td class="tableCell"><span class="codeSnip">map()</span></td>
-      <td class="tableCell">Transforms each item</td>
-      <td class="tableCell">New array</td>
-    </tr>
-    <tr class="tableRow">
-      <td class="tableCell"><span class="codeSnip">filter()</span></td>
-      <td class="tableCell">Filters items based on test</td>
-      <td class="tableCell">New array</td>
-    </tr>
-    <tr class="tableRow">
-      <td class="tableCell"><span class="codeSnip">find()</span></td>
-      <td class="tableCell">Finds first match</td>
-      <td class="tableCell">Single item or <span class="codeSnip">undefined</span></td>
-    </tr>
-  </tbody>
-</table>
+✅ Arrays are flexible, ordered collections indexed from zero.  
+✅ You can store any type of data — even other arrays.  
+✅ Use bracket notation to access or change elements.  
+✅ Use <span class="codeSnip">Array.isArray()</span> to reliably test if a value is an array.
 
 ---
