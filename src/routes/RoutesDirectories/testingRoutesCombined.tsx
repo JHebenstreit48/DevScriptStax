@@ -1,6 +1,6 @@
 import { RouteObject } from 'react-router-dom';
 
-import endToEndTestingRoutes from '@/routes/RoutesDirectories/TestingRoutes/endToEndTesting';
+import endToEndTestingRoutes from '@/routes/Testing/TestingCombined/endToEndTesting';
 
 const testingRoutes: RouteObject[] = [
 ...endToEndTestingRoutes

@@ -4,45 +4,12 @@ import App from "@/App";
 import ErrorPage from "@/Pages/ErrorHomeSplash/Error";
 import Home from "@/Pages/ErrorHomeSplash/Home";
 
-import frontEndRoutes from "@/routes/RoutesDirectories/frontEndRoutes";
 import backEndRoutes from "@/routes/RoutesDirectories/backEndRoutesCombined";
-import toolRoutes from "@/routes/RoutesDirectories/toolsRoutes";
-import testingRoutes from "./RoutesDirectories/testingRoutesCombined";
+import frontEndRoutes from "@/routes/RoutesDirectories/frontEndRoutes";
 import graphqlAndApolloRoutes from "@/routes/RoutesDirectories/graphqlAndApolloRoutes";
-
-// ========================================================
-//                        CI/CD Ops Start
-// ========================================================
-
-import CICDOps from "@/Pages/ToolsPages/CICDOpsPages/CICDOps";
-// import CICDOpsCode from "@/pages/CICDOpsPages/CICDOpsCode";
-
-// ========================================================
-//                         CI/CD Ops End
-// ========================================================
-
-// ========================================================
-//                   MERN and Auth Notes Start
-// ========================================================
-
-import MernAndAuth from "@/Pages/BackEndPages/FrameworksPages/MERNAuthPages/MernAndAuth";
-// import MernAndAuthCode from "@/pages/MERNAuthPages/MernAndAuthCode";
-
-// ========================================================
-//                    MERN and Auth Notes End
-// ========================================================
-
-// ========================================================
-//                      Node.js Notes Start
-// ========================================================
-
-import Node from "@/Pages/BackEndPages/FrameworksPages/NodePages/Node";
-// import NodeCode from "@/pages/NodePages/NodeCode";
-
-// ========================================================
-//                       Node.js Notes End
-// ========================================================
-
+import programmingLanguagesRoutes from "@/routes/RoutesDirectories/programmingLanguagesRoutes";
+import testingRoutes from "@/routes/RoutesDirectories/testingRoutesCombined";
+import toolRoutes from "@/routes/RoutesDirectories/toolsRoutesCombined";
 
 // ========================================================
 //                    PostgreSQL Notes Start
@@ -66,18 +33,6 @@ import Python from "@/Pages/ProgrammingLanguagesPages/PythonPages/Python";
 // ========================================================
 //                       Python Notes End
 // ========================================================
-
-// ========================================================
-//                        Redux Notes Start
-// ========================================================
-
-import Redux from "@/Pages/FrontEndPages/ReduxPages/Redux";
-// import ReduxCode from "@/pages/ReduxPages/ReduxCode";
-
-// ========================================================
-//                         Redux Notes End
-// ========================================================
-
 
 // ========================================================
 //                       Servers Notes Start
@@ -117,20 +72,6 @@ import TypeScript from "@/Pages/ProgrammingLanguagesPages/TypeScriptPages/TypeSc
 //                      TypeScript Notes End
 // ========================================================
 
-
-// ========================================================
-//                         Vue Notes Start
-// ========================================================
-
-import Vue from "@/Pages/FrontEndPages/VuePages/Vue";
-
-
-// import VueCode from "@/pages/VuePages/VueCode";
-
-// ========================================================
-//                          Vue Notes End
-// ========================================================
-
 export const router = createBrowserRouter([
 
     {
@@ -142,40 +83,13 @@ export const router = createBrowserRouter([
                 index: true,
                 element: <Home />,
             },
-            ...frontEndRoutes,
             ...backEndRoutes,
-            ...toolRoutes,
-            ...testingRoutes,
+            ...frontEndRoutes,
             ...graphqlAndApolloRoutes,
-            
-            
-            {
-                path: '/cicdops',
-                element: <CICDOps />,
-            },
-            // {
-            //     path: '/cicdops/cicdopscode',
-            //     element: <CICDOpsCode />,
-            // },
+            ...programmingLanguagesRoutes,
+            ...testingRoutes,
+            ...toolRoutes,
 
-
-            {
-                path: '/mern',
-                element: <MernAndAuth />,
-            },
-            // {
-            //     path: '/mern/merncode',
-            //     element: <MernAndAuthCode />,
-            // },
-
-            {
-                path: '/node',
-                element: <Node />,
-            },
-            // {
-            //     path: '/node/nodecode',
-            //     element: <NodeCode />,
-            // },
             {
                 path: '/postgresql',
                 element: <PostgreSQL />,
@@ -192,15 +106,7 @@ export const router = createBrowserRouter([
             //     path: '/python/pythoncode',
             //     element: <PythonCode />,
             // },
-           
-            {
-                path: '/redux',
-                element: <Redux />,
-            },
-            // {
-            //     path: '/redux/reduxcode',
-            //     element: <ReduxCode />,
-            // },
+
             {
                 path: '/servers',
                 element: <Servers />,
@@ -234,14 +140,7 @@ export const router = createBrowserRouter([
             //     path: '/typescript/typescriptcode',
             //     element: <TypeScriptCode />,
             // },
-            {
-                path: '/vue',
-                element: <Vue />,
-            },
-            // {
-            //     path: '/vue/vuecode',
-            //     element: <VueCode />,
-            // },
+
         ],
     },
 ]);    
