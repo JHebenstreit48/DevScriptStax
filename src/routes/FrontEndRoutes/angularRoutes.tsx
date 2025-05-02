@@ -1,9 +1,5 @@
 import { RouteObject } from "react-router-dom";
 
-// ========================================================
-//                    Angular Notes Start
-// ========================================================
-
 // ---------------------- Angular Basics Start ----------------------
 
 // ----------- Angular Getting Started Start ------------

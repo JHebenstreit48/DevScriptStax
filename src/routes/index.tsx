@@ -5,22 +5,10 @@ import ErrorPage from "@/Pages/ErrorHomeSplash/Error";
 import Home from "@/Pages/ErrorHomeSplash/Home";
 
 import frontEndRoutes from "@/routes/RoutesDirectories/frontEndRoutes";
-
-
-// ========================================================
-//               GraphQL and Apollo Pages Start
-// ========================================================
-
-import ApolloServer from "@/Pages/GraphQLAndApolloPages/ApolloServerPages/ApolloServer";
-// import ApolloServerCode from "@/pages/ApolloServerPages/ApolloServerCode";
-
-import GraphQL from "@/Pages/GraphQLAndApolloPages/GraphQLPages/GraphQL";
-// import GraphQLCode from "@/pages/GraphQLPages/GraphQLCode";
-
-// ========================================================
-//                GraphQL and Apollo Pages End
-// ========================================================
-
+import backEndRoutes from "@/routes/RoutesDirectories/backEndRoutesCombined";
+import toolRoutes from "@/routes/RoutesDirectories/toolsRoutes";
+import testingRoutes from "./RoutesDirectories/testingRoutesCombined";
+import graphqlAndApolloRoutes from "@/routes/RoutesDirectories/graphqlAndApolloRoutes";
 
 // ========================================================
 //                        CI/CD Ops Start
@@ -33,42 +21,6 @@ import CICDOps from "@/Pages/ToolsPages/CICDOpsPages/CICDOps";
 //                         CI/CD Ops End
 // ========================================================
 
-
-// ========================================================
-//                    Cypress Testing Start
-// ========================================================
-
-import Cypress from "@/Pages/TestingPages/CypressTesting";
-// import CypressCode from "@/pages/TestingPages/CypressTestingCode";
-
-// ========================================================
-//                     Cypress Testing End
-// ========================================================
-
-
-// ========================================================
-//                          Git Notes Start
-// ========================================================
-
-import Git from "@/Pages/ToolsPages/GitPages/Git";
-// import GitCode from "@/pages/GitPages/GitCode";
-
-// ========================================================
-//                           Git Notes End
-// ========================================================
-
-// ========================================================
-//                      Markdown Notes Start
-// ========================================================
-
-import Markdown from "@/Pages/FrontEndPages/MarkdownPages/Markdown";
-// import MarkdownCode from "@/pages/MarkdownPages/MarkdownCode";
-
-// ========================================================
-//                       Markdown Notes End
-// ========================================================
-
-
 // ========================================================
 //                   MERN and Auth Notes Start
 // ========================================================
@@ -79,19 +31,6 @@ import MernAndAuth from "@/Pages/BackEndPages/FrameworksPages/MERNAuthPages/Mern
 // ========================================================
 //                    MERN and Auth Notes End
 // ========================================================
-
-
-// ========================================================
-//                     MongoDB Notes Start
-// ========================================================
-
-import MongoDB from "@/Pages/BackEndPages/DatabasesPages/MongoDBPages/MongoDB";
-// import MongoDBCode from "@/pages/MongoDBPages/MongoDBCode";
-
-// ========================================================
-//                      MongoDB Notes End
-// ========================================================
-
 
 // ========================================================
 //                      Node.js Notes Start
@@ -127,27 +66,6 @@ import Python from "@/Pages/ProgrammingLanguagesPages/PythonPages/Python";
 // ========================================================
 //                       Python Notes End
 // ========================================================
-
-// ========================================================
-//              React and Related Frameworks Start
-// ========================================================
-
-import React from "@/Pages/FrontEndPages/ReactPages/ReactBasics/IntroAndSetup";
-// import ReactCode from "@/pages/ReactPages/ReactCode";
-
-import ReactAndTypeScript from "@/Pages/FrontEndPages/ReactPages/ReactAndTypeScript/ReactAndTypeScript";
-// import ReactAndTypeScriptCode from "@/pages/ReactPages/ReactAndTypeScriptCode";
-
-import ReactFullStack from "@/Pages/FrontEndPages/ReactPages/ReactFullStack/ReactFullStack";
-// import ReactFullStackCode from "@/pages/ReactPages/ReactFullStackCode";
-
-import ReactNative from "@/Pages/FrontEndPages/ReactPages/ReactNative/ReactNative";
-// import ReactNativeCode from "@/pages/ReactPages/ReactNativeCode";
-
-// ========================================================
-//               React and Related Frameworks End
-// ========================================================
-
 
 // ========================================================
 //                        Redux Notes Start
@@ -205,6 +123,8 @@ import TypeScript from "@/Pages/ProgrammingLanguagesPages/TypeScriptPages/TypeSc
 // ========================================================
 
 import Vue from "@/Pages/FrontEndPages/VuePages/Vue";
+
+
 // import VueCode from "@/pages/VuePages/VueCode";
 
 // ========================================================
@@ -223,15 +143,12 @@ export const router = createBrowserRouter([
                 element: <Home />,
             },
             ...frontEndRoutes,
+            ...backEndRoutes,
+            ...toolRoutes,
+            ...testingRoutes,
+            ...graphqlAndApolloRoutes,
             
-            {
-                path: '/apolloserver',
-                element: <ApolloServer />,
-            },
-            // {
-            //     path: '/apolloserver/apolloservercode',
-            //     element: <ApolloServerCode />,
-            // },
+            
             {
                 path: '/cicdops',
                 element: <CICDOps />,
@@ -241,31 +158,7 @@ export const router = createBrowserRouter([
             //     element: <CICDOpsCode />,
             // },
 
-            {
-                path: '/git',
-                element: <Git />,
-            },
-            // {
-            //     path: '/git/gitcode',
-            //     element: <GitCode />,
-            // },
-            {
-                path: '/graphql',
-                element: <GraphQL />,
-            },
-            // {
-            //     path: '/graphql/graphqlcode',
-            //     element: <GraphQLCode />,
-            // },
 
-            {
-                path: '/markdown',
-                element: <Markdown />,
-            },
-            // {
-            //     path: '/markdown/markdowncode',
-            //     element: <MarkdownCode />,
-            // },
             {
                 path: '/mern',
                 element: <MernAndAuth />,
@@ -274,14 +167,7 @@ export const router = createBrowserRouter([
             //     path: '/mern/merncode',
             //     element: <MernAndAuthCode />,
             // },
-            {
-                path: '/mongodb',
-                element: <MongoDB />,
-            },
-            // {
-            //     path: '/mongodb/mongodbcode',
-            //     element: <MongoDBCode />,
-            // },
+
             {
                 path: '/node',
                 element: <Node />,
@@ -306,38 +192,7 @@ export const router = createBrowserRouter([
             //     path: '/python/pythoncode',
             //     element: <PythonCode />,
             // },
-            {
-                path: '/react',
-                element: <React />,
-            },
-            // {
-            //     path: '/react/reactcode',
-            //     element: <ReactCode />,
-            // },
-            {
-                path: '/react/reactandtypescript',
-                element: <ReactAndTypeScript />,
-            },
-            // {
-            //     path: '/react/reactandtypescriptcode',
-            //     element: <ReactAndTypeScriptCode />,
-            // },
-            {
-                path: '/react/reactfullstack',
-                element: <ReactFullStack />,
-            },
-            // {
-            //     path: '/react/reactfullstackcode',
-            //     element: <ReactFullStackCode />,
-            // },
-            {
-                path: '/react/reactnative',
-                element: <ReactNative />,
-            },
-            // {
-            //     path: '/react/reactnativecode',
-            //     element: <ReactNativeCode />,
-            // },
+           
             {
                 path: '/redux',
                 element: <Redux />,
@@ -362,14 +217,7 @@ export const router = createBrowserRouter([
             //     path: '/testing/testingcode',
             //     element: <TestingCode />,
             // },
-            {
-                path: '/testing/cypresstesting',
-                element: <Cypress />,
-            },
-            // {
-            //     path: '/testing/cypresstestingcode',
-            //     element: <CypressCode />,
-            // },
+
             {
                 path: '/testing/vitesttesting',
                 element: <Vitest />,
