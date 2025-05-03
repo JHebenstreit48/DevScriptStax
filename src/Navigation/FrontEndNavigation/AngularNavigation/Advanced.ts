@@ -1,38 +1,78 @@
-import { Subpage } from "@/Navigation/NavigationTypes";
+import { Subpage } from '@/Navigation/NavigationTypes';
 
 const AngularAdvancedNavigation: Subpage = {
-  name: "Angular Advanced",
+  name: 'Advanced',
   subpages: [
     {
-      name: "Change Detection",
+      name: 'Change Detection',
       subpages: [
-        { name: "Understanding Change Detection", path: "/angular/advanced/change-detection" }, // Basics
-        { name: "Optimizing Change Detection", path: "/angular/advanced/change-detection-performance" }, // OnPush, async pipe
-      ],
+        {
+          name: 'Understanding Change Detection',
+          path: '/angular/advanced/change-detection'
+        }, // Basics
+        {
+          name: 'Optimizing Change Detection',
+          path: '/angular/advanced/change-detection-performance'
+        },
+        {
+          name: 'Optimizing Template Rendering',
+          path: '/angular/advanced/change-detection/template-optimization'
+        }
+      ]
     },
     {
-      name: "RxJS & Reactive Programming",
+      name: 'Performance & Bundle Optimization', // ✅ NEW SECTION
       subpages: [
-        { name: "Understanding Observables", path: "/angular/advanced/rxjs-observables" }, // Basics
-        { name: "Subjects & BehaviorSubjects", path: "/angular/advanced/rxjs-subjects" }, // Advanced RxJS
-        { name: "RxJS Operators", path: "/angular/advanced/rxjs-operators" }, // map, filter, switchMap
-      ],
+        {
+          name: 'Reducing Bundle Size',
+          path: '/angular/advanced/performance/bundle-size'
+        }
+      ]
     },
     {
-      name: "Animations",
+      name: 'RxJS & Reactive Programming',
       subpages: [
-        { name: "Angular Animations Basics", path: "/angular/advanced/animations" }, // Overview
-        { name: "Using Animation Triggers", path: "/angular/advanced/animations-triggers" }, // keyframes, transitions
-      ],
+        {
+          name: 'Understanding Observables',
+          path: '/angular/advanced/rxjs-observables'
+        }, // Basics
+        {
+          name: 'Subjects & BehaviorSubjects',
+          path: '/angular/advanced/rxjs-subjects'
+        }, // Advanced RxJS
+        {
+          name: 'RxJS Operators',
+          path: '/angular/advanced/rxjs-operators'
+        } // map, filter, switchMap
+      ]
     },
     {
-      name: "Path Aliases & TypeScript Config",
+      name: 'Animations',
       subpages: [
-        { name: "Understanding Path Aliases", path: "/angular/advanced/path-aliases" }, // tsconfig.json setup
-        { name: "Advanced Path Aliases Usage", path: "/angular/advanced/advanced-path-aliases" }, // Multiple aliases, best practices
-      ],
+        {
+          name: 'Angular Animations Basics',
+          path: '/angular/advanced/animations'
+        }, // Overview
+        {
+          name: 'Using Animation Triggers',
+          path: '/angular/advanced/animations-triggers'
+        } // keyframes, transitions
+      ]
     },
-  ],
+    {
+      name: 'Path Aliases & TypeScript Config',
+      subpages: [
+        {
+          name: 'Understanding Path Aliases',
+          path: '/angular/advanced/path-aliases'
+        }, // tsconfig.json setup
+        {
+          name: 'Advanced Path Aliases Usage',
+          path: '/angular/advanced/advanced-path-aliases'
+        } // Multiple aliases, best practices
+      ]
+    }
+  ]
 };
 
 export default AngularAdvancedNavigation;

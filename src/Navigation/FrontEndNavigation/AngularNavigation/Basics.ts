@@ -1,33 +1,40 @@
 import { Subpage } from '@/Navigation/NavigationTypes';
 
 const AngularBasicsNavigation: Subpage = {
-  name: 'Angular Basics',
+  name: 'Basics',
   subpages: [
     {
-      name: 'Angular Fundamentals',
+      name: 'Fundamentals',
       subpages: [
-        { name: 'Introduction to Angular',
-          path: '/angular/basics/gettingstarted/intro'
+        {
+          name: 'Introduction to Angular',
+          path: '/angular/basics/fundamentals/intro'
         },
         {
-          name: 'Creating & Running an Angular Application',
-          path: '/angular/basics/gettingstarted/creatingrunning'
+          name: 'Creating & Running an Application',
+          path: '/angular/basics/fundamentals/creatingrunning'
         },
-        { name: 'Understanding Angular CLI',
-          path: '/angular/basics/gettingstarted/angularcli' },
+        {
+          name: 'Understanding Angular CLI',
+          path: '/angular/basics/fundamentals/angularcli'
+        },
       ],
     },
     {
       name: 'Project Structure',
       subpages: [
         {
-          name: 'Understanding Angular Project Structure',
+          name: 'Project Structure',
           path: '/angular/basics/projectstructure/folderfilestructure'
         },
         {
-          name: 'Angular Configuration Files',
+          name: 'Configuration Files',
           path: '/angular/basics/projectstructure/configfiles'
         },
+        {
+          name: 'Folder & File Naming Conventions',
+          path: '/angular/basics/projectstructure/namingconventions'
+        }
       ],
     },
   ],
