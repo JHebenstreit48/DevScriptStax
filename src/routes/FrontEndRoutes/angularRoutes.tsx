@@ -3,14 +3,15 @@ import { RouteObject } from "react-router-dom";
 // ---------------------- Angular Basics Start ----------------------
 
 // ----------- Angular Getting Started Start ------------
-import AngularIntro from "@/Pages/FrontEndPages/AngularPages/Basics/GettingStarted/Introduction";
-import AngularAppCreate from "@/Pages/FrontEndPages/AngularPages/Basics/GettingStarted/CreatingRunningApp";
-import AngularCLI from "@/Pages/FrontEndPages/AngularPages/Basics/GettingStarted/CLI";
+import AngularIntro from "@/Pages/FrontEndPages/AngularPages/Basics/Fundamentals/Introduction";
+import AngularAppCreate from "@/Pages/FrontEndPages/AngularPages/Basics/Fundamentals/CreatingRunningApp";
+import AngularCLI from "@/Pages/FrontEndPages/AngularPages/Basics/Fundamentals/CLI";
 // ------------ Angular Getting Started End -------------
 
 // ----------- Angular Project Structure Start -----------
-import AngularStructure from "@/Pages/FrontEndPages/AngularPages/Basics/ProjectStructure/FolderFileStructure";
+import AngularStructure from "@/Pages/FrontEndPages/AngularPages/Basics/ProjectStructure/Structure";
 import AngularConfigFiles from "@/Pages/FrontEndPages/AngularPages/Basics/ProjectStructure/ConfigurationFiles";
+import AngularFolderFileNaming from "@/Pages/FrontEndPages/AngularPages/Basics/ProjectStructure/FolderFileNaming";
 // ------------ Angular Project Structure End ------------
 
 // ----------------------- Angular Basics End ------------------------
@@ -36,15 +37,15 @@ const angularRoutes: RouteObject[] = [
 
     // --------------- Angular Basics > Getting Started Start ---------------
     {
-        path: '/angular/basics/gettingstarted/intro',
+        path: '/angular/basics/fundamentals/intro',
         element: <AngularIntro />,
     },
     {
-        path: '/angular/basics/gettingstarted/creatingrunning',
+        path: '/angular/basics/fundamentals/creatingrunning',
         element: <AngularAppCreate />,
     },
     {
-        path: '/angular/basics/gettingstarted/angularcli',
+        path: '/angular/basics/fundamentals/angularcli',
         element: <AngularCLI />,
     },
     // ---------------- Angular Basics > Getting Started End ----------------
@@ -57,6 +58,10 @@ const angularRoutes: RouteObject[] = [
     {
         path: '/angular/basics/projectstructure/configfiles',
         element: <AngularConfigFiles />,
+    },
+    {
+        path: '/angular/basics/projectstructure/namingconventions',
+        element: <AngularFolderFileNaming />,
     },
     // -------------- Angular Basics > Project Structure End ---------------
 

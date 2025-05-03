@@ -8,7 +8,8 @@ import { Page } from "@/Navigation/NavigationTypes";
 import AngularBasicsNavigation from "@/Navigation/FrontEndNavigation/AngularNavigation/Basics";
 import AngularCoreConceptsNavigation from "@/Navigation/FrontEndNavigation/AngularNavigation/CoreConcepts";
 import AngularAdvancedNavigation from "@/Navigation/FrontEndNavigation/AngularNavigation/Advanced";
-import AngularBestPracticesNavigation from "@/Navigation/FrontEndNavigation/AngularNavigation/BestPractices";
+import AngularSecurityNavigation from "./FrontEndNavigation/AngularNavigation/Security";
+import AngularTestingNavigation from "@/Navigation/FrontEndNavigation/AngularNavigation/Testing";
 // ---------- Angular Navigation End ----------
 
 // ---------- CSS Navigation Start ----------
@@ -261,6 +262,7 @@ import GitNavigation from "@/Navigation/ToolsNavigation/Containerization/Git";
 
 import GraphQLNavigation from "@/Navigation/GraphQLAndApolloNavigation/GraphQLPages";
 import ApolloNavigation from "@/Navigation/GraphQLAndApolloNavigation/Apollo";
+
 // ======================================================================================================================================
 // GraphQL & Apollo Navigation End
 // ======================================================================================================================================
@@ -279,7 +281,8 @@ const pages: Page[] = [
           AngularBasicsNavigation,
           AngularCoreConceptsNavigation,
           AngularAdvancedNavigation,
-          AngularBestPracticesNavigation,
+          AngularSecurityNavigation,
+          AngularTestingNavigation
         ],
       },
       {
