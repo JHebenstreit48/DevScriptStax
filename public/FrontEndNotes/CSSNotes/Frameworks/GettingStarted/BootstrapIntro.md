@@ -35,11 +35,12 @@ On the main page, find the CDN (Content Delivery Network) links.
 #### 3. Paste them inside your HTML file  
 Add these links inside the head for CSS, and before the closing body tag for JavaScript.
 
-html  
+```html  
 <!-- Bootstrap CSS -->  
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">  
 
 <!-- Bootstrap JavaScript -->  
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>  
+```
 
 Now Bootstrap is ready to use! 🚀

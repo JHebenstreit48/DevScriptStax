@@ -1,10 +1,10 @@
 import { Subpage } from "@/Navigation/NavigationTypes";
 
 const VanillaNavigation: Subpage = {
-  name: "Vanilla CSS",
+  name: "Vanilla",
   subpages: [
     {
-      name: "CSS Basics",
+      name: "Basics",
       subpages: [
         {
           name: "CSS Intro and Syntax",
