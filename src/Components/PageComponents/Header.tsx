@@ -1,4 +1,4 @@
-import Navigation from "@/Components/NavigationComponents/Navigation";
+import Navigation from "@/Components/NavigationUI/Navigation";
 
 interface Header {
   text: string;

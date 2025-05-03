@@ -2,8 +2,8 @@ import { useState, useEffect, useRef, useCallback } from "react";
 import { Link } from "react-router-dom";
 import pages from "@/Navigation/Pages";
 import { Subpage } from "@/Navigation/NavigationTypes";
-import SearchIcon from "@/Components/NavigationComponents/SearchIcon";
-import SearchModal from "@/Components/NavigationComponents/SearchModal";
+import SearchIcon from "@/Components/NavigationUI/SearchIcon";
+import SearchModal from "@/Components/NavigationUI/SearchModal";
 
 const Navigation = () => {
   const [activeDropdown, setActiveDropdown] = useState<Set<string>>(new Set());
