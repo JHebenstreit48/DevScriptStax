@@ -8,7 +8,7 @@ const AngularCoreConceptsNavigation: Subpage = {
       subpages: [
         {
           name: "Introduction to Components",
-          path: "/angular/coreconcepts/components"
+          path: "/angular/coreconcepts/components/intro"
         },
         {
           name: "Reusable Component Design",
@@ -20,11 +20,11 @@ const AngularCoreConceptsNavigation: Subpage = {
         }, // Basics
         {
           name: "Component Communication",
-          path: "/angular/coreconcepts/component-communication"
+          path: "/angular/coreconcepts/components/communication"
         },
         {
           name: "Avoiding Overuse of Inputs & Outputs",
-          path: "/angular/coreconcepts/component-communication/inputs-outputs"
+          path: "/angular/coreconcepts/components/inputsoutputs"
         },
       ],
     },
