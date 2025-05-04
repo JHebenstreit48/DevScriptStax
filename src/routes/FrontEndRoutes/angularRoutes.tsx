@@ -18,10 +18,11 @@ import AngularFolderFileNaming from "@/Pages/FrontEndPages/AngularPages/Basics/P
 
 
 // -------------- Angular Core Concepts Start --------------
-import Components from "@/Pages/FrontEndPages/AngularPages/CoreConcepts/AngularComponents";
-import Modules from "@/Pages/FrontEndPages/AngularPages/CoreConcepts/AngularModules";
-import Services from "@/Pages/FrontEndPages/AngularPages/CoreConcepts/AngularServices";
-import Routing from "@/Pages/FrontEndPages/AngularPages/CoreConcepts/AngularRouting";
+import AngularComponentsIntro from "@/Pages/FrontEndPages/AngularPages/CoreConcepts/AngularComponents/Introduction";
+import AngularIO from "@/Pages/FrontEndPages/AngularPages/CoreConcepts/AngularComponents/InputsOutputs";
+import AngularCommunicate from "@/Pages/FrontEndPages/AngularPages/CoreConcepts/AngularComponents/Communication";
+import AngularReusable from "@/Pages/FrontEndPages/AngularPages/CoreConcepts/AngularComponents/ReusableDesign";
+import AngularSmartDumb from "@/Pages/FrontEndPages/AngularPages/CoreConcepts/AngularComponents/SmartDumb";
 // --------------- Angular Core Concepts End ---------------
 
 // ========================================================
@@ -67,21 +68,25 @@ const angularRoutes: RouteObject[] = [
 
     // ------------------ Angular Core Concepts Start ------------------
     {
-        path: '/angular/coreconcepts/components',
-        element: <Components />,
+        path: '/angular/coreconcepts/components/intro',
+        element: <AngularComponentsIntro />,
     },
     {
-        path: '/angular/coreconcepts/modules',
-        element: <Modules />,
+        path: '/angular/coreconcepts/components/reusable-design',
+        element: <AngularReusable />,
     },
     {
-        path: '/angular/coreconcepts/services',
-        element: <Services />,
+        path: '/angular/coreconcepts/components/smart-dumb',
+        element: <AngularSmartDumb />,
     },
     {
-        path: '/angular/coreconcepts/routing',
-        element: <Routing />,
+        path: '/angular/coreconcepts/components/communication',
+        element: <AngularCommunicate />,
     },
+    {
+        path: '/angular/coreconcepts/components/inputsoutputs',
+        element: <AngularIO />,
+    }
     // ------------------- Angular Core Concepts End -------------------
 
     // ========================================================

@@ -1,0 +1,20 @@
+// Auto-generated TSX file: InputsOutputs
+
+import Header from "@/Components/PageComponents/Header";
+import Notes from "@/Components/PageComponents/Notes/NotesRender";
+
+const AngularIO = () => {
+    const markdownFilePath = "/FrontEndNotes/AngularPages/CoreConcepts/AngularComponents/InputsOutputs.md";
+
+    return (
+        <>
+            <Header text="Angular Inputs & Outputs" />
+            <Notes
+                filePath={markdownFilePath}
+                markdownContent="markdownContent"
+            />
+        </>
+    );
+};
+
+export default AngularIO;
