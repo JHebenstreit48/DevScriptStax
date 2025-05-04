@@ -1,9 +1,18 @@
-// Auto-generated TSX file: Introduction
+import Header from "@/Components/PageComponents/Header";
+import Notes from "@/Components/PageComponents/Notes/NotesRender";
 
-export default function Introduction() {
-  return (
-    <div>
-      <h1>Introduction</h1>
-    </div>
-  );
-}
+const ReactBootstrapIntro = () => {
+    const markdownFilePath = "/FrontEndNotes/CSSNotes/Frameworks/ReactBootstrap/Basics/Introduction.md";
+
+    return (
+        <>
+            <Header text="React Bootstrap Introduction" />
+            <Notes
+                filePath={markdownFilePath}
+                markdownContent="markdownContent"
+            />
+        </>
+    );
+};
+
+export default ReactBootstrapIntro;

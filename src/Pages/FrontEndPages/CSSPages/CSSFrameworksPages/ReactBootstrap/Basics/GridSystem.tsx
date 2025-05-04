@@ -1,9 +1,18 @@
-// Auto-generated TSX file: GridSystem
+import Header from "@/Components/PageComponents/Header";
+import Notes from "@/Components/PageComponents/Notes/NotesRender";
 
-export default function GridSystem() {
-  return (
-    <div>
-      <h1>GridSystem</h1>
-    </div>
-  );
-}
+const ReactBoostrapGrid = () => {
+    const markdownFilePath = "/FrontEndNotes/CSSNotes/Frameworks/ReactBootstrap/Basics/GridSystem.md";
+
+    return (
+        <>
+            <Header text="React Bootstrap Grid" />
+            <Notes
+                filePath={markdownFilePath}
+                markdownContent="markdownContent"
+            />
+        </>
+    );
+};
+
+export default ReactBoostrapGrid;

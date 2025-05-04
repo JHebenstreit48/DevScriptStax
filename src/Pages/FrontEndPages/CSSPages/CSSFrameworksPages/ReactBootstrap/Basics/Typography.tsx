@@ -1,5 +1,3 @@
-// Auto-generated TSX file: Typography
-
 export default function Typography() {
   return (
     <div>
