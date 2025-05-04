@@ -1,9 +1,20 @@
 // Auto-generated TSX file: Cards
 
-export default function Cards() {
-  return (
-    <div>
-      <h1>Cards</h1>
-    </div>
-  );
-}
+import Header from "@/Components/PageComponents/Header";
+import Notes from "@/Components/PageComponents/Notes/NotesRender";
+
+const ReactBSCards = () => {
+    const markdownFilePath = "/FrontEndNotes/CSSNotes/ReactBoostrap/Components/ReactBSCards.md";
+
+    return (
+        <>
+            <Header text="React Bootstrap React Bootstrap Cards" />
+            <Notes
+                filePath={markdownFilePath}
+                markdownContent="markdownContent"
+            />
+        </>
+    );
+};
+
+export default ReactBSCards;

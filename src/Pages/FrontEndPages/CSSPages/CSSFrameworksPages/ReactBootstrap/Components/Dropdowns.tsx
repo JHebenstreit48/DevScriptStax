@@ -1,9 +1,20 @@
 // Auto-generated TSX file: Dropdowns
 
-export default function Dropdowns() {
-  return (
-    <div>
-      <h1>Dropdowns</h1>
-    </div>
-  );
-}
+import Header from "@/Components/PageComponents/Header";
+import Notes from "@/Components/PageComponents/Notes/NotesRender";
+
+const ReactBSDropdowns = () => {
+    const markdownFilePath = "/FrontEndNotes/CSSNotes/ReactBoostrap/Components/ReactBSDropdowns.md";
+
+    return (
+        <>
+            <Header text="React Bootstrap Dropdowns" />
+            <Notes
+                filePath={markdownFilePath}
+                markdownContent="markdownContent"
+            />
+        </>
+    );
+};
+
+export default ReactBSDropdowns;
