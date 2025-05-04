@@ -1,9 +1,20 @@
 // Auto-generated TSX file: Utilities
 
-export default function Utilities() {
-  return (
-    <div>
-      <h1>Utilities</h1>
-    </div>
-  );
-}
+import Header from "@/Components/PageComponents/Header";
+import Notes from "@/Components/PageComponents/Notes/NotesRender";
+
+const ReactBSUtilities = () => {
+    const markdownFilePath = "/FrontEndNotes/CSSNotes/Frameworks/ReactBootstrap/Basics/Utilities.md";
+
+    return (
+        <>
+            <Header text="React Bootstrap Utilities" />
+            <Notes
+                filePath={markdownFilePath}
+                markdownContent="markdownContent"
+            />
+        </>
+    );
+};
+
+export default ReactBSUtilities;

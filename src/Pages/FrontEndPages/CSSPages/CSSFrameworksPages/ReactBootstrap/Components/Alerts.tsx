@@ -1,9 +1,20 @@
 // Auto-generated TSX file: Alerts
 
-export default function Alerts() {
-  return (
-    <div>
-      <h1>Alerts</h1>
-    </div>
-  );
-}
+import Header from "@/Components/PageComponents/Header";
+import Notes from "@/Components/PageComponents/Notes/NotesRender";
+
+const ReactBSAlerts = () => {
+    const markdownFilePath = "/FrontEndNotes/CSSNotes/ReactBoostrap/Components/ReactBSAlerts.md";
+
+    return (
+        <>
+            <Header text="React Bootstrap Alerts" />
+            <Notes
+                filePath={markdownFilePath}
+                markdownContent="markdownContent"
+            />
+        </>
+    );
+};
+
+export default ReactBSAlerts;

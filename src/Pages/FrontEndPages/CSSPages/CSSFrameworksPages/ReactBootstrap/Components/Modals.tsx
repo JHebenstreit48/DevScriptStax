@@ -1,9 +1,20 @@
 // Auto-generated TSX file: Modals
 
-export default function Modals() {
-  return (
-    <div>
-      <h1>Modals</h1>
-    </div>
-  );
-}
+import Header from "@/Components/PageComponents/Header";
+import Notes from "@/Components/PageComponents/Notes/NotesRender";
+
+const ReactBSModals = () => {
+    const markdownFilePath = "/FrontEndNotes/CSSNotes/ReactBoostrap/Components/ReactBSModals.md";
+
+    return (
+        <>
+            <Header text="React Bootstrap Modals" />
+            <Notes
+                filePath={markdownFilePath}
+                markdownContent="markdownContent"
+            />
+        </>
+    );
+};
+
+export default ReactBSModals;

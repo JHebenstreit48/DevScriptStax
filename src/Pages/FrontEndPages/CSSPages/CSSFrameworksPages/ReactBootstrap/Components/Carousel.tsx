@@ -1,9 +1,20 @@
 // Auto-generated TSX file: Carousel
 
-export default function Carousel() {
-  return (
-    <div>
-      <h1>Carousel</h1>
-    </div>
-  );
-}
+import Header from "@/Components/PageComponents/Header";
+import Notes from "@/Components/PageComponents/Notes/NotesRender";
+
+const ReactBSCarousel = () => {
+    const markdownFilePath = "/FrontEndNotes/CSSNotes/ReactBoostrap/Components/ReactBSCarousel.md";
+
+    return (
+        <>
+            <Header text="React Bootstrap Carousel" />
+            <Notes
+                filePath={markdownFilePath}
+                markdownContent="markdownContent"
+            />
+        </>
+    );
+};
+
+export default ReactBSCarousel;
