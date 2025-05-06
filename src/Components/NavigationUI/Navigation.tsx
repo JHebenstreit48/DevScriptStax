@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import { Link } from "react-router-dom";
-import pages from "@/Navigation/Pages";
-import { Subpage } from "@/Navigation/NavigationTypes";
+import pages from "@/Navigation/CombinedNav/CombinedNavAndTypes/Pages";
+import { Subpage } from "@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes";
 import SearchIcon from "@/Components/NavigationUI/SearchIcon";
 import SearchModal from "@/Components/NavigationUI/SearchModal";
 
