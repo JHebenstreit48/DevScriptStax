@@ -8,7 +8,7 @@ import remarkGfm from 'remark-gfm';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import materialLight from 'react-syntax-highlighter/dist/esm/styles/prism/material-light';
 import BackToTop from '@/Components/PageComponents/Notes/BackToTopButton';
-import '@/SCSS/SharedStyles/PageStyles/Notes.scss';
+import '@/SCSS/PageStyles/Notes.scss';
 
 interface NotesProps {
   filePath: string;

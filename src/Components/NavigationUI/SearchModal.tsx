@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom";
 import { Link } from "react-router-dom";
-import "@/SCSS/SharedStyles/NavigationStyles/SearchModal.scss";
 
 interface SearchModalProps {
   searchTerm: string;
