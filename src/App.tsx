@@ -1,13 +1,20 @@
 import { Outlet } from 'react-router-dom';
 import { useState, useEffect } from "react";
+
 import Footer from '@/Components/PageComponents/Footer';
 import SplashScreen from '@/Pages/ErrorHomeSplash/SplashScreen';
-import '@/SCSS/SharedStyles/PageStyles/Page.scss';
-import '@/SCSS/SharedStyles/PageStyles/Header.scss';
-import '@/SCSS/SharedStyles/NavigationStyles/Navigation.scss';
-import '@/SCSS/SharedStyles/PageStyles/Footer.scss';
-import '@/SCSS/SharedStyles/PageStyles/Error.scss';
-import '@/SCSS/SharedStyles/PageStyles/SplashScreen.scss';
+
+import '@/SCSS/PageStyles/Page.scss';
+import '@/SCSS/PageStyles/Header.scss';
+
+// Navigation Styles Start
+import '@/SCSS/NavigationStyles/Navigation.scss';
+import '@/SCSS/NavigationStyles/SearchModal.scss'
+// Navigation Styles End
+
+import '@/SCSS/PageStyles/Footer.scss';
+import '@/SCSS/PageStyles/Error.scss';
+import '@/SCSS/PageStyles/SplashScreen.scss';
 
 export default function App() {
   const [showSplash, setShowSplash] = useState(true);
