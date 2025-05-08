@@ -33,7 +33,7 @@ import AngularSmartDumb from "@/Pages/FrontEndPages/AngularPages/CoreConcepts/An
 const angularRoutes: RouteObject[] = [
 
     // ========================================================
-    //                    Angular Notes Start
+    //                    Angular Routes Start
     // ========================================================
 
     // --------------- Angular Basics > Getting Started Start ---------------

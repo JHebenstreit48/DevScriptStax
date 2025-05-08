@@ -58,16 +58,16 @@ const JavaScriptBasicsNavigation: Subpage = {
       name: "Objects and JSON",
       subpages: [
         {
-          name: "Introduction to Objects",
-          path: "/javascript/basics/objects/intro"
+          name: "Objects Basics",
+          path: "/javascript/basics/objects/basics"
         },
         {
-          name: "Object Properties and Methods",
-          path: "/javascript/basics/objects/propertiesmethods"
+          name: "Properties and Methods",
+          path: "/javascript/basics/objects/propsandmethods"
         },
         {
-          name: "Object Utilities and Patterns", // ← NEW
-          path: "/javascript/basics/objects/utilities"
+          name: "Utilities and Patterns", // ← NEW
+          path: "/javascript/basics/objects/utilsandpatterns"
         },
         {
           name: "Working with JSON",
@@ -79,12 +79,12 @@ const JavaScriptBasicsNavigation: Subpage = {
       name: "Functions",
       subpages: [
         {
-          name: "Function Declarations",
-          path: "/javascript/basics/functions/declarations"
+          name: "Basics & Declarations",
+          path: "/javascript/basics/functions/basicsanddeclare"
         },
         {
-          name: "Function Expressions",
-          path: "/javascript/basics/functions/expressions"
+          name: "Expressions & IIFE",
+          path: "/javascript/basics/functions/expressionsandiife"
         },
         {
           name: "Arrow Functions",
@@ -92,7 +92,11 @@ const JavaScriptBasicsNavigation: Subpage = {
         },
         {
           name: "Parameters and Arguments",
-          path: "/javascript/basics/functions/parametersarguments"
+          path: "/javascript/basics/functions/paramsandargs"
+        },
+        {
+          name: "Higher-Order Functions",
+          path: "/javascript/basics/functions/higherorder"
         }
       ]
     }
