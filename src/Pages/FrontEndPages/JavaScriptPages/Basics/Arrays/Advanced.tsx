@@ -1,13 +1,13 @@
 import Header from "@/Components/PageComponents/Header";
 import Notes from "@/Components/PageComponents/Notes/NotesRender";
 
-const ArraysIntro = () => {
-    const markdownFilePath = "/FrontEndNotes/JavaScriptNotes/Basics/Arrays/Introduction.md";
+const Advanced = () => {
+    const markdownFilePath = "/FrontEndNotes/JavaScriptNotes/Basics/Arrays/Advanced.md";
 
     return (
 
         <>
-            <Header text="Arrays Introduction" />
+            <Header text="Arrays Advanced Techniques" />
             <Notes
                 filePath={markdownFilePath}
                 markdownContent="markdownContent"
@@ -17,4 +17,4 @@ const ArraysIntro = () => {
 
 };
 
-export default ArraysIntro;
+export default Advanced;
