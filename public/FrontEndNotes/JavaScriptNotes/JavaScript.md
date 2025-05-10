@@ -1,20 +1,3 @@
-### Methods
-
-A method is a function that is associated with an object in JavaScript. These methods are used to perform specific operations on the object they belong to. JavaScript provides a wide range of built-in methods for various objects, such as strings, arrays, and numbers, which simplify common programming tasks.
-
-#### Examples of Common Methods:
-
-- String Methods: These methods operate on text data and allow you to manipulate strings.
-  - <span class="emphasis">toUpperCase</span>: Converts all characters in a string to uppercase letters.
-  - <span class="emphasis">toLowerCase</span>: Converts all characters in a string to lowercase letters.
-  - <span class="emphasis">slice</span>: Extracts a section of a string and returns it as a new string without modifying the original one.
-  - <span class="emphasis">replace</span>: Finds a substring or pattern in a string and replaces it with a new value.
-
-- Array Methods: These methods are used to manipulate or process lists of data stored in arrays.
-  - <span class="emphasis">push</span>: Adds one or more elements to the end of an array.
-  - <span class="emphasis">pop</span>: Removes the last element from an array and returns it.
-  - <span class="emphasis">map</span>: Creates a new array by applying a function to each element of the original array.
-  - <span class="emphasis">filter</span>: Creates a new array containing only the elements that meet a specified condition.
 
 ---
 
@@ -38,44 +21,6 @@ Loops are used in JavaScript to execute a block of code multiple times. They are
 - <span class="emphasis">forEach</span>: A method available on arrays that iterates over each element in the array, executing a specified function for each element.
 
 ---
-
-### parseFloat
-
-#### What is parseFloat
-
-<span class="emphasis">parseFloat</span> is a built-in JavaScript function that parses a string argument and returns a floating-point number. It is especially useful for converting numeric strings into usable numbers in calculations.
-
-#### Key Points:
-
-- Parses strings to return a floating-point number.
-- Stops parsing when it encounters a character that is not part of a number.
-- Returns a special value called NaN (Not a Number) if the first character in the string cannot be converted to a number.
-
----
-
-### String Manipulation with replace
-
-#### What is replace
-
-<span class="emphasis">replace</span> is a JavaScript string method used to find and replace substrings or patterns within a string.
-
-#### Key Points:
-
-- It searches for specific text or patterns and replaces them with new text.
-- It can handle advanced search patterns through regular expressions.
-- Commonly used in web development to clean or reformat data, like standardizing numeric strings.
-
----
-
-### Conditional Logic with the Ternary Operator
-
-#### What is the Ternary Operator
-
-The ternary operator is a concise way to write conditional logic in JavaScript. It allows developers to evaluate a condition and return one value if the condition is true, and a different value if it is false.
-
-#### Explanation:
-
-The ternary operator simplifies the structure of conditional logic, making it easier to write and read. It is especially useful in dynamic rendering or data transformations.
 
 ---
 

@@ -85,23 +85,6 @@ import MyComponent from '@/components/MyComponent';
 
 ---
 
-## Array Methods
-
-### Generating a New Array with <span class="emphasis">.map()</span>
-
-The <span class="emphasis">.map()</span> method creates a <span class="secondEmphasis">new array</span> by applying a <span class="emphasis">callback function</span> to each element of the original array. It does not <span class="secondEmphasis">filter</span> values.
-
-```javascript
-const numbers = [1, 2, 3, 4];
-const doubled = numbers.map((number) => number * 2);
-
-console.log(doubled); // Outputs: [2, 4, 6, 8]
-```
-
-If you need to <span class="secondEmphasis">filter values</span>, use <span class="emphasis">.filter()</span> instead.
-
----
-
 ## Event Handling
 
 ### Placeholder for an Event
@@ -125,21 +108,6 @@ document.querySelector("form").addEventListener("submit", (e) => {
     e.preventDefault();
     console.log("Default form submission prevented");
 });
-```
-
----
-
-## String Methods
-
-### Extracting the First Character of a String
-
-The <span class="emphasis">charAt(index)</span> method retrieves the <span class="secondEmphasis">character</span> at the specified position of a <span class="emphasis">string</span>. To extract the <span class="emphasis">first character</span>, use <span class="emphasis">charAt(0)</span>.
-
-```javascript
-const str = "Hello";
-const firstChar = str.charAt(0);
-
-console.log(firstChar); // Outputs: H
 ```
 
 ---

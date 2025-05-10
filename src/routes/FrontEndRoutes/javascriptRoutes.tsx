@@ -12,6 +12,7 @@ import SyntaxStructure from "@/Pages/FrontEndPages/JavaScriptPages/Basics/CoreCo
 import DataTypes from "@/Pages/FrontEndPages/JavaScriptPages/Basics/CoreConcepts/DataTypes";
 import JSVariables from "@/Pages/FrontEndPages/JavaScriptPages/Basics/CoreConcepts/Variables";
 import Operators from "@/Pages/FrontEndPages/JavaScriptPages/Basics/CoreConcepts/Operators";
+import BuiltInMethods from "@/Pages/FrontEndPages/JavaScriptPages/Basics/CoreConcepts/BuiltInMethods";
 // -------------------- Core Language Concepts End --------------------
 
 // --------------------------- Arrays Start ---------------------------
@@ -68,6 +69,10 @@ const javascriptRoutes: RouteObject[] = [
     {
         path: '/javascript/basics/core/operators',
         element: <Operators />,
+    },
+    {
+        path: '/javascript/basics/core/methods',
+        element: <BuiltInMethods />,
     },
     // ------------------- Basics > Core Language Concepts End -------------------
 

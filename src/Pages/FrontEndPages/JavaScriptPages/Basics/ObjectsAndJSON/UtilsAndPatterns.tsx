@@ -2,7 +2,7 @@ import Header from "@/Components/PageComponents/Header";
 import Notes from "@/Components/PageComponents/Notes/NotesRender";
 
 const UtilsAndPatterns = () => {
-    const markdownFilePath = "/FrontEndPages/JavaScriptPages/Basics/ObjectsAndJSON/UtilsAndPatterns.md";
+    const markdownFilePath = "/FrontEndNotes/JavaScriptNotes/Basics/ObjectsAndJSON/UtilsAndPatterns.md";
 
     return (
         <>
