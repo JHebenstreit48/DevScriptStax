@@ -1,3 +1,5 @@
+@use "sass:color";
+
 /* ==============================
             Variables           
    ============================== */
@@ -8,10 +10,10 @@
    $text-color: #032c2c;
    $text-glow: #00ffff; // Neon aqua
    
-   $header-height: 7.5rem;
+   $header-height: 7.15rem;
    $header-mobile-height: 6rem;
    
-   $font-size-lg: 60px;
+   $font-size-lg: 3.6rem;
    $font-size-sm: 3rem;
    
    /* ==============================
@@ -30,9 +32,9 @@
      left: 0;
      justify-content: center;
      align-items: center;
+     margin-top: 0;
      width: 100%;
      height: $header-height;
-     padding-bottom: 2rem;
      font-size: $font-size-lg;
      background-color: $header-bg-color;
      backdrop-filter: blur($header-blur);
