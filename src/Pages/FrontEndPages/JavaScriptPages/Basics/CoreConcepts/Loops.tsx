@@ -1,13 +1,13 @@
 import Notes from "@/Components/PageComponents/Notes/NotesRender";
 import Header from "@/Components/PageComponents/Header";
 
-const BuiltInMethods = () => {
-    const markdownFilePath = "/FrontEndNotes/JavaScriptNotes/Basics/CoreLanguageConcepts/BuiltInMethods.md";
+const Loops = () => {
+    const markdownFilePath = "/FrontEndNotes/JavaScriptNotes/Basics/CoreLanguageConcepts/Loops.md";
 
     return (
 
         <>
-            <Header text="JavaScript Built-In Methods" />
+            <Header text="JavaScript Loops" />
             <Notes filePath={markdownFilePath}
                 markdownContent="markdownContent"
             />
@@ -16,4 +16,4 @@ const BuiltInMethods = () => {
 
 };
 
-export default BuiltInMethods;
+export default Loops;
