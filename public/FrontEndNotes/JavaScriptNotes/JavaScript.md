@@ -1,27 +1,6 @@
 
 ---
 
-### Conditional Statements
-
-JavaScript provides conditional statements to execute code based on specific conditions. They help control the flow of the program by executing certain blocks of code only when particular conditions are true.
-
-- <span class="emphasis">if</span>: Executes a block of code if a specified condition evaluates to true.
-- <span class="emphasis">else</span>: Executes an alternative block of code if the condition in the if statement evaluates to false.
-- <span class="emphasis">else if</span>: Allows additional conditions to be tested if the previous conditions were false.
-- <span class="emphasis">switch</span>: Provides a way to test a variable or expression against multiple possible values and execute different blocks of code depending on the match.
-
----
-
-### Loops
-
-Loops are used in JavaScript to execute a block of code multiple times. They are particularly useful when working with collections of data or when repeating an action until a specific condition is met.
-
-- <span class="emphasis">for</span>: A loop that runs a block of code a specific number of times. It is commonly used when the number of iterations is known beforehand.
-- <span class="emphasis">while</span>: A loop that continues to execute a block of code as long as a specified condition remains true. It is useful when the number of iterations is not known in advance.
-- <span class="emphasis">forEach</span>: A method available on arrays that iterates over each element in the array, executing a specified function for each element.
-
----
-
 ---
 
 ## Modules

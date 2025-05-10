@@ -13,6 +13,8 @@ import DataTypes from "@/Pages/FrontEndPages/JavaScriptPages/Basics/CoreConcepts
 import JSVariables from "@/Pages/FrontEndPages/JavaScriptPages/Basics/CoreConcepts/Variables";
 import Operators from "@/Pages/FrontEndPages/JavaScriptPages/Basics/CoreConcepts/Operators";
 import BuiltInMethods from "@/Pages/FrontEndPages/JavaScriptPages/Basics/CoreConcepts/BuiltInMethods";
+import Conditionals from "@/Pages/FrontEndPages/JavaScriptPages/Basics/CoreConcepts/Conditionals";
+import Loops from "@/Pages/FrontEndPages/JavaScriptPages/Basics/CoreConcepts/Loops";
 // -------------------- Core Language Concepts End --------------------
 
 // --------------------------- Arrays Start ---------------------------
@@ -38,9 +40,8 @@ import HigherOrder from "@/Pages/FrontEndPages/JavaScriptPages/Basics/FunctionsP
 // ------------------------ JavaScript Basics End ------------------------
 
 const javascriptRoutes: RouteObject[] = [
-    // ========================================================
-    //                   JavaScript Notes Start
-    // ========================================================
+
+    // ------------------------ Basics Start ------------------------
 
     // ---------------------- Basics > Introduction Start ----------------------
     {
@@ -73,6 +74,14 @@ const javascriptRoutes: RouteObject[] = [
     {
         path: '/javascript/basics/core/methods',
         element: <BuiltInMethods />,
+    },
+    {
+        path: '/javascript/basics/core/conditionals',
+        element: <Conditionals />,
+    },
+    {
+        path: '/javascript/basics/core/loops',
+        element: <Loops />,
     },
     // ------------------- Basics > Core Language Concepts End -------------------
 
@@ -131,6 +140,9 @@ const javascriptRoutes: RouteObject[] = [
         path: '/javascript/basics/functions/higherorder',
         element: <HigherOrder />,
     }
+    // ------------------------- Basics > Functions End -------------------------
+
+    // ------------------------ Basics End ------------------------
 ];
 
 export default javascriptRoutes;

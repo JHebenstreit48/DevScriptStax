@@ -1,106 +1,127 @@
-import { Subpage } from "@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes";
+import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes';
 
 const JavaScriptBasicsNavigation: Subpage = {
-  name: "Basics",
+  name: 'Basics',
   subpages: [
     {
-      name: "Introduction",
+      name: 'Introduction',
       subpages: [
         {
-          name: "Overview of JavaScript",
-          path: "/javascript/basics/intro/overview"
+          name: 'Overview of JavaScript',
+          path: '/javascript/basics/intro/overview'
         },
         {
-          name: "History of JavaScript",
-          path: "/javascript/basics/intro/history"
+          name: 'History of JavaScript',
+          path: '/javascript/basics/intro/history'
         }
       ]
     },
     {
-      name: "Core Language Concepts",
+      name: 'Core Language Concepts',
       subpages: [
         {
-          name: "Syntax and Structure",
-          path: "/javascript/basics/core/syntax"
+          name: 'Syntax and Structure',
+          path: '/javascript/basics/core/syntax'
         },
         {
-          name: "Data Types",
-          path: "/javascript/basics/core/datatypes"
+          name: 'Variables (var, let, const)',
+          path: '/javascript/basics/core/variables'
         },
         {
-          name: "Variables (var, let, const)",
-          path: "/javascript/basics/core/variables"
+          name: 'Operators',
+          path: '/javascript/basics/core/operators'
         },
         {
-          name: "Operators",
-          path: "/javascript/basics/core/operators"
+          name: 'Built-in Methods',
+          path: '/javascript/basics/core/methods'
         },
         {
-          name: "Built-in Methods",
-          path: "/javascript/basics/core/methods"
+          name: 'Conditional Statements',
+          path: '/javascript/basics/core/conditionals'
+        },
+        {
+          name: 'Loops',
+          path: '/javascript/basics/core/loops'
         }
       ]
     },
     {
-      name: "Arrays",
+      name: 'Data Types',
       subpages: [
         {
-          name: "Introduction to Arrays",
-          path: "/javascript/basics/arrays/intro"
+          name: 'Primitive Data Types',
+          path: '/javascript/basics/datatypes/primitive'
         },
         {
-          name: "Common Array Methods",
-          path: "/javascript/basics/arrays/methods"
+          name: "Complex Types & Type Checking",
+          path: "/javascript/basics/datatypes/complex"
         },
         {
-          name: "Advanced Array Techniques", // reduce, sort, slice, etc.
-          path: "/javascript/basics/arrays/advanced"
+          name: "Template Literals",
+          path: "/javascript/basics/datatypes/templateliterals"
         }
       ]
     },
     {
-      name: "Objects and JSON",
+      name: 'Arrays',
       subpages: [
         {
-          name: "Objects Basics",
-          path: "/javascript/basics/objects/basics"
+          name: 'Introduction to Arrays',
+          path: '/javascript/basics/arrays/intro'
         },
         {
-          name: "Properties and Methods",
-          path: "/javascript/basics/objects/propsandmethods"
+          name: 'Common Array Methods',
+          path: '/javascript/basics/arrays/methods'
         },
         {
-          name: "Utilities and Patterns", // ← NEW
-          path: "/javascript/basics/objects/utilsandpatterns"
-        },
-        {
-          name: "Working with JSON",
-          path: "/javascript/basics/objects/json"
+          name: 'Advanced Array Techniques', // reduce, sort, slice, etc.
+          path: '/javascript/basics/arrays/advanced'
         }
       ]
     },
     {
-      name: "Functions",
+      name: 'Objects and JSON',
       subpages: [
         {
-          name: "Basics & Declarations",
-          path: "/javascript/basics/functions/basicsanddeclare"
+          name: 'Objects Basics',
+          path: '/javascript/basics/objects/basics'
         },
         {
-          name: "Expressions & IIFE",
-          path: "/javascript/basics/functions/expressionsandiife"
+          name: 'Properties and Methods',
+          path: '/javascript/basics/objects/propsandmethods'
         },
         {
-          name: "Arrow Functions",
-          path: "/javascript/basics/functions/arrowfunctions"
+          name: 'Utilities and Patterns', // ← NEW
+          path: '/javascript/basics/objects/utilsandpatterns'
         },
         {
-          name: "Parameters and Arguments",
-          path: "/javascript/basics/functions/paramsandargs"
+          name: 'Working with JSON',
+          path: '/javascript/basics/objects/json'
+        }
+      ]
+    },
+    {
+      name: 'Functions',
+      subpages: [
+        {
+          name: 'Basics & Declarations',
+          path: '/javascript/basics/functions/basicsanddeclare'
         },
         {
-          name: "Higher-Order Functions",
-          path: "/javascript/basics/functions/higherorder"
+          name: 'Expressions & IIFE',
+          path: '/javascript/basics/functions/expressionsandiife'
+        },
+        {
+          name: 'Arrow Functions',
+          path: '/javascript/basics/functions/arrowfunctions'
+        },
+        {
+          name: 'Parameters and Arguments',
+          path: '/javascript/basics/functions/paramsandargs'
+        },
+        {
+          name: 'Higher-Order Functions',
+          path: '/javascript/basics/functions/higherorder'
         }
       ]
     }
