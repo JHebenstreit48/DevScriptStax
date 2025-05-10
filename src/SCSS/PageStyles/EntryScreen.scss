@@ -1,0 +1,142 @@
+@use "sass:color";
+
+/* ==============================
+            Variables           
+============================== */
+
+$entry-bg-color: #0d0d0d;
+$logo-glow-color: rgba(255, 208, 0, 0.842);
+$button-bg-color: #681001;
+$button-glow-color: rgba(255, 208, 0, 0.842);
+
+$text-color: #ffffff;
+$text-subtle: rgba(255, 255, 255, 0.7);
+
+$logo-size-desktop: 16rem;
+$logo-size-mobile: 12rem;
+
+$font-title: 2.5rem;
+$font-title-mobile: 2rem;
+
+$font-desc: 1.2rem;
+$font-desc-mobile: 1rem;
+
+$font-button: 1rem;
+$font-button-mobile: 0.9rem;
+
+$fade-duration: 0.5s;
+
+/* ==============================
+         Breakpoints        
+============================== */
+
+$cellphone-portrait: 390px;
+$tablet-width: 768px;
+
+/* ==============================
+         Entry Splash Screen       
+============================== */
+
+.SplashScreen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: $entry-bg-color;
+  text-align: center;
+  color: $text-color;
+  opacity: 1;
+  transition: opacity $fade-duration ease;
+
+  &.fade-out {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .logo {
+    width: $logo-size-desktop;
+    animation: pulse 2.5s ease-in-out infinite;
+    filter: drop-shadow(0 0 10px $logo-glow-color);
+  }
+
+  .splash-title {
+    font-size: $font-title;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+
+  .splash-desc {
+    font-size: $font-desc;
+    margin-bottom: 1.5rem;
+    color: $text-subtle;
+  }
+
+  .splash-button {
+    padding: 0.75rem 1.5rem;
+    font-size: $font-button;
+    background-color: $button-bg-color;
+    filter: drop-shadow(0 0 3px $button-glow-color);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #fff;
+    transition: background-color 0.3s, transform 0.2s;
+
+    &:hover {
+      background-color: color.adjust($button-bg-color, $lightness: -10%);
+      transform: scale(1.05);
+    }
+
+    &:active {
+      transform: scale(0.95);
+      animation: flash 0.4s ease;
+    }
+  }
+
+  /* ==============================
+         Cellphone Portrait       
+  ============================== */
+  @media only screen and (max-width: $cellphone-portrait) {
+    .logo {
+      width: $logo-size-mobile;
+    }
+
+    .splash-title {
+      font-size: $font-title-mobile;
+    }
+
+    .splash-desc {
+      font-size: $font-desc-mobile;
+    }
+
+    .splash-button {
+      font-size: $font-button-mobile;
+    }
+  }
+}
+
+/* ==============================
+         Animations           
+============================== */
+
+@keyframes pulse {
+  0%, 100% {
+    filter: drop-shadow(0 0 10px $logo-glow-color);
+  }
+  50% {
+    filter: drop-shadow(0 0 18px rgba(255, 208, 0, 1));
+  }
+}
+
+@keyframes flash {
+  0% {
+    filter: drop-shadow(0 0 5px $button-glow-color);
+  }
+  50% {
+    filter: drop-shadow(0 0 20px rgba(255, 208, 0, 1));
+  }
+  100% {
+    filter: drop-shadow(0 0 5px $button-glow-color);
+  }
+}

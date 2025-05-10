@@ -44,6 +44,15 @@ import HigherOrder from "@/Pages/FrontEndPages/JavaScriptPages/Basics/FunctionsP
 
 // ------------------------ JavaScript Basics End ------------------------
 
+
+// ------------------------ JavaScript > Advanced Start ------------------------
+
+// ------------------------ Javascript > Advanced > Modules Start ------------------------
+import ModulesOverview from "@/Pages/FrontEndPages/JavaScriptPages/Advanced/Overview";
+// ------------------------ Javascript > Advanced > Modules End ------------------------
+
+// ------------------------- JavaScript > Advanced End ------------------------
+
 const javascriptRoutes: RouteObject[] = [
 
     // ------------------------ Basics Start ------------------------
@@ -99,6 +108,7 @@ const javascriptRoutes: RouteObject[] = [
         path: '/javascript/basics/datatypes/templateliterals',
         element: <TemplateLiterals />,
     },
+    // ------------------------- Basics > Data Types End -------------------------
 
     // ------------------------ Basics > Arrays Start ------------------------
     {
@@ -154,10 +164,21 @@ const javascriptRoutes: RouteObject[] = [
     {
         path: '/javascript/basics/functions/higherorder',
         element: <HigherOrder />,
-    }
+    },
     // ------------------------- Basics > Functions End -------------------------
 
     // ------------------------ Basics End ------------------------
+
+    // ------------------------ Advanced Start ------------------------
+
+    // ------------------------ Advanced > Modules Start ------------------------
+    {
+        path: '/javascript/advanced/modules/overview',
+        element: <ModulesOverview />,
+    },
+    // ------------------------ Advanced > Modules End ------------------------
+
+    // ------------------------ Advanced End ------------------------
 ];
 
 export default javascriptRoutes;

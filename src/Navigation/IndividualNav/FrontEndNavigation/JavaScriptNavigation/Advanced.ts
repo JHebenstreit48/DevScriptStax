@@ -33,12 +33,20 @@ const JavaScriptAdvancedNavigation: Subpage = {
       name: "Modules",
       subpages: [
         {
-          name: "Import and Export",
-          path: "/javascript/advanced/modules/importexport"
+          name: "Modules Overview",
+          path: "/javascript/advanced/modules/overview"
         },
         {
-          name: "Dynamic Imports",
-          path: "/javascript/advanced/modules/dynamicimports"
+          name: "Import/Export Syntax & Examples",
+          path: "/javascript/advanced/modules/syntax"
+        },
+        {
+          name: "Dynamic Imports and Lazy Loading",
+          path: "/javascript/advanced/modules/dynamic"
+        },
+        {
+          name: "Import Paths and Aliases",
+          path: "/javascript/advanced/modules/paths"
         }
       ]
     },
