@@ -1,55 +1,82 @@
-/* =============================
-   Variables
-   ============================= */
-   $gradient-start: #402e00;     // rich bronze-brown
-   $gradient-middle: #784d0a;    // gold-burnished amber
-   $gradient-end: #190029;       // deep plum/purple for contrast
-   
-   /* =============================
-      Body Background Styling
-      ============================= */
-   body {
-     background-color: $gradient-start;
-   
-     background: linear-gradient(
-       180deg,
-       $gradient-start 28%,
-       $gradient-middle 70%,
-       $gradient-end 111%
-     );
-     background-repeat: no-repeat;
-     background-size: cover;
-     min-height: 100vh;
-   
-     @supports not (background: linear-gradient(180deg, $gradient-start, $gradient-end)) {
-       background: -webkit-linear-gradient(180deg, $gradient-start 0%, $gradient-middle 50%, $gradient-end 100%);
-       background: -moz-linear-gradient(180deg, $gradient-start 0%, $gradient-middle 50%, $gradient-end 100%);
-       background: -o-linear-gradient(180deg, $gradient-start 0%, $gradient-middle 50%, $gradient-end 100%);
-       background: -ms-linear-gradient(180deg, $gradient-start 0%, $gradient-middle 50%, $gradient-end 100%);
-     }
-   }
-   
-   /* =============================
-      Styles for App.tsx Layout
-      ============================= */
-   .appContainer {
-     display: grid;
-     grid-template-rows: auto 1fr auto;
-     min-height: 100vh;
-   }
-   
-   .contentWrapper {
-     padding-top: 11rem;
-   }
-   
-   /* =============================
-      Responsive Styles (Mobile)
-      ============================= */
-   @media only screen and (max-width: 390px) {
-     body {
-       background-size: auto;
-       background-position: center;
-       background: linear-gradient(180deg, $gradient-start 30%, $gradient-end 100%);
-     }
-   }
-   
+@use "sass:color";
+
+/* ==============================
+            Variables           
+============================== */
+
+$gradient-start: #402e00;
+$gradient-middle: #784d0a;
+$gradient-end: #190029;
+
+$text-color: #ffffff;
+$text-glow: #00ffff;
+
+$font-size-lg: 60px;
+$font-size-sm: 3rem;
+
+/* ==============================
+           Breakpoints        
+============================== */
+
+$cellphone-portrait: 390px;
+$cellphone-landscape: 390px;
+
+/* ==============================
+     Global Reset / Defaults
+============================== */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #0d0d0d; // solid for splash/entry
+  overflow-x: hidden;
+}
+
+
+/* ==============================
+     Styles for App.tsx Layout
+============================== */
+
+.appContainer {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  position: relative;
+
+  background: linear-gradient(
+    180deg,
+    $gradient-start 28%,
+    $gradient-middle 70%,
+    $gradient-end 111%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @supports not (background: linear-gradient(180deg, $gradient-start, $gradient-end)) {
+    background: -webkit-linear-gradient(180deg, $gradient-start 0%, $gradient-middle 50%, $gradient-end 100%);
+    background: -moz-linear-gradient(180deg, $gradient-start 0%, $gradient-middle 50%, $gradient-end 100%);
+    background: -o-linear-gradient(180deg, $gradient-start 0%, $gradient-middle 50%, $gradient-end 100%);
+    background: -ms-linear-gradient(180deg, $gradient-start 0%, $gradient-middle 50%, $gradient-end 100%);
+  }
+
+  @media only screen and (max-width: $cellphone-portrait) {
+    background: linear-gradient(180deg, $gradient-start 30%, $gradient-end 100%);
+    background-size: auto;
+    background-position: center;
+  }
+}
+
+/* ==============================
+   Override Entry / Splash Pages
+============================== */
+
+.SplashScreen,
+.EntryScreen {
+  background-color: #0d0d0d !important;
+  background-image: none !important;
+  min-height: 100vh;
+  color: $text-color;
+}

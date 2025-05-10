@@ -1,48 +1,3 @@
-# JavaScript Basics with Code Examples
----
-
-## Exporting and Importing Functions
-
-### Default Function Export
-
-When you use the following code before the name of a <span class="emphasis">function</span>, you can change the <span class="secondEmphasis">name</span> of the function when you <span class="emphasis">import</span> it into another file:
-
-```javascript
-export default function myFunction() {
-    console.log("Default exported function");
-}
-```
-
-In another file, you can <span class="emphasis">import</span> it with any name:
-
-```javascript
-import myFunction from "./fileName";
-myFunction();
-```
-
----
-
-### Renaming Exported Functions
-
-When exporting a <span class="emphasis">function</span>, you can rename it using curly brackets and the <span class="emphasis">as</span> keyword.
-
-```javascript
-function greet() {
-    console.log("Hello!");
-}
-
-export { greet as sayHello };
-```
-
-In another file, <span class="emphasis">import</span> the function using its new name:
-
-```javascript
-import { sayHello } from "./fileName";
-sayHello(); // Outputs: Hello!
-```
-
----
-
 ### Using Webpack to Configure Path Aliases
 
 When working with JavaScript projects, managing file imports with relative paths like ./ and ../ can become complex in larger projects. To address this, Webpack allows developers to configure path aliases, simplifying file imports and improving code readability.
@@ -60,28 +15,6 @@ module.exports = {
   },
 };
 ```
-
----
-
-#### Example: Relative Path
-
-```javascript
-import MyComponent from '../../components/MyComponent';
-```
-
----
-
-#### Example: Using Alias
-
-javascript
-import MyComponent from '@/components/MyComponent';
-
----
-
-#### Explanation
-
-- The alias @/ replaces the need for long relative paths.
-- Using aliases makes refactoring easier because you only update the alias definition, not every import.
 
 ---
 
