@@ -34,6 +34,10 @@ const JavaScriptBasicsNavigation: Subpage = {
         {
           name: "Operators",
           path: "/javascript/basics/core/operators"
+        },
+        {
+          name: "Built-in Methods",
+          path: "/javascript/basics/core/methods"
         }
       ]
     },

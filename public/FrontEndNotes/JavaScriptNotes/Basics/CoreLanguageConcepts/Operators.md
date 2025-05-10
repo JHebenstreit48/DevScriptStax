@@ -247,18 +247,100 @@ let fullName = firstName + " " + lastName; // "Alice Johnson"
 
 ### Ternary Operator
 
-- The <span class="emphasis">Ternary Operator</span> provides a shorthand way of writing an <span class="emphasis">if-else</span> statement.
+The <span class="emphasis">ternary operator</span> is a concise way to write conditional logic in JavaScript.  
+It allows developers to evaluate a condition and return one value if the condition is <span class="secondEmphasis">true</span>, and a different value if it is <span class="secondEmphasis">false</span>.
+
+#### Explanation:
+
+The ternary operator simplifies the structure of conditional logic, making it easier to write and read.  
+It is especially useful in dynamic rendering, conditional assignments, or inline logic within expressions.
 
 ```javascript
-let age = 20;
-let canVote = (age >= 18) ? "Yes" : "No";
+let age = 20;  
+let canVote = (age >= 18) ? "Yes" : "No";  
 console.log(canVote); // "Yes"
 ```
 
-- Syntax:  
-  <span class="codeSnip">condition ? valueIfTrue : valueIfFalse;</span>
+#### Syntax:
+
+```javascript
+condition ? valueIfTrue : valueIfFalse;
+```
 
 ---
+
+### Spread Operator
+
+The <span class="codeSnip">...</span> spread operator is used to "unpack" elements from arrays or properties from objects into individual items.  
+It’s commonly used to **copy**, **merge**, or **expand** data structures.
+
+---
+
+#### Spread with Arrays
+
+Use the spread operator to clone or merge arrays.
+
+```javascript
+let colors = ["red", "green"];
+let extendedColors = [...colors, "blue"];
+
+console.log(extendedColors); // ["red", "green", "blue"]
+```
+
+✅ You can also merge multiple arrays:
+
+```javascript
+let arr1 = [1, 2];
+let arr2 = [3, 4];
+let merged = [...arr1, ...arr2]; // [1, 2, 3, 4]
+```
+
+---
+
+#### Spread with Objects
+
+Copy or merge properties into a new object.
+
+```javascript
+let user = { name: "Alice", age: 30 };
+let updatedUser = { ...user, age: 31, city: "NYC" };
+
+console.log(updatedUser);
+// { name: "Alice", age: 31, city: "NYC" }
+```
+
+⚠️ Later properties override earlier ones if keys conflict.
+
+---
+
+#### Spread vs. Rest
+
+- <span class="emphasis">Spread</span> breaks things apart  
+- <span class="emphasis">Rest</span> (also <span class="codeSnip">...</span>) collects them
+
+Spread:
+
+```javascript
+let nums = [1, 2, 3];
+console.log(...nums); // 1 2 3
+```
+
+Rest:
+
+```javascript
+function sum(...values) {
+  return values.reduce((acc, curr) => acc + curr, 0);
+}
+```
+
+---
+
+### Summary
+
+✅ Spread operator expands arrays or objects  
+✅ Useful for copying and merging  
+✅ Be mindful of property overwrites when merging objects  
+✅ Same syntax (<span class="codeSnip">...</span>) is used for both spread and rest, but the context determines the behavior
 
 ### Best Practices with Operators
 
