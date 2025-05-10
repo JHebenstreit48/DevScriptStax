@@ -260,6 +260,69 @@ console.log(canVote); // "Yes"
 
 ---
 
+### Spread Operator
+
+The <span class="codeSnip">...</span> spread operator is used to "unpack" elements from arrays or properties from objects into individual items.  
+It’s commonly used to **copy**, **merge**, or **expand** data structures.
+
+---
+
+#### Spread with Arrays
+
+Use the spread operator to clone or merge arrays.
+
+let colors = ["red", "green"];
+let extendedColors = [...colors, "blue"];
+
+console.log(extendedColors); // ["red", "green", "blue"]
+
+✅ You can also merge multiple arrays:
+
+let arr1 = [1, 2];
+let arr2 = [3, 4];
+let merged = [...arr1, ...arr2]; // [1, 2, 3, 4]
+
+---
+
+#### Spread with Objects
+
+Copy or merge properties into a new object.
+
+let user = { name: "Alice", age: 30 };
+let updatedUser = { ...user, age: 31, city: "NYC" };
+
+console.log(updatedUser);
+// { name: "Alice", age: 31, city: "NYC" }
+
+⚠️ Later properties override earlier ones if keys conflict.
+
+---
+
+#### Spread vs. Rest
+
+- <span class="emphasis">Spread</span> breaks things apart  
+- <span class="emphasis">Rest</span> (also <span class="codeSnip">...</span>) collects them
+
+Spread:
+
+let nums = [1, 2, 3];
+console.log(...nums); // 1 2 3
+
+Rest:
+
+function sum(...values) {
+  return values.reduce((acc, curr) => acc + curr, 0);
+}
+
+---
+
+### Summary
+
+✅ Spread operator expands arrays or objects  
+✅ Useful for copying and merging  
+✅ Be mindful of property overwrites when merging objects  
+✅ Same syntax (<span class="codeSnip">...</span>) is used for both spread and rest, but the context determines the behavior
+
 ### Best Practices with Operators
 
 ✅ Prefer <span class="codeSnip">===</span> and <span class="codeSnip">!==</span> over <span class="codeSnip">==</span> and <span class="codeSnip">!=</span> to avoid unexpected type coercion.  
