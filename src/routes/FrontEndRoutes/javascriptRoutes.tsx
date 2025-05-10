@@ -9,19 +9,24 @@ import JSHistory from "@/Pages/FrontEndPages/JavaScriptPages/Basics/Introduction
 
 // ------------------- Core Language Concepts Start -------------------
 import SyntaxStructure from "@/Pages/FrontEndPages/JavaScriptPages/Basics/CoreConcepts/SyntaxAndStructure";
-import DataTypes from "@/Pages/FrontEndPages/JavaScriptPages/Basics/CoreConcepts/DataTypes";
 import JSVariables from "@/Pages/FrontEndPages/JavaScriptPages/Basics/CoreConcepts/Variables";
 import Operators from "@/Pages/FrontEndPages/JavaScriptPages/Basics/CoreConcepts/Operators";
 import BuiltInMethods from "@/Pages/FrontEndPages/JavaScriptPages/Basics/CoreConcepts/BuiltInMethods";
 import Conditionals from "@/Pages/FrontEndPages/JavaScriptPages/Basics/CoreConcepts/Conditionals";
 import Loops from "@/Pages/FrontEndPages/JavaScriptPages/Basics/CoreConcepts/Loops";
-// -------------------- Core Language Concepts End --------------------
+// -------------------- Core Language Concepts End ----------------------
 
-// --------------------------- Arrays Start ---------------------------
+// -------------------------  Data Types Start --------------------------
+import JSPrimitives from "@/Pages/FrontEndPages/JavaScriptPages/Basics/DataTypes/Primitives";
+import ComplexDataTypes from "@/Pages/FrontEndPages/JavaScriptPages/Basics/DataTypes/Complex";
+import TemplateLiterals from "@/Pages/FrontEndPages/JavaScriptPages/Basics/DataTypes/TemplateLiterals";
+// --------------------------- Data Types End ---------------------------
+
+// --------------------------- Arrays Start -----------------------------
 import Intro from "@/Pages/FrontEndPages/JavaScriptPages/Basics/Arrays/Intro";
 import Methods from "@/Pages/FrontEndPages/JavaScriptPages/Basics/Arrays/Methods";
 import Advanced from "@/Pages/FrontEndPages/JavaScriptPages/Basics/Arrays/Advanced";
-// ---------------------------- Arrays End ----------------------------
+// ---------------------------- Arrays End ------------------------------
 
 // ------------------------ Objects and JSON Start ------------------------
 import ObjectsBasics from "@/Pages/FrontEndPages/JavaScriptPages/Basics/ObjectsAndJSON/Basics";
@@ -60,10 +65,6 @@ const javascriptRoutes: RouteObject[] = [
         element: <SyntaxStructure />,
     },
     {
-        path: '/javascript/basics/core/datatypes',
-        element: <DataTypes />,
-    },
-    {
         path: '/javascript/basics/core/variables',
         element: <JSVariables />,
     },
@@ -84,6 +85,20 @@ const javascriptRoutes: RouteObject[] = [
         element: <Loops />,
     },
     // ------------------- Basics > Core Language Concepts End -------------------
+
+    // ------------------------ Basics > Data Types Start ------------------------
+    {
+        path: '/javascript/basics/datatypes/primitive',
+        element: <JSPrimitives />,
+    },
+    {
+        path: '/javascript/basics/datatypes/complex',
+        element: <ComplexDataTypes />,
+    },
+    {
+        path: '/javascript/basics/datatypes/templateliterals',
+        element: <TemplateLiterals />,
+    },
 
     // ------------------------ Basics > Arrays Start ------------------------
     {
