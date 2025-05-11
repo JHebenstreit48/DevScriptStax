@@ -20,6 +20,22 @@
 
 ---
 
+### Quote Style Consistency
+
+JavaScript allows both <span class="codeSnip">"</span>double quotes<span class="codeSnip">"</span> and <span class="codeSnip">'</span>single quotes<span class="codeSnip">'</span> for string literals.
+
+✅ Choose one style and use it consistently across your codebase.  
+✅ Both work identically in JavaScript — it’s just a matter of style preference.
+
+```javascript
+let greeting1 = "Hello, World!";
+let greeting2 = 'Hello again!';
+```
+
+⚠️ Avoid mixing styles unless necessary (e.g., using one to escape the other).
+
+---
+
 ### Common Building Blocks of JavaScript Code
 
 🔹 **Statements** → Smallest standalone instructions (e.g., variable declarations, function calls).  
