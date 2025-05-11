@@ -59,11 +59,10 @@ $small-laptop-min: 1024px;
   background-color: $background-dark;
   z-index: 1;
   border-radius: 1rem;
-  box-shadow:
-  inset 0 0 17px 5px rgba(0, 0, 0, 0.4), // slightly softened inner shadow
-  0 0 6px 1px $secondary-color;
-        // outer shadow (your glow)
-
+  box-shadow: inset 0 0 17px 5px rgba(0, 0, 0, 0.4),
+    // slightly softened inner shadow
+    0 0 6px 1px $secondary-color;
+  // outer shadow (your glow)
 
   @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
     width: 23.5rem;
@@ -250,7 +249,7 @@ $small-laptop-min: 1024px;
       border-radius: 11px;
       background-color: $background-code;
       line-height: 1.5;
-      overflow-x: auto;
+      overflow-x: hidden;
 
       .codeBlockHeader {
         @include flex-center;
@@ -279,9 +278,12 @@ $small-laptop-min: 1024px;
       pre,
       code {
         line-height: 1.7 !important;
-        white-space: pre-wrap;
-        word-break: break-word;
-        overflow-x: auto;
+        white-space: pre-wrap !important; // ✅ Wrap long lines
+        word-break: break-word !important; // ✅ Wrap long tokens
+        text-indent: 0 !important; // ✅ Remove first-line indent
+        margin: 0 !important; // ✅ Normalize spacing
+        padding: 0 !important; // ✅ Remove any leftover space
+        overflow-x: hidden !important; // ✅ Disable horizontal scroll
       }
     }
 

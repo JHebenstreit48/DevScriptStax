@@ -10,12 +10,16 @@
     "forceConsistentCasingInFileNames": true,
     "baseUrl": "./",
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": ["src/*"],
+      "@pages/*": ["src/Pages/*"],
+      "@components/*": ["src/Components/*"],
+      "@routes/*": ["src/routes/*"],
+      "@scss/*": ["src/SCSS/*"]
     },
-    "allowSyntheticDefaultImports": true, // Enable default imports for compatibility
-    "resolveJsonModule": true, // For importing JSON files if needed
-    "typeRoots": ["./node_modules/@types", "./src/types"] // Ensure custom types are included
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "typeRoots": ["./node_modules/@types", "./src/types"]
   },
-  "include": ["src", "src/Pages/BackEndPages", "src/Pages/FrontEndPages", "src/Pages/ProgrammingLanguagesPages", "src/Pages/TestingPages", "src/Pages/ToolsPages", "src/Pages/ErrorHomeSplash/Error.tsx", "src/Pages/ErrorHomeSplash/Home.tsx", "src/Pages/ErrorHomeSplash/SplashScreen.tsx"],
-  "exclude": ["node_modules"]
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
 }
