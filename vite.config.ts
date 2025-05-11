@@ -1,15 +1,29 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import { resolve } from "path";
+import { visualizer } from "rollup-plugin-visualizer";
 
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    react(),
+    visualizer({
+      filename: "./dist/bundle-report.html",
+      open: true,
+      gzipSize: true,
+      brotliSize: true
+    })
+  ],
   resolve: {
     alias: {
       "@": resolve(__dirname, "src"),
-      "@pages": resolve(__dirname, "src/pages"),
-      "@components": resolve(__dirname, "src/components"),
-      "@css": resolve(__dirname, "src/css"),
-    },
+      "@pages": resolve(__dirname, "src/Pages"),
+      "@components": resolve(__dirname, "src/Components"),
+      "@routes": resolve(__dirname, "src/routes"),
+      "@scss": resolve(__dirname, "src/SCSS")
+    }
   },
+  build: {
+    outDir: "dist",
+    emptyOutDir: true
+  }
 });

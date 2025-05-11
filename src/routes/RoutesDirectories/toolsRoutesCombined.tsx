@@ -1,6 +1,6 @@
 import { RouteObject } from "react-router-dom";
 
-import gitRoutes from "@/routes/Tools/ContainerizationRoutes/gitRoutes";
+import gitRoutes from "@/routes/ToolsRoutes/ContainerizationRoutes/gitRoutes";
 
 const toolsRoutes: RouteObject[] = [
     ...gitRoutes,
