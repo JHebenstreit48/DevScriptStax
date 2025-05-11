@@ -28,4 +28,5 @@ src/**/*.js
 *.js.map
 *.log
 
+tsconfig.tsbuildinfo
 

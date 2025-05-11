@@ -10,6 +10,41 @@ import materialLight from 'react-syntax-highlighter/dist/esm/styles/prism/materi
 import BackToTop from '@/Components/PageComponents/Notes/BackToTopButton';
 import '@/SCSS/PageStyles/Notes.scss';
 
+// ============================================
+// Load ONLY the PrismJS languages you need.
+// You can expand this list later.
+// https://github.com/react-syntax-highlighter/react-syntax-highlighter
+// ============================================
+
+// ----- Core Front-End -----
+import 'react-syntax-highlighter/dist/esm/languages/prism/javascript';
+import 'react-syntax-highlighter/dist/esm/languages/prism/typescript';
+import 'react-syntax-highlighter/dist/esm/languages/prism/markup';
+import 'react-syntax-highlighter/dist/esm/languages/prism/css';
+import 'react-syntax-highlighter/dist/esm/languages/prism/scss';
+import 'react-syntax-highlighter/dist/esm/languages/prism/tsx';
+
+// ----- Back-End & API -----
+import 'react-syntax-highlighter/dist/esm/languages/prism/json';
+import 'react-syntax-highlighter/dist/esm/languages/prism/sql';
+import 'react-syntax-highlighter/dist/esm/languages/prism/graphql';
+
+// ----- DevOps & Terminal -----
+import 'react-syntax-highlighter/dist/esm/languages/prism/bash';
+import 'react-syntax-highlighter/dist/esm/languages/prism/docker';
+import 'react-syntax-highlighter/dist/esm/languages/prism/nginx';
+
+// ----- Databases -----
+import 'react-syntax-highlighter/dist/esm/languages/prism/mongodb';
+
+// ----- Mobile & Cross-Platform -----
+// import 'react-syntax-highlighter/dist/esm/languages/prism/swift';
+// import 'react-syntax-highlighter/dist/esm/languages/prism/kotlin';
+// import 'react-syntax-highlighter/dist/esm/languages/prism/java';
+
+// ----- Optional Extras (if used) -----
+import 'react-syntax-highlighter/dist/esm/languages/prism/python';
+
 interface NotesProps {
   filePath: string;
   markdownContent?: string;
