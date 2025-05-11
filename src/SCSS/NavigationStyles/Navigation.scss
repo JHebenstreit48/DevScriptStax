@@ -94,8 +94,8 @@ $small-laptop-min: 1024px;
          ============================== */
 .searchIconContainer {
   position: absolute;
-  left: 14.8rem;
-  top: 50%;
+  left: 11rem;
+  top: 55%;
   transform: translateY(-50%);
   z-index: 11;
 
@@ -204,7 +204,7 @@ $small-laptop-min: 1024px;
   position: relative;
   display: inline-block;
   text-align: center;
-  margin: 0 1rem;
+  margin: 0 1.5rem;
 
   @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
     display: block;

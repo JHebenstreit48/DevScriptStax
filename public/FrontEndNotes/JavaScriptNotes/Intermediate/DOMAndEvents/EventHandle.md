@@ -1,24 +1,6 @@
-### Using Webpack to Configure Path Aliases
-
-When working with JavaScript projects, managing file imports with relative paths like ./ and ../ can become complex in larger projects. To address this, Webpack allows developers to configure path aliases, simplifying file imports and improving code readability.
-
-#### Webpack Configuration
-
-```javascript
-const path = require('path');
-
-module.exports = {
-  resolve: {
-    alias: {
-      '@': path.resolve(__dirname, 'src'),
-    },
-  },
-};
-```
+## Event Handling
 
 ---
-
-## Event Handling
 
 ### Placeholder for an Event
 
@@ -26,7 +8,7 @@ The parameter <span class="emphasis">(e)</span> inside a <span class="secondEmph
 
 ```javascript
 document.querySelector("button").addEventListener("click", (e) => {
-    console.log("Button clicked", e.type); // Outputs: Button clicked click
+  console.log("Button clicked", e.type); // Outputs: Button clicked click
 });
 ```
 
@@ -38,8 +20,8 @@ The <span class="emphasis">preventDefault()</span> method stops the browser's <s
 
 ```javascript
 document.querySelector("form").addEventListener("submit", (e) => {
-    e.preventDefault();
-    console.log("Default form submission prevented");
+  e.preventDefault();
+  console.log("Default form submission prevented");
 });
 ```
 
@@ -48,3 +30,5 @@ document.querySelector("form").addEventListener("submit", (e) => {
 ## Summary
 
 These examples demonstrate core <span class="emphasis">JavaScript</span> techniques, including exporting <span class="secondEmphasis">functions</span>, handling <span class="emphasis">events</span>, using <span class="secondEmphasis">array methods</span>, and working with <span class="emphasis">strings</span>. Mastering these concepts will help you build <span class="secondEmphasis">dynamic</span> and <span class="emphasis">interactive</span> applications.
+
+---

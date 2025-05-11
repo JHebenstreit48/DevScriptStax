@@ -4,7 +4,7 @@ const JavaScriptAdvancedNavigation: Subpage = {
   name: "Advanced",
   subpages: [
     {
-      name: "Advanced Functions",
+      name: "Functions",
       subpages: [
         {
           name: "Closures",
@@ -17,7 +17,7 @@ const JavaScriptAdvancedNavigation: Subpage = {
       ]
     },
     {
-      name: "Object-Oriented JavaScript",
+      name: "Object-Oriented JS",
       subpages: [
         {
           name: "Prototype and Inheritance",

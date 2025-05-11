@@ -45,10 +45,28 @@ import HigherOrder from "@/Pages/FrontEndPages/JavaScriptPages/Basics/FunctionsP
 // ------------------------ JavaScript Basics End ------------------------
 
 
+// ------------------------ JavaScript Intermediate Start ------------------------
+
+// ------------------------ JavaScript Intermediate > DOM and Events Start ------------------------
+import EventHandle from "@/Pages/FrontEndPages/JavaScriptPages/Intermediate/DOMAndEvents/EventHandle";
+
+// ------------------------ JavaScript Intermediate > DOM and Events End ------------------------
+
+// ------------------------ JavaScript Intermediate > Modern ES6 Start ------------------------
+import Promises from "@/Pages/FrontEndPages/JavaScriptPages/Intermediate/ModernES6/Promises";
+
+// ------------------------ JavaScript Intermediate > Modern ES6 End ------------------------
+
+// ------------------------ JavaScript Intermediate End ------------------------
+
 // ------------------------ JavaScript > Advanced Start ------------------------
 
 // ------------------------ Javascript > Advanced > Modules Start ------------------------
-import ModulesOverview from "@/Pages/FrontEndPages/JavaScriptPages/Advanced/Overview";
+import ModulesOverview from "@/Pages/FrontEndPages/JavaScriptPages/Advanced/ModulesPages/Overview";
+import ModulesSyntax from "@/Pages/FrontEndPages/JavaScriptPages/Advanced/ModulesPages/Syntax";
+import DynamicImports from "@/Pages/FrontEndPages/JavaScriptPages/Advanced/ModulesPages/DynamicImports";
+import PathsAliases from "@/Pages/FrontEndPages/JavaScriptPages/Advanced/ModulesPages/PathsAndAliases";
+
 // ------------------------ Javascript > Advanced > Modules End ------------------------
 
 // ------------------------- JavaScript > Advanced End ------------------------
@@ -169,6 +187,24 @@ const javascriptRoutes: RouteObject[] = [
 
     // ------------------------ Basics End ------------------------
 
+    // ------------------------ Intermediate Start ------------------------
+
+    // ------------------------ Intermediate > DOM and Events Start ------------------------
+    {
+        path: '/javascript/intermediate/dom/eventhandling',
+        element: <EventHandle />,
+    },
+    // ------------------------ Intermediate > DOM and Events End ------------------------
+
+    // ------------------------ Intermediate > Modern ES6 Start ------------------------
+    {
+        path: '/javascript/intermediate/es6/promisesasync',
+        element: <Promises />,
+    },
+// ------------------------- Intermediate > Modern ES6 End ------------------------
+
+    // ------------------------ Intermediate End ------------------------
+
     // ------------------------ Advanced Start ------------------------
 
     // ------------------------ Advanced > Modules Start ------------------------
@@ -176,6 +212,18 @@ const javascriptRoutes: RouteObject[] = [
         path: '/javascript/advanced/modules/overview',
         element: <ModulesOverview />,
     },
+    {
+        path: '/javascript/advanced/modules/syntax',
+        element: <ModulesSyntax />,
+    },
+    {
+        path: '/javascript/advanced/modules/dynamic',
+        element: <DynamicImports />,
+    },
+    {
+        path: '/javascript/advanced/modules/paths',
+        element: <PathsAliases />,
+    }
     // ------------------------ Advanced > Modules End ------------------------
 
     // ------------------------ Advanced End ------------------------

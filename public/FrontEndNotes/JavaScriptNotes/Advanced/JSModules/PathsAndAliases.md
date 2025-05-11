@@ -18,9 +18,11 @@ When importing modules in JavaScript, you must specify the file’s location rel
 
 Examples:
 
+```javascript
 import utils from "./lib/utils.js";        // Relative path  
 import helper from "../common/helper.js";  // Relative path to parent folder  
 import api from "@/services/api.js";        // Absolute path using alias (@)
+```
 
 ---
 
@@ -28,7 +30,9 @@ import api from "@/services/api.js";        // Absolute path using alias (@)
 
 Using many <span class="codeSnip">../</span> can become hard to read and maintain:
 
+```javascript
 import { something } from "../../../utils/helpers.js";
+```
 
 This makes it hard to refactor or move files without breaking imports.
 
@@ -51,6 +55,7 @@ Path aliases depend on your development environment:
 
 In <span class="codeSnip">babel.config.js</span>:
 
+```javascript
 {
   "plugins": [
     ["module-resolver", {
@@ -61,9 +66,11 @@ In <span class="codeSnip">babel.config.js</span>:
     }]
   ]
 }
+```
 
 #### Vite / ESBuild
 
+```javascript
 vite.config.js:
 
 import { defineConfig } from "vite";
@@ -76,11 +83,29 @@ export default defineConfig({
     }
   }
 });
+```
+
+#### Webpack
+
+```javascript
+// webpack.config.js:
+
+const path = require("path");
+
+module.exports = {
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "src"),
+    },
+  },
+};
+```
 
 #### TypeScript
 
 In <span class="codeSnip">tsconfig.json</span>:
 
+```javascript
 {
   "compilerOptions": {
     "baseUrl": ".",
@@ -89,6 +114,7 @@ In <span class="codeSnip">tsconfig.json</span>:
     }
   }
 }
+```
 
 ---
 
@@ -104,8 +130,10 @@ src/
 
 With alias <span class="codeSnip">@ → ./src</span>:
 
+```javascript
 import Button from "@/components/Button.js";
 import { add } from "@/utils/math.js";
+```
 
 ✅ Cleaner and easier to follow across large projects.
 
