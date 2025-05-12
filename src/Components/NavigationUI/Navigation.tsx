@@ -1,17 +1,16 @@
-import { useState, useEffect, useRef, useCallback } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import pages from "@/Navigation/CombinedNav/CombinedNavAndTypes/Pages";
 import { Subpage } from "@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes";
+import { flattenNavigation } from "@/Components/NavigationUI/SearchModal/Utils/flattenNavigation";
+import { SearchMatch } from "@/Components/NavigationUI/SearchModal/Utils/types";
 import SearchIcon from "@/Components/NavigationUI/SearchIcon";
-import SearchModal from "@/Components/NavigationUI/SearchModal";
+import SearchModal from "@/Components/NavigationUI/SearchModal/Modal";
 
 const Navigation = () => {
   const [activeDropdown, setActiveDropdown] = useState<Set<string>>(new Set());
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
-  const [searchResults, setSearchResults] = useState<
-    { name: string; path: string; breadcrumbs: string[] }[]
-  >([]);
   const [showModal, setShowModal] = useState(false);
   const [searchMode, setSearchMode] = useState<"instant" | "manual">(
     () => (localStorage.getItem("searchMode") as "instant" | "manual") || "instant"
@@ -21,63 +20,12 @@ const Navigation = () => {
 
   useEffect(() => {
     const savedTerm = localStorage.getItem("lastSearchTerm") || "";
-    const savedResults = localStorage.getItem("lastSearchResults");
     if (savedTerm) setSearchTerm(savedTerm);
-    if (savedResults) setSearchResults(JSON.parse(savedResults));
   }, []);
 
   useEffect(() => {
     localStorage.setItem("searchMode", searchMode);
   }, [searchMode]);
-
-  const searchSubpages = useCallback(
-    (
-      subpages: Subpage[],
-      term: string,
-      breadcrumbs: string[] = []
-    ): { name: string; path: string; breadcrumbs: string[] }[] => {
-      const lowerTerm = term.toLowerCase().trim();
-
-      return subpages.flatMap((sp) => {
-        const currentTrail = [...breadcrumbs, sp.name];
-        const matches =
-          sp.name.toLowerCase().includes(lowerTerm) && sp.path !== undefined;
-
-        const childMatches = sp.subpages
-          ? searchSubpages(sp.subpages, term, currentTrail)
-          : [];
-
-        return [
-          ...(matches && sp.path
-            ? [{ name: sp.name, path: sp.path, breadcrumbs }]
-            : []),
-          ...childMatches,
-        ];
-      });
-    },
-    []
-  );
-
-  const performSearch = useCallback(
-    (value: string) => {
-      const results: { name: string; path: string; breadcrumbs: string[] }[] = [];
-
-      pages.forEach((page) => {
-        results.push(...searchSubpages(page.subpages, value, [page.name]));
-      });
-
-      setSearchResults(results);
-      localStorage.setItem("lastSearchTerm", value);
-      localStorage.setItem("lastSearchResults", JSON.stringify(results));
-    },
-    [searchSubpages]
-  );
-
-  useEffect(() => {
-    if (searchMode === "instant" && searchTerm.trim()) {
-      performSearch(searchTerm);
-    }
-  }, [searchTerm, searchMode, performSearch]);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -140,6 +88,8 @@ const Navigation = () => {
     });
   };
 
+  const allPages: SearchMatch[] = flattenNavigation(pages);
+
   return (
     <div className="navigationMenu" ref={navRef}>
       <button className="hamburgerButton" onClick={toggleMenu}>
@@ -152,13 +102,11 @@ const Navigation = () => {
           <SearchModal
             searchTerm={searchTerm}
             setSearchTerm={setSearchTerm}
-            results={searchResults}
+            allPages={allPages}
             searchMode={searchMode}
             setSearchMode={setSearchMode}
-            onSearch={performSearch}
             onClose={() => {
               setSearchTerm("");
-              setSearchResults([]);
               setShowModal(false);
             }}
           />
