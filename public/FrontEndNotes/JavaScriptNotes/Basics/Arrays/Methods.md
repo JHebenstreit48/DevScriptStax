@@ -42,11 +42,12 @@ console.log(numbers); // [1, 2]
 <span class="codeSnip">shift()</span> removes the first element.  
 <span class="codeSnip">unshift()</span> adds one or more elements to the beginning.
 
-javascript  
+```javascript  
 let names = ["Alice", "Bob"];  
 names.shift();         // Removes "Alice"  
 names.unshift("Zara"); // Adds "Zara" to the start  
 console.log(names);    // ["Zara", "Bob"]
+```
 
 ---
 
