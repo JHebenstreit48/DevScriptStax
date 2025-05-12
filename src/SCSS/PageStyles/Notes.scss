@@ -287,18 +287,6 @@ $small-laptop-min: 1024px;
         padding: 0 !important;
         overflow-x: hidden !important;
       }
-
-      // ✅ Add these lines — this is what replaces darkGrayBackgroundTheme
-      /* Force override of PrismJS background */
-      pre[class*='language-'],
-      code[class*='language-'] {
-        background-color: $background-code !important;
-        color: #fff !important;
-        box-shadow: none !important;
-        padding: 1rem !important;
-        margin: 0 !important;
-        border: none !important;
-      }
     }
 
     .token {
