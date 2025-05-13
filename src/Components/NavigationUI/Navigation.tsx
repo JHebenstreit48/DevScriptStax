@@ -71,7 +71,6 @@ const Navigation = () => {
     });
   };
   
-
   const toggleMenu = () => setIsMenuOpen((prev) => !prev);
 
   const renderSubpages = (
@@ -158,7 +157,7 @@ const Navigation = () => {
                     </button>
                     {isActive && (
                       <div className="dropdownContent active">
-                        {renderSubpages(page.subpages, pageKey)}
+                        {renderSubpages(page.subpages, pageKey, 2)}
                       </div>
                     )}
                   </>
