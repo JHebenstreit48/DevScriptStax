@@ -1,16 +1,13 @@
 import { RouteObject } from 'react-router-dom';
 
-import React from "@/Pages/FrontEndPages/ReactPages/ReactBasics/IntroAndSetup";
+import React from "@/Pages/MainTabs/FrontEndPages/ReactPages/ReactBasics/IntroAndSetup";
 // import ReactCode from "@/pages/ReactPages/ReactCode";
 
-import ReactAndTypeScript from "@/Pages/FrontEndPages/ReactPages/ReactAndTypeScript/ReactAndTypeScript";
+import ReactAndTypeScript from "@/Pages/MainTabs/FrontEndPages/ReactPages/ReactAndTypeScript/ReactAndTypeScript";
 // import ReactAndTypeScriptCode from "@/pages/ReactPages/ReactAndTypeScriptCode";
 
-import ReactFullStack from "@/Pages/FrontEndPages/ReactPages/ReactFullStack/ReactFullStack";
+import ReactFullStack from "@/Pages/MainTabs/FrontEndPages/ReactPages/ReactFullStack/ReactFullStack";
 // import ReactFullStackCode from "@/pages/ReactPages/ReactFullStackCode";
-
-import ReactNative from "@/Pages/FrontEndPages/ReactPages/ReactNative/ReactNative";
-// import ReactNativeCode from "@/pages/ReactPages/ReactNativeCode";
 
 
 const reactRoutes: RouteObject[] = [
@@ -38,10 +35,6 @@ const reactRoutes: RouteObject[] = [
     //     path: '/react/reactfullstackcode',
     //     element: <ReactFullStackCode />,
     // },
-    {
-        path: '/react/reactnative',
-        element: <ReactNative />,
-    },
     // {
     //     path: '/react/reactnativecode',
     //     element: <ReactNativeCode />,

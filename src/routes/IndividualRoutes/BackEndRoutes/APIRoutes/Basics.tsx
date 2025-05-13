@@ -1,12 +1,12 @@
 import { RouteObject } from "react-router-dom";
 
 // ---------- API Introduction Start ----------
-import CoreConcepts from "@/Pages/BackEndPages/APIPages/APIFundamentals/CoreAPIConcepts";
+import CoreConcepts from "@/Pages/MainTabs/BackEndPages/APIPages/APIFundamentals/CoreAPIConcepts";
 // ---------- API Introduction End ----------
 
 // ---------- Types of APIs Start ----------
-import PublicVPrivate from "@/Pages/BackEndPages/APIPages/TypesOfAPIs/PubVSPrivate";
-import RESTVSGraphQLVSSOAP from "@/Pages/BackEndPages/APIPages/TypesOfAPIs/RestVSGraphVSSOAP";
+import PublicVPrivate from "@/Pages/MainTabs/BackEndPages/APIPages/TypesOfAPIs/PubVSPrivate";
+import RESTVSGraphQLVSSOAP from "@/Pages/MainTabs/BackEndPages/APIPages/TypesOfAPIs/RestVSGraphVSSOAP";
 // ---------- Types of APIs End ----------
 
 const APIBasics: RouteObject[] = [

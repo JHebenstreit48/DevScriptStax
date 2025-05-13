@@ -4,7 +4,7 @@ import { RouteObject } from "react-router-dom";
 //                          Git Notes Start
 // ========================================================
 
-import Git from "@/Pages/ToolsPages/GitPages/Git";
+import Git from "@/Pages/MainTabs/ToolsPages/GitPages/Git";
 // import GitCode from "@/pages/GitPages/GitCode";
 
 // ========================================================

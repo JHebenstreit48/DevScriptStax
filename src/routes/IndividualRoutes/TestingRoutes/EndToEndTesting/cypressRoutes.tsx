@@ -1,6 +1,6 @@
 import { RouteObject } from 'react-router-dom';
 
-import Cypress from "@/Pages/TestingPages/CypressTesting";
+import Cypress from "@/Pages/MainTabs/TestingPages/CypressTesting";
 // import CypressCode from "@/pages/TestingPages/CypressTestingCode";
 
 const cypressRoutes: RouteObject[] = [

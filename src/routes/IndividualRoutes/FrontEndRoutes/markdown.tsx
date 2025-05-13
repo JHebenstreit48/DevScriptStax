@@ -1,6 +1,6 @@
 import { RouteObject } from "react-router-dom";
 
-import Markdown from "@/Pages/FrontEndPages/MarkdownPages/Markdown";
+import Markdown from "@/Pages/MainTabs/FrontEndPages/MarkdownPages/Markdown";
 // import MarkdownCode from "@/pages/MarkdownPages/MarkdownCode";
 
 const markdownRoutes: RouteObject[] = [

@@ -2,24 +2,24 @@ import { RouteObject } from "react-router-dom";
 
 // ------------------------ CSS Vanilla Start ------------------------
 
-import CSSIntro from "@/Pages/FrontEndPages/CSSPages/CSSVanillaPages/CSSBasics/CSSIntro";
-import CSSSelectors from "@/Pages/FrontEndPages/CSSPages/CSSVanillaPages/CSSBasics/CSSSelectors";
-import CSSBoxModel from "@/Pages/FrontEndPages/CSSPages/CSSVanillaPages/CSSBasics/CSSBoxModel";
-import CSSPositioning from "@/Pages/FrontEndPages/CSSPages/CSSVanillaPages/CSSBasics/CSSPositioning";
+import CSSIntro from "@/Pages/MainTabs/FrontEndPages/CSSPages/CSSVanillaPages/CSSBasics/CSSIntro";
+import CSSSelectors from "@/Pages/MainTabs/FrontEndPages/CSSPages/CSSVanillaPages/CSSBasics/CSSSelectors";
+import CSSBoxModel from "@/Pages/MainTabs/FrontEndPages/CSSPages/CSSVanillaPages/CSSBasics/CSSBoxModel";
+import CSSPositioning from "@/Pages/MainTabs/FrontEndPages/CSSPages/CSSVanillaPages/CSSBasics/CSSPositioning";
 
 // ------------------------- CSS Vanilla End -------------------------
 
 // ------------------------- CSS Layouts Start ------------------------
-import CSSFlexbox from "@/Pages/FrontEndPages/CSSPages/CSSVanillaPages/CSSLayout/CSSFlexbox";
-import CSSGrid from "@/Pages/FrontEndPages/CSSPages/CSSVanillaPages/CSSLayout/CSSGrid";
+import CSSFlexbox from "@/Pages/MainTabs/FrontEndPages/CSSPages/CSSVanillaPages/CSSLayout/CSSFlexbox";
+import CSSGrid from "@/Pages/MainTabs/FrontEndPages/CSSPages/CSSVanillaPages/CSSLayout/CSSGrid";
 // -------------------------- CSS Layouts End -------------------------
 
 // ------------------------ CSS Advanced Start ------------------------
-import Animations from "@/Pages/FrontEndPages/CSSPages/CSSVanillaPages/CSSAdvancedPages/Animations";
-import MediaQueries from "@/Pages/FrontEndPages/CSSPages/CSSVanillaPages/CSSAdvancedPages/MediaQueries";
-import Transform from "@/Pages/FrontEndPages/CSSPages/CSSVanillaPages/CSSAdvancedPages/Transform";
-import Transitions from "@/Pages/FrontEndPages/CSSPages/CSSVanillaPages/CSSAdvancedPages/Transition";
-import CSSVariables from "@/Pages/FrontEndPages/CSSPages/CSSVanillaPages/CSSAdvancedPages/CSSVariables";
+import Animations from "@/Pages/MainTabs/FrontEndPages/CSSPages/CSSVanillaPages/CSSAdvancedPages/Animations";
+import MediaQueries from "@/Pages/MainTabs/FrontEndPages/CSSPages/CSSVanillaPages/CSSAdvancedPages/MediaQueries";
+import Transform from "@/Pages/MainTabs/FrontEndPages/CSSPages/CSSVanillaPages/CSSAdvancedPages/Transform";
+import Transitions from "@/Pages/MainTabs/FrontEndPages/CSSPages/CSSVanillaPages/CSSAdvancedPages/Transition";
+import CSSVariables from "@/Pages/MainTabs/FrontEndPages/CSSPages/CSSVanillaPages/CSSAdvancedPages/CSSVariables";
 // ------------------------- CSS Advanced End -------------------------
 
 // ------------------------ CSS Vanilla End ------------------------
@@ -30,21 +30,21 @@ import CSSVariables from "@/Pages/FrontEndPages/CSSPages/CSSVanillaPages/CSSAdva
 // ----------------------- CSS Bootstrap Start ------------------------
 
 // -------------- Bootstrap Getting Started Start --------------
-import BootstrapIntro from "@/Pages/FrontEndPages/CSSPages/CSSFrameworksPages/Bootstrap/GettingStarted/BootstrapIntro";
-import BootstrapGrid from "@/Pages/FrontEndPages/CSSPages/CSSFrameworksPages/Bootstrap/GettingStarted/BootstrapGrid";
-import BootstrapTypography from "@/Pages/FrontEndPages/CSSPages/CSSFrameworksPages/Bootstrap/GettingStarted/BootstrapTypography";
-import BootstrapUtilities from "@/Pages/FrontEndPages/CSSPages/CSSFrameworksPages/Bootstrap/GettingStarted/BootstrapUtilities";
+import BootstrapIntro from "@/Pages/MainTabs/FrontEndPages/CSSPages/CSSFrameworksPages/Bootstrap/GettingStarted/BootstrapIntro";
+import BootstrapGrid from "@/Pages/MainTabs/FrontEndPages/CSSPages/CSSFrameworksPages/Bootstrap/GettingStarted/BootstrapGrid";
+import BootstrapTypography from "@/Pages/MainTabs/FrontEndPages/CSSPages/CSSFrameworksPages/Bootstrap/GettingStarted/BootstrapTypography";
+import BootstrapUtilities from "@/Pages/MainTabs/FrontEndPages/CSSPages/CSSFrameworksPages/Bootstrap/GettingStarted/BootstrapUtilities";
 // --------------- Bootstrap Getting Started End ---------------
 
 // --------------- Bootstrap Components Start ----------------
-import BootstrapAccordions from "@/Pages/FrontEndPages/CSSPages/CSSFrameworksPages/Bootstrap/BootstrapComponents/Accordions";
-import BootstrapAlerts from "@/Pages/FrontEndPages/CSSPages/CSSFrameworksPages/Bootstrap/BootstrapComponents/Alerts";
-import BootstrapButtons from "@/Pages/FrontEndPages/CSSPages/CSSFrameworksPages/Bootstrap/BootstrapComponents/Buttons";
-import BootstrapCards from "@/Pages/FrontEndPages/CSSPages/CSSFrameworksPages/Bootstrap/BootstrapComponents/Cards";
-import BootstrapCarousel from "@/Pages/FrontEndPages/CSSPages/CSSFrameworksPages/Bootstrap/BootstrapComponents/Carousel";
-import BootstrapDropdowns from "@/Pages/FrontEndPages/CSSPages/CSSFrameworksPages/Bootstrap/BootstrapComponents/Dropdowns";
-import BootstrapModals from "@/Pages/FrontEndPages/CSSPages/CSSFrameworksPages/Bootstrap/BootstrapComponents/Modals";
-import BootstrapTooltips from "@/Pages/FrontEndPages/CSSPages/CSSFrameworksPages/Bootstrap/BootstrapComponents/Tooltips";
+import BootstrapAccordions from "@/Pages/MainTabs/FrontEndPages/CSSPages/CSSFrameworksPages/Bootstrap/BootstrapComponents/Accordions";
+import BootstrapAlerts from "@/Pages/MainTabs/FrontEndPages/CSSPages/CSSFrameworksPages/Bootstrap/BootstrapComponents/Alerts";
+import BootstrapButtons from "@/Pages/MainTabs/FrontEndPages/CSSPages/CSSFrameworksPages/Bootstrap/BootstrapComponents/Buttons";
+import BootstrapCards from "@/Pages/MainTabs/FrontEndPages/CSSPages/CSSFrameworksPages/Bootstrap/BootstrapComponents/Cards";
+import BootstrapCarousel from "@/Pages/MainTabs/FrontEndPages/CSSPages/CSSFrameworksPages/Bootstrap/BootstrapComponents/Carousel";
+import BootstrapDropdowns from "@/Pages/MainTabs/FrontEndPages/CSSPages/CSSFrameworksPages/Bootstrap/BootstrapComponents/Dropdowns";
+import BootstrapModals from "@/Pages/MainTabs/FrontEndPages/CSSPages/CSSFrameworksPages/Bootstrap/BootstrapComponents/Modals";
+import BootstrapTooltips from "@/Pages/MainTabs/FrontEndPages/CSSPages/CSSFrameworksPages/Bootstrap/BootstrapComponents/Tooltips";
 // ---------------- Bootstrap Components End -----------------
 
 // ------------------------ CSS Bootstrap End ------------------------
@@ -55,21 +55,21 @@ import BootstrapTooltips from "@/Pages/FrontEndPages/CSSPages/CSSFrameworksPages
 // --------------------- CSS Preprocessors Start ---------------------
 
 // ---------------------------- LESS Start ---------------------------
-import LESS from "@/Pages/FrontEndPages/CSSPages/CSSPreprocessorsPages/LESSPages/LESS";
+import LESS from "@/Pages/MainTabs/FrontEndPages/CSSPages/CSSPreprocessorsPages/LESSPages/LESS";
 // import LESSCode from "@/pages/CSSPages/LESSCode";
 // ----------------------------- LESS End ----------------------------
 
 // --------------------------- Sass Start ----------------------------
 
 // ------------------- Getting Started Start -------------------
-import SassIntro from "@/Pages/FrontEndPages/CSSPages/CSSPreprocessorsPages/SassPages/GettingStarted/SassIntro";
-import SassVariables from "@/Pages/FrontEndPages/CSSPages/CSSPreprocessorsPages/SassPages/GettingStarted/SassVariables";
-import MixinsAndFunctions from "@/Pages/FrontEndPages/CSSPages/CSSPreprocessorsPages/SassPages/GettingStarted/SassMixinsAndFuctions";
+import SassIntro from "@/Pages/MainTabs/FrontEndPages/CSSPages/CSSPreprocessorsPages/SassPages/GettingStarted/SassIntro";
+import SassVariables from "@/Pages/MainTabs/FrontEndPages/CSSPages/CSSPreprocessorsPages/SassPages/GettingStarted/SassVariables";
+import MixinsAndFunctions from "@/Pages/MainTabs/FrontEndPages/CSSPages/CSSPreprocessorsPages/SassPages/GettingStarted/SassMixinsAndFuctions";
 // -------------------- Getting Started End --------------------
 
 // ------------------- Advanced Concepts Start -------------------
-import PartialsAndImports from "@/Pages/FrontEndPages/CSSPages/CSSPreprocessorsPages/SassPages/Advanced/PartialsAndImports";
-import ExtendAndPlaceholders from "@/Pages/FrontEndPages/CSSPages/CSSPreprocessorsPages/SassPages/Advanced/ExtendAndPlaceholders";
+import PartialsAndImports from "@/Pages/MainTabs/FrontEndPages/CSSPages/CSSPreprocessorsPages/SassPages/Advanced/PartialsAndImports";
+import ExtendAndPlaceholders from "@/Pages/MainTabs/FrontEndPages/CSSPages/CSSPreprocessorsPages/SassPages/Advanced/ExtendAndPlaceholders";
 // -------------------- Advanced Concepts End --------------------
 
 // ----------------------------- Sass End -----------------------------
@@ -79,7 +79,7 @@ import ExtendAndPlaceholders from "@/Pages/FrontEndPages/CSSPages/CSSPreprocesso
 
 // -------------------- CSS Postprocessors Start --------------------
 
-import WhatArePost from "@/Pages/FrontEndPages/CSSPages/CSSPostprocessorsPages/PostCSS";
+import WhatArePost from "@/Pages/MainTabs/FrontEndPages/CSSPages/CSSPostprocessorsPages/PostCSS";
 // import PostCSSCode from "@/pages/CSSPages/PostCSSCode";
 
 // --------------------- CSS Postprocessors End ---------------------

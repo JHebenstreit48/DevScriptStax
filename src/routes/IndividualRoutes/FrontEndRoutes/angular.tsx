@@ -3,25 +3,25 @@ import { RouteObject } from "react-router-dom";
 // ---------------------- Angular Basics Start ----------------------
 
 // ----------- Angular Getting Started Start ------------
-import AngularIntro from "@/Pages/FrontEndPages/AngularPages/Basics/Fundamentals/Introduction";
-import AngularAppCreate from "@/Pages/FrontEndPages/AngularPages/Basics/Fundamentals/CreatingRunningApp";
-import AngularCLI from "@/Pages/FrontEndPages/AngularPages/Basics/Fundamentals/CLI";
+import AngularIntro from "@/Pages/MainTabs/FrontEndPages/AngularPages/Basics/Fundamentals/Introduction";
+import AngularAppCreate from "@/Pages/MainTabs/FrontEndPages/AngularPages/Basics/Fundamentals/CreatingRunningApp";
+import AngularCLI from "@/Pages/MainTabs/FrontEndPages/AngularPages/Basics/Fundamentals/CLI";
 // ------------ Angular Getting Started End -------------
 
 // ----------- Angular Project Structure Start -----------
-import AngularStructure from "@/Pages/FrontEndPages/AngularPages/Basics/ProjectStructure/Structure";
-import AngularConfigFiles from "@/Pages/FrontEndPages/AngularPages/Basics/ProjectStructure/ConfigurationFiles";
-import AngularFolderFileNaming from "@/Pages/FrontEndPages/AngularPages/Basics/ProjectStructure/FolderFileNaming";
+import AngularStructure from "@/Pages/MainTabs/FrontEndPages/AngularPages/Basics/ProjectStructure/Structure";
+import AngularConfigFiles from "@/Pages/MainTabs/FrontEndPages/AngularPages/Basics/ProjectStructure/ConfigurationFiles";
+import AngularFolderFileNaming from "@/Pages/MainTabs/FrontEndPages/AngularPages/Basics/ProjectStructure/FolderFileNaming";
 // ------------ Angular Project Structure End ------------
 
 // ----------------------- Angular Basics End ------------------------
 
 // -------------- Angular Core Concepts Start --------------
-import AngularComponentsIntro from "@/Pages/FrontEndPages/AngularPages/CoreConcepts/AngularComponents/Introduction";
-import AngularIO from "@/Pages/FrontEndPages/AngularPages/CoreConcepts/AngularComponents/InputsOutputs";
-import AngularCommunicate from "@/Pages/FrontEndPages/AngularPages/CoreConcepts/AngularComponents/Communication";
-import AngularReusable from "@/Pages/FrontEndPages/AngularPages/CoreConcepts/AngularComponents/ReusableDesign";
-import AngularSmartDumb from "@/Pages/FrontEndPages/AngularPages/CoreConcepts/AngularComponents/SmartDumb";
+import AngularComponentsIntro from "@/Pages/MainTabs/FrontEndPages/AngularPages/CoreConcepts/AngularComponents/Introduction";
+import AngularIO from "@/Pages/MainTabs/FrontEndPages/AngularPages/CoreConcepts/AngularComponents/InputsOutputs";
+import AngularCommunicate from "@/Pages/MainTabs/FrontEndPages/AngularPages/CoreConcepts/AngularComponents/Communication";
+import AngularReusable from "@/Pages/MainTabs/FrontEndPages/AngularPages/CoreConcepts/AngularComponents/ReusableDesign";
+import AngularSmartDumb from "@/Pages/MainTabs/FrontEndPages/AngularPages/CoreConcepts/AngularComponents/SmartDumb";
 // --------------- Angular Core Concepts End ---------------
 
 
