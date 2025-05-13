@@ -1,6 +1,6 @@
 import { RouteObject } from "react-router-dom";
 
-import CICDOps from "@/Pages/ToolsPages/CICDOpsPages/CICDOps";
+import CICDOps from "@/Pages/MainTabs/ToolsPages/CICDOpsPages/CICDOps";
 // import CICDOpsCode from "@/pages/CICDOpsPages/CICDOpsCode";
 
 const cicdOpsTempRoutes: RouteObject[] = [

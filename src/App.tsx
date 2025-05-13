@@ -6,8 +6,8 @@ import { useState, useEffect } from "react";
 // ==========================
 
 import Footer from '@/Components/PageComponents/Footer';
-import EntryScreen from "@/Pages/ErrorHomeSplash/EntryScreen";
-import SplashScreen from '@/Pages/ErrorHomeSplash/SplashScreen';
+import EntryScreen from "@/Pages/Special/EntryScreen";
+import SplashScreen from '@/Pages/Special/SplashScreen';
 
 // ==========================
 //        SCSS Imports

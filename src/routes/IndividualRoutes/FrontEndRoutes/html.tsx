@@ -2,11 +2,11 @@ import { RouteObject } from "react-router-dom";
 
 // ----------------------- HTML Basics Start -----------------------
 
-import HTML from "@/Pages/FrontEndPages/HTMLPages/HTMLBasics/HTMLIntro";
-import HTMLELements from "@/Pages/FrontEndPages/HTMLPages/HTMLBasics/HTMLElements";
-import HTMLAttributes from "@/Pages/FrontEndPages/HTMLPages/HTMLBasics/HTMLAttributes";
-import HTMLForms from "@/Pages/FrontEndPages/HTMLPages/HTMLBasics/HTMLForms";
-import HTMLSemantics from "@/Pages/FrontEndPages/HTMLPages/HTMLBasics/HTMLSemantics";
+import HTML from "@/Pages/MainTabs/FrontEndPages/HTMLPages/HTMLBasics/HTMLIntro";
+import HTMLELements from "@/Pages/MainTabs/FrontEndPages/HTMLPages/HTMLBasics/HTMLElements";
+import HTMLAttributes from "@/Pages/MainTabs/FrontEndPages/HTMLPages/HTMLBasics/HTMLAttributes";
+import HTMLForms from "@/Pages/MainTabs/FrontEndPages/HTMLPages/HTMLBasics/HTMLForms";
+import HTMLSemantics from "@/Pages/MainTabs/FrontEndPages/HTMLPages/HTMLBasics/HTMLSemantics";
 
 const htmlRoutes: RouteObject[] = [
 

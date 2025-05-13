@@ -1,8 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
 
 import App from "@/App";
-import ErrorPage from "@/Pages/ErrorHomeSplash/Error";
-import Home from "@/Pages/ErrorHomeSplash/Home";
+import ErrorPage from "@/Pages/Special/Error";
+import Home from "@/Pages/Special/Home";
 
 import backEndRoutes from "@/routes/RoutesDirectories/backEndRoutesCombined";
 import cloudServicesRoutes from "@/routes/RoutesDirectories/cloudServicesRoutesCombined";

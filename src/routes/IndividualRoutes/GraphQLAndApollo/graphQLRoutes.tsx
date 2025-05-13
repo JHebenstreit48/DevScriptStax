@@ -1,6 +1,6 @@
 import { RouteObject } from "react-router-dom";
 
-import GraphQL from "@/Pages/GraphQLAndApolloPages/GraphQLPages/GraphQL";
+import GraphQL from "@/Pages/MainTabs/GraphQLAndApolloPages/GraphQLPages/GraphQL";
 // import GraphQLCode from "@/pages/GraphQLPages/GraphQLCode";
 
 const graphQLRoutes: RouteObject[] = [

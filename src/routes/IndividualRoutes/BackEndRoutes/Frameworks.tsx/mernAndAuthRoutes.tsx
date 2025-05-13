@@ -1,6 +1,6 @@
 import { RouteObject } from 'react-router-dom';
 
-import MernAndAuth from "@/Pages/BackEndPages/FrameworksPages/MERNAuthPages/MernAndAuth";
+import MernAndAuth from "@/Pages/MainTabs/BackEndPages/FrameworksPages/MERNAuthPages/MernAndAuth";
 // import MernAndAuthCode from "@/pages/MERNAuthPages/MernAndAuthCode";
 
 const mernAndAuthRoutes: RouteObject[] = [

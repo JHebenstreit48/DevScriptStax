@@ -3,44 +3,44 @@ import { RouteObject } from "react-router-dom";
 // ----------------------- JavaScript Basics Start -----------------------
 
 // ------------------------ Introduction Start ------------------------
-import JSOverview from "@/Pages/FrontEndPages/JavaScriptPages/Basics/Introduction/JSOverview";
-import JSHistory from "@/Pages/FrontEndPages/JavaScriptPages/Basics/Introduction/JSHistory";
+import JSOverview from "@/Pages/MainTabs/FrontEndPages/JavaScriptPages/Basics/Introduction/JSOverview";
+import JSHistory from "@/Pages/MainTabs/FrontEndPages/JavaScriptPages/Basics/Introduction/JSHistory";
 // ------------------------- Introduction End -------------------------
 
 // ------------------- Core Language Concepts Start -------------------
-import SyntaxStructure from "@/Pages/FrontEndPages/JavaScriptPages/Basics/CoreConcepts/SyntaxAndStructure";
-import JSVariables from "@/Pages/FrontEndPages/JavaScriptPages/Basics/CoreConcepts/Variables";
-import Operators from "@/Pages/FrontEndPages/JavaScriptPages/Basics/CoreConcepts/Operators";
-import BuiltInMethods from "@/Pages/FrontEndPages/JavaScriptPages/Basics/CoreConcepts/BuiltInMethods";
-import Conditionals from "@/Pages/FrontEndPages/JavaScriptPages/Basics/CoreConcepts/Conditionals";
-import Loops from "@/Pages/FrontEndPages/JavaScriptPages/Basics/CoreConcepts/Loops";
+import SyntaxStructure from "@/Pages/MainTabs/FrontEndPages/JavaScriptPages/Basics/CoreConcepts/SyntaxAndStructure";
+import JSVariables from "@/Pages/MainTabs/FrontEndPages/JavaScriptPages/Basics/CoreConcepts/Variables";
+import Operators from "@/Pages/MainTabs/FrontEndPages/JavaScriptPages/Basics/CoreConcepts/Operators";
+import BuiltInMethods from "@/Pages/MainTabs/FrontEndPages/JavaScriptPages/Basics/CoreConcepts/BuiltInMethods";
+import Conditionals from "@/Pages/MainTabs/FrontEndPages/JavaScriptPages/Basics/CoreConcepts/Conditionals";
+import Loops from "@/Pages/MainTabs/FrontEndPages/JavaScriptPages/Basics/CoreConcepts/Loops";
 // -------------------- Core Language Concepts End ----------------------
 
 // -------------------------  Data Types Start --------------------------
-import JSPrimitives from "@/Pages/FrontEndPages/JavaScriptPages/Basics/DataTypes/Primitives";
-import ComplexDataTypes from "@/Pages/FrontEndPages/JavaScriptPages/Basics/DataTypes/Complex";
-import TemplateLiterals from "@/Pages/FrontEndPages/JavaScriptPages/Basics/DataTypes/TemplateLiterals";
+import JSPrimitives from "@/Pages/MainTabs/FrontEndPages/JavaScriptPages/Basics/DataTypes/Primitives";
+import ComplexDataTypes from "@/Pages/MainTabs/FrontEndPages/JavaScriptPages/Basics/DataTypes/Complex";
+import TemplateLiterals from "@/Pages/MainTabs/FrontEndPages/JavaScriptPages/Basics/DataTypes/TemplateLiterals";
 // --------------------------- Data Types End ---------------------------
 
 // --------------------------- Arrays Start -----------------------------
-import Intro from "@/Pages/FrontEndPages/JavaScriptPages/Basics/Arrays/Intro";
-import Methods from "@/Pages/FrontEndPages/JavaScriptPages/Basics/Arrays/Methods";
-import Advanced from "@/Pages/FrontEndPages/JavaScriptPages/Basics/Arrays/Advanced";
+import Intro from "@/Pages/MainTabs/FrontEndPages/JavaScriptPages/Basics/Arrays/Intro";
+import Methods from "@/Pages/MainTabs/FrontEndPages/JavaScriptPages/Basics/Arrays/Methods";
+import Advanced from "@/Pages/MainTabs/FrontEndPages/JavaScriptPages/Basics/Arrays/Advanced";
 // ---------------------------- Arrays End ------------------------------
 
 // ------------------------ Objects and JSON Start ------------------------
-import ObjectsBasics from "@/Pages/FrontEndPages/JavaScriptPages/Basics/ObjectsAndJSON/Basics";
-import PropsAndMethods from "@/Pages/FrontEndPages/JavaScriptPages/Basics/ObjectsAndJSON/PropsAndMethods";
-import UtilsAndPatterns from "@/Pages/FrontEndPages/JavaScriptPages/Basics/ObjectsAndJSON/UtilsAndPatterns";
-import JSON from "@/Pages/FrontEndPages/JavaScriptPages/Basics/ObjectsAndJSON/JSON";
+import ObjectsBasics from "@/Pages/MainTabs/FrontEndPages/JavaScriptPages/Basics/ObjectsAndJSON/Basics";
+import PropsAndMethods from "@/Pages/MainTabs/FrontEndPages/JavaScriptPages/Basics/ObjectsAndJSON/PropsAndMethods";
+import UtilsAndPatterns from "@/Pages/MainTabs/FrontEndPages/JavaScriptPages/Basics/ObjectsAndJSON/UtilsAndPatterns";
+import JSON from "@/Pages/MainTabs/FrontEndPages/JavaScriptPages/Basics/ObjectsAndJSON/JSON";
 // ------------------------- Objects and JSON End -------------------------
 
 // ------------------------ Functions Start ------------------------
-import FunctionsBasics from "@/Pages/FrontEndPages/JavaScriptPages/Basics/FunctionsPages/Basics";
-import ExpressionsIIFE from "@/Pages/FrontEndPages/JavaScriptPages/Basics/FunctionsPages/ExpressionsIIFE";
-import ArrowFunctions from "@/Pages/FrontEndPages/JavaScriptPages/Basics/FunctionsPages/Arrow";
-import ParamsAndArgs from "@/Pages/FrontEndPages/JavaScriptPages/Basics/FunctionsPages/ParamsAndArgs";
-import HigherOrder from "@/Pages/FrontEndPages/JavaScriptPages/Basics/FunctionsPages/HigherOrder";
+import FunctionsBasics from "@/Pages/MainTabs/FrontEndPages/JavaScriptPages/Basics/FunctionsPages/Basics";
+import ExpressionsIIFE from "@/Pages/MainTabs/FrontEndPages/JavaScriptPages/Basics/FunctionsPages/ExpressionsIIFE";
+import ArrowFunctions from "@/Pages/MainTabs/FrontEndPages/JavaScriptPages/Basics/FunctionsPages/Arrow";
+import ParamsAndArgs from "@/Pages/MainTabs/FrontEndPages/JavaScriptPages/Basics/FunctionsPages/ParamsAndArgs";
+import HigherOrder from "@/Pages/MainTabs/FrontEndPages/JavaScriptPages/Basics/FunctionsPages/HigherOrder";
 
 // ------------------------ JavaScript Basics End ------------------------
 
@@ -48,12 +48,12 @@ import HigherOrder from "@/Pages/FrontEndPages/JavaScriptPages/Basics/FunctionsP
 // ------------------------ JavaScript Intermediate Start ------------------------
 
 // ------------------------ JavaScript Intermediate > DOM and Events Start ------------------------
-import EventHandle from "@/Pages/FrontEndPages/JavaScriptPages/Intermediate/DOMAndEvents/EventHandle";
+import EventHandle from "@/Pages/MainTabs/FrontEndPages/JavaScriptPages/Intermediate/DOMAndEvents/EventHandle";
 
 // ------------------------ JavaScript Intermediate > DOM and Events End ------------------------
 
 // ------------------------ JavaScript Intermediate > Modern ES6 Start ------------------------
-import Promises from "@/Pages/FrontEndPages/JavaScriptPages/Intermediate/ModernES6/Promises";
+import Promises from "@/Pages/MainTabs/FrontEndPages/JavaScriptPages/Intermediate/ModernES6/Promises";
 
 // ------------------------ JavaScript Intermediate > Modern ES6 End ------------------------
 
@@ -62,10 +62,10 @@ import Promises from "@/Pages/FrontEndPages/JavaScriptPages/Intermediate/ModernE
 // ------------------------ JavaScript > Advanced Start ------------------------
 
 // ------------------------ Javascript > Advanced > Modules Start ------------------------
-import ModulesOverview from "@/Pages/FrontEndPages/JavaScriptPages/Advanced/ModulesPages/Overview";
-import ModulesSyntax from "@/Pages/FrontEndPages/JavaScriptPages/Advanced/ModulesPages/Syntax";
-import DynamicImports from "@/Pages/FrontEndPages/JavaScriptPages/Advanced/ModulesPages/DynamicImports";
-import PathsAliases from "@/Pages/FrontEndPages/JavaScriptPages/Advanced/ModulesPages/PathsAndAliases";
+import ModulesOverview from "@/Pages/MainTabs/FrontEndPages/JavaScriptPages/Advanced/ModulesPages/Overview";
+import ModulesSyntax from "@/Pages/MainTabs/FrontEndPages/JavaScriptPages/Advanced/ModulesPages/Syntax";
+import DynamicImports from "@/Pages/MainTabs/FrontEndPages/JavaScriptPages/Advanced/ModulesPages/DynamicImports";
+import PathsAliases from "@/Pages/MainTabs/FrontEndPages/JavaScriptPages/Advanced/ModulesPages/PathsAndAliases";
 
 // ------------------------ Javascript > Advanced > Modules End ------------------------
 

@@ -1,6 +1,6 @@
 import { RouteObject } from "react-router-dom";
 
-import PostgreSQL from "@/Pages/BackEndPages/DatabasesPages/PostgreSQLPages/PostgreSQL";
+import PostgreSQL from "@/Pages/MainTabs/BackEndPages/DatabasesPages/PostgreSQLPages/PostgreSQL";
 // import PostgreSQLCode from "@/pages/PostgreSQLPages/PostgreSQLCode";
 
 const postgreSQLRoutes: RouteObject[] = [

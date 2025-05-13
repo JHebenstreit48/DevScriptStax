@@ -1,6 +1,6 @@
 import { RouteObject } from 'react-router-dom';
 
-import Redux from "@/Pages/FrontEndPages/ReduxPages/Redux";
+import Redux from "@/Pages/MainTabs/FrontEndPages/ReduxPages/Redux";
 // import ReduxCode from "@/pages/ReduxPages/ReduxCode";
 
 

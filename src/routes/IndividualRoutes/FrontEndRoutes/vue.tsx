@@ -1,6 +1,6 @@
 import { RouteObject } from 'react-router-dom';
 
-import Vue from "@/Pages/FrontEndPages/VuePages/Vue";
+import Vue from "@/Pages/MainTabs/FrontEndPages/VuePages/Vue";
 // import VueCode from "@/pages/VuePages/VueCode";
 
 const vueRoutes: RouteObject[] = [

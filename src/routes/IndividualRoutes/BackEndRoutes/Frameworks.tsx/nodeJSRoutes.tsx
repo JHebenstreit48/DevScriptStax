@@ -1,6 +1,6 @@
 import { RouteObject } from 'react-router-dom';
 
-import Node from "@/Pages/BackEndPages/FrameworksPages/NodePages/Node";
+import Node from "@/Pages/MainTabs/BackEndPages/FrameworksPages/NodePages/Node";
 // import NodeCode from "@/pages/NodePages/NodeCode";
 
 const nodeJSRoutes: RouteObject[] = [
