@@ -14,6 +14,7 @@ import Operators from "@/Pages/MainTabs/FrontEndPages/JavaScriptPages/Basics/Cor
 import BuiltInMethods from "@/Pages/MainTabs/FrontEndPages/JavaScriptPages/Basics/CoreConcepts/BuiltInMethods";
 import Conditionals from "@/Pages/MainTabs/FrontEndPages/JavaScriptPages/Basics/CoreConcepts/Conditionals";
 import Loops from "@/Pages/MainTabs/FrontEndPages/JavaScriptPages/Basics/CoreConcepts/Loops";
+import ScopeAndContext from "@/Pages/MainTabs/FrontEndPages/JavaScriptPages/Basics/CoreConcepts/ScopeAndContext";
 // -------------------- Core Language Concepts End ----------------------
 
 // -------------------------  Data Types Start --------------------------
@@ -41,7 +42,7 @@ import ExpressionsIIFE from "@/Pages/MainTabs/FrontEndPages/JavaScriptPages/Basi
 import ArrowFunctions from "@/Pages/MainTabs/FrontEndPages/JavaScriptPages/Basics/FunctionsPages/Arrow";
 import ParamsAndArgs from "@/Pages/MainTabs/FrontEndPages/JavaScriptPages/Basics/FunctionsPages/ParamsAndArgs";
 import HigherOrder from "@/Pages/MainTabs/FrontEndPages/JavaScriptPages/Basics/FunctionsPages/HigherOrder";
-
+import ThisKeyword from "@/Pages/MainTabs/FrontEndPages/JavaScriptPages/Basics/FunctionsPages/ThisKeyword";
 // ------------------------ JavaScript Basics End ------------------------
 
 
@@ -110,6 +111,10 @@ const javascriptRoutes: RouteObject[] = [
     {
         path: '/javascript/basics/core/loops',
         element: <Loops />,
+    },
+    {
+        path: '/javascript/basics/core/scopeandcontext',
+        element: <ScopeAndContext />,
     },
     // ------------------- Basics > Core Language Concepts End -------------------
 
@@ -182,6 +187,10 @@ const javascriptRoutes: RouteObject[] = [
     {
         path: '/javascript/basics/functions/higherorder',
         element: <HigherOrder />,
+    },
+    {
+        path: '/javascript/basics/functions/thiskeyword',
+        element: <ThisKeyword />,
     },
     // ------------------------- Basics > Functions End -------------------------
 

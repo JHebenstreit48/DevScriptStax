@@ -24,7 +24,7 @@ const JavaScriptBasicsNavigation: Subpage = {
           path: '/javascript/basics/core/syntax'
         },
         {
-          name: 'Variables (var, let, const)',
+          name: 'Variables',
           path: '/javascript/basics/core/variables'
         },
         {
@@ -42,6 +42,10 @@ const JavaScriptBasicsNavigation: Subpage = {
         {
           name: 'Loops',
           path: '/javascript/basics/core/loops'
+        },
+        {
+          name: 'Scope and Context',
+          path: '/javascript/basics/core/scopeandcontext'
         }
       ]
     },
@@ -122,6 +126,10 @@ const JavaScriptBasicsNavigation: Subpage = {
         {
           name: 'Higher-Order Functions',
           path: '/javascript/basics/functions/higherorder'
+        },
+        {
+          name: 'This Keyword',
+          path: '/javascript/basics/functions/thiskeyword'
         }
       ]
     }

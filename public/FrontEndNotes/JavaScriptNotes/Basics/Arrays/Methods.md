@@ -12,6 +12,30 @@ This file focuses on practical, commonly used array methods you'll encounter ear
 
 ---
 
+### Mutating vs Non-Mutating Methods
+
+Some array methods **modify the original array** (mutate), while others **return a new array** without changing the original.
+
+<table class="notesTable">
+  <thead>
+    <tr class="tableHeader">
+      <th class="tableCellHeader">Mutates Original?</th>
+      <th class="tableCellHeader">Examples</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="tableRow">
+      <td class="tableCell">✅ Yes</td>
+      <td class="tableCell"><span class="codeSnip">push()</span>, <span class="codeSnip">pop()</span>, <span class="codeSnip">shift()</span>, <span class="codeSnip">unshift()</span></td>
+    </tr>
+    <tr class="tableRow">
+      <td class="tableCell">❌ No (Returns New Array)</td>
+      <td class="tableCell"><span class="codeSnip">map()</span>, <span class="codeSnip">filter()</span>, <span class="codeSnip">find()</span></td>
+    </tr>
+  </tbody>
+</table>
+
+
 ### push()
 
 Adds one or more elements to the end of the array.
@@ -86,6 +110,8 @@ nums.forEach((n) => {
 
 Creates a new array by applying a function to each element.
 
+The function is called once per array item. Whatever the function returns is added to the new array.
+
 ```javascript  
 let nums = [1, 2, 3];  
 let doubled = nums.map(n => n * 2);  
@@ -98,11 +124,32 @@ console.log(doubled); // [2, 4, 6]
 
 Returns a new array with elements that pass a test condition.
 
+The callback function must return <span class="emphasis">true</span> (or any truthy value) for an item to be included in the new array.
+
+
 ```javascript  
 let nums = [1, 2, 3, 4, 5];  
 let even = nums.filter(n => n % 2 === 0);  
 console.log(even); // [2, 4]
 ```
+
+You can also use a named function for more readable logic:
+
+```javascript
+function onlyDogs(pet) {
+  return pet.species === "dog";
+}
+
+let pets = [
+  { name: "Rex", species: "dog" },
+  { name: "Whiskers", species: "cat" },
+];
+
+let dogs = pets.filter(onlyDogs);
+// [{ name: "Rex", species: "dog" }]
+```
+
+---
 
 ---
 

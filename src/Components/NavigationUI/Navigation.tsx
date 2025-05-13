@@ -40,15 +40,37 @@ const Navigation = () => {
   const toggleDropdown = (key: string) => {
     setActiveDropdown((prev) => {
       const updated = new Set(prev);
-      if (updated.has(key)) {
-        updated.delete(key);
+      const isTopLevel = key.startsWith("page-");
+      const isOpen = updated.has(key);
+  
+      // Get root key (e.g. "page-0") from any key like "page-0-1-2"
+      const rootKey = key.split("-").slice(0, 2).join("-");
+  
+      if (isTopLevel) {
+        // Clicking a top-level tab should clear all other top-level trees
+        for (const k of Array.from(updated)) {
+          if (k.startsWith("page-") && !k.startsWith(rootKey)) {
+            updated.delete(k);
+          }
+        }
+      }
+  
+      // Toggle this specific key
+      if (isOpen) {
+        // Also close all children of this key
+        for (const k of Array.from(updated)) {
+          if (k === key || k.startsWith(`${key}-`)) {
+            updated.delete(k);
+          }
+        }
       } else {
         updated.add(key);
       }
+  
       return updated;
     });
   };
-
+  
   const toggleMenu = () => setIsMenuOpen((prev) => !prev);
 
   const renderSubpages = (
@@ -135,7 +157,7 @@ const Navigation = () => {
                     </button>
                     {isActive && (
                       <div className="dropdownContent active">
-                        {renderSubpages(page.subpages, pageKey)}
+                        {renderSubpages(page.subpages, pageKey, 2)}
                       </div>
                     )}
                   </>
