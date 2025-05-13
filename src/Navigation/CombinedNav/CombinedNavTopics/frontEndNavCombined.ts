@@ -54,13 +54,6 @@ import FSServerSideNavigation from '@/Navigation/IndividualNav/FrontEndNavigatio
 import FSProductionReadinessNavigation from '@/Navigation/IndividualNav/FrontEndNavigation/ReactJSNavigation/ReactFullStack/ProductionReadiness';
 // ---------- React Full Stack Navigation End ----------
 
-// ---------- React Native Navigation Start ----------
-import RNGettingStartedNavigation from '@/Navigation/IndividualNav/FrontEndNavigation/ReactJSNavigation/ReactNative/GettingStarted';
-import RNCoreAndStateNavigation from '@/Navigation/IndividualNav/FrontEndNavigation/ReactJSNavigation/ReactNative/CoreAndState';
-import RNNavAndFeaturesNavigation from '@/Navigation/IndividualNav/FrontEndNavigation/ReactJSNavigation/ReactNative/NavAndFeatures';
-import RNBuildingAndPerformNavigation from '@/Navigation/IndividualNav/FrontEndNavigation/ReactJSNavigation/ReactNative/BuildingAndPerformance';
-// ---------- React Native Navigation End ----------
-
 // ---------- React Navigation End ----------
 
 import ReduxNavigation from '@/Navigation/IndividualNav/FrontEndNavigation/ReduxNavigation/Redux';
@@ -136,15 +129,6 @@ const frontEndNav: Page = {
             FSProductionReadinessNavigation
           ]
         },
-        {
-          name: 'React Native',
-          subpages: [
-            RNGettingStartedNavigation,
-            RNCoreAndStateNavigation,
-            RNNavAndFeaturesNavigation,
-            RNBuildingAndPerformNavigation
-          ]
-        }
       ]
     },
     ReduxNavigation,
