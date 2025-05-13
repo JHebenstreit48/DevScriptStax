@@ -29,7 +29,7 @@ export const router = createBrowserRouter([
             ...graphqlAndApolloRoutes,
             ...programmingLanguagesRoutes,
             ...testingRoutes,
-            ...toolRoutes,
+            ...toolRoutes
         ],
     },
 ]);    

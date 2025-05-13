@@ -1,7 +1,7 @@
 import { RouteObject } from "react-router-dom";
 
-import graphQLRoutes from "@/routes/GraphQLAndApollo/graphQLRoutes";
-import apolloRoutes from "@/routes/GraphQLAndApollo/apolloRoutes";
+import graphQLRoutes from "@/routes/IndividualRoutes/GraphQLAndApollo/graphQLRoutes";
+import apolloRoutes from "@/routes/IndividualRoutes/GraphQLAndApollo/apolloRoutes";
 
 const graphqlAndApolloRoutes: RouteObject[] = [
     ...graphQLRoutes,

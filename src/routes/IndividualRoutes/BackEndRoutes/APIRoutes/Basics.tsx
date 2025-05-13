@@ -9,7 +9,7 @@ import PublicVPrivate from "@/Pages/BackEndPages/APIPages/TypesOfAPIs/PubVSPriva
 import RESTVSGraphQLVSSOAP from "@/Pages/BackEndPages/APIPages/TypesOfAPIs/RestVSGraphVSSOAP";
 // ---------- Types of APIs End ----------
 
-const apiRoutes: RouteObject[] = [
+const APIBasics: RouteObject[] = [
 
 {
     path: '/apis/intro/fundamentals/overview',
@@ -25,4 +25,4 @@ const apiRoutes: RouteObject[] = [
 },
 ];
 
-export default apiRoutes;
+export default APIBasics;
