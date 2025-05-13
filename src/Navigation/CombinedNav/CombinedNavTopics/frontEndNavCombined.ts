@@ -100,7 +100,7 @@ const frontEndNav: Page = {
       name: 'React',
       subpages: [
         {
-          name: 'React Basics',
+          name: 'Basics',
           subpages: [
             GettingStartedNavigation,
             FundamentalsNavigation,
@@ -110,7 +110,7 @@ const frontEndNav: Page = {
           ]
         },
         {
-          name: 'React With TypeScript',
+          name: 'React + TypeScript',
           subpages: [
             RWTGettingStartedNavigation,
             TypeScriptInReactNavigation,
@@ -120,7 +120,7 @@ const frontEndNav: Page = {
           ]
         },
         {
-          name: 'React Full Stack',
+          name: 'Full Stack',
           subpages: [
             FSRGettingStartedNavigation,
             FSFrontAndBackEndNavigation,
