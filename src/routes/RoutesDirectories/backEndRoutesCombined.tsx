@@ -1,10 +1,15 @@
 import { RouteObject } from "react-router-dom";
-import apiRoutes from "@/routes/BackEndRoutes/APIRoutes/apiRoutes";
-import mongoDBRoutes from "@/routes/BackEndRoutes/DatabaseRoutes/mongoDBRoutes";
+
+// ---------------------------- API Routes Start ---------------------------- //
+import APIBasics from "@/routes/IndividualRoutes/BackEndRoutes/APIRoutes/Basics";
+
+// ---------------------------- API Routes End ------------------------------ //
+
+import mongoDBRoutes from "@/routes/IndividualRoutes/BackEndRoutes/DatabaseRoutes/mongoDBRoutes";
 
 const backEndRoutes: RouteObject[] = [
 
-    ...apiRoutes,
+    ...APIBasics,
     ...mongoDBRoutes,
 ];
 
