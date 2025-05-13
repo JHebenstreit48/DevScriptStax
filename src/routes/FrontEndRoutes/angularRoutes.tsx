@@ -16,7 +16,6 @@ import AngularFolderFileNaming from "@/Pages/FrontEndPages/AngularPages/Basics/P
 
 // ----------------------- Angular Basics End ------------------------
 
-
 // -------------- Angular Core Concepts Start --------------
 import AngularComponentsIntro from "@/Pages/FrontEndPages/AngularPages/CoreConcepts/AngularComponents/Introduction";
 import AngularIO from "@/Pages/FrontEndPages/AngularPages/CoreConcepts/AngularComponents/InputsOutputs";
@@ -25,16 +24,8 @@ import AngularReusable from "@/Pages/FrontEndPages/AngularPages/CoreConcepts/Ang
 import AngularSmartDumb from "@/Pages/FrontEndPages/AngularPages/CoreConcepts/AngularComponents/SmartDumb";
 // --------------- Angular Core Concepts End ---------------
 
-// ========================================================
-//                     Angular Notes End
-// ========================================================
-
 
 const angularRoutes: RouteObject[] = [
-
-    // ========================================================
-    //                    Angular Routes Start
-    // ========================================================
 
     // --------------- Angular Basics > Getting Started Start ---------------
     {
@@ -88,10 +79,6 @@ const angularRoutes: RouteObject[] = [
         element: <AngularIO />,
     }
     // ------------------- Angular Core Concepts End -------------------
-
-    // ========================================================
-    //                     Angular Notes End
-    // ========================================================
 
 ];
 
