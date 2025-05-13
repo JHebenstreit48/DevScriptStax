@@ -4,18 +4,20 @@
 
 @use "sass:color";
 
-$primary-color: rgb(7, 193, 255);
-$secondary-color: rgb(218, 165, 32);
-$tertiary-color: rgb(0, 255, 127);
-$danger-color: rgb(240, 128, 128);
+$level-1: rgb(7, 193, 255);
+$level-2: rgb(218, 165, 32);
+$level-3: rgb(124, 1, 1);
+$level-4: rgb(19, 145, 2);
+$level-5: rgb(221, 83, 255);
 $background-dark: rgb(22, 22, 22);
 $dropdown-bg: rgb(38, 38, 39);
 $dropdown-hover: rgb(60, 60, 60);
 $scrollbar-track: rgb(73, 73, 73);
 
 $font-lg: 1.8rem;
-$font-md: 1.5rem;
-$font-sm: 1.2rem;
+$font-md: 1.3rem;
+$font-sm: 1.25rem;
+$font-xs: 1rem;
 $dropdown-width: 17rem;
 
 /* ==============================
@@ -37,7 +39,7 @@ $small-laptop-min: 1024px;
     background: none;
     border: none;
     font-size: 2rem;
-    color: $primary-color;
+    color: $level-1;
     cursor: pointer;
     z-index: 15;
     align-self: center;
@@ -119,12 +121,12 @@ $small-laptop-min: 1024px;
   border: none;
   cursor: pointer;
   outline: none;
-  color: $primary-color;
+  color: $level-1;
   font-size: 1.5rem;
   transition: color 0.3s ease;
 
   &:hover {
-    color: color.adjust($primary-color, $lightness: 10%);
+    color: color.adjust($level-1, $lightness: 10%);
   }
 }
 
@@ -132,34 +134,20 @@ $small-laptop-min: 1024px;
            Dropdown Button Style       
          ============================== */
 .dropdownButton {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   background-color: transparent;
   border: none;
-  padding: 0 2rem;
-  font-size: $font-lg;
   cursor: pointer;
-  color: $primary-color;
+  color: $level-1;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  margin: 0.3rem auto;
+  text-shadow: 3px 2px 2px rgb(0 0 0);
 
   &:hover {
     text-decoration: underline;
-  }
-
-  @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
-    font-size: 1.3rem;
-    padding: 0.5rem;
-  }
-
-
-
-  &.level-1,
-  &.level-2,
-  &.level-3,
-  &.level-4 {
-    text-align: center;
-    display: block;
-    padding: 0.3rem 0;
   }
 
   &.level-1 {
@@ -167,33 +155,43 @@ $small-laptop-min: 1024px;
     font-size: $font-lg;
     margin: 0 auto;
     padding: 0.5rem 0;
-
-    @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
-      flex-direction: column;
-      align-items: center;
-      gap: 1rem;
-      margin-top: 0.3rem;
-      padding: 0 auto;
-    }
-
-    @media only screen and (min-width: $small-laptop-min) and (max-width: $small-laptop-max) {
-      font-size: 1.6rem;
-    }
   }
 
   &.level-2 {
-    color: $secondary-color;
+    color: $level-2;
     font-size: 1.4rem;
   }
 
   &.level-3 {
-    color: $tertiary-color;
+    color: $level-3;
     font-size: $font-md;
   }
 
   &.level-4 {
-    color: $danger-color;
+    color: $level-4;
     font-size: $font-sm;
+  }
+  &.level-5 {
+    color: $level-5;
+    font-size: $font-xs;
+    width: 70%;
+  }
+
+  @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
+    font-size: 1.3rem;
+    padding: 0.5rem;
+  }
+
+  @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 0.3rem;
+    padding: 0 auto;
+  }
+
+  @media only screen and (min-width: $small-laptop-min) and (max-width: $small-laptop-max) {
+    font-size: 1.6rem;
   }
 }
 
