@@ -1,0 +1,30 @@
+{
+  "name": "codequest-api",
+  "version": "1.0.0",
+  "description": "Backend API for AppFoundry notes project",
+  "main": "src/server.ts",
+  "scripts": {
+    "start": "ts-node -r tsconfig-paths/register src/server.ts",
+    "dev": "ts-node -r tsconfig-paths/register src/server.ts",
+    "seed": "ts-node -r tsconfig-paths/register src/scripts/importNotes.ts",
+    "build": "tsc",
+    "start:watch": "nodemon --exec ts-node -r tsconfig-paths/register src/server.ts",
+    "start:dev": "npm run start:watch"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "gray-matter": "^4.0.3",
+    "mongoose": "^8.8.4"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.9.3",
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.2.2"
+  }
+}

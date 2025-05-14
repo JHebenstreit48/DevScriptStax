@@ -20,6 +20,12 @@ const loadMarkdownNotes = (dir: string): any[] => {
       const raw = fs.readFileSync(fullPath, "utf8");
       const { data, content } = matter(raw);
 
+      // 🛡️ Guard against missing or empty content
+      if (!content || content.trim() === "") {
+        console.warn(`⚠️ Skipping "${fullPath}" — content is missing or empty.`);
+        continue;
+      }
+
       const relativeCategory = path.relative(baseDir, path.dirname(fullPath)).replace(/\\/g, "/");
       const title = data.title || item.replace(".md", "");
       const notePath = `${relativeCategory}/${title}`;
