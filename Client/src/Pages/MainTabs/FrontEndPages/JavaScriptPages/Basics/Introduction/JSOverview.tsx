@@ -2,7 +2,7 @@ import Header from "@/Components/PageComponents/Header";
 import Notes from "@/Components/PageComponents/Notes/NotesRender";
 
 const JSOverview = () => {
-    const markdownFilePath = "/FrontEndNotes/JavaScriptNotes/Basics/Introduction/Overview.md";
+    const markdownFilePath = "FrontEndNotes/JavaScriptNotes/Basics/Introduction/Overview";
 
     return (
 

@@ -22,6 +22,15 @@ export default defineConfig({
       "@scss": resolve(__dirname, "src/SCSS")
     }
   },
+  server: {
+    proxy: {
+      "/api": {
+        target: "http://localhost:3001", // ✅ Your backend
+        changeOrigin: true,
+        secure: false
+      }
+    }
+  },
   build: {
     outDir: "dist",
     emptyOutDir: true

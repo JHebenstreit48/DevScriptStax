@@ -10,7 +10,6 @@ import materialLight from 'react-syntax-highlighter/dist/esm/styles/prism/materi
 import BackToTop from '@/Components/PageComponents/Notes/BackToTopButton';
 import '@/SCSS/PageStyles/Notes.scss';
 
-// Languages
 import 'react-syntax-highlighter/dist/esm/languages/prism/javascript';
 import 'react-syntax-highlighter/dist/esm/languages/prism/typescript';
 import 'react-syntax-highlighter/dist/esm/languages/prism/markup';
@@ -31,27 +30,47 @@ interface NotesProps {
   markdownContent?: string;
 }
 
-// Background override applied on top of theme
-const darkGrayOverride = {
-  ...materialLight,
-  ['pre[class*="language-"]']: {
-    ...materialLight['pre[class*="language-"]'],
-    background: 'rgb(29, 31, 33)',
-  },
-  ['code[class*="language-"]']: {
-    ...materialLight['code[class*="language-"]'],
-    background: 'rgb(29, 31, 33)',
-  },
-};
+const API_BASE_URL =
+  import.meta.env.VITE_API_BASE_URL || 'http://localhost:3001';
+
+const isLocal =
+  API_BASE_URL.includes('localhost') || API_BASE_URL.startsWith('/');
+  console.log("🔍 ENV USED:", API_BASE_URL);
+
 
 const loadMarkdown = async (filePath: string): Promise<string> => {
-  const response = await fetch(filePath);
-  if (!response.ok) throw new Error(`Failed to fetch Markdown: ${filePath}`);
+  const fullUrl = isLocal
+    ? `${API_BASE_URL}/notes/${filePath}` // ✅ local
+    : `${API_BASE_URL}/api/notes/${filePath}`; // ✅ deployed
+
+  console.log('🌐 Fetching:', fullUrl);
+  const response = await fetch(fullUrl);
+
+  if (!response.ok) {
+    throw new Error(`Failed to fetch Markdown content: ${filePath}`);
+  }
+
   return response.text();
 };
 
+const darkGrayTheme = {
+  ...materialLight,
+  'pre[class*="language-"]': {
+    ...materialLight['pre[class*="language-"]'],
+    background: 'rgb(29, 31, 33)',
+    boxShadow: 'none',
+    padding: '1rem'
+  },
+  'code[class*="language-"]': {
+    ...materialLight['code[class*="language-"]'],
+    background: 'rgb(29, 31, 33)',
+    color: '#fff',
+    padding: '1rem'
+  }
+};
+
 const NotesRender: React.FC<NotesProps> = ({ filePath }) => {
-  const [markdownContent, setMarkdownContent] = useState('');
+  const [markdownContent, setMarkdownContent] = useState<string>('');
   const [copiedCode, setCopiedCode] = useState(false);
 
   useEffect(() => {
@@ -82,14 +101,19 @@ const NotesRender: React.FC<NotesProps> = ({ filePath }) => {
               return (
                 <div className="codeBlockWrapper">
                   <div className="codeBlockHeader">
-                    <span className="codeBlockLanguage">{language.toUpperCase()}</span>
-                    <button className="copyCodeButton" onClick={() => copyToClipboard(codeString)}>
+                    <span className="codeBlockLanguage">
+                      {language.toUpperCase()}
+                    </span>
+                    <button
+                      className="copyCodeButton"
+                      onClick={() => copyToClipboard(codeString)}
+                    >
                       {copiedCode ? 'Copied!' : 'Copy Code'}
                     </button>
                   </div>
                   <SyntaxHighlighter
-                    // @ts-expect-error theme typing is incorrect
-                    style={darkGrayOverride}
+                    // @ts-expect-error Theme typing is incorrect
+                    style={darkGrayTheme}
                     language={language}
                     PreTag="div"
                     {...props}
@@ -99,19 +123,20 @@ const NotesRender: React.FC<NotesProps> = ({ filePath }) => {
                 </div>
               );
             },
-
             a({ href, children, ...props }) {
-              return href?.startsWith('/') ? (
-                <HashLink to={href} {...props}>
-                  {children}
-                </HashLink>
-              ) : (
+              if (href?.startsWith('/')) {
+                return (
+                  <HashLink to={href} {...props}>
+                    {children}
+                  </HashLink>
+                );
+              }
+              return (
                 <a href={href} {...props}>
                   {children}
                 </a>
               );
             },
-
             table({ children, ...props }) {
               return (
                 <div className="tableWrapper">
@@ -120,7 +145,7 @@ const NotesRender: React.FC<NotesProps> = ({ filePath }) => {
                   </table>
                 </div>
               );
-            },
+            }
           }}
         >
           {markdownContent}
