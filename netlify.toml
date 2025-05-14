@@ -1,0 +1,7 @@
+[build]
+  base = "client"
+  publish = "dist"
+  command = "npm run build"
+
+[build.environment]
+  VITE_API_BASE_URL = ""
