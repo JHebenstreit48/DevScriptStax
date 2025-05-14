@@ -2,7 +2,7 @@ import Header from "@/Components/PageComponents/Header";
 import Notes from "@/Components/PageComponents/Notes/NotesRender";
 
 const WhatArePost = () => {
-    const markdownFilePath = '/PostCSSNotes/PostCSS.md';
+    const markdownFilePath = '/PostCSSNotes/PostCSS';
 
     return (
 

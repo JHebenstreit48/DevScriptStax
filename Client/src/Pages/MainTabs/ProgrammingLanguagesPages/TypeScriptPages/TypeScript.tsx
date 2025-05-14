@@ -2,7 +2,7 @@ import Header from "@/Components/PageComponents/Header";
 import Notes from "@/Components/PageComponents/Notes/NotesRender";
 
 const Typescript = () => {
-    const markdownFilePath = '/TypeScriptNotes/TypeScript.md';
+    const markdownFilePath = '/TypeScriptNotes/TypeScript';
 
     return (
 

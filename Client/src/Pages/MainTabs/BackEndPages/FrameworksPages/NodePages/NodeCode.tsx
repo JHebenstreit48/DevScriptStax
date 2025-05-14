@@ -2,7 +2,7 @@ import Notes from "@/Components/PageComponents/Notes/NotesRender";
 import Header from "@/Components/PageComponents/Header";
 
 const NodeCode = () => {
-    const markdownFilePath = '/NodeNotes/NodeCode.md';
+    const markdownFilePath = '/NodeNotes/NodeCode';
 
     return (
 

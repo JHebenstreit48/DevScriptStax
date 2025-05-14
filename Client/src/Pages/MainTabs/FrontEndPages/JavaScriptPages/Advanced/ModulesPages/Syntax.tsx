@@ -2,7 +2,7 @@ import Header from "@/Components/PageComponents/Header";
 import Notes from "@/Components/PageComponents/Notes/NotesRender";
 
 const ModulesSyntax = () => {
-    const markdownFilePath = "/FrontEndNotes/JavaScriptNotes/Advanced/JSModules/Syntax.md";
+    const markdownFilePath = "FrontEndNotes/JavaScriptNotes/Advanced/JSModules/Syntax";
 
     return (
 

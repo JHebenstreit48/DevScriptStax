@@ -2,7 +2,7 @@ import Notes from "@/Components/PageComponents/Notes/NotesRender";
 import Header from "@/Components/PageComponents/Header";
 
 const RESTVSGraphQLVSSOAP = () => {
-    const markdownFilePath = '/BackEndNotes/APINotes/TypesOfAPIs/RESTVSGraphQLVSSOAP.md';
+    const markdownFilePath = 'BackEndNotes//APINotes/TypesOfAPIs/RESTVSGraphQLVSSOAP';
 
     return (
         <>

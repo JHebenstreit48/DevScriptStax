@@ -2,7 +2,7 @@ import Header from "@/Components/PageComponents/Header";
 import Notes from "@/Components/PageComponents/Notes/NotesRender";
 
 const ReactBoostrapGrid = () => {
-    const markdownFilePath = "/FrontEndNotes/CSSNotes/Frameworks/ReactBootstrap/Basics/GridSystem.md";
+    const markdownFilePath = "FrontEndNotes/CSSNotes/Frameworks/ReactBootstrap/Basics/GridSystem";
 
     return (
         <>

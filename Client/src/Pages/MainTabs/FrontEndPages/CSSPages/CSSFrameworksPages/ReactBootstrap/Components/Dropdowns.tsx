@@ -4,7 +4,7 @@ import Header from "@/Components/PageComponents/Header";
 import Notes from "@/Components/PageComponents/Notes/NotesRender";
 
 const ReactBSDropdowns = () => {
-    const markdownFilePath = "/FrontEndNotes/CSSNotes/ReactBoostrap/Components/ReactBSDropdowns.md";
+    const markdownFilePath = "FrontEndNotes/CSSNotes/ReactBoostrap/Components/ReactBSDropdowns";
 
     return (
         <>

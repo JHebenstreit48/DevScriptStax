@@ -2,7 +2,7 @@ import Notes from "@/Components/PageComponents/Notes/NotesRender";
 import Header from "@/Components/PageComponents/Header";
 
 const MernAndAuthCode = () => {
-    const markdownFilePath = '/MernAndAuth/MernAndAuthCode.md';
+    const markdownFilePath = '/MernAndAuth/MernAndAuthCode';
 
     return (
 

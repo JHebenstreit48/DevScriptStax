@@ -2,7 +2,7 @@ import Notes from "@/Components/PageComponents/Notes/NotesRender";
 import Header from "@/Components/PageComponents/Header";
 
 const ApolloServerCode = () => {
-    const markdownFilePath = '/ApolloServerNotes/ApolloServerCode.md';
+    const markdownFilePath = '/ApolloServerNotes/ApolloServerCode';
 
     return (
         <>

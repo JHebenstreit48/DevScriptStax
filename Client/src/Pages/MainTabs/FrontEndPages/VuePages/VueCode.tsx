@@ -2,7 +2,7 @@ import Notes from "@/Components/PageComponents/Notes/NotesRender";
 import Header from "@/Components/PageComponents/Header";
 
 const VueCode = () => {
-    const markdownFilePath = '/VueNotes/VueCode.md';
+    const markdownFilePath = '/VueNotes/VueCode';
 
     return (
 

@@ -2,7 +2,7 @@ import Header from "@/Components/PageComponents/Header";
 import Notes from "@/Components/PageComponents/Notes/NotesRender";
 
 const ReactFullStack = () => {
-    const markdownFilePath = '/ReactFullStackNotes/ReactFullStack.md';
+    const markdownFilePath = '/ReactFullStackNotes/ReactFullStack';
 
     return (
 

@@ -2,7 +2,7 @@ import Header from "@/Components/PageComponents/Header";
 import Notes from "@/Components/PageComponents/Notes/NotesRender";
 
 const CoreConcepts = () => {
-    const markdownFilePath = '/BackEndNotes/APINotes/APIFundamentals/CoreConcepts.md';
+    const markdownFilePath = 'BackEndNotes/APINotes/APIFundamentals/CoreConcepts';
 
     return (
 

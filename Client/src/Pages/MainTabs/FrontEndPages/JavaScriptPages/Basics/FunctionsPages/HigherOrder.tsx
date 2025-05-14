@@ -2,7 +2,7 @@ import Header from "@/Components/PageComponents/Header";
 import Notes from "@/Components/PageComponents/Notes/NotesRender";
 
 const HigherOrder = () => {
-    const markdownFilePath = "/FrontEndPages/JavaScriptPages/Basics/FunctionsNotes/HigherOrder.md";
+    const markdownFilePath = "/FrontEndPages/JavaScriptPages/Basics/FunctionsNotes/HigherOrder";
 
     return (
         <>

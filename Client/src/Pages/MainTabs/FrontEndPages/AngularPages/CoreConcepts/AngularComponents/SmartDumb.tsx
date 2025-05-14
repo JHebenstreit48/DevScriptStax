@@ -4,7 +4,7 @@ import Header from "@/Components/PageComponents/Header";
 import Notes from "@/Components/PageComponents/Notes/NotesRender";
 
 const AngularSmartDumb = () => {
-    const markdownFilePath = "/FrontEndNotes/AngularPages/CoreConcepts/AngularComponents/SmartDumb.md";
+    const markdownFilePath = "FrontEndNotes/AngularPages/CoreConcepts/AngularComponents/SmartDumb";
 
     return (
         <>

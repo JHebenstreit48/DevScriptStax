@@ -2,7 +2,7 @@ import Header from "@/Components/PageComponents/Header";
 import Notes from "@/Components/PageComponents/Notes/NotesRender";
 
 const PathsAliases = () => {
-    const markdownFilePath = "/FrontEndNotes/JavaScriptNotes/Advanced/JSModules/PathsAndAliases.md";
+    const markdownFilePath = "FrontEndNotes/JavaScriptNotes/Advanced/JSModules/PathsAndAliases";
 
     return (
 

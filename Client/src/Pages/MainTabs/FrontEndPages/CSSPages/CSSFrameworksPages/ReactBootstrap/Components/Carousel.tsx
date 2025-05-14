@@ -4,7 +4,7 @@ import Header from "@/Components/PageComponents/Header";
 import Notes from "@/Components/PageComponents/Notes/NotesRender";
 
 const ReactBSCarousel = () => {
-    const markdownFilePath = "/FrontEndNotes/CSSNotes/ReactBoostrap/Components/ReactBSCarousel.md";
+    const markdownFilePath = "FrontEndNotes/CSSNotes/ReactBoostrap/Components/ReactBSCarousel";
 
     return (
         <>

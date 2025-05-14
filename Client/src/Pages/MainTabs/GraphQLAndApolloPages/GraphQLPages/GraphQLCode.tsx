@@ -2,7 +2,7 @@ import Notes from "@/Components/PageComponents/Notes/NotesRender";
 import Header from "@/Components/PageComponents/Header";
 
 const GraphQLCode = () => {
-    const markdownFilePath = '/GraphQLNotes/GraphQLCode.md';
+    const markdownFilePath = '/GraphQLNotes/GraphQLCode';
 
     return (
         <>

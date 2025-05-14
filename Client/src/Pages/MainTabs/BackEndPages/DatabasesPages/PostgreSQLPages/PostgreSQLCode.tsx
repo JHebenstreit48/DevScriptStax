@@ -2,7 +2,7 @@ import Notes from "@/Components/PageComponents/Notes/NotesRender";
 import Header from "@/Components/PageComponents/Header";
 
 const PostgreSQLCode = () => {
-    const markdownFilePath = '/PostgreSQL/PostgreSQLCode.md';
+    const markdownFilePath = 'BackEndNotes/DatabaseNotes/PostgreSQL/PostgreSQLCode';
 
     return (
 

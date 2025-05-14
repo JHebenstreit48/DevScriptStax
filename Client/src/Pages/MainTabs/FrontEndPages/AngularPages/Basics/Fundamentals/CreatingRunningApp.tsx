@@ -3,7 +3,7 @@ import Notes from "@/Components/PageComponents/Notes/NotesRender";
 
 
 const AngularAppCreate = () => {
-    const markdownFilePath = '/FrontEndNotes/AngularNotes/AngularBasics/GettingStarted/CreatingRunning.md';
+    const markdownFilePath = 'FrontEndNotes/AngularNotes/AngularBasics/GettingStarted/CreatingRunning';
 
     return (
 

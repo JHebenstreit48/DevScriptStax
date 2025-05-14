@@ -2,7 +2,7 @@ import Header from "@/Components/PageComponents/Header";
 import Notes from "@/Components/PageComponents/Notes/NotesRender";
 
 const Promises = () => {
-    const markdownFilePath = "/FrontEndNotes/JavaScriptNotes/Intermediate/ModernES6/Promises.md";
+    const markdownFilePath = "FrontEndNotes/JavaScriptNotes/Intermediate/ModernES6/Promises";
 
     return (
 

@@ -2,7 +2,7 @@ import Header from "@/Components/PageComponents/Header";
 import Notes from "@/Components/PageComponents/Notes/NotesRender";
 
 const React = () => {
-    const markdownFilePath = '/ReactNotes/React.md';
+    const markdownFilePath = '/ReactNotes/React';
 
     return (
 
