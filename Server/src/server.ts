@@ -17,7 +17,7 @@ const PORT = process.env.PORT || 3001;
 app.use(cors({
   origin: [
     "http://localhost:3000", // if you still test this locally
-    "https://appfoundry.netlify.app"
+    "https://web-dev-codequest.netlify.app"
   ],
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: false
