@@ -2,7 +2,7 @@ import Header from "@/Components/PageComponents/Header";
 import Notes from "@/Components/PageComponents/Notes/NotesRender";
 
 const Arrow = () => {
-    const markdownFilePath = "/FrontEndPages/JavaScriptPages/Basics/FunctionsNotes/Arrow.md";
+    const markdownFilePath = "/FrontEndPages/JavaScriptPages/Basics/FunctionsNotes/Arrow";
 
     return (
         <>

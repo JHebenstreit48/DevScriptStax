@@ -2,7 +2,7 @@ import Notes from "@/Components/PageComponents/Notes/NotesRender";
 import Header from "@/Components/PageComponents/Header";
 
 const CypressCode = () => {
-    const markdownFilePath = '/CypressTesting/CypressTestingCode.md';
+    const markdownFilePath = '/CypressTesting/CypressTestingCode';
 
     return (
 

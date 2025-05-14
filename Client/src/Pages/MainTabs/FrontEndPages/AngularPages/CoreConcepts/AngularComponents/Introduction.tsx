@@ -4,7 +4,7 @@ import Header from "@/Components/PageComponents/Header";
 import Notes from "@/Components/PageComponents/Notes/NotesRender";
 
 const AngularComponentsIntro = () => {
-    const markdownFilePath = "/FrontEndNotes/AngularPages/CoreConcepts/AngularComponents/Introduction.md";
+    const markdownFilePath = "FrontEndNotes/AngularPages/CoreConcepts/AngularComponents/Introduction";
 
     return (
         <>

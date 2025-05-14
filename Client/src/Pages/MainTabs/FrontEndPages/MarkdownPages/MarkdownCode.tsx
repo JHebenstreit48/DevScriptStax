@@ -3,7 +3,7 @@ import Header from "@/Components/PageComponents/Header";
 
 
 const MarkdownCode = () => {
-    const markdownFilePath = '/MarkdownNotes/MarkdownCode.md';
+    const markdownFilePath = '/MarkdownNotes/MarkdownCode';
 
     return (
 

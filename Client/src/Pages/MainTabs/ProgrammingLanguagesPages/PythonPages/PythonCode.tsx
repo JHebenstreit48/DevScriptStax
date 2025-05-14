@@ -2,7 +2,7 @@ import Notes from "@/Components/PageComponents/Notes/NotesRender";
 import Header from "@/Components/PageComponents/Header";
 
 const PythonCode = () => {
-    const markdownFilePath = "/PythonNotes/PythonCode.md";
+    const markdownFilePath = "/PythonNotes/PythonCode";
 
     return (
 

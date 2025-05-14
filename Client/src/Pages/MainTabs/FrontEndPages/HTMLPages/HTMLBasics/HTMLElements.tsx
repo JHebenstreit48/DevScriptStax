@@ -3,7 +3,7 @@ import Header from "@/Components/PageComponents/Header";
 
 
 const HTMLElements = () => {
-    const markdownFilePath = '/FrontEndNotes/HTMLNotes/HTMLBasics/HTMLElements.md';
+    const markdownFilePath = 'FrontEndNotes/HTMLNotes/HTMLBasics/HTMLElements';
 
     return (
 

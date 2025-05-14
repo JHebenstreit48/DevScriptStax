@@ -2,7 +2,7 @@ import Header from "@/Components/PageComponents/Header";
 import Notes from "@/Components/PageComponents/Notes/NotesRender";
 
 const ExpressionsIIFE = () => {
-    const markdownFilePath = "/FrontEndPages/JavaScriptPages/Basics/FunctionsNotes/ExpressionsIIFE.md";
+    const markdownFilePath = "/FrontEndPages/JavaScriptPages/Basics/FunctionsNotes/ExpressionsIIFE";
 
     return (
         <>

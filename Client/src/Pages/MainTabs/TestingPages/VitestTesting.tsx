@@ -2,7 +2,7 @@ import Header from "@/Components/PageComponents/Header";
 import Notes from "@/Components/PageComponents/Notes/NotesRender";
 
 const Vitest = () => {
-    const markdownFilePath = '/VitestNotes/Vitest.md';
+    const markdownFilePath = '/VitestNotes/Vitest';
 
     return (
 

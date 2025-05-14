@@ -2,7 +2,7 @@ import Header from "@/Components/PageComponents/Header";
 import Notes from "@/Components/PageComponents/Notes/NotesRender";
 
 const Git = () => {
-    const markdownFilePath = '/GitNotes/Git.md';
+    const markdownFilePath = '/GitNotes/Git';
 
     return (
 

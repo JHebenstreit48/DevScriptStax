@@ -4,7 +4,7 @@ import Header from "@/Components/PageComponents/Header";
 import Notes from "@/Components/PageComponents/Notes/NotesRender";
 
 const ReactBSAlerts = () => {
-    const markdownFilePath = "/FrontEndNotes/CSSNotes/ReactBoostrap/Components/ReactBSAlerts.md";
+    const markdownFilePath = "FrontEndNotes/CSSNotes/ReactBoostrap/Components/ReactBSAlerts";
 
     return (
         <>

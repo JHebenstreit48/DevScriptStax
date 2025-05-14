@@ -2,7 +2,7 @@ import Header from "@/Components/PageComponents/Header";
 import Notes from "@/Components/PageComponents/Notes/NotesRender";
 
 const Servers = () => {
-    const markdownFilePath = '/ServerNotes/Server.md';
+    const markdownFilePath = '/ServerNotes/Server';
 
     return (
 

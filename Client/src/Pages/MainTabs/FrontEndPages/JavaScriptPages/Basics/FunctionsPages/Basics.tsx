@@ -2,7 +2,7 @@ import Header from "@/Components/PageComponents/Header";
 import Notes from "@/Components/PageComponents/Notes/NotesRender";
 
 const FunctionBasics = () => {
-    const markdownFilePath = "/FrontEndPages/JavaScriptPages/Basics/FunctionsNotes/BasicsAndDeclare.md";
+    const markdownFilePath = "/FrontEndPages/JavaScriptPages/Basics/FunctionsNotes/BasicsAndDeclare";
 
     return (
         <>

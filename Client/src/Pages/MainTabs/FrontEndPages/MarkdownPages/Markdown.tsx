@@ -3,7 +3,7 @@ import Notes from "@/Components/PageComponents/Notes/NotesRender";
 
 
 const Markdown = () => {
-    const markdownFilePath = "/MarkdownNotes/Markdown.md";
+    const markdownFilePath = "/MarkdownNotes/Markdown";
 
     return (
 

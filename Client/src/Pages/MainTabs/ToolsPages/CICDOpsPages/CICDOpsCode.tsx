@@ -2,7 +2,7 @@ import Notes from "@/Components/PageComponents/Notes/NotesRender";
 import Header from "@/Components/PageComponents/Header";
 
 const CICDOpsCode = () => {
-    const markdownFilePath = '/DeploymentCICD/CICDOpsCode.md';
+    const markdownFilePath = '/DeploymentCICD/CICDOpsCode';
 
     return (
 

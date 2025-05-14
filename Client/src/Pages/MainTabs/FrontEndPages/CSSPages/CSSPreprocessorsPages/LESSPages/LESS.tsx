@@ -2,7 +2,7 @@ import Header from "@/Components/PageComponents/Header";
 import Notes from "@/Components/PageComponents/Notes/NotesRender";
 
 const LESS = () => {
-    const markdownFilePath = '/LESSNotes/LESS.md';
+    const markdownFilePath = '/LESSNotes/LESS';
 
     return (
 

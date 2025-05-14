@@ -2,7 +2,7 @@ import Notes from "@/Components/PageComponents/Notes/NotesRender";
 import Header from "@/Components/PageComponents/Header";
 
 const AngularCLI = () => {
-    const markdownFilePath = '/FrontEndNotes/AngularNotes/AngularBasics/GettingStarted/CLI.md';
+    const markdownFilePath = 'FrontEndNotes/AngularNotes/AngularBasics/GettingStarted/CLI';
 
     return (
 

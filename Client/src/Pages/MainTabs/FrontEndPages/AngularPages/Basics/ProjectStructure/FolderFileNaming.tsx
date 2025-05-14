@@ -2,7 +2,7 @@ import Notes from "@/Components/PageComponents/Notes/NotesRender";
 import Header from "@/Components/PageComponents/Header";
 
 const AngularFolderFileNaming = () => {
-    const markdownFilePath = '/FrontEndNotes/AngularNotes/AngularBasics/ProjectStructure/FolderFileNaming.md';
+    const markdownFilePath = 'FrontEndNotes/AngularNotes/AngularBasics/ProjectStructure/FolderFileNaming';
 
     return (
 

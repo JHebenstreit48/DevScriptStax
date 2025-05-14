@@ -2,7 +2,7 @@ import Header from "@/Components/PageComponents/Header";
 import Notes from "@/Components/PageComponents/Notes/NotesRender";
 
 const HTMLSemantics = () => {
-    const markdownFilePath = "/FrontEndNotes/HTMLNotes/HTMLBasics/HTMLSemantics.md";
+    const markdownFilePath = "FrontEndNotes/HTMLNotes/HTMLBasics/HTMLSemantics";
 
     return (
 

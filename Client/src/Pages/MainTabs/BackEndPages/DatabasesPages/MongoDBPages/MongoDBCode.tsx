@@ -2,7 +2,7 @@ import Notes from "@/Components/PageComponents/Notes/NotesRender";
 import Header from "@/Components/PageComponents/Header";
 
 const MongoDBCode = () => {
-    const markdownFilePath = "/MongoDB/MongoDBCode.md";
+    const markdownFilePath = "BackEndNotes/DatabaseNotes//MongoDB/MongoDBCode";
 
     return (
 
