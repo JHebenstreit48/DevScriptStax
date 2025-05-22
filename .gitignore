@@ -1,26 +1,25 @@
-# =============================
-# 🚫 Node.js & Build Artifacts
-# =============================
+# ========================================
+# Core Node/Vite Ignore Rules
+# ========================================
 node_modules/
 dist/
 dist-ssr/
-tsconfig.tsbuildinfo
+build/
+*.local
 
-# Transpiled JS + Source Maps
-src/**/*.js
-src/**/*.js.map
-*.js
-*.js.map
+# Ignore lock files if resetting frequently (optional)
+# package-lock.json
+# yarn.lock
 
-# =============================
-# 🔐 Environment Variables
-# =============================
+# ========================================
+# Environment Variables
+# ========================================
 .env
-.env.*  # optional: covers .env.local, .env.production, etc.
+.env.*  # ignores .env.local, .env.production, etc.
 
-# =============================
-# 🧪 Logs & Debug Output
-# =============================
+# ========================================
+# Log files
+# ========================================
 logs/
 *.log
 npm-debug.log*
@@ -28,11 +27,11 @@ yarn-debug.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-# =============================
-# 🛠️ Editor & OS-Specific Files
-# =============================
+# ========================================
+# IDE & Editor Config
+# ========================================
 .vscode/
-!.vscode/extensions.json
+!.vscode/extensions.json  # if you want to keep team-based extension suggestions
 .idea/
 .DS_Store
 *.suo
@@ -40,3 +39,20 @@ lerna-debug.log*
 *.njsproj
 *.sln
 *.sw?
+
+# ========================================
+# TypeScript Output
+# ========================================
+*.tsbuildinfo
+
+# ========================================
+# Map files (optional – if you don't need to debug prod)
+# ========================================
+*.js.map
+
+# ========================================
+# Temporary/Build Artifacts
+# ========================================
+coverage/
+.temp/
+.cache/
