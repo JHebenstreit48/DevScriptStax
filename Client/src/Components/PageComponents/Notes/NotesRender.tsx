@@ -30,18 +30,18 @@ interface NotesProps {
   markdownContent?: string;
 }
 
-const API_BASE_URL =
-  import.meta.env.VITE_API_BASE_URL || 'http://localhost:3001';
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:3001';
+
+console.log('🔍 API BASE:', API_BASE_URL);
 
 const isLocal =
   API_BASE_URL.includes('localhost') || API_BASE_URL.startsWith('/');
-  console.log("🔍 ENV USED:", API_BASE_URL);
-
+console.log('🔍 ENV USED:', API_BASE_URL);
 
 const loadMarkdown = async (filePath: string): Promise<string> => {
   const fullUrl = isLocal
-    ? `${API_BASE_URL}/notes/${filePath}` // ✅ local
-    : `${API_BASE_URL}/api/notes/${filePath}`; // ✅ deployed
+    ? `${API_BASE_URL}/Notes/${filePath}`
+    : `${API_BASE_URL}/api/Notes/${filePath}`;
 
   console.log('🌐 Fetching:', fullUrl);
   const response = await fetch(fullUrl);
@@ -50,7 +50,10 @@ const loadMarkdown = async (filePath: string): Promise<string> => {
     throw new Error(`Failed to fetch Markdown content: ${filePath}`);
   }
 
-  return response.text();
+  const text = await response.text();
+  console.log(`✅ Fetched content (${text.length} chars)`);
+  console.log('📄 Preview:', text.slice(0, 300));
+  return text;
 };
 
 const darkGrayTheme = {
@@ -75,9 +78,10 @@ const NotesRender: React.FC<NotesProps> = ({ filePath }) => {
 
   useEffect(() => {
     if (filePath) {
+      console.log('📂 FilePath received by NotesRender:', filePath);
       loadMarkdown(filePath)
         .then(setMarkdownContent)
-        .catch((error) => console.error('Error loading Markdown:', error));
+        .catch((error) => console.error('❌ Error loading Markdown:', error));
     }
   }, [filePath]);
 
@@ -90,66 +94,70 @@ const NotesRender: React.FC<NotesProps> = ({ filePath }) => {
   return (
     <div className="card">
       <div className="markdownContent">
-        <ReactMarkdown
-          rehypePlugins={[rehypeRaw, rehypeSlug, rehypeAutolinkHeadings]}
-          remarkPlugins={[remarkGfm]}
-          components={{
-            code({ className, children, ...props }) {
-              const language = className?.replace('language-', '') || '';
-              const codeString = String(children).trim();
+        {markdownContent ? (
+          <ReactMarkdown
+            rehypePlugins={[rehypeRaw, rehypeSlug, rehypeAutolinkHeadings]}
+            remarkPlugins={[remarkGfm]}
+            components={{
+              code({ className, children, ...props }) {
+                const language = className?.replace('language-', '') || '';
+                const codeString = String(children).trim();
 
-              return (
-                <div className="codeBlockWrapper">
-                  <div className="codeBlockHeader">
-                    <span className="codeBlockLanguage">
-                      {language.toUpperCase()}
-                    </span>
-                    <button
-                      className="copyCodeButton"
-                      onClick={() => copyToClipboard(codeString)}
-                    >
-                      {copiedCode ? 'Copied!' : 'Copy Code'}
-                    </button>
-                  </div>
-                  <SyntaxHighlighter
-                    // @ts-expect-error Theme typing is incorrect
-                    style={darkGrayTheme}
-                    language={language}
-                    PreTag="div"
-                    {...props}
-                  >
-                    {codeString}
-                  </SyntaxHighlighter>
-                </div>
-              );
-            },
-            a({ href, children, ...props }) {
-              if (href?.startsWith('/')) {
                 return (
-                  <HashLink to={href} {...props}>
+                  <div className="codeBlockWrapper">
+                    <div className="codeBlockHeader">
+                      <span className="codeBlockLanguage">
+                        {language.toUpperCase()}
+                      </span>
+                      <button
+                        className="copyCodeButton"
+                        onClick={() => copyToClipboard(codeString)}
+                      >
+                        {copiedCode ? 'Copied!' : 'Copy Code'}
+                      </button>
+                    </div>
+                    <SyntaxHighlighter
+                      // @ts-expect-error Theme typing is incorrect
+                      style={darkGrayTheme}
+                      language={language}
+                      PreTag="div"
+                      {...props}
+                    >
+                      {codeString}
+                    </SyntaxHighlighter>
+                  </div>
+                );
+              },
+              a({ href, children, ...props }) {
+                if (href?.startsWith('/')) {
+                  return (
+                    <HashLink to={href} {...props}>
+                      {children}
+                    </HashLink>
+                  );
+                }
+                return (
+                  <a href={href} {...props}>
                     {children}
-                  </HashLink>
+                  </a>
+                );
+              },
+              table({ children, ...props }) {
+                return (
+                  <div className="tableWrapper">
+                    <table className="notesTable" {...props}>
+                      {children}
+                    </table>
+                  </div>
                 );
               }
-              return (
-                <a href={href} {...props}>
-                  {children}
-                </a>
-              );
-            },
-            table({ children, ...props }) {
-              return (
-                <div className="tableWrapper">
-                  <table className="notesTable" {...props}>
-                    {children}
-                  </table>
-                </div>
-              );
-            }
-          }}
-        >
-          {markdownContent}
-        </ReactMarkdown>
+            }}
+          >
+            {markdownContent}
+          </ReactMarkdown>
+        ) : (
+          <p className="loadingMessage">Loading content...</p>
+        )}
       </div>
       <BackToTop />
     </div>
