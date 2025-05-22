@@ -1,14 +1,14 @@
+@use 'sass:color';
+
 /* ==============================
             Variables           
    ============================== */
 
-@use "sass:color";
-
 $level-1: rgb(7, 193, 255);
 $level-2: rgb(218, 165, 32);
-$level-3: rgb(124, 1, 1);
-$level-4: rgb(19, 145, 2);
-$level-5: rgb(221, 83, 255);
+$level-3: rgb(19, 145, 2);
+$level-4: rgb(201, 84, 255);
+$level-5: rgb(165, 0, 206);
 $background-dark: rgb(22, 22, 22);
 $dropdown-bg: rgb(38, 38, 39);
 $dropdown-hover: rgb(60, 60, 60);
@@ -21,16 +21,16 @@ $font-xs: 1rem;
 $dropdown-width: 17rem;
 
 /* ==============================
-                 Breakpoints          
-         ============================== */
-$cellphone-portrait: 390px;
+           Breakpoints          
+   ============================== */
+$cellphone-portrait: 480px;
 $cellphone-landscape: 390px;
 $small-laptop-max: 1366px;
 $small-laptop-min: 1024px;
 
 /* ==============================
-             Hamburger Menu Button    
-         ============================== */
+        Hamburger Menu Button    
+   ============================== */
 .hamburgerButton {
   display: none;
 
@@ -47,8 +47,8 @@ $small-laptop-min: 1024px;
 }
 
 /* ==============================
-               Navigation Menu         
-         ============================== */
+         Navigation Menu         
+   ============================== */
 .navigationMenu {
   position: fixed;
   top: 7.2rem;
@@ -60,11 +60,15 @@ $small-laptop-min: 1024px;
   z-index: 10;
   padding: 0;
   transition: all 0.3s ease;
+
+  @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
+    top: 6rem;
+  }
 }
 
 /* ==============================
           Navigation Content         
-      ============================== */
+   ============================== */
 .navigationContent {
   // Show normally on large screens
   display: flex;
@@ -132,7 +136,7 @@ $small-laptop-min: 1024px;
 
 /* ==============================
            Dropdown Button Style       
-         ============================== */
+   ============================== */
 .dropdownButton {
   display: flex;
   flex-direction: column;
