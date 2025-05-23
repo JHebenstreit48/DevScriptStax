@@ -1,6 +1,6 @@
 // Auto-generated TSX file: Accordions
 
-import Header from "@/Components/PageComponents/Header";
+import Header from "@/Components/Shared/Header";
 import Notes from "@/Components/PageComponents/Notes/NotesRender";
 
 const ReactBSAccordions = () => {

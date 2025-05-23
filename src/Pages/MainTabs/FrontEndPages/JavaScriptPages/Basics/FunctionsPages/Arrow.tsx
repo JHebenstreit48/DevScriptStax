@@ -1,12 +1,12 @@
-import Header from "@/Components/PageComponents/Header";
+import Header from "@/Components/Shared/Header";
 import Notes from "@/Components/PageComponents/Notes/NotesRender";
 
 const Arrow = () => {
-    const markdownFilePath = "/FrontEndPages/JavaScriptPages/Basics/FunctionsNotes/Arrow";
+    const markdownFilePath = "FrontEndNotes/JavaScriptNotes/Basics/FunctionsNotes/Arrow";
 
     return (
         <>
-            <Header text="Arrow Functions" />
+            <Header text="Arrow" />
             <Notes
                 filePath={markdownFilePath}
                 markdownContent="markdownContent"

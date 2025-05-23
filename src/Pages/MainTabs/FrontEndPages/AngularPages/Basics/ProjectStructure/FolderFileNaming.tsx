@@ -1,5 +1,5 @@
 import Notes from "@/Components/PageComponents/Notes/NotesRender";
-import Header from "@/Components/PageComponents/Header";
+import Header from "@/Components/Shared/Header";
 
 const AngularFolderFileNaming = () => {
     const markdownFilePath = 'FrontEndNotes/AngularNotes/AngularBasics/ProjectStructure/FolderFileNaming';

@@ -1,12 +1,12 @@
-import Header from "@/Components/PageComponents/Header";
+import Header from "@/Components/Shared/Header";
 import Notes from "@/Components/PageComponents/Notes/NotesRender";
 
 const FunctionBasics = () => {
-    const markdownFilePath = "/FrontEndPages/JavaScriptPages/Basics/FunctionsNotes/BasicsAndDeclare";
+    const markdownFilePath = "FrontEndNotes/JavaScriptNotes/Basics/FunctionsNotes/BasicsAndDeclare";
 
     return (
         <>
-            <Header text="Basics & Declarations" />
+            <Header text="Basics" />
             <Notes
                 filePath={markdownFilePath}
                 markdownContent="markdownContent"

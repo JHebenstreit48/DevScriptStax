@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 //     Component Imports
 // ==========================
 
-import Footer from '@/Components/PageComponents/Footer';
+import Footer from '@/Components/Shared/Footer';
 import EntryScreen from "@/Pages/Special/EntryScreen";
 import SplashScreen from '@/Pages/Special/SplashScreen';
 

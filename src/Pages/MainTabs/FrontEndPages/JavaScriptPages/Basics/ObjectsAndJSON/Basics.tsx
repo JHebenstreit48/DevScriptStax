@@ -1,18 +1,23 @@
-import Header from "@/Components/PageComponents/Header";
-import Notes from "@/Components/PageComponents/Notes/NotesRender";
+import PageLayout from '@/Components/NavigationUI/PageLayout';
+import Header from '@/Components/Shared/Header';
+import Notes from '@/Components/PageComponents/Notes/NotesRender';
+
 
 const ObjectsBasics = () => {
-    const markdownFilePath = "FrontEndNotes/JavaScriptNotes/Basics/ObjectsAndJSON/Basics";
+  const markdownFilePath =
+    'FrontEndNotes/JavaScriptNotes/Basics/ObjectsAndJSON/Basics';
 
-    return (
-        <>
-            <Header text="Objects Basics" />
-            <Notes
-                filePath={markdownFilePath}
-                markdownContent="markdownContent"
-            />
-        </>
-    );
+  return (
+    <>
+    <PageLayout>
+    <Header text="Objects Intro" />
+      <Notes
+        filePath={markdownFilePath}
+        markdownContent="markdownContent"
+      />
+    </PageLayout>
+    </>
+  );
 };
 
 export default ObjectsBasics;

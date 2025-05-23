@@ -41,7 +41,7 @@ $font-monospace: monospace;
 /* ==============================
    Breakpoints
    ============================== */
-$cellphone-portrait: 390px;
+$cellphone-portrait: 480px;
 $cellphone-landscape: 390px;
 $small-laptop-max: 1366px;
 $small-laptop-min: 1024px;
@@ -67,8 +67,8 @@ $small-laptop-min: 1024px;
   // outer shadow (your glow)
 
   @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
-    width: 23.5rem;
-    margin: 0 auto 4.5rem auto;
+    width: 23rem;
+    margin: 11rem auto 10rem auto;
   }
 
   .markdownContent {
@@ -110,8 +110,11 @@ $small-laptop-min: 1024px;
       }
     }
 
-    @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
-      p {
+    p {
+      width: 85%;
+      margin: 0 auto;
+
+      @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
         width: 19rem;
         margin: 0 auto;
       }
@@ -124,7 +127,7 @@ $small-laptop-min: 1024px;
       width: 42rem;
 
       @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
-        width: 22.5rem;
+        width: 21rem;
       }
     }
 
@@ -182,29 +185,37 @@ $small-laptop-min: 1024px;
       display: flex;
       justify-content: center;
       align-items: center;
+      width: 35rem;
+      margin: 0 auto;
 
       @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
-        width: 100%;
-        -webkit-overflow-scrolling: touch;
-        margin: 0 auto 1.5rem auto;
-        padding: 0;
-        justify-content: center;
-
-        &::-webkit-scrollbar {
-          height: 6px;
-        }
-
-        &::-webkit-scrollbar-thumb {
-          background: $dropdown-hover;
-          border-radius: 3px;
+          width: 100%;
+          padding: 0 1rem;
+          box-sizing: border-box;
+          margin: 0 auto;
+          overflow-x: hidden; // ensure no horizontal scroll
+      
+          .notesTable {
+            width: 100%;
+            table-layout: fixed;
+            border-collapse: collapse;
+            text-align: center;
+          }
+      
+          .tableCellHeader,
+          .tableCell,
+          .centeredCell {
+            word-wrap: break-word;
         }
       }
 
-      @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
-        table {
-          margin: 0 auto;
-          padding: 0;
-          width: 20rem;
+      .narrowTable {
+        width: 35rem;
+        text-align: center;
+        margin: 0 auto;
+
+        @media screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
+          width: 100%;
         }
       }
 
@@ -219,7 +230,7 @@ $small-laptop-min: 1024px;
         background-color: $table-cell-bg;
 
         @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
-          width: 1rem;
+          width: 9.3rem;
         }
       }
 
@@ -234,10 +245,6 @@ $small-laptop-min: 1024px;
         text-align: left;
         border: 1px solid $table-border;
         background-color: $background-table;
-
-        @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
-          width: 1rem;
-        }
       }
 
       .tableEmphasis {
@@ -252,6 +259,11 @@ $small-laptop-min: 1024px;
       background-color: $background-code;
       line-height: 1.5;
       overflow-x: hidden;
+
+      @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
+        width: 97%;
+        margin: 0 auto;
+      }
 
       .codeBlockHeader {
         @include flex-center;

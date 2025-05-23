@@ -1,8 +1,8 @@
-import Header from "@/Components/PageComponents/Header";
+import Header from "@/Components/Shared/Header";
 import Notes from "@/Components/PageComponents/Notes/NotesRender";
 
 const ExpressionsIIFE = () => {
-    const markdownFilePath = "/FrontEndPages/JavaScriptPages/Basics/FunctionsNotes/ExpressionsIIFE";
+    const markdownFilePath = "FrontEndNotes/JavaScriptNotes/Basics/FunctionsNotes/ExpressionsIIFE";
 
     return (
         <>

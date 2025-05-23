@@ -2,10 +2,10 @@ import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import pages from "@/Navigation/CombinedNav/CombinedNavAndTypes/Pages";
 import { Subpage } from "@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes";
-import { flattenNavigation } from "@/Components/NavigationUI/SearchModal/Utils/flattenNavigation";
-import { SearchMatch } from "@/Components/NavigationUI/SearchModal/Utils/types";
-import SearchIcon from "@/Components/NavigationUI/SearchIcon";
-import SearchModal from "@/Components/NavigationUI/SearchModal/Modal";
+import { flattenNavigation } from "@/Components/NavigationUI/Search/Utils/flattenNavigation";
+import { SearchMatch } from "@/Components/NavigationUI/Search/Utils/types";
+import SearchIcon from "@/Components/NavigationUI/Search/SearchIcon";
+import SearchModal from "@/Components/NavigationUI/Search/Modal";
 
 const Navigation = () => {
   const [activeDropdown, setActiveDropdown] = useState<Set<string>>(new Set());
