@@ -1,19 +1,22 @@
-import Notes from "@/Components/PageComponents/Notes/NotesRender";
-import Header from "@/Components/PageComponents/Header";
+import PageLayout from '@components/NavigationUI/PageLayout';
+import Header from '@/Components/Shared/Header';
+import Notes from '@/Components/PageComponents/Notes/NotesRender';
 
 const TemplateLiterals = () => {
-    const markdownFilePath = "FrontEndNotes/JavaScriptNotes/Basics/CoreLanguageConcepts/DataTypes";
+  const markdownFilePath =
+    'FrontEndNotes/JavaScriptNotes/Basics/CoreLanguageConcepts/DataTypes';
 
-    return (
-
-        <>
-            <Header text="Template Literals" />
-            <Notes filePath={markdownFilePath}
-                markdownContent="markdownContent"
-            />
-        </>
-    );
-
+  return (
+    <>
+      <PageLayout>
+        <Header text="Template Literals" size="md" />
+        <Notes
+          filePath={markdownFilePath}
+          markdownContent="markdownContent"
+        />
+      </PageLayout>
+    </>
+  );
 };
 
 export default TemplateLiterals;

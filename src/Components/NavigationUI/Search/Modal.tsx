@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom";
-import SHeader from "@/Components/NavigationUI/SearchModal/SHeader";
-import SModeToggle from "@/Components/NavigationUI/SearchModal/SModeToggle";
-import InputResults from "@/Components/NavigationUI/SearchModal/InputResults";
-import { filterResults } from "@/Components/NavigationUI/SearchModal/Utils/filterResults"; // or wherever you place this
-import { GroupedSearchResult, SearchMatch } from "@/Components/NavigationUI/SearchModal/Utils/types";
+import SHeader from "@/Components/NavigationUI/Search/SHeader";
+import SModeToggle from "@/Components/NavigationUI/Search/SModeToggle";
+import InputResults from "@/Components/NavigationUI/Search/InputResults";
+import { filterResults } from "@/Components/NavigationUI/Search/Utils/filterResults"; // or wherever you place this
+import { GroupedSearchResult, SearchMatch } from "@/Components/NavigationUI/Search/Utils/types";
 
 interface SearchModalProps {
   searchTerm: string;

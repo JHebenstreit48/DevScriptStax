@@ -7,17 +7,17 @@ const JavaScriptBasicsNavigation: Subpage = {
       name: 'Introduction',
       subpages: [
         {
-          name: 'Overview of JavaScript',
+          name: 'Overview',
           path: '/javascript/basics/intro/overview'
         },
         {
-          name: 'History of JavaScript',
+          name: 'History',
           path: '/javascript/basics/intro/history'
         }
       ]
     },
     {
-      name: 'Core Language Concepts',
+      name: 'Core Concepts',
       subpages: [
         {
           name: 'Syntax and Structure',
@@ -36,7 +36,7 @@ const JavaScriptBasicsNavigation: Subpage = {
           path: '/javascript/basics/core/methods'
         },
         {
-          name: 'Conditional Statements',
+          name: 'Conditionals',
           path: '/javascript/basics/core/conditionals'
         },
         {
@@ -44,7 +44,7 @@ const JavaScriptBasicsNavigation: Subpage = {
           path: '/javascript/basics/core/loops'
         },
         {
-          name: 'Scope and Context',
+          name: 'Scope / Context',
           path: '/javascript/basics/core/scopeandcontext'
         }
       ]

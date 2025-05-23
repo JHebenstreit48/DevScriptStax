@@ -33,7 +33,7 @@ const JavaScriptAdvancedNavigation: Subpage = {
       name: "Modules",
       subpages: [
         {
-          name: "Modules Overview",
+          name: "Overview",
           path: "/javascript/advanced/modules/overview"
         },
         {

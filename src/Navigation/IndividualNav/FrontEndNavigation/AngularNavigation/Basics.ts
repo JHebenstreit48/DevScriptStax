@@ -7,11 +7,11 @@ const AngularBasicsNavigation: Subpage = {
       name: 'Fundamentals',
       subpages: [
         {
-          name: 'Introduction to Angular',
+          name: 'Introduction',
           path: '/angular/basics/fundamentals/intro'
         },
         {
-          name: 'Creating & Running an Application',
+          name: 'Creating & Running',
           path: '/angular/basics/fundamentals/creatingrunning'
         },
         {
@@ -32,7 +32,7 @@ const AngularBasicsNavigation: Subpage = {
           path: '/angular/basics/projectstructure/configfiles'
         },
         {
-          name: 'Folder & File Naming Conventions',
+          name: 'Naming Conventions',
           path: '/angular/basics/projectstructure/namingconventions'
         }
       ],

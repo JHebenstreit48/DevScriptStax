@@ -1,5 +1,5 @@
 import Notes from "@/Components/PageComponents/Notes/NotesRender";
-import Header from "@/Components/PageComponents/Header";
+import Header from "@/Components/Shared/Header";
 
 const PublicVSPrivate = () => {
     const markdownFilePath = 'BackEndNotes/APINotes/TypesOfAPIs/PublicVSPrivate.md';

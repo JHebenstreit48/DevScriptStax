@@ -1,19 +1,22 @@
-import Notes from "@/Components/PageComponents/Notes/NotesRender";
-import Header from "@/Components/PageComponents/Header";
+import PageLayout from '@/Components/NavigationUI/PageLayout';
+import Header from '@/Components/Shared/Header';
+import Notes from '@/Components/PageComponents/Notes/NotesRender';
 
 const Conditionals = () => {
-    const markdownFilePath = "FrontEndNotes/JavaScriptNotes/Basics/CoreLanguageConcepts/Conditionals";
+  const markdownFilePath =
+    'FrontEndNotes/JavaScriptNotes/Basics/CoreLanguageConcepts/Conditionals';
 
-    return (
-
-        <>
-            <Header text="JavaScript Conditionals" />
-            <Notes filePath={markdownFilePath}
-                markdownContent="markdownContent"
-            />
-        </>
-    );
-
+  return (
+    <>
+      <PageLayout>
+        <Header text="JavaScript Conditionals" />
+        <Notes
+          filePath={markdownFilePath}
+          markdownContent="markdownContent"
+        />
+      </PageLayout>
+    </>
+  );
 };
 
 export default Conditionals;

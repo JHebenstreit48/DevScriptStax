@@ -1,5 +1,6 @@
+import PageLayout from '@/Components/NavigationUI/PageLayout';
+import Header from '@/Components/Shared/Header';
 import Notes from '@/Components/PageComponents/Notes/NotesRender';
-import Header from '@/Components/PageComponents/Header';
 
 const SyntaxStructure = () => {
   const markdownFilePath =
@@ -7,11 +8,13 @@ const SyntaxStructure = () => {
 
   return (
     <>
-      <Header text="JavaScript Syntax And Structure" />
-      <Notes
-        filePath={markdownFilePath}
-        markdownContent="markdownContent"
-      />
+      <PageLayout>
+        <Header text="Syntax" />
+        <Notes
+          filePath={markdownFilePath}
+          markdownContent="markdownContent"
+        />
+      </PageLayout>
     </>
   );
 };
