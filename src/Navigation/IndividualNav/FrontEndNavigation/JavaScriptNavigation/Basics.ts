@@ -84,7 +84,7 @@ const JavaScriptBasicsNavigation: Subpage = {
       ]
     },
     {
-      name: 'Objects and JSON',
+      name: 'Objects / JSON',
       subpages: [
         {
           name: 'Objects Basics',
@@ -117,7 +117,7 @@ const JavaScriptBasicsNavigation: Subpage = {
         },
         {
           name: 'Arrow Functions',
-          path: '/javascript/basics/functions/arrowfunctions'
+          path: '/javascript/basics/functions/arrow'
         },
         {
           name: 'Parameters and Arguments',

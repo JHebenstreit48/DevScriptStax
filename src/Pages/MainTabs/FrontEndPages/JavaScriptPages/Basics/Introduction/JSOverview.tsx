@@ -1,20 +1,22 @@
-import Header from "@/Components/Shared/Header";
-import Notes from "@/Components/PageComponents/Notes/NotesRender";
+import PageLayout from '@/Components/NavigationUI/PageLayout';
+import Header from '@/Components/Shared/Header';
+import Notes from '@/Components/PageComponents/Notes/NotesRender';
 
 const JSOverview = () => {
-    const markdownFilePath = "FrontEndNotes/JavaScriptNotes/Basics/Introduction/Overview";
+  const markdownFilePath =
+    'FrontEndNotes/JavaScriptNotes/Basics/Introduction/Overview';
 
-    return (
-
-        <>
-            <Header text="JavaScript Overview" />
-            <Notes
-                filePath={markdownFilePath}
-                markdownContent="markdownContent"
-            />
-        </>
-    );
-
+  return (
+    <>
+      <PageLayout>
+        <Header text="Overview" />
+        <Notes
+          filePath={markdownFilePath}
+          markdownContent="markdownContent"
+        />
+      </PageLayout>
+    </>
+  );
 };
 
 export default JSOverview;

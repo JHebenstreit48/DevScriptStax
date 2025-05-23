@@ -1,19 +1,22 @@
-import Notes from "@/Components/PageComponents/Notes/NotesRender";
-import Header from "@/Components/Shared/Header";
+import PageLayout from '@/Components/NavigationUI/PageLayout';
+import Header from '@/Components/Shared/Header';
+import Notes from '@/Components/PageComponents/Notes/NotesRender';
 
 const JSHistory = () => {
-    const markdownFilePath = "FrontEndNotes/JavaScriptNotes/Basics/Introduction/History";
+  const markdownFilePath =
+    'FrontEndNotes/JavaScriptNotes/Basics/Introduction/History';
 
-    return (
-
-        <>
-            <Header text="JavaScript History" />
-            <Notes filePath={markdownFilePath}
-                markdownContent="markdownContent"
-            />
-        </>
-    );
-
+  return (
+    <>
+      <PageLayout>
+        <Header text="History" />
+        <Notes
+          filePath={markdownFilePath}
+          markdownContent="markdownContent"
+        />
+      </PageLayout>
+    </>
+  );
 };
 
 export default JSHistory;

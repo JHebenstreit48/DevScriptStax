@@ -2,7 +2,7 @@ import Notes from "@/Components/PageComponents/Notes/NotesRender";
 import Header from "@/Components/Shared/Header";
 
 const ThisKeyword = () => {
-    const markdownFilePath = "FrontEndNotes/JavaScriptNotes/Basics/CoreLanguageConcepts/ScopeAndContext";
+    const markdownFilePath = "FrontEndNotes/JavaScriptNotes/Basics/FunctionsNotes/ThisKeyword";
 
     return (
 

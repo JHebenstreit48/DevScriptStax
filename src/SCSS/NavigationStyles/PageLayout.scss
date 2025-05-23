@@ -1,3 +1,10 @@
+@use "sass:color";
+
+/* ==============================
+   Breakpoints
+   ============================== */
+   $cellphone-portrait: 480px;
+
 .PageLayout {
     position: relative;
   }
@@ -5,8 +12,8 @@
   // Tooltip below the page header
   .BreadcrumbTooltip {
     position: absolute;
-    top: calc(100% + 0.5rem);
-    left: 50%;
+    top: 1rem;
+    left: 77.4%;
     transform: translateX(-50%);
     background-color: rgba(0, 0, 0, 0.95);
     padding: 0.75rem 1.25rem;
@@ -22,6 +29,10 @@
     text-align: center;
     min-width: 250px;
     font-family: 'JetBrains Mono', monospace;
+
+    @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
+      display: none;
+    }
   
     .BreadcrumbRow {
       display: flex;
