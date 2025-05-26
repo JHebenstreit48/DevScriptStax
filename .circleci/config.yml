@@ -1,0 +1,19 @@
+version: 2.1
+
+orbs:
+  cypress: cypress-io/cypress@3
+
+jobs:
+  test:
+    docker:
+      - image: cypress/browsers:node-18.12.0-chrome-107
+    steps:
+      - checkout
+      - run: npm ci
+      - run: npm run build # optional: Vite build
+      - run: npm run cypress:run # see below
+
+workflows:
+  run-tests:
+    jobs:
+      - test
