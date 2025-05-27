@@ -1,8 +1,10 @@
 import { Page } from '@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes';
 
 // ---------- End To End Testing Navigation Start ----------
-import CypressNavigation from '@/Navigation/IndividualNav/TestingNavigation/End2End/Cypress';
-import PlaywrightNavigation from '@/Navigation/IndividualNav/TestingNavigation/End2End/Playwright';
+import CypressBasicsNavigation from '@/Navigation/IndividualNav/TestingNavigation/End2End/CypressNav/Basics';
+import CypressIntermediateNavigation from '@/Navigation/IndividualNav/TestingNavigation/End2End/CypressNav/Intermediate';
+import CypressAdvancedNavigation from '@/Navigation/IndividualNav/TestingNavigation/End2End/CypressNav/Advanced';
+// import PlaywrightNavigation from '@/Navigation/IndividualNav/TestingNavigation/End2End/Playwright';
 // ---------- End To End Testing Navigation End ----------
 
 // ---------- Framework Testing Navigation Start ----------
@@ -16,16 +18,29 @@ import PytestNavigation from '@/Navigation/IndividualNav/TestingNavigation/UnitT
 import RSpecNavigation from '@/Navigation/IndividualNav/TestingNavigation/UnitTesting/RSpec';
 import PHPUnitNavigation from '@/Navigation/IndividualNav/TestingNavigation/UnitTesting/PHPUnit';
 import TestifyNavigation from '@/Navigation/IndividualNav/TestingNavigation/UnitTesting/Testify';
+
 // ---------- Unit Testing Navigation End ----------
 
 const testingNav: Page = {
-  
   name: 'Testing',
   subpages: [
     // ---------- End To End Testing Navigation Start ----------
     {
       name: 'End To End',
-      subpages: [CypressNavigation, PlaywrightNavigation]
+      subpages: [
+        {
+          name: 'Cypress',
+          subpages: [
+            CypressBasicsNavigation,
+            CypressIntermediateNavigation,
+            CypressAdvancedNavigation
+          ]
+        },
+        // {
+        //   name: 'Playwright',
+        //   subpages: []
+        // }
+      ]
     },
     // ---------- End To End Testing Navigation End ----------
 
