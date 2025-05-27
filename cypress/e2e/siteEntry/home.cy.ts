@@ -1,7 +1,5 @@
 /// <reference types="cypress" />
 
-/// <reference types="cypress" />
-
 describe('Home Page Content & Structure', () => {
     beforeEach(() => {
       cy.visit('/');
