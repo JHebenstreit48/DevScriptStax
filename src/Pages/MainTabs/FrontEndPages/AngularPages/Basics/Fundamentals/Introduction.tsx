@@ -10,7 +10,7 @@ const AngularIntro = () => {
     <>
       <PageLayout>
         <Header
-          text="Angular Introduction"
+          text="Introduction"
           size="md"
         />
         <Notes
