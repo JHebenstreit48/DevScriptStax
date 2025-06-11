@@ -4,34 +4,31 @@ const GitBasicsNavigation: Subpage = {
   name: "Basics",
   subpages: [
     {
-      name: "Introduction",
+      name: "Fundamentals",
       subpages: [
-        { name: "What is Git?", path: "/tools/containerization/git/basics/intro/what-is-git" },
-        { name: "Why Version Control?", path: "/tools/containerization/git/basics/intro/why-version-control" }
+        { name: "Introduction", path: "/tools/containerization/git/basics/intro/introduction" },
+        { name: "Version Control", path: "/tools/containerization/git/basics/intro/versioncontrol" }
       ]
     },
     {
-      name: "Getting Started",
+      name: "Install/Config",
       subpages: [
-        { name: "Installing Git", path: "/tools/containerization/git/basics/installing" },
-        { name: "Initial Configuration", path: "/tools/containerization/git/basics/config" }
+        { name: "Installing Git", path: "/tools/containerization/git/basics/installconfig/installing" },
+        { name: "Initial Configuration", path: "/tools/containerization/git/basics/installconfig/config" }
       ]
     },
     {
-      name: "Basic Workflow",
+      name: "Workflow",
       subpages: [
-        { name: "Workflow Basics", path: "/tools/containerization/git/basics/basics" },
-        { name: "Workflow Process", path: "/tools/containerization/git/basics/workflowprocess" },
-        { name: "Branching", path: "/tools/containerization/git/basics/branching" },
-        { name: "Push/Pull", path: "/tools/containerization/git/basics/push-pull" },
-        { name: "Pull Request Workflow", path: "/tools/containerization/git/basics/pullrequest" }
+        { name: "Full Workflow", path: "/tools/containerization/git/basics/workflow/fullworkflow" },
+        { name: "Nuances", path: "/tools/containerization/git/basics/workflow/nuances" },
       ]
     },
     {
-      name: "Essential Commands",
+      name: "Commands",
       subpages: [
-        { name: "Common Git Commands", path: "/tools/containerization/git/basics/commands" },
-        { name: "Status, Diff, and Log", path: "/tools/containerization/git/basics/status-diff-log" }
+        { name: "Common", path: "/tools/containerization/git/basics/commands" },
+        { name: "Status/Diff/Log", path: "/tools/containerization/git/basics/statusdifflog" }
       ]
     }
   ]
