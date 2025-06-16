@@ -78,11 +78,11 @@ const javascriptRoutes: RouteObject[] = [
 
     // ---------------------- Basics > Introduction Start ----------------------
     {
-        path: '/javascript/basics/intro/overview',
+        path: '/javascript/basics/fundamentals/introduction',
         element: <JSOverview />,
     },
     {
-        path: '/javascript/basics/intro/history',
+        path: '/javascript/basics/fundamentals/history',
         element: <JSHistory />,
     },
     // ----------------------- Basics > Introduction End -----------------------

@@ -4,15 +4,15 @@ const JavaScriptBasicsNavigation: Subpage = {
   name: 'Basics',
   subpages: [
     {
-      name: 'Introduction',
+      name: 'Fundamentals',
       subpages: [
         {
-          name: 'Overview',
-          path: '/javascript/basics/intro/overview'
+          name: 'Introduction',
+          path: '/javascript/basics/fundamentals/introduction'
         },
         {
           name: 'History',
-          path: '/javascript/basics/intro/history'
+          path: '/javascript/basics/fundamentals/history'
         }
       ]
     },
