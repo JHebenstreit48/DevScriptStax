@@ -34,6 +34,23 @@ const ReactAdvancedNavigation: Subpage = {
         {
           name: 'Common Pitfalls',
           path: '/react/advanced/common-pitfalls'
+        },
+        {
+          name: 'Path Aliases',
+          path: '/react/advanced/path-aliases'
+        }
+      ]
+    },
+    {
+      name: 'SEO & Metadata',
+      subpages: [
+        {
+          name: 'Rendering Markdown',
+          path: '/react/advanced/seo/markdown'
+        },
+        {
+          name: 'Open Graph & Sharing',
+          path: '/react/advanced/seo/open-graph'
         }
       ]
     }

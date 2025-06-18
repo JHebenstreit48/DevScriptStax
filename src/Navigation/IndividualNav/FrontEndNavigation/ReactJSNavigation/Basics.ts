@@ -41,41 +41,15 @@ const ReactBasicsNavigation: Subpage = {
           ]
         },
         {
-          name: 'Components',
-          subpages: [
-            {
-              name: 'Behavior',
-              subpages: [
-                { name: 'Lifecycle Methods', path: '/react/basics/core/components/behavior/lifecyclemethods' },
-                { name: 'Hooks Overview', path: '/react/basics/core/components/behavior/hooks-overview' },
-                { name: 'Custom Hooks', path: '/react/basics/core/components/behavior/hooks-custom' }
-              ]
-            }
-          ]
-        },
-        {
           name: 'Event Handling',
           path: '/react/basics/core/event-handling'
-        }
-      ]
-    },
-    {
-      name: 'Data',
-      subpages: [
-        {
-          name: 'Fetching Data',
-          path: '/react/basics/data/fetching-data'
         },
         {
           name: 'Forms & Inputs',
-          path: '/react/basics/data/forms'
-        },
-        {
-          name: 'Context API',
-          path: '/react/basics/data/context-api'
+          path: '/react/basics/core/forms'
         }
       ]
-    },
+    }
   ]
 };
 
