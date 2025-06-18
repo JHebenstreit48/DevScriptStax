@@ -42,6 +42,19 @@ const ReactAdvancedNavigation: Subpage = {
       ]
     },
     {
+      name: 'App Setup',
+      subpages: [
+        {
+          name: 'Favicon & Tab Icon',
+          path: '/react/advanced/app-setup/favicon'
+        },
+        {
+          name: 'Public Folder Usage',
+          path: '/react/advanced/app-setup/public-folder'
+        }
+      ]
+    },
+    {
       name: 'SEO & Metadata',
       subpages: [
         {
