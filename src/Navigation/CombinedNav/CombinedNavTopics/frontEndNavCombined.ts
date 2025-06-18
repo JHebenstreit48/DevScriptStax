@@ -31,27 +31,13 @@ import NextJSNavigation from '@/Navigation/IndividualNav/FrontEndNavigation/Next
 // ---------- React Navigation Start ----------
 
 // ---------- React Basics Navigation Start ----------
-import GettingStartedNavigation from '@/Navigation/IndividualNav/FrontEndNavigation/ReactJSNavigation/ReactBasics/GettingStarted';
-import FundamentalsNavigation from '@/Navigation/IndividualNav/FrontEndNavigation/ReactJSNavigation/ReactBasics/Fundamentals';
-import ComponentBehaviorNavigation from '@/Navigation/IndividualNav/FrontEndNavigation/ReactJSNavigation/ReactBasics/ComponentBehavior';
-import WorkingWithDataNavigation from '@/Navigation/IndividualNav/FrontEndNavigation/ReactJSNavigation/ReactBasics/WorkingWithData';
-import AdvancedTopicsNavigation from '@/Navigation/IndividualNav/FrontEndNavigation/ReactJSNavigation/ReactBasics/Advanced';
+
 // ---------- React Basics Navigation End ---------
 
 // ---------- React With TypeScript Navigation Start ----------
-import RWTGettingStartedNavigation from '@/Navigation/IndividualNav/FrontEndNavigation/ReactJSNavigation/ReactAndTypeScript/GettingStarted';
-import TypeScriptInReactNavigation from '@/Navigation/IndividualNav/FrontEndNavigation/ReactJSNavigation/ReactAndTypeScript/TypeScriptInReact';
-import AdvancedConceptsNavigation from '@/Navigation/IndividualNav/FrontEndNavigation/ReactJSNavigation/ReactAndTypeScript/AdvancedConcepts';
-import StateManagementNavigation from '@/Navigation/IndividualNav/FrontEndNavigation/ReactJSNavigation/ReactAndTypeScript/StateManagement';
-import BestPracticesNavigation from '@/Navigation/IndividualNav/FrontEndNavigation/ReactJSNavigation/ReactAndTypeScript/BestPractices';
 // ---------- React With TypeScript Navigation End ----------
 
 // ---------- React Full Stack Navigation Start ----------
-import FSRGettingStartedNavigation from '@/Navigation/IndividualNav/FrontEndNavigation/ReactJSNavigation/ReactFullStack/GettingStarted';
-import FSFrontAndBackEndNavigation from '@/Navigation/IndividualNav/FrontEndNavigation/ReactJSNavigation/ReactFullStack/FrontEndToBackEnd';
-import FSLargeScaleAppsNavigation from '@/Navigation/IndividualNav/FrontEndNavigation/ReactJSNavigation/ReactFullStack/LargeScaleApps';
-import FSServerSideNavigation from '@/Navigation/IndividualNav/FrontEndNavigation/ReactJSNavigation/ReactFullStack/ServerSide';
-import FSProductionReadinessNavigation from '@/Navigation/IndividualNav/FrontEndNavigation/ReactJSNavigation/ReactFullStack/ProductionReadiness';
 // ---------- React Full Stack Navigation End ----------
 
 // ---------- React Navigation End ----------
@@ -102,31 +88,16 @@ const frontEndNav: Page = {
         {
           name: 'Basics',
           subpages: [
-            GettingStartedNavigation,
-            FundamentalsNavigation,
-            ComponentBehaviorNavigation,
-            WorkingWithDataNavigation,
-            AdvancedTopicsNavigation
           ]
         },
         {
           name: 'React + TypeScript',
           subpages: [
-            RWTGettingStartedNavigation,
-            TypeScriptInReactNavigation,
-            AdvancedConceptsNavigation,
-            StateManagementNavigation,
-            BestPracticesNavigation
           ]
         },
         {
           name: 'Full Stack',
           subpages: [
-            FSRGettingStartedNavigation,
-            FSFrontAndBackEndNavigation,
-            FSLargeScaleAppsNavigation,
-            FSServerSideNavigation,
-            FSProductionReadinessNavigation
           ]
         },
       ]

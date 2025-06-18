@@ -24,7 +24,7 @@ import WebpackNavigation from '@/Navigation/IndividualNav/ToolsNavigation/Packag
 
 // ---------- Containerization Navigation Start ----------
 import DockerNavigation from '@/Navigation/IndividualNav/ToolsNavigation/Containerization/Docker';
-import GitNavigation from '@/Navigation/IndividualNav/ToolsNavigation/Containerization/Git';
+import GitNavigation from '@/Navigation/IndividualNav/ToolsNavigation/Containerization/GitNavigation/Basics';
 // ---------- Containerization Navigation End ----------
 
 const toolsNav: Page = {
