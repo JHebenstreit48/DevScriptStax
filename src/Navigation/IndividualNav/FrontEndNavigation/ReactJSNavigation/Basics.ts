@@ -24,11 +24,11 @@ const ReactBasicsNavigation: Subpage = {
       name: 'Core Concepts',
       subpages: [
         {
-          name: 'JSX & Rendering',
+          name: 'JSX/Rendering',
           path: '/react/basics/core/jsx'
         },
         {
-          name: 'Props & State',
+          name: 'Props/State',
           subpages: [
             {
               name: 'Props',
@@ -42,7 +42,16 @@ const ReactBasicsNavigation: Subpage = {
         },
         {
           name: 'Components',
-          path: '/react/basics/core/components'
+          subpages: [
+            {
+              name: 'Behavior',
+              subpages: [
+                { name: 'Lifecycle Methods', path: '/react/basics/core/components/behavior/lifecyclemethods' },
+                { name: 'Hooks Overview', path: '/react/basics/core/components/behavior/hooks-overview' },
+                { name: 'Custom Hooks', path: '/react/basics/core/components/behavior/hooks-custom' }
+              ]
+            }
+          ]
         },
         {
           name: 'Event Handling',
@@ -51,7 +60,7 @@ const ReactBasicsNavigation: Subpage = {
       ]
     },
     {
-      name: 'Working with Data',
+      name: 'Data',
       subpages: [
         {
           name: 'Fetching Data',
@@ -67,27 +76,6 @@ const ReactBasicsNavigation: Subpage = {
         }
       ]
     },
-    {
-      name: 'Component Behavior',
-      subpages: [
-        {
-          name: 'Lifecycle Methods',
-          path: '/react/basics/behavior/lifecyclemethods'
-        },
-        {
-          name: 'Hooks Overview',
-          path: '/react/basics/behavior/hooks-overview'
-        },
-        {
-          name: 'useState & useEffect',
-          path: '/react/basics/behavior/hooks-usestate-useeffect'
-        },
-        {
-          name: 'Custom Hooks',
-          path: '/react/basics/behavior/hooks-custom'
-        }
-      ]
-    }
   ]
 };
 
