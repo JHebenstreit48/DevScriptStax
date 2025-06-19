@@ -13,7 +13,6 @@ import testingRoutes from "@/routes/RoutesDirectories/testingRoutesCombined";
 import toolRoutes from "@/routes/RoutesDirectories/toolsRoutesCombined";
 
 export const router = createBrowserRouter([
-
     {
         path: '/',
         element: <App />,

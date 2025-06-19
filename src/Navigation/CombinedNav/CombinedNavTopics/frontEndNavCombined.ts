@@ -29,17 +29,11 @@ import MarkdownNavigation from '@/Navigation/IndividualNav/FrontEndNavigation/Ma
 import NextJSNavigation from '@/Navigation/IndividualNav/FrontEndNavigation/NextJSNavigation/Nextjs';
 
 // ---------- React Navigation Start ----------
-
-// ---------- React Basics Navigation Start ----------
-
-// ---------- React Basics Navigation End ---------
-
-// ---------- React With TypeScript Navigation Start ----------
-// ---------- React With TypeScript Navigation End ----------
-
-// ---------- React Full Stack Navigation Start ----------
-// ---------- React Full Stack Navigation End ----------
-
+import ReactBasicsNavigation from '@/Navigation/IndividualNav/FrontEndNavigation/ReactJSNavigation/Basics';
+import ReactAndTypeScriptNavigation from '@/Navigation/IndividualNav/FrontEndNavigation/ReactJSNavigation/ReactAndTypeScript';
+import ReactAdvancedNavigation from '@/Navigation/IndividualNav/FrontEndNavigation/ReactJSNavigation/Advanced';
+import ReactFullStackNavigation from '@/Navigation/IndividualNav/FrontEndNavigation/ReactJSNavigation/FullStack';
+import ReactToolsNavigation from '@/Navigation/IndividualNav/FrontEndNavigation/ReactJSNavigation/Tools';
 // ---------- React Navigation End ----------
 
 import ReduxNavigation from '@/Navigation/IndividualNav/FrontEndNavigation/ReduxNavigation/Redux';
@@ -85,21 +79,11 @@ const frontEndNav: Page = {
     {
       name: 'React',
       subpages: [
-        {
-          name: 'Basics',
-          subpages: [
-          ]
-        },
-        {
-          name: 'React + TypeScript',
-          subpages: [
-          ]
-        },
-        {
-          name: 'Full Stack',
-          subpages: [
-          ]
-        },
+        ReactBasicsNavigation,
+        ReactAndTypeScriptNavigation,
+        ReactAdvancedNavigation,
+        ReactFullStackNavigation,
+        ReactToolsNavigation
       ]
     },
     ReduxNavigation,
