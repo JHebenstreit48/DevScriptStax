@@ -1,5 +1,5 @@
 import Header from "@/Components/Shared/Header";
-import Notes from "@/Components/PageComponents/Notes/NotesRender";
+import Notes from '@/Components/PageComponents/Notes/NotesRendering/Notes';
 
 const MixinsAndFunctions = () => {
     const markdownFilePath = 'FrontEndNotes/CSSNotes/Preprocessors/SassNotes/GettingStarted/MixinsAndFunctions';

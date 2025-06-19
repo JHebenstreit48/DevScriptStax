@@ -1,5 +1,5 @@
 import Header from "@/Components/Shared/Header";
-import Notes from "@/Components/PageComponents/Notes/NotesRender";
+import Notes from '@/Components/PageComponents/Notes/NotesRendering/Notes';
 
 const Python = () => {
     const markdownFilePath = '/PythonNotes/Python';

@@ -1,5 +1,5 @@
 import Header from "@/Components/Shared/Header";
-import Notes from "@/Components/PageComponents/Notes/NotesRender";
+import Notes from '@/Components/PageComponents/Notes/NotesRendering/Notes';
 
 const CSSVariables = () => {
     const markdownFilePath = 'FrontEndNotes/CSSNotes/VanillaCSS/CSSAdvancedNotes/Variables';

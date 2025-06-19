@@ -1,5 +1,5 @@
 import Header from "@/Components/Shared/Header";
-import Notes from "@/Components/PageComponents/Notes/NotesRender";
+import Notes from '@/Components/PageComponents/Notes/NotesRendering/Notes';
 
 const BootstrapCarousel = () => {
     const markdownFilePath = 'FrontEndNotes/CSSNotes/Frameworks/BootstrapComponents/Carousel';

@@ -1,7 +1,7 @@
 // Auto-generated TSX file: Communication
 
 import Header from "@/Components/Shared/Header";
-import Notes from "@/Components/PageComponents/Notes/NotesRender";
+import Notes from '@/Components/PageComponents/Notes/NotesRendering/Notes';
 
 const AngularCommunicate = () => {
     const markdownFilePath = "FrontEndNotes/AngularPages/CoreConcepts/AngularComponents/Communication";

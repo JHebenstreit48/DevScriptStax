@@ -1,5 +1,5 @@
 import Header from "@/Components/Shared/Header";
-import Notes from "@/Components/PageComponents/Notes/NotesRender";
+import Notes from '@/Components/PageComponents/Notes/NotesRendering/Notes';
 
 const WhatIsAuthen = () => {
     const markdownFilePath = 'BackEndNotes//AuthenAndAuthorNotes/AuthenticationNotes/WhatIsAuthentication';

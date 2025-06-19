@@ -1,7 +1,7 @@
 // Auto-generated TSX file: Carousel
 
 import Header from "@/Components/Shared/Header";
-import Notes from "@/Components/PageComponents/Notes/NotesRender";
+import Notes from '@/Components/PageComponents/Notes/NotesRendering/Notes';
 
 const ReactBSCarousel = () => {
     const markdownFilePath = "FrontEndNotes/CSSNotes/ReactBoostrap/Components/ReactBSCarousel";

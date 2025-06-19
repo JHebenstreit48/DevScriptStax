@@ -1,7 +1,7 @@
 // Auto-generated TSX file: Cards
 
 import Header from "@/Components/Shared/Header";
-import Notes from "@/Components/PageComponents/Notes/NotesRender";
+import Notes from '@/Components/PageComponents/Notes/NotesRendering/Notes';
 
 const ReactBSCards = () => {
     const markdownFilePath = "FrontEndNotes/CSSNotes/ReactBoostrap/Components/ReactBSCards";
