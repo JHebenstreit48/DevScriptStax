@@ -1,4 +1,4 @@
-import Notes from "@/Components/PageComponents/Notes/NotesRender";
+import Notes from '@/Components/PageComponents/Notes/NotesRendering/Notes';
 import Header from "@/Components/Shared/Header";
 
 const ApolloServerCode = () => {

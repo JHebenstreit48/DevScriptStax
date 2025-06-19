@@ -24,7 +24,12 @@ import WebpackNavigation from '@/Navigation/IndividualNav/ToolsNavigation/Packag
 
 // ---------- Containerization Navigation Start ----------
 import DockerNavigation from '@/Navigation/IndividualNav/ToolsNavigation/Containerization/Docker';
-import GitNavigation from '@/Navigation/IndividualNav/ToolsNavigation/Containerization/GitNavigation/Basics';
+
+// Git Navigation Start
+import GitBasicsNavigation from '@/Navigation/IndividualNav/ToolsNavigation/Containerization/GitNavigation/Basics';
+import GitAdvancedNavigation from '@/Navigation/IndividualNav/ToolsNavigation/Containerization/GitNavigation/Advanced';
+// Git Navigation End
+
 // ---------- Containerization Navigation End ----------
 
 const toolsNav: Page = {
@@ -53,7 +58,16 @@ const toolsNav: Page = {
     },
     {
       name: 'Containerization',
-      subpages: [DockerNavigation, GitNavigation]
+      subpages: [
+        {
+          name: 'Docker',
+          subpages: [DockerNavigation]
+        },
+        {
+          name: 'Git',
+          subpages: [GitBasicsNavigation, GitAdvancedNavigation]
+        }
+      ]
     }
   ]
 };

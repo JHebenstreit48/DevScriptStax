@@ -1,7 +1,7 @@
 // Auto-generated TSX file: SmartDumb
 
 import Header from "@/Components/Shared/Header";
-import Notes from "@/Components/PageComponents/Notes/NotesRender";
+import Notes from '@/Components/PageComponents/Notes/NotesRendering/Notes';
 
 const AngularSmartDumb = () => {
     const markdownFilePath = "FrontEndNotes/AngularPages/CoreConcepts/AngularComponents/SmartDumb";

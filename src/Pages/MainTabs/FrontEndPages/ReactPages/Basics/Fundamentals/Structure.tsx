@@ -2,19 +2,20 @@
 
 import PageLayout from '@/Components/NavigationUI/PageLayout';
 import Header from '@/Components/Shared/Header';
-import Notes from '@/Components/PageComponents/Notes/NotesRender';
+import Notes from '@/Components/PageComponents/Notes/NotesRendering/Notes';
 
 const ReactStructure = () => {
-    const markdownFilePath = "FrontEndNotes/ReactNotes/Basics/Fundamentals/Structure";
+  const markdownFilePath =
+    'FrontEndNotes/ReactNotes/Basics/Fundamentals/Structure';
 
-    return (
-        <>
-            <Header text="Structure" />
-            <Notes
-                filePath={markdownFilePath}
-            />
-        </>
-    );
+  return (
+    <>
+      <PageLayout>
+        <Header text="Structure" />
+        <Notes filePath={markdownFilePath} />
+      </PageLayout>
+    </>
+  );
 };
 
 export default ReactStructure;
