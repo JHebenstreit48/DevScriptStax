@@ -1,24 +1,31 @@
 import { RouteObject } from 'react-router-dom';
 
-import React from "@/Pages/MainTabs/FrontEndPages/ReactPages/ReactBasics/IntroAndSetup";
-// import ReactCode from "@/pages/ReactPages/ReactCode";
+import ReactIntro from '@/Pages/MainTabs/FrontEndPages/ReactPages/Basics/Fundamentals/Introduction';
+import ReactSetup from '@/Pages/MainTabs/FrontEndPages/ReactPages/Basics/Fundamentals/Setup';
 
 import ReactAndTypeScript from "@/Pages/MainTabs/FrontEndPages/ReactPages/ReactAndTypeScript/ReactAndTypeScript";
 // import ReactAndTypeScriptCode from "@/pages/ReactPages/ReactAndTypeScriptCode";
 
 import ReactFullStack from "@/Pages/MainTabs/FrontEndPages/ReactPages/ReactFullStack/ReactFullStack";
+import ReactStructure from '@/Pages/MainTabs/FrontEndPages/ReactPages/Basics/Fundamentals/Structure';
+
+
 // import ReactFullStackCode from "@/pages/ReactPages/ReactFullStackCode";
 
 
 const reactRoutes: RouteObject[] = [
     {
-        path: '/react',
-        element: <React />,
+        path: '/react/basics/fundamentals/introduction',
+        element: <ReactIntro />
     },
-    // {
-    //     path: '/react/reactcode',
-    //     element: <ReactCode />,
-    // },
+    {
+        path: '/react/basics/fundamentals/setup',
+        element: <ReactSetup />
+    },
+    {
+        path: '/react/basics/fundamentals/structure',
+        element: <ReactStructure />
+    },
     {
         path: '/react/reactandtypescript',
         element: <ReactAndTypeScript />,
@@ -34,10 +41,6 @@ const reactRoutes: RouteObject[] = [
     // {
     //     path: '/react/reactfullstackcode',
     //     element: <ReactFullStackCode />,
-    // },
-    // {
-    //     path: '/react/reactnativecode',
-    //     element: <ReactNativeCode />,
     // },
 ];
 

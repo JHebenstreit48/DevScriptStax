@@ -13,10 +13,7 @@ import reactRoutes from "@/routes/IndividualRoutes/FrontEndRoutes/react";
 import reduxRoutes from "@/routes/IndividualRoutes/FrontEndRoutes/redux";
 import vueRoutes from "@/routes/IndividualRoutes/FrontEndRoutes/vue";
 
-
-
 const frontEndRoutes: RouteObject[] = [
-
     ...angularRoutes,
     ...cssRoutes,
     // ...gatsbyRoutes,
@@ -29,7 +26,6 @@ const frontEndRoutes: RouteObject[] = [
     // ...svelteRoutes,
     // ...viteRoutes,
     ...vueRoutes,
-
 ];
 
 export default frontEndRoutes;

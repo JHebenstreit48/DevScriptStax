@@ -16,7 +16,7 @@ const ReactBasicsNavigation: Subpage = {
         }, // Node.js, CRA, Vite
         {
           name: 'Project Structure',
-          path: '/react/basics/fundamentals/projectstructure'
+          path: '/react/basics/fundamentals/structure'
         } // Files & folders
       ]
     },
@@ -42,7 +42,7 @@ const ReactBasicsNavigation: Subpage = {
         },
         {
           name: 'Event Handling',
-          path: '/react/basics/core/event-handling'
+          path: '/react/basics/core/eventhandling'
         },
         {
           name: 'Forms & Inputs',
