@@ -3,32 +3,32 @@ import { Page } from '@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTyp
 // ---------- Deployment Platforms Navigation Start ----------
 
 // ---------- Front-End Deployment Navigation Start ----------
-import NetlifyNavigation from '@/Navigation/IndividualNav/CloudServicesNavigation/DeploymentPlatformsNavigation/FrontEndNavigation/Netlify';
-// import VercelNavigation from "@/Navigation/CloudServicesNavigation/DeploymentPlatforms/FrontEnd/Vercel";
-// import CloudflarePagesNavigation from "@/Navigation/CloudServicesNavigation/DeploymentPlatforms/FrontEnd/CloudflarePages";
+import NetlifyNavigation from '@/Navigation/IndividualNav/CloudServices/DeploymentPlatforms/FrontEndNavigation/Netlify';
+// import VercelNavigation from "@/Navigation/CloudServices/DeploymentPlatforms/FrontEnd/Vercel";
+// import CloudflarePagesNavigation from "@/Navigation/CloudServices/DeploymentPlatforms/FrontEnd/CloudflarePages";
 // ---------- Front-End Deployment Navigation End ----------
 
 // ---------- Full-Stack Deployment Navigation Start ----------
-import RenderNavigation from '@/Navigation/IndividualNav/CloudServicesNavigation/DeploymentPlatformsNavigation/FullStackNavigation/Render';
-// import RailwayNavigation from "@/Navigation/CloudServicesNavigation/DeploymentPlatforms/FullStack/Railway";
-// import FlyNavigation from "@/Navigation/CloudServicesNavigation/DeploymentPlatforms/FullStack/Fly";
+import RenderNavigation from '@/Navigation/IndividualNav/CloudServices/DeploymentPlatforms/FullStackNavigation/Render';
+// import RailwayNavigation from "@/Navigation/CloudServices/DeploymentPlatforms/FullStack/Railway";
+// import FlyNavigation from "@/Navigation/CloudServices/DeploymentPlatforms/FullStack/Fly";
 // ---------- Full-Stack Deployment Navigation End ----------
 
 // ---------- Deployment Platforms Navigation End ----------
 
 // ---------- Serverless Computing Navigation Start ----------
-// import AWSLambdaNavigation from "@/Navigation/CloudServicesNavigation/ServerlessComputing/AWSLambda";
-// import GoogleCloudFunctionsNavigation from "@/Navigation/CloudServicesNavigation/ServerlessComputing/GoogleCloudFunctions";
-// import AzureFunctionsNavigation from "@/Navigation/CloudServicesNavigation/ServerlessComputing/AzureFunctions";
-// import FirebaseCloudNavigation from "@/Navigation/CloudServicesNavigation/ServerlessComputing/FirebaseCloud";
+// import AWSLambdaNavigation from "@/Navigation/CloudServices/ServerlessComputing/AWSLambda";
+// import GoogleCloudFunctionsNavigation from "@/Navigation/CloudServices/ServerlessComputing/GoogleCloudFunctions";
+// import AzureFunctionsNavigation from "@/Navigation/CloudServices/ServerlessComputing/AzureFunctions";
+// import FirebaseCloudNavigation from "@/Navigation/CloudServices/ServerlessComputing/FirebaseCloud";
 // ---------- Serverless Computing Navigation End ----------
 
 // ---------- Edge Computing Navigation Start ----------
-// import CloudflareWorkersNavigation from "@/Navigation/CloudServicesNavigation/EdgeComputing/CloudflareWorkers";
+// import CloudflareWorkersNavigation from "@/Navigation/CloudServices/EdgeComputing/CloudflareWorkers";
 // ---------- Edge Computing Navigation End ----------
 
 // ---------- Frameworks Navigation Start ----------
-// import ServerlessFrameworkNavigation from "@/Navigation/CloudServicesNavigation/Frameworks/ServerlessFramework";
+// import ServerlessFrameworkNavigation from "@/Navigation/CloudServices/Frameworks/ServerlessFramework";
 // ---------- Frameworks Navigation End ----------
 
 const cloudServicesNav: Page = {

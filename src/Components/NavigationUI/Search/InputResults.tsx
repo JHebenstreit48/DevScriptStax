@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { GroupedSearchResult } from "@/Components/NavigationUI/SearchModal/Utils/types";
+import { GroupedSearchResult } from "@/Components/NavigationUI/Search/Utils/types";
 
 interface InputResultsProps {
   inputValue: string;
