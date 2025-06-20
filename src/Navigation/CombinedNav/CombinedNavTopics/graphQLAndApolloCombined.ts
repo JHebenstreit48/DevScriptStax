@@ -1,11 +1,11 @@
 import { Page } from '@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes';
 
-import GraphQLNavigation from '@/Navigation/IndividualNav/GraphQLAndApolloNavigation/GraphQLPages';
-import ApolloNavigation from '@/Navigation/IndividualNav/GraphQLAndApolloNavigation/Apollo';
+import GraphQLNav from '@/Navigation/IndividualNav/GraphQLAndApollo/GraphQL';
+import ApolloNav from '@/Navigation/IndividualNav/GraphQLAndApollo/Apollo';
 
 const graphQLAndApolloNav: Page = {
   name: 'GraphQL & Apollo',
-  subpages: [GraphQLNavigation, ApolloNavigation]
+  subpages: [GraphQLNav, ApolloNav]
 };
 
 export default graphQLAndApolloNav;

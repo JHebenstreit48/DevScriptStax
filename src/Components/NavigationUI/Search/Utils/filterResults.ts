@@ -1,4 +1,4 @@
-import { SearchMatch, GroupedSearchResult } from "@/Components/NavigationUI/SearchModal/Utils/types";
+import { SearchMatch, GroupedSearchResult } from "@/Components/NavigationUI/Search/Utils/types";
 
 export function filterResults(
   allPages: SearchMatch[],

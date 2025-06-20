@@ -1,45 +1,51 @@
 import { Page } from '@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes';
 
 // ---------- Angular Navigation Start ----------
-import AngularBasicsNavigation from '@/Navigation/IndividualNav/FrontEndNavigation/AngularNavigation/Basics';
-import AngularCoreConceptsNavigation from '@/Navigation/IndividualNav/FrontEndNavigation/AngularNavigation/CoreConcepts';
-import AngularAdvancedNavigation from '@/Navigation/IndividualNav/FrontEndNavigation/AngularNavigation/Advanced';
-import AngularSecurityNavigation from '@/Navigation/IndividualNav/FrontEndNavigation/AngularNavigation/Security';
-import AngularTestingNavigation from '@/Navigation/IndividualNav/FrontEndNavigation/AngularNavigation/Testing';
+import AngularBasics from '@/Navigation/IndividualNav/FrontEndNav/AngularNav/Basics';
+import AngularCoreConcepts from '@/Navigation/IndividualNav/FrontEndNav/AngularNav/CoreConcepts';
+import AngularAdvanced from '@/Navigation/IndividualNav/FrontEndNav/AngularNav/Advanced';
+import AngularSecurity from '@/Navigation/IndividualNav/FrontEndNav/AngularNav/Security';
+import AngularTesting from '@/Navigation/IndividualNav/FrontEndNav/AngularNav/Testing';
 // ---------- Angular Navigation End ----------
 
 // ---------- CSS Navigation Start ----------
-import VanillaNavigation from '@/Navigation/IndividualNav/FrontEndNavigation/CSSNavigation/Vanilla';
-import FrameworksNavigation from '@/Navigation/IndividualNav/FrontEndNavigation/CSSNavigation/Frameworks';
-import PostprocessorsNavigation from '@/Navigation/IndividualNav/FrontEndNavigation/CSSNavigation/Postprocessors';
-import PreprocessorsNavigation from '@/Navigation/IndividualNav/FrontEndNavigation/CSSNavigation/Preprocessors';
+import CSSVanilla from '@/Navigation/IndividualNav/FrontEndNav/CSSNav/Vanilla';
+import CSSFrameworks from '@/Navigation/IndividualNav/FrontEndNav/CSSNav/Frameworks';
+import CSSPostprocessors from '@/Navigation/IndividualNav/FrontEndNav/CSSNav/Postprocessors';
+import CSSPreprocessors from '@/Navigation/IndividualNav/FrontEndNav/CSSNav/Preprocessors';
 // ---------- CSS Navigation End ----------
 
-import GatsbyNavigation from '@/Navigation/IndividualNav/FrontEndNavigation/GatsbyNavigation/Gatsby';
-import HTMLNavigation from '@/Navigation/IndividualNav/FrontEndNavigation/HTMLNavigation/HTMLBasics';
+import GatsbyNav from '@/Navigation/IndividualNav/FrontEndNav/GatsbyNav/Gatsby';
+
+// ---------- HTML Navigation Start ----------
+import HTMLBasics from '@/Navigation/IndividualNav/FrontEndNav/HTMLNav/Basics';
+import HTMLIntermediate from '@/Navigation/IndividualNav/FrontEndNav/HTMLNav/Intermediate';
+import HTMLAdvanced from '@/Navigation/IndividualNav/FrontEndNav/HTMLNav/Advanced';
+import HTMLBestPractices from '@/Navigation/IndividualNav/FrontEndNav/HTMLNav/BestPractices';
+// ---------- HTML Navigation End ----------
 
 // ---------- JavaScript Navigation Start ----------
-import JavaScriptBasicsNavigation from '@/Navigation/IndividualNav/FrontEndNavigation/JavaScriptNavigation/Basics';
-import JavaScriptIntermediateNavigation from '@/Navigation/IndividualNav/FrontEndNavigation/JavaScriptNavigation/Intermediate';
-import JavaScriptAdvancedNavigation from '@/Navigation/IndividualNav/FrontEndNavigation/JavaScriptNavigation/Advanced';
-import JavaScriptBestPracticesNavigation from '@/Navigation/IndividualNav/FrontEndNavigation/JavaScriptNavigation/BestPractices';
+import JSBasics from '@/Navigation/IndividualNav/FrontEndNav/JavaScriptNav/Basics';
+import JSIntermediate from '@/Navigation/IndividualNav/FrontEndNav/JavaScriptNav/Intermediate';
+import JSAdvanced from '@/Navigation/IndividualNav/FrontEndNav/JavaScriptNav/Advanced';
+import JSBestPractices from '@/Navigation/IndividualNav/FrontEndNav/JavaScriptNav/BestPractices';
 // ---------- JavaScript Navigation End ----------
 
-import MarkdownNavigation from '@/Navigation/IndividualNav/FrontEndNavigation/MarkdownNavigation/Markdown';
-import NextJSNavigation from '@/Navigation/IndividualNav/FrontEndNavigation/NextJSNavigation/Nextjs';
+import MarkdownNav from '@/Navigation/IndividualNav/FrontEndNav/MarkdownNav/Markdown';
+import NextJSNav from '@/Navigation/IndividualNav/FrontEndNav/NextJSNav/Nextjs';
 
 // ---------- React Navigation Start ----------
-import ReactBasicsNavigation from '@/Navigation/IndividualNav/FrontEndNavigation/ReactJSNavigation/Basics';
-import ReactAndTypeScriptNavigation from '@/Navigation/IndividualNav/FrontEndNavigation/ReactJSNavigation/ReactAndTypeScript';
-import ReactAdvancedNavigation from '@/Navigation/IndividualNav/FrontEndNavigation/ReactJSNavigation/Advanced';
-import ReactFullStackNavigation from '@/Navigation/IndividualNav/FrontEndNavigation/ReactJSNavigation/FullStack';
-import ReactToolsNavigation from '@/Navigation/IndividualNav/FrontEndNavigation/ReactJSNavigation/Tools';
+import ReactBasics from '@/Navigation/IndividualNav/FrontEndNav/ReactNav/Basics';
+import ReactAndTS from '@/Navigation/IndividualNav/FrontEndNav/ReactNav/ReactAndTypeScript';
+import ReactAdvanced from '@/Navigation/IndividualNav/FrontEndNav/ReactNav/Advanced';
+import ReactFullStack from '@/Navigation/IndividualNav/FrontEndNav/ReactNav/FullStack';
+import ReactTools from '@/Navigation/IndividualNav/FrontEndNav/ReactNav/Tools';
 // ---------- React Navigation End ----------
 
-import ReduxNavigation from '@/Navigation/IndividualNav/FrontEndNavigation/ReduxNavigation/Redux';
-import SvelteNavigation from '@/Navigation/IndividualNav/FrontEndNavigation/SvelteNavigation/Svelte';
-import VueNavigation from '@/Navigation/IndividualNav/FrontEndNavigation/VueNavigation/Vue';
-import ViteNavigation from '@/Navigation/IndividualNav/FrontEndNavigation/ViteNavigation/Vite';
+import ReduxNav from '@/Navigation/IndividualNav/FrontEndNav/ReduxNav/Redux';
+import SvelteNav from '@/Navigation/IndividualNav/FrontEndNav/SvelteNav/Svelte';
+import VueNav from '@/Navigation/IndividualNav/FrontEndNav/VueNav/Vue';
+import ViteNav from '@/Navigation/IndividualNav/FrontEndNav/ViteNav/Vite';
 
 const frontEndNav: Page = {
   name: 'Front End',
@@ -47,49 +53,57 @@ const frontEndNav: Page = {
     {
       name: 'Angular',
       subpages: [
-        AngularBasicsNavigation,
-        AngularCoreConceptsNavigation,
-        AngularAdvancedNavigation,
-        AngularSecurityNavigation,
-        AngularTestingNavigation
+        AngularBasics,
+        AngularCoreConcepts,
+        AngularAdvanced,
+        AngularSecurity,
+        AngularTesting
       ]
     },
     {
       name: 'CSS',
       subpages: [
-        VanillaNavigation,
-        FrameworksNavigation,
-        PreprocessorsNavigation,
-        PostprocessorsNavigation
+        CSSVanilla,
+        CSSFrameworks,
+        CSSPreprocessors,
+        CSSPostprocessors
       ]
     },
-    GatsbyNavigation,
-    HTMLNavigation,
+    GatsbyNav,
+    {
+      name: 'HTML',
+      subpages: [
+        HTMLBasics,
+        HTMLIntermediate,
+        HTMLAdvanced,
+        HTMLBestPractices
+      ]
+    },
     {
       name: 'JavaScript',
       subpages: [
-        JavaScriptBasicsNavigation,
-        JavaScriptIntermediateNavigation,
-        JavaScriptAdvancedNavigation,
-        JavaScriptBestPracticesNavigation
+        JSBasics,
+        JSIntermediate,
+        JSAdvanced,
+        JSBestPractices
       ]
     },
-    MarkdownNavigation,
-    NextJSNavigation,
+    MarkdownNav,
+    NextJSNav,
     {
       name: 'React',
       subpages: [
-        ReactBasicsNavigation,
-        ReactAndTypeScriptNavigation,
-        ReactAdvancedNavigation,
-        ReactFullStackNavigation,
-        ReactToolsNavigation
+        ReactBasics,
+        ReactAndTS,
+        ReactAdvanced,
+        ReactFullStack,
+        ReactTools
       ]
     },
-    ReduxNavigation,
-    SvelteNavigation,
-    VueNavigation,
-    ViteNavigation
+    ReduxNav,
+    SvelteNav,
+    VueNav,
+    ViteNav
   ]
 };
 
