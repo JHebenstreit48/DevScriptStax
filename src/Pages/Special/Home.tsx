@@ -7,12 +7,12 @@ const Home = () => {
 
         <>
 
-            <Header text="Code Quest" />
+            <Header text="DevScriptStax" />
 
             <div className='siteInfo'>
 
                 <p className='siteInfoContent'>
-                    CodeQuest is a personal reference site for full stack web development. It began as a React.js version of a vanilla HTML project from a web development bootcamp and has since grown into a structured space for long-term learning.
+                    DevScriptStax is a personal reference site for full stack web development. It began as a React.js version of a vanilla HTML project from a web development bootcamp and has since grown into a structured space for long-term learning.
                 </p>
 
                 <p className='siteInfoContent'>
