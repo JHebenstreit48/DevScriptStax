@@ -1,7 +1,7 @@
 import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes';
 
 const SEOMetadata: Subpage = {
-    name: 'SEO & Metadata',
+    name: 'SEO/Metadata',
     subpages: [
         {
             name: 'Rendering Markdown',

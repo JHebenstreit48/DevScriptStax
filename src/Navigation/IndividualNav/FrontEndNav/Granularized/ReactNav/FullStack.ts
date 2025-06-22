@@ -14,14 +14,10 @@ const ReactFullStack: Subpage = {
           name: 'Project Structure',
           path: '/react/fullstack/project-structure'
         },
-        {
-          name: 'Env Variables',
-          path: '/react/fullstack/env-variables'
-        }
       ]
     },
     {
-      name: 'API Communication',
+      name: 'APIs',
       subpages: [
         {
           name: 'Fetching Data',
@@ -38,7 +34,7 @@ const ReactFullStack: Subpage = {
       ]
     },
     {
-      name: 'Rendering Techniques',
+      name: 'Rendering',
       subpages: [
         {
           name: 'SSR',
@@ -55,7 +51,7 @@ const ReactFullStack: Subpage = {
       ]
     },
     {
-      name: 'Scalability & Performance',
+      name: 'Scalability/Performance',
       subpages: [
         {
           name: 'Large Data Sets',
@@ -72,7 +68,7 @@ const ReactFullStack: Subpage = {
       ]
     },
     {
-      name: 'Production Readiness',
+      name: 'Production',
       subpages: [
         {
           name: 'Logging & Monitoring',

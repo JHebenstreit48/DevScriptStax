@@ -1,4 +1,4 @@
-import { Page } from '@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes';
+import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes';
 
 // ---------- API Tools Navigation Start ----------
 import InsomniaNavigation from '@/Navigation/IndividualNav/ToolsNav/APITools/Insomnia';
@@ -32,7 +32,7 @@ import GitAdvancedNavigation from '@/Navigation/IndividualNav/ToolsNav/Container
 
 // ---------- Containerization Navigation End ----------
 
-const toolsNav: Page = {
+const tools: Subpage = {
   name: 'Tools',
   subpages: [
     {
@@ -72,4 +72,4 @@ const toolsNav: Page = {
   ]
 };
 
-export default toolsNav;
+export default tools;

@@ -1,4 +1,4 @@
-import { Page } from '@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes';
+import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes';
 
 // ---------- Deployment Platforms Navigation Start ----------
 
@@ -31,7 +31,7 @@ import RenderNavigation from '@/Navigation/IndividualNav/CloudServices/Deploymen
 // import ServerlessFrameworkNavigation from "@/Navigation/CloudServices/Frameworks/ServerlessFramework";
 // ---------- Frameworks Navigation End ----------
 
-const cloudServicesNav: Page = {
+const cloudServices: Subpage = {
   name: 'Cloud Services',
   subpages: [
     {
@@ -79,4 +79,4 @@ const cloudServicesNav: Page = {
   ]
 };
 
-export default cloudServicesNav;
+export default cloudServices;

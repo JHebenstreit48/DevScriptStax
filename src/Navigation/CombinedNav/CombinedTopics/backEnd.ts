@@ -1,4 +1,4 @@
-import { Page } from '@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes';
+import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes';
 
 // ---------- APIs Navigation Start ----------
 
@@ -58,7 +58,7 @@ import ApacheNavigation from '@/Navigation/IndividualNav/BackEndNav/WebServers/A
 import NginxNavigation from '@/Navigation/IndividualNav/BackEndNav/WebServers/Nginx';
 // ---------- Web Servers Navigation End ----------
 
-const backEndNav: Page = {
+const backEnd: Subpage = {
   name: 'Back End',
   subpages: [
     {
@@ -137,4 +137,4 @@ const backEndNav: Page = {
   ]
 };
 
-export default backEndNav;
+export default backEnd;

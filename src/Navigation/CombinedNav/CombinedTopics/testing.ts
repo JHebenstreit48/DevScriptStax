@@ -1,4 +1,4 @@
-import { Page } from '@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes';
+import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes';
 
 // ---------- End To End Testing Navigation Start ----------
 import CypressBasicsNavigation from '@/Navigation/IndividualNav/TestingNav/End2End/CypressNav/Basics';
@@ -21,7 +21,7 @@ import TestifyNavigation from '@/Navigation/IndividualNav/TestingNav/UnitTesting
 
 // ---------- Unit Testing Navigation End ----------
 
-const testingNav: Page = {
+const testing: Subpage = {
   name: 'Testing',
   subpages: [
     // ---------- End To End Testing Navigation Start ----------
@@ -67,4 +67,4 @@ const testingNav: Page = {
 
 // ---------- End To End Testing Navigation End ----------
 
-export default testingNav;
+export default testing;

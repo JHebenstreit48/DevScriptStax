@@ -1,7 +1,7 @@
 import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes';
 
 const ReactAndTS: Subpage = {
-    name: 'React & TypeScript',
+    name: 'React + TS',
     subpages: [
       {
         name: 'Introduction',
