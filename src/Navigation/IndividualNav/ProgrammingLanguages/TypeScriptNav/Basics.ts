@@ -24,12 +24,12 @@ const TSBasics: Subpage = {
       name: 'Types',
       subpages: [
         {
-          name: 'Primitive & Complex Types',
-          path: '/typescript/basics/types/primitive-complex'
+          name: 'Core Types',
+          path: '/typescript/basics/types/core'
         },
         {
-          name: 'Enums & Type Inference',
-          path: '/typescript/basics/types/enums-inference'
+          name: 'Interfaces & Declarations',
+          path: '/typescript/basics/types/interfaces'
         }
       ]
     }
