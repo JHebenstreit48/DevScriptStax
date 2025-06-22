@@ -37,15 +37,15 @@ const JSAdvanced: Subpage = {
           path: '/javascript/advanced/modules/overview'
         },
         {
-          name: 'Import/Export Syntax & Examples',
+          name: 'Import/Export Syntax',
           path: '/javascript/advanced/modules/syntax'
         },
         {
-          name: 'Dynamic Imports and Lazy Loading',
+          name: 'Dynamic Imports/Lazy Loading',
           path: '/javascript/advanced/modules/dynamic'
         },
         {
-          name: 'Import Paths and Aliases',
+          name: 'Paths/Aliases',
           path: '/javascript/advanced/modules/paths'
         }
       ]

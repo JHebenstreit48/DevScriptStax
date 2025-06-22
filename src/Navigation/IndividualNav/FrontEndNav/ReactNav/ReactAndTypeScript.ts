@@ -17,19 +17,10 @@ const ReactAndTS: Subpage = {
         {
           name: 'Types',
           path: '/react/typescript/fundamentals/types'
-        }
-      ]
-    },
-    {
-      name: 'Props & State',
-      subpages: [
-        {
-          name: 'Props',
-          path: '/react/typescript/propsstate/props'
         },
         {
-          name: 'State',
-          path: '/react/typescript/propsstate/state'
+          name: 'TSConfig',
+          path: '/react/typescript/fundamentals/tsconfig-files'
         }
       ]
     },
