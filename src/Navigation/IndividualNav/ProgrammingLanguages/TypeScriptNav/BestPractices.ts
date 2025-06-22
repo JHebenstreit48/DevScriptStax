@@ -4,27 +4,27 @@ const TSBestPractices: Subpage = {
   name: 'Best Practices',
   subpages: [
     {
-      name: 'Tooling & Configuration',
+      name: 'Tooling/Config',
       subpages: [
         {
-          name: 'Linting, Strict Mode & Pitfalls',
-          path: '/typescript/best-practices/tooling/linting-strict'
+          name: 'Linting/Strict',
+          path: '/typescript/best-practices/tooling/lintingstrict'
         },
         {
-          name: 'Code Organization & tsconfig.json',
-          path: '/typescript/best-practices/tooling/code-org-tsconfig'
+          name: 'Organization',
+          path: '/typescript/best-practices/tooling/organization'
         }
       ]
     },
     {
-      name: 'Patterns & Style',
+      name: 'Patterns/Style',
       subpages: [
         {
           name: 'Naming, Modularity, Conventions',
           path: '/typescript/best-practices/patterns/naming-conventions'
         },
         {
-          name: 'Error Handling Standards',
+          name: 'Errors',
           path: '/typescript/best-practices/patterns/error-handling'
         }
       ]
