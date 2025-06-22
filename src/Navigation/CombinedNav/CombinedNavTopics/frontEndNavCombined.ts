@@ -36,7 +36,6 @@ import NextJSNav from '@/Navigation/IndividualNav/FrontEndNav/NextJSNav/Nextjs';
 
 // ---------- React Navigation Start ----------
 import ReactBasics from '@/Navigation/IndividualNav/FrontEndNav/ReactNav/Basics';
-import ReactAndTS from '@/Navigation/IndividualNav/FrontEndNav/ReactNav/ReactAndTypeScript';
 import ReactAdvanced from '@/Navigation/IndividualNav/FrontEndNav/ReactNav/Advanced';
 import ReactFullStack from '@/Navigation/IndividualNav/FrontEndNav/ReactNav/FullStack';
 import ReactTools from '@/Navigation/IndividualNav/FrontEndNav/ReactNav/Tools';
@@ -94,7 +93,6 @@ const frontEndNav: Page = {
       name: 'React',
       subpages: [
         ReactBasics,
-        ReactAndTS,
         ReactAdvanced,
         ReactFullStack,
         ReactTools
