@@ -4,8 +4,3 @@ export type Subpage = {
     subpages?: Subpage[];
   };
   
-  export type Page = {
-    name: string;
-    subpages: Subpage[];
-  };
-  

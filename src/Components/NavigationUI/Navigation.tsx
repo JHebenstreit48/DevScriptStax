@@ -141,7 +141,7 @@ const Navigation = () => {
 
             return (
               <div key={pageKey} className="dropdown">
-                {page.subpages.length === 0 ? (
+                {!page.subpages || page.subpages.length === 0 ? (
                   <Link to="/" className="dropdownButton level-1">
                     {page.name}
                   </Link>
@@ -157,7 +157,7 @@ const Navigation = () => {
                     </button>
                     {isActive && (
                       <div className="dropdownContent active">
-                        {renderSubpages(page.subpages, pageKey, 2)}
+                        {page.subpages && renderSubpages(page.subpages, pageKey, 2)}
                       </div>
                     )}
                   </>
