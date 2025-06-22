@@ -11,8 +11,12 @@ const TSBasics: Subpage = {
           path: '/typescript/basics/fundamentals/introduction'
         },
         {
-          name: 'Setup & TSConfig',
-          path: '/typescript/basics/fundamentals/setup-and-tsconfig'
+          name: 'Setup',
+          path: '/typescript/basics/fundamentals/setup'
+        },
+        {
+          name: 'TSConfig',
+          path: '/typescript/basics/fundamentals/tsconfig'
         }
       ]
     },
