@@ -1,11 +1,16 @@
 import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes';
 
-import GraphQLNav from '@/Navigation/IndividualNav/Granularized/GraphQLAndApollo/GraphQL';
-import ApolloNav from '@/Navigation/IndividualNav/Granularized/GraphQLAndApollo/Apollo';
+import GraphQLNav from '@/Navigation/IndividualNav/FullTopics/GraphQLAndApollo/GraphQL';
+import ApolloNav from '@/Navigation/IndividualNav/FullTopics/GraphQLAndApollo/Apollo';
+
+
 
 const graphQLAndApollo: Subpage = {
   name: 'GraphQL & Apollo',
-  subpages: [GraphQLNav, ApolloNav]
+  subpages: [
+    GraphQLNav,
+    ApolloNav
+  ]
 };
 
 export default graphQLAndApollo;

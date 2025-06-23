@@ -3,7 +3,7 @@ import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/Navigation
 import PythonNav from '@/Navigation/IndividualNav/ProgrammingLanguages/Python';
 import TSNav from '@/Navigation/IndividualNav/FullTopics/LanguagesNav/TypeScript';
 import RustNav from '@/Navigation/IndividualNav/ProgrammingLanguages/Rust';
-import GoNav from '@/Navigation/IndividualNav/ProgrammingLanguages/Go';
+import GoNav from '@/Navigation/IndividualNav/FullTopics/LanguagesNav/Go';
 import DartNav from '@/Navigation/IndividualNav/ProgrammingLanguages/Dart';
 
 const languages: Subpage = {

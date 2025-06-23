@@ -4,10 +4,10 @@ const PythonNav: Subpage = {
   name: 'Python',
   subpages: [
     {
-      name: 'Python Fundamentals',
+      name: 'Fundamentals',
       subpages: [
         {
-          name: 'Python Basics & Syntax',
+          name: 'Basics & Syntax',
           path: '/python/fundamentals/basics'
         },
         {
@@ -29,7 +29,7 @@ const PythonNav: Subpage = {
       ]
     },
     {
-      name: 'Python for Backend Development',
+      name: 'Backend',
       subpages: [
         {
           name: 'Working with APIs in Python',
@@ -70,7 +70,7 @@ const PythonNav: Subpage = {
       name: 'Asynchronous Programming',
       subpages: [
         {
-          name: 'Async & Await in Python',
+          name: 'Async & Await',
           path: '/python/async/async-await'
         },
         { name: 'Using Asyncio', path: '/python/async/asyncio' }
