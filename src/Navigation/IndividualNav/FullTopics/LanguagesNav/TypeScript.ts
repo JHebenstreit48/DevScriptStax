@@ -6,13 +6,13 @@ import TSAdvanced from '@/Navigation/IndividualNav/Granularized/LanguagesNav/Typ
 import TSBestPractices from '@/Navigation/IndividualNav/Granularized/LanguagesNav/TypeScriptNav/BestPractices';
 
 const TSNav: Subpage = {
-    name: 'TypeScript',
-    subpages: [
-        TSBasics,
-        TSIntermediate,
-        TSAdvanced,
-        TSBestPractices
-    ]
+  name: 'TypeScript',
+  subpages: [
+    TSBasics,
+    TSIntermediate,
+    TSAdvanced,
+    TSBestPractices
+  ]
 };
 
 export default TSNav;
