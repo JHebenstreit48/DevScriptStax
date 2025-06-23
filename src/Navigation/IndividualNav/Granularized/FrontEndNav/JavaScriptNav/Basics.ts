@@ -20,7 +20,7 @@ const JSBasics: Subpage = {
       name: 'Core Concepts',
       subpages: [
         {
-          name: 'Syntax and Structure',
+          name: 'Syntax/Structure',
           path: '/javascript/basics/core/syntax'
         },
         {

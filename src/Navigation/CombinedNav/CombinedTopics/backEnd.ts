@@ -1,30 +1,6 @@
 import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes';
 
-// ---------- APIs Navigation Start ----------
-
-// ---------- API Introduction Navigation Start ----------
-// import APIFundamentalsNavigation from '@/Navigation/IndividualNav/BackEndNav/APINav/APIIntroduction/APIFundamentals';
-// import TypesOfAPIsNavigation from '@/Navigation/IndividualNav/BackEndNav/APINav/APIIntroduction/TypesOfAPIs';
-// import APIDocumentationNavigation from '@/Navigation/IndividualNav/BackEndNav/APINav/APIIntroduction/APIDocumentation';
-// ---------- API Introduction Navigation End ----------
-
-// ---------- REST APIs Navigation Start ----------
-// import RESTFundamentalsNavigation from '@/Navigation/IndividualNav/BackEndNav/APINav/RESTAPIs/RESTFundamentals';
-// import HTTPMethodsNavigation from '@/Navigation/IndividualNav/BackEndNav/APINav/RESTAPIs/HTTPMethods';
-// import EndpointsAndResourcesNavigation from '@/Navigation/IndividualNav/BackEndNav/APINav/RESTAPIs/EndpointsAndResources';
-// import RESTfulDesignPrinciplesNavigation from '@/Navigation/IndividualNav/BackEndNav/APINav/RESTAPIs/RESTfulDesignPrinciples';
-// import ErrorHandlingNavigation from '@/Navigation/IndividualNav/BackEndNav/APINav/RESTAPIs/ErrorHandling';
-// ---------- REST APIs Navigation End ----------
-
-// ---------- Advanced API Concepts Navigation Start ----------
-// import RateLimitingNavigation from '@/Navigation/IndividualNav/BackEndNav/APINav/AdvancedConcepts/RateLimiting';
-// import APIVersioningNavigation from '@/Navigation/IndividualNav/BackEndNav/APINav/AdvancedConcepts/APIVersioning';
-// import APICachingNavigation from '@/Navigation/IndividualNav/BackEndNav/APINav/AdvancedConcepts/APICaching';
-// import APIGatewaysNavigation from '@/Navigation/IndividualNav/BackEndNav/APINav/AdvancedConcepts/APIGateways';
-// import WebhooksNavigation from '@/Navigation/IndividualNav/BackEndNav/APINav/AdvancedConcepts/Webhooks';
-// ---------- Advanced API Concepts Navigation End ----------
-
-// ---------- APIs Navigation End ----------
+import APIsNav from '@/Navigation/IndividualNav/FullTopics/BackEndNav/APIs';
 
 // ---------- Authentication & Authorization Navigation Start ----------
 // import AuthorizationNavigation from '@/Navigation/IndividualNav/BackEndNav/AuthenAndAuthor/Authorization';
@@ -61,39 +37,7 @@ import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/Navigation
 const backEnd: Subpage = {
   name: 'Back End',
   subpages: [
-    {
-      name: 'APIs',
-      subpages: [
-        {
-          name: 'Introduction to APIs',
-          subpages: [
-            // APIFundamentalsNavigation,
-            // TypesOfAPIsNavigation,
-            // APIDocumentationNavigation
-          ]
-        },
-        {
-          name: 'REST APIs',
-          subpages: [
-            // RESTFundamentalsNavigation,
-            // HTTPMethodsNavigation,
-            // EndpointsAndResourcesNavigation,
-            // RESTfulDesignPrinciplesNavigation,
-            // ErrorHandlingNavigation
-          ]
-        },
-        {
-          name: 'Advanced API Concepts',
-          subpages: [
-            // RateLimitingNavigation,
-            // APIVersioningNavigation,
-            // APICachingNavigation,
-            // APIGatewaysNavigation,
-            // WebhooksNavigation
-          ]
-        }
-      ]
-    },
+    APIsNav,
     {
       name: 'Authentication & Authorization',
       subpages: [
