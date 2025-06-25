@@ -1,5 +1,6 @@
 import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes';
 
+
 // ---------- API Tools Navigation Start ----------
 // import InsomniaNavigation from '@/Navigation/IndividualNav/ToolsNav/APITools/Insomnia';
 // import PostmanNavigation from '@/Navigation/IndividualNav/ToolsNav/APITools/Postman';
@@ -23,7 +24,7 @@ import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/Navigation
 // ---------- Package Management & Bundling Navigation End ----------
 
 // ---------- Containerization Navigation Start ----------
-// import DockerNavigation from '@/Navigation/IndividualNav/ToolsNav/Containerization/Docker';
+import DockerNav from '@/Navigation/IndividualNav/FullTopics/ToolsNav/Containerization/Docker';
 import GitNav from '@/Navigation/IndividualNav/FullTopics/ToolsNav/Containerization/Git'
 // ---------- Containerization Navigation End ----------
 
@@ -54,10 +55,7 @@ const tools: Subpage = {
     {
       name: 'Containerization',
       subpages: [
-        {
-          name: 'Docker'
-          // subpages: [DockerNavigation]
-        },
+        DockerNav,
         GitNav
       ]
     }

@@ -5,7 +5,7 @@ import Frameworks from '@/Navigation/IndividualNav/Granularized/FrontEndNav/EnvV
 import BestPractices from '@/Navigation/IndividualNav/Granularized/FrontEndNav/EnvVariables/BestPractices';
 
 const EnvVariables: Subpage = {
-  name: 'Environment Variables',
+  name: 'Env Variables',
   subpages: [
     Essentials,
     Frameworks,
