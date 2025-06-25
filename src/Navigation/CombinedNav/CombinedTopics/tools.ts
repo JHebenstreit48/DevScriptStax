@@ -24,12 +24,7 @@ import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/Navigation
 
 // ---------- Containerization Navigation Start ----------
 // import DockerNavigation from '@/Navigation/IndividualNav/ToolsNav/Containerization/Docker';
-
-// // Git Navigation Start
-// import GitBasicsNavigation from '@/Navigation/IndividualNav/ToolsNav/Containerization/GitNavigation/Basics';
-// import GitAdvancedNavigation from '@/Navigation/IndividualNav/ToolsNav/Containerization/GitNavigation/Advanced';
-// Git Navigation End
-
+import GitNav from '@/Navigation/IndividualNav/FullTopics/ToolsNav/Containerization/Git'
 // ---------- Containerization Navigation End ----------
 
 const tools: Subpage = {
@@ -63,13 +58,7 @@ const tools: Subpage = {
           name: 'Docker'
           // subpages: [DockerNavigation]
         },
-        {
-          name: 'Git',
-          subpages: [
-            // GitBasicsNavigation,
-            // GitAdvancedNavigation
-          ]
-        }
+        GitNav
       ]
     }
   ]
