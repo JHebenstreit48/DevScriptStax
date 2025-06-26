@@ -2,36 +2,36 @@ import { RouteObject } from "react-router-dom";
 
 // ----------------------- HTML Basics Start -----------------------
 
-import HTML from "@/Pages/MainTabs/FrontEndPages/HTMLPages/HTMLBasics/HTMLIntro";
-import HTMLELements from "@/Pages/MainTabs/FrontEndPages/HTMLPages/HTMLBasics/HTMLElements";
-import HTMLAttributes from "@/Pages/MainTabs/FrontEndPages/HTMLPages/HTMLBasics/HTMLAttributes";
-import HTMLForms from "@/Pages/MainTabs/FrontEndPages/HTMLPages/HTMLBasics/HTMLForms";
-import HTMLSemantics from "@/Pages/MainTabs/FrontEndPages/HTMLPages/HTMLBasics/HTMLSemantics";
+import HTML from "@/Pages/MainTabs/FrontEndPages/HTMLPages/Basics/Fundamentals/Introduction";
+import HTMLELements from "@/Pages/MainTabs/FrontEndPages/HTMLPages/Basics/Structure/Elements";
+import HTMLAttributes from "@/Pages/MainTabs/FrontEndPages/HTMLPages/Basics/Structure/Attributes";
+import HTMLForms from "@/Pages/MainTabs/FrontEndPages/HTMLPages/Basics/FormsAndSemantics/Forms";
+import HTMLSemantics from "@/Pages/MainTabs/FrontEndPages/HTMLPages/Basics/FormsAndSemantics/Semantics";
 
 const htmlRoutes: RouteObject[] = [
 
 
     {
-        path: '/html/basics/introduction',
+        path: '/html/basics/fundamentals/introduction',
         element: <HTML />,
     },
     {
-        path: '/html/basics/elements',
+        path: '/html/basics/structure/elements',
         element: <HTMLELements />,
     },
     {
-        path: '/html/basics/attributes',
+        path: '/html/basics/structure/attributes',
         element: <HTMLAttributes />,
     },
     {
-        path: '/html/basics/forms',
+        path: '/html/basics/formssemantics/forms',
         element: <HTMLForms />,
     },
     {
-        path: '/html/basics/semantic',
+        path: '/html/basics/formssemantics/semantic',
         element: <HTMLSemantics />,
     },
-
+    
     // ------------------------ HTML Basics End ------------------------
 
 ];

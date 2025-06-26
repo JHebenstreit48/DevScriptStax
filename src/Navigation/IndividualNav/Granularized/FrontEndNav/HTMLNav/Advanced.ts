@@ -1,21 +1,39 @@
-import { Subpage } from "@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes";
+import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes';
 
 const HTMLAdvanced: Subpage = {
-  name: "Advanced",
+  name: 'Advanced',
   subpages: [
     {
-      name: "HTML5 Features",
-      path: "/html/advanced/html5", // New features introduced in HTML5
+      name: 'Topics',
+      subpages: [
+        {
+          name: 'HTML5 Features',
+          path: '/html/advanced/html5'
+        },
+        {
+          name: 'Web Accessibility',
+          path: '/html/advanced/accessibility'
+        },
+        {
+          name: 'SEO Best Practices',
+          path: '/html/advanced/seo'
+        }
+      ]
     },
     {
-      name: "Web Accessibility",
-      path: "/html/advanced/accessibility", // Making HTML accessible for all users
-    },
-    {
-      name: "SEO Best Practices",
-      path: "/html/advanced/seo", // Techniques to improve search engine rankings
-    },
-  ],
+      name: 'Best Practices',
+      subpages: [
+        {
+          name: 'Code Standards',
+          path: '/html/best-practices/standards'
+        },
+        {
+          name: 'Performance Optimization',
+          path: '/html/best-practices/performance'
+        }
+      ]
+    }
+  ]
 };
 
 export default HTMLAdvanced;

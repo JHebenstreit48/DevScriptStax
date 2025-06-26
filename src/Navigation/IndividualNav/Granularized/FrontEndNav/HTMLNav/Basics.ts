@@ -8,23 +8,37 @@ const HTMLBasics: Subpage = {
       subpages: [
         {
           name: 'Introduction',
-          path: '/html/basics/introduction' // Overview of HTML, history, and purpose
+          path: '/html/basics/fundamentals/introduction'
         },
         {
-          name: 'Elements & Tags',
-          path: '/html/basics/elements' // Explains basic HTML elements and structure
+          name: 'History',
+          path: '/html/basics/fundamentals/history'
+        }
+      ]
+    },
+    {
+      name: 'Structure',
+      subpages: [
+        {
+          name: 'Elements / Tags',
+          path: '/html/basics/structure/elements'
         },
         {
           name: 'Attributes',
-          path: '/html/basics/attributes' // How to use and customize attributes
-        },
+          path: '/html/basics/structure/attributes'
+        }
+      ]
+    },
+    {
+      name: 'Forms / Semantics',
+      subpages: [
         {
           name: 'Forms',
-          path: '/html/basics/forms' // Basics of form creation and input types
+          path: '/html/basics/formssemantics/forms'
         },
         {
-          name: 'Semantic HTML',
-          path: '/html/basics/semantic' // Using semantic elements like <header>, <footer>
+          name: 'Semantic Elements',
+          path: '/html/basics/formssemantics/semantic'
         }
       ]
     }
