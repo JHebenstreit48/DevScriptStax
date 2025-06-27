@@ -3,8 +3,8 @@ import { RouteObject } from "react-router-dom";
 // ----------------------- JavaScript Basics Start -----------------------
 
 // ------------------------ Introduction Start ------------------------
-import JSOverview from "@/Pages/MainTabs/FrontEndPages/JavaScriptPages/Basics/Introduction/JSOverview";
-import JSHistory from "@/Pages/MainTabs/FrontEndPages/JavaScriptPages/Basics/Introduction/JSHistory";
+import JSOverview from "@/Pages/MainTabs/FrontEndPages/JavaScriptPages/Basics/Fundamentals/Introduction";
+import JSHistory from "@/Pages/MainTabs/FrontEndPages/JavaScriptPages/Basics/Fundamentals/History";
 // ------------------------- Introduction End -------------------------
 
 // ------------------- Core Language Concepts Start -------------------

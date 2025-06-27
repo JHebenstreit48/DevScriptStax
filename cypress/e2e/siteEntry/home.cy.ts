@@ -10,8 +10,8 @@ describe('Home Page Content & Structure', () => {
       cy.get('nav.mainNav').should('exist');
     });
   
-    it('displays the Code Quest heading', () => {
-      cy.contains('Code Quest').should('be.visible'); // Adjust based on actual heading
+    it('displays the DevScriptStax heading', () => {
+      cy.contains('DevScriptStax').should('be.visible'); // Adjust based on actual heading
     });
   
     it('contains the welcome paragraph or intro message', () => {
@@ -19,7 +19,7 @@ describe('Home Page Content & Structure', () => {
     });
   
     it('displays the top nav tabs', () => {
-      const tabs = ['Front End', 'Back End', 'Cloud Services', 'Testing', 'Tools', 'Web Languages', 'GraphQL & Apollo'];
+      const tabs = ['Front End', 'Back End', 'Cloud Services', 'Testing', 'Tools', 'Languages', 'GraphQL & Apollo'];
       tabs.forEach(tab => {
         cy.contains(tab).should('be.visible');
       });

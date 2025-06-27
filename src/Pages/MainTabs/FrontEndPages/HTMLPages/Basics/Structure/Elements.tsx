@@ -3,12 +3,12 @@ import Header from "@/Components/Shared/Header";
 
 
 const HTMLElements = () => {
-    const markdownFilePath = 'FrontEndNotes/HTMLNotes/HTMLBasics/HTMLElements';
+    const markdownFilePath = 'FrontEndNotes/HTMLNotes/Basics/Structure/Elements';
 
     return (
 
         <>
-            <Header text="HTML Elements" />
+            <Header text="Elements" />
             <Notes filePath={markdownFilePath}
                 markdownContent="markdownContent"
             />

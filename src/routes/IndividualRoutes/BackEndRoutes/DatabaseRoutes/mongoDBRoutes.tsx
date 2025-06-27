@@ -1,17 +1,12 @@
 import { RouteObject } from "react-router-dom";
 
-import MongoDB from "@/Pages/MainTabs/BackEndPages/DatabasesPages/MongoDB/MongoDB";
-// import MongoDBCode from "@/pages/MongoDBPages/MongoDBCode";
+import MongoDBIntro from "@/Pages/MainTabs/BackEndPages/DatabasesPages/MongoDB/Basics/Fundamentals/Introduction";
 
 const mongoDBRoutes: RouteObject[] = [
     {
-        path: '/mongodb',
-        element: <MongoDB />,
+        path: '/databases/mongodb/intro/Introduction',
+        element: <MongoDBIntro />,
     },
-    // {
-    //     path: '/mongodb/mongodbcode',
-    //     element: <MongoDBCode />,
-    // },
 ];
 
 export default mongoDBRoutes;

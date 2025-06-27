@@ -9,7 +9,7 @@ import APIsNav from '@/Navigation/IndividualNav/FullTopics/BackEndNav/APIs';
 
 // ---------- Databases Navigation Start ----------
 // import FirebaseNavigation from '@/Navigation/IndividualNav/BackEndNav/DatabaseNav/Firebase';
-// import MongoDBNavigation from '@/Navigation/IndividualNav/BackEndNav/DatabaseNav/MongoDB';
+import MongoDBNav from '@/Navigation/IndividualNav/FullTopics/BackEndNav/DatabaseNav/MongoDB';
 // import MySQLNavigation from '@/Navigation/IndividualNav/BackEndNav/DatabaseNav/MySQL';
 // import PostgreSQLNavigation from '@/Navigation/IndividualNav/BackEndNav/DatabaseNav/PostgreSQL';
 // import RedisNavigation from '@/Navigation/IndividualNav/BackEndNav/DatabaseNav/Redis';
@@ -49,7 +49,7 @@ const backEnd: Subpage = {
       name: 'Databases',
       subpages: [
         // FirebaseNavigation,
-        // MongoDBNavigation,
+        MongoDBNav,
         // MySQLNavigation,
         // PostgreSQLNavigation,
         // RedisNavigation,
