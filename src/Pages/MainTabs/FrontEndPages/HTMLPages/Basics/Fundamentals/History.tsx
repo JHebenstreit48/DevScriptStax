@@ -1,22 +1,20 @@
 import Header from "@/Components/Shared/Header";
 import Notes from '@/Components/PageComponents/Notes/NotesRendering/Notes';
 
-const MongoDB = () => {
-    const markdownFilePath = "BackEndNotes/DatabaseNotes/MongoDB/MongoDB";
+const HTMLHistory = () => {
+    const markdownFilePath = "FrontEndNotes/HTMLNotes/Basics/Fundamentals/History";
 
     return (
 
         <>
-
-            <Header text="MongoDB" />
+            <Header text="History" />
             <Notes
                 filePath={markdownFilePath}
                 markdownContent="markdownContent"
             />
-
         </>
     );
 
-};
+}
 
-export default MongoDB;
+export default HTMLHistory;

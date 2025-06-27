@@ -157,13 +157,6 @@ $small-laptop-min: 1024px;
       border-radius: 3px;
     }
 
-    .bullet1,
-    .bullet2,
-    .bullet3 {
-      display: inline-block;
-      padding-left: 50px !important;
-    }
-
     .bullet1 {
       column-count: 2;
       width: 44rem;
@@ -172,7 +165,10 @@ $small-laptop-min: 1024px;
 
     .bullet2 {
       column-count: 1;
-      width: 36rem;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     .bullet3 {
