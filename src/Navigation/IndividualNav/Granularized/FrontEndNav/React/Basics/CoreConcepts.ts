@@ -25,14 +25,14 @@ const ReactCoreConcepts: Subpage = {
       path: '/react/basics/core/eventhandling'
     },
     {
-      name: 'Forms & Inputs',
+      name: 'Forms',
       subpages: [
         {
           name: 'Controlled vs Uncontrolled',
           path: '/react/basics/core/forms/controlled'
         },
         {
-          name: 'Form Patterns & Libraries',
+          name: 'Patterns & Libraries',
           path: '/react/basics/core/forms/libraries'
         }
       ]
