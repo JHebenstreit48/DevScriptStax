@@ -1,19 +1,27 @@
 import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes';
 
 const AdvancedTopics: Subpage = {
-  name: 'Topics',
+  name: 'Performance & Rendering',
   subpages: [
-    {
-      name: 'React Router',
-      path: '/react/advanced/reactrouter'
-    },
     {
       name: 'Performance Optimization',
       path: '/react/advanced/performance'
     },
     {
-      name: 'Error Handling',
-      path: '/react/advanced/errorhandling'
+      name: 'Server-Side Rendering (SSR)',
+      path: '/react/advanced/rendering/ssr'
+    },
+    {
+      name: 'Static Site Generation (SSG)',
+      path: '/react/advanced/rendering/ssg'
+    },
+    {
+      name: 'Hybrid Rendering',
+      path: '/react/advanced/rendering/hybrid'
+    },
+    {
+      name: 'Error Boundaries',
+      path: '/react/advanced/errorboundaries'
     }
   ]
 };
