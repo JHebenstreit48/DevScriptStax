@@ -1,17 +1,13 @@
 import { RouteObject } from 'react-router-dom';
 
 import ReactIntro from '@/Pages/MainTabs/FrontEndPages/ReactPages/Basics/Fundamentals/Introduction';
+
 import ReactSetup from '@/Pages/MainTabs/FrontEndPages/ReactPages/Basics/SetupAndStructure/Setup';
-
-// import ReactAndTypeScript from "@/Pages/MainTabs/FrontEndPages/ReactPages/ReactAndTypeScript/ReactAndTypeScript";
-// import ReactAndTypeScriptCode from "@/pages/ReactPages/ReactAndTypeScriptCode";
-
-// import ReactFullStack from "@/Pages/MainTabs/FrontEndPages/ReactPages/ReactFullStack/ReactFullStack";
 import ReactStructure from '@/Pages/MainTabs/FrontEndPages/ReactPages/Basics/SetupAndStructure/Structure';
 
+import JSXAndRendering from '@/Pages/MainTabs/FrontEndPages/ReactPages/Basics/CoreConcepts/JSXAndRendering';
 
-// import ReactFullStackCode from "@/pages/ReactPages/ReactFullStackCode";
-
+import EventHandling from '@/Pages/MainTabs/FrontEndPages/ReactPages/Basics/CoreConcepts/EventHandling';
 
 const reactRoutes: RouteObject[] = [
     // React Basics Start
@@ -37,10 +33,12 @@ const reactRoutes: RouteObject[] = [
 
     // React Core Concepts Start
     {
-        
+        path: '/react/basics/core/jsx',
+        element: <JSXAndRendering />
     },
     {
-
+        path: '/react/basics/core/eventhandling',
+        element: <EventHandling />
     },
 
     // React Core Concepts End
@@ -51,25 +49,7 @@ const reactRoutes: RouteObject[] = [
 
 
 
-
-
     // React Intermediate End
-    // {
-    //     path: '/react/reactandtypescript',
-    //     element: <ReactAndTypeScript />,
-    // },
-    // {
-    //     path: '/react/reactandtypescriptcode',
-    //     element: <ReactAndTypeScriptCode />,
-    // },
-    // {
-    //     path: '/react/reactfullstack',
-    //     element: <ReactFullStack />,
-    // },
-    // {
-    //     path: '/react/reactfullstackcode',
-    //     element: <ReactFullStackCode />,
-    // },
 ];
 
 export default reactRoutes;
