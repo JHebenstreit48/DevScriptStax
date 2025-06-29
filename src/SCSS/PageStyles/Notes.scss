@@ -149,12 +149,9 @@ $small-laptop-min: 1024px;
       @include text-emphasis($secondary-color, 30px);
     }
 
-    .codeSnip,
-    .shell {
+    .codeSnip {
       color: $emphasis-color;
-      font: normal 1.3rem/1.5 $font-monospace !important;
-      padding: 2px 4px;
-      border-radius: 3px;
+      font: normal 1.3rem/1.5 $font-monospace;
     }
 
     .bullet1 {
@@ -165,10 +162,18 @@ $small-laptop-min: 1024px;
 
     .bullet2 {
       column-count: 1;
-      margin: 0 auto;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      margin: 0.5rem auto 0 auto;
+      list-style-type: disc;
+      width: 90%;
+      padding-left: 6rem;
+
+      li {
+        list-style-type: disc;
+
+        p {
+          margin: 0;
+        }
+      }
     }
 
     .bullet3 {
@@ -185,23 +190,23 @@ $small-laptop-min: 1024px;
       margin: 0 auto;
 
       @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
+        width: 100%;
+        padding: 0 1rem;
+        box-sizing: border-box;
+        margin: 0 auto;
+        overflow-x: hidden; // ensure no horizontal scroll
+
+        .notesTable {
           width: 100%;
-          padding: 0 1rem;
-          box-sizing: border-box;
-          margin: 0 auto;
-          overflow-x: hidden; // ensure no horizontal scroll
-      
-          .notesTable {
-            width: 100%;
-            table-layout: fixed;
-            border-collapse: collapse;
-            text-align: center;
-          }
-      
-          .tableCellHeader,
-          .tableCell,
-          .centeredCell {
-            word-wrap: break-word;
+          table-layout: fixed;
+          border-collapse: collapse;
+          text-align: center;
+        }
+
+        .tableCellHeader,
+        .tableCell,
+        .centeredCell {
+          word-wrap: break-word;
         }
       }
 

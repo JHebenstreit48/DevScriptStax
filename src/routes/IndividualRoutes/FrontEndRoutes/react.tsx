@@ -1,47 +1,55 @@
 import { RouteObject } from 'react-router-dom';
 
 import ReactIntro from '@/Pages/MainTabs/FrontEndPages/ReactPages/Basics/Fundamentals/Introduction';
-import ReactSetup from '@/Pages/MainTabs/FrontEndPages/ReactPages/Basics/Fundamentals/Setup';
 
-import ReactAndTypeScript from "@/Pages/MainTabs/FrontEndPages/ReactPages/ReactAndTypeScript/ReactAndTypeScript";
-// import ReactAndTypeScriptCode from "@/pages/ReactPages/ReactAndTypeScriptCode";
+import ReactSetup from '@/Pages/MainTabs/FrontEndPages/ReactPages/Basics/SetupAndStructure/Setup';
+import ReactStructure from '@/Pages/MainTabs/FrontEndPages/ReactPages/Basics/SetupAndStructure/Structure';
 
-import ReactFullStack from "@/Pages/MainTabs/FrontEndPages/ReactPages/ReactFullStack/ReactFullStack";
-import ReactStructure from '@/Pages/MainTabs/FrontEndPages/ReactPages/Basics/Fundamentals/Structure';
+import JSXAndRendering from '@/Pages/MainTabs/FrontEndPages/ReactPages/Basics/CoreConcepts/JSXAndRendering';
 
-
-// import ReactFullStackCode from "@/pages/ReactPages/ReactFullStackCode";
-
+import EventHandling from '@/Pages/MainTabs/FrontEndPages/ReactPages/Basics/CoreConcepts/EventHandling';
 
 const reactRoutes: RouteObject[] = [
+    // React Basics Start
+
+    // React Basics Fundamentals Start
     {
         path: '/react/basics/fundamentals/introduction',
         element: <ReactIntro />
     },
+
+    // React Basics Fundamentals End
+
+    // React Basics Setup and Structure Start
     {
-        path: '/react/basics/fundamentals/setup',
+        path: '/react/basics/setup/setup',
         element: <ReactSetup />
     },
     {
-        path: '/react/basics/fundamentals/structure',
+        path: '/react/basics/setup/structure',
         element: <ReactStructure />
     },
+    // React Basics Setup and Structure End
+
+    // React Core Concepts Start
     {
-        path: '/react/reactandtypescript',
-        element: <ReactAndTypeScript />,
+        path: '/react/basics/core/jsx',
+        element: <JSXAndRendering />
     },
-    // {
-    //     path: '/react/reactandtypescriptcode',
-    //     element: <ReactAndTypeScriptCode />,
-    // },
     {
-        path: '/react/reactfullstack',
-        element: <ReactFullStack />,
+        path: '/react/basics/core/eventhandling',
+        element: <EventHandling />
     },
-    // {
-    //     path: '/react/reactfullstackcode',
-    //     element: <ReactFullStackCode />,
-    // },
+
+    // React Core Concepts End
+
+    // React Basics End
+
+    // React Intermediate Start
+
+
+
+    // React Intermediate End
 ];
 
 export default reactRoutes;
