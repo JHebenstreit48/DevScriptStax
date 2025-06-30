@@ -1,7 +1,7 @@
 import Header from "@/Components/Shared/Header";
 import Notes from '@/Components/PageComponents/Notes/NotesRendering/Notes';
 
-const HTMLAttributes = () => {
+const Attributes = () => {
     const markdownFilePath = 'FrontEndNotes/HTMLNotes/HTMLBasics/HTMLAttributes';
 
     return (
@@ -17,4 +17,4 @@ const HTMLAttributes = () => {
 
 }
 
-export default HTMLAttributes;
+export default Attributes;

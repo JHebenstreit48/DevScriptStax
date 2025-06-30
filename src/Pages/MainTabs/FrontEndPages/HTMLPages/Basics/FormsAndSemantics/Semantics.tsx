@@ -2,7 +2,7 @@ import PageLayout from '@/Components/NavigationUI/PageLayout';
 import Header from '@/Components/Shared/Header';
 import Notes from '@/Components/PageComponents/Notes/NotesRendering/Notes';
 
-const HTMLSemantics = () => {
+const Semantics = () => {
   const markdownFilePath =
     'FrontEndNotes/HTMLNotes/HTMLBasics/HTMLSemantics';
 
@@ -19,4 +19,4 @@ const HTMLSemantics = () => {
   );
 };
 
-export default HTMLSemantics;
+export default Semantics;

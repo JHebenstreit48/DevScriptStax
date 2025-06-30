@@ -38,7 +38,7 @@ const HTMLBasics: Subpage = {
         },
         {
           name: 'Semantic Elements',
-          path: '/html/basics/formssemantics/semantic'
+          path: '/html/basics/formssemantics/semantics'
         }
       ]
     }

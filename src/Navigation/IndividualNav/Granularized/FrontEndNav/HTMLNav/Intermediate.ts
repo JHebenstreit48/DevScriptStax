@@ -4,7 +4,7 @@ const HTMLIntermediate: Subpage = {
   name: 'Intermediate',
   subpages: [
     {
-      name: 'Media & Embeds',
+      name: 'Media/Embeds',
       subpages: [
         {
           name: 'Media Elements',
@@ -20,11 +20,11 @@ const HTMLIntermediate: Subpage = {
       name: 'Tabular Data',
       subpages: [
         {
-          name: 'HTML Tables',
+          name: 'Tables',
           path: '/html/intermediate/tabulardata/tables'
         },
         {
-          name: 'Captions & Groups',
+          name: 'Captions/Groups',
           path: '/html/intermediate/tabulardata/captions'
         }
       ]
