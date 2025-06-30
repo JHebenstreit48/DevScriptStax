@@ -1,27 +1,22 @@
+import { lazy } from "react";
 import { RouteObject } from "react-router-dom";
 
-// ----------------------- HTML Basics Start -----------------------
-
 // -------------------- HTML Fundamentals Start --------------------
-import HTMLIntro from "@/Pages/MainTabs/FrontEndPages/HTMLPages/Basics/Fundamentals/Introduction";
-import HTMLHistory from "@/Pages/MainTabs/FrontEndPages/HTMLPages/Basics/Fundamentals/History";
+const HTMLIntro = lazy(() => import ("@/Pages/MainTabs/FrontEndPages/HTMLPages/Basics/Fundamentals/Introduction"));
+const HTMLHistory = lazy(() => import ("@/Pages/MainTabs/FrontEndPages/HTMLPages/Basics/Fundamentals/History"));
 // ---------------------- HTML Fundamentals End --------------------
 
 // ----------------------- HTML Structures Start -------------------
-import Attributes from "@/Pages/MainTabs/FrontEndPages/HTMLPages/Basics/Structure/Attributes";
-import Elements from "@/Pages/MainTabs/FrontEndPages/HTMLPages/Basics/Structure/Elements";
+const Attributes = lazy(() => import ("@/Pages/MainTabs/FrontEndPages/HTMLPages/Basics/Structure/Attributes"));
+const Elements = lazy(() => import ("@/Pages/MainTabs/FrontEndPages/HTMLPages/Basics/Structure/Elements"));
 // ------------------------ HTML Structures End -------------------
 
 // --------------------- HTML Forms/Semantics Start -----------------
-import Forms from "@/Pages/MainTabs/FrontEndPages/HTMLPages/Basics/FormsAndSemantics/Forms";
-import Semantics from "@/Pages/MainTabs/FrontEndPages/HTMLPages/Basics/FormsAndSemantics/Semantics";
+const Forms = lazy(() => import ("@/Pages/MainTabs/FrontEndPages/HTMLPages/Basics/FormsAndSemantics/Forms"));
+const Semantics = lazy(() => import ("@/Pages/MainTabs/FrontEndPages/HTMLPages/Basics/FormsAndSemantics/Semantics"));
 // ----------------------- HTML Forms/Semantics End ------------------
 
-// ------------------------ HTML Basics End ------------------------
-
 const htmlBasics: RouteObject[] = [
-
-// ----------------------- HTML Basics Start -----------------------
 
 // -------------------- HTML Fundamentals Start --------------------
 {
@@ -56,9 +51,6 @@ const htmlBasics: RouteObject[] = [
     element: <Semantics />,
 },
 // ---------------------- HTML Forms/Semantics End ------------------
-
-// ------------------------ HTML Basics End ------------------------
-
 ];
 
 export default htmlBasics;

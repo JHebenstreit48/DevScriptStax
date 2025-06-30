@@ -4,7 +4,7 @@ import App from "@/App";
 import ErrorPage from "@/Pages/Special/Error";
 import Home from "@/Pages/Special/Home";
 
-import backEndRoutes from "@/routes/FullSections/backEndRoutes";
+import backEndRoutes from "@/routes/FullSections/backEnd";
 import cloudServicesRoutes from "@/routes/FullSections/cloudServices";
 import frontEndRoutes from "@/routes/FullSections/frontEnd";
 import graphqlAndApolloRoutes from "@/routes/FullSections/graphqlAndApollo";
