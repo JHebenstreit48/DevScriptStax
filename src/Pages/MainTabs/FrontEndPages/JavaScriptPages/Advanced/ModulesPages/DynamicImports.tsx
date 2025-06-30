@@ -2,7 +2,7 @@ import Header from "@/Components/Shared/Header";
 import Notes from '@/Components/PageComponents/Notes/NotesRendering/Notes';
 
 const DynamicImports = () => {
-    const markdownFilePath = "FrontEndNotes/JavaScriptNotes/Advanced/JSModules/Overview";
+    const markdownFilePath = 'FrontEndNotes/JavaScriptNotes/Advanced/JSModules/Overview';
 
     return (
 

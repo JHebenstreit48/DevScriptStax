@@ -5,18 +5,17 @@ import Header from '@/Components/Shared/Header';
 import Notes from '@/Components/PageComponents/Notes/NotesRendering/Notes';
 
 const HTML5Features = () => {
-    const markdownFilePath = "FrontEndNotes/HTMLNotes/Advanced/Topics/Features";
+  const markdownFilePath =
+    'FrontEndNotes/HTMLNotes/Advanced/Topics/Features';
 
-    return (
-        <>
-            <PageLayout>
-            <Header text="HTML5 Features" />
-            <Notes
-                filePath={markdownFilePath}
-            />
-            </PageLayout>
-        </>
-    );
+  return (
+    <>
+      <PageLayout>
+        <Header text="HTML5 Features" />
+        <Notes filePath={markdownFilePath} />
+      </PageLayout>
+    </>
+  );
 };
 
 export default HTML5Features;

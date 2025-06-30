@@ -4,7 +4,7 @@ import Header from "@/Components/Shared/Header";
 import Notes from '@/Components/PageComponents/Notes/NotesRendering/Notes';
 
 const ReactBSAccordions = () => {
-    const markdownFilePath = "FrontEndNotes/CSSNotes/Frameworks/ReactBootstrap/Components/Accordions";
+    const markdownFilePath = 'FrontEndNotes/CSSNotes/Frameworks/ReactBootstrap/Components/Accordions';
 
     return (
         <>

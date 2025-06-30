@@ -5,7 +5,7 @@ import Header from '@/Components/Shared/Header';
 import Notes from '@/Components/PageComponents/Notes/NotesRendering/Notes';
 
 const WebAccess = () => {
-    const markdownFilePath = "FrontEndNotes/HTMLNotes/Advanced/Topics/WebAccessibility";
+    const markdownFilePath = 'FrontEndNotes/HTMLNotes/Advanced/Topics/WebAccessibility';
 
     return (
         <>

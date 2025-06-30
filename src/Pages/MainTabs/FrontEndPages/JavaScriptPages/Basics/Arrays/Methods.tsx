@@ -2,7 +2,7 @@ import Header from "@/Components/Shared/Header";
 import Notes from '@/Components/PageComponents/Notes/NotesRendering/Notes';
 
 const Methods = () => {
-    const markdownFilePath = "FrontEndNotes/JavaScriptNotes/Basics/Arrays/Methods";
+    const markdownFilePath = 'FrontEndNotes/JavaScriptNotes/Basics/Arrays/Methods';
 
     return (
 

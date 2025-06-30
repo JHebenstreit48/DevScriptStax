@@ -3,7 +3,7 @@ import Header from '@/Components/Shared/Header';
 import Notes from '@/Components/PageComponents/Notes/NotesRendering/Notes';
 
 const GitNuances = () => {
-    const markdownFilePath = "ToolsNotes/Containerization/GitNotes/Basics/Workflow/Nuances";
+    const markdownFilePath = 'ToolsNotes/Containerization/GitNotes/Basics/Workflow/Nuances';
 
     return (
         <>

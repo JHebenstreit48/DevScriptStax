@@ -5,7 +5,7 @@ import ReactIntro from '@/Pages/MainTabs/FrontEndPages/ReactPages/Basics/Fundame
 import ReactSetup from '@/Pages/MainTabs/FrontEndPages/ReactPages/Basics/SetupAndStructure/Setup';
 import ReactStructure from '@/Pages/MainTabs/FrontEndPages/ReactPages/Basics/SetupAndStructure/Structure';
 
-import JSXAndRendering from '@/Pages/MainTabs/FrontEndPages/ReactPages/Basics/CoreConcepts/JSXAndRendering';
+import JSX from '@/Pages/MainTabs/FrontEndPages/ReactPages/Basics/CoreConcepts/JSX';
 
 import EventHandling from '@/Pages/MainTabs/FrontEndPages/ReactPages/Basics/CoreConcepts/EventHandling';
 import ReactProps from '@/Pages/MainTabs/FrontEndPages/ReactPages/Basics/CoreConcepts/PropsAndState/Props';
@@ -36,7 +36,7 @@ const reactRoutes: RouteObject[] = [
   // React Core Concepts Start
   {
     path: '/react/basics/core/jsx',
-    element: <JSXAndRendering />
+    element: <JSX />
   },
   {
     path: '/react/basics/core/eventhandling',

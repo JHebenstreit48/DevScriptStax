@@ -2,18 +2,18 @@ import PageLayout from '@/Components/NavigationUI/PageLayout';
 import Header from '@/Components/Shared/Header';
 import Notes from '@/Components/PageComponents/Notes/NotesRendering/Notes';
 
-const ReactState = () => {
+const JSXAndRendering = () => {
   const markdownFilePath =
-    'FrontEndNotes/ReactNotes/Basics/CoreConcepts/PropsState/State';
+    'FrontEndNotes/ReactNotes/Basics/CoreConcepts/JSX';
 
   return (
     <>
       <PageLayout>
-        <Header text="State" />
+        <Header text="JSX" />
         <Notes filePath={markdownFilePath} />
       </PageLayout>
     </>
   );
 };
 
-export default ReactState;
+export default JSXAndRendering;

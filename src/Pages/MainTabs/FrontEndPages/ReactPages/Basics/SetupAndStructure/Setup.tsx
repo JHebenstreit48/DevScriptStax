@@ -3,7 +3,8 @@ import Header from '@/Components/Shared/Header';
 import Notes from '@/Components/PageComponents/Notes/NotesRendering/Notes';
 
 const ReactSetup = () => {
-  const markdownFilePath = 'FrontEndNotes/ReactNotes/Basics/Fundamentals/Setup';
+  const markdownFilePath =
+    'FrontEndNotes/ReactNotes/Basics/Fundamentals/Setup';
 
   return (
     <>
