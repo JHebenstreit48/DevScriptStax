@@ -1,8 +1,12 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, lazy, Suspense, useCallback } from 'react';
 import { fetchMarkdown } from '@/Components/PageComponents/Notes/NotesRendering/Utils/fetchMarkdown';
-import MarkdownRenderer from '@/Components/PageComponents/Notes/NotesRendering/CustomComponents/MarkdownRenderer';
 import BackToTop from '@/Components/PageComponents/Notes/BackToTopButton';
 import '@/SCSS/PageStyles/Notes.scss';
+
+// ✅ Lazy-load the MarkdownRenderer component
+const MarkdownRenderer = lazy(
+  () => import('@/Components/PageComponents/Notes/NotesRendering/CustomComponents/MarkdownRenderer')
+);
 
 interface NotesProps {
   filePath: string;
@@ -21,7 +25,6 @@ const Notes = ({ filePath }: NotesProps) => {
     }
   }, [filePath]);
 
-  // ⬇️ Second useEffect: Scroll to anchor after content loads
   useEffect(() => {
     if (markdownContent && typeof window !== 'undefined') {
       const hash = window.location.hash;
@@ -37,21 +40,23 @@ const Notes = ({ filePath }: NotesProps) => {
     }
   }, [markdownContent]);
 
-  const copyToClipboard = (code: string) => {
+  const copyToClipboard = useCallback((code: string) => {
     navigator.clipboard.writeText(code);
     setCopiedCode(true);
     setTimeout(() => setCopiedCode(false), 2000);
-  };
+  }, []);
 
   return (
     <div className="card">
       <div className="markdownContent">
         {markdownContent ? (
-          <MarkdownRenderer
-            content={markdownContent}
-            copyToClipboard={copyToClipboard}
-            copiedCode={copiedCode}
-          />
+          <Suspense fallback={<p className="loadingMessage">Rendering Markdown...</p>}>
+            <MarkdownRenderer
+              content={markdownContent}
+              copyToClipboard={copyToClipboard}
+              copiedCode={copiedCode}
+            />
+          </Suspense>
         ) : (
           <p className="loadingMessage">Loading content...</p>
         )}
