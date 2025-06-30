@@ -19,13 +19,17 @@ export default defineConfig({
       "@pages": resolve(__dirname, "src/Pages"),
       "@components": resolve(__dirname, "src/Components"),
       "@routes": resolve(__dirname, "src/routes"),
-      "@scss": resolve(__dirname, "src/SCSS")
+      "@scss": resolve(__dirname, "src/SCSS"),
+      "@navFull": resolve(__dirname, "src/Components/Navigation/IndividualNav/FullTopics"),
+      "@navGranular": resolve(__dirname, "src/Components/Navigation/IndividualNav/Granularized"),
+      "@routeFull": resolve(__dirname, "src/routes/IndividualRoutes/FullRoutes"),
+      "@routeGranular": resolve(__dirname, "src/routes/IndividualRoutes/Granularized")
     }
   },
   server: {
     proxy: {
       "/api": {
-        target: "http://localhost:3001", // ✅ Your backend
+        target: "http://localhost:3001",
         changeOrigin: true,
         secure: false
       }
@@ -33,6 +37,15 @@ export default defineConfig({
   },
   build: {
     outDir: "dist",
-    emptyOutDir: true
+    emptyOutDir: true,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          react: ["react", "react-dom"],
+          markdown: ["react-markdown", "remark-gfm", "rehype-raw", "rehype-slug", "rehype-autolink-headings"],
+          prism: ["react-syntax-highlighter"]
+        }
+      }
+    }
   }
 });

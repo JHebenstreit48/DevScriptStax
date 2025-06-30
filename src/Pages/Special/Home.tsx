@@ -7,7 +7,7 @@ const Home = () => {
 
         <>
 
-            <Header text="DevScriptStax" />
+            <Header text="DevScriptStax" size="md" />
 
             <div className='siteInfo'>
 
