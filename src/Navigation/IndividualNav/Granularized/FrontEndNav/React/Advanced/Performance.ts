@@ -1,6 +1,6 @@
 import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes';
 
-const AdvancedTopics: Subpage = {
+const Performance: Subpage = {
   name: 'Performance & Rendering',
   subpages: [
     {
@@ -26,4 +26,4 @@ const AdvancedTopics: Subpage = {
   ]
 };
 
-export default AdvancedTopics;
+export default Performance;
