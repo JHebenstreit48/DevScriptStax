@@ -2,7 +2,7 @@ import Notes from '@/Components/PageComponents/Notes/NotesRendering/Notes';
 import Header from "@/Components/Shared/Header";
 
 
-const HTMLElements = () => {
+const Elements = () => {
     const markdownFilePath = 'FrontEndNotes/HTMLNotes/Basics/Structure/Elements';
 
     return (
@@ -17,4 +17,4 @@ const HTMLElements = () => {
 
 };
 
-export default HTMLElements;
+export default Elements;

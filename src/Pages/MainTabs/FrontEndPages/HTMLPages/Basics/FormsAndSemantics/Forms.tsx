@@ -2,7 +2,7 @@ import PageLayout from '@/Components/NavigationUI/PageLayout';
 import Header from '@/Components/Shared/Header';
 import Notes from '@/Components/PageComponents/Notes/NotesRendering/Notes';
 
-const HTMLForms = () => {
+const Forms = () => {
   const markdownFilePath =
     'FrontEndNotes/HTMLNotes/HTMLBasics/HTMLForms';
 
@@ -19,4 +19,4 @@ const HTMLForms = () => {
   );
 };
 
-export default HTMLForms;
+export default Forms;

@@ -4,13 +4,13 @@ import App from "@/App";
 import ErrorPage from "@/Pages/Special/Error";
 import Home from "@/Pages/Special/Home";
 
-import backEndRoutes from "@/routes/RoutesDirectories/backEndRoutesCombined";
-import cloudServicesRoutes from "@/routes/RoutesDirectories/cloudServicesRoutesCombined";
-import frontEndRoutes from "@/routes/RoutesDirectories/frontEndRoutes";
-import graphqlAndApolloRoutes from "@/routes/RoutesDirectories/graphqlAndApolloRoutes";
-import programmingLanguagesRoutes from "@/routes/RoutesDirectories/programmingLanguagesRoutes";
-import testingRoutes from "@/routes/RoutesDirectories/testingRoutesCombined";
-import toolRoutes from "@/routes/RoutesDirectories/toolsRoutesCombined";
+import backEndRoutes from "@/routes/FullSections/backEndRoutes";
+import cloudServicesRoutes from "@/routes/FullSections/cloudServices";
+import frontEndRoutes from "@/routes/FullSections/frontEnd";
+import graphqlAndApolloRoutes from "@/routes/FullSections/graphqlAndApollo";
+import languagesRoutes from "@/routes/FullSections/languages";
+import testingRoutes from "@/routes/FullSections/testing";
+import toolRoutes from "@/routes/FullSections/tools";
 
 export const router = createBrowserRouter([
     {
@@ -26,7 +26,7 @@ export const router = createBrowserRouter([
             ...cloudServicesRoutes,
             ...frontEndRoutes,
             ...graphqlAndApolloRoutes,
-            ...programmingLanguagesRoutes,
+            ...languagesRoutes,
             ...testingRoutes,
             ...toolRoutes
         ],
