@@ -4,7 +4,7 @@ const ReactCoreConcepts: Subpage = {
   name: 'Core Concepts',
   subpages: [
     {
-      name: 'JSX/Rendering',
+      name: 'JSX',
       path: '/react/basics/core/jsx'
     },
     {
