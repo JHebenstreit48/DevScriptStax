@@ -1,8 +1,7 @@
 import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes';
 
-import AdvancedTopics from '@/Navigation/IndividualNav/Granularized/FrontEndNav/React/Advanced/Topics';
+import Peformance from '@/Navigation/IndividualNav/Granularized/FrontEndNav/React/Advanced/Performance';
 import BestPractices from '@/Navigation/IndividualNav/Granularized/FrontEndNav/React/Advanced/BestPractices';
-import AppSetup from '@/Navigation/IndividualNav/Granularized/FrontEndNav/React/Advanced/AppSetup';
 import SEOMetadata from '@/Navigation/IndividualNav/Granularized/FrontEndNav/React/Advanced/SEOMetadata';
 import ReactAndTS from '@/Navigation/IndividualNav/Granularized/FrontEndNav/React/Advanced/ReactAndTypeScript';
 
@@ -10,9 +9,8 @@ import ReactAndTS from '@/Navigation/IndividualNav/Granularized/FrontEndNav/Reac
 const ReactAdvanced: Subpage = {
   name: 'Advanced',
   subpages: [
-      AdvancedTopics,
+      Peformance,
       BestPractices,
-      AppSetup,
       SEOMetadata,
       ReactAndTS
   ]

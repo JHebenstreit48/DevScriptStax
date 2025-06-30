@@ -1,20 +1,22 @@
-import Header from "@/Components/Shared/Header";
+import PageLayout from '@/Components/NavigationUI/PageLayout';
+import Header from '@/Components/Shared/Header';
 import Notes from '@/Components/PageComponents/Notes/NotesRendering/Notes';
 
 const HTMLForms = () => {
-    const markdownFilePath = "FrontEndNotes/HTMLNotes/HTMLBasics/HTMLForms";
+  const markdownFilePath =
+    'FrontEndNotes/HTMLNotes/HTMLBasics/HTMLForms';
 
-    return (
-
-        <>
-            <Header text="HTML Forms" />
-            <Notes
-                filePath={markdownFilePath}
-                markdownContent="markdownContent"
-            />
-        </>
-    );
-
-}
+  return (
+    <>
+      <PageLayout>
+        <Header text="HTML Forms" />
+        <Notes
+          filePath={markdownFilePath}
+          markdownContent="markdownContent"
+        />
+      </PageLayout>
+    </>
+  );
+};
 
 export default HTMLForms;

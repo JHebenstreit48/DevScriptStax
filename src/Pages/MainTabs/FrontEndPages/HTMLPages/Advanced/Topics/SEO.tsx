@@ -5,7 +5,7 @@ import Header from '@/Components/Shared/Header';
 import Notes from '@/Components/PageComponents/Notes/NotesRendering/Notes';
 
 const SEOBestPractices = () => {
-    const markdownFilePath = "FrontEndNotes/HTMLNotes/Advanced/Topics/SEO";
+    const markdownFilePath = 'FrontEndNotes/HTMLNotes/Advanced/Topics/SEO';
 
     return (
         <>

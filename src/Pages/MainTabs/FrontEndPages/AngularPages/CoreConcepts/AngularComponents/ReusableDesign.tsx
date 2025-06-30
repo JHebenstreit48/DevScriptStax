@@ -4,7 +4,7 @@ import Header from "@/Components/Shared/Header";
 import Notes from '@/Components/PageComponents/Notes/NotesRendering/Notes';
 
 const AngularReusable = () => {
-    const markdownFilePath = "FrontEndNotes/AngularPages/CoreConcepts/AngularComponents/ReusableDesign";
+    const markdownFilePath = 'FrontEndNotes/AngularPages/CoreConcepts/AngularComponents/ReusableDesign';
 
     return (
         <>

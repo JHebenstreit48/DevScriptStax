@@ -3,7 +3,7 @@ import Header from '@/Components/Shared/Header';
 import Notes from '@/Components/PageComponents/Notes/NotesRendering/Notes';
 
 const UseCases = () => {
-    const markdownFilePath = "BackEndNotes/DatabaseNotes/MongoDB/Basics/Fundamentals/UseCases";
+    const markdownFilePath = 'BackEndNotes/DatabaseNotes/MongoDB/Basics/Fundamentals/UseCases';
 
     return (
         <>
