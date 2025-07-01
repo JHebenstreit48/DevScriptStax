@@ -1,40 +1,40 @@
-import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes';
+import { Subpage } from "@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes";
 
 const AngularBasics: Subpage = {
-  name: 'Basics',
+  name: "Basics",
   subpages: [
     {
-      name: 'Fundamentals',
+      name: "Fundamentals",
       subpages: [
         {
-          name: 'Introduction',
-          path: '/angular/basics/fundamentals/intro'
+          name: "Introduction",
+          path: "/angular/basics/fundamentals/intro",
         },
         {
-          name: 'Creating & Running',
-          path: '/angular/basics/fundamentals/creatingrunning'
+          name: "Creating/Running",
+          path: "/angular/basics/fundamentals/creatingrunning",
         },
         {
-          name: 'Understanding Angular CLI',
-          path: '/angular/basics/fundamentals/angularcli'
+          name: "CLI",
+          path: "/angular/basics/fundamentals/cli",
         },
       ],
     },
     {
-      name: 'Project Structure',
+      name: "Structure",
       subpages: [
         {
-          name: 'Project Structure',
-          path: '/angular/basics/projectstructure/folderfilestructure'
+          name: "Project Structure",
+          path: "/angular/basics/structure/structure",
         },
         {
-          name: 'Configuration Files',
-          path: '/angular/basics/projectstructure/configfiles'
+          name: "Configuration Files",
+          path: "/angular/basics/structure/configfiles",
         },
         {
-          name: 'Naming Conventions',
-          path: '/angular/basics/projectstructure/namingconventions'
-        }
+          name: "Naming Conventions",
+          path: "/angular/basics/structure/namingconventions",
+        },
       ],
     },
   ],

@@ -155,17 +155,11 @@ $small-laptop-min: 1024px;
     }
 
     .bullet1 {
-      column-count: 2;
-      width: 44rem;
-      color: $bullet-color;
-    }
-
-    .bullet2 {
       column-count: 1;
       margin: 0.5rem auto 0 auto;
       list-style-type: disc;
-      width: 90%;
-      padding-left: 6rem;
+      width: 75%;
+      padding-left: 4rem;
 
       li {
         list-style-type: disc;
@@ -175,6 +169,28 @@ $small-laptop-min: 1024px;
         }
       }
     }
+
+    .bullet2 {
+      column-count: 2;
+      width: 55%;
+      margin: 0.5rem auto 0 auto;
+      color: $bullet-color;
+      padding-left: 8rem;
+
+      ul {
+        margin: 0;
+      }
+
+      li {
+        list-style-type: disc;
+        width:10%;
+        p {
+          margin: 0;
+        }
+      }
+    }
+
+  
 
     .bullet3 {
       column-count: 3;
