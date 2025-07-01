@@ -9,7 +9,7 @@ const PublicVSPrivate = () => {
 
             <Header text="Public vs. Private APIs" />
             <Notes filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                
             />
 
         </>

@@ -12,7 +12,7 @@ const JSON = () => {
         <Header text="JSON" />
         <Notes
           filePath={markdownFilePath}
-          markdownContent="markdownContent"
+          
         />
       </PageLayout>
     </>

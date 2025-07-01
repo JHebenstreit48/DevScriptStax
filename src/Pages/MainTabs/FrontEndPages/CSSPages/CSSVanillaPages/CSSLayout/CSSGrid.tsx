@@ -10,7 +10,7 @@ const CSSGrid = () => {
 
             <Header text="CSS Grid" />
             <Notes filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                
             />
 
         </>

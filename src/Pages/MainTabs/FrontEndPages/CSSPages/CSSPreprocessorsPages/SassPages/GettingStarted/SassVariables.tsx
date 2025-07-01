@@ -10,7 +10,7 @@ const SassVariables = () => {
             <Header text="Sass Variables and Indentation" />
             <Notes
                 filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                
             />
         </>
     );

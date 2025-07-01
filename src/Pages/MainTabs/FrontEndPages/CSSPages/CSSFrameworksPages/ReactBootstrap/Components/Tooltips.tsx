@@ -11,7 +11,7 @@ const ReactBSTooltips = () => {
             <Header text="React Bootstrap Tooltips" />
             <Notes
                 filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                
             />
         </>
     );

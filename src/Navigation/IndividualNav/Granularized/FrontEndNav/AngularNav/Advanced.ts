@@ -1,78 +1,112 @@
-import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes';
+import { Subpage } from "@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes";
 
 const AngularAdvanced: Subpage = {
-  name: 'Advanced',
+  name: "Advanced",
   subpages: [
     {
-      name: 'Change Detection',
+      name: "Change Detection",
       subpages: [
         {
-          name: 'Understanding Change Detection',
-          path: '/angular/advanced/change-detection'
-        }, // Basics
-        {
-          name: 'Optimizing Change Detection',
-          path: '/angular/advanced/change-detection-performance'
+          name: "Basics",
+          path: "/angular/advanced/change-detection",
         },
         {
-          name: 'Optimizing Template Rendering',
-          path: '/angular/advanced/change-detection/template-optimization'
-        }
-      ]
+          name: "Optimizing",
+          path: "/angular/advanced/change-detection-performance",
+        },
+        {
+          name: "Template Rendering Optimization",
+          path: "/angular/advanced/change-detection/template-optimization",
+        },
+      ],
     },
     {
-      name: 'Performance & Bundle Optimization', // ✅ NEW SECTION
+      name: "Performance",
       subpages: [
         {
-          name: 'Reducing Bundle Size',
-          path: '/angular/advanced/performance/bundle-size'
-        }
-      ]
+          name: "Bundle Optimization",
+          path: "/angular/advanced/performance/bundle-optimization",
+        },
+        {
+          name: "Budgets & Profiling",
+          path: "/angular/advanced/performance/budgets-profiling",
+        },
+      ],
     },
     {
-      name: 'RxJS & Reactive Programming',
+      name: "RxJS/Reactive Programming",
       subpages: [
         {
-          name: 'Understanding Observables',
-          path: '/angular/advanced/rxjs-observables'
-        }, // Basics
+          name: "Observables Basics",
+          path: "/angular/advanced/rxjs/observables",
+        },
         {
-          name: 'Subjects & BehaviorSubjects',
-          path: '/angular/advanced/rxjs-subjects'
-        }, // Advanced RxJS
+          name: "Subjects/Behavior",
+          path: "/angular/advanced/rxjs/subjects",
+        },
         {
-          name: 'RxJS Operators',
-          path: '/angular/advanced/rxjs-operators'
-        } // map, filter, switchMap
-      ]
+          name: "RxJS Operators",
+          path: "/angular/advanced/rxjs/operators",
+        },
+      ],
     },
     {
-      name: 'Animations',
+      name: "Animations",
       subpages: [
         {
-          name: 'Angular Animations Basics',
-          path: '/angular/advanced/animations'
-        }, // Overview
+          name: "Basics",
+          path: "/angular/advanced/animations/basics",
+        },
         {
-          name: 'Using Animation Triggers',
-          path: '/angular/advanced/animations-triggers'
-        } // keyframes, transitions
-      ]
+          name: "Triggers",
+          path: "/angular/advanced/animations/triggers",
+        },
+      ],
     },
     {
-      name: 'Path Aliases & TypeScript Config',
+      name: "TypeScript Integration",
       subpages: [
         {
-          name: 'Understanding Path Aliases',
-          path: '/angular/advanced/path-aliases'
-        }, // tsconfig.json setup
+          name: "Path Aliases",
+          path: "/angular/advanced/tsconfig/path-aliases",
+        },
         {
-          name: 'Advanced Path Aliases Usage',
-          path: '/angular/advanced/advanced-path-aliases'
-        } // Multiple aliases, best practices
-      ]
-    }
-  ]
+          name: "Advanced Aliases",
+          path: "/angular/advanced/tsconfig/advanced-aliases",
+        },
+      ],
+    },
+    {
+      name: "Security",
+      subpages: [
+        {
+          name: "Basics",
+          path: "/angular/advanced/security/overview",
+        },
+        {
+          name: "XSS Protection",
+          path: "/angular/advanced/security/xss",
+        },
+        {
+          name: "CSRF Protection",
+          path: "/angular/advanced/security/csrf",
+        },
+        {
+          name: "Authentication & Authorization",
+          subpages: [
+            {
+              name: "Implementing Authentication",
+              path: "/angular/security/authentication",
+            }, // JWT, OAuth
+            {
+              name: "Role-Based Access Control (RBAC)",
+              path: "/angular/security/rbac",
+            }, // Guards, interceptors
+          ],
+        },
+      ],
+    },
+  ],
 };
 
 export default AngularAdvanced;

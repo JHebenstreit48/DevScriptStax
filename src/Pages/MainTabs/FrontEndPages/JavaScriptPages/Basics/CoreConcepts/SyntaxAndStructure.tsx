@@ -12,7 +12,7 @@ const SyntaxStructure = () => {
         <Header text="Syntax" />
         <Notes
           filePath={markdownFilePath}
-          markdownContent="markdownContent"
+          
         />
       </PageLayout>
     </>

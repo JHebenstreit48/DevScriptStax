@@ -1,42 +1,15 @@
 import { Subpage } from "@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes";
 
+import Fundamentals from "@/Navigation/IndividualNav/Granularized/FrontEndNav/AngularNav/Basics/Fundamentals";
+import Structure from "@/Navigation/IndividualNav/Granularized/FrontEndNav/AngularNav/Basics/Structure";
+import CoreConcepts from "@/Navigation/IndividualNav/Granularized/FrontEndNav/AngularNav/Basics/CoreConcepts";
+
 const AngularBasics: Subpage = {
   name: "Basics",
   subpages: [
-    {
-      name: "Fundamentals",
-      subpages: [
-        {
-          name: "Introduction",
-          path: "/angular/basics/fundamentals/intro",
-        },
-        {
-          name: "Creating/Running",
-          path: "/angular/basics/fundamentals/creatingrunning",
-        },
-        {
-          name: "CLI",
-          path: "/angular/basics/fundamentals/cli",
-        },
-      ],
-    },
-    {
-      name: "Structure",
-      subpages: [
-        {
-          name: "Project Structure",
-          path: "/angular/basics/structure/structure",
-        },
-        {
-          name: "Configuration Files",
-          path: "/angular/basics/structure/configfiles",
-        },
-        {
-          name: "Naming Conventions",
-          path: "/angular/basics/structure/namingconventions",
-        },
-      ],
-    },
+    Fundamentals,
+    Structure,
+    CoreConcepts
   ],
 };
 

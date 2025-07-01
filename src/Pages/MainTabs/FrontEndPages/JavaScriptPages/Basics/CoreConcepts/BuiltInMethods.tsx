@@ -9,7 +9,7 @@ const BuiltInMethods = () => {
         <>
             <Header text="JavaScript Built-In Methods" />
             <Notes filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                
             />
         </>
     );

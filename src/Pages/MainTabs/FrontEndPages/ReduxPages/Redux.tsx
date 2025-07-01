@@ -10,7 +10,7 @@ const Redux = () => {
             <Header text="Redux" />
             <Notes
                 filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                
             />
         </>
     );

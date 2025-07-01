@@ -9,7 +9,7 @@ const RESTVSGraphQLVSSOAP = () => {
 
             <Header text="REST vs GraphQL vs SOAP" />
             <Notes filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                
             />
 
         </>

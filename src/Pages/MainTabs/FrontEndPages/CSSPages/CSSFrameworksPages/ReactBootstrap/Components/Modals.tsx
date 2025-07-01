@@ -11,7 +11,7 @@ const ReactBSModals = () => {
             <Header text="React Bootstrap Modals" />
             <Notes
                 filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                
             />
         </>
     );

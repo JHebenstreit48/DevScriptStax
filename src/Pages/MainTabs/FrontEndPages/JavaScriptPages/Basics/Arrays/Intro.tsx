@@ -10,7 +10,7 @@ const Intro = () => {
             <Header text="Arrays Introduction" />
             <Notes
                 filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                
             />
         </>
     );

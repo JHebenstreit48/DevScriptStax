@@ -10,7 +10,7 @@ const LESSCode = () => {
 
             <Header text="LESS" />
             <Notes filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                
             />
 
         </>

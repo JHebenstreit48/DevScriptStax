@@ -10,7 +10,7 @@ const BootstrapDropdowns = () => {
             <Header text="Bootstrap Dropdowns" />
             <Notes
                 filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                
             />
         </>
     );

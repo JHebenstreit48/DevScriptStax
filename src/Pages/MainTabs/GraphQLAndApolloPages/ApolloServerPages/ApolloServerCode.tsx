@@ -9,7 +9,7 @@ const ApolloServerCode = () => {
 
             <Header text="Apollo Server Code" />
             <Notes filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                
             />
 
         </>

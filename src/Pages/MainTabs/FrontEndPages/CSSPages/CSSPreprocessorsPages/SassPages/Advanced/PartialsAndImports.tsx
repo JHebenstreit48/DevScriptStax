@@ -10,7 +10,7 @@ const PartialsAndImports = () => {
             <Header text="Sass Partials & Imports" />
             <Notes
                 filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                
             />
         </>
     );

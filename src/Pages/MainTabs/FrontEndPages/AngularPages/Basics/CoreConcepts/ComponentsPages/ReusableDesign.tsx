@@ -11,7 +11,7 @@ const AngularReusable = () => {
             <Header text="Angular Reusable Component Design" />
             <Notes
                 filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                
             />
         </>
     );

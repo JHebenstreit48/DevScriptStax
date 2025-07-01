@@ -10,7 +10,7 @@ const PostCSSCode = () => {
 
             <Header text="Post CSS Notes" />
             <Notes filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                
             />
 
         </>

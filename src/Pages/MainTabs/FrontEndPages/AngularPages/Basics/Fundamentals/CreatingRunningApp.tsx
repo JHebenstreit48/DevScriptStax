@@ -11,7 +11,7 @@ const CreateRun = () => {
             <Header text="Creating/Running App" />
             <Notes
                 filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                
             />
         </>
     );

@@ -9,7 +9,7 @@ const ParamsAndArgs = () => {
             <Header text="Parameters and Arguments" />
             <Notes
                 filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                
             />
         </>
     );

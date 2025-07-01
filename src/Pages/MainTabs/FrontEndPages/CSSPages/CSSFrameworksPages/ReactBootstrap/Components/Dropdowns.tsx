@@ -11,7 +11,7 @@ const ReactBSDropdowns = () => {
             <Header text="React Bootstrap Dropdowns" />
             <Notes
                 filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                
             />
         </>
     );

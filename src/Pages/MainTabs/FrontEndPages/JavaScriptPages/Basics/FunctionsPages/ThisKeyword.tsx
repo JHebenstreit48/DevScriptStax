@@ -9,7 +9,7 @@ const ThisKeyword = () => {
         <>
             <Header text="This Keyword" />
             <Notes filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                
             />
         </>
     );

@@ -11,7 +11,7 @@ const ReactBSAccordions = () => {
             <Header text="React Bootstrap Accordions" />
             <Notes
                 filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                
             />
         </>
     );

@@ -10,7 +10,7 @@ const CSSPositioning = () => {
             <Header text="CSS Positioning" />
             <Notes
                 filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                
             />
 
         </>

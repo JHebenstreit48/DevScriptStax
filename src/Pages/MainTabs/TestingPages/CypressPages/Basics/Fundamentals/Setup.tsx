@@ -12,7 +12,7 @@ const CypressSetup = () => {
         <Header text="Setup" />
         <Notes
           filePath={markdownFilePath}
-          markdownContent="markdownContent"
+          
         />
       </PageLayout>
     </>

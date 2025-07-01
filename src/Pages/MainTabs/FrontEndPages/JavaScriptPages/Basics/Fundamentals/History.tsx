@@ -12,7 +12,7 @@ const JSHistory = () => {
         <Header text="History" />
         <Notes
           filePath={markdownFilePath}
-          markdownContent="markdownContent"
+          
         />
       </PageLayout>
     </>

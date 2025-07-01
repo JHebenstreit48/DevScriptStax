@@ -9,7 +9,7 @@ const ReactBSTypography = () => {
             <Header text="React Bootstrap Typography" />
             <Notes
                 filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                
             />
         </>
     );

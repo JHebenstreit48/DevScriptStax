@@ -9,7 +9,7 @@ const Operators = () => {
         <>
             <Header text="JavaScript Operators" />
             <Notes filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                
             />
         </>
     );

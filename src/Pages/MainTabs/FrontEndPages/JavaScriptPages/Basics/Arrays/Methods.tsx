@@ -10,7 +10,7 @@ const Methods = () => {
             <Header text="Arrays Methods" />
             <Notes
                 filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                
             />
         </>
     );

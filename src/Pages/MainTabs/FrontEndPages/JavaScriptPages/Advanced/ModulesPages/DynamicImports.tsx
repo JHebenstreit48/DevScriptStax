@@ -10,7 +10,7 @@ const DynamicImports = () => {
             <Header text="JavaScript Modules Overview" />
             <Notes
                 filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                
             />
         </>
     );

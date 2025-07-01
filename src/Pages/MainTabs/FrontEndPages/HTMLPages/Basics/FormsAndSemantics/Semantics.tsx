@@ -12,7 +12,7 @@ const Semantics = () => {
         <Header text="HTML Semantics" />
         <Notes
           filePath={markdownFilePath}
-          markdownContent="markdownContent"
+          
         />
       </PageLayout>
     </>

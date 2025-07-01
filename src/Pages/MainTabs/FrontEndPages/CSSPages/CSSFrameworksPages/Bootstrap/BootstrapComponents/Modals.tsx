@@ -10,7 +10,7 @@ const BootstrapModals = () => {
             <Header text="Bootstrap Modals" />
             <Notes
                 filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                
             />
         </>
     );

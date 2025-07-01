@@ -12,7 +12,7 @@ const Conditionals = () => {
         <Header text="JavaScript Conditionals" />
         <Notes
           filePath={markdownFilePath}
-          markdownContent="markdownContent"
+          
         />
       </PageLayout>
     </>

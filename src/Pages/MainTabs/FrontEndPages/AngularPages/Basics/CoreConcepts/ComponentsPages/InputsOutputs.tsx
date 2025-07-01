@@ -11,7 +11,7 @@ const AngularIO = () => {
             <Header text="Angular Inputs & Outputs" />
             <Notes
                 filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                
             />
         </>
     );

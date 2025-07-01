@@ -11,7 +11,7 @@ const Markdown = () => {
             <Header text="Markdown" />
             <Notes
                 filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                
             />
         </>
     );

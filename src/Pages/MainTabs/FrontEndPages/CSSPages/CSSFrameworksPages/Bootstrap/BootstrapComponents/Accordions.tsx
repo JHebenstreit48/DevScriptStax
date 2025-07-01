@@ -10,7 +10,7 @@ const BootstrapAccordions = () => {
             <Header text="Bootstrap Accordions" />
             <Notes
                 filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                
             />
         </>
     );

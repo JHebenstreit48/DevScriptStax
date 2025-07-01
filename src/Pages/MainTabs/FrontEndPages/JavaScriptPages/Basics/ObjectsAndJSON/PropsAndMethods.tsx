@@ -12,7 +12,7 @@ const PropsAndMethods = () => {
         <Header text="Properties and Methods" />
         <Notes
           filePath={markdownFilePath}
-          markdownContent="markdownContent"
+          
         />
       </PageLayout>
     </>

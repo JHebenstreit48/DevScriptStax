@@ -12,7 +12,7 @@ const UtilsAndPatterns = () => {
         <Header text="Utilities/Patterns" size="md" />
         <Notes
           filePath={markdownFilePath}
-          markdownContent="markdownContent"
+          
         />
       </PageLayout>
     </>

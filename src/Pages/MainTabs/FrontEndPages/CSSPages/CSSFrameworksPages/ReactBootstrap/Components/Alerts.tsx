@@ -11,7 +11,7 @@ const ReactBSAlerts = () => {
             <Header text="React Bootstrap Alerts" />
             <Notes
                 filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                
             />
         </>
     );
