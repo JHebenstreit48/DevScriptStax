@@ -11,7 +11,7 @@ const AngularCommunicate = () => {
             <Header text="Angular Component Communication" />
             <Notes
                 filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                
             />
         </>
     );

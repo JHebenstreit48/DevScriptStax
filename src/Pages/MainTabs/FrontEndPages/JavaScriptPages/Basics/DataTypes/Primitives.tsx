@@ -9,7 +9,7 @@ const JSPrimitives = () => {
         <>
             <Header text="Primitive Data Types" />
             <Notes filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                
             />
         </>
     );

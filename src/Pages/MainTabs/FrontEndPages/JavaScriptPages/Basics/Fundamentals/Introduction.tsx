@@ -12,7 +12,7 @@ const JSOverview = () => {
         <Header text="Overview" />
         <Notes
           filePath={markdownFilePath}
-          markdownContent="markdownContent"
+          
         />
       </PageLayout>
     </>

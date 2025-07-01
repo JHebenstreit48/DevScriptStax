@@ -10,7 +10,7 @@ const Elements = () => {
         <>
             <Header text="Elements" />
             <Notes filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                
             />
         </>
     );

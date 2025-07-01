@@ -10,7 +10,7 @@ const SassIntro = () => {
             <Header text="Sass Introduction" />
             <Notes
                 filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                
             />
         </>
     );

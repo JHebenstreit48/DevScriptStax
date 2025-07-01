@@ -11,7 +11,7 @@ const ReactBSCarousel = () => {
             <Header text="React Bootstrap Carousel" />
             <Notes
                 filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                
             />
         </>
     );

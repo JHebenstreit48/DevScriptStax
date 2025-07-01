@@ -10,7 +10,7 @@ const Promises = () => {
             <Header text="JS Promises and Async/Await" />
             <Notes
                 filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                
             />
         </>
     );

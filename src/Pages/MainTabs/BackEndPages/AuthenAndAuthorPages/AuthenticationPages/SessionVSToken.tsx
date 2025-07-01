@@ -10,7 +10,7 @@ const ServerVSToken = () => {
             <Header text="Server vs Token" />
             <Notes
                 filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                
             />
 
         </>

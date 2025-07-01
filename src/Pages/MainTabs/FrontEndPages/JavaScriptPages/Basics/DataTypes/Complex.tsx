@@ -9,7 +9,7 @@ const ComplexDataTypes = () => {
         <>
             <Header text="Complex Types & Type Checking" />
             <Notes filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                
             />
         </>
     );

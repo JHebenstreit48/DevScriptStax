@@ -13,7 +13,7 @@ const ObjectsBasics = () => {
     <Header text="Objects Intro" />
       <Notes
         filePath={markdownFilePath}
-        markdownContent="markdownContent"
+        
       />
     </PageLayout>
     </>

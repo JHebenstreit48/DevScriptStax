@@ -12,7 +12,7 @@ const VisitGet = () => {
         <Header text="Visit/Get" size="md" />
         <Notes
           filePath={markdownFilePath}
-          markdownContent="markdownContent"
+          
         />
       </PageLayout>
     </>

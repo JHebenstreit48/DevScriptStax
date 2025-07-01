@@ -9,7 +9,7 @@ const ReactBoostrapGrid = () => {
             <Header text="React Bootstrap Grid" />
             <Notes
                 filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                
             />
         </>
     );

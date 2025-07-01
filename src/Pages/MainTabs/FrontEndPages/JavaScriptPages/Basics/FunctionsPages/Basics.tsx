@@ -9,7 +9,7 @@ const FunctionBasics = () => {
             <Header text="Basics" />
             <Notes
                 filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                
             />
         </>
     );

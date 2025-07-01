@@ -10,7 +10,7 @@ const PostgreSQL = () => {
             <Header text="PostgreSQL" />
             <Notes
                 filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                
             />
         </>
     );

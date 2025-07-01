@@ -9,7 +9,7 @@ const Loops = () => {
         <>
             <Header text="JavaScript Loops" />
             <Notes filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                
             />
         </>
     );

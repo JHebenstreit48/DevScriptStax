@@ -12,7 +12,7 @@ const TestBlock = () => {
         <Header text="Test Block" />
         <Notes
           filePath={markdownFilePath}
-          markdownContent="markdownContent"
+          
         />
       </PageLayout>
     </>

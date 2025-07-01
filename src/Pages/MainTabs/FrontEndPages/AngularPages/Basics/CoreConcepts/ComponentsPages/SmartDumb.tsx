@@ -11,7 +11,7 @@ const AngularSmartDumb = () => {
             <Header text="Angular Smart vs. Dumb Components" />
             <Notes
                 filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                
             />
         </>
     );

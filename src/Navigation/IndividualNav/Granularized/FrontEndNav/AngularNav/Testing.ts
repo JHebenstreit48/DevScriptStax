@@ -4,32 +4,32 @@ const AngularTesting: Subpage = {
   name: 'Testing',
   subpages: [
     {
-      name: 'Unit Testing',
+      name: 'Unit',
       subpages: [
         {
-          name: 'Introduction to Unit Testing',
-          path: '/angular/testing/unit-testing'
+          name: 'Introduction',
+          path: '/angular/testing/unit'
         }, // Basics
         {
-          name: 'Testing Components',
-          path: '/angular/testing/component-testing'
+          name: 'Components',
+          path: '/angular/testing/components'
         }, // TestBed, ComponentFixture
         {
-          name: 'Testing Services',
-          path: '/angular/testing/service-testing'
+          name: 'Services',
+          path: '/angular/testing/services'
         } // HttpClientTestingModule, spies
       ]
     },
     {
-      name: 'End-to-End (E2E) Testing',
+      name: 'End-to-End (E2E)',
       subpages: [
         {
-          name: 'Introduction to E2E Testing',
-          path: '/angular/testing/e2e-testing'
+          name: 'Introduction',
+          path: '/angular/testing/e2e'
         }, // Protractor, Cypress
         {
-          name: 'Writing E2E Tests',
-          path: '/angular/testing/writing-e2e-tests'
+          name: 'Writing',
+          path: '/angular/testing/writing'
         } // Best practices
       ]
     }

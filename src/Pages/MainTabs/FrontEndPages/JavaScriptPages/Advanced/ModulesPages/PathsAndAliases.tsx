@@ -10,7 +10,7 @@ const PathsAliases = () => {
             <Header text="Import Paths and Aliases" />
             <Notes
                 filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                
             />
         </>
     );

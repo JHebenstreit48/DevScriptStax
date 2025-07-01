@@ -10,7 +10,7 @@ const WhatIsAuthen = () => {
             <Header text="What Is Authentication" />
             <Notes
                 filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                
             />
 
         </>

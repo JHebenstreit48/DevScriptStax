@@ -10,7 +10,7 @@ const AngularIntro = () => {
     <>
       <PageLayout>
         <Header text="Introduction" size="md" />
-        <Notes filePath={markdownFilePath} markdownContent="markdownContent" />
+        <Notes filePath={markdownFilePath}  />
       </PageLayout>
     </>
   );

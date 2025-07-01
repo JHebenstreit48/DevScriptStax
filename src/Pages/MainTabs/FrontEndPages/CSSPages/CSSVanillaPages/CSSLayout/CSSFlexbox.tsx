@@ -10,7 +10,7 @@ const CSSFlexbox = () => {
             <Header text="CSS Flexbox" />
             <Notes
                 filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                
             />
 
         </>

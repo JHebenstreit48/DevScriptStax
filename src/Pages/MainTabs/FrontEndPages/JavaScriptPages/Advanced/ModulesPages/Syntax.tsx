@@ -10,7 +10,7 @@ const ModulesSyntax = () => {
             <Header text="JavaScript Import/Export Syntax" />
             <Notes
                 filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                
             />
         </>
     );

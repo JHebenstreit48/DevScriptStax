@@ -10,7 +10,7 @@ const HTMLHistory = () => {
       <Header text="History" />
       <Notes
         filePath={markdownFilePath}
-        markdownContent="markdownContent"
+        
       />
     </>
   );

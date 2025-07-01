@@ -9,7 +9,7 @@ const HigherOrder = () => {
             <Header text="Higher-Order Functions" />
             <Notes
                 filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                
             />
         </>
     );

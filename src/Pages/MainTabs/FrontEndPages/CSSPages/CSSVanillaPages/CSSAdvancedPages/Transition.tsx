@@ -10,7 +10,7 @@ const Transitions = () => {
             <Header text="CSS Transitions" />
             <Notes
                 filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                
             />
 
         </>

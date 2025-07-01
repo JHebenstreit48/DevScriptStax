@@ -10,7 +10,7 @@ const BootstrapButtons = () => {
             <Header text="Bootstrap Buttons" />
             <Notes
                 filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                
             />
         </>
     );

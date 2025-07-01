@@ -10,7 +10,7 @@ const BootstrapCarousel = () => {
             <Header text="Bootstrap Carousel" />
             <Notes
                 filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                
             />
         </>
     );

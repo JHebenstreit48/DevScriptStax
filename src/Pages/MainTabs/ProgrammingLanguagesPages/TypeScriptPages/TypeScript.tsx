@@ -10,7 +10,7 @@ const Typescript = () => {
             <Header text="TypeScript" />
             <Notes
                 filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                
             />
 
         </>

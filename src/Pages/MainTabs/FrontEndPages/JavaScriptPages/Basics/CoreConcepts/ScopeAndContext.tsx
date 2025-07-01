@@ -12,7 +12,7 @@ const ScopeAndContext = () => {
         <Header text="Scope/Context" size="md"  />
         <Notes
           filePath={markdownFilePath}
-          markdownContent="markdownContent"
+          
         />
       </PageLayout>
     </>

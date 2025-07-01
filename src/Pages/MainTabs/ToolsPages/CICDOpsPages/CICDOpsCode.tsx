@@ -10,7 +10,7 @@ const CICDOpsCode = () => {
 
             <Header text="CICD Ops Code" />
             <Notes filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                
             />
 
         </>

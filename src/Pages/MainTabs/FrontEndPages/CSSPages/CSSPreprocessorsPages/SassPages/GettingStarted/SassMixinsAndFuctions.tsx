@@ -10,7 +10,7 @@ const MixinsAndFunctions = () => {
             <Header text="Sass Mixins & Functions" />
             <Notes
                 filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                
             />
         </>
     );

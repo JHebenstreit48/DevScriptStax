@@ -10,7 +10,7 @@ const Advanced = () => {
             <Header text="Arrays Advanced Techniques" />
             <Notes
                 filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                
             />
         </>
     );

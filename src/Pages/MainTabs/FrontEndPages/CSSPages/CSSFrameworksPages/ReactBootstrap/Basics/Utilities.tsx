@@ -13,7 +13,7 @@ const ReactBSUtilities = () => {
         <Header text="React Bootstrap Utilities" />
         <Notes
           filePath={markdownFilePath}
-          markdownContent="markdownContent"
+          
         />
       </PageLayout>
     </>

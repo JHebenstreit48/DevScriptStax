@@ -9,7 +9,7 @@ const ExpressionsIIFE = () => {
             <Header text="Expressions & IIFE" />
             <Notes
                 filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                
             />
         </>
     );

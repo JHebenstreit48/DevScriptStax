@@ -12,7 +12,7 @@ const HTMLIntro = () => {
             <Header text="Introduction" />
             <Notes
                 filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                
             />
         </PageLayout>
         </>

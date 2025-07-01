@@ -11,7 +11,7 @@ const ReactBSButtons = () => {
             <Header text="React Bootstrap Buttons" />
             <Notes
                 filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                
             />
         </>
     );

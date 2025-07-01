@@ -10,7 +10,7 @@ const CSSSelectors = () => {
             <Header text="CSS Selectors" />
             <Notes
                 filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                
             />
 
         </>

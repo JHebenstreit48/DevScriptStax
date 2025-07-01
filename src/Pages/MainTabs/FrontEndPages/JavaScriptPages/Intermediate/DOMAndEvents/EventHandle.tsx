@@ -10,7 +10,7 @@ const EventHandle = () => {
             <Header text="JavaScript Event Handling" />
             <Notes
                 filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                
             />
         </>
     );

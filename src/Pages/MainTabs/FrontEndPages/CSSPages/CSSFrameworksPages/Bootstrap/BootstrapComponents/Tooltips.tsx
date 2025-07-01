@@ -10,7 +10,7 @@ const BootstrapTooltips = () => {
             <Header text="Bootstrap Tooltips" />
             <Notes
                 filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                
             />
         </>
     );

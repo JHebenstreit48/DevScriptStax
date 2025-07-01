@@ -11,7 +11,7 @@ const ReactBSCards = () => {
             <Header text="React Bootstrap React Bootstrap Cards" />
             <Notes
                 filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                
             />
         </>
     );

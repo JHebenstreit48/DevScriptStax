@@ -9,7 +9,7 @@ const ServerCode = () => {
 
             <Header text="Server Code" />
             <Notes filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                
             />
 
         </>

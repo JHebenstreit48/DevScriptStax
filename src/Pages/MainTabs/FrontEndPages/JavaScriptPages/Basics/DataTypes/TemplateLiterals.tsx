@@ -12,7 +12,7 @@ const TemplateLiterals = () => {
         <Header text="Template Literals" size="md" />
         <Notes
           filePath={markdownFilePath}
-          markdownContent="markdownContent"
+          
         />
       </PageLayout>
     </>

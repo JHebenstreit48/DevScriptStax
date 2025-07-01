@@ -9,7 +9,7 @@ const ReactBootstrapIntro = () => {
             <Header text="React Bootstrap Introduction" />
             <Notes
                 filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                
             />
         </>
     );

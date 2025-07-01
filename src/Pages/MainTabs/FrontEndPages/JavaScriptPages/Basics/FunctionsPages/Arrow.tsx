@@ -9,7 +9,7 @@ const Arrow = () => {
             <Header text="Arrow" />
             <Notes
                 filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                
             />
         </>
     );

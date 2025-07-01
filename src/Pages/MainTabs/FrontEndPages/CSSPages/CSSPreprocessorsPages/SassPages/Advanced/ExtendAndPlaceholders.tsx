@@ -10,7 +10,7 @@ const ExtendAndPlaceholders = () => {
             <Header text="Sass Extend & Placeholders" />
             <Notes
                 filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                
             />
         </>
     );

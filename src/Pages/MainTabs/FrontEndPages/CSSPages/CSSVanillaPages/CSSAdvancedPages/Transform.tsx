@@ -10,7 +10,7 @@ const Transform = () => {
             <Header text="CSS Transform" />
             <Notes
                 filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                
             />
 
         </>

@@ -9,7 +9,7 @@ const JSVariables = () => {
         <>
             <Header text="JavaScript Variables" />
             <Notes filePath={markdownFilePath}
-                markdownContent="markdownContent"
+                
             />
         </>
     );
