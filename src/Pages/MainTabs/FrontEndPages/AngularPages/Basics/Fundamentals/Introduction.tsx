@@ -1,22 +1,16 @@
-import PageLayout from '@/Components/NavigationUI/PageLayout';
-import Header from '@/Components/Shared/Header';
-import Notes from '@/Components/PageComponents/Notes/NotesRendering/Notes';
+import PageLayout from "@/Components/NavigationUI/PageLayout";
+import Header from "@/Components/Shared/Header";
+import Notes from "@/Components/PageComponents/Notes/NotesRendering/Notes";
 
 const AngularIntro = () => {
   const markdownFilePath =
-    'FrontEndNotes/AngularNotes/AngularBasics/GettingStarted/Introduction';
+    "FrontEndNotes/AngularNotes/AngularBasics/GettingStarted/Introduction";
 
   return (
     <>
       <PageLayout>
-        <Header
-          text="Introduction"
-          size="md"
-        />
-        <Notes
-          filePath={markdownFilePath}
-          markdownContent="markdownContent"
-        />
+        <Header text="Introduction" size="md" />
+        <Notes filePath={markdownFilePath} markdownContent="markdownContent" />
       </PageLayout>
     </>
   );

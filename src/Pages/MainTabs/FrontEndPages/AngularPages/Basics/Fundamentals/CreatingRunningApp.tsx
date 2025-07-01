@@ -2,13 +2,13 @@ import Header from "@/Components/Shared/Header";
 import Notes from '@/Components/PageComponents/Notes/NotesRendering/Notes';
 
 
-const AngularAppCreate = () => {
+const CreateRun = () => {
     const markdownFilePath = 'FrontEndNotes/AngularNotes/AngularBasics/GettingStarted/CreatingRunning';
 
     return (
 
         <>
-            <Header text="Creating & Running An Angular Application" />
+            <Header text="Creating/Running App" />
             <Notes
                 filePath={markdownFilePath}
                 markdownContent="markdownContent"
@@ -18,4 +18,4 @@ const AngularAppCreate = () => {
 
 };
 
-export default AngularAppCreate;
+export default CreateRun;

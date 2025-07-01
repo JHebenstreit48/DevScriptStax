@@ -1,10 +1,10 @@
-import PageLayout from '@/Components/NavigationUI/PageLayout';
-import Header from '@/Components/Shared/Header';
-import Notes from '@/Components/PageComponents/Notes/NotesRendering/Notes';
+import PageLayout from "@/Components/NavigationUI/PageLayout";
+import Header from "@/Components/Shared/Header";
+import Notes from "@/Components/PageComponents/Notes/NotesRendering/Notes";
 
-const AngularCLI = () => {
+const CLI = () => {
   const markdownFilePath =
-    'FrontEndNotes/AngularNotes/AngularBasics/GettingStarted/CLI';
+    "FrontEndNotes/AngularNotes/AngularBasics/GettingStarted/CLI";
 
   return (
     <>
@@ -19,4 +19,4 @@ const AngularCLI = () => {
   );
 };
 
-export default AngularCLI;
+export default CLI;

@@ -1,19 +1,19 @@
 import PageLayout from "@/Components/NavigationUI/PageLayout";
-import Header from "@/Components/Shared/Header";
 import Notes from "@/Components/PageComponents/Notes/NotesRendering/Notes";
+import Header from "@/Components/Shared/Header";
 
-const ReactIntro = () => {
+const NamingConventions = () => {
   const markdownFilePath =
-    "FrontEndNotes/ReactNotes/Basics/Fundamentals/Introduction";
+    "FrontEndNotes/AngularNotes/AngularBasics/ProjectStructure/FolderFileNaming";
 
   return (
     <>
       <PageLayout>
-        <Header text="Introduction" />
+        <Header text="Naming Conventions" />
         <Notes filePath={markdownFilePath} />
       </PageLayout>
     </>
   );
 };
 
-export default ReactIntro;
+export default NamingConventions;
