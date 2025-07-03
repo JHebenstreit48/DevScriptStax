@@ -1,19 +1,16 @@
-import Header from '@/Components/Shared/Header';
-import Notes from '@/Components/PageComponents/Notes/NotesRendering/Notes';
+import Header from "@/Components/Shared/Header";
+import Notes from "@/Components/PageComponents/Notes/NotesRendering/Notes";
 
-const HTMLHistory = () => {
+const History = () => {
   const markdownFilePath =
-    'FrontEndNotes/HTMLNotes/Basics/Fundamentals/History';
+    "FrontEndNotes/HTMLNotes/Basics/Fundamentals/History";
 
   return (
     <>
       <Header text="History" />
-      <Notes
-        filePath={markdownFilePath}
-        
-      />
+      <Notes filePath={markdownFilePath} />
     </>
   );
 };
 
-export default HTMLHistory;
+export default History;

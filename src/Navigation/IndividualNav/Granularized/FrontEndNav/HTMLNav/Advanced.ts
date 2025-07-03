@@ -8,15 +8,15 @@ const HTMLAdvanced: Subpage = {
       subpages: [
         {
           name: 'HTML5 Features',
-          path: '/html/advanced/html5'
+          path: '/html/advanced/topics/html5features'
         },
         {
           name: 'Web Accessibility',
-          path: '/html/advanced/accessibility'
+          path: '/html/advanced/topics/accessibility'
         },
         {
           name: 'SEO Best Practices',
-          path: '/html/advanced/seo'
+          path: '/html/advanced/topics/seo'
         }
       ]
     },
@@ -25,11 +25,11 @@ const HTMLAdvanced: Subpage = {
       subpages: [
         {
           name: 'Code Standards',
-          path: '/html/best-practices/standards'
+          path: '/html/advanced/bestpractices/standards'
         },
         {
           name: 'Performance Optimization',
-          path: '/html/best-practices/performance'
+          path: '/html/advanced/bestpractices/performance'
         }
       ]
     }

@@ -2,7 +2,7 @@ import PageLayout from "@/Components/NavigationUI/PageLayout";
 import Header from "@/Components/Shared/Header";
 import Notes from '@/Components/PageComponents/Notes/NotesRendering/Notes';
 
-const HTMLIntro = () => {
+const Introduction = () => {
     const markdownFilePath = 'FrontEndNotes/HTMLNotes/Basics/Fundamentals/Introduction';
 
     return (
@@ -20,4 +20,4 @@ const HTMLIntro = () => {
 
 }
 
-export default HTMLIntro;
+export default Introduction;

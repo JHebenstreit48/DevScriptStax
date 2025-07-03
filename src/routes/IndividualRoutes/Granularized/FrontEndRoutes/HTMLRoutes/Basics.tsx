@@ -2,8 +2,8 @@ import { lazy } from "react";
 import { RouteObject } from "react-router-dom";
 
 // -------------------- HTML Fundamentals Start --------------------
-const HTMLIntro = lazy(() => import ("@/Pages/MainTabs/FrontEndPages/HTMLPages/Basics/Fundamentals/Introduction"));
-const HTMLHistory = lazy(() => import ("@/Pages/MainTabs/FrontEndPages/HTMLPages/Basics/Fundamentals/History"));
+const Introduction = lazy(() => import ("@/Pages/MainTabs/FrontEndPages/HTMLPages/Basics/Fundamentals/Introduction"));
+const History = lazy(() => import ("@/Pages/MainTabs/FrontEndPages/HTMLPages/Basics/Fundamentals/History"));
 // ---------------------- HTML Fundamentals End --------------------
 
 // ----------------------- HTML Structures Start -------------------
@@ -21,11 +21,11 @@ const htmlBasics: RouteObject[] = [
 // -------------------- HTML Fundamentals Start --------------------
 {
     path: "/html/basics/fundamentals/introduction",
-    element: <HTMLIntro />,
+    element: <Introduction />,
 },
 {
     path: "/html/basics/fundamentals/history",
-    element: <HTMLHistory />,
+    element: <History />,
 },
 // --------------------- HTML Fundamentals End ---------------------
 
