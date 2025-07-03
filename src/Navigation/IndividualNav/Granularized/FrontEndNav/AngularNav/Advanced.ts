@@ -8,15 +8,15 @@ const AngularAdvanced: Subpage = {
       subpages: [
         {
           name: "Basics",
-          path: "/angular/advanced/change-detection",
+          path: "/angular/advanced/changedetection/basics",
         },
         {
           name: "Optimizing",
-          path: "/angular/advanced/change-detection-performance",
+          path: "/angular/advanced/changedetection/optimizing",
         },
         {
           name: "Template Rendering Optimization",
-          path: "/angular/advanced/change-detection/template-optimization",
+          path: "/angular/advanced/changedetection/templateoptimization",
         },
       ],
     },
@@ -25,11 +25,11 @@ const AngularAdvanced: Subpage = {
       subpages: [
         {
           name: "Bundle Optimization",
-          path: "/angular/advanced/performance/bundle-optimization",
+          path: "/angular/advanced/performance/bundleoptimization",
         },
         {
           name: "Budgets & Profiling",
-          path: "/angular/advanced/performance/budgets-profiling",
+          path: "/angular/advanced/performance/budgetsprofiling",
         },
       ],
     },

@@ -8,15 +8,15 @@ const AngularTesting: Subpage = {
       subpages: [
         {
           name: 'Introduction',
-          path: '/angular/testing/unit'
+          path: '/angular/testing/unit/introduction'
         }, // Basics
         {
           name: 'Components',
-          path: '/angular/testing/components'
+          path: '/angular/testing/unit/components'
         }, // TestBed, ComponentFixture
         {
           name: 'Services',
-          path: '/angular/testing/services'
+          path: '/angular/testing/unit/services'
         } // HttpClientTestingModule, spies
       ]
     },
@@ -25,11 +25,11 @@ const AngularTesting: Subpage = {
       subpages: [
         {
           name: 'Introduction',
-          path: '/angular/testing/e2e'
+          path: '/angular/testing/e2e/introduction'
         }, // Protractor, Cypress
         {
           name: 'Writing',
-          path: '/angular/testing/writing'
+          path: '/angular/testing/e2e/writing'
         } // Best practices
       ]
     }
