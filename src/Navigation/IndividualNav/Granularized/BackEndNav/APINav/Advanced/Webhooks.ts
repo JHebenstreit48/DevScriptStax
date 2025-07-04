@@ -1,10 +1,10 @@
 import { Subpage } from "@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes";
 
-const WebhooksNavigation: Subpage = {
-  name: "API Gateways",
+const Webhooks: Subpage = {
+  name: "Webhooks",
   subpages: [
     {
-      name: "Introduction to Webhooks",
+      name: "Introduction",
       path: "/apis/advanced/webhooks/introduction",
     },
     {
@@ -12,10 +12,10 @@ const WebhooksNavigation: Subpage = {
       path: "/apis/advanced/webhooks/how-it-works",
     },
     {
-      name: "Security Considerations for Webhooks",
+      name: "Security Considerations",
       path: "/apis/advanced/webhooks/security",
     },
   ],
 };
 
-export default WebhooksNavigation;
+export default Webhooks;
