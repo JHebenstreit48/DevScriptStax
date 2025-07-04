@@ -3,7 +3,7 @@ import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/Navigation
 import JSBasics from '@/Navigation/IndividualNav/Granularized/FrontEndNav/JavaScriptNav/Basics';
 import JSIntermediate from '@/Navigation/IndividualNav/Granularized/FrontEndNav/JavaScriptNav/Intermediate';
 import JSAdvanced from '@/Navigation/IndividualNav/Granularized/FrontEndNav/JavaScriptNav/Advanced';
-import JSBestPractices from '@/Navigation/IndividualNav/Granularized/FrontEndNav/JavaScriptNav/BestPractices';
+import JSBestPractices from '@/Navigation/IndividualNav/Granularized/FrontEndNav/JavaScriptNav/Security';
 
 const JavaScriptNav: Subpage = {
   name: 'JavaScript',
