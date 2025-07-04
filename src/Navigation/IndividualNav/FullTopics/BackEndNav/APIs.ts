@@ -1,9 +1,9 @@
 import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes';
 
 // API Introduction
-import Fundamentals from '@/Navigation/IndividualNav/Granularized/BackEndNav/APINav/APIIntroduction/Fundamentals';
-import TypesOfAPIs from '@/Navigation/IndividualNav/Granularized/BackEndNav/APINav/APIIntroduction/TypesOfAPIs';
-import Documentation from '@/Navigation/IndividualNav/Granularized/BackEndNav/APINav/APIIntroduction/Documentation';
+import Fundamentals from '@/Navigation/IndividualNav/Granularized/BackEndNav/APINav/Basics/Fundamentals';
+import TypesOfAPIs from '@/Navigation/IndividualNav/Granularized/BackEndNav/APINav/Basics/TypesOfAPIs';
+import Documentation from '@/Navigation/IndividualNav/Granularized/BackEndNav/APINav/Basics/Documentation';
 
 // REST APIs
 import RESTFundamentals from '@/Navigation/IndividualNav/Granularized/BackEndNav/APINav/RESTAPIs/RESTFundamentals';
@@ -13,11 +13,8 @@ import RESTDesign from '@/Navigation/IndividualNav/Granularized/BackEndNav/APINa
 import RESTErrorHandling from '@/Navigation/IndividualNav/Granularized/BackEndNav/APINav/RESTAPIs/ErrorHandling';
 
 // Advanced Concepts
-import Caching from '@/Navigation/IndividualNav/Granularized/BackEndNav/APINav/AdvancedConcepts/Caching';
-import Gateways from '@/Navigation/IndividualNav/Granularized/BackEndNav/APINav/AdvancedConcepts/Gateways';
-import RateLimiting from '@/Navigation/IndividualNav/Granularized/BackEndNav/APINav/AdvancedConcepts/RateLimiting';
-import Versioning from '@/Navigation/IndividualNav/Granularized/BackEndNav/APINav/AdvancedConcepts/Versioning';
-import Webhooks from '@/Navigation/IndividualNav/Granularized/BackEndNav/APINav/AdvancedConcepts/Webhooks';
+import APIsAdvanced from '@/Navigation/IndividualNav/Granularized/BackEndNav/APINav/Advanced';
+
 
 const APIsNav: Subpage = {
   name: 'APIs',
@@ -40,16 +37,7 @@ const APIsNav: Subpage = {
         RESTErrorHandling
       ]
     },
-    {
-      name: 'Advanced Concepts',
-      subpages: [
-        Caching,
-        Gateways,
-        RateLimiting,
-        Versioning,
-        Webhooks
-      ]
-    }
+    APIsAdvanced
   ]
 };
 

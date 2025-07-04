@@ -4,24 +4,34 @@ const MarkdownBasics: Subpage = {
   name: 'Basics',
   subpages: [
     {
-      name: 'Introduction',
-      path: '/markdown/basics/introduction'
+      name: 'Fundamentals',
+      subpages: [
+        {
+          name: 'Introduction',
+          path: '/markdown/basics/fundamentals/introduction'
+        },
+        {
+          name: 'Syntax',
+          path: '/markdown/basics/fundamentals/syntax'
+        }
+      ]
     },
     {
-      name: 'Syntax',
-      path: '/markdown/basics/syntax'
-    },
-    {
-      name: 'Formatting',
-      path: '/markdown/basics/formatting'
-    },
-    {
-      name: 'Tables',
-      path: '/markdown/basics/tables'
-    },
-    {
-      name: 'Images & Links',
-      path: '/markdown/basics/imageslinks'
+      name: 'Content Elements',
+      subpages: [
+        {
+          name: 'Formatting',
+          path: '/markdown/basics/content/formatting'
+        },
+        {
+          name: 'Tables',
+          path: '/markdown/basics/content/tables'
+        },
+        {
+          name: 'Images & Links',
+          path: '/markdown/basics/content/imageslinks'
+        }
+      ]
     }
   ]
 };

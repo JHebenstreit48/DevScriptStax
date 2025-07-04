@@ -1,7 +1,7 @@
 import { Subpage } from "@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes";
 
-const APIGatewaysNavigation: Subpage = {
-  name: "API Gateways",
+const Gateways: Subpage = {
+  name: "Gateways",
   subpages: [
     {
       name: "What is an API Gateway?",
@@ -18,4 +18,4 @@ const APIGatewaysNavigation: Subpage = {
   ],
 };
 
-export default APIGatewaysNavigation;
+export default Gateways;
