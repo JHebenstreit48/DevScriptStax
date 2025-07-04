@@ -4,17 +4,39 @@ const MarkdownAdvanced: Subpage = {
   name: 'Advanced',
   subpages: [
     {
-      name: 'Custom Rendering',
-      path: '/markdown/advanced/customrendering'
-    }, // Using Markdown with JS libraries
+      name: 'Extending Markdown',
+      subpages: [
+        {
+          name: 'Custom Rendering',
+          path: '/markdown/advanced/extending/customrendering'
+        },
+        {
+          name: 'Frontmatter',
+          path: '/markdown/advanced/extending/frontmatter'
+        },
+        {
+          name: 'Plugins',
+          path: '/markdown/advanced/extending/plugins'
+        }
+      ]
+    },
     {
-      name: 'Frontmatter',
-      path: '/markdown/advanced/frontmatter'
-    }, // For static site generators
-    {
-      name: 'Plugins',
-      path: '/markdown/advanced/plugins'
-    } // Markdown-it, remark, etc.
+      name: 'Best Practices',
+      subpages: [
+        {
+          name: 'Consistency',
+          path: '/markdown/advanced/bestpractices/consistency'
+        },
+        {
+          name: 'Readability',
+          path: '/markdown/advanced/bestpractices/readability'
+        },
+        {
+          name: 'Version Control',
+          path: '/markdown/advanced/bestpractices/versioncontrol'
+        }
+      ]
+    }
   ]
 };
 
