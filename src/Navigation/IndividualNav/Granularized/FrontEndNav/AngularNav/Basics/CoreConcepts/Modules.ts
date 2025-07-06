@@ -4,7 +4,7 @@ const Modules: Subpage = {
   name: "Modules",
   subpages: [
     {
-      name: "Modules Basics",
+      name: "Basics",
       path: "/angular/coreconcepts/modules/basics",
     },
     {
