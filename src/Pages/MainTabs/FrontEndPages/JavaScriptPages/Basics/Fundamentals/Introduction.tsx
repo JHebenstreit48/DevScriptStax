@@ -2,14 +2,14 @@ import PageLayout from '@/Components/NavigationUI/PageLayout';
 import Header from '@/Components/Shared/Header';
 import Notes from '@/Components/PageComponents/Notes/NotesRendering/Notes';
 
-const JSOverview = () => {
+const Introduction = () => {
   const markdownFilePath =
-    'FrontEndNotes/JavaScriptNotes/Basics/Introduction/Overview';
+    'FrontEndNotes/JavaScriptNotes/Basics/Fundamentals/Introduction';
 
   return (
     <>
       <PageLayout>
-        <Header text="Overview" />
+        <Header text="Introduction" />
         <Notes
           filePath={markdownFilePath}
           
@@ -19,4 +19,4 @@ const JSOverview = () => {
   );
 };
 
-export default JSOverview;
+export default Introduction;

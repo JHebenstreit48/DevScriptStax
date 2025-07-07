@@ -4,7 +4,7 @@ import Notes from '@/Components/PageComponents/Notes/NotesRendering/Notes';
 
 const SyntaxStructure = () => {
   const markdownFilePath =
-    'FrontEndNotes/JavaScriptNotes/Basics/CoreLanguageConcepts/SyntaxStructure';
+    'FrontEndNotes/JavaScriptNotes/Basics/CoreConcepts/SyntaxStructure';
 
   return (
     <>

@@ -1,31 +1,31 @@
 import { RouteObject } from "react-router-dom";
 
-import angularRoutes from "@/routes/IndividualRoutes/FrontEndRoutes/angular";
-import cssRoutes from "@/routes/IndividualRoutes/FrontEndRoutes/css"
-// import gatsbyRoutes from "@/routes/FrontEndRoutes/gatsbyRoutes";
-import htmlRoutes from "@/routes/IndividualRoutes/FullRoutes/FrontEndRoutes/html";
-import javascriptRoutes from "@/routes/IndividualRoutes/FrontEndRoutes/javascript";
-import markdownRoutes from "@/routes/IndividualRoutes/FrontEndRoutes/markdown";
-// import nextJSRoutes from "@/routes/FrontEndRoutes/nextJSRoutes";
-import reactRoutes from "@/routes/IndividualRoutes/FrontEndRoutes/react";
-// import svelteRoutes from "@/routes/FrontEndRoutes/svelteRoutes";
+import Angular from "@/routes/IndividualRoutes/FullRoutes/FrontEndRoutes/angular";
+import CSS from "@/routes/IndividualRoutes/FullRoutes/FrontEndRoutes/css"
+// import Gatsby from "@/routes/IndividualRoutes/FullRoutes/FrontEndRoutes/gatsby";
+import HTML from "@/routes/IndividualRoutes/FullRoutes/FrontEndRoutes/html";
+import JavaScript from "@/routes/IndividualRoutes/FullRoutes/FrontEndRoutes/javascript";
+import Markdown from "@/routes/IndividualRoutes/FullRoutes/FrontEndRoutes/markdown";
+// import NextJS from "@/routes/IndividualRoutes/FullRoutes/FrontEndRoutes/nextjs";
+import React from "@/routes/IndividualRoutes/FullRoutes/FrontEndRoutes/react";
+// import Svelte from "@/routes/IndividualRoutes/FullRoutes/FrontEndRoutes/svelte";
 // import viteRoutes from "@/routes/FrontEndRoutes/viteRoutes";
-import reduxRoutes from "@/routes/IndividualRoutes/FrontEndRoutes/redux";
-import vueRoutes from "@/routes/IndividualRoutes/FrontEndRoutes/vue";
+import Redux from "@/routes/IndividualRoutes/FullRoutes/FrontEndRoutes/redux";
+import Vue from "@/routes/IndividualRoutes/FullRoutes/FrontEndRoutes/vue";
 
 const frontEndRoutes: RouteObject[] = [
-    ...angularRoutes,
-    ...cssRoutes,
-    // ...gatsbyRoutes,
-    ...htmlRoutes,
-    ...javascriptRoutes,
-    ...markdownRoutes,
-    // ...nextJSRoutes,
-    ...reactRoutes,
-    ...reduxRoutes,
-    // ...svelteRoutes,
+    ...Angular,
+    ...CSS,
+    // ...Gatsby,
+    ...HTML,
+    ...JavaScript,
+    ...Markdown,
+    // ...NextJS,
+    ...React,
+    ...Redux,
+    // ...Svelte,
     // ...viteRoutes,
-    ...vueRoutes,
+    ...Vue,
 ];
 
 export default frontEndRoutes;

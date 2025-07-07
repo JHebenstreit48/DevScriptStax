@@ -2,9 +2,9 @@ import PageLayout from '@/Components/NavigationUI/PageLayout';
 import Header from '@/Components/Shared/Header';
 import Notes from '@/Components/PageComponents/Notes/NotesRendering/Notes';
 
-const JSHistory = () => {
+const History = () => {
   const markdownFilePath =
-    'FrontEndNotes/JavaScriptNotes/Basics/Introduction/History';
+    'FrontEndNotes/JavaScriptNotes/Basics/Fundamentals/History';
 
   return (
     <>
@@ -19,4 +19,4 @@ const JSHistory = () => {
   );
 };
 
-export default JSHistory;
+export default History;

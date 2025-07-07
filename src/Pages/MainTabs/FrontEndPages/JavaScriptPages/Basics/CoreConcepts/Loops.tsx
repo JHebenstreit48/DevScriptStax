@@ -2,7 +2,7 @@ import Notes from '@/Components/PageComponents/Notes/NotesRendering/Notes';
 import Header from "@/Components/Shared/Header";
 
 const Loops = () => {
-    const markdownFilePath = 'FrontEndNotes/JavaScriptNotes/Basics/CoreLanguageConcepts/Loops';
+    const markdownFilePath = 'FrontEndNotes/JavaScriptNotes/Basics/CoreConcepts/Loops';
 
     return (
 

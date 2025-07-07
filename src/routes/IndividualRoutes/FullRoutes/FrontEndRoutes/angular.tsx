@@ -1,12 +1,12 @@
 import { RouteObject } from "react-router-dom";
 
-import angularBasics from "@/routes/IndividualRoutes/Granularized/FrontEndRoutes/AngularRoutes/Basics";
-import angularAdvanced from "@/routes/IndividualRoutes/Granularized/FrontEndRoutes/AngularRoutes/Advanced";
-import AngularTesting from "@/routes/IndividualRoutes/Granularized/FrontEndRoutes/AngularRoutes/Testing";
+import Basics from "@/routes/IndividualRoutes/Granularized/FrontEndRoutes/AngularRoutes/Basics";
+import Advanced from "@/routes/IndividualRoutes/Granularized/FrontEndRoutes/AngularRoutes/Advanced";
+import Testing from "@/routes/IndividualRoutes/Granularized/FrontEndRoutes/AngularRoutes/Testing";
 
-const angularRoutes: RouteObject[] = [
-    ...angularBasics,
-    ...angularAdvanced,
-    ...AngularTesting
+const Angular: RouteObject[] = [
+    ...Basics,
+    ...Advanced,
+    ...Testing
 ];
-export default angularRoutes;
+export default Angular;

@@ -5,7 +5,7 @@ const Fundamentals: Subpage = {
   subpages: [
     {
       name: "Introduction",
-      path: "/angular/basics/fundamentals/intro",
+      path: "/angular/basics/fundamentals/introduction",
     },
     {
       name: "Creating/Running",

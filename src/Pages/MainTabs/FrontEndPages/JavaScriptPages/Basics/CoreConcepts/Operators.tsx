@@ -2,7 +2,7 @@ import Notes from '@/Components/PageComponents/Notes/NotesRendering/Notes';
 import Header from "@/Components/Shared/Header";
 
 const Operators = () => {
-    const markdownFilePath = 'FrontEndNotes/JavaScriptNotes/Basics/CoreLanguageConcepts/Operators';
+    const markdownFilePath = 'FrontEndNotes/JavaScriptNotes/Basics/CoreConcepts/Operators';
 
     return (
 

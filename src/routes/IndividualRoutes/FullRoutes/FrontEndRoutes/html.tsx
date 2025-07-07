@@ -1,14 +1,13 @@
 import { RouteObject } from "react-router-dom";
 
-import htmlBasics from "@/routes/IndividualRoutes/Granularized/FrontEndRoutes/HTMLRoutes/Basics";
-import htmlIntermediate from "@/routes/IndividualRoutes/Granularized/FrontEndRoutes/HTMLRoutes/Intermediate";
-import htmlAdvanced from "@/routes/IndividualRoutes/Granularized/FrontEndRoutes/HTMLRoutes/Advanced";
+import Basics from "@/routes/IndividualRoutes/Granularized/FrontEndRoutes/HTMLRoutes/Basics";
+import Intermediate from "@/routes/IndividualRoutes/Granularized/FrontEndRoutes/HTMLRoutes/Intermediate";
+import Advanced from "@/routes/IndividualRoutes/Granularized/FrontEndRoutes/HTMLRoutes/Advanced";
 
-const htmlRoutes: RouteObject[] = [
-
-...htmlBasics,
-...htmlIntermediate,
-...htmlAdvanced
+const HTML: RouteObject[] = [
+  ...Basics,
+  ...Intermediate,
+  ...Advanced,
 ];
 
-export default htmlRoutes;
+export default HTML;

@@ -4,15 +4,14 @@ import Notes from "@/Components/PageComponents/Notes/NotesRendering/Notes";
 
 const CLI = () => {
   const markdownFilePath =
-    "FrontEndNotes/AngularNotes/AngularBasics/GettingStarted/CLI";
+    "FrontEndNotes/AngularNotes/Basics/Fundamentals/CLI";
 
   return (
     <>
       <PageLayout>
-        <Header text="Angular CLI" />
+        <Header text="CLI" />
         <Notes
           filePath={markdownFilePath}
-          markdownContent="markdownContentCode"
         />
       </PageLayout>
     </>

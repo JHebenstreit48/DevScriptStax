@@ -4,7 +4,7 @@ import Notes from '@/Components/PageComponents/Notes/NotesRendering/Notes';
 
 const ScopeAndContext = () => {
   const markdownFilePath =
-    'FrontEndNotes/JavaScriptNotes/Basics/CoreLanguageConcepts/ScopeAndContext';
+    'FrontEndNotes/JavaScriptNotes/Basics/CoreConcepts/ScopeAndContext';
 
   return (
     <>

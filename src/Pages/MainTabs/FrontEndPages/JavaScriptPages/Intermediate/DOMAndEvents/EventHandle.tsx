@@ -1,20 +1,19 @@
+import PageLayout from "@/Components/NavigationUI/PageLayout";
 import Header from "@/Components/Shared/Header";
-import Notes from '@/Components/PageComponents/Notes/NotesRendering/Notes';
+import Notes from "@/Components/PageComponents/Notes/NotesRendering/Notes";
 
-const EventHandle = () => {
-    const markdownFilePath = 'FrontEndNotes/JavaScriptNotes/Intermediate/DOMAndEvents/EventHandle';
+const EventHandling = () => {
+  const markdownFilePath =
+    "FrontEndNotes/JavaScriptNotes/Intermediate/DOMAndEvents/EventHandle";
 
-    return (
-
-        <>
-            <Header text="JavaScript Event Handling" />
-            <Notes
-                filePath={markdownFilePath}
-                
-            />
-        </>
-    );
-
+  return (
+    <>
+      <PageLayout>
+        <Header text="Event Handling" />
+        <Notes filePath={markdownFilePath} />
+      </PageLayout>
+    </>
+  );
 };
 
-export default EventHandle;
+export default EventHandling;
