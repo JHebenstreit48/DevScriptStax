@@ -4,7 +4,7 @@ import { RouteObject } from "react-router-dom";
 const HTML5Features = lazy(() => import ("@/Pages/MainTabs/FrontEndPages/HTMLPages/Advanced/Topics/Features"));
 const WebAccess = lazy(() => import ("@/Pages/MainTabs/FrontEndPages/HTMLPages/Advanced/Topics/WebAccessibility"));
 
-const htmlAdvanced: RouteObject[] = [
+const Advanced: RouteObject[] = [
     {
         path: '/html/advanced/topics/html5features',
         element: <HTML5Features />
@@ -15,4 +15,4 @@ const htmlAdvanced: RouteObject[] = [
     }
 ];
 
-export default htmlAdvanced;
+export default Advanced;

@@ -16,7 +16,7 @@ const Embedding = lazy(
 );
 // --------------------- Media and Embeds End ---------------------
 
-const htmlIntermediate: RouteObject[] = [
+const Intermediate: RouteObject[] = [
   {
     path: "/html/intermediate/mediaembeds/media",
     element: <MediaElements />,
@@ -31,4 +31,4 @@ const htmlIntermediate: RouteObject[] = [
   // --------------------- Tabular Data End ---------------------
 ];
 
-export default htmlIntermediate;
+export default Intermediate;

@@ -1,7 +1,7 @@
 import { RouteObject } from "react-router-dom";
 
-const markdownRoutes: RouteObject[] = [
+const Markdown: RouteObject[] = [
     
 ];
 
-export default markdownRoutes;
+export default Markdown;

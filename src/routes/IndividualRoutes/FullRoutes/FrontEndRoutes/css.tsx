@@ -1,7 +1,7 @@
 import { RouteObject } from "react-router-dom";
 
-const cssRoutes: RouteObject[] = [
+const CSS: RouteObject[] = [
     
 ];
 
-export default cssRoutes;
+export default CSS;

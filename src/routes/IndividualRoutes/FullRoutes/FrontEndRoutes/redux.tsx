@@ -1,7 +1,6 @@
 import { RouteObject } from "react-router-dom";
 
-const React: RouteObject[] = [
+const Redux: RouteObject[] = [
     
 ];
-
-export default React;
+export default Redux;

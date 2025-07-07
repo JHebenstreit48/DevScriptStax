@@ -16,7 +16,7 @@ const Forms = lazy(() => import ("@/Pages/MainTabs/FrontEndPages/HTMLPages/Basic
 const Semantics = lazy(() => import ("@/Pages/MainTabs/FrontEndPages/HTMLPages/Basics/FormsAndSemantics/Semantics"));
 // ----------------------- HTML Forms/Semantics End ------------------
 
-const htmlBasics: RouteObject[] = [
+const Basics: RouteObject[] = [
 
 // -------------------- HTML Fundamentals Start --------------------
 {
@@ -53,4 +53,4 @@ const htmlBasics: RouteObject[] = [
 // ---------------------- HTML Forms/Semantics End ------------------
 ];
 
-export default htmlBasics;
+export default Basics;
