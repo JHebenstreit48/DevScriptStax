@@ -1,11 +1,7 @@
 import { RouteObject } from "react-router-dom";
 
 // ----------------------- JavaScript Basics Start -----------------------
-
-// ------------------------ Introduction Start ------------------------
-import JSOverview from "@/Pages/MainTabs/FrontEndPages/JavaScriptPages/Basics/Fundamentals/Introduction";
-import JSHistory from "@/Pages/MainTabs/FrontEndPages/JavaScriptPages/Basics/Fundamentals/History";
-// ------------------------- Introduction End -------------------------
+import Basics from "@/routes/IndividualRoutes/Granularized/FrontEndRoutes/JavaScriptRoutes/Basics";
 
 // ------------------- Core Language Concepts Start -------------------
 import SyntaxStructure from "@/Pages/MainTabs/FrontEndPages/JavaScriptPages/Basics/CoreConcepts/SyntaxAndStructure";
@@ -77,45 +73,11 @@ const javascriptRoutes: RouteObject[] = [
     // ------------------------ Basics Start ------------------------
 
     // ---------------------- Basics > Introduction Start ----------------------
-    {
-        path: '/javascript/basics/fundamentals/introduction',
-        element: <JSOverview />,
-    },
-    {
-        path: '/javascript/basics/fundamentals/history',
-        element: <JSHistory />,
-    },
+    ...Basics,
     // ----------------------- Basics > Introduction End -----------------------
 
     // ------------------ Basics > Core Language Concepts Start ------------------
-    {
-        path: '/javascript/basics/core/syntax',
-        element: <SyntaxStructure />,
-    },
-    {
-        path: '/javascript/basics/core/variables',
-        element: <JSVariables />,
-    },
-    {
-        path: '/javascript/basics/core/operators',
-        element: <Operators />,
-    },
-    {
-        path: '/javascript/basics/core/methods',
-        element: <BuiltInMethods />,
-    },
-    {
-        path: '/javascript/basics/core/conditionals',
-        element: <Conditionals />,
-    },
-    {
-        path: '/javascript/basics/core/loops',
-        element: <Loops />,
-    },
-    {
-        path: '/javascript/basics/core/scopeandcontext',
-        element: <ScopeAndContext />,
-    },
+    
     // ------------------- Basics > Core Language Concepts End -------------------
 
     // ------------------------ Basics > Data Types Start ------------------------

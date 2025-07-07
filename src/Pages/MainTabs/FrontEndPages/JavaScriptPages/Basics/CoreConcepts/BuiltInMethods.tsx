@@ -2,7 +2,7 @@ import Notes from '@/Components/PageComponents/Notes/NotesRendering/Notes';
 import Header from "@/Components/Shared/Header";
 
 const BuiltInMethods = () => {
-    const markdownFilePath = 'FrontEndNotes/JavaScriptNotes/Basics/CoreLanguageConcepts/BuiltInMethods';
+    const markdownFilePath = 'FrontEndNotes/JavaScriptNotes/Basics/CoreConcepts/BuiltInMethods';
 
     return (
 

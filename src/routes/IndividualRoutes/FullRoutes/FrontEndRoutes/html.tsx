@@ -5,10 +5,9 @@ import htmlIntermediate from "@/routes/IndividualRoutes/Granularized/FrontEndRou
 import htmlAdvanced from "@/routes/IndividualRoutes/Granularized/FrontEndRoutes/HTMLRoutes/Advanced";
 
 const htmlRoutes: RouteObject[] = [
-
-...htmlBasics,
-...htmlIntermediate,
-...htmlAdvanced
+  ...htmlBasics,
+  ...htmlIntermediate,
+  ...htmlAdvanced,
 ];
 
 export default htmlRoutes;

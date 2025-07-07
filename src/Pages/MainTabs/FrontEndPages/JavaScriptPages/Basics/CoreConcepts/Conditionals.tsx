@@ -4,7 +4,7 @@ import Notes from '@/Components/PageComponents/Notes/NotesRendering/Notes';
 
 const Conditionals = () => {
   const markdownFilePath =
-    'FrontEndNotes/JavaScriptNotes/Basics/CoreLanguageConcepts/Conditionals';
+    'FrontEndNotes/JavaScriptNotes/Basics/CoreConcepts/Conditionals';
 
   return (
     <>

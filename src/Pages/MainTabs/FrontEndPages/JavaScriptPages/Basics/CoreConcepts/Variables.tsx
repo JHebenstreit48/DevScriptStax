@@ -2,7 +2,7 @@ import Notes from '@/Components/PageComponents/Notes/NotesRendering/Notes';
 import Header from "@/Components/Shared/Header";
 
 const JSVariables = () => {
-    const markdownFilePath = 'FrontEndNotes/JavaScriptNotes/Basics/CoreLanguageConcepts/Variables';
+    const markdownFilePath = 'FrontEndNotes/JavaScriptNotes/Basics/CoreConcepts/Variables';
 
     return (
 
