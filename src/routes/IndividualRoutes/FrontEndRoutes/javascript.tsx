@@ -4,13 +4,6 @@ import { RouteObject } from "react-router-dom";
 import Basics from "@/routes/IndividualRoutes/Granularized/FrontEndRoutes/JavaScriptRoutes/Basics";
 
 // ------------------- Core Language Concepts Start -------------------
-import SyntaxStructure from "@/Pages/MainTabs/FrontEndPages/JavaScriptPages/Basics/CoreConcepts/SyntaxAndStructure";
-import JSVariables from "@/Pages/MainTabs/FrontEndPages/JavaScriptPages/Basics/CoreConcepts/Variables";
-import Operators from "@/Pages/MainTabs/FrontEndPages/JavaScriptPages/Basics/CoreConcepts/Operators";
-import BuiltInMethods from "@/Pages/MainTabs/FrontEndPages/JavaScriptPages/Basics/CoreConcepts/BuiltInMethods";
-import Conditionals from "@/Pages/MainTabs/FrontEndPages/JavaScriptPages/Basics/CoreConcepts/Conditionals";
-import Loops from "@/Pages/MainTabs/FrontEndPages/JavaScriptPages/Basics/CoreConcepts/Loops";
-import ScopeAndContext from "@/Pages/MainTabs/FrontEndPages/JavaScriptPages/Basics/CoreConcepts/ScopeAndContext";
 // -------------------- Core Language Concepts End ----------------------
 
 // -------------------------  Data Types Start --------------------------

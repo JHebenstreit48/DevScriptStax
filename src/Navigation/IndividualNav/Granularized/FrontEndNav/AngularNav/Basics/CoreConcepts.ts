@@ -6,10 +6,13 @@ import Services from "@/Navigation/IndividualNav/Granularized/FrontEndNav/Angula
 import Routing from "@/Navigation/IndividualNav/Granularized/FrontEndNav/AngularNav/Basics/CoreConcepts/Routing";
 
 const CoreConcepts: Subpage = {
-...Components,
-...Modules,
-...Services,
-...Routing
+  name: "Core Concepts",
+  subpages: [
+    Components,
+    Modules,
+    Services,
+    Routing
+  ],
 };
 
 export default CoreConcepts;

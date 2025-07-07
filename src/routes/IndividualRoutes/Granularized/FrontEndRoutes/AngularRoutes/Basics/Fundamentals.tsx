@@ -1,7 +1,7 @@
 import { lazy } from "react";
 import { RouteObject } from "react-router-dom";
 
-const AngularIntro = lazy(
+const Introduction = lazy(
   () =>
     import(
       "@/Pages/MainTabs/FrontEndPages/AngularPages/Basics/Fundamentals/Introduction"
@@ -22,8 +22,8 @@ const CLI = lazy(
 
 const Fundamentals: RouteObject[] = [
   {
-    path: "/angular/basics/fundamentals/intro",
-    element: <AngularIntro />,
+    path: "/angular/basics/fundamentals/introduction",
+    element: <Introduction />,
   },
   {
     path: "/angular/basics/fundamentals/creatingrunning",

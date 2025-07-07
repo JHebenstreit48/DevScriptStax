@@ -3,12 +3,12 @@
 import Header from "@/Components/Shared/Header";
 import Notes from '@/Components/PageComponents/Notes/NotesRendering/Notes';
 
-const AngularSmartDumb = () => {
-    const markdownFilePath = 'FrontEndNotes/AngularPages/CoreConcepts/AngularComponents/SmartDumb';
+const SmartDumb = () => {
+    const markdownFilePath = 'FrontEndNotes/AngularNotes/Basics/CoreConcepts/AngComponents/SmartDumb';
 
     return (
         <>
-            <Header text="Angular Smart vs. Dumb Components" />
+            <Header text="Smart vs. Dumb" />
             <Notes
                 filePath={markdownFilePath}
                 
@@ -17,4 +17,4 @@ const AngularSmartDumb = () => {
     );
 };
 
-export default AngularSmartDumb;
+export default SmartDumb;

@@ -1,20 +1,21 @@
 // Auto-generated TSX file: ReusableDesign
 
 import Header from "@/Components/Shared/Header";
-import Notes from '@/Components/PageComponents/Notes/NotesRendering/Notes';
+import Notes from "@/Components/PageComponents/Notes/NotesRendering/Notes";
+import PageLayout from "@/Components/NavigationUI/PageLayout";
 
-const AngularReusable = () => {
-    const markdownFilePath = 'FrontEndNotes/AngularPages/CoreConcepts/AngularComponents/ReusableDesign';
+const ReusableDesign = () => {
+  const markdownFilePath =
+    "FrontEndNotes/AngularNotes/Basics/CoreConcepts/AngComponents/ReusableDesign";
 
-    return (
-        <>
-            <Header text="Angular Reusable Component Design" />
-            <Notes
-                filePath={markdownFilePath}
-                
-            />
-        </>
-    );
+  return (
+    <>
+      <PageLayout>
+        <Header text="Reusable Design" />
+        <Notes filePath={markdownFilePath} />
+      </PageLayout>
+    </>
+  );
 };
 
-export default AngularReusable;
+export default ReusableDesign;
