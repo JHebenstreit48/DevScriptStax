@@ -4,7 +4,6 @@ import { useState, useEffect, Suspense } from "react";
 // Component Imports
 import Footer from '@/Components/Shared/Footer';
 import EntryScreen from "@/Pages/Special/EntryScreen";
-import SplashScreen from '@/Pages/Special/SplashScreen';
 
 // SCSS Imports
 import '@/SCSS/PageStyles/Page.scss';
@@ -34,7 +33,7 @@ export default function App() {
     setHasEntered(true);
   };
 
-  if (isLoading) return <SplashScreen />;
+  if (isLoading) return null;
   if (!hasEntered) return <EntryScreen onEnter={handleEnter} />;
 
   return (
