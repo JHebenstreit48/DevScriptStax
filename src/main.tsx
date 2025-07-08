@@ -2,9 +2,7 @@ import ReactDOM from 'react-dom/client';
 import { RouterProvider } from 'react-router-dom';
 import { router } from '@/routes/index';
 
-
 const rootElement = document.getElementById('root');
-
 
 if (rootElement) {
 
