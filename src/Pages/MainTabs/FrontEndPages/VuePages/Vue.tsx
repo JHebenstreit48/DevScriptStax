@@ -1,5 +1,5 @@
 import Header from "@/Components/Shared/Header";
-import Notes from '@/Components/PageComponents/Notes/NotesRendering/Notes';
+import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const Vue = () => {
     const markdownFilePath = '/VueNotes/Vue';

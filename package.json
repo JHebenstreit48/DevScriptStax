@@ -49,9 +49,9 @@
     "raw-loader": "^4.0.2",
     "rimraf": "^6.0.1",
     "rollup-plugin-visualizer": "^5.14.0",
-    "sass": "^1.89.0",
+    "sass": "^1.89.2",
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.0.1",
-    "vite": "^5.1.4"
+    "vite": "^7.0.4"
   }
 }

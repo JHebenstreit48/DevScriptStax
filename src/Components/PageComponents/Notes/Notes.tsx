@@ -1,6 +1,6 @@
 import { useEffect, useState, lazy, Suspense, useCallback } from 'react';
 import { fetchMarkdown } from '@/Components/PageComponents/Notes/NotesRendering/Utils/fetchMarkdown';
-import BackToTop from '@/Components/PageComponents/Notes/BackToTopButton';
+import BackToTop from '@/Components/Shared/BackToTopButton';
 import '@/SCSS/PageStyles/Notes.scss';
 
 // ✅ Lazy-load the MarkdownRenderer component

@@ -1,4 +1,4 @@
-import Notes from '@/Components/PageComponents/Notes/NotesRendering/Notes';
+import Notes from '@/Components/PageComponents/Notes/Notes';
 import Header from "@/Components/Shared/Header";
 
 const BuiltInMethods = () => {

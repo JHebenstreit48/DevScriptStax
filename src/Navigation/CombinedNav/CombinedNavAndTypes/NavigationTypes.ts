@@ -3,4 +3,3 @@ export type Subpage = {
     path?: string;
     subpages?: Subpage[];
   };
-  
