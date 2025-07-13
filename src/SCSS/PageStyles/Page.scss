@@ -3,10 +3,8 @@
 /* ==============================
             Variables           
 ============================== */
-
-$gradient-start: #2b0035;   // Deep plum
-$gradient-middle: #ff4e00;  // Bright orange (terminal fire)
-$gradient-end: #141414;     // Anchored black
+$gradient-middle:#250069;  // Bright orange (terminal fire)
+$gradient-end: #0f002b;     // Anchored black
 
 
 
@@ -47,24 +45,23 @@ html, body {
   min-height: 100vh;
   position: relative;
 
-  background: linear-gradient(
-    180deg,
-    $gradient-start 28%,
-    $gradient-middle 70%,
-    $gradient-end 111%
+  background: radial-gradient(
+    circle at center,
+    $gradient-middle 10%,
+    $gradient-end 80%
   );
   background-repeat: no-repeat;
   background-size: cover;
 
-  @supports not (background: linear-gradient(180deg, $gradient-start, $gradient-end)) {
-    background: -webkit-linear-gradient(180deg, $gradient-start 0%, $gradient-middle 50%, $gradient-end 100%);
-    background: -moz-linear-gradient(180deg, $gradient-start 0%, $gradient-middle 50%, $gradient-end 100%);
-    background: -o-linear-gradient(180deg, $gradient-start 0%, $gradient-middle 50%, $gradient-end 100%);
-    background: -ms-linear-gradient(180deg, $gradient-start 0%, $gradient-middle 50%, $gradient-end 100%);
+  @supports not (background: radial-gradient(circle, $gradient-end)) {
+    background: -webkit-radial-gradient(circle, $gradient-middle 50%, $gradient-end 100%);
+    background: -moz-radial-gradient(circle, $gradient-middle 50%, $gradient-end 100%);
+    background: -o-radial-gradient(circle, $gradient-middle 50%, $gradient-end 100%);
+    background: -ms-radial-gradient(circle, $gradient-middle 50%, $gradient-end 100%);
   }
-
+  
   @media only screen and (max-width: $cellphone-portrait) {
-    background: linear-gradient(180deg, $gradient-start 30%, $gradient-end 100%);
+    background: radial-gradient(circle at center, $gradient-end 100%);
     background-size: auto;
     background-position: center;
   }
