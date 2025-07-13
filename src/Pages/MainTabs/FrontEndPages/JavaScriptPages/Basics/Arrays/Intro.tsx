@@ -1,5 +1,5 @@
 import Header from "@/Components/Shared/Header";
-import Notes from '@/Components/PageComponents/Notes/NotesRendering/Notes';
+import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const Intro = () => {
     const markdownFilePath = 'FrontEndNotes/JavaScriptNotes/Basics/Arrays/Introduction';
@@ -7,7 +7,7 @@ const Intro = () => {
     return (
 
         <>
-            <Header text="Arrays Introduction" />
+            <Header text="Introduction" />
             <Notes
                 filePath={markdownFilePath}
                 

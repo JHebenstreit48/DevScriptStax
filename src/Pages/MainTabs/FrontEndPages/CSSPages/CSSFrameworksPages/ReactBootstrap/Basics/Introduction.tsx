@@ -1,5 +1,5 @@
 import Header from "@/Components/Shared/Header";
-import Notes from '@/Components/PageComponents/Notes/NotesRendering/Notes';
+import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const ReactBootstrapIntro = () => {
     const markdownFilePath = 'FrontEndNotes/CSSNotes/Frameworks/ReactBootstrap/Basics/Introduction';

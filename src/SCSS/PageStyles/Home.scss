@@ -1,3 +1,5 @@
+@use 'sass:color';
+
 /* =============================
    Variables
    ============================= */
@@ -8,22 +10,17 @@ $box-shadow-color: black;
 $default-box-shadow: black;
 $accent-glow: rgba(0, 255, 255, 0.2); // Aqua glow
 
-$site-info-width: 50rem;
+$site-info-width: 58rem;
 $site-info-mobile-width: 23rem;
-$site-info-padding: 3rem;
+$site-info-padding: 2rem;
 
-$site-info-content-width: 40rem;
+$site-info-content-width: 60rem;
 
-/* ==============================
-                 Breakpoints          
-   ============================== */
-$cellphone-portrait: 480px;
-$cellphone-landscape: 390px;
-$small-laptop-max: 1366px;
-$small-laptop-min: 1024px;
+// Match link blue from Notes.scss for visual consistency
+$primary-color: rgb(6, 159, 248);
 
 /* =============================
-      Home Page Layout
+   Home Page Layout
    ============================= */
 .homePage {
   display: flex;
@@ -36,10 +33,10 @@ $small-laptop-min: 1024px;
 }
 
 /* =============================
-      Site Info Box
+   Site Info Box
    ============================= */
 .siteInfo {
-  margin: 16rem auto 2rem auto;
+  margin: 14rem auto 2rem auto;
   padding: $site-info-padding;
   text-align: center;
   width: $site-info-width;
@@ -47,7 +44,7 @@ $small-laptop-min: 1024px;
   font-size: 1.5rem;
   background-color: $primary-bg-color;
   box-shadow: 0px 0px 15px 4px $accent-glow;
-  border: 1px solid rgba(0, 255, 255, 0.25); // Slight aqua tint to echo the glow
+  border: 1px solid rgba(0, 255, 255, 0.25); // Aqua border accent
   border-radius: 1rem;
   transition: box-shadow 0.3s ease;
 
@@ -55,35 +52,121 @@ $small-laptop-min: 1024px;
     box-shadow: 0px 0px 20px 6px rgba(0, 255, 255, 0.4);
   }
 
-  @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
-    width: 17rem;
-    font-size: 1.1rem;
-    margin: 11rem auto 3rem auto;
-  }
-}
-
-/* =============================
-      Site Info Content
-      ============================= */
-.siteInfoContent {
-  max-width: $site-info-content-width;
-  margin: 0 auto 2rem auto;
-  text-align: left;
-  line-height: 1.6;
-  word-break: break-word;
-  box-sizing: border-box;
-  padding-left: 1rem;
-  padding-right: 1rem;
-
-  p:first-of-type {
-    font-weight: 600; // Bold first paragraph
+  @media only screen and (max-width: 390px) {
+    width: $site-info-mobile-width;
   }
 
-  @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
-    max-width: 40rem;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
+  /* =============================
+     Site Info Content
+     ============================= */
+  .siteInfoContent {
+    max-width: $site-info-content-width;
+    margin: 0 auto 2rem auto;
+    text-align: left;
+    line-height: 1.6;
+    word-break: break-word;
+    box-sizing: border-box;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    p:first-of-type {
+      font-weight: 600; // Emphasize first paragraph
+    }
+
+    @media only screen and (max-width: 390px) {
+      max-width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+    }
+  }
+
+  /* =============================
+     Other Sites Description Section
+     ============================= */
+     .otherSitesDescription {
+      text-align: center;
+      padding: 0 5rem;
+      line-height: 1.5;
+    
+      ul {
+        list-style: none;
+        padding: 0 8.5rem;
+        margin: 1rem 0 0;
+      }
+    
+      li {
+        display: inline-block;
+        text-align: left;
+        width: 100%;
+        font-size: 1.3rem;
+        padding: 0.3rem 0;
+        white-space: pre; // preserves exact spacing if you add it in Markdown
+      }
+    }
+    
+  /* =============================
+     Note Box
+     ============================= */
+  .Note {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-left: 4px solid $primary-color;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 1.4rem;
+    text-align: left;
+    line-height: 1.6;
+  }
+
+  /* =============================
+     Related Projects Section
+     ============================= */
+  .relatedProjects {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    text-align: left;
+    list-style-type: none;
+    text-decoration: none;
+    
+
+
+    @media only screen and (max-width: 390px) {
+      padding: 1rem;
+    }
+
+    .relatedProjectsHeader {
+      font-size: 1.5rem;
+      color: $primary-color;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .projectLinks {
+      padding: 0;
+      margin: 0;
+      text-decoration: none;
+
+      li {
+        margin-bottom: 0.8rem;
+        text-decoration: none;
+
+        @media only screen and (max-width: 390px) {
+          font-size: 1.3rem;
+        }
+      }
+
+      a {
+        color: $primary-color;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+          color: color.adjust($primary-color, $lightness: 10%);
+        }
+      }
+    }
   }
 }
