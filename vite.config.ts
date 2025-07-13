@@ -13,6 +13,7 @@ export default defineConfig({
       brotliSize: true,
     }),
   ],
+
   resolve: {
     alias: {
       '@': resolve(__dirname, 'src'),
@@ -26,15 +27,20 @@ export default defineConfig({
       '@routeGranular': resolve(__dirname, 'src/routes/IndividualRoutes/Granularized'),
     },
   },
+
+  assetsInclude: ['**/*.md'],
+
   server: {
     proxy: {
-      '/api': {
+      '^/api/.*': {
         target: 'http://localhost:3001',
         changeOrigin: true,
         secure: false,
+        rewrite: path => path, // preserve full /api path
       },
     },
   },
+
   build: {
     outDir: 'dist',
     emptyOutDir: true,
@@ -52,16 +58,9 @@ export default defineConfig({
           prism: ['react-syntax-highlighter'],
         },
       },
-      external: [
-        'react-syntax-highlighter/dist/esm/languages/prism/typescript',
-        'react-syntax-highlighter/dist/esm/languages/prism/javascript',
-        'react-syntax-highlighter/dist/esm/languages/prism/markup',
-        'react-syntax-highlighter/dist/esm/languages/prism/css',
-        'react-syntax-highlighter/dist/esm/languages/prism/bash',
-        'react-syntax-highlighter/dist/esm/styles/prism/material-light',
-      ],
     },
   },
+
   optimizeDeps: {
     include: [
       'react-syntax-highlighter',
