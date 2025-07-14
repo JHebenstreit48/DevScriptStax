@@ -100,7 +100,7 @@ $small-laptop-min: 1024px;
          ============================== */
 .searchIconContainer {
   position: absolute;
-  left: 11rem;
+  left: 29rem;
   top: 55%;
   transform: translateY(-50%);
   z-index: 11;
@@ -126,7 +126,7 @@ $small-laptop-min: 1024px;
   cursor: pointer;
   outline: none;
   color: $level-1;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   transition: color 0.3s ease;
 
   &:hover {
@@ -181,6 +181,18 @@ $small-laptop-min: 1024px;
     width: 70%;
   }
 
+  .level-1,
+  .level-2,
+  .level-3,
+  .level-4,
+  .level-5 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
   @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
     font-size: 1.3rem;
     padding: 0.5rem;
@@ -221,7 +233,7 @@ $small-laptop-min: 1024px;
 .dropdownContent {
   position: absolute;
   top: 100%;
-  left: 50%;
+  left: 55%;
   transform: translateX(-50%);
   background-color: $dropdown-bg;
   min-width: $dropdown-width;
