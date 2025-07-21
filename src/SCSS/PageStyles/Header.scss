@@ -39,8 +39,7 @@ $cellphone-landscape: 390px;
   z-index: 12;
 
   @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
     height: 4.5rem; // allow wrapping
     padding: 0;
     margin: 0 auto;
@@ -51,8 +50,7 @@ $cellphone-landscape: 390px;
     padding-left: 2rem;
 
     @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
-      margin: 0 auto;
-      padding: 0;
+      padding-left: 3.7rem;
     }
 
     h1 {
@@ -64,8 +62,9 @@ $cellphone-landscape: 390px;
       text-shadow: 0 0 6px $text-glow, 0 0 4px $text-glow, 0 0 10px $text-glow;
 
       @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
-        margin: 0.5rem auto 0 auto;
-        font-size: 2.5rem;
+        margin: 0.5rem auto 0;
+        font-size: 2rem;
+
       }
     }
   }
@@ -75,7 +74,7 @@ $cellphone-landscape: 390px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;  
+    gap: 2rem;
   }
 }
 
