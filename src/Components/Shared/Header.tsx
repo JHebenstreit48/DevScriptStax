@@ -1,17 +1,19 @@
 import Navigation from "@/Components/NavigationUI/Navigation";
 
-interface Header {
+interface HeaderProps {
   text: string;
   size?: "default" | "sm" | "md" | "lg";
 }
 
-export default function Header({ text, size = "default" }: Header) {
+export default function Header({ text, size = "default" }: HeaderProps) {
   return (
-    <>
-      <div>
+    <header className="HeaderBar">
+      <div className="HeaderLeft">
         <h1 className={`Header ${size}`}>{text}</h1>
+      </div>
+      <div className="HeaderRight">
         <Navigation />
       </div>
-    </>
+    </header>
   );
 }

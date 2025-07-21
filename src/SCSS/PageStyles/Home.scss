@@ -1,4 +1,4 @@
-@use 'sass:color';
+@use "sass:color";
 
 /* =============================
    Variables
@@ -19,6 +19,12 @@ $site-info-content-width: 60rem;
 // Match link blue from Notes.scss for visual consistency
 $primary-color: rgb(6, 159, 248);
 
+/* ==============================
+            Breakpoints        
+   ============================== */
+$cellphone-portrait: 390px;
+$cellphone-landscape: 390px;
+
 /* =============================
    Home Page Layout
    ============================= */
@@ -36,7 +42,7 @@ $primary-color: rgb(6, 159, 248);
    Site Info Box
    ============================= */
 .siteInfo {
-  margin: 14rem auto 2rem auto;
+  margin: 12rem auto 2rem auto;
   padding: $site-info-padding;
   text-align: center;
   width: $site-info-width;
@@ -52,8 +58,10 @@ $primary-color: rgb(6, 159, 248);
     box-shadow: 0px 0px 20px 6px rgba(0, 255, 255, 0.4);
   }
 
-  @media only screen and (max-width: 390px) {
+  @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
     width: $site-info-mobile-width;
+    padding: 0;
+    margin: 6rem auto 0 auto;
   }
 
   /* =============================
@@ -73,39 +81,49 @@ $primary-color: rgb(6, 159, 248);
       font-weight: 600; // Emphasize first paragraph
     }
 
-    @media only screen and (max-width: 390px) {
-      max-width: 100%;
-      display: flex;
-      flex-direction: column;
-      margin: 0 auto;
+    @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
+      padding: 1rem;
+      text-align: center;
+      margin-bottom: 0;
     }
   }
 
   /* =============================
      Other Sites Description Section
      ============================= */
-     .otherSitesDescription {
-      text-align: center;
-      padding: 0 5rem;
-      line-height: 1.5;
-    
-      ul {
-        list-style: none;
-        padding: 0 8.5rem;
-        margin: 1rem 0 0;
-      }
-    
-      li {
-        display: inline-block;
-        text-align: left;
-        width: 100%;
-        font-size: 1.3rem;
-        padding: 0.3rem 0;
-        white-space: pre; // preserves exact spacing if you add it in Markdown
-        font-style: italic;
+
+  .otherSitesDescription {
+    text-align: center;
+    line-height: 1.5;
+
+    @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
+      display: block;
+      margin: 0 auto;
+      width: 78%;
+    }
+
+    .projectName {
+      font-style: italic;
+      font-weight: 600;
+
+      @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
+        display: block;
+        margin: 0;
       }
     }
-    
+
+    .projectDesc {
+      font-style: italic;
+      display: inline;
+
+      @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
+        display: inline;
+        width: 100%;
+        margin-top: 0.2rem;
+      }
+    }
+  }
+
   /* =============================
      Note Box
      ============================= */
@@ -117,6 +135,10 @@ $primary-color: rgb(6, 159, 248);
     font-size: 1.4rem;
     text-align: left;
     line-height: 1.6;
+
+    @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
+      text-align: center;
+    }
   }
 
   /* =============================
@@ -131,8 +153,6 @@ $primary-color: rgb(6, 159, 248);
     text-align: left;
     list-style-type: none;
     text-decoration: none;
-    
-
 
     @media only screen and (max-width: 390px) {
       padding: 1rem;

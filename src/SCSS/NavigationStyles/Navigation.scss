@@ -50,19 +50,21 @@ $small-laptop-min: 1024px;
          Navigation Menu         
    ============================== */
 .navigationMenu {
-  position: fixed;
-  top: 7.2rem;
   width: 100%;
-  background-color: $background-dark;
   display: flex;
-  flex-direction: column;
+  left: 27rem;
+  flex-direction: row;
   align-items: center;
   z-index: 10;
   padding: 0;
   transition: all 0.3s ease;
-
+  margin-left: auto; // Pushes nav to the right inside HeaderBar
+  background-color: transparent;
+  // Remove top positioning now that it's inside HeaderBar
+  position: fixed;
+  
   @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
-    top: 6rem;
+    top: 8rem;
   }
 }
 
@@ -74,7 +76,6 @@ $small-laptop-min: 1024px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 0;
   width: auto;
   padding-top: 0;
 
@@ -100,7 +101,7 @@ $small-laptop-min: 1024px;
          ============================== */
 .searchIconContainer {
   position: absolute;
-  left: 29rem;
+  left: 83rem;
   top: 55%;
   transform: translateY(-50%);
   z-index: 11;
@@ -218,7 +219,7 @@ $small-laptop-min: 1024px;
   position: relative;
   display: inline-block;
   text-align: center;
-  margin: 0 1.5rem;
+  margin: 0 1rem;
 
   @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
     display: block;
