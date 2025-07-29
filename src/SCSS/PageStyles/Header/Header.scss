@@ -1,0 +1,104 @@
+@use "sass:color";
+
+/* ==============================
+            Variables           
+   ============================== */
+$header-bg-color: rgba(0, 0, 0, 0.9);
+$header-border-color: rgba(0, 255, 255, 0.2);
+$header-blur: 10px;
+
+$text-color: #032c2c;
+$text-glow: #00ffff;
+
+$header-height: 7.15rem;
+$font-size-lg: 3rem;
+
+$cellphone-portrait: 480px;
+
+/* ==============================
+            Base Styles       
+   ============================== */
+.HeaderBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: $header-height;
+  background-color: $header-bg-color;
+  backdrop-filter: blur($header-blur);
+  border-bottom: 1px solid $header-border-color;
+  z-index: 12;
+
+  @media only screen and (max-width: $cellphone-portrait) {
+    height: 4.5rem;
+  }
+}
+
+.HeaderLeft {
+  display: flex;
+  padding-left: 2rem;
+
+  @media only screen and (max-width: $cellphone-portrait) {
+    padding-left: 2rem;
+  }
+}
+
+.HeaderRight {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* ==============================
+         Header Title Styling    
+   ============================== */
+.Header {
+  font-size: $font-size-lg;
+  background-color: $header-bg-color;
+  backdrop-filter: blur($header-blur);
+  -webkit-backdrop-filter: blur($header-blur);
+  color: $text-color;
+  text-shadow: 0 0 6px $text-glow, 0 0 4px $text-glow, 0 0 10px $text-glow;
+  white-space: nowrap;
+  margin: 0 auto;
+  text-align: center;
+
+  // Custom alignment if needed
+  &.HeaderAlignLeft {
+    margin: 0;
+    text-align: left;
+  }
+}
+
+/* ==============================
+          Size Variants           
+   ============================== */
+.Header.sm {
+  font-size: clamp(1.8rem, 4.5vw, 2.3rem);
+
+  @media only screen and (max-width: $cellphone-portrait) {
+    font-size: clamp(1.7rem, 4.5vw, 2.2rem);
+  }
+}
+
+.Header.md {
+  font-size: clamp(2.3rem, 5vw, 2.8rem);
+
+  @media only screen and (max-width: $cellphone-portrait) {
+    font-size: clamp(2.2rem, 5vw, 2.6rem);
+  }
+}
+
+.Header.lg {
+  font-size: clamp(3rem, 6vw, 4.5rem);
+
+  @media only screen and (max-width: $cellphone-portrait) {
+    font-size: clamp(2.6rem, 6vw, 3.8rem);
+    max-width: 85%;
+  }
+}
