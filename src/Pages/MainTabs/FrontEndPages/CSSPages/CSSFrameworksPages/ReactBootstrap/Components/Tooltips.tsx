@@ -1,6 +1,6 @@
 // Auto-generated TSX file: Tooltips
 
-import Header from "@/Components/Shared/Header";
+import Header from "@/Components/Shared/Header/Header";
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const ReactBSTooltips = () => {

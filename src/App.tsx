@@ -7,7 +7,7 @@ import EntryScreen from "@/Pages/Special/EntryScreen";
 
 // SCSS Imports
 import '@/SCSS/PageStyles/Page.scss';
-import '@/SCSS/PageStyles/Header.scss';
+import '@/SCSS/PageStyles/Header/Header.scss';
 import '@/SCSS/PageStyles/Footer.scss';
 import '@/SCSS/NavigationStyles/Navigation.scss';
 import '@/SCSS/NavigationStyles/SearchModal.scss';
