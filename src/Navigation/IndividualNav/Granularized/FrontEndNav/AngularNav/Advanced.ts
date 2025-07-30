@@ -2,6 +2,7 @@ import { Subpage } from "@/Navigation/CombinedNav/CombinedNavAndTypes/Navigation
 import ChangeDetection from "@/Navigation/IndividualNav/Granularized/FrontEndNav/AngularNav/Advanced/ChangeDetection";
 import Performance from "@/Navigation/IndividualNav/Granularized/FrontEndNav/AngularNav/Advanced/Performance";
 import RxJSAndReactive from "@/Navigation/IndividualNav/Granularized/FrontEndNav/AngularNav/Advanced/RxJSAndReactiveProgram";
+import Animations from "@/Navigation/IndividualNav/Granularized/FrontEndNav/AngularNav/Advanced/Animations";
 
 const AngularAdvanced: Subpage = {
   name: "Advanced",
@@ -9,19 +10,7 @@ const AngularAdvanced: Subpage = {
     ChangeDetection,
     Performance,
     RxJSAndReactive,
-    {
-      name: "Animations",
-      subpages: [
-        {
-          name: "Basics",
-          path: "/angular/advanced/animations/basics",
-        },
-        {
-          name: "Triggers",
-          path: "/angular/advanced/animations/triggers",
-        },
-      ],
-    },
+    Animations,
     {
       name: "TypeScript Integration",
       subpages: [
