@@ -27,11 +27,11 @@ const AngularAdvanced: Subpage = {
       subpages: [
         {
           name: "Path Aliases",
-          path: "/angular/advanced/tsconfig/path-aliases",
+          path: "/angular/advanced/tsintegration/path-aliases",
         },
         {
           name: "Advanced Aliases",
-          path: "/angular/advanced/tsconfig/advanced-aliases",
+          path: "/angular/advanced/tsintegration/advanced-aliases",
         },
       ],
     },
