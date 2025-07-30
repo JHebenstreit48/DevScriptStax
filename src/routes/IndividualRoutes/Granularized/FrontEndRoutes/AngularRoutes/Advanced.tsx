@@ -1,18 +1,13 @@
-import { lazy } from "react";
 import { RouteObject } from "react-router-dom";
 
-const CDBasics = lazy(
-  () =>
-    import(
-      "@/Pages/MainTabs/FrontEndPages/AngularPages/Advanced/ChangeDetection/Basics"
-    )
-);
+import changeDetection from "@/routes/IndividualRoutes/Granularized/FrontEndRoutes/AngularRoutes/Advanced/ChangeDetection";
+import performance from "@/routes/IndividualRoutes/Granularized/FrontEndRoutes/AngularRoutes/Advanced/Performance";
+import RxJSAndReactive from "@/routes/IndividualRoutes/Granularized/FrontEndRoutes/AngularRoutes/Advanced/RxJSAndReactive";
 
 const angularAdvanced: RouteObject[] = [
-  {
-    path: "/angular/advanced/changedetection/basics",
-    element: <CDBasics />,
-  },
+  ...changeDetection,
+  ...performance,
+  ...RxJSAndReactive,
 ];
 
 export default angularAdvanced;

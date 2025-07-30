@@ -1,55 +1,14 @@
 import { Subpage } from "@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes";
+import ChangeDetection from "@/Navigation/IndividualNav/Granularized/FrontEndNav/AngularNav/Advanced/ChangeDetection";
+import Performance from "@/Navigation/IndividualNav/Granularized/FrontEndNav/AngularNav/Advanced/Performance";
+import RxJSAndReactive from "@/Navigation/IndividualNav/Granularized/FrontEndNav/AngularNav/Advanced/RxJSAndReactiveProgram";
 
 const AngularAdvanced: Subpage = {
   name: "Advanced",
   subpages: [
-    {
-      name: "Change Detection",
-      subpages: [
-        {
-          name: "Basics",
-          path: "/angular/advanced/changedetection/basics",
-        },
-        {
-          name: "Optimizing",
-          path: "/angular/advanced/changedetection/optimizing",
-        },
-        {
-          name: "Template Rendering Optimization",
-          path: "/angular/advanced/changedetection/templateoptimization",
-        },
-      ],
-    },
-    {
-      name: "Performance",
-      subpages: [
-        {
-          name: "Bundle Optimization",
-          path: "/angular/advanced/performance/bundleoptimization",
-        },
-        {
-          name: "Budgets & Profiling",
-          path: "/angular/advanced/performance/budgetsprofiling",
-        },
-      ],
-    },
-    {
-      name: "RxJS/Reactive Programming",
-      subpages: [
-        {
-          name: "Observables Basics",
-          path: "/angular/advanced/rxjs/observables",
-        },
-        {
-          name: "Subjects/Behavior",
-          path: "/angular/advanced/rxjs/subjects",
-        },
-        {
-          name: "RxJS Operators",
-          path: "/angular/advanced/rxjs/operators",
-        },
-      ],
-    },
+    ChangeDetection,
+    Performance,
+    RxJSAndReactive,
     {
       name: "Animations",
       subpages: [
