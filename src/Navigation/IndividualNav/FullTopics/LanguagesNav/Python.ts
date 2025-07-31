@@ -1,15 +1,15 @@
 import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes';
 
-import PythonBasics from '@/Navigation/IndividualNav/Granularized/LanguagesNav/PythonNav/Basics';
-import PythonIntermediate from '@/Navigation/IndividualNav/Granularized/LanguagesNav/PythonNav/Intermediate';
-import PythonAdvanced from '@/Navigation/IndividualNav/Granularized/LanguagesNav/PythonNav/Advanced';
+import Basics from '@/Navigation/IndividualNav/Granularized/LanguagesNav/PythonNav/Basics';
+import Intermediate from '@/Navigation/IndividualNav/Granularized/LanguagesNav/PythonNav/Intermediate';
+import Advanced from '@/Navigation/IndividualNav/Granularized/LanguagesNav/PythonNav/Advanced';
 
 const PythonNav: Subpage = {
   name: 'Python',
   subpages: [
-    PythonBasics,
-    PythonIntermediate,
-    PythonAdvanced
+    Basics,
+    Intermediate,
+    Advanced
   ]
 };
 
