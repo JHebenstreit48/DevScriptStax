@@ -7,9 +7,18 @@ const CDBasics = lazy(
       "@/Pages/MainTabs/FrontEndPages/AngularPages/Advanced/ChangeDetection/Basics"
     )
 );
-const CDOptimizing = lazy(() => import(
-  "@/Pages/MainTabs/FrontEndPages/AngularPages/Advanced/ChangeDetection/Optimizing"
-));
+const CDOptimizing = lazy(
+  () =>
+    import(
+      "@/Pages/MainTabs/FrontEndPages/AngularPages/Advanced/ChangeDetection/Optimizing"
+    )
+);
+const CDTemplRenderOptim = lazy(
+  () =>
+    import(
+      "@/Pages/MainTabs/FrontEndPages/AngularPages/Advanced/ChangeDetection/TemplateRenderOptim"
+    )
+);
 
 const changeDetection: RouteObject[] = [
   {
@@ -19,6 +28,10 @@ const changeDetection: RouteObject[] = [
   {
     path: "/angular/advanced/changedetection/optimizing",
     element: <CDOptimizing />,
+  },
+  {
+    path: "/angular/advanced/changedetection/templateoptimization",
+    element: <CDTemplRenderOptim />,
   },
 ];
 
