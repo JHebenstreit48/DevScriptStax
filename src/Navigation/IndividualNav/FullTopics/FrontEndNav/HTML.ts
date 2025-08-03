@@ -4,7 +4,7 @@ import HTMLBasics from '@/Navigation/IndividualNav/Granularized/FrontEndNav/HTML
 import HTMLIntermediate from '@/Navigation/IndividualNav/Granularized/FrontEndNav/HTMLNav/Intermediate';
 import HTMLAdvanced from '@/Navigation/IndividualNav/Granularized/FrontEndNav/HTMLNav/Advanced';
 
-const HTMLNav: Subpage = {
+const HTML: Subpage = {
   name: 'HTML',
   subpages: [
     HTMLBasics,
@@ -13,4 +13,4 @@ const HTMLNav: Subpage = {
   ]
 };
 
-export default HTMLNav;
+export default HTML;

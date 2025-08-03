@@ -4,7 +4,7 @@ import MarkdownBasics from '@/Navigation/IndividualNav/Granularized/FrontEndNav/
 import MarkdownIntermediate from '@/Navigation/IndividualNav/Granularized/FrontEndNav/MarkdownNav/Intermediate';
 import MarkdownAdvanced from '@/Navigation/IndividualNav/Granularized/FrontEndNav/MarkdownNav/Advanced';
 
-const MarkdownNav: Subpage = {
+const Markdown: Subpage = {
   name: 'Markdown',
   subpages: [
     MarkdownBasics,
@@ -13,4 +13,4 @@ const MarkdownNav: Subpage = {
   ]
 };
 
-export default MarkdownNav;
+export default Markdown;

@@ -4,7 +4,7 @@ import ReduxBasics from '@/Navigation/IndividualNav/Granularized/FrontEndNav/Red
 import ReduxIntermediate from '@/Navigation/IndividualNav/Granularized/FrontEndNav/Redux/Intermediate';
 import ReduxAdvanced from '@/Navigation/IndividualNav/Granularized/FrontEndNav/Redux/Advanced';
 
-const ReduxNav: Subpage = {
+const Redux: Subpage = {
   name: 'Redux',
   subpages: [
     ReduxBasics,
@@ -13,4 +13,4 @@ const ReduxNav: Subpage = {
   ]
 };
 
-export default ReduxNav;
+export default Redux;

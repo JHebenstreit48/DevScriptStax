@@ -3,7 +3,7 @@ import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/Navigation
 import NextJSBasics from '@/Navigation/IndividualNav/Granularized/FrontEndNav/NextJS/Basics';
 import NextJSAdvanced from '@/Navigation/IndividualNav/Granularized/FrontEndNav/NextJS/Advanced';
 
-const NextJSNav: Subpage = {
+const NextJS: Subpage = {
   name: 'Next.js',
   subpages: [
     NextJSBasics,
@@ -11,4 +11,4 @@ const NextJSNav: Subpage = {
   ]
 };
 
-export default NextJSNav;
+export default NextJS;

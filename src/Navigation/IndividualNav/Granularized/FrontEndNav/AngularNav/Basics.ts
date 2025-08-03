@@ -4,7 +4,7 @@ import Fundamentals from "@/Navigation/IndividualNav/Granularized/FrontEndNav/An
 import Structure from "@/Navigation/IndividualNav/Granularized/FrontEndNav/AngularNav/Basics/Structure";
 import CoreConcepts from "@/Navigation/IndividualNav/Granularized/FrontEndNav/AngularNav/Basics/CoreConcepts";
 
-const AngularBasics: Subpage = {
+const Basics: Subpage = {
   name: "Basics",
   subpages: [
     Fundamentals,
@@ -13,4 +13,4 @@ const AngularBasics: Subpage = {
   ],
 };
 
-export default AngularBasics;
+export default Basics;

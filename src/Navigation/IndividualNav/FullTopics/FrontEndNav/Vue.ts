@@ -3,7 +3,7 @@ import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/Navigation
 import VueBasics from '@/Navigation/IndividualNav/Granularized/FrontEndNav/VueNav/Basics';
 import VueAdvanced from '@/Navigation/IndividualNav/Granularized/FrontEndNav/VueNav/Advanced';
 
-const VueNav: Subpage = {
+const Vue: Subpage = {
   name: 'Vue',
   subpages: [
     VueBasics,
@@ -11,4 +11,4 @@ const VueNav: Subpage = {
   ]
 };
 
-export default VueNav;
+export default Vue;
