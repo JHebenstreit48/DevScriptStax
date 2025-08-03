@@ -5,7 +5,7 @@ import JSIntermediate from '@/Navigation/IndividualNav/Granularized/FrontEndNav/
 import JSAdvanced from '@/Navigation/IndividualNav/Granularized/FrontEndNav/JavaScriptNav/Advanced';
 import JSBestPractices from '@/Navigation/IndividualNav/Granularized/FrontEndNav/JavaScriptNav/Security';
 
-const JavaScriptNav: Subpage = {
+const JavaScript: Subpage = {
   name: 'JavaScript',
   subpages: [
     JSBasics,
@@ -15,4 +15,4 @@ const JavaScriptNav: Subpage = {
   ]
 };
 
-export default JavaScriptNav;
+export default JavaScript;

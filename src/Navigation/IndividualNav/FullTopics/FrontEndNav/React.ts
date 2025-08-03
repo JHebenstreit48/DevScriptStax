@@ -5,7 +5,7 @@ import ReactAdvanced from '@/Navigation/IndividualNav/Granularized/FrontEndNav/R
 import ReactToolsAndTesting from '@/Navigation/IndividualNav/Granularized/FrontEndNav/React/ToolsAndTesting';
 import ReactIntermediate from '@/Navigation/IndividualNav/Granularized/FrontEndNav/React/Intermediate';
 
-const ReactNav: Subpage = {
+const React: Subpage = {
   name: 'React',
   subpages: [
     ReactBasics,
@@ -15,4 +15,4 @@ const ReactNav: Subpage = {
   ]
 };
 
-export default ReactNav;
+export default React;

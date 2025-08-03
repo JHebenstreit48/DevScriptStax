@@ -3,7 +3,7 @@ import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/Navigation
 import GatsbyBasics from '@/Navigation/IndividualNav/Granularized/FrontEndNav/Gatsby/Basics';
 import GatsbyAdvanced from '@/Navigation/IndividualNav/Granularized/FrontEndNav/Gatsby/Advanced';
 
-const GatsbyNav: Subpage = {
+const Gatsby: Subpage = {
 name : 'Gatsby',
 subpages: [
     GatsbyBasics,
@@ -11,4 +11,4 @@ subpages: [
   ]
 };
 
-export default GatsbyNav;
+export default Gatsby;

@@ -3,7 +3,7 @@ import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/Navigation
 import SvelteBasics from '@/Navigation/IndividualNav/Granularized/FrontEndNav/SvelteNav/Basics';
 import SvelteAdvanced from '@/Navigation/IndividualNav/Granularized/FrontEndNav/SvelteNav/Advanced';
 
-const SvelteNav: Subpage = {
+const Svelte: Subpage = {
   name: 'Svelte',
   subpages: [
     SvelteBasics,
@@ -11,4 +11,4 @@ const SvelteNav: Subpage = {
   ]
 };
 
-export default SvelteNav;
+export default Svelte;

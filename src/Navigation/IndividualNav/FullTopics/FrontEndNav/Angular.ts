@@ -1,16 +1,16 @@
 import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes';
 
-import AngularBasics from '@/Navigation/IndividualNav/Granularized/FrontEndNav/AngularNav/Basics';
-import AngularAdvanced from '@/Navigation/IndividualNav/Granularized/FrontEndNav/AngularNav/Advanced';
-import AngularTesting from '@/Navigation/IndividualNav/Granularized/FrontEndNav/AngularNav/Testing';
+import Basics from '@/Navigation/IndividualNav/Granularized/FrontEndNav/AngularNav/Basics';
+import Advanced from '@/Navigation/IndividualNav/Granularized/FrontEndNav/AngularNav/Advanced';
+import Testing from '@/Navigation/IndividualNav/Granularized/FrontEndNav/AngularNav/Testing';
 
-const AngularNav: Subpage = {
+const Angular: Subpage = {
   name: 'Angular',
   subpages: [
-    AngularBasics,
-    AngularAdvanced,
-    AngularTesting
+    Basics,
+    Advanced,
+    Testing
   ]
 };
 
-export default AngularNav;
+export default Angular;

@@ -5,7 +5,7 @@ import CSSFrameworks from '@/Navigation/IndividualNav/Granularized/FrontEndNav/C
 import CSSPreprocessors from '@/Navigation/IndividualNav/Granularized/FrontEndNav/CSSNav/Preprocessors';
 import CSSPostprocessors from '@/Navigation/IndividualNav/Granularized/FrontEndNav/CSSNav/Postprocessors';
 
-const CSSNav: Subpage = {
+const CSS: Subpage = {
   name: 'CSS',
   subpages: [
     CSSVanilla,
@@ -15,4 +15,4 @@ const CSSNav: Subpage = {
   ]
 };
 
-export default CSSNav;
+export default CSS;
