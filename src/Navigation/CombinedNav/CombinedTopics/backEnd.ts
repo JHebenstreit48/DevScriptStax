@@ -8,12 +8,12 @@ import APIsNav from '@/Navigation/IndividualNav/FullTopics/BackEndNav/APIs';
 // ---------- Authentication & Authorization Navigation End ----------
 
 // ---------- Databases Navigation Start ----------
-// import FirebaseNavigation from '@/Navigation/IndividualNav/BackEndNav/DatabaseNav/Firebase';
-import MongoDBNav from '@/Navigation/IndividualNav/FullTopics/BackEndNav/DatabaseNav/MongoDB';
-// import MySQLNavigation from '@/Navigation/IndividualNav/BackEndNav/DatabaseNav/MySQL';
-// import PostgreSQLNavigation from '@/Navigation/IndividualNav/BackEndNav/DatabaseNav/PostgreSQL';
-// import RedisNavigation from '@/Navigation/IndividualNav/BackEndNav/DatabaseNav/Redis';
-// import SQLiteNavigation from '@/Navigation/IndividualNav/BackEndNav/DatabaseNav/SQLite';
+import Firebase from '@/Navigation/IndividualNav/FullTopics/BackEndNav/DatabaseNav/Firebase';
+import MongoDB from '@/Navigation/IndividualNav/FullTopics/BackEndNav/DatabaseNav/MongoDB';
+// import MySQL from '@/Navigation/IndividualNav/FullTopics/BackEndNav/DatabaseNav/MySQL';
+// import PostgreSQL from '@/Navigation/IndividualNav/FullTopics/BackEndNav/DatabaseNav/PostgreSQL';
+// import Redis from '@/Navigation/IndividualNav/FullTopics/BackEndNav/DatabaseNav/Redis';
+// import SQLite from '@/Navigation/IndividualNav/FullTopics/BackEndNav/DatabaseNav/SQLite';
 // ---------- Databases Navigation End ----------
 
 // ---------- Frameworks Navigation Start ----------
@@ -48,12 +48,12 @@ const backEnd: Subpage = {
     {
       name: 'Databases',
       subpages: [
-        // FirebaseNavigation,
-        MongoDBNav,
-        // MySQLNavigation,
-        // PostgreSQLNavigation,
-        // RedisNavigation,
-        // SQLiteNavigation
+        Firebase,
+        MongoDB,
+        // MySQL,
+        // PostgreSQL,
+        // Redis,
+        // SQLite
       ]
     },
     {
