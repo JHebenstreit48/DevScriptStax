@@ -4,7 +4,7 @@ import MongoDBBasics from '@/Navigation/IndividualNav/Granularized/BackEndNav/Da
 import MongoDBIntermediate from '@/Navigation/IndividualNav/Granularized/BackEndNav/DatabaseNav/MongoDB/Intermediate';
 import MongoDBAdvanced from '@/Navigation/IndividualNav/Granularized/BackEndNav/DatabaseNav/MongoDB/Advanced';
 
-const MongoDBNav: Subpage = {
+const MongoDB: Subpage = {
   name: 'MongoDB',
   subpages: [
     MongoDBBasics,
@@ -13,4 +13,4 @@ const MongoDBNav: Subpage = {
   ]
 };
 
-export default MongoDBNav;
+export default MongoDB;
