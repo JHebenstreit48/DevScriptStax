@@ -79,7 +79,7 @@ const Notes = ({ filePath }: NotesProps) => {
           <p className="loadingMessage">Loading content...</p>
         ) : (
           <p className="loadingMessage" aria-live="polite">
-            Coming soon… <span role="img" aria-label="under construction">🚧</span>
+            Coming Soon… <span role="img" aria-label="under construction">🚧</span>
           </p>
         )}
       </div>

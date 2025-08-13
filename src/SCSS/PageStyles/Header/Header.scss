@@ -10,9 +10,9 @@ $header-blur: 10px;
 $text-color: #032c2c;
 $text-glow: #00ffff;
 
-$header-height: 7.15rem;
-$font-size-lg: 3rem;
-
+$header-height: 4rem;
+$site-name-height: 2,5rem;
+$font-size-default: 2.4rem;
 $cellphone-portrait: 480px;
 
 /* ==============================
@@ -58,7 +58,7 @@ $cellphone-portrait: 480px;
          Header Title Styling    
    ============================== */
 .Header {
-  font-size: $font-size-lg;
+  font-size: $font-size-default;
   background-color: $header-bg-color;
   backdrop-filter: blur($header-blur);
   -webkit-backdrop-filter: blur($header-blur);
@@ -67,6 +67,7 @@ $cellphone-portrait: 480px;
   white-space: nowrap;
   margin: 0 auto;
   text-align: center;
+  height: $site-name-height;
 
   // Custom alignment if needed
   &.HeaderAlignLeft {
@@ -78,13 +79,13 @@ $cellphone-portrait: 480px;
 /* ==============================
           Size Variants           
    ============================== */
-.Header.sm {
-  font-size: clamp(1.8rem, 4.5vw, 2.3rem);
+// .Header.sm {
+//   font-size: clamp(1.8rem, 4.5vw, 2.3rem);
 
-  @media only screen and (max-width: $cellphone-portrait) {
-    font-size: clamp(1.7rem, 4.5vw, 2.2rem);
-  }
-}
+//   @media only screen and (max-width: $cellphone-portrait) {
+//     font-size: clamp(1.7rem, 4.5vw, 2.2rem);
+//   }
+// }
 
 .Header.md {
   font-size: clamp(2.3rem, 5vw, 2.8rem);

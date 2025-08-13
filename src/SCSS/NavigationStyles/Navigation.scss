@@ -14,7 +14,7 @@ $dropdown-bg: rgb(38, 38, 39);
 $dropdown-hover: rgb(60, 60, 60);
 $scrollbar-track: rgb(73, 73, 73);
 
-$font-lg: 1.8rem;
+$font-lg: 1.6rem;
 $font-md: 1.3rem;
 $font-sm: 1.25rem;
 $font-xs: 1rem;
@@ -52,7 +52,7 @@ $small-laptop-min: 1024px;
 .navigationMenu {
   width: 100%;
   display: flex;
-  left: 27rem;
+  left: 37rem;
   flex-direction: row;
   align-items: center;
   z-index: 10;
@@ -107,8 +107,8 @@ $small-laptop-min: 1024px;
          ============================== */
 .searchIconContainer {
   position: absolute;
-  left: 83rem;
-  top: 55%;
+  left: 75rem;
+  top: 60%;
   transform: translateY(-50%);
   z-index: 11;
 
@@ -141,6 +141,10 @@ $small-laptop-min: 1024px;
   }
 }
 
+.mainNav {
+  margin-top: 0.2rem;
+}
+
 /* ==============================
            Dropdown Button Style       
    ============================== */
@@ -154,8 +158,7 @@ $small-laptop-min: 1024px;
   color: $level-1;
   text-align: center;
   text-decoration: none;
-  margin: 0.3rem auto;
-  text-shadow: 3px 2px 2px rgb(0 0 0);
+  text-shadow: 2px 2px 2px rgb(68, 68, 68);
 
   &:hover {
     text-decoration: underline;
@@ -165,7 +168,7 @@ $small-laptop-min: 1024px;
     color: #1e90ff;
     font-size: $font-lg;
     margin: 0 auto;
-    padding: 0.5rem 0;
+    padding: 0;
   }
 
   &.level-2 {
