@@ -1,5 +1,6 @@
 import PageLayout from "@/Components/NavigationUI/PageLayout";
 import Header from "@/Components/Shared/Header/Header";
+import PageTitle from "@/Components/PageComponents/PageTitle";
 import Notes from "@/Components/PageComponents/Notes/Notes";
 
 const Introduction = () => {
@@ -9,7 +10,8 @@ const Introduction = () => {
   return (
     <>
       <PageLayout>
-        <Header text="Introduction" size="md" />
+        <Header />
+        <PageTitle title="Introduction to Angular" />
         <Notes filePath={markdownFilePath}  />
       </PageLayout>
     </>

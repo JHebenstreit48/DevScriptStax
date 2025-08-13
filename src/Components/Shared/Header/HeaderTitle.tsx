@@ -1,14 +1,15 @@
-import { getResponsiveHeaderSize } from "@/Components/Shared/Header/HeaderUtils";
+import { getResponsiveHeaderSize } from "@/Components/Shared/Header/ResponsiveHeaderLogic";
 
 interface HeaderTitleProps {
   text: string;
-  size: "default" | "sm" | "md" | "lg";
+  size?: "default" | "md" | "lg";
   customClass?: string;
 }
 
-export default function HeaderTitle({ text, size, customClass }: HeaderTitleProps) {
+export default function HeaderTitle({ text, size = "default", customClass }: HeaderTitleProps) {
   const responsiveSize = getResponsiveHeaderSize(text, size);
-  const finalClass = `Header ${responsiveSize} ${customClass ?? ""}`.trim();
+  const classNames = ["Header", responsiveSize];
+  if (customClass) classNames.push(customClass);
 
-  return <h1 className={finalClass}>{text}</h1>;
+  return <h1 className={classNames.join(" ")}>{text}</h1>;
 }
