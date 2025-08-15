@@ -88,19 +88,19 @@ const JSBasics: Subpage = {
       subpages: [
         {
           name: 'Objects Basics',
-          path: '/javascript/basics/objects/basics'
+          path: '/javascript/basics/objectsandjson/basics'
         },
         {
           name: 'Properties and Methods',
-          path: '/javascript/basics/objects/propsandmethods'
+          path: '/javascript/basics/objectsandjson/propsandmethods'
         },
         {
-          name: 'Utilities and Patterns', // ← NEW
-          path: '/javascript/basics/objects/utilsandpatterns'
+          name: 'Utilities and Patterns',
+          path: '/javascript/basics/objectsandjson/utilsandpatterns'
         },
         {
           name: 'Working with JSON',
-          path: '/javascript/basics/objects/json'
+          path: '/javascript/basics/objectsandjson/json'
         }
       ]
     },
