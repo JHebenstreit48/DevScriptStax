@@ -1,5 +1,6 @@
 import PageLayout from '@/Components/NavigationUI/PageLayout';
 import Header from "@/Components/Shared/Header/Header";
+import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const GitNuances = () => {
@@ -8,7 +9,8 @@ const GitNuances = () => {
     return (
         <>
             <PageLayout>
-            <Header text="Nuances" />
+            <Header />
+            <PageTitle title="Git Workflow Nuances" />
             <Notes
                 filePath={markdownFilePath}
             />
