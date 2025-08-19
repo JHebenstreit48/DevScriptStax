@@ -1,25 +1,25 @@
 import { Subpage } from "@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes";
 
-const ApolloServerBasics: Subpage = {
+const ServerBasics: Subpage = {
   name: "Basics",
   subpages: [
     {
       name: "Introduction",
-      path: "/apolloserver/basics/introduction"
+      path: "/graphqlandapollo/apollo/apolloserver/basics/introduction"
     },
     {
       name: "Setup",
-      path: "/apolloserver/basics/setup"
+      path: "/graphqlandapollo/apollo/apolloserver/basics/setup"
     },
     {
       name: "Resolvers",
-      path: "/apolloserver/basics/resolvers"
+      path: "/graphqlandapollo/apollo/apolloserver/basics/resolvers"
     },
     {
       name: "Middleware",
-      path: "/apolloserver/basics/middleware"
+      path: "/graphqlandapollo/apollo/apolloserver/basics/middleware"
     }
   ]
 };
 
-export default ApolloServerBasics;
+export default ServerBasics;

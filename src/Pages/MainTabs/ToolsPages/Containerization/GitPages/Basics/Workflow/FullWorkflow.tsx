@@ -1,5 +1,6 @@
 import PageLayout from '@/Components/NavigationUI/PageLayout';
 import Header from "@/Components/Shared/Header/Header";
+import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const GitWorkflow = () => {
@@ -8,7 +9,8 @@ const GitWorkflow = () => {
     return (
         <>
             <PageLayout>
-            <Header text="Full Workflow" />
+            <Header />
+            <PageTitle title="Git Full Workflow" />
             <Notes
                 filePath={markdownFilePath}
             />
