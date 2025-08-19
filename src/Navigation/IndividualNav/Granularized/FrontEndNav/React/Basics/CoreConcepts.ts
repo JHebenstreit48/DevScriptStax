@@ -8,6 +8,10 @@ const ReactCoreConcepts: Subpage = {
       path: '/react/basics/core/jsx'
     },
     {
+      name: 'Event Handling',
+      path: '/react/basics/core/eventhandling'
+    },
+    {
       name: 'Props/State',
       subpages: [
         {
@@ -19,10 +23,6 @@ const ReactCoreConcepts: Subpage = {
           path: '/react/basics/core/propsstate/state'
         }
       ]
-    },
-    {
-      name: 'Event Handling',
-      path: '/react/basics/core/eventhandling'
     },
     {
       name: 'Forms',
