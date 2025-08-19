@@ -11,7 +11,7 @@ const State = () => {
     <>
       <PageLayout>
         <Header />
-        <PageTitle title="Understanding State in React" />
+        <PageTitle title="State in React" />
         <Notes filePath={markdownFilePath} />
       </PageLayout>
     </>
