@@ -4,7 +4,7 @@ import { RouteObject } from "react-router-dom";
 const Introduction = lazy(
   () =>
     import(
-      "@/Pages/MainTabs/GraphQLAndApolloPages/ApolloPages/ApolloServer/Introduction"
+      "@/Pages/MainTabs/GraphQLAndApolloPages/ApolloPages/ApolloServer/Basics/Introduction"
     )
 );
 

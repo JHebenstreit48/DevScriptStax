@@ -1,6 +1,6 @@
 import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes';
 
-const PythonAdvanced: Subpage = {
+const Advanced: Subpage = {
   name: 'Advanced',
   subpages: [
     {
@@ -23,4 +23,4 @@ const PythonAdvanced: Subpage = {
   ]
 };
 
-export default PythonAdvanced;
+export default Advanced;
