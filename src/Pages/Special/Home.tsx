@@ -5,7 +5,7 @@ import '@/SCSS/PageStyles/Home.scss';
 const Home = () => {
   return (
     <>
-      <Header text="DevScriptStax" size="md" />
+      <Header />
       <div className="siteInfo">
         <NotesHome />
       </div>
