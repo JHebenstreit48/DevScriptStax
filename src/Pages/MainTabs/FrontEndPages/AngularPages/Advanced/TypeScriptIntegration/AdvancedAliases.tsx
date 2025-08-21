@@ -3,19 +3,19 @@ import Header from "@/Components/Shared/Header/Header";
 import PageTitle from "@/Components/PageComponents/PageTitle";
 import Notes from "@/Components/PageComponents/Notes/Notes";
 
-const BundleOptimization = () => {
+const AdvancedAliases = () => {
   const markdownFilePath =
-    "FrontEndNotes/AngularNotes/Advanced/PerformanceNotes/BundleOptimization";
+    "FrontEndNotes/AngularNotes/Advanced/TypeScriptIntegration/AdvancedAliases";
 
   return (
     <>
       <PageLayout>
         <Header />
-        <PageTitle title="Bundle Optimization in Angular" />
+        <PageTitle title="Advanced Aliases in Angular" />
         <Notes filePath={markdownFilePath} />
       </PageLayout>
     </>
   );
 };
 
-export default BundleOptimization;
+export default AdvancedAliases;

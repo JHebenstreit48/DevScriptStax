@@ -5,11 +5,11 @@ const Modules: Subpage = {
   subpages: [
     {
       name: "Basics",
-      path: "/angular/coreconcepts/modules/basics",
+      path: "/angular/core-concepts/modules/basics",
     },
     {
       name: "Lazy Loading",
-      path: "/angular/coreconcepts/lazymodules",
+      path: "/angular/core-concepts/lazy-modules",
     },
   ],
 };

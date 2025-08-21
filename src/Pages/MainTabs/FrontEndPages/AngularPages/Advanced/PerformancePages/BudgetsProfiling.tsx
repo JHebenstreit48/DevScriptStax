@@ -3,19 +3,20 @@ import Header from "@/Components/Shared/Header/Header";
 import PageTitle from "@/Components/PageComponents/PageTitle";
 import Notes from "@/Components/PageComponents/Notes/Notes";
 
-const BundleOptimization = () => {
+
+const BudgetsProfiling = () => {
   const markdownFilePath =
-    "FrontEndNotes/AngularNotes/Advanced/PerformanceNotes/BundleOptimization";
+    "FrontEndNotes/AngularNotes/Advanced/PerformanceNotes/BudgetsProfiling";
 
   return (
     <>
       <PageLayout>
         <Header />
-        <PageTitle title="Bundle Optimization in Angular" />
+        <PageTitle title="Budgets Profiling in Angular" />
         <Notes filePath={markdownFilePath} />
       </PageLayout>
     </>
   );
 };
 
-export default BundleOptimization;
+export default BudgetsProfiling;

@@ -9,11 +9,11 @@ const Structure: Subpage = {
     },
     {
       name: "Configuration Files",
-      path: "/angular/basics/structure/configfiles",
+      path: "/angular/basics/structure/config-files",
     },
     {
       name: "Naming Conventions",
-      path: "/angular/basics/structure/namingconventions",
+      path: "/angular/basics/structure/naming-conventions",
     },
   ],
 };

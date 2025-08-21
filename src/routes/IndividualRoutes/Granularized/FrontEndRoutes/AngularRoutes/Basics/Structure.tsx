@@ -26,11 +26,11 @@ const StructureRoutes: RouteObject[] = [
     element: <Structure />,
   },
   {
-    path: "/angular/basics/structure/configfiles",
+    path: "/angular/basics/structure/config-files",
     element: <ConfigFiles />,
   },
   {
-    path: "/angular/basics/structure/namingconventions",
+    path: "/angular/basics/structure/naming-conventions",
     element: <NamingConventions />,
   },
 ];

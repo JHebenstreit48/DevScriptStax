@@ -34,23 +34,23 @@ const InputsOutputs = lazy(
 
 const Components: RouteObject[] = [
   {
-    path: "/angular/basics/coreconcepts/components/introduction",
+    path: "/angular/basics/core-concepts/components/introduction",
     element: <Introduction />,
   },
   {
-    path: "/angular/basics/coreconcepts/components/reusabledesign",
+    path: "/angular/basics/core-concepts/components/reusable-design",
     element: <ReusableDesign />,
   },
   {
-    path: "/angular/basics/coreconcepts/components/smartdumb",
+    path: "/angular/basics/core-concepts/components/smart-dumb",
     element: <SmartDumb />,
   },
   {
-    path: "/angular/basics/coreconcepts/components/communication",
+    path: "/angular/basics/core-concepts/components/communication",
     element: <Communication />,
   },
   {
-    path: "/angular/basics/coreconcepts/components/inputsoutputs",
+    path: "/angular/basics/core-concepts/components/inputs-outputs",
     element: <InputsOutputs />,
   }
 ];

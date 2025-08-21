@@ -6,7 +6,7 @@ import Animations from "@/Navigation/IndividualNav/Granularized/FrontEndNav/Angu
 import TSIntegration from "@/Navigation/IndividualNav/Granularized/FrontEndNav/AngularNav/Advanced/TSIntegration";
 import Security from "@/Navigation/IndividualNav/Granularized/FrontEndNav/AngularNav/Advanced/SecurityNav";
 
-const AngularAdvanced: Subpage = {
+const Advanced: Subpage = {
   name: "Advanced",
   subpages: [
     ChangeDetection,
@@ -18,4 +18,4 @@ const AngularAdvanced: Subpage = {
   ],
 };
 
-export default AngularAdvanced;
+export default Advanced;

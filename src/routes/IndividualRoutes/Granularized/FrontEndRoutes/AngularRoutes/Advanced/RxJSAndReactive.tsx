@@ -10,7 +10,7 @@ const ObservableBasics = lazy(
 
 const rxJSAndReactive: RouteObject[] = [
   {
-    path: "/angular/advanced/rxjs/observables",
+    path: '/angular/advanced/rxjs/observables',
     element: <ObservableBasics />,
   },
 ];

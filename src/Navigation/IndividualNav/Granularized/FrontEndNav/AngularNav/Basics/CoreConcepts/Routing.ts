@@ -5,15 +5,15 @@ const Routing: Subpage = {
   subpages: [
     {
       name: "Basics",
-      path: "/angular/coreconcepts/routing/basics",
+      path: "/angular/core-concepts/routing/basics",
     },
     {
       name: "Guards/Resolvers",
-      path: "/angular/coreconcepts/routing/guards",
+      path: "/angular/core-concepts/routing/guards",
     },
     {
       name: "Lazy Loading",
-      path: "/angular/coreconcepts/routing/lazyroutes",
+      path: "/angular/core-concepts/routing/lazy-loading",
     },
   ],
 };

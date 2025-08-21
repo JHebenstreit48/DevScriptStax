@@ -26,7 +26,7 @@ const Fundamentals: RouteObject[] = [
     element: <Introduction />,
   },
   {
-    path: "/angular/basics/fundamentals/creatingrunning",
+    path: "/angular/basics/fundamentals/creating-and-running",
     element: <CreateRun />,
   },
   {

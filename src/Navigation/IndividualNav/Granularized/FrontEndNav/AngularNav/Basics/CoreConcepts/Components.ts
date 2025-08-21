@@ -5,23 +5,23 @@ const Components: Subpage = {
   subpages: [
     {
       name: "Introduction",
-      path: "/angular/basics/coreconcepts/components/introduction",
+      path: "/angular/basics/core-concepts/components/introduction",
     },
     {
       name: "Reusable Design",
-      path: "/angular/basics/coreconcepts/components/reusabledesign",
+      path: "/angular/basics/core-concepts/components/reusable-design",
     },
     {
       name: "Smart/Dumb",
-      path: "/angular/basics/coreconcepts/components/smartdumb",
+      path: "/angular/basics/core-concepts/components/smart-dumb",
     },
     {
       name: "Communication",
-      path: "/angular/basics/coreconcepts/components/communication",
+      path: "/angular/basics/core-concepts/components/communication",
     },
     {
       name: "Inputs/Outputs",
-      path: "/angular/basics/coreconcepts/components/inputsoutputs",
+      path: "/angular/basics/core-concepts/components/inputs-outputs",
     },
   ],
 };

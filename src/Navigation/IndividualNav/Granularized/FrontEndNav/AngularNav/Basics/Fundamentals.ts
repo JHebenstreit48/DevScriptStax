@@ -9,7 +9,7 @@ const Fundamentals: Subpage = {
     },
     {
       name: "Creating/Running",
-      path: "/angular/basics/fundamentals/creatingrunning",
+      path: "/angular/basics/fundamentals/creating-and-running",
     },
     {
       name: "CLI",

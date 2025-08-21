@@ -22,15 +22,15 @@ const CDTemplRenderOptim = lazy(
 
 const changeDetection: RouteObject[] = [
   {
-    path: "/angular/advanced/changedetection/basics",
+    path: '/angular/advanced/change-detection/basics',
     element: <CDBasics />,
   },
   {
-    path: "/angular/advanced/changedetection/optimizing",
+    path: '/angular/advanced/change-detection/optimizing',
     element: <CDOptimizing />,
   },
   {
-    path: "/angular/advanced/changedetection/templateoptimization",
+    path: '/angular/advanced/change-detection/template-optimization',
     element: <CDTemplRenderOptim />,
   },
 ];
