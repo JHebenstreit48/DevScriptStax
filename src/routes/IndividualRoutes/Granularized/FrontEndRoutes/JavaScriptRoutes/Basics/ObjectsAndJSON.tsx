@@ -7,7 +7,7 @@ const JSON = lazy(
 
 const ObjectsAndJSON: RouteObject[] = [
   {
-    path: '/javascript/basics/objectsandjson/json',
+    path: '/javascript/basics/objects-and-json/json',
     element: <JSON />,
   },
 ];
