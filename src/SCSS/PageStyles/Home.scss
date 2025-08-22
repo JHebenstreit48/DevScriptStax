@@ -1,5 +1,4 @@
 @use "sass:color";
-@use '@scss/Globals' as *;
 
 /* =============================
    Variables
@@ -56,15 +55,13 @@ $cellphone-landscape: 390px;
   transition: box-shadow 0.3s ease;
 
   &:hover {
-    box-shadow: $site-info-hover-glow-wide;
+    box-shadow: 0px 0px 20px 6px rgba(0, 255, 255, 0.4);
   }
 
   @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
     width: $site-info-mobile-width;
     padding: 0;
-    margin: 6rem auto 0 auto;
-    box-shadow: 0px 0px 8px 4px rgba(0, 255, 255, 0.15);
-    border: 1px solid rgba(0, 255, 255, 0.2); // keep subtle aqua edge
+    margin: 7rem auto 2rem auto;
   }
 
   /* =============================

@@ -10,10 +10,15 @@
   font-size: clamp(1.6rem, 4.2vw, 2.4rem);
   font-weight: 600;
   letter-spacing: 0.02em;
-  color: #f2b443; /* amber */
-  text-shadow: 0 0 14px rgba(242,180,67,0.25);
+  color: #f2b443; /* keep original amber */
+  -webkit-text-stroke: 1px #23170e;   /* hard outline against brown */
+  text-shadow:
+    2px 3px 0 rgba(0, 188, 221, 0.61), /* inner-ish highlight (top-left) */
+     3px  5px 3px #25190f,                   /* hard shadow edge (bottom-right) */
+     4px  4px 4px rgba(82, 82, 82, 0.445),     /* short drop for lift */
+     0px  1px 3px rgba(0, 180, 171, 0.548); /* controlled teal rim */
   margin: 6rem 0 0;
-  height: 3rem; /* Added height */
+  height: 3rem;
 }
 
 .pageTitleRule {
