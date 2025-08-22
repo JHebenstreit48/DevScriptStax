@@ -3,7 +3,6 @@
 /* ==============================
             Variables           
 ============================== */
-
 $entry-bg-color: #0d0d0d;
 $logo-glow-color: rgba(255, 208, 0, 0.842);
 $button-bg-color: #681001;
@@ -29,15 +28,14 @@ $fade-duration: 0.5s;
 /* ==============================
          Breakpoints        
 ============================== */
-
 $cellphone-portrait: 390px;
 $tablet-width: 768px;
 
 /* ==============================
-         Entry Splash Screen       
+       Entry / Splash Screen     
 ============================== */
-
-.SplashScreen {
+.SplashScreen,
+.EntryScreen {
   display: flex;
   align-items: center;
   background-color: $entry-bg-color;
@@ -55,18 +53,30 @@ $tablet-width: 768px;
     width: $logo-size-desktop;
     animation: pulse 2.5s ease-in-out infinite;
     filter: drop-shadow(0 0 10px $logo-glow-color);
+
+    @media only screen and (max-width: $cellphone-portrait) {
+      width: $logo-size-mobile;
+    }
   }
 
   .splash-title {
     font-size: $font-title;
     font-weight: bold;
     margin-bottom: 0.5rem;
+
+    @media only screen and (max-width: $cellphone-portrait) {
+      font-size: $font-title-mobile;
+    }
   }
 
   .splash-desc {
     font-size: $font-desc;
     margin-bottom: 1.5rem;
     color: $text-subtle;
+
+    @media only screen and (max-width: $cellphone-portrait) {
+      font-size: $font-desc-mobile;
+    }
   }
 
   .splash-button {
@@ -89,25 +99,8 @@ $tablet-width: 768px;
       transform: scale(0.95);
       animation: flash 0.4s ease;
     }
-  }
 
-  /* ==============================
-         Cellphone Portrait       
-  ============================== */
-  @media only screen and (max-width: $cellphone-portrait) {
-    .logo {
-      width: $logo-size-mobile;
-    }
-
-    .splash-title {
-      font-size: $font-title-mobile;
-    }
-
-    .splash-desc {
-      font-size: $font-desc-mobile;
-    }
-
-    .splash-button {
+    @media only screen and (max-width: $cellphone-portrait) {
       font-size: $font-button-mobile;
     }
   }
@@ -116,7 +109,6 @@ $tablet-width: 768px;
 /* ==============================
          Animations           
 ============================== */
-
 @keyframes pulse {
   0%, 100% {
     filter: drop-shadow(0 0 10px $logo-glow-color);

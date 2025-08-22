@@ -23,6 +23,56 @@ $cellphone-portrait: 390px;
 $cellphone-landscape: 390px;
 
 /* ==============================
+        Gradient Mixin
+============================== */
+@mixin locked-gradient($mid, $end, $mid-p3, $end-p3) {
+  background: radial-gradient(
+    ellipse 115% 100% at 50% 70%,   /* lower the glow */
+    $mid 5%,                        /* tight glow */
+    $end 80%                        /* fade sooner */
+  );
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+
+  @supports not (background: radial-gradient(ellipse at center, $end)) {
+    background: -webkit-radial-gradient(ellipse at 50% 70%, $mid 5%, $end 80%);
+    background: -moz-radial-gradient(ellipse at 50% 70%, $mid 5%, $end 80%);
+    background: -o-radial-gradient(ellipse at 50% 70%, $mid 5%, $end 80%);
+    background: -ms-radial-gradient(ellipse at 50% 70%, $mid 5%, $end 80%);
+  }
+
+  /* Phones */
+  @media only screen and (max-width: $cellphone-portrait) {
+    background: radial-gradient(
+      ellipse 120% 110% at 50% 72%,
+      $mid 6%,
+      $end 82%
+    );
+  }
+
+  /* Touch devices */
+  @media (hover: none) and (pointer: coarse) {
+    background: radial-gradient(
+      ellipse 120% 110% at 50% 72%,
+      $mid 6%,
+      $end 82%
+    );
+  }
+
+  /* Wide-gamut */
+  @supports (color: color(display-p3 1 0 0)) {
+    @media (color-gamut: p3) {
+      background: radial-gradient(
+        ellipse 120% 110% at 50% 72%,
+        $mid-p3 6%,
+        $end-p3 82%
+      );
+    }
+  }
+}
+
+/* ==============================
      Global Reset / Defaults
 ============================== */
 html, body {
@@ -31,7 +81,7 @@ html, body {
   height: 100%;
   width: 100%;
   box-sizing: border-box;
-  background-color: #0d0d0d; // solid for splash/entry
+  background-color: #0d0d0d;
   overflow-x: hidden;
 }
 
@@ -41,67 +91,29 @@ html, body {
 .appContainer {
   display: grid;
   grid-template-rows: auto 1fr auto;
-  min-height: 100vh;   /* fallback */
-  min-height: 100dvh;  /* iOS-friendly */
+  min-height: 100vh;
+  min-height: 100dvh;
   position: relative;
 
-  /* Desktop & general baseline — SAME look as before */
-  background: radial-gradient(
-    circle at center,
-    $gradient-middle 10%,
-    $gradient-end 80%
-  );
-  background-repeat: no-repeat;
-  background-size: cover;
+  isolation: isolate;
+  background: transparent;
 
-  /* Legacy vendor fallbacks */
-  @supports not (background: radial-gradient(circle, $gradient-end)) {
-    background: -webkit-radial-gradient(circle, $gradient-middle 50%, $gradient-end 100%);
-    background: -moz-radial-gradient(circle, $gradient-middle 50%, $gradient-end 100%);
-    background: -o-radial-gradient(circle, $gradient-middle 50%, $gradient-end 100%);
-    background: -ms-radial-gradient(circle, $gradient-middle 50%, $gradient-end 100%);
-  }
+  &::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    width: 100vw;
+    height: 100vh;
+    height: 100svh;
+    height: 100dvh;
 
-  /* Phones at ~iPhone 13 width — keep the gradient, just scale stops */
-  @media only screen and (max-width: $cellphone-portrait) {
-    background: radial-gradient(
-      circle at 50% 38%,
-      $gradient-middle 18%,
-      $gradient-end 88%
-    );
-    background-size: cover;
-    background-position: center;
-  }
-
-  /* Touch devices (Android/iOS) — gentle tweak without removing gradient */
-  @media (hover: none) and (pointer: coarse) {
-    background: radial-gradient(
-      circle at 50% 38%,
-      $gradient-middle 16%,
-      $gradient-end 85%
+    @include locked-gradient(
+      $gradient-middle,
+      $gradient-end,
+      $gradient-middle-p3,
+      $gradient-end-p3
     );
   }
-
-  /* Wide-gamut enhancement where supported (keeps sRGB elsewhere) */
-  @supports (color: color(display-p3 1 0 0)) {
-    @media (color-gamut: p3) {
-      background: radial-gradient(
-        circle at 50% 38%,
-        $gradient-middle-p3 18%,
-        $gradient-end-p3 88%
-      );
-    }
-  }
-}
-
-/* ==============================
-   Override Entry / Splash Pages
-============================== */
-.SplashScreen,
-.EntryScreen {
-  background-color: #0d0d0d !important;
-  background-image: none !important;
-  min-height: 100vh;   /* fallback */
-  min-height: 100dvh;  /* iOS-friendly */
-  color: $text-color;
 }

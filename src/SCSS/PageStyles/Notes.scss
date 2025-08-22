@@ -19,7 +19,7 @@ $background-header: rgb(40, 44, 52);
 $table-border: #ddd;
 $table-header-bg: #333;
 $table-cell-bg: #444;
-$dropdown-hover: rgb(60, 60, 60);
+$dropdown-hover: rgb(60, 60, 60); // ✅ Added missing variable
 
 $font-main: 'Arial', sans-serif;
 $font-monospace: monospace;
@@ -61,14 +61,14 @@ $small-laptop-min: 1024px;
   background-color: $background-dark;
   z-index: 1;
   border-radius: 1rem;
-  box-shadow:
-    inset 0 0 17px 5px rgba(0, 0, 0, 0.4),
+  box-shadow: inset 0 0 17px 5px rgba(0, 0, 0, 0.4),
+    // slightly softened inner shadow
     0 0 6px 1px $secondary-color;
+  // outer shadow (your glow)
 
   @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
     width: 23rem;
-    margin: 11rem auto 10rem auto;
-    overflow: hidden; // contain any residual overflow on tiny screens
+    margin: 3rem auto 10rem auto;
   }
 
   .markdownContent {
@@ -88,8 +88,7 @@ $small-laptop-min: 1024px;
       width: 96%;
       margin: 0 auto;
       font-size: 1rem;
-      padding: 0rem;
-      min-width: 0; // allow flex child content (tables) to shrink
+      padding-top: 1rem;
     }
 
     .loadingMessage {
@@ -142,16 +141,8 @@ $small-laptop-min: 1024px;
       }
     }
 
-    /* =============================
-       Emphasis (global)
-       ============================= */
     .emphasis {
       @include text-emphasis($secondary-color, 23px);
-      // Global look; table-specific sizes live under the table section.
-      white-space: normal;
-      overflow-wrap: anywhere;
-      word-break: normal;
-      hyphens: auto;
     }
 
     .secondEmphasis {
@@ -202,8 +193,7 @@ $small-laptop-min: 1024px;
 
       li {
         list-style-type: disc;
-        width: 10%;
-
+        width:10%;
         p {
           margin: 0;
         }
@@ -220,146 +210,62 @@ $small-laptop-min: 1024px;
       padding-left: 15rem;
     }
 
-    .bullet5 {
-      column-count: 1;
-      padding-left: 4.5rem;
+    .tableWrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       width: 100%;
-      margin: 0;
-
-      p {
-        margin: 0 0 1rem 0;
-        width: 100%;
-      }
-    }
-
-/* =============================
-   Tables
-   ============================= */
-   .tableWrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  
-    @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
-      overflow-x: auto; // safe horizontal scroll on tiny screens
-      -webkit-overflow-scrolling: touch;
-    }
-  
-    .notesTable {
-      width: 35rem;               // desktop/tablet default
-      border-collapse: collapse;
-      margin: 1rem 0;
-      table-layout: fixed;        // ← makes column widths predictable
-  
-      /* Default widths (2-column tables). Tweak per table via inline style. */
-      --col1: 34%;
-      --col2: 66%;
-  
-      /* Apply widths */
-      th:nth-child(1), td:nth-child(1) { width: var(--col1); min-width: 9rem; }
-      th:nth-child(2), td:nth-child(2) { width: var(--col2); }
-  
-      /* If you have 3-column tables, add class "notesTable--3col" in HTML */
-      &.notesTable--3col {
-        --col1: 26%;
-        --col2: 37%;
-        --col3: 37%;
-        th:nth-child(3), td:nth-child(3) { width: var(--col3); }
-      }
-  
-      @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
-        width: 100%;
-        max-width: 100%;
-        table-layout: fixed;
-        margin: 0.5rem auto;
-        font-size: 0.85rem;
-  
-        /* Mobile defaults; override per table with inline CSS vars if needed */
-        --col1: 30%;
-        --col2: 70%;
-      }
-    }
-  
-    .tableHeader {
-      background-color: $table-header-bg;
-    }
-  
-    .tableCellHeader {
-      text-align: center;
-      padding: 12px;
-      border: 1px solid $table-border;
-      background-color: $table-cell-bg;
-      font-weight: bold;
-  
-      /* Emphasis inside header cells — DEFAULT (all sizes) */
-      .emphasis {
-        line-height: 1.2;      // smaller than global 23px in headers
-        white-space: normal;
-        overflow-wrap: break-word;   // nicer breaks than "anywhere"
-        word-break: normal;
-        hyphens: auto;
-      }
-  
-      @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
-        width: auto;
-        padding: 6px;
-        white-space: normal;
-        overflow-wrap: break-word;
-        hyphens: auto;
-        border-width: 0.5px;
-        font-size: 1rem;        // match header size on phones
-      }
-    }
-  
-    .tableRow:hover {
-      background-color: rgba(255, 255, 255, 0.1);
-      transition: background-color 0.3s ease-in-out;
-    }
-  
-    .tableCell,
-    .centeredCell {
-      padding: 10px;
-      text-align: left;
-      border: 1px solid $table-border;
-      background-color: $background-table;
-  
-      /* Prevent long tokens from blowing layout */
-      white-space: normal;
-      overflow-wrap: break-word;   // friendlier than "anywhere"
-      word-break: normal;
-      hyphens: auto;
-  
-      /* Emphasis inside body cells — DEFAULT (all sizes) */
-      .emphasis {
-        line-height: 1.2;
-        font-size: 1rem;           // smaller than global 23px in body cells
-        white-space: normal;
-        overflow-wrap: break-word;
-        word-break: normal;
-        hyphens: auto;
-      }
-  
-      @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
-        width: auto;
-        padding: 6px;
-        border-width: 0.5px;
-  
-        .emphasis {
-          font-size: 0.98rem;       // tighter on phones
-          line-height: 1.15;
+    
+      .notesTable {
+        width: 35rem; // Standardize ALL tables
+        border-collapse: collapse;
+        margin: 1rem 0;
+    
+        @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
+          width: 100%;
         }
       }
+    
+      .tableHeader {
+        background-color: $table-header-bg;
+      }
+    
+      .tableCellHeader {
+        text-align: center;
+        padding: 12px;
+        border: 1px solid $table-border;
+        background-color: $table-cell-bg;
+        font-weight: bold;
+    
+        @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
+          width: 50%;
+          word-wrap: break-word;
+        }
+      }
+    
+      .tableRow:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+        transition: background-color 0.3s ease-in-out;
+      }
+    
+      .tableCell,
+      .centeredCell {
+        padding: 10px;
+        text-align: left;
+        border: 1px solid $table-border;
+        background-color: $background-table;
+    
+        @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
+          width: 50%;
+          word-wrap: break-word;
+        }
+      }
+    
+      .tableEmphasis {
+        @include text-emphasis($secondary-color, 1.4rem);
+      }
     }
-  
-    .tableEmphasis {
-      @include text-emphasis($secondary-color, 1.4rem);
-    }
-  }  
-
-    /* =============================
-       Code Blocks
-       ============================= */
+    
     .codeBlockWrapper {
       position: relative;
       border: 1px solid #444;
