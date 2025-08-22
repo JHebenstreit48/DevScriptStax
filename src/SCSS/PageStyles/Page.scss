@@ -1,30 +1,30 @@
 @use "sass:color";
 
 /* ==============================
-            Variables           
+            Variables
 ============================== */
-$gradient-middle:#250069;  // Bright orange (terminal fire)
-$gradient-end: #0f002b;     // Anchored black
-
-
+$gradient-middle: #250069;   // purple center
+$gradient-end:    #0f002b;   // deep edge
 
 $text-color: #ffffff;
-$text-glow: #00ffff;
+$text-glow:  #00ffff;
 
 $font-size-lg: 60px;
 $font-size-sm: 3rem;
 
-/* ==============================
-           Breakpoints        
-============================== */
+/* (Optional) Wide-gamut Display-P3 equivalents for subtle enhancement */
+$gradient-middle-p3: color(display-p3 0.18 0 0.41);
+$gradient-end-p3:    color(display-p3 0.06 0 0.17);
 
+/* ==============================
+           Breakpoints
+============================== */
 $cellphone-portrait: 390px;
 $cellphone-landscape: 390px;
 
 /* ==============================
      Global Reset / Defaults
 ============================== */
-
 html, body {
   margin: 0;
   padding: 0;
@@ -38,13 +38,14 @@ html, body {
 /* ==============================
      Styles for App.tsx Layout
 ============================== */
-
 .appContainer {
   display: grid;
   grid-template-rows: auto 1fr auto;
-  min-height: 100vh;
+  min-height: 100vh;   /* fallback */
+  min-height: 100dvh;  /* iOS-friendly */
   position: relative;
 
+  /* Desktop & general baseline — SAME look as before */
   background: radial-gradient(
     circle at center,
     $gradient-middle 10%,
@@ -53,28 +54,54 @@ html, body {
   background-repeat: no-repeat;
   background-size: cover;
 
+  /* Legacy vendor fallbacks */
   @supports not (background: radial-gradient(circle, $gradient-end)) {
     background: -webkit-radial-gradient(circle, $gradient-middle 50%, $gradient-end 100%);
     background: -moz-radial-gradient(circle, $gradient-middle 50%, $gradient-end 100%);
     background: -o-radial-gradient(circle, $gradient-middle 50%, $gradient-end 100%);
     background: -ms-radial-gradient(circle, $gradient-middle 50%, $gradient-end 100%);
   }
-  
+
+  /* Phones at ~iPhone 13 width — keep the gradient, just scale stops */
   @media only screen and (max-width: $cellphone-portrait) {
-    background: radial-gradient(circle at center, $gradient-end 100%);
-    background-size: auto;
+    background: radial-gradient(
+      circle at 50% 38%,
+      $gradient-middle 18%,
+      $gradient-end 88%
+    );
+    background-size: cover;
     background-position: center;
+  }
+
+  /* Touch devices (Android/iOS) — gentle tweak without removing gradient */
+  @media (hover: none) and (pointer: coarse) {
+    background: radial-gradient(
+      circle at 50% 38%,
+      $gradient-middle 16%,
+      $gradient-end 85%
+    );
+  }
+
+  /* Wide-gamut enhancement where supported (keeps sRGB elsewhere) */
+  @supports (color: color(display-p3 1 0 0)) {
+    @media (color-gamut: p3) {
+      background: radial-gradient(
+        circle at 50% 38%,
+        $gradient-middle-p3 18%,
+        $gradient-end-p3 88%
+      );
+    }
   }
 }
 
 /* ==============================
    Override Entry / Splash Pages
 ============================== */
-
 .SplashScreen,
 .EntryScreen {
   background-color: #0d0d0d !important;
   background-image: none !important;
-  min-height: 100vh;
+  min-height: 100vh;   /* fallback */
+  min-height: 100dvh;  /* iOS-friendly */
   color: $text-color;
 }
