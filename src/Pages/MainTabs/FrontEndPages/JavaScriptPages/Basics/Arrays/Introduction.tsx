@@ -3,18 +3,18 @@ import Header from '@/Components/Shared/Header/Header';
 import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
-const Basics = () => {
-  const markdownFilePath = 'FrontEndNotes/JavaScriptNotes/Basics/FunctionsNotes/BasicsAndDeclare';
+const Introduction = () => {
+  const markdownFilePath = 'FrontEndNotes/JavaScriptNotes/Basics/Arrays/Introduction';
 
   return (
     <>
       <PageLayout>
         <Header />
-        <PageTitle title="JavaScript Functions Basics & Declarations" />
+        <PageTitle title="Introduction to JavaScript Arrays" />
         <Notes filePath={markdownFilePath} />
       </PageLayout>
     </>
   );
 };
 
-export default Basics;
+export default Introduction;

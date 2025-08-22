@@ -70,7 +70,7 @@ const CoreConcepts: RouteObject[] = [
     element: <Loops />,
   },
   {
-    path: "/javascript/basics/core/scopeandcontext",
+    path: "/javascript/basics/core/scope-and-context",
     element: <ScopeAndContext />,
   },
 ];

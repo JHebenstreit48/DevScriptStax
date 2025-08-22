@@ -5,7 +5,7 @@ const Arrays: Subpage = {
   subpages: [
     {
       name: 'Introduction to Arrays',
-      path: '/javascript/basics/arrays/intro',
+      path: '/javascript/basics/arrays/introduction',
     },
     {
       name: 'Common Array Methods',

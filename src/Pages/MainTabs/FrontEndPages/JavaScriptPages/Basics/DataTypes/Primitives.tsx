@@ -1,13 +1,16 @@
-import Notes from '@/Components/PageComponents/Notes/Notes';
 import Header from "@/Components/Shared/Header/Header";
+import PageTitle from '@/Components/PageComponents/PageTitle';
+import Notes from '@/Components/PageComponents/Notes/Notes';
 
-const JSPrimitives = () => {
-    const markdownFilePath = 'FrontEndNotes/JavaScriptNotes/Basics/CoreLanguageConcepts/DataTypes';
+
+const Primitives = () => {
+    const markdownFilePath = 'FrontEndNotes/JavaScriptNotes/Basics/DataTypes/Primitives';
 
     return (
 
         <>
-            <Header text="Primitive Data Types" />
+            <Header />
+            <PageTitle title="JavaScript Primitive Data Types" />
             <Notes filePath={markdownFilePath}
                 
             />
@@ -16,4 +19,4 @@ const JSPrimitives = () => {
 
 };
 
-export default JSPrimitives;
+export default Primitives;
