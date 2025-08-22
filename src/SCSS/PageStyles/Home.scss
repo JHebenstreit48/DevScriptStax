@@ -63,6 +63,8 @@ $cellphone-landscape: 390px;
     width: $site-info-mobile-width;
     padding: 0;
     margin: 6rem auto 0 auto;
+    box-shadow: 0px 0px 8px 4px rgba(0, 255, 255, 0.15);
+    border: 1px solid rgba(0, 255, 255, 0.2); // keep subtle aqua edge
   }
 
   /* =============================
