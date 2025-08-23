@@ -1,4 +1,21 @@
 @use 'Colors' as *;
 
+/* ==============================
+   Navigation Shadows
+   ============================== */
+
+/* Text shadows */
+$nav-text-shadow-dim: 2px 2px 2px $text-shadow-dim;
+
+/* Dropdown elevation */
+$nav-dropdown-elevation: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+/* Tooltip glow */
+$tooltip-cyan-medium: rgba(0, 255, 255, 0.4);
+$tooltip-box-glow: 0 0 10px $tooltip-cyan-medium;
+
+/* Modal */
+$modal-drop: 0 8px 24px $modal-shadow-color;
+
 // ------------- Site Info Box --------------------------
-$site-info-hover-glow-wide: 0 0 20px 6px $site-info-box-shadow;
+// $site-info-hover-glow-wide: 0 0 20px 6px $site-info-box-shadow;

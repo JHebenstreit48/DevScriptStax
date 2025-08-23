@@ -1,66 +1,35 @@
-// ==============================
-// Colors.scss — descriptive tokens (words only)
-// ==============================
+/* Navigation palette */
+$level-1: rgb(7, 193, 255);
+$level-2: rgb(218, 165, 32);
+$level-3: rgb(19, 145, 2);
+$level-4: rgb(201, 84, 255);
+$level-5: rgb(165, 0, 206);
+$nav-level-1-brand: #1e90ff; // explicit top-level link color
 
-// Blacks / dark surfaces
-$pure-black: #000000;
-$almost-black-nearly-opaque: rgba(0, 0, 0, 0.9);   // header background
-$black-light-transparent: rgba(0, 0, 0, 0.3);      // footer background
-$near-black-solid: #0d0d0d;                        // entry background
+$background-dark: rgb(22, 22, 22);
+$dropdown-bg: rgb(38, 38, 39);
+$dropdown-hover: rgb(60, 60, 60);
+$scrollbar-track: rgb(73, 73, 73);
 
-// Whites
-$pure-white: #ffffff;
-$white-soft: rgba(255, 255, 255, 0.7);
+/* Navigation */
+$text-shadow-dim: rgb(68, 68, 68);      // for nav text-shadow
+$nav-overlay-bg: rgba(0, 0, 0, 0.95);   // mobile open menu bg overlay
 
-// Blues
-$royal-blue: #007bff;                              // older primary
-$royal-blue-deep: #0056b3;                         // hover blue
-$bright-sky-blue: rgb(6, 159, 248);                // current primary blue
+/* PageLayout tooltip */
+$tooltip-bg-strong: rgba(0, 0, 0, 0.95);
+$tooltip-cyan: #00ffff;
+$tooltip-cyan-dim: #00cccc;
+$tooltip-border-cyan: rgba(0, 255, 255, 0.2);
 
-// Cyans (used for borders/glows)
-$pure-cyan: #00ffff;                               // text glow color
-$cyan-very-transparent: rgba(0, 255, 255, 0.2);    // subtle border/glow
-$cyan-medium-transparent: rgba(0, 255, 255, 0.4);  // stronger glow
+/* SearchModal colors */
+$modal-bg: rgba(0, 0, 0, 0.6);
+$modal-content-bg: #fff;
+$modal-text-color: #111;
+$modal-shadow-color: rgba(0, 0, 0, 0.3);
+$close-color: #444;
+$close-hover: #000;
+$link-color: #007bff;           // matches your $royal-blue
+$link-hover-underline: underline;
+$breadcrumb-color: #777;
+$empty-text-color: #666;
 
-// Greens / teals
-$dark-forest-green: #032c2c;                       // earlier text color
-
-// Reds / browns
-$dark-burgundy: #681001;                           // button background
-
-// Golds
-$golden-amber-strong: rgba(255, 208, 0, 0.842);    // logo/button glow gold
-
-// Navy overlay
-$navy-overlay-soft: rgba(12, 22, 76, 0.21);        // section background overlay
-
-
-// ==============================
-// Temporary aliases (keep while you migrate)
-// ==============================
-
-$header-bg-color: $almost-black-nearly-opaque;
-$header-border-color: $cyan-very-transparent;
-
-$text-color: $pure-white;            // canonical text
-/* if you purposely need the dark one somewhere: use $dark-forest-green */
-
-$primary-color: $bright-sky-blue;    // canonical primary blue
-$hover-color: $royal-blue-deep;
-
-$entry-bg-color: $near-black-solid;
-$button-bg-color: $dark-burgundy;
-$text-subtle: $white-soft;
-$footer-bg-color: $black-light-transparent;
-$primary-bg-color: $navy-overlay-soft;
-
-$accent-glow: $cyan-very-transparent;
-
-/* moved here from Shadows.scss — these are COLORS, not effects */
-$site-info-box-shadow: $cyan-medium-transparent;
-$box-shadow-color: $pure-black;
-$text-glow: $pure-cyan;
-$logo-glow-color: $golden-amber-strong;
-
-/* optional legacy alias if still referenced somewhere */
-$primary-color-legacy: $royal-blue;

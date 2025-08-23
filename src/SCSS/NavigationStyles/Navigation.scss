@@ -1,36 +1,9 @@
 @use 'sass:color';
+@use '@scss/Globals' as *;
 
 /* ==============================
-            Variables           
-   ============================== */
-
-$level-1: rgb(7, 193, 255);
-$level-2: rgb(218, 165, 32);
-$level-3: rgb(19, 145, 2);
-$level-4: rgb(201, 84, 255);
-$level-5: rgb(165, 0, 206);
-$background-dark: rgb(22, 22, 22);
-$dropdown-bg: rgb(38, 38, 39);
-$dropdown-hover: rgb(60, 60, 60);
-$scrollbar-track: rgb(73, 73, 73);
-
-$font-lg: 1.6rem;
-$font-md: 1.3rem;
-$font-sm: 1.25rem;
-$font-xs: 1rem;
-$dropdown-width: 17rem;
-
-/* ==============================
-           Breakpoints          
-   ============================== */
-$cellphone-portrait: 480px;
-$cellphone-landscape: 390px;
-$small-laptop-max: 1366px;
-$small-laptop-min: 1024px;
-
-/* ==============================
-        Hamburger Menu Button    
-   ============================== */
+        Hamburger Menu Button
+============================== */
 .hamburgerButton {
   display: none;
 
@@ -41,49 +14,47 @@ $small-laptop-min: 1024px;
     font-size: 2rem;
     color: $level-1;
     cursor: pointer;
-    z-index: 15;
+    z-index: $z-nav-hamburger;
     align-self: center;
   }
 }
 
 /* ==============================
-         Navigation Menu         
-   ============================== */
+           Navigation Menu
+============================== */
 .navigationMenu {
   width: 100%;
   display: flex;
-  left: 37rem;
+  left: $nav-left-desktop;
   flex-direction: row;
   align-items: center;
-  z-index: 10;
+  z-index: $z-nav;
   padding: 0;
   transition: all 0.3s ease;
   margin-left: auto; // Pushes nav to the right inside HeaderBar
-  // Remove top positioning now that it's inside HeaderBar
   position: fixed;
-  
+
   @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
     position: relative;
-    left: 0; // ✅ Reset the position for mobile
-    margin-top: 0.5rem;
-    justify-content: flex-end; // ✅ Align hamburger right
-    right: 0.5rem;
+    left: 0; // Reset for mobile
+    margin-top: $nav-mobile-margin-top;
+    justify-content: flex-end; // Align hamburger right
+    right: $nav-mobile-right;
     width: 100%;
   }
 }
 
 /* ==============================
-          Navigation Content         
-   ============================== */
+          Navigation Content
+============================== */
 .navigationContent {
-  // Show normally on large screens
   display: flex;
   flex-direction: row;
   align-items: center;
   width: auto;
   padding-top: 0;
 
-  // ✅ MOBILE ONLY – hide by default, show when .open
+  // MOBILE ONLY – hide by default, show when .open
   @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
     display: none;
 
@@ -92,41 +63,41 @@ $small-laptop-min: 1024px;
       top: 100%; // Just under the header
       left: 0;
       width: 100%;
-      background-color: rgba(0, 0, 0, 0.95);
+      background-color: $nav-overlay-bg;
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 1rem 0;
-      z-index: 11;
+      padding: $nav-dropdown-padding;
+      z-index: $z-nav-overlay;
     }
   }
 }
 
 /* ==============================
-          Search Icon Container        
-         ============================== */
+          Search Icon Container
+============================== */
 .searchIconContainer {
   position: absolute;
-  left: 75rem;
-  top: 60%;
+  left: $nav-search-left-desktop;
+  top: $nav-search-top-desktop;
   transform: translateY(-50%);
-  z-index: 11;
+  z-index: $z-nav-overlay;
 
   @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
     display: flex;
     flex-direction: column;
     left: 45%;
-    top: 0.8rem;
+    top: $nav-search-top-mobile;
   }
 
   @media only screen and (min-width: $small-laptop-min) and (max-width: $small-laptop-max) {
-    left: 2.5rem;
+    left: $nav-search-left-laptop;
   }
 }
 
 /* ==============================
-           Search Icon Button          
-   ============================== */
+           Search Icon Button
+============================== */
 .searchIconButton {
   background-color: transparent;
   border: none;
@@ -142,12 +113,12 @@ $small-laptop-min: 1024px;
 }
 
 .mainNav {
-  margin-top: 0.2rem;
+  margin-top: $mainnav-margin-top;
 }
 
 /* ==============================
-           Dropdown Button Style       
-   ============================== */
+           Dropdown Button Style
+============================== */
 .dropdownButton {
   display: flex;
   flex-direction: column;
@@ -158,14 +129,14 @@ $small-laptop-min: 1024px;
   color: $level-1;
   text-align: center;
   text-decoration: none;
-  text-shadow: 2px 2px 2px rgb(68, 68, 68);
+  text-shadow: $nav-text-shadow-dim;
 
   &:hover {
     text-decoration: underline;
   }
 
   &.level-1 {
-    color: #1e90ff;
+    color: $nav-level-1-brand;
     font-size: $font-lg;
     margin: 0 auto;
     padding: 0;
@@ -185,6 +156,7 @@ $small-laptop-min: 1024px;
     color: $level-4;
     font-size: $font-sm;
   }
+
   &.level-5 {
     color: $level-5;
     font-size: $font-xs;
@@ -206,14 +178,7 @@ $small-laptop-min: 1024px;
   @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
     font-size: 1.3rem;
     padding: 0.5rem;
-  }
-
-  @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    margin-top: 0.3rem;
-    padding: 0 auto;
+    gap: $nav-gap-mobile;
   }
 
   @media only screen and (min-width: $small-laptop-min) and (max-width: $small-laptop-max) {
@@ -222,8 +187,8 @@ $small-laptop-min: 1024px;
 }
 
 /* ==============================
-              Dropdown Layout          
-         ============================== */
+              Dropdown Layout
+============================== */
 .dropdown {
   position: relative;
   display: inline-block;
@@ -238,8 +203,8 @@ $small-laptop-min: 1024px;
 }
 
 /* ==============================
-          Dropdown Menu Content        
-         ============================== */
+          Dropdown Menu Content
+============================== */
 .dropdownContent {
   position: absolute;
   top: 100%;
@@ -247,28 +212,28 @@ $small-laptop-min: 1024px;
   transform: translateX(-50%);
   background-color: $dropdown-bg;
   min-width: $dropdown-width;
-  border-radius: 5px;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: $dropdown-radius;
+  box-shadow: $nav-dropdown-elevation;
   text-align: center;
-  padding: 1rem 0;
+  padding: $nav-dropdown-padding;
   display: none;
-  z-index: 12;
+  z-index: $z-nav-dropdown;
 
   &.active {
     display: grid;
     grid-template-columns: 1fr;
-    max-height: 31.2rem;
+    max-height: $nav-dropdown-max-height;
     overflow-y: auto;
     scrollbar-width: thin;
     scrollbar-color: $dropdown-hover $scrollbar-track;
 
     &::-webkit-scrollbar {
-      width: 6px;
+      width: $scrollbar-width-thin;
     }
 
     &::-webkit-scrollbar-thumb {
       background: $dropdown-hover;
-      border-radius: 5px;
+      border-radius: $dropdown-radius;
 
       &:hover {
         background: color.adjust($dropdown-hover, $lightness: 10%);
@@ -289,14 +254,14 @@ $small-laptop-min: 1024px;
       background: transparent;
       box-shadow: none;
       padding: 0;
-      margin-top: 0.5rem;
+      margin-top: $nav-dropdown-mobile-margin-top;
     }
   }
 }
 
 /* ==============================
-        Active Nested Dropdown Menu  
-       ============================== */
+        Active Nested Dropdown Menu
+============================== */
 .dropdownMenu.active {
   display: flex;
   flex-direction: column;
