@@ -11,3 +11,11 @@ $tooltip-font-size: 0.95rem;
 /* Modal */
 $modal-header-size: 1.5rem;
 $modal-body-font: 1.1rem; // used by .resetButton etc.
+
+/* ===== Notes: fonts & sizes ===== */
+$font-main: 'Arial', sans-serif;
+$font-monospace: monospace;
+$notes-emphasis-size: 23px;
+$notes-sub2-size: 30px;
+$notes-table-emphasis-size: 1.4rem;
+$notes-code-font: normal 1.3rem/1.5 $font-monospace;
