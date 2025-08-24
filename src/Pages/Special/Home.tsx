@@ -1,6 +1,6 @@
 import Header from '@/Components/Shared/Header/Header';
 import NotesHome from '@/Components/PageComponents/Notes/NotesHome'; // <-- new file
-import '@/SCSS/PageStyles/Home.scss';
+import '@/SCSS/PageStyles/HomeStyles/Home.scss';
 
 const Home = () => {
   return (

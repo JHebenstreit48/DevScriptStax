@@ -17,5 +17,13 @@ $tooltip-box-glow: 0 0 10px $tooltip-cyan-medium;
 /* Modal */
 $modal-drop: 0 8px 24px $modal-shadow-color;
 
+/* ===== Notes: shadows ===== */
+$notes-text-shadow: 1px 2px 1px black;
+$notes-hr-shadow: 2px 2px 2px black;
+
+$notes-card-inner: inset 0 0 17px 5px rgba(0, 0, 0, 0.4);
+$notes-card-outer: 0 0 6px 1px $notes-secondary;
+
+
 // ------------- Site Info Box --------------------------
 // $site-info-hover-glow-wide: 0 0 20px 6px $site-info-box-shadow;
