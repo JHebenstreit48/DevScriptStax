@@ -22,15 +22,15 @@ const CLI = lazy(
 
 const Fundamentals: RouteObject[] = [
   {
-    path: "/angular/basics/fundamentals/introduction",
+    path: '/angular/basics/fundamentals/introduction',
     element: <Introduction />,
   },
   {
-    path: "/angular/basics/fundamentals/creating-and-running",
+    path: '/angular/basics/fundamentals/creating-and-running',
     element: <CreateRun />,
   },
   {
-    path: "/angular/basics/fundamentals/cli",
+    path: '/angular/basics/fundamentals/cli',
     element: <CLI />,
   },
 ];
