@@ -154,7 +154,6 @@
     letter-spacing: .3px;
   }
 
-  /* ===== Level 2: strongest band & edges */
   &.level-2 {
     color: $level-2;
     font-size: 1.05rem;
@@ -163,20 +162,18 @@
     padding-block: .36rem;
     border-top: 1px solid rgba(255,255,255,.12);
 
-    /* stronger raised strip */
+    /* Light glaze + deeper bottom crease */
     background: linear-gradient(
       to bottom,
-      rgba(255,255,255,.12) 0%,
-      rgba(255,255,255,.05) 58%,
-      rgba(0,0,0,.20) 100%
+      rgba(255,255,255,.08) 0%,     /* highlight */
+      rgba(255,255,255,.03) 30%,
+      rgba(0,0,0,.18) 100%          /* shadow */
     );
-    /* crisp bottom crease for separation */
     box-shadow:
-      inset 0 1px 0 rgba(255,255,255,.07),
-      inset 0 -2px 0 rgba(0,0,0,.75);
+      inset 0 -1px 0 rgba(0,0,0,.60);
   }
 
-  /* ===== Level 3: one notch down, still obvious */
+  /* ===== Level 3: medium band (less grey than L2) */
   &.level-3 {
     color: $level-3;
     font-size: 1.05rem;
@@ -187,51 +184,49 @@
 
     background: linear-gradient(
       to bottom,
-      rgba(255,255,255,.10) 0%,
-      rgba(255,255,255,.04) 58%,
-      rgba(0,0,0,.17) 100%
+      rgba(255,255,255,.05) 0%,
+      rgba(255,255,255,.02) 30%,
+      rgba(0,0,0,.14) 100%
     );
     box-shadow:
-      inset 0 1px 0 rgba(255,255,255,.05),
-      inset 0 -2px 0 rgba(0,0,0,.68);
+      inset 0 -1px 0 rgba(0,0,0,.50);
   }
 
-  /* ===== Level 4: lighter band, still distinct */
+  /* ===== Level 4: light band (minimal grey, mostly dark) */
   &.level-4 {
     color: $level-4;
     font-size: 1rem;
     font-weight: 700;
     letter-spacing: .15px;
     padding-block: .28rem;
-    border-top: 1px solid rgba(255,255,255,.09);
+    border-top: 1px solid rgba(255,255,255,.08);
 
     background: linear-gradient(
       to bottom,
-      rgba(255,255,255,.08) 0%,
-      rgba(255,255,255,.03) 58%,
-      rgba(0,0,0,.14) 100%
+      rgba(255,255,255,.03) 0%,
+      rgba(255,255,255,.01) 30%,
+      rgba(0,0,0,.10) 100%
     );
     box-shadow:
-      inset 0 1px 0 rgba(255,255,255,.04),
-      inset 0 -2px 0 rgba(0,0,0,.60);
+      inset 0 -1px 0 rgba(0,0,0,.42);
   }
 
-  /* ===== Level 5: pages — clearly darker than L4 */
+  /* ===== Level 5: pages — clearly lighter band than L4 (but still distinct) */
   &.level-5 {
     color: $level-5;
     font-size: .95rem;
     font-weight: 500;
     text-shadow: 1px 1px 1px rgba(0,0,0,.7);
-    border-top: 1px solid rgba(255,255,255,.08);
+    border-top: 1px solid color.change($level-5, $alpha: .26);
 
-    /* darker base so L4→L5 step pops immediately */
+    /* darker top → lighter bottom so L4→L5 step is obvious */
     background: linear-gradient(
       to bottom,
-      rgba(255,255,255,.05) 0%,
-      rgba(0,0,0,.26) 100%
+      rgba(0,0,0,.22) 0%,
+      rgba(255,255,255,.05) 100%
     );
     box-shadow:
-      inset 0 -2px 0 rgba(0,0,0,.64);
+      inset 0 -2px 0 rgba(0,0,0,.58);
   }
 
   .level-1, .level-2, .level-3, .level-4, .level-5 {
