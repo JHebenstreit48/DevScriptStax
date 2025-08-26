@@ -1,4 +1,5 @@
 @use "sass:color";
+@use '@scss/Globals' as *;
 
 /* ==============================
             Variables
@@ -12,20 +13,10 @@ $text-glow:  #00ffff;
 $font-size-lg: 60px;
 $font-size-sm: 3rem;
 
-/* (Optional) Wide-gamut Display-P3 equivalents for subtle enhancement */
-$gradient-middle-p3: color(display-p3 0.18 0 0.41);
-$gradient-end-p3:    color(display-p3 0.06 0 0.17);
-
 /* ==============================
-           Breakpoints
+        Gradient Mixin (sRGB-only)
 ============================== */
-$cellphone-portrait: 390px;
-$cellphone-landscape: 390px;
-
-/* ==============================
-        Gradient Mixin
-============================== */
-@mixin locked-gradient($mid, $end, $mid-p3, $end-p3) {
+@mixin locked-gradient($mid, $end) {
   background: radial-gradient(
     ellipse 115% 100% at 50% 70%,   /* lower the glow */
     $mid 5%,                        /* tight glow */
@@ -58,17 +49,6 @@ $cellphone-landscape: 390px;
       $mid 6%,
       $end 82%
     );
-  }
-
-  /* Wide-gamut */
-  @supports (color: color(display-p3 1 0 0)) {
-    @media (color-gamut: p3) {
-      background: radial-gradient(
-        ellipse 120% 110% at 50% 72%,
-        $mid-p3 6%,
-        $end-p3 82%
-      );
-    }
   }
 }
 
@@ -109,11 +89,6 @@ html, body {
     height: 100svh;
     height: 100dvh;
 
-    @include locked-gradient(
-      $gradient-middle,
-      $gradient-end,
-      $gradient-middle-p3,
-      $gradient-end-p3
-    );
+    @include locked-gradient($gradient-middle, $gradient-end);
   }
 }
