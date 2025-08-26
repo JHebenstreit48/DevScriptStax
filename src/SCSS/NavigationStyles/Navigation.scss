@@ -113,6 +113,7 @@
 ============================== */
 .dropdownButton {
   display: flex;
+  position: relative;
   flex-direction: column;
   background-color: transparent;
   border: none;
@@ -153,76 +154,84 @@
     letter-spacing: .3px;
   }
 
+  /* ===== Level 2: strongest band & edges */
   &.level-2 {
     color: $level-2;
     font-size: 1.05rem;
     font-weight: 700;
     letter-spacing: .2px;
     padding-block: .36rem;
-    border-top: 1px solid rgba(255,255,255,.08);
+    border-top: 1px solid rgba(255,255,255,.12);
 
-    // ✨ subtle raised strip
+    /* stronger raised strip */
     background: linear-gradient(
       to bottom,
-      rgba(255,255,255,.06),
-      rgba(255,255,255,.02) 70%,
-      rgba(0,0,0,.15)
+      rgba(255,255,255,.12) 0%,
+      rgba(255,255,255,.05) 58%,
+      rgba(0,0,0,.20) 100%
     );
-    box-shadow: inset 0 1px 0 rgba(255,255,255,.04),
-                inset 0 -1px 0 rgba(0,0,0,.3);
+    /* crisp bottom crease for separation */
+    box-shadow:
+      inset 0 1px 0 rgba(255,255,255,.07),
+      inset 0 -2px 0 rgba(0,0,0,.75);
   }
 
+  /* ===== Level 3: one notch down, still obvious */
   &.level-3 {
     color: $level-3;
     font-size: 1.05rem;
     font-weight: 700;
     letter-spacing: .2px;
     padding-block: .32rem;
-    border-top: 1px solid rgba(255,255,255,.06);
+    border-top: 1px solid rgba(255,255,255,.10);
 
-    // ✨ same “striped” feel but lighter
     background: linear-gradient(
       to bottom,
-      rgba(255,255,255,.04),
-      rgba(255,255,255,.015) 70%,
-      rgba(0,0,0,.1)
+      rgba(255,255,255,.10) 0%,
+      rgba(255,255,255,.04) 58%,
+      rgba(0,0,0,.17) 100%
     );
-    box-shadow: inset 0 1px 0 rgba(255,255,255,.03),
-                inset 0 -1px 0 rgba(0,0,0,.25);
+    box-shadow:
+      inset 0 1px 0 rgba(255,255,255,.05),
+      inset 0 -2px 0 rgba(0,0,0,.68);
   }
 
+  /* ===== Level 4: lighter band, still distinct */
   &.level-4 {
     color: $level-4;
     font-size: 1rem;
     font-weight: 700;
     letter-spacing: .15px;
     padding-block: .28rem;
-    border-top: 1px solid rgba(255,255,255,.05);
+    border-top: 1px solid rgba(255,255,255,.09);
 
-    // ✨ keep subtle contrast, not flat
     background: linear-gradient(
       to bottom,
-      rgba(255,255,255,.025),
-      rgba(255,255,255,.01) 70%,
-      rgba(0,0,0,.08)
+      rgba(255,255,255,.08) 0%,
+      rgba(255,255,255,.03) 58%,
+      rgba(0,0,0,.14) 100%
     );
-    box-shadow: inset 0 1px 0 rgba(255,255,255,.02),
-                inset 0 -1px 0 rgba(0,0,0,.2);
+    box-shadow:
+      inset 0 1px 0 rgba(255,255,255,.04),
+      inset 0 -2px 0 rgba(0,0,0,.60);
   }
 
+  /* ===== Level 5: pages — clearly darker than L4 */
   &.level-5 {
     color: $level-5;
     font-size: .95rem;
     font-weight: 500;
     text-shadow: 1px 1px 1px rgba(0,0,0,.7);
-    border-top: 1px solid rgba(255,255,255,.03);
+    border-top: 1px solid rgba(255,255,255,.08);
 
-    // ✨ faint strip so dark-purple pages still read as separate
+    /* darker base so L4→L5 step pops immediately */
     background: linear-gradient(
       to bottom,
-      rgba(255,255,255,.015),
-      rgba(0,0,0,.07)
+      rgba(255,255,255,.05) 0%,
+      rgba(0,0,0,.26) 100%
     );
+    box-shadow:
+      inset 0 -2px 0 rgba(0,0,0,.64);
   }
 
   .level-1, .level-2, .level-3, .level-4, .level-5 {
