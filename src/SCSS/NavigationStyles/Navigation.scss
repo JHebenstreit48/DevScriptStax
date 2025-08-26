@@ -31,14 +31,14 @@
   z-index: $z-nav;
   padding: 0;
   transition: all 0.3s ease;
-  margin-left: auto; // Pushes nav to the right inside HeaderBar
+  margin-left: auto;
   position: fixed;
 
   @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
     position: relative;
-    left: 0; // Reset for mobile
+    left: 0;
     margin-top: $nav-mobile-margin-top;
-    justify-content: flex-end; // Align hamburger right
+    justify-content: flex-end;
     right: $nav-mobile-right;
     width: 100%;
   }
@@ -54,13 +54,12 @@
   width: auto;
   padding-top: 0;
 
-  // MOBILE ONLY – hide by default, show when .open
   @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
     display: none;
 
     &.open {
       position: fixed;
-      top: 100%; // Just under the header
+      top: 100%;
       left: 0;
       width: 100%;
       background-color: $nav-overlay-bg;
@@ -95,9 +94,6 @@
   }
 }
 
-/* ==============================
-           Search Icon Button
-============================== */
 .searchIconButton {
   background-color: transparent;
   border: none;
@@ -107,22 +103,18 @@
   font-size: 1.2rem;
   transition: color 0.3s ease;
 
-  &:hover {
-    color: color.adjust($level-1, $lightness: 10%);
-  }
+  &:hover { color: color.adjust($level-1, $lightness: 10%); }
 }
 
-.mainNav {
-  margin-top: $mainnav-margin-top;
-}
+.mainNav { margin-top: $mainnav-margin-top; }
 
 /* ==============================
            Dropdown Button Style
 ============================== */
 .dropdownButton {
   display: flex;
+  position: relative;
   flex-direction: column;
-  flex-wrap: wrap;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -130,44 +122,114 @@
   text-align: center;
   text-decoration: none;
   text-shadow: $nav-text-shadow-dim;
+  width: 100%;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  font: inherit;
+  line-height: 1.2;
+
+  /* wrapping + compact spacing */
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  hyphens: auto;
+  padding-block: .28rem;
+  padding-inline: .55rem;
 
   &:hover {
+    background-color: rgba(255,255,255,.03);
     text-decoration: underline;
   }
 
+  /* headings vs pages */
   &.level-1 {
     color: $nav-level-1-brand;
     font-size: $font-lg;
     margin: 0 auto;
     padding: 0;
+    letter-spacing: .3px;
   }
 
   &.level-2 {
     color: $level-2;
-    font-size: 1.4rem;
+    font-size: 1.05rem;
+    font-weight: 700;
+    letter-spacing: .2px;
+    padding-block: .36rem;
+    border-top: 1px solid rgba(255,255,255,.12);
+
+    /* Light glaze + deeper bottom crease */
+    background: linear-gradient(
+      to bottom,
+      rgba(255,255,255,.08) 0%,     /* highlight */
+      rgba(255,255,255,.03) 30%,
+      rgba(0,0,0,.18) 100%          /* shadow */
+    );
+    box-shadow:
+      inset 0 -1px 0 rgba(0,0,0,.60);
   }
 
+  /* ===== Level 3: medium band (less grey than L2) */
   &.level-3 {
     color: $level-3;
-    font-size: $font-md;
+    font-size: 1.05rem;
+    font-weight: 700;
+    letter-spacing: .2px;
+    padding-block: .32rem;
+    border-top: 1px solid rgba(255,255,255,.10);
+
+    background: linear-gradient(
+      to bottom,
+      rgba(255,255,255,.05) 0%,
+      rgba(255,255,255,.02) 30%,
+      rgba(0,0,0,.14) 100%
+    );
+    box-shadow:
+      inset 0 -1px 0 rgba(0,0,0,.50);
   }
 
+  /* ===== Level 4: light band (minimal grey, mostly dark) */
   &.level-4 {
     color: $level-4;
-    font-size: $font-sm;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: .15px;
+    padding-block: .28rem;
+    border-top: 1px solid rgba(255,255,255,.08);
+
+    background: linear-gradient(
+      to bottom,
+      rgba(255,255,255,.03) 0%,
+      rgba(255,255,255,.01) 30%,
+      rgba(0,0,0,.10) 100%
+    );
+    box-shadow:
+      inset 0 -1px 0 rgba(0,0,0,.42);
   }
 
+  /* ===== Level 5: pages — clearly lighter band than L4 (but still distinct) */
   &.level-5 {
     color: $level-5;
-    font-size: $font-xs;
-    width: 70%;
+    font-size: .95rem;
+    font-weight: 500;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.7);
+    border-top: 1px solid color.change($level-5, $alpha: .26);
+
+    /* darker top → lighter bottom so L4→L5 step is obvious */
+    background: linear-gradient(
+      to bottom,
+      rgba(0,0,0,.22) 0%,
+      rgba(255,255,255,.05) 100%
+    );
+    box-shadow:
+      inset 0 -2px 0 rgba(0,0,0,.58);
   }
 
-  .level-1,
-  .level-2,
-  .level-3,
-  .level-4,
-  .level-5 {
+  .level-1, .level-2, .level-3, .level-4, .level-5 {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -176,15 +238,16 @@
   }
 
   @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
-    font-size: 1.3rem;
-    padding: 0.5rem;
+    font-size: 1.1rem;
+    padding: .4rem;
     gap: $nav-gap-mobile;
   }
 
   @media only screen and (min-width: $small-laptop-min) and (max-width: $small-laptop-max) {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 }
+.dropdownButton::-moz-focus-inner { border: 0; padding: 0; }
 
 /* ==============================
               Dropdown Layout
@@ -194,6 +257,7 @@
   display: inline-block;
   text-align: center;
   margin: 0 1rem;
+  overflow: visible;
 
   @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
     display: block;
@@ -202,56 +266,70 @@
   }
 }
 
+/* hairline separators */
+.dropdownItem {
+  width: 100%;
+  border-bottom: 1px solid rgba(255,255,255,.06);
+}
+.dropdownItem:last-child { border-bottom: none; }
+
+/* No divider on the very first row (removes the "gap" above Angular) */
+.dropdownContent .dropdownItem:first-child .dropdownButton {
+  border-top: 0;
+}
+
 /* ==============================
           Dropdown Menu Content
 ============================== */
 .dropdownContent {
   position: absolute;
-  top: 100%;
-  left: 55%;
+  top: calc(100% + $nav-dropdown-offset);
+  left: 50%;
   transform: translateX(-50%);
-  background-color: $dropdown-bg;
-  min-width: $dropdown-width;
+
+  /* size: narrower + wrap-friendly */
+  width: auto;
+  min-width: 14rem;
+  max-width: min(18rem, calc(100vw - 2rem));
+
+  /* fully opaque, matches header via $dropdown-bg */
+  background-color: $dropdown-bg;     /* set to #000 or rgb(0,0,0) in Colors.scss */
+  border: 1px solid rgba(255,255,255,.06);
   border-radius: $dropdown-radius;
   box-shadow: $nav-dropdown-elevation;
   text-align: center;
-  padding: $nav-dropdown-padding;
+
+  /* ensure ancestors' opacity/filters don't bleed through */
+  isolation: isolate;
+
   display: none;
   z-index: $z-nav-dropdown;
 
   &.active {
     display: grid;
     grid-template-columns: 1fr;
+    justify-items: stretch;
+    align-items: stretch;
+    row-gap: .12rem;
     max-height: $nav-dropdown-max-height;
     overflow-y: auto;
     scrollbar-width: thin;
     scrollbar-color: $dropdown-hover $scrollbar-track;
 
-    &::-webkit-scrollbar {
-      width: $scrollbar-width-thin;
-    }
-
+    &::-webkit-scrollbar { width: $scrollbar-width-thin; }
     &::-webkit-scrollbar-thumb {
       background: $dropdown-hover;
       border-radius: $dropdown-radius;
-
-      &:hover {
-        background: color.adjust($dropdown-hover, $lightness: 10%);
-      }
+      &:hover { background: color.adjust($dropdown-hover, $lightness: 10%); }
     }
-
-    &::-webkit-scrollbar-track {
-      background: transparent;
-    }
-
-    &::-webkit-scrollbar-button {
-      display: none;
-    }
+    &::-webkit-scrollbar-track { background: transparent; }
+    &::-webkit-scrollbar-button { display: none; }
 
     @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
       position: static;
       transform: none;
-      background: transparent;
+      /* keep the same opaque background on mobile as well */
+      background-color: $dropdown-bg;
       box-shadow: none;
       padding: 0;
       margin-top: $nav-dropdown-mobile-margin-top;
