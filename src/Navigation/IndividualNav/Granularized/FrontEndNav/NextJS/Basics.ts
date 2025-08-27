@@ -8,19 +8,19 @@ const NextJSBasics: Subpage = {
       subpages: [
         {
           name: 'Getting Started',
-          path: '/nextjs/basics/getting-started'
+          path: '/nextjs/basics/fundamentals/getting-started'
         },
         {
           name: 'Project Structure',
-          path: '/nextjs/basics/project-structure'
+          path: '/nextjs/basics/fundamentals/project-structure'
         },
         {
           name: 'Routing',
-          path: '/nextjs/basics/routing'
+          path: '/nextjs/basics/fundamentals/routing'
         },
         {
           name: 'API Routes',
-          path: '/nextjs/basics/api-routes'
+          path: '/nextjs/basics/fundamentals/api-routes'
         }
       ]
     },
@@ -29,15 +29,15 @@ const NextJSBasics: Subpage = {
       subpages: [
         {
           name: 'Static Generation (SSG)',
-          path: '/nextjs/core-concepts/ssg'
+          path: '/nextjs/core-concepts/static-generation'
         },
         {
           name: 'Server-Side Rendering (SSR)',
-          path: '/nextjs/core-concepts/ssr'
+          path: '/nextjs/core-concepts/server-side-rendering'
         },
         {
           name: 'Client-Side Rendering (CSR)',
-          path: '/nextjs/core-concepts/csr'
+          path: '/nextjs/core-concepts/client-side-rendering'
         },
         {
           name: 'Middleware',

@@ -4,11 +4,11 @@ const MarkdownAdvanced: Subpage = {
   name: 'Advanced',
   subpages: [
     {
-      name: 'Extending Markdown',
+      name: 'Extending',
       subpages: [
         {
           name: 'Custom Rendering',
-          path: '/markdown/advanced/extending/customrendering'
+          path: '/markdown/advanced/extending/custom-rendering'
         },
         {
           name: 'Frontmatter',
@@ -25,15 +25,15 @@ const MarkdownAdvanced: Subpage = {
       subpages: [
         {
           name: 'Consistency',
-          path: '/markdown/advanced/bestpractices/consistency'
+          path: '/markdown/advanced/best-practices/consistency'
         },
         {
           name: 'Readability',
-          path: '/markdown/advanced/bestpractices/readability'
+          path: '/markdown/advanced/best-practices/readability'
         },
         {
           name: 'Version Control',
-          path: '/markdown/advanced/bestpractices/versioncontrol'
+          path: '/markdown/advanced/best-practices/version-control'
         }
       ]
     }
