@@ -1,6 +1,6 @@
 import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes';
 
-const MarkdownIntermediate: Subpage = {
+const Intermediate: Subpage = {
   name: 'Intermediate',
   subpages: [
     {
@@ -8,11 +8,11 @@ const MarkdownIntermediate: Subpage = {
       subpages: [
         {
           name: 'Extensions (CommonMark, GFM)',
-          path: '/markdown/intermediate/syntax/extensions'
+          path: '/markdown/intermediate/extended-syntax/extensions'
         },
         {
           name: 'Code Blocks & Highlighting',
-          path: '/markdown/intermediate/syntax/codeblocks'
+          path: '/markdown/intermediate/extended-syntax/code-blocks'
         }
       ]
     },
@@ -21,15 +21,15 @@ const MarkdownIntermediate: Subpage = {
       subpages: [
         {
           name: 'Task Lists',
-          path: '/markdown/intermediate/interactive/tasklists'
+          path: '/markdown/intermediate/interactive-features/task-lists'
         },
         {
           name: 'Footnotes',
-          path: '/markdown/intermediate/interactive/footnotes'
+          path: '/markdown/intermediate/interactive-features/footnotes'
         }
       ]
     }
   ]
 };
 
-export default MarkdownIntermediate;
+export default Intermediate;

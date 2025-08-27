@@ -12,7 +12,7 @@ const JSTools: Subpage = {
         },
         {
           name: "Debugging with Source Maps",
-          path: "/javascript/tools/devtools/sourcemaps",
+          path: "/javascript/tools/devtools/source-maps",
         },
       ],
     },
@@ -25,7 +25,7 @@ const JSTools: Subpage = {
         },
         {
           name: "ESBuild vs Vite",
-          path: "/javascript/tools/buildtools/esbuildvite",
+          path: "/javascript/tools/buildtools/esbuild-vs-vite",
         },
       ],
     },
