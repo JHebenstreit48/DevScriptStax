@@ -3,6 +3,8 @@ import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/Navigation
 import Basics from '@/Navigation/IndividualNav/Granularized/FrontEndNav/JavaScriptNav/Basics';
 import Intermediate from '@/Navigation/IndividualNav/Granularized/FrontEndNav/JavaScriptNav/Intermediate';
 import Advanced from '@/Navigation/IndividualNav/Granularized/FrontEndNav/JavaScriptNav/Advanced';
+import Testing from '@/Navigation/IndividualNav/Granularized/FrontEndNav/JavaScriptNav/Testing';
+import Tools from '@/Navigation/IndividualNav/Granularized/FrontEndNav/JavaScriptNav/Tools';
 
 const JavaScript: Subpage = {
   name: 'JavaScript',
@@ -10,6 +12,8 @@ const JavaScript: Subpage = {
     Basics,
     Intermediate,
     Advanced,
+    Testing,
+    Tools
   ]
 };
 
