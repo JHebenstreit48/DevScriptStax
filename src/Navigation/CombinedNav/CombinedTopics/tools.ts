@@ -24,8 +24,8 @@ import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/Navigation
 // ---------- Package Management & Bundling Navigation End ----------
 
 // ---------- Containerization Navigation Start ----------
-import DockerNav from '@/Navigation/IndividualNav/FullTopics/ToolsNav/Containerization/Docker';
-import GitNav from '@/Navigation/IndividualNav/FullTopics/ToolsNav/Containerization/Git'
+import Docker from '@/Navigation/IndividualNav/FullTopics/ToolsNav/Containerization/Docker';
+import Git from '@/Navigation/IndividualNav/FullTopics/ToolsNav/Containerization/Git'
 // ---------- Containerization Navigation End ----------
 
 const tools: Subpage = {
@@ -55,8 +55,8 @@ const tools: Subpage = {
     {
       name: 'Containerization',
       subpages: [
-        DockerNav,
-        GitNav
+        Docker,
+        Git
       ]
     }
   ]

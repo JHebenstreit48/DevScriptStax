@@ -1,6 +1,6 @@
 import { Subpage } from "@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes";
 
-const GitAdvanced: Subpage = {
+const Advanced: Subpage = {
   name: "Advanced",
   subpages: [
     {
@@ -37,4 +37,4 @@ const GitAdvanced: Subpage = {
   ]
 };
 
-export default GitAdvanced;
+export default Advanced;

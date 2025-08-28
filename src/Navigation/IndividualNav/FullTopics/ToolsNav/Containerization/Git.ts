@@ -1,14 +1,14 @@
 import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes';
 
-import GitBasics from '@/Navigation/IndividualNav/Granularized/ToolsNav/Containerization/GitNav/Basics';
-import GitAdvanced from '@/Navigation/IndividualNav/Granularized/ToolsNav/Containerization/GitNav/Advanced';
+import Basics from '@/Navigation/IndividualNav/Granularized/ToolsNav/Containerization/GitNav/Basics';
+import Advanced from '@/Navigation/IndividualNav/Granularized/ToolsNav/Containerization/GitNav/Advanced';
 
-const GitNav: Subpage = {
+const Git: Subpage = {
   name: 'Git',
   subpages: [
-    GitBasics,
-    GitAdvanced
+    Basics,
+    Advanced
   ]
 };
 
-export default GitNav;
+export default Git;
