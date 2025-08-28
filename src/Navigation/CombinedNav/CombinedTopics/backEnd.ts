@@ -3,8 +3,8 @@ import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/Navigation
 import APIsNav from '@/Navigation/IndividualNav/FullTopics/BackEndNav/APIs';
 
 // ---------- Authentication & Authorization Navigation Start ----------
-// import AuthorizationNavigation from '@/Navigation/IndividualNav/BackEndNav/AuthenAndAuthor/Authorization';
-// import AuthenticationNavigation from '@/Navigation/IndividualNav/BackEndNav/AuthenAndAuthor/Authentication';
+// import Authorization from '@/Navigation/IndividualNav/BackEndNav/AuthenAndAuthor/Authorization';
+// import Authentication from '@/Navigation/IndividualNav/BackEndNav/AuthenAndAuthor/Authentication';
 // ---------- Authentication & Authorization Navigation End ----------
 
 // ---------- Databases Navigation Start ----------
@@ -17,21 +17,21 @@ import MongoDB from '@/Navigation/IndividualNav/FullTopics/BackEndNav/DatabaseNa
 // ---------- Databases Navigation End ----------
 
 // ---------- Frameworks Navigation Start ----------
-// import DjangoNavigation from '@/Navigation/IndividualNav/BackEndNav/Frameworks/Django';
-// import ExpressJSNavigation from '@/Navigation/IndividualNav/BackEndNav/Frameworks/ExpressJS';
-// import FlaskNavigation from '@/Navigation/IndividualNav/BackEndNav/Frameworks/Flask';
-// import KoaJSNavigation from '@/Navigation/IndividualNav/BackEndNav/Frameworks/KoaJS';
-// import MERNNavigation from '@/Navigation/IndividualNav/BackEndNav/Frameworks/MERN';
-// import NodeJSNavigation from '@/Navigation/IndividualNav/BackEndNav/Frameworks/NodeJS';
-// import RubyNavigation from '@/Navigation/IndividualNav/BackEndNav/Frameworks/Ruby';
-// import SpringBootNavigation from '@/Navigation/IndividualNav/BackEndNav/Frameworks/SpringBoot';
-// import WebSocketsNavigation from '@/Navigation/IndividualNav/BackEndNav/Frameworks/WebSockets';
+// import Django from '@/Navigation/IndividualNav/BackEndNav/Frameworks/Django';
+// import ExpressJS from '@/Navigation/IndividualNav/BackEndNav/Frameworks/ExpressJS';
+// import Flask from '@/Navigation/IndividualNav/BackEndNav/Frameworks/Flask';
+// import KoaJS from '@/Navigation/IndividualNav/BackEndNav/Frameworks/KoaJS';
+// import MERN from '@/Navigation/IndividualNav/BackEndNav/Frameworks/MERN';
+// import NodeJS from '@/Navigation/IndividualNav/BackEndNav/Frameworks/NodeJS';
+// import Ruby from '@/Navigation/IndividualNav/BackEndNav/Frameworks/Ruby';
+// import SpringBoot from '@/Navigation/IndividualNav/BackEndNav/Frameworks/SpringBoot';
+// import WebSockets from '@/Navigation/IndividualNav/BackEndNav/Frameworks/WebSockets';
 // ---------- Frameworks Navigation End ----------
 
 // ---------- Web Servers Navigation Start ----------
-// import ServersGeneralNavigation from '@/Navigation/IndividualNav/BackEndNav/WebServers/ServersGeneral';
-// import ApacheNavigation from '@/Navigation/IndividualNav/BackEndNav/WebServers/Apache';
-// import NginxNavigation from '@/Navigation/IndividualNav/BackEndNav/WebServers/Nginx';
+// import ServersGeneral from '@/Navigation/IndividualNav/BackEndNav/WebServers/ServersGeneral';
+// import Apache from '@/Navigation/IndividualNav/BackEndNav/WebServers/Apache';
+// import Nginx from '@/Navigation/IndividualNav/BackEndNav/WebServers/Nginx';
 // ---------- Web Servers Navigation End ----------
 
 const backEnd: Subpage = {
