@@ -1,14 +1,14 @@
 import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes';
 
-import DockerBasics from '@/Navigation/IndividualNav/Granularized/ToolsNav/Containerization/DockerNav/Basics';
-import DockerAdvanced from '@/Navigation/IndividualNav/Granularized/ToolsNav/Containerization/DockerNav/Advanced';
+import Basics from '@/Navigation/IndividualNav/Granularized/ToolsNav/Containerization/DockerNav/Basics';
+import Advanced from '@/Navigation/IndividualNav/Granularized/ToolsNav/Containerization/DockerNav/Advanced';
 
-const DockerNav: Subpage = {
+const Docker: Subpage = {
   name: 'Docker',
   subpages: [
-    DockerBasics,
-    DockerAdvanced
+    Basics,
+    Advanced
   ]
 };
 
-export default DockerNav;
+export default Docker;

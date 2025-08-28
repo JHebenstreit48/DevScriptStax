@@ -10,10 +10,10 @@ import APIsNav from '@/Navigation/IndividualNav/FullTopics/BackEndNav/APIs';
 // ---------- Databases Navigation Start ----------
 import Firebase from '@/Navigation/IndividualNav/FullTopics/BackEndNav/DatabaseNav/Firebase';
 import MongoDB from '@/Navigation/IndividualNav/FullTopics/BackEndNav/DatabaseNav/MongoDB';
-// import MySQL from '@/Navigation/IndividualNav/FullTopics/BackEndNav/DatabaseNav/MySQL';
-// import PostgreSQL from '@/Navigation/IndividualNav/FullTopics/BackEndNav/DatabaseNav/PostgreSQL';
-// import Redis from '@/Navigation/IndividualNav/FullTopics/BackEndNav/DatabaseNav/Redis';
-// import SQLite from '@/Navigation/IndividualNav/FullTopics/BackEndNav/DatabaseNav/SQLite';
+import MySQL from '@/Navigation/IndividualNav/FullTopics/BackEndNav/DatabaseNav/MySQL';
+import PostgreSQL from '@/Navigation/IndividualNav/FullTopics/BackEndNav/DatabaseNav/PostgreSQL';
+import Redis from '@/Navigation/IndividualNav/FullTopics/BackEndNav/DatabaseNav/Redis';
+import SQLite from '@/Navigation/IndividualNav/FullTopics/BackEndNav/DatabaseNav/SQLite';
 // ---------- Databases Navigation End ----------
 
 // ---------- Frameworks Navigation Start ----------
@@ -50,10 +50,10 @@ const backEnd: Subpage = {
       subpages: [
         Firebase,
         MongoDB,
-        // MySQL,
-        // PostgreSQL,
-        // Redis,
-        // SQLite
+        MySQL,
+        PostgreSQL,
+        Redis,
+        SQLite
       ]
     },
     {

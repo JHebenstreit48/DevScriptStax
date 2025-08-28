@@ -1,6 +1,6 @@
 import { Subpage } from "@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes";
 
-const DockerNavigation: Subpage = {
+const Docker: Subpage = {
   name: "Docker",
   subpages: [
     // ---------- Docker Fundamentals Navigation Start ----------
@@ -41,4 +41,4 @@ const DockerNavigation: Subpage = {
   ],
 };
 
-export default DockerNavigation;
+export default Docker;

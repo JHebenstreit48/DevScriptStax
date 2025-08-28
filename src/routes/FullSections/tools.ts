@@ -1,9 +1,9 @@
 import { RouteObject } from "react-router-dom";
 
-import gitRoutes from "@/routes/IndividualRoutes/Granularized/ToolsRoutes/ContainerizationRoutes/gitRoutes";
+import Git from "@/routes/IndividualRoutes/FullRoutes/ToolsRoutes/Containerization/git";
 
 const toolsRoutes: RouteObject[] = [
-    ...gitRoutes,
+    ...Git,
 ];
 
 export default toolsRoutes;

@@ -1,6 +1,6 @@
 import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes';
 
-const DockerAdvanced: Subpage = {
+const Advanced: Subpage = {
   name: 'Advanced',
   subpages: [
     {
@@ -27,4 +27,4 @@ const DockerAdvanced: Subpage = {
   ]
 };
 
-export default DockerAdvanced;
+export default Advanced;
