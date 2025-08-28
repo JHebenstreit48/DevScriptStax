@@ -1,55 +1,14 @@
 import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes';
 
-const MongoDBBasics: Subpage = {
+import Fundamentals from '@/Navigation/IndividualNav/Granularized/BackEndNav/DatabaseNav/MongoDB/Basics/Fundamentals';
+import CRUD from '@/Navigation/IndividualNav/Granularized/BackEndNav/DatabaseNav/MongoDB/Basics/CRUD';
+
+const Basics: Subpage = {
   name: 'Basics',
   subpages: [
-    {
-      name: 'Fundamentals',
-      subpages: [
-        {
-          name: 'Introduction',
-          path: '/databases/mongodb/intro/Introduction'
-        },
-        {
-          name: 'NoSQL vs SQL',
-          path: '/databases/mongodb/intro/nosql-vs-sql'
-        },
-        {
-          name: 'Setup',
-          path: '/databases/mongodb/intro/setup'
-        },
-        {
-          name: 'Use Cases',
-          path: '/databases/mongodb/intro/use-cases'
-        }
-      ]
-    },
-    {
-      name: 'CRUD Operations',
-      subpages: [
-        {
-          name: 'Create',
-          path: '/databases/mongodb/crud/create'
-        },
-        {
-          name: 'Read',
-          path: '/databases/mongodb/crud/read'
-        },
-        {
-          name: 'Update',
-          path: '/databases/mongodb/crud/update'
-        },
-        {
-          name: 'Delete',
-          path: '/databases/mongodb/crud/delete'
-        },
-        {
-          name: 'Bulk Operations',
-          path: '/databases/mongodb/crud/bulk-operations'
-        }
-      ]
-    }
+    Fundamentals,
+    CRUD
   ]
 };
 
-export default MongoDBBasics;
+export default Basics;
