@@ -3,7 +3,7 @@ import Header from "@/Components/Shared/Header/Header";
 import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
-const GitNuances = () => {
+const Nuances = () => {
     const markdownFilePath = 'ToolsNotes/Containerization/GitNotes/Basics/Workflow/Nuances';
 
     return (
@@ -19,4 +19,4 @@ const GitNuances = () => {
     );
 };
 
-export default GitNuances;
+export default Nuances;

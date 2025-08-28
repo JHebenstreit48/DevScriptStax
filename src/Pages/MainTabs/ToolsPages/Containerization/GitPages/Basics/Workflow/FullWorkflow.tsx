@@ -3,7 +3,7 @@ import Header from "@/Components/Shared/Header/Header";
 import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
-const GitWorkflow = () => {
+const Workflow = () => {
     const markdownFilePath = "ToolsNotes/Containerization/GitNotes/Basics/Workflow/FullWorkflow";
 
     return (
@@ -19,4 +19,4 @@ const GitWorkflow = () => {
     );
 };
 
-export default GitWorkflow;
+export default Workflow;
