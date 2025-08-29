@@ -1,13 +1,25 @@
 import { Subpage } from "@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes";
 
-const RESTfulDesignPrinciplesNavigation: Subpage = {
-  name: "RESTful Design Principles",
+const ErrorHandling: Subpage = {
+  name: "Error Handling",
   subpages: [
-    { name: "HTTP Status Codes", path: "/apis/rest/errorhandling/status-codes" },
-    { name: "Error Response Structure", path: "/apis/rest/errorhandling/error-structure" },
-    { name: "Best Practices for Error Handling", path: "/apis/rest/errorhandling/best-practices" },
-    { name: "Logging & Monitoring API Errors", path: "/apis/rest/errorhandling/logging-monitoring" },
+    {
+      name: "HTTP Status Codes",
+      path: "/apis/rest/error-handling/status-codes"
+    },
+    {
+      name: "Error Response Structure",
+      path: "/apis/rest/error-handling/error-structure"
+    },
+    {
+      name: "Best Practices for Error Handling",
+      path: "/apis/rest/error-handling/best-practices"
+    },
+    {
+      name: "Logging & Monitoring API Errors",
+      path: "/apis/rest/error-handling/logging-monitoring"
+    },
   ],
 };
 
-export default RESTfulDesignPrinciplesNavigation;
+export default ErrorHandling;

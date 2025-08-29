@@ -1,10 +1,10 @@
 import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes';
 
-import APIsNav from '@/Navigation/IndividualNav/FullTopics/BackEndNav/APIs';
+import APIs from '@/Navigation/IndividualNav/FullTopics/BackEndNav/APIs';
 
 // ---------- Authentication & Authorization Navigation Start ----------
-// import Authorization from '@/Navigation/IndividualNav/BackEndNav/AuthenAndAuthor/Authorization';
-// import Authentication from '@/Navigation/IndividualNav/BackEndNav/AuthenAndAuthor/Authentication';
+import Authorization from '@/Navigation/IndividualNav/FullTopics/BackEndNav/AuthenticationAuthorization/Authorization';
+import Authentication from '@/Navigation/IndividualNav/FullTopics/BackEndNav/AuthenticationAuthorization/Authentication';
 // ---------- Authentication & Authorization Navigation End ----------
 
 // ---------- Databases Navigation Start ----------
@@ -17,32 +17,31 @@ import SQLite from '@/Navigation/IndividualNav/FullTopics/BackEndNav/DatabaseNav
 // ---------- Databases Navigation End ----------
 
 // ---------- Frameworks Navigation Start ----------
-// import Django from '@/Navigation/IndividualNav/BackEndNav/Frameworks/Django';
-// import ExpressJS from '@/Navigation/IndividualNav/BackEndNav/Frameworks/ExpressJS';
-// import Flask from '@/Navigation/IndividualNav/BackEndNav/Frameworks/Flask';
-// import KoaJS from '@/Navigation/IndividualNav/BackEndNav/Frameworks/KoaJS';
-// import MERN from '@/Navigation/IndividualNav/BackEndNav/Frameworks/MERN';
-// import NodeJS from '@/Navigation/IndividualNav/BackEndNav/Frameworks/NodeJS';
-// import Ruby from '@/Navigation/IndividualNav/BackEndNav/Frameworks/Ruby';
-// import SpringBoot from '@/Navigation/IndividualNav/BackEndNav/Frameworks/SpringBoot';
-// import WebSockets from '@/Navigation/IndividualNav/BackEndNav/Frameworks/WebSockets';
+import Django from '@/Navigation/IndividualNav/FullTopics/BackEndNav/Frameworks/Django';
+import ExpressJS from '@/Navigation/IndividualNav/FullTopics/BackEndNav/Frameworks/ExpressJS';
+import Flask from '@/Navigation/IndividualNav/FullTopics/BackEndNav/Frameworks/Flask';
+import KoaJS from '@/Navigation/IndividualNav/FullTopics/BackEndNav/Frameworks/KoaJS';
+import NodeJS from '@/Navigation/IndividualNav/FullTopics/BackEndNav/Frameworks/NodeJS';
+import Ruby from '@/Navigation/IndividualNav/FullTopics/BackEndNav/Frameworks/Ruby';
+import Spring from '@/Navigation/IndividualNav/FullTopics/BackEndNav/Frameworks/Spring';
+import WebSocket from '@/Navigation/IndividualNav/FullTopics/BackEndNav/Frameworks/WebSocket';
 // ---------- Frameworks Navigation End ----------
 
 // ---------- Web Servers Navigation Start ----------
 // import ServersGeneral from '@/Navigation/IndividualNav/BackEndNav/WebServers/ServersGeneral';
-// import Apache from '@/Navigation/IndividualNav/BackEndNav/WebServers/Apache';
 // import Nginx from '@/Navigation/IndividualNav/BackEndNav/WebServers/Nginx';
+// import Apache from '@/Navigation/IndividualNav/BackEndNav/WebServers/Apache';
 // ---------- Web Servers Navigation End ----------
 
 const backEnd: Subpage = {
   name: 'Back End',
   subpages: [
-    APIsNav,
+    APIs,
     {
       name: 'Authentication & Authorization',
       subpages: [
-        // AuthenticationNavigation,
-        // AuthorizationNavigation
+        Authentication,
+        Authorization
       ]
     },
     {
@@ -59,23 +58,22 @@ const backEnd: Subpage = {
     {
       name: 'Frameworks',
       subpages: [
-        // DjangoNavigation,
-        // ExpressJSNavigation,
-        // FlaskNavigation,
-        // KoaJSNavigation,
-        // MERNNavigation,
-        // NodeJSNavigation,
-        // RubyNavigation,
-        // SpringBootNavigation,
-        // WebSocketsNavigation
+        Django,
+        ExpressJS,
+        Flask,
+        KoaJS,
+        NodeJS,
+        Ruby,
+        Spring,
+        WebSocket
       ]
     },
     {
       name: 'Web Servers',
       subpages: [
-        // ServersGeneralNavigation,
-        // NginxNavigation,
-        // ApacheNavigation
+        // ServersGeneral,
+        // Nginx,
+        // Apache
       ]
     }
   ]
