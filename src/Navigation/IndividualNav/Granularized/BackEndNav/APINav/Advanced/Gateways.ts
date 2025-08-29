@@ -4,8 +4,8 @@ const Gateways: Subpage = {
   name: "Gateways",
   subpages: [
     {
-      name: "What is an API Gateway?",
-      path: "/apis/advanced/gateways/what-is-api-gateway",
+      name: "Fundamentals",
+      path: "/apis/advanced/gateways/fundamentals",
     },
     {
       name: "Benefits of API Gateways",

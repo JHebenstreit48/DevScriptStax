@@ -19,7 +19,8 @@ const pages: Subpage[] = [
   testing,
   tools,
   languages,
-  graphQLAndApollo
+  graphQLAndApollo,
+  // stacks
 ];
 
 export default pages;

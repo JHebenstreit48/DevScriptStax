@@ -3,13 +3,16 @@ import { Subpage } from "@/Navigation/CombinedNav/CombinedNavAndTypes/Navigation
 const Caching: Subpage = {
   name: "Caching",
   subpages: [
-    { name: "Basics", path: "/apis/advanced/caching/basics" },
     {
-      name: "Cache Control & Expiry",
-      path: "/apis/advanced/caching/cache-control",
+      name: "Basics",
+      path: "/apis/advanced/caching/basics"
     },
     {
-      name: "Best Practices for API Caching",
+      name: "Control & Expiry",
+      path: "/apis/advanced/caching/control-and-expiry",
+    },
+    {
+      name: "Best Practices",
       path: "/apis/advanced/caching/best-practices",
     },
   ],

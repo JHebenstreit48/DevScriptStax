@@ -8,8 +8,8 @@ const Webhooks: Subpage = {
       path: "/apis/advanced/webhooks/introduction",
     },
     {
-      name: "How Webhooks Work",
-      path: "/apis/advanced/webhooks/how-it-works",
+      name: "Fundamentals",
+      path: "/apis/advanced/webhooks/fundamentals",
     },
     {
       name: "Security Considerations",
