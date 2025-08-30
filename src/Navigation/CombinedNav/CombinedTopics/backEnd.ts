@@ -1,6 +1,6 @@
 import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes';
 
-import APIs from '@/Navigation/IndividualNav/FullTopics/BackEndNav/APIs';
+import APIs from '@/Navigation/IndividualNav/FullTopics/BackEndNav/APIsNav/APIs';
 
 // ---------- Authentication & Authorization Navigation Start ----------
 import Authorization from '@/Navigation/IndividualNav/FullTopics/BackEndNav/AuthenticationAuthorization/Authorization';
@@ -28,9 +28,9 @@ import WebSocket from '@/Navigation/IndividualNav/FullTopics/BackEndNav/Framewor
 // ---------- Frameworks Navigation End ----------
 
 // ---------- Web Servers Navigation Start ----------
-// import ServersGeneral from '@/Navigation/IndividualNav/BackEndNav/WebServers/ServersGeneral';
-// import Nginx from '@/Navigation/IndividualNav/BackEndNav/WebServers/Nginx';
-// import Apache from '@/Navigation/IndividualNav/BackEndNav/WebServers/Apache';
+import General from '@/Navigation/IndividualNav/FullTopics/BackEndNav/WebServers/General';
+import Nginx from '@/Navigation/IndividualNav/FullTopics/BackEndNav/WebServers/Nginx';
+import Apache from '@/Navigation/IndividualNav/FullTopics/BackEndNav/WebServers/Apache';
 // ---------- Web Servers Navigation End ----------
 
 const backEnd: Subpage = {
@@ -71,9 +71,9 @@ const backEnd: Subpage = {
     {
       name: 'Web Servers',
       subpages: [
-        // ServersGeneral,
-        // Nginx,
-        // Apache
+        General,
+        Nginx,
+        Apache
       ]
     }
   ]
