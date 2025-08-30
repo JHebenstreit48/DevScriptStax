@@ -1,14 +1,16 @@
 import PageLayout from '@/Components/NavigationUI/PageLayout';
 import Header from "@/Components/Shared/Header/Header";
+import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
-const MongoDBIntro = () => {
+const Introduction = () => {
     const markdownFilePath = 'BackEndNotes/DatabaseNotes/MongoDB/Basics/Fundamentals/Introduction';
 
     return (
         <>
             <PageLayout>
-            <Header text="Introduction" />
+            <Header />
+            <PageTitle title="Introduction to MongoDB" />
             <Notes
                 filePath={markdownFilePath}
             />
@@ -17,4 +19,4 @@ const MongoDBIntro = () => {
     );
 };
 
-export default MongoDBIntro;
+export default Introduction;
