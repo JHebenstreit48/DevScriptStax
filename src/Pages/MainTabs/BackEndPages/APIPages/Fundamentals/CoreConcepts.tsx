@@ -3,18 +3,18 @@ import Header from '@/Components/Shared/Header/Header';
 import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
-const PublicVSPrivate = () => {
-  const markdownFilePath = 'BackEndNotes/APINotes/Basics/TypesOfAPIs/PublicVSPrivate';
+const CoreConcepts = () => {
+  const markdownFilePath = 'BackEndNotes/APINotes/Basics/Fundamentals/CoreConcepts';
 
   return (
     <>
       <PageLayout>
         <Header />
-        <PageTitle title="Public vs. Private APIs" />
+        <PageTitle title=" API Core Concepts" />
         <Notes filePath={markdownFilePath} />
       </PageLayout>
     </>
   );
 };
 
-export default PublicVSPrivate;
+export default CoreConcepts;

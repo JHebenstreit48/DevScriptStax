@@ -1,20 +1,20 @@
+import PageLayout from '@/Components/NavigationUI/PageLayout';
+import Header from '@/Components/Shared/Header/Header';
+import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
-import Header from "@/Components/Shared/Header/Header";
 
 const RESTVSGraphQLVSSOAP = () => {
-    const markdownFilePath = 'BackEndNotes//APINotes/TypesOfAPIs/RESTVSGraphQLVSSOAP';
+  const markdownFilePath = 'BackEndNotes/APINotes/Basics/TypesOfAPIs/RESTVSGraphQLVSSOAP';
 
-    return (
-        <>
-
-            <Header text="REST vs GraphQL vs SOAP" />
-            <Notes filePath={markdownFilePath}
-                
-            />
-
-        </>
-
-    );
+  return (
+    <>
+      <PageLayout>
+        <Header />
+        <PageTitle title="REST vs GraphQL vs SOAP" />
+        <Notes filePath={markdownFilePath} />
+      </PageLayout>
+    </>
+  );
 };
 
 export default RESTVSGraphQLVSSOAP;

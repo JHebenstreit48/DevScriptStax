@@ -5,19 +5,19 @@ const Fundamentals: Subpage = {
   subpages: [
     {
       name: 'Introduction',
-      path: '/databases/mongodb/intro/introduction',
+      path: '/databases/mongodb/basics/fundamentals/introduction',
     },
     {
       name: 'NoSQL vs SQL',
-      path: '/databases/mongodb/intro/nosql-vs-sql',
+      path: '/databases/mongodb/basics/fundamentals/nosql-vs-sql',
     },
     {
       name: 'Setup',
-      path: '/databases/mongodb/intro/setup',
+      path: '/databases/mongodb/basics/fundamentals/setup',
     },
     {
       name: 'Use Cases',
-      path: '/databases/mongodb/intro/use-cases',
+      path: '/databases/mongodb/basics/fundamentals/use-cases',
     },
   ],
 };
