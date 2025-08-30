@@ -4,7 +4,7 @@ const EndpointsResources: Subpage = {
   name: "Endpoints and Resources",
   subpages: [
     {
-      name: "Understanding API Endpoints",
+      name: "Understanding Endpoints",
       path: "/apis/rest/endpoints/overview"
     },
     {
@@ -16,7 +16,7 @@ const EndpointsResources: Subpage = {
       path: "/apis/rest/endpoints/query-vs-path"
     },
     {
-      name: "Pagination in APIs",
+      name: "Pagination",
       path: "/apis/rest/endpoints/pagination"
     },
   ],

@@ -12,11 +12,11 @@ const ErrorHandling: Subpage = {
       path: "/apis/rest/error-handling/error-structure"
     },
     {
-      name: "Best Practices for Error Handling",
+      name: "Best Practices",
       path: "/apis/rest/error-handling/best-practices"
     },
     {
-      name: "Logging & Monitoring API Errors",
+      name: "Logging & Monitoring Errors",
       path: "/apis/rest/error-handling/logging-monitoring"
     },
   ],

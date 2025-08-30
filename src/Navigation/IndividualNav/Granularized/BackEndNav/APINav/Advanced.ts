@@ -6,7 +6,7 @@ import RateLimiting from "@/Navigation/IndividualNav/Granularized/BackEndNav/API
 import Versioning from "@/Navigation/IndividualNav/Granularized/BackEndNav/APINav/Advanced/Versioning";
 import Webhooks from "@/Navigation/IndividualNav/Granularized/BackEndNav/APINav/Advanced/Webhooks";
 
-const APIsAdvanced: Subpage = {
+const Advanced: Subpage = {
     name: "Advanced",
     subpages: [
         Gateways,
@@ -17,4 +17,4 @@ const APIsAdvanced: Subpage = {
     ],
 };
 
-export default APIsAdvanced;
+export default Advanced;

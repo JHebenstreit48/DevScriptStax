@@ -4,7 +4,7 @@ const Fundamentals: Subpage = {
   name: "Fundamentals",
   subpages: [
     {
-      name: "Core Principles of REST",
+      name: "Core PrincipleS",
       path: "/apis/rest/core-principles"
     },
     {
@@ -16,7 +16,7 @@ const Fundamentals: Subpage = {
       path: "/apis/rest/comparison"
     },
     {
-      name: "Common REST API Mistakes",
+      name: "Common API Mistakes",
       path: "/apis/rest/mistakes"
     },
   ],
