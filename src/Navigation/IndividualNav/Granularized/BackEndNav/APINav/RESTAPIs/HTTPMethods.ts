@@ -4,19 +4,19 @@ const HTTPMethods: Subpage = {
   name: "HTTP Methods",
   subpages: [
     {
-      name: "Overview of HTTP Methods",
+      name: "Overview",
       path: "/apis/rest/httpmethods/overview"
     },
     {
-      name: "Detailed Guide to HTTP Methods",
+      name: "Detailed Guide",
       path: "/apis/rest/httpmethods/detailed-guide"
     },
     {
-      name: "Best Practices for HTTP Methods",
+      name: "Best Practices",
       path: "/apis/rest/httpmethods/best-practices"
     },
     {
-      name: "Idempotency & Safe Methods",
+      name: "Idempotency & Safe",
       path: "/apis/rest/httpmethods/idempotency-safe"
     },
   ],

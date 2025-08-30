@@ -1,48 +1,16 @@
 import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes';
 
-const HTMLIntermediate: Subpage = {
+import MediaAndEmbeds from '@/Navigation/IndividualNav/Granularized/FrontEndNav/HTMLNav/Intermediate/MediaAndEmbeds';
+import TabularData from '@/Navigation/IndividualNav/Granularized/FrontEndNav/HTMLNav/Intermediate/TabularData';
+import HeadAndMeta from '@/Navigation/IndividualNav/Granularized/FrontEndNav/HTMLNav/Intermediate/HeadAndMeta';
+
+const Intermediate: Subpage = {
   name: 'Intermediate',
   subpages: [
-    {
-      name: 'Media/Embeds',
-      subpages: [
-        {
-          name: 'Media Elements',
-          path: '/html/intermediate/mediaembeds/media'
-        },
-        {
-          name: 'Embedding Content',
-          path: '/html/intermediate/mediaembeds/embedding'
-        }
-      ]
-    },
-    {
-      name: 'Tabular Data',
-      subpages: [
-        {
-          name: 'Tables',
-          path: '/html/intermediate/tabulardata/tables'
-        },
-        {
-          name: 'Captions/Groups',
-          path: '/html/intermediate/tabulardata/captions'
-        }
-      ]
-    },
-    {
-      name: 'Head/Metadata',
-      subpages: [
-        {
-          name: 'Head Elements',
-          path: '/html/intermediate/headmetadata/head'
-        },
-        {
-          name: 'Meta Tags',
-          path: '/html/intermediate/headmetadata/meta'
-        }
-      ]
-    }
+    MediaAndEmbeds,
+    TabularData,
+    HeadAndMeta
   ]
 };
 
-export default HTMLIntermediate;
+export default Intermediate;

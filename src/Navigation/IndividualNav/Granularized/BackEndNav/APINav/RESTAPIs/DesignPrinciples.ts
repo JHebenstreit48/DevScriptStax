@@ -8,7 +8,7 @@ const DesignPrinciples: Subpage = {
       path: "/apis/rest/design/resource-naming"
     },
     {
-      name: "Versioning REST APIs",
+      name: "Versioning",
       path: "/apis/rest/design/versioning"
     },
     {
@@ -16,7 +16,7 @@ const DesignPrinciples: Subpage = {
       path: "/apis/rest/design/hateoas" 
     },
     { 
-      name: "REST API Security Best Practices", 
+      name: "Security Best Practices", 
       path: "/apis/rest/design/security" 
     },
   ],

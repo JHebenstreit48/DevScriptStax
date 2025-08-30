@@ -1,7 +1,7 @@
 import { RouteObject } from 'react-router-dom';
 
-const cloudServicesRoutes: RouteObject[] = [
+const cloudServices: RouteObject[] = [
 
 ];
 
-export default cloudServicesRoutes;
+export default cloudServices;

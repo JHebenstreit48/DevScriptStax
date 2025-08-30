@@ -1,14 +1,12 @@
 import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes';
 
 // ---------- End To End Testing Navigation Start ----------
-// import CypressBasicsNavigation from '@/Navigation/IndividualNav/TestingNav/End2End/CypressNav/Basics';
-// import CypressIntermediateNavigation from '@/Navigation/IndividualNav/TestingNav/End2End/CypressNav/Intermediate';
-// import CypressAdvancedNavigation from '@/Navigation/IndividualNav/TestingNav/End2End/CypressNav/Advanced';
-// import PlaywrightNavigation from '@/Navigation/IndividualNav/TestingNav/End2End/Playwright';
+import Cypress from '@/Navigation/IndividualNav/FullTopics/TestingNav/End2End/Cypress';
+// import Playwright from '@/Navigation/IndividualNav/TestingNav/End2End/Playwright';
 // ---------- End To End Testing Navigation End ----------
 
 // ---------- Framework Testing Navigation Start ----------
-// import JestNavigation from '@/Navigation/IndividualNav/TestingNav/Framework/Jest';
+// import Jest from '@/Navigation/IndividualNav/TestingNav/Framework/Jest';
 // import VitestNavigation from '@/Navigation/IndividualNav/TestingNav/Framework/Vitest';
 // import MochaNavigation from '@/Navigation/IndividualNav/TestingNav/Framework/Mocha';
 // ---------- Framework Testing Navigation End ----------
@@ -28,18 +26,7 @@ const testing: Subpage = {
     {
       name: 'End To End',
       subpages: [
-        {
-          name: 'Cypress',
-          subpages: [
-            // CypressBasicsNavigation,
-            // CypressIntermediateNavigation,
-            // CypressAdvancedNavigation
-          ]
-        }
-        // {
-        //   name: 'Playwright',
-        //   subpages: []
-        // }
+        Cypress,
       ]
     },
     // ---------- End To End Testing Navigation End ----------

@@ -1,14 +1,16 @@
 import PageLayout from '@/Components/NavigationUI/PageLayout';
 import Header from "@/Components/Shared/Header/Header";
+import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const Tables = () => {
-    const markdownFilePath = "FrontEndNotes/HTMLNotes/Intermediate/TabularData/Tables.md";
+    const markdownFilePath = "FrontEndNotes/HTMLNotes/Intermediate/TabularData/Tables";
 
     return (
         <>
             <PageLayout>
-            <Header text="Tables" />
+            <Header />
+            <PageTitle title="Tables" />
             <Notes
                 filePath={markdownFilePath}
             />

@@ -1,7 +1,7 @@
 import { RouteObject } from "react-router-dom";
 
-const languagesRoutes: RouteObject[] = [
+const languages: RouteObject[] = [
 
 ];
 
-export default languagesRoutes;
+export default languages;
