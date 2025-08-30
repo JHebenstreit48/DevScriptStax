@@ -2,8 +2,8 @@ import { RouteObject } from 'react-router-dom';
 
 import cypressRoutes from '@/routes/IndividualRoutes/Granularized/TestingRoutes/EndToEndTesting/cypressRoutes';
 
-const testingRoutes: RouteObject[] = [
+const testing: RouteObject[] = [
 ...cypressRoutes
 ];
 
-export default testingRoutes;
+export default testing;

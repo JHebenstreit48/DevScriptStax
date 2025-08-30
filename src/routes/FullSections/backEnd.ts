@@ -7,9 +7,9 @@ import { RouteObject } from "react-router-dom";
 
 // import mongoDBRoutes from "@/routes/IndividualRoutes/BackEndRoutes/DatabaseRoutes/mongoDBRoutes";
 
-const backEndRoutes: RouteObject[] = [
+const backEnd: RouteObject[] = [
     // ...APIBasics,
     // ...mongoDBRoutes,
 ];
 
-export default backEndRoutes;
+export default backEnd;

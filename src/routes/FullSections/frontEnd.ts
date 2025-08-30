@@ -13,7 +13,7 @@ import React from "@/routes/IndividualRoutes/FullRoutes/FrontEndRoutes/react";
 import Redux from "@/routes/IndividualRoutes/FullRoutes/FrontEndRoutes/redux";
 import Vue from "@/routes/IndividualRoutes/FullRoutes/FrontEndRoutes/vue";
 
-const frontEndRoutes: RouteObject[] = [
+const frontEnd: RouteObject[] = [
     ...Angular,
     ...CSS,
     // ...Gatsby,
@@ -28,4 +28,4 @@ const frontEndRoutes: RouteObject[] = [
     ...Vue,
 ];
 
-export default frontEndRoutes;
+export default frontEnd;

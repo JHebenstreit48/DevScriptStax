@@ -4,13 +4,13 @@ import App from "@/App";
 import ErrorPage from "@/Pages/Special/Error";
 import Home from "@/Pages/Special/Home";
 
-import backEndRoutes from "@/routes/FullSections/backEnd";
-import cloudServicesRoutes from "@/routes/FullSections/cloudServices";
-import frontEndRoutes from "@/routes/FullSections/frontEnd";
-import graphqlAndApolloRoutes from "@/routes/FullSections/graphqlAndApollo";
-import languagesRoutes from "@/routes/FullSections/languages";
-import testingRoutes from "@/routes/FullSections/testing";
-import toolRoutes from "@/routes/FullSections/tools";
+import backEnd from "@/routes/FullSections/backEnd";
+import cloudServices from "@/routes/FullSections/cloudServices";
+import frontEnd from "@/routes/FullSections/frontEnd";
+import graphqlAndApollo from "@/routes/FullSections/graphqlAndApollo";
+import languages from "@/routes/FullSections/languages";
+import testing from "@/routes/FullSections/testing";
+import tools from "@/routes/FullSections/tools";
 
 export const router = createBrowserRouter([
     {
@@ -22,13 +22,13 @@ export const router = createBrowserRouter([
                 index: true,
                 element: <Home />,
             },
-            ...backEndRoutes,
-            ...cloudServicesRoutes,
-            ...frontEndRoutes,
-            ...graphqlAndApolloRoutes,
-            ...languagesRoutes,
-            ...testingRoutes,
-            ...toolRoutes
+            ...backEnd,
+            ...cloudServices,
+            ...frontEnd,
+            ...graphqlAndApollo,
+            ...languages,
+            ...testing,
+            ...tools
         ],
     },
 ]);    
