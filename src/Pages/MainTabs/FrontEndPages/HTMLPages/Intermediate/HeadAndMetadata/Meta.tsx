@@ -1,14 +1,16 @@
 import PageLayout from '@/Components/NavigationUI/PageLayout';
 import Header from "@/Components/Shared/Header/Header";
+import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
-const Metadata = () => {
-    const markdownFilePath = "FrontEndNotes/HTMLNotes/Intermediate/HeadAndMetadata/Metadata.md";
+const MetaElements = () => {
+    const markdownFilePath = "FrontEndNotes/HTMLNotes/Intermediate/HeadAndMetadata/Metadata";
 
     return (
         <>
             <PageLayout>
-            <Header text="Metadata" />
+            <Header />
+            <PageTitle title="Meta Elements" />
             <Notes
                 filePath={markdownFilePath}
             />
@@ -17,4 +19,4 @@ const Metadata = () => {
     );
 };
 
-export default Metadata;
+export default MetaElements;

@@ -4,15 +4,10 @@ import Fundamentals from "@/routes/IndividualRoutes/Granularized/FrontEndRoutes/
 import StructureRoutes from "@/routes/IndividualRoutes/Granularized/FrontEndRoutes/AngularRoutes/Basics/Structure";
 import CoreConcepts from "@/routes/IndividualRoutes/Granularized/FrontEndRoutes/AngularRoutes/Basics/CoreConcepts";
 
-// ----------------------- Angular Structure Start -----------------------
-
 const Basics: RouteObject[] = [
   ...Fundamentals,
   ...StructureRoutes,
   ...CoreConcepts
-  // --------------------- Angular Structure Start ----------------------
-  
-  // ---------------------- Angular Structure End ----------------------
 ];
 
 export default Basics;

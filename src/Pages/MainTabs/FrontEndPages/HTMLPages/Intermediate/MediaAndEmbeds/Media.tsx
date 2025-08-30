@@ -1,14 +1,17 @@
 import PageLayout from '@/Components/NavigationUI/PageLayout';
 import Header from "@/Components/Shared/Header/Header";
+import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
+
 const MediaElements = () => {
-    const markdownFilePath = "FrontEndNotes/HTMLNotes/Intermediate/MediaAndEmbeds/Media.md";
+    const markdownFilePath = "FrontEndNotes/HTMLNotes/Intermediate/MediaAndEmbeds/Media";
 
     return (
         <>
             <PageLayout>
-            <Header text="Media Elements" />
+            <Header />
+            <PageTitle title="Media Elements" />
             <Notes
                 filePath={markdownFilePath}
             />

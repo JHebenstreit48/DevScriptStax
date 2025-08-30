@@ -1,14 +1,16 @@
 import PageLayout from '@/Components/NavigationUI/PageLayout';
 import Header from "@/Components/Shared/Header/Header";
 import Notes from '@/Components/PageComponents/Notes/Notes';
+import PageTitle from '@/Components/PageComponents/PageTitle';
 
 const HeadElements = () => {
-    const markdownFilePath = "FrontEndNotes/HTMLNotes/Intermediate/HeadAndMetadata/Head.md";
+    const markdownFilePath = "FrontEndNotes/HTMLNotes/Intermediate/HeadAndMetadata/Head";
 
     return (
         <>
             <PageLayout>
-            <Header text="Head Elements" />
+            <Header />
+            <PageTitle title="Head Elements" />
             <Notes
                 filePath={markdownFilePath}
             />
