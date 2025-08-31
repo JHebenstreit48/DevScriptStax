@@ -1,6 +1,6 @@
 import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes';
 
-const MongoDBIntermediate: Subpage = {
+const Intermediate: Subpage = {
   name: 'Intermediate',
   subpages: [
     {
@@ -8,19 +8,19 @@ const MongoDBIntermediate: Subpage = {
       subpages: [
         {
           name: 'Introduction',
-          path: '/databases/mongodb/indexes/overview'
+          path: '/databases/mongodb/intermediate/indexes/overview'
         },
         {
           name: 'Index Types',
-          path: '/databases/mongodb/indexes/types'
+          path: '/databases/mongodb/intermediate/indexes/types'
         },
         {
           name: 'Management',
-          path: '/databases/mongodb/indexes/management'
+          path: '/databases/mongodb/intermediate/indexes/management'
         },
         {
           name: 'Performance',
-          path: '/databases/mongodb/indexes/performance'
+          path: '/databases/mongodb/intermediate/indexes/performance'
         }
       ]
     },
@@ -29,23 +29,23 @@ const MongoDBIntermediate: Subpage = {
       subpages: [
         {
           name: 'Overview',
-          path: '/databases/mongodb/aggregation/overview'
+          path: '/databases/mongodb/intermediate/aggregation/overview'
         },
         {
           name: 'Pipelines',
-          path: '/databases/mongodb/aggregation/pipelines'
+          path: '/databases/mongodb/intermediate/aggregation/pipelines'
         },
         {
           name: 'Operators',
-          path: '/databases/mongodb/aggregation/operators'
+          path: '/databases/mongodb/intermediate/aggregation/operators'
         },
         {
           name: 'Optimization',
-          path: '/databases/mongodb/aggregation/performance'
+          path: '/databases/mongodb/intermediate/aggregation/performance'
         }
       ]
     }
   ]
 };
 
-export default MongoDBIntermediate;
+export default Intermediate;

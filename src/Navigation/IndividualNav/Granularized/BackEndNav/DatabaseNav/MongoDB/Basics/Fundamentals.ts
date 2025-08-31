@@ -19,6 +19,18 @@ const Fundamentals: Subpage = {
       name: 'Use Cases',
       path: '/databases/mongodb/basics/fundamentals/use-cases',
     },
+    {
+      name: 'BSON & ObjectId',
+      path: '/databases/mongodb/basics/fundamentals/bson-objectid',
+    },
+    {
+      name: 'Data Modeling (Intro)',
+      path: '/databases/mongodb/basics/fundamentals/data-modeling-intro',
+    },
+    {
+      name: 'Mongoose (Basics)',
+      path: '/databases/mongodb/basics/fundamentals/mongoose-basics',
+    },
   ],
 };
 
