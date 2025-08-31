@@ -127,6 +127,10 @@
       font: $notes-code-font;
     }
 
+    .fullWidthBullet {
+      column-count: 1;
+    }
+
     .bullet1 {
       column-count: 1;
       margin: $notes-bullet1-margin;
@@ -156,15 +160,15 @@
       }
     }
 
-    .bullet3 {
-      column-count: 3;
-      width: $notes-bullet3-width;
-    }
+    // .bullet3 {
+    //   column-count: 3;
+    //   width: $notes-bullet3-width;
+    // }
 
-    .bullet4 {
-      column-count: 1;
-      padding-left: $notes-bullet4-pad-left;
-    }
+    // .bullet4 {
+    //   column-count: 1;
+    //   padding-left: $notes-bullet4-pad-left;
+    // }
 
     .tableWrapper {
       display: flex;
