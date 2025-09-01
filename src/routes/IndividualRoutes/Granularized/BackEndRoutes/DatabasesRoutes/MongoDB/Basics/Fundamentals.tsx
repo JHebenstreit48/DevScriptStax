@@ -17,6 +17,14 @@ const UseCases = lazy(
   () =>
     import('@/Pages/MainTabs/BackEndPages/DatabasesPages/MongoDB/Basics/Fundamentals/UseCases')
 );
+const BSONAndObject = lazy(
+  () =>
+    import('@/Pages/MainTabs/BackEndPages/DatabasesPages/MongoDB/Basics/Fundamentals/BSONAndObject')
+);
+const DataModeling = lazy(
+  () =>
+    import('@/Pages/MainTabs/BackEndPages/DatabasesPages/MongoDB/Basics/Fundamentals/DataModeling')
+);
 
 const Fundamentals: RouteObject[] = [
     {
@@ -34,7 +42,15 @@ const Fundamentals: RouteObject[] = [
     {
         path: '/databases/mongodb/basics/fundamentals/use-cases',
         element: <UseCases />,
-    }
+    },
+    {
+      path: '/databases/mongodb/basics/fundamentals/bson-objectid',
+      element: <BSONAndObject />
+    },
+    {
+      path: '/databases/mongodb/basics/fundamentals/data-modeling',
+      element: <DataModeling />
+    },
 ];
 
 export default Fundamentals;

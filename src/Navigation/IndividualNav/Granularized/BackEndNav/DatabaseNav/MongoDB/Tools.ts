@@ -7,12 +7,12 @@ const Tools: Subpage = {
       name: 'Shell & Server',
       subpages: [
         {
-          name: 'Mongo Shell (mongosh)',
-          path: '/databases/mongodb/tools/mongosh'
+          name: 'Overview',
+          path: '/databases/mongodb/tools/shell-and-server/overview'
         },
         {
-          name: 'Server Process (mongod)',
-          path: '/databases/mongodb/tools/mongod'
+          name: 'Shell & Server Commands',
+          path: '/databases/mongodb/tools/shell-and-server/commands'
         },
       ],
     },
@@ -20,12 +20,12 @@ const Tools: Subpage = {
       name: 'GUI & CLI',
       subpages: [
         {
-          name: 'MongoDB Compass',
-          path: '/databases/mongodb/tools/compass'
+          name: 'Compass',
+          path: '/databases/mongodb/tools/gui-and-cli/compass'
         },
         {
           name: 'Atlas CLI',
-          path: '/databases/mongodb/tools/atlas-cli'
+          path: '/databases/mongodb/tools/gui-and-cli/atlas-cli'
         },
       ],
     },
@@ -34,11 +34,11 @@ const Tools: Subpage = {
       subpages: [
         {
           name: 'Export & Import',
-          path: '/databases/mongodb/tools/export-import'
+          path: '/databases/mongodb/tools/data-move-backup/export-import'
         },
         {
           name: 'Backup & Restore',
-          path: '/databases/mongodb/tools/backup-restore'
+          path: '/databases/mongodb/tools/data-move-backup/backup-restore'
         },
       ],
     },
@@ -60,11 +60,11 @@ const Tools: Subpage = {
       subpages: [
         {
           name: 'Seeding & Local Dev',
-          path: '/databases/mongodb/tools/seeding'
+          path: '/databases/mongodb/tools/dev-workflow/seeding-and-local'
         },
         {
           name: 'Connection Strings & Environments',
-          path: '/databases/mongodb/tools/connection-strings'
+          path: '/databases/mongodb/tools/dev-workflow/connection-strings'
         },
       ],
     },

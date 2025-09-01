@@ -9,7 +9,7 @@ const Mongoose: Subpage = {
     },
     {
         name: 'Schemas & Models',
-        path: '/databases/mongodb/basics/mongoose/schemas-models'
+        path: '/databases/mongodb/basics/mongoose/schemas-and-models'
     },
     {
         name: 'Queries & Filters',

@@ -24,12 +24,8 @@ const Fundamentals: Subpage = {
       path: '/databases/mongodb/basics/fundamentals/bson-objectid',
     },
     {
-      name: 'Data Modeling (Intro)',
-      path: '/databases/mongodb/basics/fundamentals/data-modeling-intro',
-    },
-    {
-      name: 'Mongoose (Basics)',
-      path: '/databases/mongodb/basics/fundamentals/mongoose-basics',
+      name: 'Data Modeling',
+      path: '/databases/mongodb/basics/fundamentals/data-modeling',
     },
   ],
 };
