@@ -1,0 +1,25 @@
+import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes';
+
+const ExtensionsAndFDW: Subpage = {
+  name: 'Extensions & FDW',
+  subpages: [
+    {
+      name: 'Popular Extensions',
+      path: '/databases/postgresql/advanced/extensions/overview',
+    },
+    {
+      name: 'PostGIS (Geospatial)',
+      path: '/databases/postgresql/advanced/extensions/postgis',
+    },
+    {
+      name: 'pg_stat_statements',
+      path: '/databases/postgresql/advanced/extensions/pg-stat-statements',
+    },
+    {
+      name: 'Foreign Data Wrappers (FDW)',
+      path: '/databases/postgresql/advanced/extensions/fdw',
+    },
+  ],
+};
+
+export default ExtensionsAndFDW;
