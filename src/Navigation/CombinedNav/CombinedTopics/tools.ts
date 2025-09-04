@@ -2,25 +2,25 @@ import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/Navigation
 
 
 // ---------- API Tools Navigation Start ----------
-// import InsomniaNavigation from '@/Navigation/IndividualNav/ToolsNav/APITools/Insomnia';
-// import PostmanNavigation from '@/Navigation/IndividualNav/ToolsNav/APITools/Postman';
+// import Insomnia from '@/Navigation/IndividualNav/ToolsNav/APITools/Insomnia';
+// import Postman from '@/Navigation/IndividualNav/ToolsNav/APITools/Postman';
 // ---------- API Tools Navigation End ----------
 
 // ---------- CICD Tools Navigation Start ----------
-// import CircleCINavigation from '@/Navigation/IndividualNav/ToolsNav/CICDTools/CircleCI';
-// import JenkinsNavigation from '@/Navigation/IndividualNav/ToolsNav/CICDTools/Jenkins';
+import CircleCI from '@/Navigation/IndividualNav/FullTopics/ToolsNav/CICD/CircleCI';
+import Jenkins from '@/Navigation/IndividualNav/FullTopics/ToolsNav/CICD/Jenkins';
 // ---------- CICD Tools Navigation End ----------
 
 // ---------- Code Quality Navigation Start ----------
-// import ESLintNavigation from '@/Navigation/IndividualNav/ToolsNav/CodeQuality/ESLint';
-// import PrettierNavigation from '@/Navigation/IndividualNav/ToolsNav/CodeQuality/Prettier';
-// import TSLintNavigation from '@/Navigation/IndividualNav/ToolsNav/CodeQuality/TSLint';
-// import StandardJSNavigation from '@/Navigation/IndividualNav/ToolsNav/CodeQuality/StandardJS';
+// import ESLint from '@/Navigation/IndividualNav/ToolsNav/CodeQuality/ESLint';
+// import Prettier from '@/Navigation/IndividualNav/ToolsNav/CodeQuality/Prettier';
+// import TSLint from '@/Navigation/IndividualNav/ToolsNav/CodeQuality/TSLint';
+// import StandardJS from '@/Navigation/IndividualNav/ToolsNav/CodeQuality/StandardJS';
 // ---------- Code Quality Navigation End ----------
 
 // ---------- Package Management & Bundling Navigation Start ----------
-// import BabelNavigation from '@/Navigation/IndividualNav/ToolsNav/PackageManagementAndBundling/Babel';
-// import WebpackNavigation from '@/Navigation/IndividualNav/ToolsNav/PackageManagementAndBundling/WebpackPage';
+// import Babel from '@/Navigation/IndividualNav/ToolsNav/PackageManagementAndBundling/Babel';
+// import Webpack from '@/Navigation/IndividualNav/ToolsNav/PackageManagementAndBundling/WebpackPage';
 // ---------- Package Management & Bundling Navigation End ----------
 
 // ---------- Containerization Navigation Start ----------
@@ -33,24 +33,24 @@ const tools: Subpage = {
   subpages: [
     {
       name: 'API Tools',
-      // subpages: [InsomniaNavigation, PostmanNavigation]
+      // subpages: [Insomnia, Postman]
     },
     {
       name: 'CICD Tools',
-      // subpages: [CircleCINavigation, JenkinsNavigation]
+      subpages: [CircleCI, Jenkins]
     },
     {
       name: 'Code Quality',
       subpages: [
-        // ESLintNavigation,
-        // PrettierNavigation,
-        // TSLintNavigation,
-        // StandardJSNavigation
+        // ESLint,
+        // Prettier,
+        // TSLint,
+        // StandardJS
       ]
     },
     {
       name: 'Package Management & Bundling',
-      // subpages: [BabelNavigation, WebpackNavigation]
+      // subpages: [Babel, Webpack]
     },
     {
       name: 'Containerization',
