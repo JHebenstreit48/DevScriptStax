@@ -18,10 +18,19 @@ import Jenkins from '@/Navigation/IndividualNav/FullTopics/ToolsNav/CICD/Jenkins
 // import StandardJS from '@/Navigation/IndividualNav/ToolsNav/CodeQuality/StandardJS';
 // ---------- Code Quality Navigation End ----------
 
-// ---------- Package Management & Bundling Navigation Start ----------
-// import Babel from '@/Navigation/IndividualNav/ToolsNav/PackageManagementAndBundling/Babel';
-// import Webpack from '@/Navigation/IndividualNav/ToolsNav/PackageManagementAndBundling/WebpackPage';
-// ---------- Package Management & Bundling Navigation End ----------
+// -------------- Package & Bundling Start ----------------------------
+
+// ------------- Package Management Start -------------
+// import Yarn from '@/Navigation/IndividualNav/FullTopics/ToolsNav/PackageAndBundle/PackageManagement/Yarn';
+// import Pnpm from '@/Navigation/IndividualNav/FullTopics/ToolsNav/PackageAndBundle/PackageManagement/Pnpm';
+// -------------- Package Management End ---------------
+
+// -------------------- Bundling Start -----------------
+import Babel from '@/Navigation/IndividualNav/FullTopics/ToolsNav/PackageAndBundle/Bundling/Babel';
+import Webpack from '@/Navigation/IndividualNav/FullTopics/ToolsNav/PackageAndBundle/Bundling/WebpackNav';
+// -------------------- Bundling End -------------------
+
+// ---------------- Package & Bundling End ---------------------------------
 
 // ---------- Containerization Navigation Start ----------
 import Docker from '@/Navigation/IndividualNav/FullTopics/ToolsNav/Containerization/Docker';
@@ -49,8 +58,17 @@ const tools: Subpage = {
       ]
     },
     {
-      name: 'Package Management & Bundling',
-      // subpages: [Babel, Webpack]
+      name: 'Package & Bundling',
+      subpages: [
+        {
+          name: 'Package Management',
+          // subpages: [Yarn, Pnpm]
+        },
+        {
+          name: 'Bundling',
+          subpages: [Babel, Webpack] // later: Vite, Rollup, esbuild, Parcel
+        }
+      ]
     },
     {
       name: 'Containerization',
