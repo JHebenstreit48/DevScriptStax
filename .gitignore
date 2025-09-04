@@ -32,6 +32,7 @@ lerna-debug.log*
 # ========================================
 .vscode/
 !.vscode/extensions.json  # if you want to keep team-based extension suggestions
+!.vscode/settings.json    # allow project-specific overrides (icons, etc.)
 .idea/
 .DS_Store
 *.suo
