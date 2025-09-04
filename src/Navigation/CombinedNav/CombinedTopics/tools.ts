@@ -27,7 +27,7 @@ import Jenkins from '@/Navigation/IndividualNav/FullTopics/ToolsNav/CICD/Jenkins
 
 // -------------------- Bundling Start -----------------
 import Babel from '@/Navigation/IndividualNav/FullTopics/ToolsNav/PackageAndBundle/Bundling/Babel';
-import Webpack from '@/Navigation/IndividualNav/FullTopics/ToolsNav/PackageAndBundle/Bundling/WebpackNav';
+import Webpack from '@/Navigation/IndividualNav/FullTopics/ToolsNav/PackageAndBundle/Bundling/Webpack';
 // -------------------- Bundling End -------------------
 
 // ---------------- Package & Bundling End ---------------------------------
