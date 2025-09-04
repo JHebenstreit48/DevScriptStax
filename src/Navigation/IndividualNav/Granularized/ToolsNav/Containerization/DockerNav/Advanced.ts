@@ -1,26 +1,83 @@
-import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes';
+import { Subpage } from "@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes";
 
 const Advanced: Subpage = {
-  name: 'Advanced',
+  name: "Advanced",
   subpages: [
     {
-      name: 'Topics',
+      name: "Networking",
       subpages: [
         {
-          name: 'Networking',
-          path: '/tools/containerization/docker/networking'
+          name: "Networks & Drivers",
+          path: "/tools/containerization/docker/advanced/networking/networks"
         },
         {
-          name: 'Volumes/Persistence',
-          path: '/tools/containerization/docker/volumes'
+          name: "Ports, DNS, Connectivity",
+          path: "/tools/containerization/docker/advanced/networking/ports-dns"
+        }
+      ]
+    },
+    {
+      name: "Volumes & Storage",
+      subpages: [
+        {
+          name: "Volumes / Persistence",
+          path: "/tools/containerization/docker/volumes"
         },
         {
-          name: 'Security',
-          path: '/tools/containerization/docker/security'
+          name: "Bind Mounts & Backup",
+          path: "/tools/containerization/docker/advanced/storage/mounts-backup"
+        }
+      ]
+    },
+    {
+      name: "Security",
+      subpages: [
+        {
+          name: "Best Practices",
+          path: "/tools/containerization/docker/security"
         },
         {
-          name: 'Image Optimization',
-          path: '/tools/containerization/docker/image-optimization'
+          name: "Secrets & Scanning",
+          path: "/tools/containerization/docker/advanced/security/secrets-scanning"
+        }
+      ]
+    },
+    {
+      name: "Performance",
+      subpages: [
+        {
+          name: "Image Optimization",
+          path: "/tools/containerization/docker/image-optimization"
+        },
+        {
+          name: "Build Cache & buildx",
+          path: "/tools/containerization/docker/advanced/perf/build-cache-buildx"
+        }
+      ]
+    },
+    {
+      name: "Compose Advanced",
+      subpages: [
+        {
+          name: "Profiles & Overrides",
+          path: "/tools/containerization/docker/advanced/compose/profiles-overrides"
+        },
+        {
+          name: "Prod Deploy & Env Files",
+          path: "/tools/containerization/docker/advanced/compose/prod-env"
+        }
+      ]
+    },
+    {
+      name: "Debug & Troubleshoot",
+      subpages: [
+        {
+          name: "Logs / Exec / Inspect",
+          path: "/tools/containerization/docker/advanced/debug/logs-exec-inspect"
+        },
+        {
+          name: "Common Issues",
+          path: "/tools/containerization/docker/advanced/debug/common-issues"
         }
       ]
     }
