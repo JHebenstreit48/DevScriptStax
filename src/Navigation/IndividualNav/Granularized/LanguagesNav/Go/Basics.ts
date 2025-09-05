@@ -1,43 +1,56 @@
-import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes';
+import { Subpage } from "@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes";
 
-const GoBasics: Subpage = {
-  name: 'Basics',
+const Basics: Subpage = {
+  name: "Basics",
   subpages: [
     {
-      name: 'Fundamentals',
+      name: "Fundamentals",
       subpages: [
         {
-          name: 'Basics/Syntax',
-          path: '/go/basics/fundamentals/basicssyntax'
+          name: "Syntax",
+          path: "/go/basics/fundamentals/syntax"
         },
         {
-          name: 'Control Flow',
-          path: '/go/basics/fundamentals/controlflow'
+          name: "Control Flow",
+          path: "/go/basics/fundamentals/control-flow"
         },
         {
-          name: 'Functions/Packages',
-          path: '/go/basics/fundamentals/functionspackages'
+          name: "Functions & Packages",
+          path: "/go/basics/fundamentals/functions-packages"
         }
       ]
     },
     {
-      name: 'Core Concepts',
+      name: "Core Concepts",
       subpages: [
         {
-          name: 'Variables/Types',
-          path: '/go/basics/coreconcepts/variablestypes'
+          name: "Variables & Types",
+          path: "/go/basics/core-concepts/variables-types"
         },
         {
-          name: 'Structs/Interfaces',
-          path: '/go/basics/coreconcepts/structsinterfaces'
+          name: "Structs & Interfaces",
+          path: "/go/basics/core-concepts/structs-interfaces"
         },
         {
-          name: 'Concurrency',
-          path: '/go/basics/coreconcepts/concurrency'
+          name: "Concurrency Intro",
+          path: "/go/basics/core-concepts/concurrency-intro"
+        }
+      ]
+    },
+    {
+      name: "Collections",
+      subpages: [
+        {
+          name: "Arrays & Slices",
+          path: "/go/basics/collections/arrays-slices"
+        },
+        {
+          name: "Maps",
+          path: "/go/basics/collections/maps"
         }
       ]
     }
   ]
 };
 
-export default GoBasics;
+export default Basics;
