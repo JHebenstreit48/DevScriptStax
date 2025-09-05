@@ -4,15 +4,28 @@ const Testing: Subpage = {
   name: "Testing",
   subpages: [
     {
-      name: "Unit",
+      name: "Unit (stdlib)",
       subpages: [
         {
-          name: "testing.T & testify",
-          path: "/go/testing/unit/testing-testify"
+          name: "testing.T Basics",
+          path: "/go/testing/unit/testing-t-basics"
         },
         {
           name: "Table Tests",
           path: "/go/testing/unit/table-tests"
+        }
+      ]
+    },
+    {
+      name: "Testify",
+      subpages: [
+        {
+          name: "Assertions",
+          path: "/go/testing/testify/assertions"
+        },
+        {
+          name: "Mocks & Suites",
+          path: "/go/testing/testify/mocks-suites"
         }
       ]
     },
