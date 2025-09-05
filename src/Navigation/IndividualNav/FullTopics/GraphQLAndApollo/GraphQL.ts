@@ -2,7 +2,7 @@ import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/Navigation
 import GraphQLBasics from '@/Navigation/IndividualNav/Granularized/GraphQLAndApollo/GraphQLNav/Basics';
 import GraphQLAdvanced from '@/Navigation/IndividualNav/Granularized/GraphQLAndApollo/GraphQLNav/Advanced';
 
-const GraphQLNav: Subpage = {
+const GraphQL: Subpage = {
   name: 'GraphQL',
   subpages: [
     GraphQLBasics,
@@ -10,4 +10,4 @@ const GraphQLNav: Subpage = {
   ]
 };
 
-export default GraphQLNav;
+export default GraphQL;

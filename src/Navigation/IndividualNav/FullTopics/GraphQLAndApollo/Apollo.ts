@@ -6,7 +6,7 @@ import ClientAdvanced from '@/Navigation/IndividualNav/Granularized/GraphQLAndAp
 import ServerBasics from '@/Navigation/IndividualNav/Granularized/GraphQLAndApollo/ApolloNav/ApolloServer/Basics';
 import ServerAdvanced from '@/Navigation/IndividualNav/Granularized/GraphQLAndApollo/ApolloNav/ApolloServer/Advanced';
 
-const ApolloNav: Subpage = {
+const Apollo: Subpage = {
   name: 'Apollo',
   subpages: [
     {
@@ -26,4 +26,4 @@ const ApolloNav: Subpage = {
   ]
 };
 
-export default ApolloNav;
+export default Apollo;

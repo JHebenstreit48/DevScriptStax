@@ -1,29 +1,61 @@
-import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes';
+import { Subpage } from "@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes";
 
-const GoAdvanced: Subpage = {
-  name: 'Advanced',
+const Advanced: Subpage = {
+  name: "Advanced",
   subpages: [
     {
-      name: 'Error Handling',
-      path: '/go/advanced/errorhandling'
+      name: "Errors",
+      subpages: [
+        {
+          name: "Basics & Wrapping",
+          path: "/go/advanced/errors/basics-wrapping"
+        },
+        {
+          name: "Sentinel vs Is/As",
+          path: "/go/advanced/errors/sentinel-is-as"
+        }
+      ]
     },
     {
-      name: 'Modules',
-      path: '/go/advanced/modules'
+      name: "Modules",
+      subpages: [
+        {
+          name: "Go Modules",
+          path: "/go/advanced/modules/go-modules"
+        },
+        {
+          name: "Versioning",
+          path: "/go/advanced/modules/versioning"
+        }
+      ]
     },
     {
-      name: 'Testing',
-      path: '/go/advanced/testing'
+      name: "Concurrency+",
+      subpages: [
+        {
+          name: "Context & Cancel",
+          path: "/go/advanced/concurrency/context-cancel"
+        },
+        {
+          name: "Worker Pools",
+          path: "/go/advanced/concurrency/worker-pools"
+        }
+      ]
     },
     {
-      name: 'Tooling',
-      path: '/go/advanced/tooling'
-    },
-    {
-      name: 'Memory Management',
-      path: '/go/advanced/memorymanagement'
+      name: "Performance & Memory",
+      subpages: [
+        {
+          name: "Memory Mgmt",
+          path: "/go/advanced/performance/memory"
+        },
+        {
+          name: "Optimization",
+          path: "/go/advanced/performance/optimization"
+        }
+      ]
     }
   ]
 };
 
-export default GoAdvanced;
+export default Advanced;

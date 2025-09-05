@@ -1,6 +1,6 @@
 import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes';
 
-const TSBasics: Subpage = {
+const Basics: Subpage = {
   name: 'Basics',
   subpages: [
     {
@@ -36,4 +36,4 @@ const TSBasics: Subpage = {
   ]
 };
 
-export default TSBasics;
+export default Basics;
