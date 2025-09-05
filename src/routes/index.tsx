@@ -7,7 +7,7 @@ import Home from "@/Pages/Special/Home";
 import backEnd from "@/routes/FullSections/backEnd";
 import cloudServices from "@/routes/FullSections/cloudServices";
 import frontEnd from "@/routes/FullSections/frontEnd";
-import graphqlAndApollo from "@/routes/FullSections/graphqlAndApollo";
+import graphQLAndApollo from "@/routes/FullSections/graphQLAndApollo";
 import languages from "@/routes/FullSections/languages";
 import testing from "@/routes/FullSections/testing";
 import tools from "@/routes/FullSections/tools";
@@ -25,7 +25,7 @@ export const router = createBrowserRouter([
             ...backEnd,
             ...cloudServices,
             ...frontEnd,
-            ...graphqlAndApollo,
+            ...graphQLAndApollo,
             ...languages,
             ...testing,
             ...tools
