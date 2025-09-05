@@ -5,7 +5,7 @@ import Notes from '@/Components/PageComponents/Notes/Notes';
 
 
 const Setup = () => {
-  const markdownFilePath = '/GraphQLAndApolloNotes/Apollo/ApolloServer/Basics/Setup';
+  const markdownFilePath = '/GraphQLAndApolloNotes/ApolloNotes/ApolloServerNotes/Basics/Setup';
 
   return (
     <>
