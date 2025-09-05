@@ -1,15 +1,17 @@
 import PageLayout from '@/Components/NavigationUI/PageLayout';
 import Header from "@/Components/Shared/Header/Header";
+import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
-const CypressSetup = () => {
+const Setup = () => {
   const markdownFilePath =
     'TestingNotes/EndToEndNotes/CypressNotes/Basics/Fundamentals/Setup';
 
   return (
     <>
       <PageLayout>
-        <Header text="Setup" />
+        <Header />
+        <PageTitle title="Cypress Setup" />
         <Notes
           filePath={markdownFilePath}
           
@@ -19,4 +21,4 @@ const CypressSetup = () => {
   );
 };
 
-export default CypressSetup;
+export default Setup;

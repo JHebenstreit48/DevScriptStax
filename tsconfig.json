@@ -20,6 +20,6 @@
     "resolveJsonModule": true,
     "typeRoots": ["./node_modules/@types", "./src/types"]
   },
-  "include": ["src"],
+  "include": ["src", "src/routes/IndividualRoutes/Granularized/TestingRoutes/EndToEnd/CypressRoutes/Basics.ts"],
   "exclude": ["node_modules", "dist"]
 }
