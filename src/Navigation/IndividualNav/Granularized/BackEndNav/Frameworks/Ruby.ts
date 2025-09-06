@@ -1,6 +1,6 @@
 import { Subpage } from "@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes";
 
-const RubyNavigation: Subpage = {
+const Ruby: Subpage = {
   name: "Ruby",
   subpages: [
     // ---------- Ruby Core Navigation Start ----------
@@ -60,4 +60,4 @@ const RubyNavigation: Subpage = {
   ],
 };
 
-export default RubyNavigation;
+export default Ruby;
