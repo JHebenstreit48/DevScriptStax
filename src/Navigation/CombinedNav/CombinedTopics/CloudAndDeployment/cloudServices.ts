@@ -1,0 +1,90 @@
+import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes';
+
+// ---------- Deployment Platforms Navigation Start ----------
+
+// ---------- Front-End Deployment Navigation Start ----------
+import Netlify from '@/Navigation/IndividualNav/FullTopics/CloudServices/DeploymentPlatforms/FrontEndNav/Netlify';
+import Vercel from "@/Navigation/IndividualNav/FullTopics/CloudServices/DeploymentPlatforms/FrontEndNav/Vercel";
+import CloudflarePages from "@/Navigation/IndividualNav/FullTopics/CloudServices/DeploymentPlatforms/FrontEndNav/CloudflarePages";
+// ---------- Front-End Deployment Navigation End ----------
+
+// ---------- Full-Stack Deployment Navigation Start ----------
+import Render from '@/Navigation/IndividualNav/FullTopics/CloudServices/DeploymentPlatforms/FullStack/Render';
+import Railway from "@/Navigation/IndividualNav/FullTopics/CloudServices/DeploymentPlatforms/FullStack/Railway";
+import Fly from "@/Navigation/IndividualNav/FullTopics/CloudServices/DeploymentPlatforms/FullStack/Fly";
+// ---------- Full-Stack Deployment Navigation End ----------
+
+// ---------- Deployment Platforms Navigation End ----------
+
+// ---------- Serverless Computing Navigation Start ----------
+// import AWSLambda from "@/Navigation/CloudServices/ServerlessComputing/AWSLambda";
+// import GoogleCloudFunctions from "@/Navigation/CloudServices/ServerlessComputing/GoogleCloudFunctions";
+// import AzureFunctions from "@/Navigation/CloudServices/ServerlessComputing/AzureFunctions";
+// import FirebaseFunctions from "@/Navigation/CloudServices/ServerlessComputing/FirebaseFunctions";
+// ---------- Serverless Computing Navigation End ----------
+
+// ---------- Edge Computing Navigation Start ----------
+// import CloudflareWorkers from "@/Navigation/CloudServices/EdgeComputing/CloudflareWorkers";
+// import FastlyCompute from "@/Navigation/CloudServices/EdgeComputing/FastlyCompute";
+// import AkamaiEdgeWorkers from "@/Navigation/CloudServices/EdgeComputing/AkamaiEdgeWorkers";
+// ---------- Edge Computing Navigation End ----------
+
+// ---------- Frameworks Navigation Start ----------
+// import Frameworks from "@/Navigation/CloudServices/Frameworks/ServerlessFramework";
+// import AWSCDK from "@/Navigation/CloudServices/Frameworks/AWSCDK";
+// import AWSSAM from "@/Navigation/CloudServices/Frameworks/AWSSAM";
+// ----------- Frameworks Navigation End -----------
+
+const cloudServices: Subpage = {
+  name: 'Cloud Services',
+  subpages: [
+    {
+      name: 'Deployment Platforms',
+      subpages: [
+        {
+          name: 'Front-End Deployment',
+          subpages: [
+            Netlify,
+            Vercel,
+            CloudflarePages,
+          ]
+        },
+        {
+          name: 'Full-Stack',
+          subpages: [
+            Render,
+            Railway,
+            Fly
+          ]
+        }
+      ]
+    },
+    {
+      name: 'Serverless Computing',
+      subpages: [
+        // AWSLambda,
+        // GoogleCloudFunctions,
+        // AzureFunctions,
+        // FirebaseFunctions
+      ]
+    },
+    {
+      name: 'Edge Computing',
+      subpages: [
+        // CloudflareWorkers,
+        // FastlyCompute,
+        // AkamaiEdgeWorkers,
+      ]
+    },
+    {
+      name: 'Frameworks',
+      subpages: [
+        // ServerlessFramework,
+        // AWSCDK,
+        // AWSSAM,
+      ]
+    }
+  ]
+};
+
+export default cloudServices;

@@ -2,7 +2,7 @@ import { Subpage } from "@/Navigation/CombinedNav/CombinedNavAndTypes/Navigation
 
 import frontEnd from "@/Navigation/CombinedNav/CombinedTopics/frontEnd";
 import backEnd from "@/Navigation/CombinedNav/CombinedTopics/backEnd";
-import cloudServices from "@/Navigation/CombinedNav/CombinedTopics/cloudServices";
+import cloudAndDeployment from '@/Navigation/CombinedNav/CombinedTopics/cloudAndDeployment';
 import testing from "@/Navigation/CombinedNav/CombinedTopics//testing";
 import tools from "@/Navigation/CombinedNav/CombinedTopics/tools";
 import languages from "@/Navigation/CombinedNav/CombinedTopics/languages";
@@ -15,7 +15,7 @@ const pages: Subpage[] = [
   },
   frontEnd,
   backEnd,
-  cloudServices,
+  cloudAndDeployment,
   testing,
   tools,
   languages,
