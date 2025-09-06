@@ -7,15 +7,14 @@ import Cypress from '@/Navigation/IndividualNav/FullTopics/TestingNav/End2End/Cy
 
 // ---------- Framework Testing Navigation Start ----------
 // import Jest from '@/Navigation/IndividualNav/TestingNav/Framework/Jest';
-// import VitestNavigation from '@/Navigation/IndividualNav/TestingNav/Framework/Vitest';
-// import MochaNavigation from '@/Navigation/IndividualNav/TestingNav/Framework/Mocha';
+// import Vitest from '@/Navigation/IndividualNav/TestingNav/Framework/Vitest';
+// import Mocha from '@/Navigation/IndividualNav/TestingNav/Framework/Mocha';
 // ---------- Framework Testing Navigation End ----------
 
 // ---------- Unit Testing Navigation Start ----------
-// import PytestNavigation from '@/Navigation/IndividualNav/TestingNav/UnitTesting/Pytest';
-// import RSpecNavigation from '@/Navigation/IndividualNav/TestingNav/UnitTesting/RSpec';
-// import PHPUnitNavigation from '@/Navigation/IndividualNav/TestingNav/UnitTesting/PHPUnit';
-// import TestifyNavigation from '@/Navigation/IndividualNav/TestingNav/UnitTesting/Testify';
+// import Pytest from '@/Navigation/IndividualNav/TestingNav/UnitTesting/Pytest';
+// import RSpec from '@/Navigation/IndividualNav/TestingNav/UnitTesting/RSpec';
+// import PHPUnit from '@/Navigation/IndividualNav/TestingNav/UnitTesting/PHPUnit';
 
 // ---------- Unit Testing Navigation End ----------
 
@@ -35,9 +34,9 @@ const testing: Subpage = {
     {
       name: 'Framework',
       subpages: [
-        // JestNavigation,
-        // VitestNavigation,
-        // MochaNavigation
+        // Jest,
+        // Vitest,
+        // Mocha
       ]
     },
     // ---------- Framework Testing Navigation End ----------
@@ -46,10 +45,9 @@ const testing: Subpage = {
     {
       name: 'Unit',
       subpages: [
-        // PytestNavigation,
-        // RSpecNavigation,
-        // PHPUnitNavigation,
-        // TestifyNavigation
+        // Pytest,
+        // RSpec,
+        // PHPUnit,
       ]
     }
     // ---------- Unit Testing Navigation End ----------
