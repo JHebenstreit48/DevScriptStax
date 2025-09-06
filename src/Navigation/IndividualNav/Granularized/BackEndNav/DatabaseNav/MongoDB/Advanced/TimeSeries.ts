@@ -5,16 +5,16 @@ const TimeSeriesAndSpecialized: Subpage = {
   subpages: [
     {
       name: 'Time-Series Collections',
-      path: '/databases/mongodb/advanced/specialized/time-series',
+      path: '/mongodb/advanced/specialized/time-series',
     },
     {
       name: 'Capped Collections & Tailable Cursors',
-      path: '/databases/mongodb/advanced/specialized/capped-tailable',
+      path: '/mongodb/advanced/specialized/capped-tailable',
     },
     // If/when you want it:
     // {
     //   name: 'Geospatial Data & Queries',
-    //   path: '/databases/mongodb/advanced/specialized/geospatial',
+    //   path: '/mongodb/advanced/specialized/geospatial',
     // },
   ],
 };

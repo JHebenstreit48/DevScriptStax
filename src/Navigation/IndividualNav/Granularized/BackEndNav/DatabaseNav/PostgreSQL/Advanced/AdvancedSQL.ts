@@ -5,19 +5,19 @@ const AdvancedSQL: Subpage = {
   subpages: [
     {
       name: 'Common Table Expressions (CTEs)',
-      path: '/databases/postgresql/advanced/sql/ctes',
+      path: '/postgresql/advanced/sql/ctes',
     },
     {
       name: 'Window Functions',
-      path: '/databases/postgresql/advanced/sql/window-functions',
+      path: '/postgresql/advanced/sql/window-functions',
     },
     {
       name: 'Recursive Queries',
-      path: '/databases/postgresql/advanced/sql/recursive-queries',
+      path: '/postgresql/advanced/sql/recursive-queries',
     },
     {
       name: 'Full-Text Search',
-      path: '/databases/postgresql/advanced/sql/full-text-search',
+      path: '/postgresql/advanced/sql/full-text-search',
     },
   ],
 };

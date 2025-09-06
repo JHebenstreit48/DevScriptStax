@@ -5,19 +5,19 @@ const JSONAndJSONB: Subpage = {
   subpages: [
     {
       name: 'Intro to JSON & JSONB',
-      path: '/databases/postgresql/advanced/json/overview',
+      path: '/postgresql/advanced/json/overview',
     },
     {
       name: 'Storing & Querying',
-      path: '/databases/postgresql/advanced/json/storing-querying',
+      path: '/postgresql/advanced/json/storing-querying',
     },
     {
       name: 'Performance Considerations',
-      path: '/databases/postgresql/advanced/json/performance',
+      path: '/postgresql/advanced/json/performance',
     },
     {
       name: 'Indexing JSON Fields',
-      path: '/databases/postgresql/advanced/json/indexing',
+      path: '/postgresql/advanced/json/indexing',
     },
   ],
 };

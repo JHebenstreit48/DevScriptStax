@@ -5,11 +5,11 @@ const CLIAndAdmin: Subpage = {
   subpages: [
     {
       name: 'psql Basics',
-      path: '/databases/postgresql/tools/cli-admin/psql-basics',
+      path: '/postgresql/tools/cli-admin/psql-basics',
     },
     {
       name: 'Roles & Permissions',
-      path: '/databases/postgresql/tools/cli-admin/roles-permissions',
+      path: '/postgresql/tools/cli-admin/roles-permissions',
     },
   ],
 };

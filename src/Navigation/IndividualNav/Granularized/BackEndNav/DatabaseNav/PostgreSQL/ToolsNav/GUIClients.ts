@@ -5,19 +5,19 @@ const GUIClients: Subpage = {
   subpages: [
     {
       name: 'pgAdmin (Elephant)',
-      path: '/databases/postgresql/tools/gui/pgadmin',
+      path: '/postgresql/tools/gui/pgadmin',
     },
     {
       name: 'DBeaver',
-      path: '/databases/postgresql/tools/gui/dbeaver',
+      path: '/postgresql/tools/gui/dbeaver',
     },
     {
       name: 'TablePlus',
-      path: '/databases/postgresql/tools/gui/tableplus',
+      path: '/postgresql/tools/gui/tableplus',
     },
     {
       name: 'DataGrip',
-      path: '/databases/postgresql/tools/gui/datagrip',
+      path: '/postgresql/tools/gui/datagrip',
     },
   ],
 };

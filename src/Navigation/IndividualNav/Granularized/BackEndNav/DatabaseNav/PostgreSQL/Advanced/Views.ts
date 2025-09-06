@@ -5,19 +5,19 @@ const Views: Subpage = {
   subpages: [
     {
       name: 'Understanding Views',
-      path: '/databases/postgresql/advanced/views/overview',
+      path: '/postgresql/advanced/views/overview',
     },
     {
       name: 'Creating & Using Views',
-      path: '/databases/postgresql/advanced/views/creating-using',
+      path: '/postgresql/advanced/views/creating-using',
     },
     {
       name: 'Materialized Views & Performance',
-      path: '/databases/postgresql/advanced/views/materialized-views',
+      path: '/postgresql/advanced/views/materialized-views',
     },
     {
       name: 'Refreshing & Indexing Views',
-      path: '/databases/postgresql/advanced/views/refreshing-indexing',
+      path: '/postgresql/advanced/views/refreshing-indexing',
     },
   ],
 };

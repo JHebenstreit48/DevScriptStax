@@ -5,19 +5,19 @@ const ExtensionsAndFDW: Subpage = {
   subpages: [
     {
       name: 'Popular Extensions',
-      path: '/databases/postgresql/advanced/extensions/overview',
+      path: '/postgresql/advanced/extensions/overview',
     },
     {
       name: 'PostGIS (Geospatial)',
-      path: '/databases/postgresql/advanced/extensions/postgis',
+      path: '/postgresql/advanced/extensions/postgis',
     },
     {
       name: 'pg_stat_statements',
-      path: '/databases/postgresql/advanced/extensions/pg-stat-statements',
+      path: '/postgresql/advanced/extensions/pg-stat-statements',
     },
     {
       name: 'Foreign Data Wrappers (FDW)',
-      path: '/databases/postgresql/advanced/extensions/fdw',
+      path: '/postgresql/advanced/extensions/fdw',
     },
   ],
 };

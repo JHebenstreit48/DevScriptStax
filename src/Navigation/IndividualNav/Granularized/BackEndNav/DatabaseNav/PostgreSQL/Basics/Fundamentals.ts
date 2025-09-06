@@ -5,11 +5,11 @@ const Fundamentals: Subpage = {
   subpages: [
     {
       name: 'What is PostgreSQL?',
-      path: '/databases/postgresql/basics/fundamentals/overview',
+      path: '/postgresql/basics/fundamentals/overview',
     },
     {
       name: 'Features & Use Cases',
-      path: '/databases/postgresql/basics/fundamentals/features-usecases',
+      path: '/postgresql/basics/fundamentals/features-usecases',
     },
   ],
 };

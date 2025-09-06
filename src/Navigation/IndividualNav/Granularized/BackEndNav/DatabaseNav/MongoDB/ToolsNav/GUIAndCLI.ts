@@ -5,11 +5,11 @@ const GUIAndCLI: Subpage = {
   subpages: [
     {
       name: 'Compass',
-      path: '/databases/mongodb/tools/gui-and-cli/compass',
+      path: '/mongodb/tools/gui-and-cli/compass',
     },
     {
       name: 'Atlas CLI',
-      path: '/databases/mongodb/tools/gui-and-cli/atlas-cli',
+      path: '/mongodb/tools/gui-and-cli/atlas-cli',
     },
   ],
 };

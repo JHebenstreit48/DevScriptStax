@@ -5,15 +5,15 @@ const SetupAndConfig: Subpage = {
   subpages: [
     {
       name: 'Installing PostgreSQL',
-      path: '/databases/postgresql/basics/setup/installing',
+      path: '/postgresql/basics/setup/installing',
     },
     {
       name: 'Basic Configuration',
-      path: '/databases/postgresql/basics/setup/basic-configuration',
+      path: '/postgresql/basics/setup/basic-configuration',
     },
     {
       name: 'Starter Optimization',
-      path: '/databases/postgresql/basics/setup/starter-optimization',
+      path: '/postgresql/basics/setup/starter-optimization',
     },
   ],
 };

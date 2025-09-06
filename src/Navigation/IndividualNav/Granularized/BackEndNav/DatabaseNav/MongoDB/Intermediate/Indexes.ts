@@ -5,19 +5,19 @@ const Indexes: Subpage = {
   subpages: [
     {
       name: 'Introduction',
-      path: '/databases/mongodb/intermediate/indexes/overview',
+      path: '/mongodb/intermediate/indexes/overview',
     },
     {
       name: 'Index Types',
-      path: '/databases/mongodb/intermediate/indexes/types',
+      path: '/mongodb/intermediate/indexes/types',
     },
     {
       name: 'Management',
-      path: '/databases/mongodb/intermediate/indexes/management',
+      path: '/mongodb/intermediate/indexes/management',
     },
     {
       name: 'Performance',
-      path: '/databases/mongodb/intermediate/indexes/performance',
+      path: '/mongodb/intermediate/indexes/performance',
     },
   ],
 };

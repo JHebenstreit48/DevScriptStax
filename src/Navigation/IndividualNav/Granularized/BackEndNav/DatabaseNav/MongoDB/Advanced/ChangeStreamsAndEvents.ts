@@ -5,11 +5,11 @@ const ChangeStreamsAndEvents: Subpage = {
   subpages: [
     {
       name: 'Change Streams',
-      path: '/databases/mongodb/advanced/events/change-streams',
+      path: '/mongodb/advanced/events/change-streams',
     },
     {
       name: 'Triggers & Outbox Pattern',
-      path: '/databases/mongodb/advanced/events/triggers-outbox',
+      path: '/mongodb/advanced/events/triggers-outbox',
     },
   ],
 };

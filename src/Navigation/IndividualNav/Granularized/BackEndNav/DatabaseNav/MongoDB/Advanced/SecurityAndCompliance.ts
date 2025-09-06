@@ -5,15 +5,15 @@ const SecurityAndCompliance: Subpage = {
   subpages: [
     {
       name: 'Authentication & Roles',
-      path: '/databases/mongodb/advanced/security/auth',
+      path: '/mongodb/advanced/security/auth',
     },
     {
       name: 'Auditing & Compliance',
-      path: '/databases/mongodb/advanced/security/auditing',
+      path: '/mongodb/advanced/security/auditing',
     },
     {
       name: 'Field Level Encryption (CSFLE)',
-      path: '/databases/mongodb/advanced/security/csfle',
+      path: '/mongodb/advanced/security/csfle',
     },
   ],
 };

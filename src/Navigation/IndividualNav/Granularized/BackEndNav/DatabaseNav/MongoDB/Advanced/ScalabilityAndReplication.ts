@@ -5,19 +5,19 @@ const ScaleAndReplicate: Subpage = {
   subpages: [
     {
       name: 'Replica Sets',
-      path: '/databases/mongodb/advanced/scalability-and-replication/replica-sets',
+      path: '/mongodb/advanced/scalability-and-replication/replica-sets',
     },
     {
       name: 'Sharding',
-      path: '/databases/mongodb/advanced/scalability-and-replication/sharding',
+      path: '/mongodb/advanced/scalability-and-replication/sharding',
     },
     {
       name: 'High Availability',
-      path: '/databases/mongodb/advanced/scalability-and-replication/high-availability',
+      path: '/mongodb/advanced/scalability-and-replication/high-availability',
     },
     {
       name: 'Scaling Best Practices',
-      path: '/databases/mongodb/advanced/scalability-and-replication/best-practices',
+      path: '/mongodb/advanced/scalability-and-replication/best-practices',
     },
   ],
 };

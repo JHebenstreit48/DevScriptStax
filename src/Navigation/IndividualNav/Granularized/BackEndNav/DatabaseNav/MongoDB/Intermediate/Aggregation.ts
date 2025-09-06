@@ -5,19 +5,19 @@ const Aggregation: Subpage = {
   subpages: [
     {
       name: 'Overview',
-      path: '/databases/mongodb/intermediate/aggregation/overview',
+      path: '/mongodb/intermediate/aggregation/overview',
     },
     {
       name: 'Pipelines',
-      path: '/databases/mongodb/intermediate/aggregation/pipelines',
+      path: '/mongodb/intermediate/aggregation/pipelines',
     },
     {
       name: 'Operators',
-      path: '/databases/mongodb/intermediate/aggregation/operators',
+      path: '/mongodb/intermediate/aggregation/operators',
     },
     {
       name: 'Optimization',
-      path: '/databases/mongodb/intermediate/aggregation/performance',
+      path: '/mongodb/intermediate/aggregation/performance',
     },
   ],
 };

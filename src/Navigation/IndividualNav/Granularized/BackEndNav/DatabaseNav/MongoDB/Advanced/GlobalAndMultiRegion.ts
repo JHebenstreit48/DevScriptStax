@@ -5,11 +5,11 @@ const GlobalAndMultiRegion: Subpage = {
   subpages: [
     {
       name: 'Zones & Tag-Aware Sharding',
-      path: '/databases/mongodb/advanced/global/zones',
+      path: '/mongodb/advanced/global/zones',
     },
     {
       name: 'DR & Cross-Region Strategy',
-      path: '/databases/mongodb/advanced/global/dr-strategy',
+      path: '/mongodb/advanced/global/dr-strategy',
     },
   ],
 };

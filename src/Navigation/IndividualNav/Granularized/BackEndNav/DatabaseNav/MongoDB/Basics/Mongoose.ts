@@ -28,8 +28,8 @@ const Mongoose: Subpage = {
         path: '/mongodb/basics/mongoose/populate'
     },
     // Optional basics that scale well later:
-    // { name: 'Lean Docs, Virtuals & Timestamps', path: '/databases/mongodb/basics/mongoose/lean-virtuals-timestamps' },
-    // { name: 'Plugins & Patterns', path: '/databases/mongodb/basics/mongoose/plugins' },
+    // { name: 'Lean Docs, Virtuals & Timestamps', path: '/mongodb/basics/mongoose/lean-virtuals-timestamps' },
+    // { name: 'Plugins & Patterns', path: '/mongodb/basics/mongoose/plugins' },
   ],
 };
 
