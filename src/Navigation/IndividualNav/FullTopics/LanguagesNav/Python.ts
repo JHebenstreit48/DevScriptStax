@@ -4,7 +4,7 @@ import Basics from '@/Navigation/IndividualNav/Granularized/LanguagesNav/PythonN
 import Intermediate from '@/Navigation/IndividualNav/Granularized/LanguagesNav/PythonNav/Intermediate';
 import Advanced from '@/Navigation/IndividualNav/Granularized/LanguagesNav/PythonNav/Advanced';
 
-const PythonNav: Subpage = {
+const Python: Subpage = {
   name: 'Python',
   subpages: [
     Basics,
@@ -13,4 +13,4 @@ const PythonNav: Subpage = {
   ]
 };
 
-export default PythonNav;
+export default Python;

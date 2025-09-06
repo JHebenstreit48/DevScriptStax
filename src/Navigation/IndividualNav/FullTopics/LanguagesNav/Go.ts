@@ -4,7 +4,7 @@ import GoBasics from '@/Navigation/IndividualNav/Granularized/LanguagesNav/Go/Ba
 import GoIntermediate from '@/Navigation/IndividualNav/Granularized/LanguagesNav/Go/Intermediate';
 import GoAdvanced from '@/Navigation/IndividualNav/Granularized/LanguagesNav/Go/Advanced';
 
-const GoNav: Subpage = {
+const Go: Subpage = {
   name: 'Go',
   subpages: [
     GoBasics,
@@ -13,4 +13,4 @@ const GoNav: Subpage = {
   ]
 };
 
-export default GoNav;
+export default Go;

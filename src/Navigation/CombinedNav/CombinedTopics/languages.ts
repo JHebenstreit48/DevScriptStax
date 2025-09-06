@@ -1,19 +1,19 @@
 import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes';
 
-import PythonNav from '@/Navigation/IndividualNav/FullTopics/LanguagesNav/Python';
-import TSNav from '@/Navigation/IndividualNav/FullTopics/LanguagesNav/TypeScript';
-import RustNav from '@/Navigation/IndividualNav/FullTopics/LanguagesNav/Rust';
-import GoNav from '@/Navigation/IndividualNav/FullTopics/LanguagesNav/Go';
-import DartNav from '@/Navigation/IndividualNav/FullTopics/LanguagesNav/Dart';
+import Python from '@/Navigation/IndividualNav/FullTopics/LanguagesNav/Python';
+import TypeScript from '@/Navigation/IndividualNav/FullTopics/LanguagesNav/TypeScript';
+import Rust from '@/Navigation/IndividualNav/FullTopics/LanguagesNav/Rust';
+import Go from '@/Navigation/IndividualNav/FullTopics/LanguagesNav/Go';
+import Dart from '@/Navigation/IndividualNav/FullTopics/LanguagesNav/Dart';
 
 const languages: Subpage = {
   name: 'Languages',
   subpages: [
-    TSNav,
-    PythonNav,
-    RustNav,
-    GoNav,
-    DartNav
+    TypeScript,
+    Python,
+    Rust,
+    Go,
+    Dart
   ]
 };
 
