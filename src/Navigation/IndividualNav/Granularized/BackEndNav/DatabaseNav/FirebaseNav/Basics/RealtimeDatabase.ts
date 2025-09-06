@@ -5,19 +5,19 @@ const RealtimeDatabase: Subpage = {
   subpages: [
     {
       name: "Introduction",
-      path: "/databases/firebase/realtime/overview",
+      path: "/firebase/basics/realtime-db/overview",
     },
     {
       name: "Structure/Rules",
-      path: "/databases/firebase/realtime/structure",
+      path: "/firebase/basics/realtime-db/structure",
     },
     {
       name: "Reading/Writing Data",
-      path: "/databases/firebase/realtime/reading-writing",
+      path: "/firebase/basics/realtime-db/reading-writing",
     },
     {
       name: "Listeners/Syncing",
-      path: "/databases/firebase/realtime/listeners",
+      path: "/firebase/basics/realtime-db/listeners",
     },
   ],
 };

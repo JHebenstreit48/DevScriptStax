@@ -5,23 +5,23 @@ const CRUD: Subpage = {
   subpages: [
     {
       name: 'Create',
-      path: '/databases/mongodb/basics/crud/create',
+      path: '/mongodb/basics/crud/create',
     },
     {
       name: 'Read',
-      path: '/databases/mongodb/basics/crud/read',
+      path: '/mongodb/basics/crud/read',
     },
     {
       name: 'Update',
-      path: '/databases/mongodb/basics/crud/update',
+      path: '/mongodb/basics/crud/update',
     },
     {
       name: 'Delete',
-      path: '/databases/mongodb/basics/crud/delete',
+      path: '/mongodb/basics/crud/delete',
     },
     {
       name: 'Bulk Operations',
-      path: '/databases/mongodb/basics/crud/bulk-operations',
+      path: '/mongodb/basics/crud/bulk-operations',
     },
   ],
 };

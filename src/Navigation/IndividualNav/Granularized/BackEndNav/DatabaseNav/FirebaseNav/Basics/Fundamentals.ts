@@ -5,19 +5,19 @@ const Fundamentals: Subpage = {
   subpages: [
     {
       name: "Overview",
-      path: "/databases/firebase/intro/overview",
+      path: "/firebase/basics/fundamentals/overview",
     },
     {
       name: "Firebase vs Traditional",
-      path: "/databases/firebase/intro/comparison",
+      path: "/firebase/basics/fundamentals/comparison",
     },
     {
       name: "Use Cases for Firebase",
-      path: "/databases/firebase/intro/use-cases",
+      path: "/firebase/basics/fundamentals/use-cases",
     },
     {
       name: "Project Setup",
-      path: "/databases/firebase/intro/setup",
+      path: "/firebase/basics/fundamentals/setup",
     },
   ],
 };

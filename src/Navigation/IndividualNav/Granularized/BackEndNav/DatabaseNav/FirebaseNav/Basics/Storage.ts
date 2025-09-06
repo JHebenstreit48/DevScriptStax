@@ -5,19 +5,19 @@ const Storage: Subpage = {
   subpages: [
     {
       name: "Overview",
-      path: "/databases/firebase/storage/overview",
+      path: "/firebase/basics/storage/overview",
     },
     {
       name: "Uploading & Downloading Files",
-      path: "/databases/firebase/storage/upload-download",
+      path: "/firebase/basics/storage/upload-download",
     },
     {
       name: "Security Rules & Access Control",
-      path: "/databases/firebase/storage/security",
+      path: "/firebase/basics/storage/security",
     },
     {
       name: "Managing Storage Costs",
-      path: "/databases/firebase/storage/costs",
+      path: "/firebase/basics/storage/costs",
     },
   ],
 };
