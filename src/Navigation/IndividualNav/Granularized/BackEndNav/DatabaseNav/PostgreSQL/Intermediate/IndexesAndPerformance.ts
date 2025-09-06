@@ -5,11 +5,11 @@ const IndexesAndPerformance: Subpage = {
   subpages: [
     {
       name: 'Index Types (B-tree, Hash, GIN, GIST)',
-      path: '/databases/postgresql/intermediate/indexes-perf/index-types',
+      path: '/postgresql/intermediate/indexes-perf/index-types',
     },
     {
       name: 'Query Plans & EXPLAIN',
-      path: '/databases/postgresql/intermediate/indexes-perf/explain',
+      path: '/postgresql/intermediate/indexes-perf/explain',
     },
   ],
 };

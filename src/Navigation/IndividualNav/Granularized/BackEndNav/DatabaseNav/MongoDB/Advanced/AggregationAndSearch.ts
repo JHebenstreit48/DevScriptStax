@@ -5,16 +5,16 @@ const AggregationAndSearch: Subpage = {
   subpages: [
     {
       name: 'Window & Graph Ops',
-      path: '/databases/mongodb/advanced/aggregation/window-graph',
+      path: '/mongodb/advanced/aggregation/window-graph',
     },
     {
       name: 'Atlas Search Integration',
-      path: '/databases/mongodb/advanced/aggregation/atlas-search',
+      path: '/mongodb/advanced/aggregation/atlas-search',
     },
     // Optional later:
         // {
         //   name: 'Vector & Hybrid Search',
-        //   path: '/databases/mongodb/advanced/aggregation/vector-hybrid',
+        //   path: '/mongodb/advanced/aggregation/vector-hybrid',
     // },
   ],
 };

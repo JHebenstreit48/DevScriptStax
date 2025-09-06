@@ -5,11 +5,11 @@ const IndexingAndQuery: Subpage = {
   subpages: [
     {
       name: 'Partial/Wildcard/Columnstore',
-      path: '/databases/mongodb/advanced/indexing/special',
+      path: '/mongodb/advanced/indexing/special',
     },
     {
       name: 'Explain() Deep Dive',
-      path: '/databases/mongodb/advanced/indexing/explain',
+      path: '/mongodb/advanced/indexing/explain',
     },
   ],
 };

@@ -5,15 +5,15 @@ const ConsistencyAndDurability: Subpage = {
   subpages: [
     {
       name: 'Read/Write Concerns & Preferences',
-      path: '/databases/mongodb/advanced/consistency/concerns',
+      path: '/mongodb/advanced/consistency/concerns',
     },
     {
       name: 'Sessions & Retryable Writes',
-      path: '/databases/mongodb/advanced/consistency/sessions',
+      path: '/mongodb/advanced/consistency/sessions',
     },
     {
       name: 'Transactions',
-      path: '/databases/mongodb/advanced/consistency/transactions',
+      path: '/mongodb/advanced/consistency/transactions',
     },
   ],
 };

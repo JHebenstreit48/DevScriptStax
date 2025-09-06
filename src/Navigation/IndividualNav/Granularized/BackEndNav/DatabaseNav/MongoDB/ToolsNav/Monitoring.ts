@@ -5,11 +5,11 @@ const Monitoring: Subpage = {
   subpages: [
     {
       name: 'Realtime Metrics (mongostat)',
-      path: '/databases/mongodb/tools/monitoring/mongostat',
+      path: '/mongodb/tools/monitoring/mongostat',
     },
     {
       name: 'Collection Activity (mongotop)',
-      path: '/databases/mongodb/tools/monitoring/mongotop',
+      path: '/mongodb/tools/monitoring/mongotop',
     },
   ],
 };

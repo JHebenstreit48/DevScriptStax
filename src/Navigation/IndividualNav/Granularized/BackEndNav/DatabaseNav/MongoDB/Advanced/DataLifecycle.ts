@@ -5,11 +5,11 @@ const DataLifecycle: Subpage = {
   subpages: [
     {
       name: 'TTL & Archival',
-      path: '/databases/mongodb/advanced/lifecycle/ttl-archival',
+      path: '/mongodb/advanced/lifecycle/ttl-archival',
     },
     {
       name: 'Schema Validation',
-      path: '/databases/mongodb/advanced/lifecycle/schema-validation',
+      path: '/mongodb/advanced/lifecycle/schema-validation',
     },
   ],
 };

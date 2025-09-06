@@ -28,27 +28,27 @@ const DataModeling = lazy(
 
 const Fundamentals: RouteObject[] = [
     {
-        path: '/databases/mongodb/basics/fundamentals/introduction',
+        path: '/mongodb/basics/fundamentals/introduction',
         element: <Introduction />,
     },
     {
-        path: '/databases/mongodb/basics/fundamentals/nosql-vs-sql',
+        path: '/mongodb/basics/fundamentals/nosql-vs-sql',
         element: <NoSQLvsSQL />,
     },
     {
-        path: '/databases/mongodb/basics/fundamentals/setup',
+        path: '/mongodb/basics/fundamentals/setup',
         element: <Setup />,
     },
     {
-        path: '/databases/mongodb/basics/fundamentals/use-cases',
+        path: '/mongodb/basics/fundamentals/use-cases',
         element: <UseCases />,
     },
     {
-      path: '/databases/mongodb/basics/fundamentals/bson-objectid',
+      path: '/mongodb/basics/fundamentals/bson-objectid',
       element: <BSONAndObject />
     },
     {
-      path: '/databases/mongodb/basics/fundamentals/data-modeling',
+      path: '/mongodb/basics/fundamentals/data-modeling',
       element: <DataModeling />
     },
 ];

@@ -5,19 +5,19 @@ const Authentication: Subpage = {
   subpages: [
     {
       name: "Overview",
-      path: "/databases/firebase/auth/overview",
+      path: "/firebase/basics/authentication/overview",
     },
     {
       name: "Implementation",
-      path: "/databases/firebase/auth/implementation",
+      path: "/firebase/basics/authentication/implementation",
     },
     {
       name: "OAuth & Social Logins",
-      path: "/databases/firebase/auth/sociallogins",
+      path: "/firebase/basics/authentication/social-logins",
     },
     {
       name: "Managing Users & Permissions",
-      path: "/databases/firebase/auth/usermanagement",
+      path: "/firebase/basics/authentication/user-management",
     },
   ],
 };

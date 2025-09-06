@@ -5,11 +5,11 @@ const ShellAndServer: Subpage = {
   subpages: [
     {
       name: 'Overview',
-      path: '/databases/mongodb/tools/shell-and-server/overview',
+      path: '/mongodb/tools/shell-and-server/overview',
     },
     {
       name: 'Shell & Server Commands',
-      path: '/databases/mongodb/tools/shell-and-server/commands',
+      path: '/mongodb/tools/shell-and-server/commands',
     },
   ],
 };

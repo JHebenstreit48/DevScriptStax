@@ -5,15 +5,15 @@ const StorageEngine: Subpage = {
   subpages: [
     {
       name: 'WiredTiger Tuning',
-      path: '/databases/mongodb/advanced/storage/wiredtiger',
+      path: '/mongodb/advanced/storage/wiredtiger',
     },
     {
       name: 'Compression & Journaling',
-      path: '/databases/mongodb/advanced/storage/compression-journaling',
+      path: '/mongodb/advanced/storage/compression-journaling',
     },
     {
       name: 'Filesystem & Hardware Notes',
-      path: '/databases/mongodb/advanced/storage/filesystem',
+      path: '/mongodb/advanced/storage/filesystem',
     },
   ],
 };

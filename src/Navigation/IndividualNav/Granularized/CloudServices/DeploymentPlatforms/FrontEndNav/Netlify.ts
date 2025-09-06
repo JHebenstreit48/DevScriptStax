@@ -1,6 +1,6 @@
 import { Subpage } from "@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes";
 
-const NetlifyNavigation: Subpage = {
+const Netlify: Subpage = {
   name: "Netlify",
   subpages: [
     {
@@ -68,4 +68,4 @@ const NetlifyNavigation: Subpage = {
   ],
 };
 
-export default NetlifyNavigation;
+export default Netlify;

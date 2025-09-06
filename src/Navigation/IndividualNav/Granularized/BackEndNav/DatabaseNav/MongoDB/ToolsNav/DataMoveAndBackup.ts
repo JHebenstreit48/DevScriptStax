@@ -5,11 +5,11 @@ const DataMoveAndBackup: Subpage = {
   subpages: [
     {
       name: 'Export & Import',
-      path: '/databases/mongodb/tools/data-move-backup/export-import',
+      path: '/mongodb/tools/data-move-backup/export-import',
     },
     {
       name: 'Backup & Restore',
-      path: '/databases/mongodb/tools/data-move-backup/backup-restore',
+      path: '/mongodb/tools/data-move-backup/backup-restore',
     },
   ],
 };

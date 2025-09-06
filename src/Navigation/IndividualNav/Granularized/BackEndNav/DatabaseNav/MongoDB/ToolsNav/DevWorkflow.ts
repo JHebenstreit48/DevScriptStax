@@ -5,11 +5,11 @@ const DevWorkflow: Subpage = {
   subpages: [
     {
       name: 'Seeding & Local Dev',
-      path: '/databases/mongodb/tools/dev-workflow/seeding-and-local',
+      path: '/mongodb/tools/dev-workflow/seeding-and-local',
     },
     {
       name: 'Connection Strings & Environments',
-      path: '/databases/mongodb/tools/dev-workflow/connection-strings',
+      path: '/mongodb/tools/dev-workflow/connection-strings',
     },
   ],
 };

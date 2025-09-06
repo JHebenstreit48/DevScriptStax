@@ -3,13 +3,13 @@ import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/Navigation
 // ---------- Deployment Platforms Navigation Start ----------
 
 // ---------- Front-End Deployment Navigation Start ----------
-import NetlifyNavigation from '@/Navigation/IndividualNav/Granularized/CloudServices/DeploymentPlatforms/FrontEndNavigation/Netlify';
+import NetlifyNavigation from '@/Navigation/IndividualNav/Granularized/CloudServices/DeploymentPlatforms/FrontEndNav/Netlify';
 // import VercelNavigation from "@/Navigation/CloudServices/DeploymentPlatforms/FrontEnd/Vercel";
 // import CloudflarePagesNavigation from "@/Navigation/CloudServices/DeploymentPlatforms/FrontEnd/CloudflarePages";
 // ---------- Front-End Deployment Navigation End ----------
 
 // ---------- Full-Stack Deployment Navigation Start ----------
-import RenderNavigation from '@/Navigation/IndividualNav/Granularized/CloudServices/DeploymentPlatforms/FullStackNavigation/Render';
+import RenderNavigation from '@/Navigation/IndividualNav/Granularized/CloudServices/DeploymentPlatforms/FullStack/Render';
 // import RailwayNavigation from "@/Navigation/CloudServices/DeploymentPlatforms/FullStack/Railway";
 // import FlyNavigation from "@/Navigation/CloudServices/DeploymentPlatforms/FullStack/Fly";
 // ---------- Full-Stack Deployment Navigation End ----------

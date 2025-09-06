@@ -5,19 +5,19 @@ const Firestore: Subpage = {
   subpages: [
     {
       name: "Overview",
-      path: "/databases/firebase/firestore/overview",
+      path: "/firebase/basics/firestore/overview",
     },
     {
       name: "Firestore vs Realtime",
-      path: "/databases/firebase/firestore/comparison",
+      path: "/firebase/basics/firestore/comparison",
     },
     {
       name: "Document & Collection Model",
-      path: "/databases/firebase/firestore/model",
+      path: "/firebase/basics/firestore/model",
     },
     {
       name: "Querying & Indexing Data",
-      path: "/databases/firebase/firestore/querying",
+      path: "/firebase/basics/firestore/querying",
     },
   ],
 };

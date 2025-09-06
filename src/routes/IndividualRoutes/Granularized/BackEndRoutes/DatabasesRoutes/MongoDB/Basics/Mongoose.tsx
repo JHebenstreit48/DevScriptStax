@@ -11,11 +11,11 @@ const SchemasAndModels = lazy(
 
 const Mongoose: RouteObject[] = [
   {
-    path: '/databases/mongodb/basics/mongoose/overview',
+    path: '/mongodb/basics/mongoose/overview',
     element: <Overview />,
   },
   {
-    path: '/databases/mongodb/basics/mongoose/schemas-and-models',
+    path: '/mongodb/basics/mongoose/schemas-and-models',
     element: <SchemasAndModels />,
   },
 ];

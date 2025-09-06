@@ -5,27 +5,27 @@ const Fundamentals: Subpage = {
   subpages: [
     {
       name: 'Introduction',
-      path: '/databases/mongodb/basics/fundamentals/introduction',
+      path: '/mongodb/basics/fundamentals/introduction',
     },
     {
       name: 'NoSQL vs SQL',
-      path: '/databases/mongodb/basics/fundamentals/nosql-vs-sql',
+      path: '/mongodb/basics/fundamentals/nosql-vs-sql',
     },
     {
       name: 'Setup',
-      path: '/databases/mongodb/basics/fundamentals/setup',
+      path: '/mongodb/basics/fundamentals/setup',
     },
     {
       name: 'Use Cases',
-      path: '/databases/mongodb/basics/fundamentals/use-cases',
+      path: '/mongodb/basics/fundamentals/use-cases',
     },
     {
       name: 'BSON & ObjectId',
-      path: '/databases/mongodb/basics/fundamentals/bson-objectid',
+      path: '/mongodb/basics/fundamentals/bson-objectid',
     },
     {
       name: 'Data Modeling',
-      path: '/databases/mongodb/basics/fundamentals/data-modeling',
+      path: '/mongodb/basics/fundamentals/data-modeling',
     },
   ],
 };
