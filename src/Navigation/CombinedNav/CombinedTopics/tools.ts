@@ -1,6 +1,5 @@
 import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes';
 
-
 // ---------- API Tools Navigation Start ----------
 import Insomnia from '@/Navigation/IndividualNav/FullTopics/ToolsNav/APITools/Insomnia';
 import Postman from '@/Navigation/IndividualNav/FullTopics/ToolsNav/APITools/Postman';
@@ -12,10 +11,10 @@ import Jenkins from '@/Navigation/IndividualNav/FullTopics/ToolsNav/CICD/Jenkins
 // ---------- CICD Tools Navigation End ----------
 
 // ---------- Code Quality Navigation Start ----------
-// import ESLint from '@/Navigation/IndividualNav/ToolsNav/CodeQuality/ESLint';
-// import Prettier from '@/Navigation/IndividualNav/ToolsNav/CodeQuality/Prettier';
-// import TSLint from '@/Navigation/IndividualNav/ToolsNav/CodeQuality/TSLint';
-// import StandardJS from '@/Navigation/IndividualNav/ToolsNav/CodeQuality/StandardJS';
+import ESLint from '@/Navigation/IndividualNav/FullTopics/ToolsNav/CodeQuality/ESLint';
+import Prettier from '@/Navigation/IndividualNav/FullTopics/ToolsNav/CodeQuality/Prettier';
+import TSLint from '@/Navigation/IndividualNav/FullTopics/ToolsNav/CodeQuality/TSLint';
+import StandardJS from '@/Navigation/IndividualNav/FullTopics/ToolsNav/CodeQuality/StandardJS';
 // ---------- Code Quality Navigation End ----------
 
 // -------------- Package & Bundling Start ----------------------------
@@ -57,10 +56,10 @@ const tools: Subpage = {
     {
       name: 'Code Quality',
       subpages: [
-        // ESLint,
-        // Prettier,
-        // TSLint,
-        // StandardJS
+        ESLint,
+        Prettier,
+        TSLint,
+        StandardJS
       ]
     },
     {
