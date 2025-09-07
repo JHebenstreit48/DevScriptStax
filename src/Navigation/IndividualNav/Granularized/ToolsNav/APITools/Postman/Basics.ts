@@ -4,19 +4,19 @@ const Basics: Subpage = {
   name: "Basics",
   subpages: [
     {
-      name: "Getting Started",
+      name: "Fundamentals",
       subpages: [
         {
-          name: "Intro",
-          path: "/tools/api/postman/basics/getting-started/intro"
+          name: "Introduction",
+          path: "/tools/api/postman/basics/fundamentals/introduction"
         },
         {
           name: "Install & Setup",
-          path: "/tools/api/postman/basics/getting-started/install-setup"
+          path: "/tools/api/postman/basics/fundamentals/install-setup"
         },
         {
           name: "UI Tour",
-          path: "/tools/api/postman/basics/getting-started/ui-tour"
+          path: "/tools/api/postman/basics/fundamentals/ui-tour"
         }
       ]
     },
