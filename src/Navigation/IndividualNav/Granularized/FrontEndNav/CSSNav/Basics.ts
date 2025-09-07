@@ -1,11 +1,11 @@
 import { Subpage } from "@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes";
-import SyntaxAndSelectors from '@/Navigation/IndividualNav/Granularized/FrontEndNav/CSSNav/Basics/BoxModelAndPositioning';
+import IntroductionAndSelectors from '@/Navigation/IndividualNav/Granularized/FrontEndNav/CSSNav/Basics/SyntaxAndSelectors';
 import BoxModelAndPosition from '@/Navigation/IndividualNav/Granularized/FrontEndNav/CSSNav/Basics/BoxModelAndPositioning';
 
 const Basics: Subpage = {
   name: "Basics",
   subpages: [
-    SyntaxAndSelectors,
+    IntroductionAndSelectors,
     BoxModelAndPosition
   ]
 };

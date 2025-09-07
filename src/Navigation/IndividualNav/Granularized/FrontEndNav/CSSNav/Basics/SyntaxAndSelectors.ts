@@ -1,11 +1,11 @@
 import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes';
 
-const SyntaxAndSelectors: Subpage = {
-  name: 'Syntax & Selectors',
+const IntroductionAndSelectors: Subpage = {
+  name: 'Introduction & Selectors',
   subpages: [
     {
-      name: 'CSS Intro and Syntax',
-      path: '/css/basics/syntax-selectors/intro',
+      name: 'Introduction and Syntax',
+      path: '/css/basics/syntax-selectors/introduction-and-syntax',
     },
     {
       name: 'Selectors',
@@ -14,4 +14,4 @@ const SyntaxAndSelectors: Subpage = {
   ],
 };
 
-export default SyntaxAndSelectors;
+export default IntroductionAndSelectors;
