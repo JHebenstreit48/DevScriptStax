@@ -1,17 +1,15 @@
 import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes';
 
-import CSSVanilla from '@/Navigation/IndividualNav/Granularized/FrontEndNav/CSSNav/Vanilla';  
-import CSSFrameworks from '@/Navigation/IndividualNav/Granularized/FrontEndNav/CSSNav/Frameworks';
-import CSSPreprocessors from '@/Navigation/IndividualNav/Granularized/FrontEndNav/CSSNav/Preprocessors';
-import CSSPostprocessors from '@/Navigation/IndividualNav/Granularized/FrontEndNav/CSSNav/Postprocessors';
+import Basics from '@/Navigation/IndividualNav/Granularized/FrontEndNav/CSSNav/Basics';
+import Advanced from '@/Navigation/IndividualNav/Granularized/FrontEndNav/CSSNav/Advanced';
+import Tools from '@/Navigation/IndividualNav/Granularized/FrontEndNav/CSSNav/Tools';
 
 const CSS: Subpage = {
   name: 'CSS',
   subpages: [
-    CSSVanilla,
-    CSSFrameworks,
-    CSSPreprocessors,
-    CSSPostprocessors
+    Basics,
+    Advanced,
+    Tools
   ]
 };
 
