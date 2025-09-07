@@ -5,11 +5,11 @@ const BoxModelAndPosition: Subpage = {
   subpages: [
     {
       name: "Box Model",
-      path: "/css/basics/box-positioning/box-model"
+      path: "/css/basics/box-model-and-position/box-model"
     },
     {
       name: "Positioning",
-      path: "/css/basics/box-positioning/positioning"
+      path: "/css/basics/box-model-and-position/positioning"
     }
   ],
 };

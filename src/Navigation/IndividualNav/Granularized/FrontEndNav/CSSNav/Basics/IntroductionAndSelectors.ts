@@ -5,11 +5,11 @@ const IntroductionAndSelectors: Subpage = {
   subpages: [
     {
       name: 'Introduction and Syntax',
-      path: '/css/basics/syntax-selectors/introduction-and-syntax',
+      path: '/css/basics/introduction-and-selectors/introduction-and-syntax',
     },
     {
       name: 'Selectors',
-      path: '/css/basics/syntax-selectors/selectors',
+      path: '/css/basics/introduction-and-selectors/selectors',
     },
   ],
 };
