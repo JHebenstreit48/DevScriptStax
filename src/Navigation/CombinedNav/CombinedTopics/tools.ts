@@ -2,8 +2,8 @@ import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/Navigation
 
 
 // ---------- API Tools Navigation Start ----------
-// import Insomnia from '@/Navigation/IndividualNav/ToolsNav/APITools/Insomnia';
-// import Postman from '@/Navigation/IndividualNav/ToolsNav/APITools/Postman';
+import Insomnia from '@/Navigation/IndividualNav/FullTopics/ToolsNav/APITools/Insomnia';
+import Postman from '@/Navigation/IndividualNav/FullTopics/ToolsNav/APITools/Postman';
 // ---------- API Tools Navigation End ----------
 
 // ---------- CICD Tools Navigation Start ----------
@@ -21,8 +21,8 @@ import Jenkins from '@/Navigation/IndividualNav/FullTopics/ToolsNav/CICD/Jenkins
 // -------------- Package & Bundling Start ----------------------------
 
 // ------------- Package Management Start -------------
-// import Yarn from '@/Navigation/IndividualNav/FullTopics/ToolsNav/PackageAndBundle/PackageManagement/Yarn';
-// import Pnpm from '@/Navigation/IndividualNav/FullTopics/ToolsNav/PackageAndBundle/PackageManagement/Pnpm';
+import Yarn from '@/Navigation/IndividualNav/FullTopics/ToolsNav/PackageAndBundle/PackageManagement/Yarn';
+import Pnpm from '@/Navigation/IndividualNav/FullTopics/ToolsNav/PackageAndBundle/PackageManagement/Pnpm';
 // -------------- Package Management End ---------------
 
 // -------------------- Bundling Start -----------------
@@ -42,11 +42,17 @@ const tools: Subpage = {
   subpages: [
     {
       name: 'API Tools',
-      // subpages: [Insomnia, Postman]
+      subpages: [
+        Insomnia,
+        Postman
+      ]
     },
     {
       name: 'CICD Tools',
-      subpages: [CircleCI, Jenkins]
+      subpages: [
+        CircleCI,
+        Jenkins
+      ]
     },
     {
       name: 'Code Quality',
@@ -62,11 +68,17 @@ const tools: Subpage = {
       subpages: [
         {
           name: 'Package Management',
-          // subpages: [Yarn, Pnpm]
+          subpages: [
+            Yarn,
+            Pnpm
+          ]
         },
         {
           name: 'Bundling',
-          subpages: [Babel, Webpack] // later: Vite, Rollup, esbuild, Parcel
+          subpages: [
+            Babel,
+            Webpack
+          ] // later: Vite, Rollup, esbuild, Parcel
         }
       ]
     },

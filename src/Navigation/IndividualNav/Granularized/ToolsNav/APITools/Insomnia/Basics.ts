@@ -4,19 +4,19 @@ const Basics: Subpage = {
   name: "Basics",
   subpages: [
     {
-      name: "Getting Started",
+      name: "Fundamentals",
       subpages: [
         {
-          name: "Intro",
-          path: "/tools/api/insomnia/basics/getting-started/intro"
+          name: "Introduction",
+          path: "/tools/api/insomnia/basics/fundamentals/introduction"
         },
         {
           name: "Install & Setup",
-          path: "/tools/api/insomnia/basics/getting-started/install-setup"
+          path: "/tools/api/insomnia/basics/fundamentals/install-setup"
         },
         {
           name: "UI Tour",
-          path: "/tools/api/insomnia/basics/getting-started/ui-tour"
+          path: "/tools/api/insomnia/basics/fundamentals/ui-tour"
         }
       ]
     },
