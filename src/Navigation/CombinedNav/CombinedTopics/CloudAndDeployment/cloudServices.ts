@@ -24,16 +24,16 @@ import FirebaseFunctions from "@/Navigation/IndividualNav/FullTopics/CloudAndDep
 // ---------- Serverless Computing Navigation End ----------
 
 // ---------- Edge Computing Navigation Start ----------
-// import CloudflareWorkers from "@/Navigation/CloudServices/EdgeComputing/CloudflareWorkers";
-// import FastlyCompute from "@/Navigation/CloudServices/EdgeComputing/FastlyCompute";
-// import AkamaiEdgeWorkers from "@/Navigation/CloudServices/EdgeComputing/AkamaiEdgeWorkers";
+import CloudflareWorkers from "@/Navigation/IndividualNav/FullTopics/CloudAndDeployment/CloudServices/EdgeComputing/CloudflareWorkers";
+import FastlyCompute from "@/Navigation/IndividualNav/FullTopics/CloudAndDeployment/CloudServices/EdgeComputing/FastlyCompute";
+import AkamaiEdgeWorkers from "@/Navigation/IndividualNav/FullTopics/CloudAndDeployment/CloudServices/EdgeComputing/AkamaiEdgeWorkers";
 // ---------- Edge Computing Navigation End ----------
 
-// ---------- Frameworks Navigation Start ----------
-// import Frameworks from "@/Navigation/CloudServices/Frameworks/ServerlessFramework";
-// import AWSCDK from "@/Navigation/CloudServices/Frameworks/AWSCDK";
-// import AWSSAM from "@/Navigation/CloudServices/Frameworks/AWSSAM";
-// ----------- Frameworks Navigation End -----------
+// ---------- Provisioning Navigation Start ----------
+import ServerlessFramework from "@/Navigation/IndividualNav/FullTopics/CloudAndDeployment/CloudServices/Provisioning/ServerlessFramework";
+import AWSCDK from "@/Navigation/IndividualNav/FullTopics/CloudAndDeployment/CloudServices/Provisioning/AWSCDK";
+import AWSSAM from "@/Navigation/IndividualNav/FullTopics/CloudAndDeployment/CloudServices/Provisioning/AWSSAM";
+// ---------- Provisioning Navigation End ----------
 
 const cloudServices: Subpage = {
   name: 'Cloud Services',
@@ -71,17 +71,17 @@ const cloudServices: Subpage = {
     {
       name: 'Edge Computing',
       subpages: [
-        // CloudflareWorkers,
-        // FastlyCompute,
-        // AkamaiEdgeWorkers,
+        CloudflareWorkers,
+        FastlyCompute,
+        AkamaiEdgeWorkers,
       ]
     },
     {
-      name: 'Frameworks',
+      name: "Provisioning",
       subpages: [
-        // ServerlessFramework,
-        // AWSCDK,
-        // AWSSAM,
+        ServerlessFramework,
+        AWSCDK,
+        AWSSAM,
       ]
     }
   ]
