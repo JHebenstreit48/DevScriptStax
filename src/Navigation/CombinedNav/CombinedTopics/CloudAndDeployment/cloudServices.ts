@@ -3,24 +3,24 @@ import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/Navigation
 // ---------- Deployment Platforms Navigation Start ----------
 
 // ---------- Front-End Deployment Navigation Start ----------
-import Netlify from '@/Navigation/IndividualNav/FullTopics/CloudServices/DeploymentPlatforms/FrontEndNav/Netlify';
-import Vercel from "@/Navigation/IndividualNav/FullTopics/CloudServices/DeploymentPlatforms/FrontEndNav/Vercel";
-import CloudflarePages from "@/Navigation/IndividualNav/FullTopics/CloudServices/DeploymentPlatforms/FrontEndNav/CloudflarePages";
+import Netlify from '@/Navigation/IndividualNav/FullTopics/CloudAndDeployment/CloudServices/DeploymentPlatforms/FrontEndNav/Netlify';
+import Vercel from "@/Navigation/IndividualNav/FullTopics/CloudAndDeployment/CloudServices/DeploymentPlatforms/FrontEndNav/Vercel";
+import CloudflarePages from "@/Navigation/IndividualNav/FullTopics/CloudAndDeployment/CloudServices/DeploymentPlatforms/FrontEndNav/CloudflarePages";
 // ---------- Front-End Deployment Navigation End ----------
 
 // ---------- Full-Stack Deployment Navigation Start ----------
-import Render from '@/Navigation/IndividualNav/FullTopics/CloudServices/DeploymentPlatforms/FullStack/Render';
-import Railway from "@/Navigation/IndividualNav/FullTopics/CloudServices/DeploymentPlatforms/FullStack/Railway";
-import Fly from "@/Navigation/IndividualNav/FullTopics/CloudServices/DeploymentPlatforms/FullStack/Fly";
+import Render from '@/Navigation/IndividualNav/FullTopics/CloudAndDeployment/CloudServices/DeploymentPlatforms/FullStack/Render';
+import Railway from "@/Navigation/IndividualNav/FullTopics/CloudAndDeployment/CloudServices/DeploymentPlatforms/FullStack/Railway";
+import Fly from "@/Navigation/IndividualNav/FullTopics/CloudAndDeployment/CloudServices/DeploymentPlatforms/FullStack/Fly";
 // ---------- Full-Stack Deployment Navigation End ----------
 
 // ---------- Deployment Platforms Navigation End ----------
 
 // ---------- Serverless Computing Navigation Start ----------
-// import AWSLambda from "@/Navigation/CloudServices/ServerlessComputing/AWSLambda";
-// import GoogleCloudFunctions from "@/Navigation/CloudServices/ServerlessComputing/GoogleCloudFunctions";
-// import AzureFunctions from "@/Navigation/CloudServices/ServerlessComputing/AzureFunctions";
-// import FirebaseFunctions from "@/Navigation/CloudServices/ServerlessComputing/FirebaseFunctions";
+import AWSLambda from "@/Navigation/IndividualNav/FullTopics/CloudAndDeployment/CloudServices/ServerlessComputing/AWSLambda";
+import GoogleCloudFunctions from "@/Navigation/IndividualNav/FullTopics/CloudAndDeployment/CloudServices/ServerlessComputing/GoogleCloudFunctions";
+import AzureFunctions from "@/Navigation/IndividualNav/FullTopics/CloudAndDeployment/CloudServices/ServerlessComputing/AzureFunctions";
+import FirebaseFunctions from "@/Navigation/IndividualNav/FullTopics/CloudAndDeployment/CloudServices/ServerlessComputing/FirebaseFunctions";
 // ---------- Serverless Computing Navigation End ----------
 
 // ---------- Edge Computing Navigation Start ----------
@@ -62,10 +62,10 @@ const cloudServices: Subpage = {
     {
       name: 'Serverless Computing',
       subpages: [
-        // AWSLambda,
-        // GoogleCloudFunctions,
-        // AzureFunctions,
-        // FirebaseFunctions
+        AWSLambda,
+        GoogleCloudFunctions,
+        AzureFunctions,
+        FirebaseFunctions
       ]
     },
     {
