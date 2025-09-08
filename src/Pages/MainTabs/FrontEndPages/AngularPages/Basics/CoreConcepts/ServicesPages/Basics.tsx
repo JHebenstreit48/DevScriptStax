@@ -3,19 +3,18 @@ import Header from '@/Components/Shared/Header/Header';
 import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
-const Introduction = () => {
-  const markdownFilePath =
-    'FrontEndNotes/AngularNotes/Basics/CoreConcepts/AngComponents/Introduction';
+const Basics = () => {
+  const markdownFilePath = 'FrontEndNotes/AngularNotes/Basics/CoreConcepts/ServicesNotes/Basics';
 
   return (
     <>
       <PageLayout>
         <Header />
-        <PageTitle title="Angular Components - Introduction" />
+        <PageTitle title="Angular Services - Basics" />
         <Notes filePath={markdownFilePath} />
       </PageLayout>
     </>
   );
 };
 
-export default Introduction;
+export default Basics;

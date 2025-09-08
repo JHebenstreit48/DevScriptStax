@@ -3,19 +3,18 @@ import Header from '@/Components/Shared/Header/Header';
 import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
-const Introduction = () => {
-  const markdownFilePath =
-    'FrontEndNotes/AngularNotes/Basics/CoreConcepts/AngComponents/Introduction';
+const LazyLoading = () => {
+  const markdownFilePath = 'FrontEndNotes/AngularNotes/Basics/CoreConcepts/Modules/LazyLoading';
 
   return (
     <>
       <PageLayout>
         <Header />
-        <PageTitle title="Angular Components - Introduction" />
+        <PageTitle title="Angular Modules - Lazy Loading" />
         <Notes filePath={markdownFilePath} />
       </PageLayout>
     </>
   );
 };
 
-export default Introduction;
+export default LazyLoading;

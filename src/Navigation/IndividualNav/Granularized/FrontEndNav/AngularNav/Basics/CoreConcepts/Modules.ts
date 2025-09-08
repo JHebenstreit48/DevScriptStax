@@ -9,7 +9,7 @@ const Modules: Subpage = {
     },
     {
       name: "Lazy Loading",
-      path: "/angular/core-concepts/lazy-modules",
+      path: "/angular/core-concepts/lazy-loading",
     },
   ],
 };

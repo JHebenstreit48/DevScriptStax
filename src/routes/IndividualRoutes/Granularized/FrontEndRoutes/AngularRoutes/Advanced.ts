@@ -6,7 +6,7 @@ import rxJSAndReactive from "@/routes/IndividualRoutes/Granularized/FrontEndRout
 // import animations from "@/routes/IndividualRoutes/Granularized/FrontEndRoutes/AngularRoutes/Advanced/Animations";
 import tsIntegration from "@/routes/IndividualRoutes/Granularized/FrontEndRoutes/AngularRoutes/Advanced/TSIntegration";
 
-const angularAdvanced: RouteObject[] = [
+const Advanced: RouteObject[] = [
   ...changeDetection,
   ...performance,
   ...rxJSAndReactive,
@@ -15,4 +15,4 @@ const angularAdvanced: RouteObject[] = [
   // ...security
 ];
 
-export default angularAdvanced;
+export default Advanced;

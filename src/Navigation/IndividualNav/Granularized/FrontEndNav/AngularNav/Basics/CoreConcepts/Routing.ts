@@ -9,7 +9,7 @@ const Routing: Subpage = {
     },
     {
       name: "Guards/Resolvers",
-      path: "/angular/core-concepts/routing/guards",
+      path: "/angular/core-concepts/routing/guards-and-resolvers",
     },
     {
       name: "Lazy Loading",
