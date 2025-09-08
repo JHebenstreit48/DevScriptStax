@@ -4,8 +4,8 @@ const Effects: Subpage = {
   name: 'Effects',
   subpages: [
     {
-      name: 'Transform',
-      path: '/css/advanced/effects/transform',
+      name: 'Transforms',
+      path: '/css/advanced/effects/transforms',
     },
     {
       name: 'Transitions',

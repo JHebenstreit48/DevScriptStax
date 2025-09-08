@@ -1,10 +1,10 @@
 import { lazy } from "react";
 import { RouteObject } from "react-router-dom";
 
-const Structure = lazy(
+const ProjectStructure = lazy(
   () =>
     import(
-      "@/Pages/MainTabs/FrontEndPages/AngularPages/Basics/Structure/Structure"
+      "@/Pages/MainTabs/FrontEndPages/AngularPages/Basics/Structure/ProjectStructure"
     )
 );
 const ConfigFiles = lazy(
@@ -20,10 +20,10 @@ const NamingConventions = lazy(
     )
 );
 
-const StructureRoutes: RouteObject[] = [
+const Structure: RouteObject[] = [
   {
     path: "/angular/basics/structure/structure",
-    element: <Structure />,
+    element: <ProjectStructure />,
   },
   {
     path: "/angular/basics/structure/config-files",
@@ -35,4 +35,4 @@ const StructureRoutes: RouteObject[] = [
   },
 ];
 
-export default StructureRoutes;
+export default Structure;

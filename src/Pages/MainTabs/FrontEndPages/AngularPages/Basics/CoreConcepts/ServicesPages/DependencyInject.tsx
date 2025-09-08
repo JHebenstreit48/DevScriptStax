@@ -3,19 +3,18 @@ import Header from '@/Components/Shared/Header/Header';
 import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
-const Introduction = () => {
-  const markdownFilePath =
-    'FrontEndNotes/AngularNotes/Basics/CoreConcepts/AngComponents/Introduction';
+const DependencyInject = () => {
+  const markdownFilePath = 'FrontEndNotes/AngularNotes/Basics/CoreConcepts/ServicesNotes/DependencyInjection';
 
   return (
     <>
       <PageLayout>
         <Header />
-        <PageTitle title="Angular Components - Introduction" />
+        <PageTitle title="Angular Services - Dependency Injection" />
         <Notes filePath={markdownFilePath} />
       </PageLayout>
     </>
   );
 };
 
-export default Introduction;
+export default DependencyInject;
