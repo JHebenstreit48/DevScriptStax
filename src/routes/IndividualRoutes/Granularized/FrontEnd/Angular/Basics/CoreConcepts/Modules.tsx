@@ -2,14 +2,10 @@ import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
 const Basics = lazy(
-  () =>
-    import('@/Pages/MainTabs/FrontEnd/Angular/Basics/CoreConcepts/Modules/Basics')
+  () => import('@/Pages/MainTabs/FrontEnd/Angular/Basics/CoreConcepts/Modules/Basics')
 );
 const LazyLoading = lazy(
-  () =>
-    import(
-      '@/Pages/MainTabs/FrontEnd/Angular/Basics/CoreConcepts/Modules/LazyLoading'
-    )
+  () => import('@/Pages/MainTabs/FrontEnd/Angular/Basics/CoreConcepts/Modules/LazyLoading')
 );
 
 const Modules: RouteObject[] = [

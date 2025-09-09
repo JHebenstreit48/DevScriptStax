@@ -1,19 +1,23 @@
-import { lazy } from "react";
-import { RouteObject } from "react-router-dom";
+import { lazy } from 'react';
+import { RouteObject } from 'react-router-dom';
 
-const BundleOptimization = lazy(() => import("@/Pages/MainTabs/FrontEnd/Angular/Advanced/PerformancePages/BundleOptimization"));
+const BundleOptimization = lazy(
+  () => import('@/Pages/MainTabs/FrontEnd/Angular/Advanced/PerformancePages/BundleOptimization')
+);
 
-const BudgetsProfiling = lazy(() => import("@/Pages/MainTabs/FrontEnd/Angular/Advanced/PerformancePages/BudgetsProfiling"));
+const BudgetsProfiling = lazy(
+  () => import('@/Pages/MainTabs/FrontEnd/Angular/Advanced/PerformancePages/BudgetsProfiling')
+);
 
 const performance: RouteObject[] = [
-{
+  {
     path: '/angular/advanced/performance/bundle-optimization',
-    element: <BundleOptimization />
-},
-{
+    element: <BundleOptimization />,
+  },
+  {
     path: '/angular/advanced/performance/budgets-profiling',
-    element: <BudgetsProfiling />
-}
+    element: <BudgetsProfiling />,
+  },
 ];
 
 export default performance;

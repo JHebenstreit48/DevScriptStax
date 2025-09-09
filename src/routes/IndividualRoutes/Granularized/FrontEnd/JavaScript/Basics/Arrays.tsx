@@ -1,15 +1,13 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Introduction = lazy(
-  () => import('@/Pages/MainTabs/FrontEnd/JavaScript/Basics/Arrays/Introduction')
-);
+const Introduction = lazy(() => import('@/Pages/MainTabs/FrontEnd/JavaScript/Basics/Arrays/Introduction'));
 
 const Arrays: RouteObject[] = [
-    {
-        path: '/javascript/basics/arrays/introduction',
-        element: <Introduction />,
-    }
+  {
+    path: '/javascript/basics/arrays/introduction',
+    element: <Introduction />,
+  },
 ];
 
 export default Arrays;

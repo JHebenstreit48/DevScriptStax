@@ -1,12 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const MediaQueries = lazy(
-  () => import('@/Pages/MainTabs/FrontEnd/CSS/Advanced/ResponseAndVar/MediaQueries')
-);
-const Variables = lazy(
-  () => import('@/Pages/MainTabs/FrontEnd/CSS/Advanced/ResponseAndVar/Variables')
-);
+const MediaQueries = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Advanced/ResponseAndVar/MediaQueries'));
+const Variables = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Advanced/ResponseAndVar/Variables'));
 
 const ResponseAndVar: RouteObject[] = [
   {

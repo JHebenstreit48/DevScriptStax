@@ -1,23 +1,14 @@
-import { lazy } from "react";
-import { RouteObject } from "react-router-dom";
+import { lazy } from 'react';
+import { RouteObject } from 'react-router-dom';
 
 const CDBasics = lazy(
-  () =>
-    import(
-      "@/Pages/MainTabs/FrontEnd/Angular/Advanced/ChangeDetection/Basics"
-    )
+  () => import('@/Pages/MainTabs/FrontEnd/Angular/Advanced/ChangeDetection/Basics')
 );
 const CDOptimizing = lazy(
-  () =>
-    import(
-      "@/Pages/MainTabs/FrontEnd/Angular/Advanced/ChangeDetection/Optimizing"
-    )
+  () => import('@/Pages/MainTabs/FrontEnd/Angular/Advanced/ChangeDetection/Optimizing')
 );
 const CDTemplRenderOptim = lazy(
-  () =>
-    import(
-      "@/Pages/MainTabs/FrontEnd/Angular/Advanced/ChangeDetection/TemplateRenderOptim"
-    )
+  () => import('@/Pages/MainTabs/FrontEnd/Angular/Advanced/ChangeDetection/TemplateRenderOptim')
 );
 
 const changeDetection: RouteObject[] = [
