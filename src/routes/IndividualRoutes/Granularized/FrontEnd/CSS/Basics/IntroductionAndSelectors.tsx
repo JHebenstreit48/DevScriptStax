@@ -3,9 +3,7 @@ import { RouteObject } from 'react-router-dom';
 
 const IntroductionAndSyntax = lazy(
   () =>
-    import(
-      '@/Pages/MainTabs/FrontEnd/CSS/Basics/IntroductionAndSelectors/IntroductionAndSyntax'
-    )
+    import('@/Pages/MainTabs/FrontEnd/CSS/Basics/IntroductionAndSelectors/IntroductionAndSyntax')
 );
 const Selectors = lazy(
   () => import('@/Pages/MainTabs/FrontEnd/CSS/Basics/IntroductionAndSelectors/Selectors')

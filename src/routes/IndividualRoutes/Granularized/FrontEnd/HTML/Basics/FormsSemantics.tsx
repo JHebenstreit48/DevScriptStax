@@ -1,12 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Forms = lazy(
-  () => import('@/Pages/MainTabs/FrontEnd/HTML/Basics/FormsAndSemantics/Forms')
-);
-const Semantics = lazy(
-  () => import('@/Pages/MainTabs/FrontEnd/HTML/Basics/FormsAndSemantics/Semantics')
-);
+const Forms = lazy(() => import('@/Pages/MainTabs/FrontEnd/HTML/Basics/FormsAndSemantics/Forms'));
+const Semantics = lazy(() => import('@/Pages/MainTabs/FrontEnd/HTML/Basics/FormsAndSemantics/Semantics'));
 
 const FormsSemantics: RouteObject[] = [
   {

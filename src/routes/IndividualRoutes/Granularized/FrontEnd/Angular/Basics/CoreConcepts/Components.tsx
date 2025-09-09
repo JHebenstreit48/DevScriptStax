@@ -2,34 +2,22 @@ import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
 const Introduction = lazy(
-  () =>
-    import(
-      '@/Pages/MainTabs/FrontEnd/Angular/Basics/CoreConcepts/ComponentsPages/Introduction'
-    )
+  () => import('@/Pages/MainTabs/FrontEnd/Angular/Basics/CoreConcepts/ComponentsPages/Introduction')
 );
 const ReusableDesign = lazy(
   () =>
-    import(
-      '@/Pages/MainTabs/FrontEnd/Angular/Basics/CoreConcepts/ComponentsPages/ReusableDesign'
-    )
+    import('@/Pages/MainTabs/FrontEnd/Angular/Basics/CoreConcepts/ComponentsPages/ReusableDesign')
 );
 const SmartDumb = lazy(
-  () =>
-    import(
-      '@/Pages/MainTabs/FrontEnd/Angular/Basics/CoreConcepts/ComponentsPages/SmartDumb'
-    )
+  () => import('@/Pages/MainTabs/FrontEnd/Angular/Basics/CoreConcepts/ComponentsPages/SmartDumb')
 );
 const Communication = lazy(
   () =>
-    import(
-      '@/Pages/MainTabs/FrontEnd/Angular/Basics/CoreConcepts/ComponentsPages/Communication'
-    )
+    import('@/Pages/MainTabs/FrontEnd/Angular/Basics/CoreConcepts/ComponentsPages/Communication')
 );
 const InputsOutputs = lazy(
   () =>
-    import(
-      '@/Pages/MainTabs/FrontEnd/Angular/Basics/CoreConcepts/ComponentsPages/InputsOutputs'
-    )
+    import('@/Pages/MainTabs/FrontEnd/Angular/Basics/CoreConcepts/ComponentsPages/InputsOutputs')
 );
 
 const Components: RouteObject[] = [

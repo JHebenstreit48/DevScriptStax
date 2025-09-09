@@ -5,11 +5,11 @@ const Workflow: Subpage = {
   subpages: [
     {
       name: 'Full Workflow',
-      path: '/tools/containerization/git/basics/workflow/fullworkflow',
+      path: '/git/basics/workflow/full-workflow',
     },
     {
       name: 'Nuances',
-      path: '/tools/containerization/git/basics/workflow/nuances',
+      path: '/git/basics/workflow/nuances',
     },
   ],
 };

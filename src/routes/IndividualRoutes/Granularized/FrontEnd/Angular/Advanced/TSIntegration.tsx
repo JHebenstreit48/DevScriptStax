@@ -1,18 +1,12 @@
-import { lazy } from "react";
-import { RouteObject } from "react-router-dom";
+import { lazy } from 'react';
+import { RouteObject } from 'react-router-dom';
 
 const PathAliases = lazy(
-  () =>
-    import(
-      "@/Pages/MainTabs/FrontEnd/Angular/Advanced/TypeScriptIntegration/PathAliases"
-    )
+  () => import('@/Pages/MainTabs/FrontEnd/Angular/Advanced/TypeScriptIntegration/PathAliases')
 );
 
 const AdvancedAliases = lazy(
-  () =>
-    import(
-      "@/Pages/MainTabs/FrontEnd/Angular/Advanced/TypeScriptIntegration/AdvancedAliases"
-    )
+  () => import('@/Pages/MainTabs/FrontEnd/Angular/Advanced/TypeScriptIntegration/AdvancedAliases')
 );
 
 const tsIntegration: RouteObject[] = [
@@ -23,7 +17,7 @@ const tsIntegration: RouteObject[] = [
   {
     path: '/angular/advanced/ts-integration/advanced-aliases',
     element: <AdvancedAliases />,
-  }
+  },
 ];
 
 export default tsIntegration;

@@ -1,11 +1,8 @@
-import { lazy } from "react";
-import { RouteObject } from "react-router-dom";
+import { lazy } from 'react';
+import { RouteObject } from 'react-router-dom';
 
 const ObservableBasics = lazy(
-  () =>
-    import(
-      "@/Pages/MainTabs/FrontEnd/Angular/Advanced/RxJSAndReactive/ObservableBasics"
-    )
+  () => import('@/Pages/MainTabs/FrontEnd/Angular/Advanced/RxJSAndReactive/ObservableBasics')
 );
 
 const rxJSAndReactive: RouteObject[] = [

@@ -1,9 +1,7 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Basics = lazy(
-  () => import('@/Pages/MainTabs/FrontEnd/JavaScript/Basics/FunctionsPages/Basics')
-);
+const Basics = lazy(() => import('@/Pages/MainTabs/FrontEnd/JavaScript/Basics/FunctionsPages/Basics'));
 
 const Functions: RouteObject[] = [
   {
