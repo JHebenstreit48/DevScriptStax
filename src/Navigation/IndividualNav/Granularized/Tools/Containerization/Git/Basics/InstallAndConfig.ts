@@ -5,11 +5,11 @@ const InstallAndConfig: Subpage = {
   subpages: [
     {
       name: 'Installing Git',
-      path: '/tools/containerization/git/basics/install-and-config/installing',
+      path: '/git/basics/install-and-config/installing',
     },
     {
       name: 'Initial Configuration',
-      path: '/tools/containerization/git/basics/install-and-config/configuration',
+      path: '/git/basics/install-and-config/configuration',
     },
   ],
 };

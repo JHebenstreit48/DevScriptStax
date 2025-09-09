@@ -5,11 +5,11 @@ const Commands: Subpage = {
   subpages: [
     {
       name: 'Common',
-      path: '/tools/containerization/git/basics/commands/common',
+      path: '/git/basics/commands/common',
     },
     {
       name: 'Status/Diff/Log',
-      path: '/tools/containerization/git/basics/commands/status-diff-log',
+      path: '/git/basics/commands/status-diff-log',
     },
   ],
 };

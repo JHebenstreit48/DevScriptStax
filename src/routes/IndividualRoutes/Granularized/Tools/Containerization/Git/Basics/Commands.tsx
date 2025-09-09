@@ -6,11 +6,11 @@ const StatusDiffLog = lazy(() => import('@/Pages/MainTabs/Tools/Containerization
 
 const Commands: RouteObject[] = [
   {
-    path: '/tools/containerization/git/basics/commands/common',
+    path: '/git/basics/commands/common',
     element: <Common />,
   },
   {
-    path: '/tools/containerization/git/basics/commands/status-diff-log',
+    path: '/git/basics/commands/status-diff-log',
     element: <StatusDiffLog />,
   },
 ];

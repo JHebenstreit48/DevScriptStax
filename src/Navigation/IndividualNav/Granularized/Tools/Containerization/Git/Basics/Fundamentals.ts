@@ -5,11 +5,11 @@ const Fundamentals: Subpage = {
   subpages: [
     {
       name: 'Introduction',
-      path: '/tools/containerization/git/basics/fundamentals/introduction',
+      path: '/git/basics/fundamentals/introduction',
     },
     {
       name: 'Version Control',
-      path: '/tools/containerization/git/basics/fundamentals/version-control',
+      path: '/git/basics/fundamentals/version-control',
     },
   ],
 };

@@ -8,11 +8,11 @@ const VersionControl = lazy(
 
 const Fundamentals: RouteObject[] = [
   {
-    path: '/tools/containerization/git/basics/fundamentals/introduction',
+    path: '/git/basics/fundamentals/introduction',
     element: <Introduction />,
   },
   {
-    path: '/tools/containerization/git/basics/fundamentals/version-control',
+    path: '/git/basics/fundamentals/version-control',
     element: <VersionControl />,
   },
 ];
