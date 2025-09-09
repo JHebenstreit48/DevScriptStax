@@ -6,7 +6,7 @@ const Nuances = lazy(() => import('@/Pages/MainTabs/Tools/Containerization/Git/B
 
 const git: RouteObject[] = [
   {
-    path: '/tools/containerization/git/basics/workflow/fullworkflow',
+    path: '/tools/containerization/git/basics/workflow/full-workflow',
     element: <Workflow />,
   },
   {

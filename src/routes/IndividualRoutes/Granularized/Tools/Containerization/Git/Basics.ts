@@ -1,9 +1,13 @@
-import { RouteObject } from "react-router-dom";
+import { RouteObject } from 'react-router-dom';
 
-import Workflow from "@/routes/IndividualRoutes/Granularized/Tools/Containerization/Git/Basics/Worflow";
+import Fundamentals from '@/routes/IndividualRoutes/Granularized/Tools/Containerization/Git/Basics/Fundamentals';
+import Workflow from '@/routes/IndividualRoutes/Granularized/Tools/Containerization/Git/Basics/Worflow';
+import Commands from '@/routes/IndividualRoutes/Granularized/Tools/Containerization/Git/Basics/Commands';
 
 const Basics: RouteObject[] = [
-...Workflow,
+    ...Fundamentals,
+    ...Workflow,
+    ...Commands
 ];
 
 export default Basics;
