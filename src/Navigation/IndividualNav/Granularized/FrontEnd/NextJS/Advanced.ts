@@ -1,6 +1,6 @@
 import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes';
 
-const NextJSAdvanced: Subpage = {
+const Advanced: Subpage = {
   name: 'Advanced',
   subpages: [
     {
@@ -40,4 +40,4 @@ const NextJSAdvanced: Subpage = {
   ]
 };
 
-export default NextJSAdvanced;
+export default Advanced;
