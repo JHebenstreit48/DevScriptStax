@@ -3,12 +3,12 @@ import { RouteObject } from 'react-router-dom';
 
 const Basics = lazy(
   () =>
-    import('@/Pages/MainTabs/FrontEndPages/AngularPages/Basics/CoreConcepts/ModulesPages/Basics')
+    import('@/Pages/MainTabs/FrontEnd/Angular/Basics/CoreConcepts/Modules/Basics')
 );
 const LazyLoading = lazy(
   () =>
     import(
-      '@/Pages/MainTabs/FrontEndPages/AngularPages/Basics/CoreConcepts/ModulesPages/LazyLoading'
+      '@/Pages/MainTabs/FrontEnd/Angular/Basics/CoreConcepts/Modules/LazyLoading'
     )
 );
 

@@ -4,14 +4,14 @@ import { RouteObject } from "react-router-dom";
 const PathAliases = lazy(
   () =>
     import(
-      "@/Pages/MainTabs/FrontEndPages/AngularPages/Advanced/TypeScriptIntegration/PathAliases"
+      "@/Pages/MainTabs/FrontEnd/Angular/Advanced/TypeScriptIntegration/PathAliases"
     )
 );
 
 const AdvancedAliases = lazy(
   () =>
     import(
-      "@/Pages/MainTabs/FrontEndPages/AngularPages/Advanced/TypeScriptIntegration/AdvancedAliases"
+      "@/Pages/MainTabs/FrontEnd/Angular/Advanced/TypeScriptIntegration/AdvancedAliases"
     )
 );
 

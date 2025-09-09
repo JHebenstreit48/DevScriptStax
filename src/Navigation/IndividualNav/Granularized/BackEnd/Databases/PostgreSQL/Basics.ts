@@ -1,8 +1,8 @@
 import { Subpage } from "@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes";
 
-import Fundamentals from '@/Navigation/IndividualNav/Granularized/BackEndNav/DatabaseNav/PostgreSQL/Basics/Fundamentals';
-import SetupAndConfig from '@/Navigation/IndividualNav/Granularized/BackEndNav/DatabaseNav/PostgreSQL/Basics/SetupAndConfig';
-import Core from '@/Navigation/IndividualNav/Granularized/BackEndNav/DatabaseNav/PostgreSQL/Basics/Core';
+import Fundamentals from '@/Navigation/IndividualNav/Granularized/BackEnd/Databases/PostgreSQL/Basics/Fundamentals';
+import SetupAndConfig from '@/Navigation/IndividualNav/Granularized/BackEnd/Databases/PostgreSQL/Basics/SetupAndConfig';
+import Core from '@/Navigation/IndividualNav/Granularized/BackEnd/Databases/PostgreSQL/Basics/Core';
 
 const Basics: Subpage = {
   name: "Basics",

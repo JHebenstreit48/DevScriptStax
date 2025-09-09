@@ -1,6 +1,6 @@
 import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes';
 
-import Basics from '@/Navigation/IndividualNav/Granularized/TestingNav/End2End/CypressNav/Basics';
+import Basics from '@/Navigation/IndividualNav/Granularized/Tests/End2End/CypressNav/Basics';
 
 const Cypress: Subpage = {
     name: 'Cypress',

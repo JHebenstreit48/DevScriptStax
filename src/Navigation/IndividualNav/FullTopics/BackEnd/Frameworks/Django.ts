@@ -1,7 +1,7 @@
 import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes';
 
-import Basics from '@/Navigation/IndividualNav/Granularized/BackEndNav/Frameworks/Django/Basics';
-import Advanced from '@/Navigation/IndividualNav/Granularized/BackEndNav/Frameworks/Django/Advanced';
+import Basics from '@/Navigation/IndividualNav/Granularized/BackEnd/Frameworks/Django/Basics';
+import Advanced from '@/Navigation/IndividualNav/Granularized/BackEnd/Frameworks/Django/Advanced';
 
 const Django: Subpage = {
 name: 'Django',

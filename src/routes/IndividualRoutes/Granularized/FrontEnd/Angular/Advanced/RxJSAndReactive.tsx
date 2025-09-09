@@ -4,7 +4,7 @@ import { RouteObject } from "react-router-dom";
 const ObservableBasics = lazy(
   () =>
     import(
-      "@/Pages/MainTabs/FrontEndPages/AngularPages/Advanced/RxJSAndReactive/ObservableBasics"
+      "@/Pages/MainTabs/FrontEnd/Angular/Advanced/RxJSAndReactive/ObservableBasics"
     )
 );
 

@@ -1,10 +1,10 @@
 import { Subpage } from "@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes";
 
-import Fundamentals from "@/Navigation/IndividualNav/Granularized/BackEndNav/APINav/RESTAPIs/Fundamentals";
-import HTTPMethods from "@/Navigation/IndividualNav/Granularized/BackEndNav/APINav/RESTAPIs/HTTPMethods";
-import EndpointsResources from "@/Navigation/IndividualNav/Granularized/BackEndNav/APINav/RESTAPIs/EndpointsAndResources";
-import DesignPrinciples from "@/Navigation/IndividualNav/Granularized/BackEndNav/APINav/RESTAPIs/DesignPrinciples";
-import ErrorHandling from "@/Navigation/IndividualNav/Granularized/BackEndNav/APINav/RESTAPIs/ErrorHandling";
+import Fundamentals from "@/Navigation/IndividualNav/Granularized/BackEnd/APIs/RESTAPIs/Fundamentals";
+import HTTPMethods from "@/Navigation/IndividualNav/Granularized/BackEnd/APIs/RESTAPIs/HTTPMethods";
+import EndpointsResources from "@/Navigation/IndividualNav/Granularized/BackEnd/APIs/RESTAPIs/EndpointsAndResources";
+import DesignPrinciples from "@/Navigation/IndividualNav/Granularized/BackEnd/APIs/RESTAPIs/DesignPrinciples";
+import ErrorHandling from "@/Navigation/IndividualNav/Granularized/BackEnd/APIs/RESTAPIs/ErrorHandling";
 
 const REST: Subpage = {
     name: "REST",

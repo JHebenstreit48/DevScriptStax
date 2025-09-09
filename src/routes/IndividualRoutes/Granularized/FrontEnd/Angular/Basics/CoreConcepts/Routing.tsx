@@ -3,18 +3,18 @@ import { RouteObject } from 'react-router-dom';
 
 const Basics = lazy(
   () =>
-    import('@/Pages/MainTabs/FrontEndPages/AngularPages/Basics/CoreConcepts/RoutingPages/Basics')
+    import('@/Pages/MainTabs/FrontEnd/Angular/Basics/CoreConcepts/Routing/Basics')
 );
 const GuardsAndResolvers = lazy(
   () =>
     import(
-      '@/Pages/MainTabs/FrontEndPages/AngularPages/Basics/CoreConcepts/RoutingPages/GuardsAndResolvers'
+      '@/Pages/MainTabs/FrontEnd/Angular/Basics/CoreConcepts/Routing/GuardsAndResolvers'
     )
 );
 const LazyLoading = lazy(
   () =>
     import(
-      '@/Pages/MainTabs/FrontEndPages/AngularPages/Basics/CoreConcepts/RoutingPages/LazyLoading'
+      '@/Pages/MainTabs/FrontEnd/Angular/Basics/CoreConcepts/Routing/LazyLoading'
     )
 );
 

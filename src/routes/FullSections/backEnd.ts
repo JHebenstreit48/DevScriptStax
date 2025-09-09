@@ -1,8 +1,8 @@
 import { RouteObject } from "react-router-dom";
 
-import APIs from "@/routes/IndividualRoutes/FullRoutes/BackEndRoutes/APIs";
+import APIs from "@/routes/IndividualRoutes/FullRoutes/BackEnd/APIs";
 
-import Databases from "@/routes/IndividualRoutes/FullRoutes/BackEndRoutes/Databases";
+import Databases from "@/routes/IndividualRoutes/FullRoutes/BackEnd/Databases";
 
 
 const backEnd: RouteObject[] = [

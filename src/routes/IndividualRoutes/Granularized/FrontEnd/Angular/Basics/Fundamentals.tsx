@@ -2,13 +2,13 @@ import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
 const Introduction = lazy(
-  () => import('@/Pages/MainTabs/FrontEndPages/AngularPages/Basics/Fundamentals/Introduction')
+  () => import('@/Pages/MainTabs/FrontEnd/Angular/Basics/Fundamentals/Introduction')
 );
 const CreateRun = lazy(
-  () => import('@/Pages/MainTabs/FrontEndPages/AngularPages/Basics/Fundamentals/CreatingRunningApp')
+  () => import('@/Pages/MainTabs/FrontEnd/Angular/Basics/Fundamentals/CreatingRunningApp')
 );
 const CLI = lazy(
-  () => import('@/Pages/MainTabs/FrontEndPages/AngularPages/Basics/Fundamentals/CLI')
+  () => import('@/Pages/MainTabs/FrontEnd/Angular/Basics/Fundamentals/CLI')
 );
 
 const Fundamentals: RouteObject[] = [

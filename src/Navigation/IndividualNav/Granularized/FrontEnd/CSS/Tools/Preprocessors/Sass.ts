@@ -1,8 +1,8 @@
 import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes';
 
-import Fundamentals from '@/Navigation/IndividualNav/Granularized/FrontEndNav/CSSNav/ToolsNav/Preprocessors/SassNav/Fundamentals';
-import AdvancedConcepts from '@/Navigation/IndividualNav/Granularized/FrontEndNav/CSSNav/ToolsNav/Preprocessors/SassNav/AdvancedConcepts';
-import BestPractices from '@/Navigation/IndividualNav/Granularized/FrontEndNav/CSSNav/ToolsNav/Preprocessors/SassNav/BestPractices';
+import Fundamentals from '@/Navigation/IndividualNav/Granularized/FrontEnd/CSS/Tools/Preprocessors/Sass/Fundamentals';
+import AdvancedConcepts from '@/Navigation/IndividualNav/Granularized/FrontEnd/CSS/Tools/Preprocessors/Sass/AdvancedConcepts';
+import BestPractices from '@/Navigation/IndividualNav/Granularized/FrontEnd/CSS/Tools/Preprocessors/Sass/BestPractices';
 
 const Sass: Subpage = {
     name: 'Sass',

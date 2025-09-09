@@ -4,31 +4,31 @@ import { RouteObject } from 'react-router-dom';
 const Introduction = lazy(
   () =>
     import(
-      '@/Pages/MainTabs/FrontEndPages/AngularPages/Basics/CoreConcepts/ComponentsPages/Introduction'
+      '@/Pages/MainTabs/FrontEnd/Angular/Basics/CoreConcepts/ComponentsPages/Introduction'
     )
 );
 const ReusableDesign = lazy(
   () =>
     import(
-      '@/Pages/MainTabs/FrontEndPages/AngularPages/Basics/CoreConcepts/ComponentsPages/ReusableDesign'
+      '@/Pages/MainTabs/FrontEnd/Angular/Basics/CoreConcepts/ComponentsPages/ReusableDesign'
     )
 );
 const SmartDumb = lazy(
   () =>
     import(
-      '@/Pages/MainTabs/FrontEndPages/AngularPages/Basics/CoreConcepts/ComponentsPages/SmartDumb'
+      '@/Pages/MainTabs/FrontEnd/Angular/Basics/CoreConcepts/ComponentsPages/SmartDumb'
     )
 );
 const Communication = lazy(
   () =>
     import(
-      '@/Pages/MainTabs/FrontEndPages/AngularPages/Basics/CoreConcepts/ComponentsPages/Communication'
+      '@/Pages/MainTabs/FrontEnd/Angular/Basics/CoreConcepts/ComponentsPages/Communication'
     )
 );
 const InputsOutputs = lazy(
   () =>
     import(
-      '@/Pages/MainTabs/FrontEndPages/AngularPages/Basics/CoreConcepts/ComponentsPages/InputsOutputs'
+      '@/Pages/MainTabs/FrontEnd/Angular/Basics/CoreConcepts/ComponentsPages/InputsOutputs'
     )
 );
 

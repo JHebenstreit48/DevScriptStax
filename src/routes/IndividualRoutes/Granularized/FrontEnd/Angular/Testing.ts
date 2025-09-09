@@ -1,6 +1,6 @@
 import { RouteObject } from "react-router-dom";
 
-import Unit from "@/routes/IndividualRoutes/Granularized/FrontEndRoutes/AngularRoutes/TestingRoutes/Unit";
+import Unit from "@/routes/IndividualRoutes/Granularized/FrontEnd/Angular/Tests/Unit";
 
 const Testing: RouteObject[] = [
     ...Unit,

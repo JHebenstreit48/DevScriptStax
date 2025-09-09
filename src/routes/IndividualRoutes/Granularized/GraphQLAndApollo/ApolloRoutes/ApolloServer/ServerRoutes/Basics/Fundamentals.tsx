@@ -4,13 +4,13 @@ import { RouteObject } from "react-router-dom";
 const Introduction = lazy(
   () =>
     import(
-      "@/Pages/MainTabs/GraphQLAndApolloPages/ApolloPages/ApolloServer/Basics/Fundamentals/Introduction"
+      "@/Pages/MainTabs/GraphQLAndApollo/Apollo/ApolloServer/Basics/Fundamentals/Introduction"
     )
 );
 const Setup = lazy(
   () =>
     import(
-      "@/Pages/MainTabs/GraphQLAndApolloPages/ApolloPages/ApolloServer/Basics/Fundamentals/Setup"
+      "@/Pages/MainTabs/GraphQLAndApollo/Apollo/ApolloServer/Basics/Fundamentals/Setup"
     )
 );
 

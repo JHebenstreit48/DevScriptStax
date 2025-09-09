@@ -1,7 +1,7 @@
 import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes';
 
-import Basics from '@/Navigation/IndividualNav/Granularized/LanguagesNav/RustNav/Basics';
-import Advanced from '@/Navigation/IndividualNav/Granularized/LanguagesNav/RustNav/Advanced';
+import Basics from '@/Navigation/IndividualNav/Granularized/Languages/Rust/Basics';
+import Advanced from '@/Navigation/IndividualNav/Granularized/Languages/Rust/Advanced';
 
 const Rust: Subpage = {
   name: 'Rust',

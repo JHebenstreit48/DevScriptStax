@@ -1,36 +1,27 @@
-import { lazy } from "react";
-import { RouteObject } from "react-router-dom";
+import { lazy } from 'react';
+import { RouteObject } from 'react-router-dom';
 
 const ProjectStructure = lazy(
-  () =>
-    import(
-      "@/Pages/MainTabs/FrontEndPages/AngularPages/Basics/Structure/ProjectStructure"
-    )
+  () => import('@/Pages/MainTabs/FrontEnd/Angular/Basics/Structure/ProjectStructure')
 );
 const ConfigFiles = lazy(
-  () =>
-    import(
-      "@/Pages/MainTabs/FrontEndPages/AngularPages/Basics/Structure/ConfigurationFiles"
-    )
+  () => import('@/Pages/MainTabs/FrontEnd/Angular/Basics/Structure/ConfigurationFiles')
 );
 const NamingConventions = lazy(
-  () =>
-    import(
-      "@/Pages/MainTabs/FrontEndPages/AngularPages/Basics/Structure/NamingConventions"
-    )
+  () => import('@/Pages/MainTabs/FrontEnd/Angular/Basics/Structure/NamingConventions')
 );
 
 const Structure: RouteObject[] = [
   {
-    path: "/angular/basics/structure/structure",
+    path: '/angular/basics/structure/structure',
     element: <ProjectStructure />,
   },
   {
-    path: "/angular/basics/structure/config-files",
+    path: '/angular/basics/structure/config-files',
     element: <ConfigFiles />,
   },
   {
-    path: "/angular/basics/structure/naming-conventions",
+    path: '/angular/basics/structure/naming-conventions',
     element: <NamingConventions />,
   },
 ];

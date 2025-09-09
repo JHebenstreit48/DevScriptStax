@@ -1,39 +1,39 @@
 import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes';
 
 // ---------- API Tools Navigation Start ----------
-import Insomnia from '@/Navigation/IndividualNav/FullTopics/ToolsNav/APITools/Insomnia';
-import Postman from '@/Navigation/IndividualNav/FullTopics/ToolsNav/APITools/Postman';
+import Insomnia from '@/Navigation/IndividualNav/FullTopics/Tools/APITools/Insomnia';
+import Postman from '@/Navigation/IndividualNav/FullTopics/Tools/APITools/Postman';
 // ---------- API Tools Navigation End ----------
 
 // ---------- CICD Tools Navigation Start ----------
-import CircleCI from '@/Navigation/IndividualNav/FullTopics/ToolsNav/CICD/CircleCI';
-import Jenkins from '@/Navigation/IndividualNav/FullTopics/ToolsNav/CICD/Jenkins';
+import CircleCI from '@/Navigation/IndividualNav/FullTopics/Tools/CICD/CircleCI';
+import Jenkins from '@/Navigation/IndividualNav/FullTopics/Tools/CICD/Jenkins';
 // ---------- CICD Tools Navigation End ----------
 
 // ---------- Code Quality Navigation Start ----------
-import ESLint from '@/Navigation/IndividualNav/FullTopics/ToolsNav/CodeQuality/ESLint';
-import Prettier from '@/Navigation/IndividualNav/FullTopics/ToolsNav/CodeQuality/Prettier';
-import TSLint from '@/Navigation/IndividualNav/FullTopics/ToolsNav/CodeQuality/TSLint';
-import StandardJS from '@/Navigation/IndividualNav/FullTopics/ToolsNav/CodeQuality/StandardJS';
+import ESLint from '@/Navigation/IndividualNav/FullTopics/Tools/CodeQuality/ESLint';
+import Prettier from '@/Navigation/IndividualNav/FullTopics/Tools/CodeQuality/Prettier';
+import TSLint from '@/Navigation/IndividualNav/FullTopics/Tools/CodeQuality/TSLint';
+import StandardJS from '@/Navigation/IndividualNav/FullTopics/Tools/CodeQuality/StandardJS';
 // ---------- Code Quality Navigation End ----------
 
 // -------------- Package & Bundling Start ----------------------------
 
 // ------------- Package Management Start -------------
-import Yarn from '@/Navigation/IndividualNav/FullTopics/ToolsNav/PackageAndBundle/PackageManagement/Yarn';
-import Pnpm from '@/Navigation/IndividualNav/FullTopics/ToolsNav/PackageAndBundle/PackageManagement/Pnpm';
+import Yarn from '@/Navigation/IndividualNav/FullTopics/Tools/PackageAndBundle/PackageManagement/Yarn';
+import Pnpm from '@/Navigation/IndividualNav/FullTopics/Tools/PackageAndBundle/PackageManagement/Pnpm';
 // -------------- Package Management End ---------------
 
 // -------------------- Bundling Start -----------------
-import Babel from '@/Navigation/IndividualNav/FullTopics/ToolsNav/PackageAndBundle/Bundling/Babel';
-import Webpack from '@/Navigation/IndividualNav/FullTopics/ToolsNav/PackageAndBundle/Bundling/Webpack';
+import Babel from '@/Navigation/IndividualNav/FullTopics/Tools/PackageAndBundle/Bundling/Babel';
+import Webpack from '@/Navigation/IndividualNav/FullTopics/Tools/PackageAndBundle/Bundling/Webpack';
 // -------------------- Bundling End -------------------
 
 // ---------------- Package & Bundling End ---------------------------------
 
 // ---------- Containerization Navigation Start ----------
-import Docker from '@/Navigation/IndividualNav/FullTopics/ToolsNav/Containerization/Docker';
-import Git from '@/Navigation/IndividualNav/FullTopics/ToolsNav/Containerization/Git'
+import Docker from '@/Navigation/IndividualNav/FullTopics/Tools/Containerization/Docker';
+import Git from '@/Navigation/IndividualNav/FullTopics/Tools/Containerization/Git'
 // ---------- Containerization Navigation End ----------
 
 const tools: Subpage = {

@@ -3,12 +3,12 @@ import { RouteObject } from 'react-router-dom';
 
 const Basics = lazy(
   () =>
-    import('@/Pages/MainTabs/FrontEndPages/AngularPages/Basics/CoreConcepts/ServicesPages/Basics')
+    import('@/Pages/MainTabs/FrontEnd/Angular/Basics/CoreConcepts/Services/Basics')
 );
 const DependencyInject = lazy(
   () =>
     import(
-      '@/Pages/MainTabs/FrontEndPages/AngularPages/Basics/CoreConcepts/ServicesPages/DependencyInject'
+      '@/Pages/MainTabs/FrontEnd/Angular/Basics/CoreConcepts/Services/DependencyInject'
     )
 );
 

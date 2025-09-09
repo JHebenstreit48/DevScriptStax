@@ -4,19 +4,19 @@ import { RouteObject } from "react-router-dom";
 const CDBasics = lazy(
   () =>
     import(
-      "@/Pages/MainTabs/FrontEndPages/AngularPages/Advanced/ChangeDetection/Basics"
+      "@/Pages/MainTabs/FrontEnd/Angular/Advanced/ChangeDetection/Basics"
     )
 );
 const CDOptimizing = lazy(
   () =>
     import(
-      "@/Pages/MainTabs/FrontEndPages/AngularPages/Advanced/ChangeDetection/Optimizing"
+      "@/Pages/MainTabs/FrontEnd/Angular/Advanced/ChangeDetection/Optimizing"
     )
 );
 const CDTemplRenderOptim = lazy(
   () =>
     import(
-      "@/Pages/MainTabs/FrontEndPages/AngularPages/Advanced/ChangeDetection/TemplateRenderOptim"
+      "@/Pages/MainTabs/FrontEnd/Angular/Advanced/ChangeDetection/TemplateRenderOptim"
     )
 );
 

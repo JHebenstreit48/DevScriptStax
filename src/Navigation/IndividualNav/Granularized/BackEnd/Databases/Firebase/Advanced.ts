@@ -1,10 +1,10 @@
 import { Subpage } from "@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes";
 
-import DataModelAndPerform from "@/Navigation/IndividualNav/Granularized/BackEndNav/DatabaseNav/FirebaseNav/Advanced/DataModelAndPerform";
-import OfflinePatterns from "@/Navigation/IndividualNav/Granularized/BackEndNav/DatabaseNav/FirebaseNav/Advanced/OfflinePatterns";
-import RulesAndEmulator from "@/Navigation/IndividualNav/Granularized/BackEndNav/DatabaseNav/FirebaseNav/Advanced/RulesAndEmulator";
-import AdminSDK from "@/Navigation/IndividualNav/Granularized/BackEndNav/DatabaseNav/FirebaseNav/Advanced/AdminSDK";
-import CostOptimization from "@/Navigation/IndividualNav/Granularized/BackEndNav/DatabaseNav/FirebaseNav/Advanced/CostOptimization";
+import DataModelAndPerform from "@/Navigation/IndividualNav/Granularized/BackEnd/Databases/Firebase/Advanced/DataModelAndPerform";
+import OfflinePatterns from "@/Navigation/IndividualNav/Granularized/BackEnd/Databases/Firebase/Advanced/OfflinePatterns";
+import RulesAndEmulator from "@/Navigation/IndividualNav/Granularized/BackEnd/Databases/Firebase/Advanced/RulesAndEmulator";
+import AdminSDK from "@/Navigation/IndividualNav/Granularized/BackEnd/Databases/Firebase/Advanced/AdminSDK";
+import CostOptimization from "@/Navigation/IndividualNav/Granularized/BackEnd/Databases/Firebase/Advanced/CostOptimization";
 
 const Advanced: Subpage = {
   name: "Advanced",

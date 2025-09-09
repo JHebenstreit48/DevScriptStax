@@ -1,7 +1,7 @@
 import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes';
 
-import Fundamentals from '@/Navigation/IndividualNav/Granularized/FrontEndNav/VueNav/Basics/Fundamentals';
-import CoreConcepts from '@/Navigation/IndividualNav/Granularized/FrontEndNav/VueNav/Basics/CoreConcepts';
+import Fundamentals from '@/Navigation/IndividualNav/Granularized/FrontEnd/Vue/Basics/Fundamentals';
+import CoreConcepts from '@/Navigation/IndividualNav/Granularized/FrontEnd/Vue/Basics/CoreConcepts';
 
 const Basics: Subpage = {
   name: 'Basics',

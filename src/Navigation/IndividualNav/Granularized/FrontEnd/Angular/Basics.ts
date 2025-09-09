@@ -1,8 +1,8 @@
 import { Subpage } from "@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes";
 
-import Fundamentals from "@/Navigation/IndividualNav/Granularized/FrontEndNav/AngularNav/Basics/Fundamentals";
-import Structure from "@/Navigation/IndividualNav/Granularized/FrontEndNav/AngularNav/Basics/Structure";
-import CoreConcepts from "@/Navigation/IndividualNav/Granularized/FrontEndNav/AngularNav/Basics/CoreConcepts";
+import Fundamentals from "@/Navigation/IndividualNav/Granularized/FrontEnd/Angular/Basics/Fundamentals";
+import Structure from "@/Navigation/IndividualNav/Granularized/FrontEnd/Angular/Basics/Structure";
+import CoreConcepts from "@/Navigation/IndividualNav/Granularized/FrontEnd/Angular/Basics/CoreConcepts";
 
 const Basics: Subpage = {
   name: "Basics",
