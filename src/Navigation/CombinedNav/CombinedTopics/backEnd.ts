@@ -28,7 +28,7 @@ import WebSocket from '@/Navigation/IndividualNav/FullTopics/BackEnd/Frameworks/
 // ---------- Frameworks Navigation End ----------
 
 // ---------- Web Servers Navigation Start ----------
-import General from '@/Navigation/IndividualNav/FullTopics/BackEnd/WebServers/General';
+import General from '@/Navigation/IndividualNav/FullTopics/BackEnd/WebServers/CoreConcepts';
 import Nginx from '@/Navigation/IndividualNav/FullTopics/BackEnd/WebServers/Nginx';
 import Apache from '@/Navigation/IndividualNav/FullTopics/BackEnd/WebServers/Apache';
 // ---------- Web Servers Navigation End ----------
