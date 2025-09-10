@@ -289,7 +289,7 @@
 
   /* size: narrower + wrap-friendly */
   width: auto;
-  min-width: 14rem;
+  min-width: 12rem;
   max-width: min(18rem, calc(100vw - 2rem));
 
   /* fully opaque, matches header via $dropdown-bg */
