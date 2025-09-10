@@ -1,34 +1,13 @@
 import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes';
 
+import ExtendedSyntax from '@/Navigation/IndividualNav/Granularized/FrontEnd/Markdown/Intermediate/ExtendedSyntax';
+import InteractiveFeatures from '@/Navigation/IndividualNav/Granularized/FrontEnd/Markdown/Intermediate/InteractiveFeatures';
+
 const Intermediate: Subpage = {
   name: 'Intermediate',
   subpages: [
-    {
-      name: 'Extended Syntax',
-      subpages: [
-        {
-          name: 'Extensions (CommonMark, GFM)',
-          path: '/markdown/intermediate/extended-syntax/extensions'
-        },
-        {
-          name: 'Code Blocks & Highlighting',
-          path: '/markdown/intermediate/extended-syntax/code-blocks'
-        }
-      ]
-    },
-    {
-      name: 'Interactive Features',
-      subpages: [
-        {
-          name: 'Task Lists',
-          path: '/markdown/intermediate/interactive-features/task-lists'
-        },
-        {
-          name: 'Footnotes',
-          path: '/markdown/intermediate/interactive-features/footnotes'
-        }
-      ]
-    }
+    ExtendedSyntax,
+    InteractiveFeatures
   ]
 };
 

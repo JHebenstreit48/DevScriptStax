@@ -1,10 +1,10 @@
 import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes';
 
-const General: Subpage = {
-    name: "General Concepts",
+const CoreConcepts: Subpage = {
+    name: "Core Concepts",
     subpages: [
 
     ]
 };
 
-export default General;
+export default CoreConcepts;
