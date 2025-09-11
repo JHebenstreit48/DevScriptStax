@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-describe('CodeQuest Navigation: Angular Basics', () => {
+describe('DevScriptStax Navigation: Angular Basics', () => {
     it('navigates to Angular Basics > Fundamentals > Introduction', () => {
       cy.visit('/');
   
