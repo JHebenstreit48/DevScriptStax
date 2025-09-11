@@ -1,39 +1,69 @@
-import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes';
+import { Subpage } from "@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes";
 
-const ReduxAdvanced: Subpage = {
-  name: 'Advanced',
+const Advanced: Subpage = {
+  name: "Advanced",
   subpages: [
     {
-      name: 'Performance & Patterns',
+      name: "Architecture & Patterns",
       subpages: [
         {
-          name: 'Performance Optimization',
-          path: '/redux/advanced/performance'
+          name: "Feature Folders & Slices",
+          path: "/redux/advanced/architecture-patterns/feature-folders-and-slices"
         },
         {
-          name: 'Code Splitting',
-          path: '/redux/advanced/codesplitting'
+          name: "Normalization & EntityAdapter",
+          path: "/redux/advanced/architecture-patterns/normalization-and-entity-adapter"
         },
         {
-          name: 'Custom Middleware',
-          path: '/redux/advanced/custommiddleware'
+          name: "Code Splitting (Lazy Reducers)",
+          path: "/redux/advanced/architecture-patterns/code-splitting-lazy-reducers"
         }
       ]
     },
     {
-      name: 'Best Practices',
+      name: "Performance",
       subpages: [
         {
-          name: 'Folder Structure',
-          path: '/redux/advanced/folderstructure'
+          name: "Avoiding Re-renders",
+          path: "/redux/advanced/performance/avoiding-re-renders"
         },
         {
-          name: 'Scalability',
-          path: '/redux/advanced/scalability'
+          name: "Batching & Subscriptions",
+          path: "/redux/advanced/performance/batching-and-subscriptions"
+        },
+        {
+          name: "Immutable Updates at Scale",
+          path: "/redux/advanced/performance/immutable-updates-at-scale"
+        }
+      ]
+    },
+    {
+      name: "Persistence & Sync",
+      subpages: [
+        {
+          name: "redux-persist",
+          path: "/redux/advanced/persistence-sync/redux-persist"
+        },
+        {
+          name: "Cross-Tab Sync",
+          path: "/redux/advanced/persistence-sync/cross-tab-sync"
+        }
+      ]
+    },
+    {
+      name: "Best Practices",
+      subpages: [
+        {
+          name: "Folder Structure",
+          path: "/redux/advanced/best-practices/folder-structure"
+        },
+        {
+          name: "Scalability",
+          path: "/redux/advanced/best-practices/scalability"
         }
       ]
     }
   ]
 };
 
-export default ReduxAdvanced;
+export default Advanced;

@@ -11,7 +11,8 @@ $text-color: #032c2c;
 $text-glow: #00ffff;
 
 $header-height: 4rem;
-$site-name-height: 2,5rem;
+/* fix comma → decimal to avoid layout weirdness */
+$site-name-height: 2.5rem;
 $font-size-default: 2.4rem;
 $cellphone-portrait: 480px;
 
@@ -68,11 +69,41 @@ $cellphone-portrait: 480px;
   margin: 0 auto;
   text-align: center;
   height: $site-name-height;
+  line-height: $site-name-height; /* keep baseline identical to pre-link look */
 
-  // Custom alignment if needed
+  /* If you ever need left alignment */
   &.HeaderAlignLeft {
     margin: 0;
     text-align: left;
+  }
+
+  /* --- Title-as-link resets (stop global <a> rules from styling it) --- */
+  .HeaderHomeLink {
+    display: inline-block;     /* bigger click target, stable layout */
+    color: inherit;            /* inherit the h1 color/glow */
+    text-decoration: none;     /* kill text underlines */
+    border: 0;                 /* kill border-bottom underlines */
+    border-bottom: none !important;
+    position: relative;        /* neutralize absolute ::after lines */
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      border-bottom: none !important;
+    }
+
+    /* In case global CSS adds animated bars on links */
+    &::after,
+    &::before {
+      content: none !important;
+    }
+
+    /* Accessible focus without visual noise */
+    &:focus-visible {
+      outline: 2px solid currentColor;
+      outline-offset: 2px;
+    }
   }
 }
 
@@ -81,7 +112,6 @@ $cellphone-portrait: 480px;
    ============================== */
 // .Header.sm {
 //   font-size: clamp(1.8rem, 4.5vw, 2.3rem);
-
 //   @media only screen and (max-width: $cellphone-portrait) {
 //     font-size: clamp(1.7rem, 4.5vw, 2.2rem);
 //   }

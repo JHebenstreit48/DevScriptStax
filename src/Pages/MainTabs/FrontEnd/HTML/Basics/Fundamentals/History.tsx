@@ -7,7 +7,7 @@ const History = () => {
 
   return (
     <>
-      <Header text="History" />
+      <Header />
       <Notes filePath={markdownFilePath} />
     </>
   );

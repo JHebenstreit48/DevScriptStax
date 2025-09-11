@@ -1,6 +1,6 @@
 import { Subpage } from "@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes";
 
-const GraphQLAdvanced: Subpage = {
+const Advanced: Subpage = {
   name: "Advanced",
   subpages: [
     {
@@ -22,4 +22,4 @@ const GraphQLAdvanced: Subpage = {
   ]
 };
 
-export default GraphQLAdvanced;
+export default Advanced;

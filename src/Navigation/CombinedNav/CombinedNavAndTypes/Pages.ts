@@ -9,10 +9,6 @@ import languages from "@/Navigation/CombinedNav/CombinedTopics/languages";
 import graphQLAndApollo from "@/Navigation/CombinedNav/CombinedTopics/graphQLAndApollo";
 
 const pages: Subpage[] = [
-  {
-    name: "Home",
-    subpages: [],
-  },
   frontEnd,
   backEnd,
   cloudAndDeployment,
