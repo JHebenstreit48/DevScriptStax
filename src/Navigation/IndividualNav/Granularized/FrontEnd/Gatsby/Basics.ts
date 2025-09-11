@@ -1,43 +1,73 @@
-import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes';
+import { Subpage } from "@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes";
 
-const GatsbyBasics: Subpage = {
-  name: 'Basics',
+const Basics: Subpage = {
+  name: "Basics",
   subpages: [
     {
-      name: 'Fundamentals',
+      name: "Fundamentals",
       subpages: [
         {
-          name: 'Getting Started',
-          path: '/gatsby/basics/gettingstarted'
+          name: "Getting Started",
+          path: "/gatsby/basics/fundamentals/getting-started"
         },
         {
-          name: 'Project Structure',
-          path: '/gatsby/basics/projectstructure'
+          name: "Project Structure",
+          path: "/gatsby/basics/fundamentals/project-structure"
+        },
+        {
+          name: "CLI & Workflow",
+          path: "/gatsby/basics/fundamentals/cli-and-workflow"
         }
       ]
     },
     {
-      name: 'Core Concepts',
+      name: "Core Concepts",
       subpages: [
         {
-          name: 'GraphQL',
-          path: '/gatsby/core/graphql'
+          name: "GraphQL Data Layer",
+          path: "/gatsby/basics/core-concepts/graphql-data-layer"
         },
         {
-          name: 'Plugins',
-          path: '/gatsby/core/plugins'
+          name: "File Routing & Pages",
+          path: "/gatsby/basics/core-concepts/file-routing-and-pages"
         },
         {
-          name: 'Layouts / Pages',
-          path: '/gatsby/core/layouts'
+          name: "Layouts & Head API",
+          path: "/gatsby/basics/core-concepts/layouts-and-head-api"
+        }
+      ]
+    },
+    {
+      name: "Assets & Styling",
+      subpages: [
+        {
+          name: "Images (gatsby-plugin-image)",
+          path: "/gatsby/basics/assets-styling/images"
         },
         {
-          name: 'Static Assets',
-          path: '/gatsby/core/assets'
+          name: "Static Assets",
+          path: "/gatsby/basics/assets-styling/static-assets"
+        },
+        {
+          name: "Styling Options",
+          path: "/gatsby/basics/assets-styling/styling-options"
+        }
+      ]
+    },
+    {
+      name: "Config & Plugins",
+      subpages: [
+        {
+          name: "gatsby-config.js",
+          path: "/gatsby/basics/config-plugins/gatsby-config"
+        },
+        {
+          name: "Using Plugins",
+          path: "/gatsby/basics/config-plugins/using-plugins"
         }
       ]
     }
   ]
 };
 
-export default GatsbyBasics;
+export default Basics;

@@ -1,26 +1,69 @@
-import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes';
+import { Subpage } from "@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes";
 
-const ReduxBasics: Subpage = {
-  name: 'Basics',
+const Basics: Subpage = {
+  name: "Basics",
   subpages: [
     {
-      name: 'Fundamentals',
+      name: "Fundamentals",
       subpages: [
         {
-          name: 'Overview',
-          path: '/redux/basics/overview'
+          name: "Overview",
+          path: "/redux/basics/fundamentals/overview"
         },
         {
-          name: 'Core Concepts',
-          path: '/redux/basics/coreconcepts'
+          name: "Core Concepts",
+          path: "/redux/basics/fundamentals/core-concepts"
         },
         {
-          name: 'Setup',
-          path: '/redux/basics/setup'
+          name: "Data Flow",
+          path: "/redux/basics/fundamentals/data-flow"
+        }
+      ]
+    },
+    {
+      name: "React Integration",
+      subpages: [
+        {
+          name: "Provider & Store",
+          path: "/redux/basics/react-integration/provider-and-store"
+        },
+        {
+          name: "Hooks (useSelector/useDispatch)",
+          path: "/redux/basics/react-integration/hooks"
+        },
+        {
+          name: "connect (legacy)",
+          path: "/redux/basics/react-integration/connect-legacy"
+        }
+      ]
+    },
+    {
+      name: "State & Reducers",
+      subpages: [
+        {
+          name: "Actions & Reducers",
+          path: "/redux/basics/state-reducers/actions-and-reducers"
+        },
+        {
+          name: "Immutability Basics",
+          path: "/redux/basics/state-reducers/immutability-basics"
+        }
+      ]
+    },
+    {
+      name: "Store Setup",
+      subpages: [
+        {
+          name: "configureStore",
+          path: "/redux/basics/store-setup/configure-store"
+        },
+        {
+          name: "Slices (createSlice)",
+          path: "/redux/basics/store-setup/slices"
         }
       ]
     }
   ]
 };
 
-export default ReduxBasics;
+export default Basics;
