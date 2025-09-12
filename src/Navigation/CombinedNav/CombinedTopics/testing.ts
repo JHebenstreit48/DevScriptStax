@@ -1,8 +1,8 @@
 import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes';
 
 // ---------- End To End Testing Navigation Start ----------
-import Cypress from '@/Navigation/IndividualNav/FullTopics/Test/End2End/Cypress';
-// import Playwright from '@/Navigation/IndividualNav/TestingNav/End2End/Playwright';
+import Cypress from '@/Navigation/IndividualNav/FullTopics/Testing/End2End/Cypress';
+import Playwright from '@/Navigation/IndividualNav/FullTopics/Testing/End2End/Playwright';
 // ---------- End To End Testing Navigation End ----------
 
 // ---------- Framework Testing Navigation Start ----------
@@ -26,6 +26,7 @@ const testing: Subpage = {
       name: 'End To End',
       subpages: [
         Cypress,
+        Playwright
       ]
     },
     // ---------- End To End Testing Navigation End ----------
