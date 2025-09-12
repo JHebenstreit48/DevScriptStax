@@ -21,7 +21,6 @@ import Playwright from '@/Navigation/IndividualNav/FullTopics/Testing/End2End/Pl
 const testing: Subpage = {
   name: 'Testing',
   subpages: [
-    // ---------- End To End Testing Navigation Start ----------
     {
       name: 'End To End',
       subpages: [
@@ -29,9 +28,6 @@ const testing: Subpage = {
         Playwright
       ]
     },
-    // ---------- End To End Testing Navigation End ----------
-
-    // ---------- Framework Testing Navigation Start ----------
     {
       name: 'Framework',
       subpages: [
@@ -40,9 +36,6 @@ const testing: Subpage = {
         // Mocha
       ]
     },
-    // ---------- Framework Testing Navigation End ----------
-
-    // ---------- Unit Testing Navigation Start ----------
     {
       name: 'Unit',
       subpages: [
@@ -51,10 +44,7 @@ const testing: Subpage = {
         // PHPUnit,
       ]
     }
-    // ---------- Unit Testing Navigation End ----------
   ]
 };
-
-// ---------- End To End Testing Navigation End ----------
 
 export default testing;
