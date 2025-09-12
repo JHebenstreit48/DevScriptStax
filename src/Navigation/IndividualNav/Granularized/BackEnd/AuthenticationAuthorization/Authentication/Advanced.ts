@@ -1,6 +1,6 @@
 import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes';
 
-const AuthenticationAdvanced: Subpage = {
+const Advanced: Subpage = {
   name: 'Advanced',
   subpages: [
     {
@@ -8,23 +8,23 @@ const AuthenticationAdvanced: Subpage = {
       subpages: [
         {
           name: 'Node / Express',
-          path: '/auth/advanced/frameworks/node-express'
+          path: '/authentication/advanced/web-frameworks/node-express'
         },
         {
           name: 'Next.js / React',
-          path: '/auth/advanced/frameworks/nextjs-react'
+          path: '/authentication/advanced/web-frameworks/nextjs-react'
         },
         {
           name: 'Django / Flask',
-          path: '/auth/advanced/frameworks/django-flask'
+          path: '/authentication/advanced/web-frameworks/django-flask'
         },
         {
           name: 'Laravel / PHP',
-          path: '/auth/advanced/frameworks/laravel-php'
+          path: '/authentication/advanced/web-frameworks/laravel-php'
         },
         {
           name: 'ASP.NET',
-          path: '/auth/advanced/frameworks/aspnet'
+          path: '/authentication/advanced/web-frameworks/aspnet'
         }
       ]
     },
@@ -33,27 +33,27 @@ const AuthenticationAdvanced: Subpage = {
       subpages: [
         {
           name: 'Brute Force',
-          path: '/auth/advanced/security/bruteforce'
+          path: '/authentication/advanced/security/brute-force'
         },
         {
           name: 'Hijacking / CSRF',
-          path: '/auth/advanced/security/hijacking-csrf'
+          path: '/authentication/advanced/security/hijacking-csrf'
         },
         {
           name: 'Credential Stuffing',
-          path: '/auth/advanced/security/credentialstuffing'
+          path: '/authentication/advanced/security/credential-stuffing'
         },
         {
           name: 'Passwordless',
-          path: '/auth/advanced/security/passwordless'
+          path: '/authentication/advanced/security/passwordless'
         },
         {
           name: 'Zero Trust',
-          path: '/auth/advanced/security/zerotrust'
+          path: '/authentication/advanced/security/zero-trust'
         }
       ]
     }
   ]
 };
 
-export default AuthenticationAdvanced;
+export default Advanced;
