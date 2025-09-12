@@ -5,11 +5,11 @@ const Core: Subpage = {
   subpages: [
     {
       name: 'Schemas & Tables',
-      path: '/postgresql/basics/coresql/schemas-tables',
+      path: '/postgresql/basics/core-sql/schemas-tables',
     },
     {
       name: 'CRUD (SQL Statements)',
-      path: '/postgresql/basics/coresql/crud',
+      path: '/postgresql/basics/core-sql/crud',
     },
     {
       name: 'Query',

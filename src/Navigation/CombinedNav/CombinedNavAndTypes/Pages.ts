@@ -7,6 +7,7 @@ import testing from "@/Navigation/CombinedNav/CombinedTopics//testing";
 import tools from "@/Navigation/CombinedNav/CombinedTopics/tools";
 import languages from "@/Navigation/CombinedNav/CombinedTopics/languages";
 import graphQLAndApollo from "@/Navigation/CombinedNav/CombinedTopics/graphQLAndApollo";
+import stacks from "@/Navigation/CombinedNav/CombinedTopics/stacks";
 
 const pages: Subpage[] = [
   frontEnd,
@@ -16,7 +17,7 @@ const pages: Subpage[] = [
   tools,
   languages,
   graphQLAndApollo,
-  // stacks
+  stacks
 ];
 
 export default pages;

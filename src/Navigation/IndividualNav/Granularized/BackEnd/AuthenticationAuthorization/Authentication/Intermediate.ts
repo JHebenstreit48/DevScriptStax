@@ -1,6 +1,6 @@
 import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes';
 
-const AuthenticationIntermediate: Subpage = {
+const Intermediate: Subpage = {
   name: 'Intermediate',
   subpages: [
     {
@@ -8,23 +8,23 @@ const AuthenticationIntermediate: Subpage = {
       subpages: [
         {
           name: 'Grant Types',
-          path: '/auth/intermediate/oauth/grants'
+          path: '/authentication/intermediate/oauth-oidc/grant-types'
         },
         {
           name: 'PKCE',
-          path: '/auth/intermediate/oauth/pkce'
+          path: '/authentication/intermediate/oauth-oidc/pkce'
         },
         {
           name: 'OIDC',
-          path: '/auth/intermediate/oauth/oidc'
+          path: '/authentication/intermediate/oauth-oidc/oidc'
         },
         {
           name: 'OAuth in React',
-          path: '/auth/intermediate/oauth/react-nextjs'
+          path: '/authentication/intermediate/oauth-oidc/oauth-react'
         },
         {
           name: 'Server Setup',
-          path: '/auth/intermediate/oauth/server-setup'
+          path: '/authentication/intermediate/oauth-oidc/server-setup'
         }
       ]
     },
@@ -33,15 +33,15 @@ const AuthenticationIntermediate: Subpage = {
       subpages: [
         {
           name: 'Social Logins',
-          path: '/auth/intermediate/methods/social-logins'
+          path: '/authentication/intermediate/methods/social-logins'
         },
         {
           name: 'WebAuthn',
-          path: '/auth/intermediate/methods/webauthn'
+          path: '/authentication/intermediate/methods/webauthn'
         }
       ]
     }
   ]
 };
 
-export default AuthenticationIntermediate;
+export default Intermediate;

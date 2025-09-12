@@ -1,8 +1,8 @@
 import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes';
 
 // ---------- End To End Testing Navigation Start ----------
-import Cypress from '@/Navigation/IndividualNav/FullTopics/Test/End2End/Cypress';
-// import Playwright from '@/Navigation/IndividualNav/TestingNav/End2End/Playwright';
+import Cypress from '@/Navigation/IndividualNav/FullTopics/Testing/End2End/Cypress';
+import Playwright from '@/Navigation/IndividualNav/FullTopics/Testing/End2End/Playwright';
 // ---------- End To End Testing Navigation End ----------
 
 // ---------- Framework Testing Navigation Start ----------
@@ -21,16 +21,13 @@ import Cypress from '@/Navigation/IndividualNav/FullTopics/Test/End2End/Cypress'
 const testing: Subpage = {
   name: 'Testing',
   subpages: [
-    // ---------- End To End Testing Navigation Start ----------
     {
       name: 'End To End',
       subpages: [
         Cypress,
+        Playwright
       ]
     },
-    // ---------- End To End Testing Navigation End ----------
-
-    // ---------- Framework Testing Navigation Start ----------
     {
       name: 'Framework',
       subpages: [
@@ -39,9 +36,6 @@ const testing: Subpage = {
         // Mocha
       ]
     },
-    // ---------- Framework Testing Navigation End ----------
-
-    // ---------- Unit Testing Navigation Start ----------
     {
       name: 'Unit',
       subpages: [
@@ -50,10 +44,7 @@ const testing: Subpage = {
         // PHPUnit,
       ]
     }
-    // ---------- Unit Testing Navigation End ----------
   ]
 };
-
-// ---------- End To End Testing Navigation End ----------
 
 export default testing;

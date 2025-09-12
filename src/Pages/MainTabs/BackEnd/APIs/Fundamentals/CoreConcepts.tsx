@@ -10,7 +10,7 @@ const CoreConcepts = () => {
     <>
       <PageLayout>
         <Header />
-        <PageTitle title=" API Core Concepts" />
+        <PageTitle title=" API Fundamentals - Core Concepts" />
         <Notes filePath={markdownFilePath} />
       </PageLayout>
     </>
