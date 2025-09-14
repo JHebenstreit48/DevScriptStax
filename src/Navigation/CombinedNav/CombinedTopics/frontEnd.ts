@@ -2,7 +2,6 @@ import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/Navigation
 
 import Angular from '@/Navigation/IndividualNav/FullTopics/FrontEnd/Angular';
 import CSS from '@/Navigation/IndividualNav/FullTopics/FrontEnd/CSS';
-import EnvVariables from '@/Navigation/IndividualNav/FullTopics/FrontEnd/EnvVariables';
 import Gatsby from '@/Navigation/IndividualNav/FullTopics/FrontEnd/Gatsby';
 import HTML from '@/Navigation/IndividualNav/FullTopics/FrontEnd/HTML';
 import JavaScript from '@/Navigation/IndividualNav/FullTopics/FrontEnd/JavaScript';
@@ -19,7 +18,6 @@ const frontEnd: Subpage = {
   subpages: [
     Angular,
     CSS,
-    EnvVariables,
     Gatsby,
     HTML,
     JavaScript,
