@@ -11,7 +11,6 @@ import React from '@/Navigation/IndividualNav/FullTopics/FrontEnd/React';
 import Redux from '@/Navigation/IndividualNav/FullTopics/FrontEnd/Redux';
 import Svelte from '@/Navigation/IndividualNav/FullTopics/FrontEnd/Svelte';
 import Vue from '@/Navigation/IndividualNav/FullTopics/FrontEnd/Vue';
-// import ViteNav from '@/Navigation/IndividualNav/FrontEndNav/Granularized/ViteNav/Vite';
 
 const frontEnd: Subpage = {
   name: 'Front End',
@@ -27,7 +26,6 @@ const frontEnd: Subpage = {
     Redux,
     Svelte,
     Vue,
-    // ViteNav
   ]
 };
 
