@@ -1,18 +1,14 @@
-import { Subpage } from "@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes";
+import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes';
 
-import Fundamentals from '@/Navigation/IndividualNav/Granularized/FrontEnd/CSS/Tools/Frameworks/Tailwind/Fundamentals';
-import Utilities from '@/Navigation/IndividualNav/Granularized/FrontEnd/CSS/Tools/Frameworks/Tailwind/Utilities';
-import Components from '@/Navigation/IndividualNav/Granularized/FrontEnd/CSS/Tools/Frameworks/Tailwind/Components';
+import Basics from '@/Navigation/IndividualNav/Granularized/FrontEnd/CSS/Tools/Frameworks/Tailwind/Basics';
 import Advanced from '@/Navigation/IndividualNav/Granularized/FrontEnd/CSS/Tools/Frameworks/Tailwind/Advanced';
 
 const TailwindCSS: Subpage = {
-    name: "Tailwind CSS",
-    subpages: [
-        Fundamentals,
-        Utilities,
-        Components,
-        Advanced
-    ]
+  name: 'Tailwind CSS',
+  subpages: [
+    Basics,
+    Advanced,
+  ],
 };
 
 export default TailwindCSS;
