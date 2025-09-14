@@ -36,6 +36,10 @@ import Docker from '@/Navigation/IndividualNav/FullTopics/Tools/Containerization
 import Git from '@/Navigation/IndividualNav/FullTopics/Tools/Containerization/Git'
 // ---------- Containerization Navigation End ----------
 
+// --------------------- Environment Variables Navigation Start -----------------
+// import EnvVariables from '@/Navigation/IndividualNav/FullTopics/Tools/EnvVariables';
+// ---------------------- Environment Variables Navigation End -------------------
+
 const tools: Subpage = {
   name: 'Tools',
   subpages: [
@@ -88,6 +92,7 @@ const tools: Subpage = {
         Git
       ]
     }
+    // EnvironmentVariables
   ]
 };
 
