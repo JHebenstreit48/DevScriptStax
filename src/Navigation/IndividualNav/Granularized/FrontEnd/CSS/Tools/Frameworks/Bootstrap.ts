@@ -1,14 +1,14 @@
-import { Subpage } from "@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes";
+import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes';
 
-import Fundamentals from "@/Navigation/IndividualNav/Granularized/FrontEnd/CSS/Tools/Frameworks/Bootstrap/Fundamentals";
-import Components from "@/Navigation/IndividualNav/Granularized/FrontEnd/CSS/Tools/Frameworks/Bootstrap/Components";
+import Basics from '@/Navigation/IndividualNav/Granularized/FrontEnd/CSS/Tools/Frameworks/Bootstrap/Basics';
+import Advanced from '@/Navigation/IndividualNav/Granularized/FrontEnd/CSS/Tools/Frameworks/Bootstrap/Advanced';
 
-const Boostrap: Subpage = {
-    name: "Bootstrap",
-    subpages: [
-        Fundamentals,
-        Components
-    ]
+const Bootstrap: Subpage = {
+  name: 'Bootstrap',
+  subpages: [
+    Basics,
+    Advanced,
+  ],
 };
 
-export default Boostrap;
+export default Bootstrap;

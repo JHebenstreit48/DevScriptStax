@@ -1,14 +1,14 @@
-import { Subpage } from "@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes";
+import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes';
 
-import Fundamentals from "@/Navigation/IndividualNav/Granularized/FrontEnd/CSS/Tools/Frameworks/ReactBootstrap/Fundamentals";
-import Components from "@/Navigation/IndividualNav/Granularized/FrontEnd/CSS/Tools/Frameworks/ReactBootstrap/Components";
+import Basics from '@/Navigation/IndividualNav/Granularized/FrontEnd/CSS/Tools/Frameworks/ReactBootstrap/Basics';
+import Advanced from '@/Navigation/IndividualNav/Granularized/FrontEnd/CSS/Tools/Frameworks/ReactBootstrap/Advanced';
 
 const ReactBoostrap: Subpage = {
-    name: "React Bootstrap",
-    subpages: [
-        Fundamentals,
-        Components
-    ]
+  name: 'React Bootstrap',
+  subpages: [
+    Basics,
+    Advanced,
+  ],
 };
 
 export default ReactBoostrap;

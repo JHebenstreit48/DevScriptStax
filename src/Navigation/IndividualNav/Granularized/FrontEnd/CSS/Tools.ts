@@ -15,7 +15,7 @@ import PostCSS from '@/Navigation/IndividualNav/Granularized/FrontEnd/CSS/Tools/
 // ------------------------- Frameworks Navigation Start -------------------------
 import Bootstrap from '@/Navigation/IndividualNav/Granularized/FrontEnd/CSS/Tools/Frameworks/Bootstrap';
 import ReactBootstrap from '@/Navigation/IndividualNav/Granularized/FrontEnd/CSS/Tools/Frameworks/ReactBootstrap';
-import TailwindCSS from '@/Navigation/IndividualNav/Granularized/FrontEnd/CSS/Tools/Frameworks/TailwindCSS';
+import Tailwind from '@/Navigation/IndividualNav/Granularized/FrontEnd/CSS/Tools/Frameworks/Tailwind';
 // ------------------------- Frameworks Navigation End ---------------------------  
 
 const Tools: Subpage = {
@@ -42,7 +42,7 @@ const Tools: Subpage = {
       subpages: [
         Bootstrap,
         ReactBootstrap,
-        TailwindCSS
+        Tailwind
       ]
     }
   ]

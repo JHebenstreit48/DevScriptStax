@@ -1,8 +1,8 @@
 import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes';
 
-import Basics from '@/Navigation/IndividualNav/Granularized/Tests/End2End/CypressNav/Basics';
-import Intermediate from '@/Navigation/IndividualNav/Granularized/Tests/End2End/CypressNav/Intermediate';
-import Advanced from '@/Navigation/IndividualNav/Granularized/Tests/End2End/CypressNav/Advanced';
+import Basics from '@/Navigation/IndividualNav/Granularized/Testing/End2End/Cypress/Basics';
+import Intermediate from '@/Navigation/IndividualNav/Granularized/Testing/End2End/Cypress/Intermediate';
+import Advanced from '@/Navigation/IndividualNav/Granularized/Testing/End2End/Cypress/Advanced';
 
 const Cypress: Subpage = {
   name: 'Cypress',
