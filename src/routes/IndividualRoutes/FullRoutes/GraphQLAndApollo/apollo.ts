@@ -1,6 +1,6 @@
 import { RouteObject } from "react-router-dom";
 
-import ServerBasics from "@/routes/IndividualRoutes/Granularized/GraphQLAndApollo/ApolloRoutes/ApolloServer/Basics";
+import ServerBasics from "@/routes/IndividualRoutes/Granularized/GraphQLAndApollo/Apollo/ApolloServer/Basics";
 
 const Apollo: RouteObject[] = [
     // Apollo Server Start

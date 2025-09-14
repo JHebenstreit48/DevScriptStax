@@ -1,7 +1,7 @@
 import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes';
 
-import Basics from '@/Navigation/IndividualNav/Granularized/Tools/APITools/Postman/Basics';
-import Advanced from '@/Navigation/IndividualNav/Granularized/Tools/APITools/Postman/Advanced';
+import Basics from '@/Navigation/IndividualNav/Granularized/Tools/API/Postman/Basics';
+import Advanced from '@/Navigation/IndividualNav/Granularized/Tools/API/Postman/Advanced';
 
 const Postman: Subpage = {
     name: 'Postman',

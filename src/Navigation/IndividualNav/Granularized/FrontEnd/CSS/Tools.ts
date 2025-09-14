@@ -6,17 +6,8 @@ import Sass from '@/Navigation/IndividualNav/Granularized/FrontEnd/CSS/Tools/Pre
 import SCSS from '@/Navigation/IndividualNav/Granularized/FrontEnd/CSS/Tools/Preprocessors/SCSS';
 // ------------------------- Preprocessors Navigation End ---------------------------
 
-// ------------------------- Postprocessors Navigation Start -------------------------
-import OverviewAndConcepts from '@/Navigation/IndividualNav/Granularized/FrontEnd/CSS/Tools/Postprocessors/Overview';
-import ToolingAndEcosystem from '@/Navigation/IndividualNav/Granularized/FrontEnd/CSS/Tools/Postprocessors/Tooling';
-import PostCSS from '@/Navigation/IndividualNav/Granularized/FrontEnd/CSS/Tools/Postprocessors/PostCSS';
-// ------------------------- Postprocessors Navigation End ---------------------------
-
-// ------------------------- Frameworks Navigation Start -------------------------
-import Bootstrap from '@/Navigation/IndividualNav/Granularized/FrontEnd/CSS/Tools/Frameworks/Bootstrap';
-import ReactBootstrap from '@/Navigation/IndividualNav/Granularized/FrontEnd/CSS/Tools/Frameworks/ReactBootstrap';
-import TailwindCSS from '@/Navigation/IndividualNav/Granularized/FrontEnd/CSS/Tools/Frameworks/TailwindCSS';
-// ------------------------- Frameworks Navigation End ---------------------------  
+import Postprocessors from '@/Navigation/IndividualNav/Granularized/FrontEnd/CSS/Tools/Postprocessors/PostProcessors';
+import Frameworks from '@/Navigation/IndividualNav/Granularized/FrontEnd/CSS/Tools/Frameworks/Frameworks';
 
 const Tools: Subpage = {
   name: "Tools",
@@ -29,22 +20,8 @@ const Tools: Subpage = {
         SCSS
       ]
     },
-    {
-      name: "Postprocessors",
-      subpages: [
-        OverviewAndConcepts,
-        ToolingAndEcosystem,
-        PostCSS
-      ]
-    },
-    {
-      name: "Frameworks",
-      subpages: [
-        Bootstrap,
-        ReactBootstrap,
-        TailwindCSS
-      ]
-    }
+    Postprocessors,
+    Frameworks
   ]
 };
 
