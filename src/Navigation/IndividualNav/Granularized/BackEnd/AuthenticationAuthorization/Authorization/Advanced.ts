@@ -1,6 +1,6 @@
 import { Subpage } from '@/Navigation/CombinedNav/CombinedNavAndTypes/NavigationTypes';
 
-const AuthorizationAdvanced: Subpage = {
+const Advanced: Subpage = {
   name: 'Advanced',
   subpages: [
     {
@@ -40,4 +40,4 @@ const AuthorizationAdvanced: Subpage = {
   ]
 };
 
-export default AuthorizationAdvanced;
+export default Advanced;
