@@ -1,6 +1,6 @@
 import { RouteObject } from 'react-router-dom';
 
-import Cypress from '@/routes/IndividualRoutes/Granularized/Tests/EndToEnd/CypressRoutes/Basics';
+import Cypress from '@/routes/IndividualRoutes/Granularized/Testing/EndToEnd/Cypress/Basics';
 
 const EndToEnd: RouteObject[] = [
 ...Cypress,
