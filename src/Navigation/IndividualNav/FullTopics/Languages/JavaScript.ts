@@ -4,7 +4,6 @@ import Basics from '@/Navigation/IndividualNav/Granularized/Languages/JavaScript
 import Intermediate from '@/Navigation/IndividualNav/Granularized/Languages/JavaScript/Intermediate';
 import Advanced from '@/Navigation/IndividualNav/Granularized/Languages/JavaScript/Advanced';
 import Testing from '@/Navigation/IndividualNav/Granularized/Languages/JavaScript/Testing';
-import Tools from '@/Navigation/IndividualNav/Granularized/Languages/JavaScript/Tools';
 
 const JavaScript: Subpage = {
   name: 'JavaScript',
@@ -12,8 +11,7 @@ const JavaScript: Subpage = {
     Basics,
     Intermediate,
     Advanced,
-    Testing,
-    Tools
+    Testing
   ]
 };
 
