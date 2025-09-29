@@ -2,12 +2,20 @@
 @use '@scss/Globals' as *;
 
 /* ==============================
+   Optional page container cap
+============================== */
+.pageContainer {
+  width: min(100%, container(max));
+  margin-inline: auto;
+}
+
+/* ==============================
         Hamburger Menu Button
 ============================== */
 .hamburgerButton {
   display: none;
 
-  @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
+  @include phone-portrait {
     display: block;
     background: none;
     border: none;
@@ -17,6 +25,15 @@
     z-index: $z-nav-hamburger;
     align-self: center;
   }
+
+  /* If you want it visible on phone landscape too, uncomment:
+  @include phone-landscape-wide { display: block; }
+  */
+}
+
+/* Helpful tweak: landscape phones are short on height */
+@include phone-landscape-short {
+  .siteHeader { padding-block: .5rem; }
 }
 
 /* ==============================
@@ -34,7 +51,7 @@
   margin-left: auto;
   position: fixed;
 
-  @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
+  @include phone-portrait {
     position: relative;
     left: 0;
     margin-top: $nav-mobile-margin-top;
@@ -42,6 +59,10 @@
     right: $nav-mobile-right;
     width: 100%;
   }
+
+  @include small-laptop   { gap: .5rem; }
+  @include medium-laptop  { gap: .75rem; }
+  @include large-laptop   { gap: .9rem; }
 }
 
 /* ==============================
@@ -54,7 +75,7 @@
   width: auto;
   padding-top: 0;
 
-  @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
+  @include phone-portrait {
     display: none;
 
     &.open {
@@ -82,18 +103,20 @@
   transform: translateY(-50%);
   z-index: $z-nav-overlay;
 
-  @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
+  @include phone-portrait {
     display: flex;
     flex-direction: column;
     left: 45%;
     top: $nav-search-top-mobile;
   }
 
-  @media only screen and (min-width: $small-laptop-min) and (max-width: $small-laptop-max) {
-    left: $nav-search-left-laptop;
-  }
+  @include small-laptop  { left: $nav-search-left-laptop; }
+  @include medium-laptop { left: calc($nav-search-left-laptop + 0.5rem); }
 }
 
+/* ==============================
+           Buttons, etc.
+============================== */
 .searchIconButton {
   background-color: transparent;
   border: none;
@@ -161,19 +184,15 @@
     letter-spacing: .2px;
     padding-block: .36rem;
     border-top: 1px solid rgba(255,255,255,.12);
-
-    /* Light glaze + deeper bottom crease */
     background: linear-gradient(
       to bottom,
-      rgba(255,255,255,.08) 0%,     /* highlight */
+      rgba(255,255,255,.08) 0%,
       rgba(255,255,255,.03) 30%,
-      rgba(0,0,0,.18) 100%          /* shadow */
+      rgba(0,0,0,.18) 100%
     );
-    box-shadow:
-      inset 0 -1px 0 rgba(0,0,0,.60);
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.60);
   }
 
-  /* ===== Level 3: medium band (less grey than L2) */
   &.level-3 {
     color: $level-3;
     font-size: 1.05rem;
@@ -181,18 +200,15 @@
     letter-spacing: .2px;
     padding-block: .32rem;
     border-top: 1px solid rgba(255,255,255,.10);
-
     background: linear-gradient(
       to bottom,
       rgba(255,255,255,.05) 0%,
       rgba(255,255,255,.02) 30%,
       rgba(0,0,0,.14) 100%
     );
-    box-shadow:
-      inset 0 -1px 0 rgba(0,0,0,.50);
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.50);
   }
 
-  /* ===== Level 4: light band (minimal grey, mostly dark) */
   &.level-4 {
     color: $level-4;
     font-size: 1rem;
@@ -200,33 +216,27 @@
     letter-spacing: .15px;
     padding-block: .28rem;
     border-top: 1px solid rgba(255,255,255,.08);
-
     background: linear-gradient(
       to bottom,
       rgba(255,255,255,.03) 0%,
       rgba(255,255,255,.01) 30%,
       rgba(0,0,0,.10) 100%
     );
-    box-shadow:
-      inset 0 -1px 0 rgba(0,0,0,.42);
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.42);
   }
 
-  /* ===== Level 5: pages — clearly lighter band than L4 (but still distinct) */
   &.level-5 {
     color: $level-5;
     font-size: .95rem;
     font-weight: 500;
     text-shadow: 1px 1px 1px rgba(0,0,0,.7);
     border-top: 1px solid color.change($level-5, $alpha: .26);
-
-    /* darker top → lighter bottom so L4→L5 step is obvious */
     background: linear-gradient(
       to bottom,
       rgba(0,0,0,.22) 0%,
       rgba(255,255,255,.05) 100%
     );
-    box-shadow:
-      inset 0 -2px 0 rgba(0,0,0,.58);
+    box-shadow: inset 0 -2px 0 rgba(0,0,0,.58);
   }
 
   .level-1, .level-2, .level-3, .level-4, .level-5 {
@@ -237,16 +247,13 @@
     justify-content: center;
   }
 
-  @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
-    font-size: 1.1rem;
-    padding: .4rem;
-    gap: $nav-gap-mobile;
-  }
-
-  @media only screen and (min-width: $small-laptop-min) and (max-width: $small-laptop-max) {
-    font-size: 1.4rem;
-  }
+  /* size tweaks by band */
+  @include phone-portrait { font-size: 1.1rem; padding: .4rem; gap: $nav-gap-mobile; }
+  @include small-laptop   { font-size: 1.25rem; }
+  @include medium-laptop  { font-size: 1.35rem; }
+  @include large-laptop   { font-size: 1.4rem;  }
 }
+
 .dropdownButton::-moz-focus-inner { border: 0; padding: 0; }
 
 /* ==============================
@@ -259,7 +266,7 @@
   margin: 0 1rem;
   overflow: visible;
 
-  @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
+  @include phone-portrait {
     display: block;
     width: 100%;
     margin: 0 auto;
@@ -267,16 +274,11 @@
 }
 
 /* hairline separators */
-.dropdownItem {
-  width: 100%;
-  border-bottom: 1px solid rgba(255,255,255,.06);
-}
+.dropdownItem { width: 100%; border-bottom: 1px solid rgba(255,255,255,.06); }
 .dropdownItem:last-child { border-bottom: none; }
 
 /* No divider on the very first row (removes the "gap" above Angular) */
-.dropdownContent .dropdownItem:first-child .dropdownButton {
-  border-top: 0;
-}
+.dropdownContent .dropdownItem:first-child .dropdownButton { border-top: 0; }
 
 /* ==============================
           Dropdown Menu Content
@@ -299,9 +301,7 @@
   box-shadow: $nav-dropdown-elevation;
   text-align: center;
 
-  /* ensure ancestors' opacity/filters don't bleed through */
   isolation: isolate;
-
   display: none;
   z-index: $z-nav-dropdown;
 
@@ -325,16 +325,28 @@
     &::-webkit-scrollbar-track { background: transparent; }
     &::-webkit-scrollbar-button { display: none; }
 
-    @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
+    @include phone-portrait {
       position: static;
       transform: none;
-      /* keep the same opaque background on mobile as well */
       background-color: $dropdown-bg;
       box-shadow: none;
       padding: 0;
       margin-top: $nav-dropdown-mobile-margin-top;
     }
   }
+}
+
+/* ==============================
+        Desktop-specific niceties
+============================== */
+@include desktop-1080p-up {
+  .pageContainer { width: min(100%, container(xxl)); }
+}
+@include desktop-1440p-up {
+  .megaMenu { max-width: 60rem; } /* example: allow wider mega menu on 27" */
+}
+@include desktop-4k-up {
+  .megaMenu { max-width: 72rem; } /* optional 4K bump */
 }
 
 /* ==============================
