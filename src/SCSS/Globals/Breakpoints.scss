@@ -1,5 +1,60 @@
-/* Navigation / PageLayout breakpoints */
-$cellphone-portrait: 480px;
-$cellphone-landscape: 390px;
+/* ===== Phones ===== */
+$cellphone-portrait: 480px;  /* phone portrait max-width */
+$phone-landscape-wide: 900px;/* optional: landscape max-width */
+$phone-landscape-short-h: 480px; /* optional: landscape max-height (short viewports) */
+
+/* ===== Tablets ===== */
+$tablet-portrait: 768px;
+$tablet-landscape: 1024px;
+
+/* ===== Laptops ===== */
 $small-laptop-min: 1024px;
 $small-laptop-max: 1366px;
+$medium-laptop-min: 1367px;
+$medium-laptop-max: 1536px;
+$large-laptop-min: 1537px;
+$large-laptop-max: 1919px;
+
+/* ===== Desktops / Monitors ===== */
+$desktop-1080p: 1920px;  /* 24" */
+$desktop-1440p: 2560px;  /* 27" */
+$desktop-4k: 3840px;
+
+/* ===== Optional container caps ===== */
+$container-xl: 1280px;
+$container-xxl: 1440px;  /* good for 24–27" */
+$container-max: 1600px;
+
+@function container($key) {
+  @if $key == xl  { @return $container-xl; }
+  @if $key == xxl { @return $container-xxl; }
+  @if $key == max { @return $container-max; }
+  @return $container-xl;
+}
+
+/* ===== Shorthand mixins (match your style) ===== */
+@mixin phone-portrait {
+  @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) { @content; }
+}
+@mixin phone-landscape-wide {
+  @media only screen and (max-width: $phone-landscape-wide) and (orientation: landscape) { @content; }
+}
+@mixin phone-landscape-short {
+  @media only screen and (orientation: landscape) and (max-height: $phone-landscape-short-h) { @content; }
+}
+
+@mixin tablet-portrait  { @media only screen and (max-width: $tablet-portrait) and (orientation: portrait) { @content; } }
+@mixin tablet-landscape { @media only screen and (max-width: $tablet-landscape) and (orientation: landscape) { @content; } }
+
+@mixin small-laptop  { @media only screen and (min-width: $small-laptop-min) and (max-width: $small-laptop-max)   { @content; } }
+@mixin medium-laptop { @media only screen and (min-width: $medium-laptop-min) and (max-width: $medium-laptop-max) { @content; } }
+@mixin large-laptop  { @media only screen and (min-width: $large-laptop-min) and (max-width: $large-laptop-max)   { @content; } }
+
+@mixin desktop-1080p-up { @media only screen and (min-width: $desktop-1080p) { @content; } }
+@mixin desktop-1440p-up { @media only screen and (min-width: $desktop-1440p) { @content; } }
+@mixin desktop-4k-up    { @media only screen and (min-width: $desktop-4k)    { @content; } }
+
+/* Generic helpers */
+@mixin maxw($w)   { @media only screen and (max-width: #{$w})  { @content; } }
+@mixin minw($w)   { @media only screen and (min-width: #{$w})  { @content; } }
+@mixin between($a,$b) { @media only screen and (min-width: #{$a}) and (max-width: #{$b}) { @content; } }
