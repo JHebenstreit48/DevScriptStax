@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import { useBreadcrumbTrail } from '@/Navigation/CombinedNav/CombinedNavAndTypes/useBreadCrumbTrail';
+import { useBreadcrumbTrail } from '@/Navigation/Combined/Core/useBreadCrumbTrail';
 import '@/SCSS/NavigationStyles/PageLayout.scss';
 
 type PageLayoutProps = {
