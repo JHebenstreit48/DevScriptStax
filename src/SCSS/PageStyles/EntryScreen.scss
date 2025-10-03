@@ -1,12 +1,12 @@
 @use "sass:color";
 
 /* ==============================
-            Variables           
+            Variables
 ============================== */
 $entry-bg-color: #0d0d0d;
-$logo-glow-color: rgba(255, 208, 0, 0.842);
+$logo-glow-color: rgba(255, 208, 0, 0.84);
 $button-bg-color: #681001;
-$button-glow-color: rgba(255, 208, 0, 0.842);
+$button-glow-color: rgba(255, 208, 0, 0.84);
 
 $text-color: #ffffff;
 $text-subtle: rgba(255, 255, 255, 0.7);
@@ -24,108 +24,112 @@ $font-button: 1rem;
 $font-button-mobile: 0.9rem;
 
 $fade-duration: 0.5s;
+$slide-duration: 0.6s;
+$slide-ease: cubic-bezier(0.22, 1, 0.36, 1);
 
-/* ==============================
-         Breakpoints        
-============================== */
 $cellphone-portrait: 390px;
-$tablet-width: 768px;
 
 /* ==============================
-       Entry / Splash Screen     
+   Full-screen overlay container
+   (this is what slides as a unit)
 ============================== */
-.SplashScreen,
-.EntryScreen {
-  display: flex;
-  align-items: center;
-  background-color: $entry-bg-color;
-  text-align: center;
-  color: $text-color;
-  opacity: 1;
-  transition: opacity $fade-duration ease;
+.EntryScreenOverlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: grid;
+  place-items: center;
+  background: $entry-bg-color;
+  overflow: hidden; // no scrollbars during swipe
+  transform: translateY(0%);
+  transition: transform $slide-duration $slide-ease;
+  will-change: transform;
 
-  &.fade-out {
-    opacity: 0;
+  &.exiting {
+    transform: translateY(-100%); // swipe down to reveal the app
     pointer-events: none;
   }
+}
+
+/* ==============================
+        Centered content
+============================== */
+.EntryScreen {
+  display: grid;
+  place-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  text-align: center;
+  color: $text-color;
 
   .logo {
     width: $logo-size-desktop;
+    height: auto;
+    /* Remove independent transforms so it stays centered with the overlay */
+    /* If you want the glow pulse, keep it—doesn't affect layout */
     animation: pulse 2.5s ease-in-out infinite;
     filter: drop-shadow(0 0 10px $logo-glow-color);
-
-    @media only screen and (max-width: $cellphone-portrait) {
-      width: $logo-size-mobile;
-    }
   }
 
-  .splash-title {
+  .entry-title {
     font-size: $font-title;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-
-    @media only screen and (max-width: $cellphone-portrait) {
-      font-size: $font-title-mobile;
-    }
+    font-weight: 700;
+    margin: 0.25rem 0 0.5rem;
   }
 
-  .splash-desc {
+  .entry-desc {
     font-size: $font-desc;
-    margin-bottom: 1.5rem;
+    margin: 0 0 1.5rem;
     color: $text-subtle;
-
-    @media only screen and (max-width: $cellphone-portrait) {
-      font-size: $font-desc-mobile;
-    }
   }
 
-  .splash-button {
+  .entry-button {
     padding: 0.75rem 1.5rem;
     font-size: $font-button;
     background-color: $button-bg-color;
-    filter: drop-shadow(0 0 3px $button-glow-color);
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
     color: #fff;
-    transition: background-color 0.3s, transform 0.2s;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.15s ease;
+    filter: drop-shadow(0 0 3px $button-glow-color);
 
     &:hover {
       background-color: color.adjust($button-bg-color, $lightness: -10%);
-      transform: scale(1.05);
+      transform: translateY(-1px);
     }
-
     &:active {
-      transform: scale(0.95);
-      animation: flash 0.4s ease;
+      transform: translateY(0);
+      animation: flash 0.35s ease;
     }
+  }
 
-    @media only screen and (max-width: $cellphone-portrait) {
-      font-size: $font-button-mobile;
-    }
+  @media (max-width: $cellphone-portrait) {
+    .logo { width: $logo-size-mobile; }
+    .entry-title { font-size: $font-title-mobile; }
+    .entry-desc { font-size: $font-desc-mobile; }
+    .entry-button { font-size: $font-button-mobile; }
+    padding: 1.5rem;
+    gap: 0.75rem;
   }
 }
 
 /* ==============================
-         Animations           
+            Animations
 ============================== */
 @keyframes pulse {
-  0%, 100% {
-    filter: drop-shadow(0 0 10px $logo-glow-color);
-  }
-  50% {
-    filter: drop-shadow(0 0 18px rgba(255, 208, 0, 1));
-  }
+  0%, 100% { filter: drop-shadow(0 0 10px $logo-glow-color); }
+  50%      { filter: drop-shadow(0 0 18px rgba(255, 208, 0, 1)); }
 }
 
 @keyframes flash {
-  0% {
-    filter: drop-shadow(0 0 5px $button-glow-color);
-  }
-  50% {
-    filter: drop-shadow(0 0 20px rgba(255, 208, 0, 1));
-  }
-  100% {
-    filter: drop-shadow(0 0 5px $button-glow-color);
-  }
+  0%   { filter: drop-shadow(0 0 5px $button-glow-color); }
+  50%  { filter: drop-shadow(0 0 20px rgba(255, 208, 0, 1)); }
+  100% { filter: drop-shadow(0 0 5px $button-glow-color); }
+}
+
+/* Reduced motion: keep it accessible */
+@media (prefers-reduced-motion: reduce) {
+  .EntryScreenOverlay { transition: none; }
+  .EntryScreen .logo { animation: none; }
 }
