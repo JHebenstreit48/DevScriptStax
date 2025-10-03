@@ -2,11 +2,26 @@
   Cache-Control: no-cache, must-revalidate, max-age=0
   X-Content-Type-Options: nosniff
 
-/assets/*
-  Cache-Control: public, max-age=31536000, immutable, no-transform
+/assets/*.js
+  Content-Type: application/javascript
   X-Content-Type-Options: nosniff
+  Cache-Control: public, max-age=31536000, immutable, no-transform
 
-/Favicon/*
+/assets/*.css
+  Content-Type: text/css
+  X-Content-Type-Options: nosniff
+  Cache-Control: public, max-age=31536000, immutable, no-transform
+
+/Favicon/*.png
+  Content-Type: image/png
+  Cache-Control: public, max-age=31536000, immutable, no-transform
+
+/Favicon/*.webp
+  Content-Type: image/webp
+  Cache-Control: public, max-age=31536000, immutable, no-transform
+
+/favicon.ico
+  Content-Type: image/x-icon
   Cache-Control: public, max-age=31536000, immutable, no-transform
 
 /*
