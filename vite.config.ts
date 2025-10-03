@@ -21,7 +21,7 @@ export default defineConfig({
       '@components': resolve(__dirname, 'src/Components'),
       '@routes': resolve(__dirname, 'src/routes'),
       '@scss': resolve(__dirname, 'src/SCSS'),
-      '@navFull': resolve(__dirname, 'src//Navigation/Individual/FullTopics'),
+      '@navFull': resolve(__dirname, 'src/Navigation/Individual/FullTopics'),
       '@navGranular': resolve(__dirname, 'src/Navigation/Individual/Granularized'),
       '@routeFull': resolve(__dirname, 'src/routes/Individual/FullRoutes'),
       '@routeGranular': resolve(__dirname, 'src/routes/Individual/Granularized'),
