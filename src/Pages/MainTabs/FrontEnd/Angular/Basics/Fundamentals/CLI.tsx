@@ -9,7 +9,7 @@ const CLI = () => {
   return (
     <>
       <PageLayout>
-        <Header text="CLI" size="sm"/>
+        <Header text="CLI"/>
         <Notes
           filePath={markdownFilePath}
         />
