@@ -9,7 +9,7 @@ const NamingConventions = () => {
   return (
     <>
       <PageLayout>
-        <Header text="Naming Conventions" />
+        <Header />
         <Notes filePath={markdownFilePath} />
       </PageLayout>
     </>

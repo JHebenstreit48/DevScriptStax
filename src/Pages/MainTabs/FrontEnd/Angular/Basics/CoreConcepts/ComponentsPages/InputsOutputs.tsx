@@ -10,7 +10,7 @@ const InputsOutputs = () => {
   return (
     <>
       <PageLayout>
-        <Header text="Inputs/Outputs" />
+        <Header />
         <Notes filePath={markdownFilePath} />
       </PageLayout>
     </>

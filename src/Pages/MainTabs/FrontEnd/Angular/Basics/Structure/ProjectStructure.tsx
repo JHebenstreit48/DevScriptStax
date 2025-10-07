@@ -1,15 +1,16 @@
-import PageLayout from "@/Components/NavigationUI/PageLayout";
-import Notes from "@/Components/PageComponents/Notes/Notes";
-import Header from "@/Components/Shared/Header/Header";
+import PageLayout from '@/Components/NavigationUI/PageLayout';
+import Header from '@/Components/Shared/Header/Header';
+import PageTitle from '@/Components/PageComponents/PageTitle';
+import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const Structure = () => {
-  const markdownFilePath =
-    "FrontEndNotes/AngularNotes/AngularBasics/ProjectStructure/Structure";
+  const markdownFilePath = 'FrontEndNotes/AngularNotes/AngularBasics/ProjectStructure/Structure';
 
   return (
     <>
       <PageLayout>
-        <Header text="Structure" />
+        <Header />
+        <PageTitle title="Angular Basics - Project Structure" />
         <Notes filePath={markdownFilePath} />
       </PageLayout>
     </>

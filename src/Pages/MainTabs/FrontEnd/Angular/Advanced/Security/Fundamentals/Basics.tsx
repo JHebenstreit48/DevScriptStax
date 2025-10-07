@@ -3,18 +3,18 @@ import Header from '@/Components/Shared/Header/Header';
 import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
-const ObservableBasics = () => {
-  const markdownFilePath = 'FrontEndNotes/AngularNotes/Advanced/RxJSAndReactive/ObservableBasics';
+const Basics = () => {
+  const markdownFilePath = 'FrontEndNotes/AngularNotes/Advanced/Security/Fundamentals/Basics.md';
 
   return (
     <>
       <PageLayout>
         <Header />
-        <PageTitle title="Angular Advanced - Observable Basics" />
+        <PageTitle title="Angular Security - Basics" />
         <Notes filePath={markdownFilePath} />
       </PageLayout>
     </>
   );
 };
 
-export default ObservableBasics;
+export default Basics;

@@ -3,18 +3,18 @@ import Header from '@/Components/Shared/Header/Header';
 import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
-const ObservableBasics = () => {
-  const markdownFilePath = 'FrontEndNotes/AngularNotes/Advanced/RxJSAndReactive/ObservableBasics';
+const Triggers = () => {
+  const markdownFilePath = 'FrontEndNotes/AngularNotes/Advanced/Animations/Triggers.md';
 
   return (
     <>
       <PageLayout>
         <Header />
-        <PageTitle title="Angular Advanced - Observable Basics" />
+        <PageTitle title="Angular Animations - Triggers" />
         <Notes filePath={markdownFilePath} />
       </PageLayout>
     </>
   );
 };
 
-export default ObservableBasics;
+export default Triggers;
