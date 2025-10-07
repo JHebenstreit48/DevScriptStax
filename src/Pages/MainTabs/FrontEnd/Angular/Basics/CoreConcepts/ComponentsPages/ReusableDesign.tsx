@@ -11,7 +11,7 @@ const ReusableDesign = () => {
   return (
     <>
       <PageLayout>
-        <Header text="Reusable Design" />
+        <Header />
         <Notes filePath={markdownFilePath} />
       </PageLayout>
     </>

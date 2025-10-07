@@ -4,7 +4,7 @@ import Performance from "@/Navigation/Individual/Granularized/FrontEnd/Angular/A
 import RxJSAndReactive from "@/Navigation/Individual/Granularized/FrontEnd/Angular/Advanced/RxJSAndReactiveProgram";
 import Animations from "@/Navigation/Individual/Granularized/FrontEnd/Angular/Advanced/Animations";
 import TSIntegration from "@/Navigation/Individual/Granularized/FrontEnd/Angular/Advanced/TSIntegration";
-import Security from "@/Navigation/Individual/Granularized/FrontEnd/Angular/Advanced/SecurityNav";
+import Security from "@/Navigation/Individual/Granularized/FrontEnd/Angular/Advanced/Security";
 
 const Advanced: Subpage = {
   name: "Advanced",

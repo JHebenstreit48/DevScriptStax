@@ -7,7 +7,7 @@ const ConfigFiles = () => {
 
   return (
     <>
-      <Header text="Configuration Files" />
+      <Header />
       <Notes filePath={markdownFilePath} />
     </>
   );
