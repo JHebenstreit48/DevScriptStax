@@ -1,23 +1,23 @@
-@use 'sass:color';
-@use '@scss/Globals' as *;
+@use "sass:color";
+@use "@scss/Globals" as *;
 
 /* =============================
-   Mixins (kept local)
-   ============================= */
+   Local utilities (unchanged)
+============================= */
 @mixin flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-@mixin text-emphasis($color, $size) {
-  color: $color;
+@mixin text-emphasis($clr, $size) {
+  color: $clr;
   font: italic bold $size $font-main;
 }
 
 /* =============================
-   General Layout & Containers
-   ============================= */
+   Card shell (matches Home glass)
+============================= */
 .card {
   display: flex;
   flex-direction: column;
@@ -26,124 +26,181 @@
 
   width: $notes-card-width-desktop;
   margin: $notes-card-margin;
-  line-height: 2rem;
   padding: $notes-card-padding;
-  background-color: $notes-bg-dark;
+  line-height: 2rem;
   z-index: 1;
   border-radius: $notes-card-radius;
-  box-shadow: $notes-card-inner, $notes-card-outer;
 
-  @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
-    width: 23rem;
-    margin: 3rem auto 10rem auto;
+  /* layout & glass */
+  position: relative;
+  isolation: isolate;
+  box-sizing: border-box;
+
+  /* ---- Glass tokens (tuned to Home.scss) ---- */
+--glass-blur: 15px;
+--frost-top: 0.06;
+--frost-bot: 0.02;
+--tint-bot:  0.005;
+
+  background:
+    linear-gradient(180deg, rgba(255,255,255,var(--frost-top)), rgba(255,255,255,var(--frost-bot))),
+    linear-gradient(180deg, rgba(18,32,112,var(--tint-top)),  rgba(12,22,76,var(--tint-bot)));
+  border: 1px solid rgba(255,255,255,0.18);
+  outline: 1px solid rgba(0,255,255,0.18);
+  outline-offset: -1px;
+
+  backdrop-filter: blur(var(--glass-blur)) saturate(145%);
+  -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(145%);
+
+  /* depth (combine with your token shadows) */
+  box-shadow:
+    0 28px 80px rgba(0,0,0,0.55),
+    0 0 26px rgba(0,255,255,0.14),
+    inset 0 1px 0 rgba(255,255,255,0.30),
+    inset 0 -1px 0 rgba(255,255,255,0.05),
+    #{$notes-card-inner},
+    #{$notes-card-outer};
+
+  /* sheen + faint texture (like Home) */
+  &::after {
+    content: "";
+    position: absolute; inset: 0; border-radius: inherit; pointer-events: none;
+    background:
+      radial-gradient(600px 300px at 18% 18%, rgba(255,255,255,0.12), transparent 65%),
+      linear-gradient(145deg, rgba(255,255,255,0.06), transparent 60%);
+    mix-blend-mode: screen;
+  }
+  &::before {
+    content: "";
+    position: absolute; inset: 0; border-radius: inherit; pointer-events: none;
+    opacity: 0.035;
+    background-image: url("data:image/svg+xml;utf8,\
+<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'>\
+<filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/></filter>\
+<rect width='120' height='120' filter='url(%23n)'/></svg>");
+    background-size: 120px 120px;
   }
 
+  /* Long content comfort: keep side gutters consistent */
+  padding-inline: clamp(16px, 2.6vw, 32px);
+
+  /* Mobile: truly centered, capped width, sane padding */
+  @include maxw($cellphone-portrait) {
+    width: clamp(18rem, 92vw, 21rem);
+    margin: 3rem auto 10rem auto;
+    padding: 16px;
+  }
+
+  /* =============================
+     Markdown content
+  ============================= */
   .markdownContent {
-    justify-content: center;
-    align-items: center;
+    /* keep your widths/tokens */
     width: $notes-md-width;
     margin: $notes-md-margin;
-    color: $notes-primary;
-    text-shadow: $notes-text-shadow;
-    line-height: $notes-md-line-height;
-    font-size: $notes-md-font-size;
     padding: $notes-md-padding;
 
-    @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
+    /* Typography aligned to Home.scss */
+    color: #dfe4ee;              /* Home body */
+    text-shadow: none;           /* Home = no shadow */
+    letter-spacing: 0.01em;
+    line-height: 1.75;
+    font-size: $notes-md-font-size;
+
+    /* Tighten spacing for very long pages */
+    p + p { margin-top: 0.5rem; }
+
+    @include maxw($cellphone-portrait) {
       display: flex;
       flex-flow: column wrap;
       width: $notes-md-width-mobile;
       margin: 0 auto;
       font-size: $notes-md-font-size-mobile;
       padding-top: $notes-md-padding-top-mobile;
+      text-align: left; /* content remains readable */
     }
 
+    /* Loading */
     .loadingMessage {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flex-center;
       margin-top: $notes-loading-margin-top;
       font-size: $notes-loading-font-size;
     }
 
-    h1 {
-      color: $notes-secondary;
+    /* Headings (match Home) */
+    h1, h2, h3, h4, h5, h6 {
+      color: #f1f3f9;
+      text-shadow: none;
+      font-weight: 700;
+      letter-spacing: 0.01em;
       text-align: center;
-      font-size: $notes-h1-size;
-      margin-bottom: $notes-h-margin-bottom;
+
+      @include maxw($cellphone-portrait) { width: 20rem; margin-left: auto; margin-right: auto; }
     }
+    h1 { font-size: $notes-h1-size; margin-bottom: $notes-h-margin-bottom; }
 
-    h2, h3, h4, h5, h6 {
-      color: $notes-header;
-      text-shadow: $notes-text-shadow;
-      text-align: center;
+    /* Links (match Home interactions) */
+    a {
+      color: #45b6ff;
+      text-decoration: none;
+      position: relative;
+      transition: color 0.25s ease;
 
-      @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
-        width: 20rem;
+      &::after {
+        content: "";
+        position: absolute; left: 0; right: 0; bottom: -2px;
+        height: 2px; width: 0%; margin-inline: auto;
+        background: currentColor;
+        transition: width 0.28s ease;
+      }
+      &:hover { color: color.adjust(#45b6ff, $lightness: 6%); &::after { width: 100%; } }
+      &:focus-visible {
+        outline: none;
+        box-shadow: 0 0 0 3px color.adjust(#45b6ff, $alpha: -0.6);
+        border-radius: 6px;
       }
     }
 
-    p {
-      width: $notes-p-width;
-      margin: 0 auto;
-
-      @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
-        width: $notes-p-width-mobile;
-        margin: 0 auto;
-      }
-    }
-
+    /* Dividers like Home */
     hr {
-      border: $notes-hr-border;
+      border: 0;
+      height: 1px;
+      margin: clamp(14px, 2vw, 22px) 0;
       opacity: 1;
-      box-shadow: $notes-hr-shadow;
+      box-shadow: none;
+      background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,0.32) 18%,
+        rgba(255,255,255,0.32) 82%,
+        transparent
+      );
+
+      /* widths you already use */
       width: $notes-hr-width-desktop;
-
-      @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
-        width: $notes-hr-width-mobile;
-      }
+      @include maxw($cellphone-portrait) { width: $notes-hr-width-mobile; }
     }
 
-    .emphasis {
-      @include text-emphasis($notes-secondary, $notes-emphasis-size);
-    }
-
-    .secondEmphasis {
-      @include text-emphasis($notes-success, $notes-emphasis-size);
-    }
-
+    /* Emphasis helpers (kept) */
+    .emphasis        { @include text-emphasis($notes-secondary, $notes-emphasis-size); }
+    .secondEmphasis  { @include text-emphasis($notes-success,   $notes-emphasis-size); }
     .subheadingEmphasis1 {
       @include flex-center;
       @include text-emphasis($notes-highlight, 40px);
       margin: $notes-sub1-margin;
     }
+    .subheadingEmphasis2 { @include text-emphasis($notes-secondary, $notes-sub2-size); }
+    .codeSnip { color: $notes-emphasis; font: $notes-code-font; }
 
-    .subheadingEmphasis2 {
-      @include text-emphasis($notes-secondary, $notes-sub2-size);
-    }
-
-    .codeSnip {
-      color: $notes-emphasis;
-      font: $notes-code-font;
-    }
-
-    .fullWidthBullet {
-      column-count: 1;
-    }
-
+    /* Lists */
+    .fullWidthBullet { column-count: 1; }
     .bullet1 {
       column-count: 1;
-      margin: $notes-bullet1-margin;
-      list-style-type: disc;
       width: $notes-bullet1-width;
+      margin: $notes-bullet1-margin;
       padding-left: $notes-bullet1-pad-left;
-
-      li {
-        list-style-type: disc;
-        p { margin: 0; }
-      }
+      li { list-style-type: disc; p { margin: 0; } }
     }
-
     .bullet2 {
       column-count: 2;
       width: $notes-bullet2-width;
@@ -152,92 +209,51 @@
       padding-left: $notes-bullet2-pad-left;
 
       ul { margin: 0; }
-
-      li {
-        list-style-type: disc;
-        width: $notes-bullet2-li-width;
-        p { margin: 0; }
-      }
+      li { list-style-type: disc; width: $notes-bullet2-li-width; p { margin: 0; } }
     }
 
-    // .bullet3 {
-    //   column-count: 3;
-    //   width: $notes-bullet3-width;
-    // }
-
-    // .bullet4 {
-    //   column-count: 1;
-    //   padding-left: $notes-bullet4-pad-left;
-    // }
-
+    /* Tables */
     .tableWrapper {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
+      display: flex; flex-direction: column; align-items: center; width: 100%;
 
       .notesTable {
-        width: $notes-table-width; // Standardize ALL tables
+        width: $notes-table-width;
         border-collapse: collapse;
         margin: $notes-table-margin;
-
-        @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
-          width: 100%;
-        }
+        @include maxw($cellphone-portrait) { width: 100%; }
       }
 
-      .tableHeader {
-        background-color: $notes-table-header-bg;
-      }
-
-      .tableCellHeader {
+      .tableHeader       { background-color: $notes-table-header-bg; }
+      .tableCellHeader   {
         text-align: center;
         padding: $notes-table-header-padding;
         border: $notes-table-border;
         background-color: $notes-table-cell-bg;
         font-weight: bold;
-
-        @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
-          width: 50%;
-          word-wrap: break-word;
-        }
+        @include maxw($cellphone-portrait) { width: 50%; word-wrap: break-word; }
       }
-
-      .tableRow:hover {
-        background-color: rgba(255, 255, 255, 0.1);
-        transition: background-color 0.3s ease-in-out;
-      }
-
+      .tableRow:hover    { background-color: rgba(255,255,255,0.10); transition: background-color 0.3s ease-in-out; }
       .tableCell,
-      .centeredCell {
+      .centeredCell      {
         padding: $notes-table-cell-padding;
         text-align: left;
         border: $notes-table-border;
         background-color: $notes-table-bg;
-
-        @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
-          width: 50%;
-          word-wrap: break-word;
-        }
+        @include maxw($cellphone-portrait) { width: 50%; word-wrap: break-word; }
       }
-
-      .tableEmphasis {
-        @include text-emphasis($notes-secondary, $notes-table-emphasis-size);
-      }
+      .tableEmphasis     { @include text-emphasis($notes-secondary, $notes-table-emphasis-size); }
     }
 
+    /* Code blocks (slightly closer to Home panel) */
     .codeBlockWrapper {
       position: relative;
       border: $notes-code-border;
       border-radius: $notes-code-radius;
-      background-color: $notes-code-bg;
+      background-color: rgba(12,16,38,0.55);
       line-height: 1.5;
       overflow-x: hidden;
 
-      @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
-        width: 97%;
-        margin: 0 auto;
-      }
+      @include maxw($cellphone-portrait) { width: 97%; margin: 0 auto; }
 
       .codeBlockHeader {
         @include flex-center;
@@ -258,13 +274,10 @@
         padding: 0.25rem 0.5rem;
         cursor: pointer;
 
-        &:hover {
-          background: color.adjust($notes-border-subtle, $lightness: 10%);
-        }
+        &:hover { background: color.adjust($notes-border-subtle, $lightness: 10%); }
       }
 
-      pre,
-      code {
+      pre, code {
         line-height: 1.7 !important;
         white-space: pre-wrap !important;
         word-break: break-word !important;
@@ -275,9 +288,14 @@
       }
     }
 
-    .token {
-      width: $notes-token-width;
-      line-height: $notes-token-line-height;
-    }
+    /* Prism token line-height (kept) */
+    .token { width: $notes-token-width; line-height: $notes-token-line-height; }
   }
+}
+
+/* =============================
+   Reduced motion
+============================= */
+@media (prefers-reduced-motion: reduce) {
+  .card .markdownContent a::after { transition: none; }
 }

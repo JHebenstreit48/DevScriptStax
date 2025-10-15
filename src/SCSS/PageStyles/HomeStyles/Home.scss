@@ -1,193 +1,285 @@
-@use "sass:color";
+@use 'sass:color';
+@use '@scss/Globals/index' as *;
+
+/* ===== Theme tokens (local) ===== */
+$glass-border: rgba(255, 255, 255, 0.18);
+$rim-cyan: rgba(0, 255, 255, 0.18);
+
+$text-main: #f1f3f9;
+$text-sub: #b9c2d6;
+$link: #45b6ff;
+
+$radius-lg: 18px;
+$radius-md: 12px;
+
+$max-wrap: clamp(720px, 70vw, container(max));
+$pad-wrap: clamp(20px, 3.2vw, 36px);
 
 /* =============================
-   Variables
-   ============================= */
-$primary-bg-color: rgba(12, 22, 76, 0.21);
-$text-color: white;
-$box-shadow-color: black;
-
-$default-box-shadow: black;
-$accent-glow: rgba(0, 255, 255, 0.2); // Aqua glow
-
-$site-info-width: 58rem;
-$site-info-mobile-width: 23rem;
-$site-info-padding: 2rem;
-
-$site-info-content-width: 60rem;
-
-// Match link blue from Notes.scss for visual consistency
-$primary-color: rgb(6, 159, 248);
-
-/* ==============================
-            Breakpoints        
-   ============================== */
-$cellphone-portrait: 390px;
-$cellphone-landscape: 390px;
-
-/* =============================
-   Home Page Layout
+   Page shell
    ============================= */
 .homePage {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
   min-height: 100vh;
   margin: 0;
   padding: 0;
+
+  .headerVeil {
+    position: sticky;
+    top: var(--header-height, 70px);
+    height: 56px;
+    width: 100%;
+    pointer-events: none;
+    z-index: 1;
+    background: linear-gradient(180deg, rgba(8, 8, 20, 0.55), transparent);
+  }
 }
 
 /* =============================
-   Site Info Box
+   Site Info (Glass Card)
    ============================= */
 .siteInfo {
-  margin: 12rem auto 2rem auto;
-  padding: $site-info-padding;
-  text-align: center;
-  width: $site-info-width;
-  color: $text-color;
-  font-size: 1.5rem;
-  background-color: $primary-bg-color;
-  box-shadow: 0px 0px 15px 4px $accent-glow;
-  border: 1px solid rgba(0, 255, 255, 0.25); // Aqua border accent
-  border-radius: 1rem;
-  transition: box-shadow 0.3s ease;
+  /* quick knobs for translucency/blur */
+  --glass-blur: 26px; /* 22–30px */
+  --frost-top: 0.06;
+  --frost-bot: 0.02;
+  --tint-top: 0.14; /* brand tint */
+  --tint-bot: 0.06;
 
-  &:hover {
-    box-shadow: 0px 0px 20px 6px rgba(0, 255, 255, 0.4);
+  width: min(95rem, 100%);
+  max-width: $max-wrap;
+  margin: clamp(32px, 6vw, 96px) auto clamp(20px, 3vw, 32px);
+  padding: $pad-wrap;
+  color: $text-main;
+  text-align: left;
+  border-radius: $radius-lg;
+  position: relative;
+  isolation: isolate;
+  box-sizing: border-box;
+
+  /* frosted + tinted, but lighter so background shows through */
+  background: linear-gradient(180deg, rgba(255, 255, 255, var(--frost-top)), rgba(255, 255, 255, var(--frost-bot))),
+    linear-gradient(180deg, rgba(18, 32, 112, var(--tint-top)), rgba(12, 22, 76, var(--tint-bot)));
+  border: 1px solid $glass-border;
+  outline: 1px solid $rim-cyan;
+  outline-offset: -1px;
+
+  backdrop-filter: blur(var(--glass-blur)) saturate(145%);
+  -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(145%);
+
+  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.55), 0 0 26px rgba(0, 255, 255, 0.14), inset 0 1px 0 rgba(255, 255, 255, 0.3),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.05);
+
+  /* subtle sheen */
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    background: radial-gradient(600px 300px at 18% 18%, rgba(255, 255, 255, 0.12), transparent 65%),
+      linear-gradient(145deg, rgba(255, 255, 255, 0.06), transparent 60%);
+    mix-blend-mode: screen;
   }
 
-  @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
-    width: $site-info-mobile-width;
-    padding: 0;
-    margin: 7rem auto 2rem auto;
+  /* ultra-light texture (feel free to remove) */
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    opacity: 0.035;
+    background-image: url("data:image/svg+xml;utf8,\
+<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/></filter><rect width='120' height='120' filter='url(%23n)'/></svg>");
+    background-size: 120px 120px;
   }
 
-  /* =============================
-     Site Info Content
-     ============================= */
+  hr {
+    margin: clamp(14px, 2vw, 22px) 0;
+    height: 1px;
+    border: 0;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.32) 18%,
+      rgba(255, 255, 255, 0.32) 82%,
+      transparent
+    );
+  }
+
+  @include maxw($cellphone-portrait) {
+    margin-top: 6rem;
+    width: 21rem;
+    width: clamp(18rem, 92vw, 23rem); /* ✅ never wider than 21rem; shrinks on tiny phones */
+    padding: 16px; /* ✅ reduce padding for small screens */
+    margin-left: auto; /* ✅ true centering */
+    margin-right: auto;
+  }
+
+  @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+    background: linear-gradient(180deg, rgba(12, 22, 76, 0.28), rgba(12, 22, 76, 0.14));
+  }
+
+  /* ---------- inner content ---------- */
+
   .siteInfoContent {
-    max-width: $site-info-content-width;
-    margin: 0 auto 2rem auto;
-    text-align: left;
-    line-height: 1.6;
-    word-break: break-word;
-    box-sizing: border-box;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    max-width: $max-wrap;
+    margin: 0 auto clamp(14px, 2vw, 22px);
+    padding-inline: clamp(8px, 1.4vw, 16px);
+    line-height: 1.75;
+    letter-spacing: 0.02em;
+    font-size: clamp(1rem, 1.35vw, 1.25rem);
 
+    p {
+      color: #dfe4ee;
+    }
     p:first-of-type {
-      font-weight: 600; // Emphasize first paragraph
+      font-weight: 600;
+    }
+    .emphasis {
+      color: color.mix($link, #ffffff, 35%);
+      font-weight: 600;
     }
 
-    @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
-      padding: 1rem;
+    @include maxw($cellphone-portrait) {
       text-align: center;
-      margin-bottom: 0;
     }
   }
-
-  /* =============================
-     Other Sites Description Section
-     ============================= */
 
   .otherSitesDescription {
     text-align: center;
-    line-height: 1.5;
-
-    @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
-      display: block;
-      margin: 0 auto;
-      width: 78%;
-    }
+    color: $text-sub;
+    font-size: clamp(0.95rem, 1.2vw, 1.1rem);
+    line-height: 1.6;
+    padding-inline: clamp(8px, 1.4vw, 16px);
 
     .projectName {
       font-style: italic;
       font-weight: 600;
-
-      @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
-        display: block;
-        margin: 0;
-      }
     }
-
     .projectDesc {
       font-style: italic;
-      display: inline;
-
-      @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
-        display: inline;
-        width: 100%;
-        margin-top: 0.2rem;
-      }
     }
   }
 
-  /* =============================
-     Note Box
-     ============================= */
   .Note {
-    background-color: rgba(90, 90, 90, 0.082);
-    border-left: 4px solid $primary-color;
-    padding: 1rem;
-    margin-top: 2rem;
-    font-size: 1.4rem;
-    text-align: left;
-    line-height: 1.6;
+    margin-top: clamp(16px, 2.2vw, 24px);
+    padding: clamp(12px, 1.8vw, 18px);
+    background: rgba(20, 20, 40, 0.33);
+    border-left: 3px solid color.mix($link, #00e5ff, 60%);
+    border-radius: $radius-md;
+    line-height: 1.75;
+    font-size: clamp(0.98rem, 1.25vw, 1.125rem);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05), inset 0 0 24px rgba(0, 0, 0, 0.22);
 
-    @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) {
+    @include maxw($cellphone-portrait) {
       text-align: center;
     }
   }
 
-  /* =============================
-     Related Projects Section
-     ============================= */
   .relatedProjects {
-    margin-top: 2rem;
-    padding: 1.5rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.15);
-    background: rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
+    margin-top: clamp(18px, 2.8vw, 28px);
+    padding: clamp(12px, 2vw, 20px);
+    border-radius: $radius-md;
+    background: rgba(12, 12, 24, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: inset 0 0 18px rgba(0, 0, 0, 0.25);
     text-align: left;
-    list-style-type: none;
-    text-decoration: none;
 
-    @media only screen and (max-width: 390px) {
-      padding: 1rem;
+    /* layout scaffolding */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-sizing: border-box; /* ✅ padding won’t change width */
+
+    /* desktop/tablet: follow parent width naturally */
+    width: 100%;
+    max-width: 100%;
+
+    @include maxw($cellphone-portrait) {
+      /* ✅ center the block inside .siteInfo and cap its width */
+      width: clamp(18rem, 92vw, 21rem);
+      margin-left: auto;
+      margin-right: auto;
+      align-items: center;
+      text-align: center;
     }
 
     .relatedProjectsHeader {
-      font-size: 1.5rem;
-      color: $primary-color;
-      margin-bottom: 1rem;
       text-align: center;
+      margin: 0 0 clamp(10px, 1.8vw, 16px);
+      color: $link;
+      font-weight: 650;
+      font-size: clamp(1.1rem, 1.8vw, 1.35rem);
+      letter-spacing: 0.01em;
+      width: 100%;
     }
 
     .projectLinks {
-      padding: 0;
       margin: 0;
-      text-decoration: none;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+
+      @include maxw($cellphone-portrait) {
+        align-items: center; /* ✅ center the column itself */
+      }
 
       li {
-        margin-bottom: 0.8rem;
-        text-decoration: none;
+        list-style: none;
+        margin: 0 0 clamp(8px, 1.2vw, 12px);
+        font-size: clamp(1rem, 1.35vw, 1.2rem);
 
-        @media only screen and (max-width: 390px) {
-          font-size: 1.3rem;
+        @include maxw($cellphone-portrait) {
+          font-size: 1rem;
         }
       }
 
       a {
-        color: $primary-color;
+        color: $link;
         text-decoration: none;
+        position: relative;
+        transition: color 0.25s ease;
+
+        &::after {
+          content: '';
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: -2px;
+          height: 2px;
+          width: 0%;
+          margin-inline: auto;
+          background: currentColor;
+          transition: width 0.28s ease;
+        }
 
         &:hover {
-          text-decoration: underline;
-          color: color.adjust($primary-color, $lightness: 10%);
+          color: color.adjust($link, $lightness: 6%);
+          &::after {
+            width: 100%;
+          }
+        }
+        &:focus-visible {
+          outline: none;
+          box-shadow: 0 0 0 3px color.adjust($link, $alpha: -0.6);
+          border-radius: 6px;
         }
       }
     }
+  }
+}
+
+/* =============================
+   Reduced motion
+   ============================= */
+@media (prefers-reduced-motion: reduce) {
+  .siteInfo .projectLinks a::after {
+    transition: none;
   }
 }
