@@ -11,6 +11,14 @@ const Structure: Subpage = {
       name: 'Attributes',
       path: '/html/basics/structure/attributes',
     },
+    {
+      name: 'Text & Links',
+      path: '/html/basics/structure/text-and-links'
+    },
+    {
+      name: 'Lists',
+      path: '/html/basics/structure/lists'
+    }
   ],
 };
 

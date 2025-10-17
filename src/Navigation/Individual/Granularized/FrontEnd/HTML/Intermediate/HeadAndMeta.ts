@@ -11,6 +11,14 @@ const HeadAndMeta: Subpage = {
       name: 'Meta Elements',
       path: '/html/intermediate/head-and-meta/meta',
     },
+    {
+      name: 'Internationalization (lang / dir)',
+      path: '/html/intermediate/head-and-meta/internationalization'
+    },
+    {
+      name: 'Structured Data (JSON-LD)',
+      path: '/html/intermediate/head-and-meta/structured-data'
+    }
   ],
 };
 

@@ -11,6 +11,10 @@ const MediaAndEmbeds: Subpage = {
       name: 'Embedding Content',
       path: '/html/intermediate/media-and-embeds/embedding',
     },
+    {
+      name: 'Captions & Tracks',
+      path: '/html/intermediate/media-and-embeds/captions-and-tracks'
+    }
   ],
 };
 

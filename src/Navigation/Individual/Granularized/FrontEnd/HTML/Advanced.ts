@@ -1,14 +1,17 @@
 import { Subpage } from '@/Navigation/Combined/Core/NavigationTypes';
 
-const HTMLAdvanced: Subpage = {
+const Advanced: Subpage = 
+{
   name: 'Advanced',
-  subpages: [
+  subpages: 
+  [
     {
       name: 'Topics',
-      subpages: [
+      subpages: 
+      [
         {
           name: 'HTML5 Features',
-          path: '/html/advanced/topics/html5features'
+          path: '/html/advanced/topics/html5-features'
         },
         {
           name: 'Web Accessibility',
@@ -16,13 +19,30 @@ const HTMLAdvanced: Subpage = {
         },
         {
           name: 'SEO Best Practices',
-          path: '/html/advanced/topics/seo'
+          path: '/html/advanced/topics/seo-best-practices'
+        },
+        {
+          name: 'HTML Templates & Slots',
+          path: '/html/advanced/topics/templates-and-slots'
+        },
+        {
+          name: 'Resource Hints & Preloading',
+          path: '/html/advanced/topics/resource-hints-and-preloading'
+        },
+        {
+          name: 'Security & Linking (rel / sandbox / referrerpolicy)',
+          path: '/html/advanced/topics/security-and-linking'
+        },
+        {
+          name: 'Social Metadata (OpenGraph / Twitter)',
+          path: '/html/advanced/topics/social-metadata'
         }
       ]
     },
     {
       name: 'Best Practices',
-      subpages: [
+      subpages: 
+      [
         {
           name: 'Code Standards',
           path: '/html/advanced/bestpractices/standards'
@@ -30,10 +50,18 @@ const HTMLAdvanced: Subpage = {
         {
           name: 'Performance Optimization',
           path: '/html/advanced/bestpractices/performance'
+        },
+        {
+          name: 'Semantic Landmarks & Outline',
+          path: '/html/advanced/bestpractices/semantic-landmarks-and-outline'
+        },
+        {
+          name: 'Accessibility Patterns (HTML-first, ARIA-when-needed)',
+          path: '/html/advanced/bestpractices/accessibility-patterns'
         }
       ]
     }
   ]
 };
 
-export default HTMLAdvanced;
+export default Advanced;
