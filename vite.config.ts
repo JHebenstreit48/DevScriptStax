@@ -36,7 +36,7 @@ export default defineConfig({
         target: 'http://localhost:3001',
         changeOrigin: true,
         secure: false,
-        rewrite: path => path, // preserve full /api path
+        rewrite: (path) => path, // preserve full /api path
       },
     },
   },
@@ -48,13 +48,7 @@ export default defineConfig({
       output: {
         manualChunks: {
           react: ['react', 'react-dom'],
-          markdown: [
-            'react-markdown',
-            'remark-gfm',
-            'rehype-raw',
-            'rehype-slug',
-            'rehype-autolink-headings',
-          ],
+          markdown: ['react-markdown', 'remark-gfm', 'rehype-raw', 'rehype-slug', 'rehype-autolink-headings'],
           prism: ['react-syntax-highlighter'],
         },
       },
