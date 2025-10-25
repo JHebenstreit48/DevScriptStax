@@ -1,6 +1,15 @@
+import { useEffect } from 'react';
 import '@/SCSS/PageStyles/PageTitle.scss';
 
 const PageTitle = ({ title }: { title: string }) => {
+  useEffect(() => {
+    if (!title) return;
+    // Tell the tracker the definitive title for this route
+    window.dispatchEvent(new CustomEvent('page:title', {
+      detail: { title, path: location.pathname }
+    }));
+  }, [title]);
+
   if (!title) return null;
   return (
     <div className="pageTitleWrap">
