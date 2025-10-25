@@ -1,18 +1,12 @@
 <div class="siteInfoContent">
   <h1>About DevScriptStax</h1>
-
-  DevScriptStax is a personal, continually-evolving reference for
-  <span class="emphasis">full stack web development</span>. It began as a React refresh
-  of a small HTML project and has grown into structured notes across frontend, backend,
-  testing & tooling, GraphQL & Apollo, styling strategies, databases, and cloud & deployment.
+  DevScriptStax is a personal, continually evolving reference for <span class="emphasis">full stack web development</span>. It began as a React refresh of a small HTML project and has grown into structured notes across frontend, backend, testing & tooling, GraphQL & Apollo, styling strategies, databases, and cloud & deployment.
 </div>
 
 <hr />
 
 <div class="Note">
-  <strong>Current focus:</strong> information architecture and runtime performance.
-  The sites are moving toward deeper category granularity, consistent subpage structure, and
-  lazy-loaded routing for faster, more predictable navigation.
+  <strong>Current focus:</strong> information architecture and runtime performance. The sites are moving toward deeper category granularity, consistent subpage structure, and lazy-loaded routing for faster, more predictable navigation.
 </div>
 
 <hr />
