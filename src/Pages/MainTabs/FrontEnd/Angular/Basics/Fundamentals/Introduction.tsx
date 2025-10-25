@@ -11,7 +11,7 @@ const Introduction = () => {
     <>
       <PageLayout>
         <Header />
-        <PageTitle title="Introduction to Angular" />
+        <PageTitle title="Angular - Fundamentals - Introduction" />
         <Notes filePath={markdownFilePath}  />
       </PageLayout>
     </>
