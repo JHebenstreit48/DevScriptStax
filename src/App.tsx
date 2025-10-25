@@ -2,7 +2,8 @@ import { Suspense } from "react";
 import { Outlet } from "react-router-dom";
 import Footer from "@/Components/Shared/Footer";
 import RouteTracker from "@/Components/Shared/analytics/RouteTracker";
-import BackToTopGate from "@/Components/Shared/BackToTopGate";
+import BackToTopGate from "@/Components/Shared/BackToTop/Gate";
+import WakeGate from "@/Components/Shared/WakeGate";
 
 import "@/SCSS/PageStyles/Page.scss";
 import "@/SCSS/PageStyles/Header/Header.scss";
@@ -14,10 +15,8 @@ import "@/SCSS/PageStyles/Error.scss";
 export default function App() {
   return (
     <div className="appContainer">
-      {/* install analytics first */}
       <RouteTracker />
-
-      {/* shows on all routes except Home/About/Error */}
+      <WakeGate /> {/* pre-wakes backend in the background */}
       <BackToTopGate />
 
       <div className="contentWrapper">
