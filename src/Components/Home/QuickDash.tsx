@@ -2,8 +2,7 @@ import { useEffect, useState, useMemo } from "react";
 import { Link } from "react-router-dom";
 import { readVisits, writeVisits } from "@/Components/Shared/hooks/useVisitTracker";
 import { resolveBreadcrumbTrail } from "@/Navigation/Combined/Core/resolveBreadCrumbTrail";
-
-const SITE_NAME = "DevScriptStax";
+import { SITE_NAME } from "@/Components/Shared/dynamicSiteName";
 
 // --- helpers -----------------------------------------------------
 function pathToNiceTitle(path: string): string {
@@ -33,22 +32,19 @@ function displayTitle(path: string, title: string) {
 // --- main component ----------------------------------------------
 export default function QuickDash() {
   const [visits, setVisits] = useState(() =>
-    readVisits().filter((v) => v.path !== "/") // 🚫 skip home
+    readVisits().filter((v) => v.path !== "/")
   );
 
-  // Reactively update every few seconds or when window regains focus
   useEffect(() => {
-    const sync = () =>
-      setVisits(readVisits().filter((v) => v.path !== "/"));
-    const i = setInterval(sync, 2000); // poll localStorage every 2s
+    const sync = () => setVisits(readVisits().filter((v) => v.path !== "/"));
+    const interval = setInterval(sync, 2000);
     window.addEventListener("focus", sync);
     return () => {
-      clearInterval(i);
+      clearInterval(interval);
       window.removeEventListener("focus", sync);
     };
   }, []);
 
-  // one-time cleanup for bad titles
   useEffect(() => {
     if (!visits.length) return;
     let changed = false;
@@ -66,18 +62,15 @@ export default function QuickDash() {
     }
   }, [visits]);
 
-  // ✅ Hooks always run before the conditional return
   const mostVisited = useMemo(
     () => [...visits].sort((a, b) => b.count - a.count).slice(0, 8),
     [visits]
   );
-
   const recent = useMemo(
     () => [...visits].sort((a, b) => b.last - a.last).slice(0, 8),
     [visits]
   );
 
-  // ✅ Safe early return after all hooks
   if (!visits.length) return null;
 
   return (

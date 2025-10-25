@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { resolveBreadcrumbTrail } from "@/Navigation/Combined/Core/resolveBreadCrumbTrail";
+import { SITE_NAME } from "@/Components/Shared/dynamicSiteName";
 
 // Extend Window to include our flag
 declare global {
@@ -10,7 +11,6 @@ declare global {
 
 const VISITS_KEY = "dsx.visits";
 const TITLE_SELECTOR = ".pageTitle, main h1, .content h1, h1";
-const SITE_NAME = "DevScriptStax";
 
 export type Visit = { path: string; title: string; count: number; last: number };
 
@@ -72,7 +72,7 @@ function upsert(pathname: string, title: string, bumpCount: boolean) {
   writeVisits(visits.slice(0, 200));
 }
 
-// ✅ Persistent event listener — attaches once globally, type-safe
+// ✅ Persistent event listener — attaches once globally
 if (!window.__DSX_TRACKER_LISTENER__) {
   window.addEventListener("page:title", (e: Event) => {
     const custom = e as CustomEvent<{ title: string; path: string }>;
