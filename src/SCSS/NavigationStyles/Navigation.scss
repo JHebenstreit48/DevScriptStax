@@ -15,7 +15,7 @@
 .hamburgerButton {
   display: none;
 
-  @include phone-portrait {
+  @include maxw($cellphone-portrait) {
     display: block;
     background: none;
     border: none;
@@ -26,14 +26,16 @@
     align-self: center;
   }
 
-  /* If you want it visible on phone landscape too, uncomment:
-  @include phone-landscape-wide { display: block; }
+  /* If you want it visible on phone landscape too:
+  @include maxw($phone-landscape-wide) { display: block; }
   */
 }
 
 /* Helpful tweak: landscape phones are short on height */
-@include phone-landscape-short {
-  .siteHeader { padding-block: .5rem; }
+@media only screen and (orientation: landscape) and (max-height: $phone-landscape-short-h) {
+  .siteHeader {
+    padding-block: 0.5rem;
+  }
 }
 
 /* ==============================
@@ -51,7 +53,7 @@
   margin-left: auto;
   position: fixed;
 
-  @include phone-portrait {
+  @include maxw($cellphone-portrait) {
     position: relative;
     left: 0;
     margin-top: $nav-mobile-margin-top;
@@ -60,9 +62,15 @@
     width: 100%;
   }
 
-  @include small-laptop   { gap: .5rem; }
-  @include medium-laptop  { gap: .75rem; }
-  @include large-laptop   { gap: .9rem; }
+  @include between($small-laptop-min, $small-laptop-max) {
+    gap: 0.5rem;
+  }
+  @include between($medium-laptop-min, $medium-laptop-max) {
+    gap: 0.75rem;
+  }
+  @include between($large-laptop-min, $large-laptop-max) {
+    gap: 0.9rem;
+  }
 }
 
 /* ==============================
@@ -75,7 +83,7 @@
   width: auto;
   padding-top: 0;
 
-  @include phone-portrait {
+  @include maxw($cellphone-portrait) {
     display: none;
 
     &.open {
@@ -103,33 +111,62 @@
   transform: translateY(-50%);
   z-index: $z-nav-overlay;
 
-  @include phone-portrait {
+  @include maxw($cellphone-portrait) {
     display: flex;
     flex-direction: column;
-    left: 45%;
+    left: 50%;
     top: $nav-search-top-mobile;
   }
 
-  @include small-laptop  { left: $nav-search-left-laptop; }
-  @include medium-laptop { left: calc($nav-search-left-laptop + 0.5rem); }
+  @include between($small-laptop-min, $small-laptop-max) {
+    left: $nav-search-left-laptop;
+  }
+  @include between($medium-laptop-min, $medium-laptop-max) {
+    left: calc($nav-search-left-laptop + 0.5rem);
+  }
 }
 
 /* ==============================
-           Buttons, etc.
+           Search Icon Button
 ============================== */
 .searchIconButton {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  outline: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   color: $level-1;
-  font-size: 1.2rem;
-  transition: color 0.3s ease;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: box-shadow 0.18s ease, border-color 0.18s ease, background-color 0.18s ease;
 
-  &:hover { color: color.adjust($level-1, $lightness: 10%); }
+  &:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.24);
+    box-shadow: 0 0 0 3px rgba(0, 209, 255, 0.15);
+  }
+
+  &:focus-visible {
+    outline: 2px solid rgba(0, 209, 255, 0.7);
+    outline-offset: 2px;
+    border-radius: 999px;
+  }
+
+  svg {
+    display: block;
+  }
 }
 
-.mainNav { margin-top: $mainnav-margin-top; }
+.mainNav {
+  margin-top: $mainnav-margin-top;
+
+  @include maxw($cellphone-portrait) {
+    margin-top: 2rem;
+  }
+}
 
 /* ==============================
            Dropdown Button Style
@@ -142,7 +179,7 @@
   border: none;
   cursor: pointer;
   color: $level-1;
-  text-align: center;
+  text-align: center; /* keep centered labels */
   text-decoration: none;
   text-shadow: $nav-text-shadow-dim;
   width: 100%;
@@ -155,91 +192,96 @@
   font: inherit;
   line-height: 1.2;
 
-  /* wrapping + compact spacing */
+  /* Wrapping + compact spacing */
   white-space: normal;
   overflow-wrap: anywhere;
   word-break: break-word;
   hyphens: auto;
-  padding-block: .28rem;
-  padding-inline: .55rem;
+  padding-block: 0.28rem;
+  padding-inline: 0.55rem;
 
   &:hover {
-    background-color: rgba(255,255,255,.03);
-    text-decoration: underline;
+    background-color: rgba(255, 255, 255, 0.06);
+    text-decoration: none;
   }
 
-  /* headings vs pages */
+  &:focus-visible {
+    outline: 2px solid rgba(0, 255, 255, 0.7);
+    outline-offset: 2px;
+    border-radius: 6px;
+  }
+
   &.level-1 {
     color: $nav-level-1-brand;
     font-size: $font-lg;
     margin: 0 auto;
     padding: 0;
-    letter-spacing: .3px;
+    letter-spacing: 0.3px;
   }
 
   &.level-2 {
     color: $level-2;
     font-size: 1.05rem;
     font-weight: 700;
-    letter-spacing: .2px;
-    padding-block: .36rem;
-    border-top: 1px solid rgba(255,255,255,.12);
+    letter-spacing: 0.2px;
+    padding-block: 0.36rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
     background: linear-gradient(
       to bottom,
-      rgba(255,255,255,.08) 0%,
-      rgba(255,255,255,.03) 30%,
-      rgba(0,0,0,.18) 100%
+      rgba(255, 255, 255, 0.08) 0%,
+      rgba(255, 255, 255, 0.03) 30%,
+      rgba(0, 0, 0, 0.18) 100%
     );
-    box-shadow: inset 0 -1px 0 rgba(0,0,0,.60);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.6);
   }
 
   &.level-3 {
     color: $level-3;
     font-size: 1.05rem;
     font-weight: 700;
-    letter-spacing: .2px;
-    padding-block: .32rem;
-    border-top: 1px solid rgba(255,255,255,.10);
+    letter-spacing: 0.2px;
+    padding-block: 0.32rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
     background: linear-gradient(
       to bottom,
-      rgba(255,255,255,.05) 0%,
-      rgba(255,255,255,.02) 30%,
-      rgba(0,0,0,.14) 100%
+      rgba(255, 255, 255, 0.05) 0%,
+      rgba(255, 255, 255, 0.02) 30%,
+      rgba(0, 0, 0, 0.14) 100%
     );
-    box-shadow: inset 0 -1px 0 rgba(0,0,0,.50);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.5);
   }
 
   &.level-4 {
     color: $level-4;
     font-size: 1rem;
     font-weight: 700;
-    letter-spacing: .15px;
-    padding-block: .28rem;
-    border-top: 1px solid rgba(255,255,255,.08);
+    letter-spacing: 0.15px;
+    padding-block: 0.28rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
     background: linear-gradient(
       to bottom,
-      rgba(255,255,255,.03) 0%,
-      rgba(255,255,255,.01) 30%,
-      rgba(0,0,0,.10) 100%
+      rgba(255, 255, 255, 0.03) 0%,
+      rgba(255, 255, 255, 0.01) 30%,
+      rgba(0, 0, 0, 0.1) 100%
     );
-    box-shadow: inset 0 -1px 0 rgba(0,0,0,.42);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.42);
   }
 
   &.level-5 {
     color: $level-5;
-    font-size: .95rem;
+    font-size: 0.95rem;
     font-weight: 500;
-    text-shadow: 1px 1px 1px rgba(0,0,0,.7);
-    border-top: 1px solid color.change($level-5, $alpha: .26);
-    background: linear-gradient(
-      to bottom,
-      rgba(0,0,0,.22) 0%,
-      rgba(255,255,255,.05) 100%
-    );
-    box-shadow: inset 0 -2px 0 rgba(0,0,0,.58);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    border-top: 1px solid color.change($level-5, $alpha: 0.26);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.22) 0%, rgba(255, 255, 255, 0.05) 100%);
+    box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.58);
   }
 
-  .level-1, .level-2, .level-3, .level-4, .level-5 {
+  .level-1,
+  .level-2,
+  .level-3,
+  .level-4,
+  .level-5 {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -247,14 +289,31 @@
     justify-content: center;
   }
 
-  /* size tweaks by band */
-  @include phone-portrait { font-size: 1.1rem; padding: .4rem; gap: $nav-gap-mobile; }
-  @include small-laptop   { font-size: 1.25rem; }
-  @include medium-laptop  { font-size: 1.35rem; }
-  @include large-laptop   { font-size: 1.4rem;  }
+  @include maxw($cellphone-portrait) {
+    font-size: 1.1rem;
+    padding: 0.4rem;
+    gap: $nav-gap-mobile;
+  }
+  @include between($small-laptop-min, $small-laptop-max) {
+    font-size: 1.25rem;
+  }
+  @include between($medium-laptop-min, $medium-laptop-max) {
+    font-size: 1.35rem;
+  }
+  @include between($large-laptop-min, $large-laptop-max) {
+    font-size: 1.4rem;
+  }
 }
 
-.dropdownButton::-moz-focus-inner { border: 0; padding: 0; }
+/* Links vs buttons */
+.dropdownItem a.dropdownButton {
+  font-weight: 600;
+  color: $level-3;
+}
+.dropdownItem button.dropdownButton {
+  font-weight: 700;
+  color: $level-2;
+}
 
 /* ==============================
               Dropdown Layout
@@ -263,90 +322,94 @@
   position: relative;
   display: inline-block;
   text-align: center;
-  margin: 0 1rem;
+  margin: 0;
   overflow: visible;
 
-  @include phone-portrait {
+  @include maxw($cellphone-portrait) {
     display: block;
     width: 100%;
     margin: 0 auto;
   }
 }
 
-/* hairline separators */
-.dropdownItem { width: 100%; border-bottom: 1px solid rgba(255,255,255,.06); }
-.dropdownItem:last-child { border-bottom: none; }
+/* separators */
+.dropdownItem {
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+.dropdownItem:last-child {
+  border-bottom: none;
+}
 
-/* No divider on the very first row (removes the "gap" above Angular) */
-.dropdownContent .dropdownItem:first-child .dropdownButton { border-top: 0; }
+/* No divider on the very first row */
+.dropdownContent .dropdownItem:first-child .dropdownButton {
+  border-top: 0;
+}
 
 /* ==============================
           Dropdown Menu Content
 ============================== */
 .dropdownContent {
   position: absolute;
-  top: calc(100% + $nav-dropdown-offset);
+  top: 100%; /* flush to header (no gap) */
   left: 50%;
   transform: translateX(-50%);
 
-  /* size: narrower + wrap-friendly */
   width: auto;
   min-width: 12rem;
   max-width: min(18rem, calc(100vw - 2rem));
 
-  /* fully opaque, matches header via $dropdown-bg */
-  background-color: $dropdown-bg;     /* set to #000 or rgb(0,0,0) in Colors.scss */
-  border: 1px solid rgba(255,255,255,.06);
+  background-color: #0b0b12; /* solid, opaque */
+  border: 1px solid rgba(255, 255, 255, 0.06);
   border-radius: $dropdown-radius;
   box-shadow: $nav-dropdown-elevation;
   text-align: center;
 
   isolation: isolate;
   display: none;
-  z-index: $z-nav-dropdown;
+  z-index: calc(#{$z-nav-dropdown} + 2);
+  transition: box-shadow 140ms ease, background-color 140ms ease;
 
   &.active {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: stretch;
     align-items: stretch;
-    row-gap: .12rem;
+    row-gap: 0.12rem;
     max-height: $nav-dropdown-max-height;
     overflow-y: auto;
+    padding: 0.25rem 0;
     scrollbar-width: thin;
     scrollbar-color: $dropdown-hover $scrollbar-track;
 
-    &::-webkit-scrollbar { width: $scrollbar-width-thin; }
+    &::-webkit-scrollbar {
+      width: $scrollbar-width-thin;
+    }
     &::-webkit-scrollbar-thumb {
       background: $dropdown-hover;
       border-radius: $dropdown-radius;
-      &:hover { background: color.adjust($dropdown-hover, $lightness: 10%); }
+      &:hover {
+        background: color.adjust($dropdown-hover, $lightness: 10%);
+      }
     }
-    &::-webkit-scrollbar-track { background: transparent; }
-    &::-webkit-scrollbar-button { display: none; }
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    &::-webkit-scrollbar-button {
+      display: none;
+    }
 
-    @include phone-portrait {
+    @include maxw($cellphone-portrait) {
       position: static;
       transform: none;
-      background-color: $dropdown-bg;
+      background-color: #0b0b12;
       box-shadow: none;
       padding: 0;
       margin-top: $nav-dropdown-mobile-margin-top;
+      width: 100%;
+      border-radius: 0;
     }
   }
-}
-
-/* ==============================
-        Desktop-specific niceties
-============================== */
-@include desktop-1080p-up {
-  .pageContainer { width: min(100%, container(xxl)); }
-}
-@include desktop-1440p-up {
-  .megaMenu { max-width: 60rem; } /* example: allow wider mega menu on 27" */
-}
-@include desktop-4k-up {
-  .megaMenu { max-width: 72rem; } /* optional 4K bump */
 }
 
 /* ==============================
@@ -355,6 +418,66 @@
 .dropdownMenu.active {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
+  background-color: #0e0e18; /* slight contrast from parent */
+}
+
+/* ==============================
+   Chevron: centered label trick
+   (no negatives, no absolute)
+============================== */
+
+/* Size of the chevron “slot” (spacer & icon) */
+$chev-size: 0.95rem;
+
+/* Only apply this to LEVEL 1 toggles (Front End, Back End, …) */
+button.dropdownButton.level-1 {
+  display: inline-flex; /* row layout */
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; /* keeps label centered */
+  gap: 0.35rem; /* breathing room */
+}
+
+/* Invisible spacer BEFORE label to balance the chevron AFTER */
+button.dropdownButton.level-1::before {
+  content: '';
+  display: inline-block;
+  width: $chev-size;
+  height: 1px; /* minimal height, no vertical shift */
+}
+
+/* The chevron itself (inline, no absolute positioning) */
+button.dropdownButton.level-1::after {
+  content: '▸'; /* closed */
+  display: inline-block;
+  width: $chev-size; /* equals spacer width */
+  text-align: center;
+  line-height: 1;
+  opacity: 0.9;
+}
+
+/* Open state = down arrow */
+button.dropdownButton.level-1.active::after {
+  content: '▾';
+}
+
+/* Page links never show chevrons/spacer */
+.dropdownItem a.dropdownButton::before,
+.dropdownItem a.dropdownButton::after {
+  content: none;
+  display: none;
+}
+
+/* Optional accent line on open */
+button.dropdownButton.active {
+  box-shadow: inset 2px 0 0 rgba(0, 255, 255, 0.65), inset 0 -1px 0 rgba(0, 0, 0, 0.55);
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  button.dropdownButton.level-1::after {
+    transition: none;
+  }
 }

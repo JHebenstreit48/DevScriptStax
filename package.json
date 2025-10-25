@@ -13,6 +13,9 @@
     "cypress:run": "cypress run"
   },
   "dependencies": {
+    "@fortawesome/free-brands-svg-icons": "^7.1.0",
+    "@fortawesome/free-solid-svg-icons": "^7.1.0",
+    "@fortawesome/react-fontawesome": "^3.1.0",
     "font-awesome": "^4.7.0",
     "prismjs": "^1.29.0",
     "react": "^18.3.1",

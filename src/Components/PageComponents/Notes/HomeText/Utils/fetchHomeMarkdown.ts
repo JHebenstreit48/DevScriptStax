@@ -9,4 +9,4 @@ export const fetchHomeMarkdown = async (filePath: string): Promise<string> => {
       console.error(`[Markdown Fetch Error]:`, err);
       return '';
     }
-  };  
+  };

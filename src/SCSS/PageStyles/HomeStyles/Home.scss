@@ -50,7 +50,7 @@ $pad-wrap: clamp(20px, 3.2vw, 36px);
 
   width: min(95rem, 100%);
   max-width: $max-wrap;
-  margin: clamp(32px, 6vw, 96px) auto clamp(20px, 3vw, 32px);
+  margin: 6rem auto 2rem auto;
   padding: $pad-wrap;
   color: $text-main;
   text-align: left;
@@ -139,6 +139,7 @@ $pad-wrap: clamp(20px, 3.2vw, 36px);
     p:first-of-type {
       font-weight: 600;
     }
+
     .emphasis {
       color: color.mix($link, #ffffff, 35%);
       font-weight: 600;
@@ -210,7 +211,7 @@ $pad-wrap: clamp(20px, 3.2vw, 36px);
 
     .relatedProjectsHeader {
       text-align: center;
-      margin: 0 0 clamp(10px, 1.8vw, 16px);
+      margin: 0;
       color: $link;
       font-weight: 650;
       font-size: clamp(1.1rem, 1.8vw, 1.35rem);
@@ -223,11 +224,11 @@ $pad-wrap: clamp(20px, 3.2vw, 36px);
       padding: 0;
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
+      align-items: center;
       width: 100%;
 
       @include maxw($cellphone-portrait) {
-        align-items: center; /* ✅ center the column itself */
+        align-items: center;
       }
 
       li {
@@ -265,6 +266,7 @@ $pad-wrap: clamp(20px, 3.2vw, 36px);
             width: 100%;
           }
         }
+
         &:focus-visible {
           outline: none;
           box-shadow: 0 0 0 3px color.adjust($link, $alpha: -0.6);
@@ -276,10 +278,72 @@ $pad-wrap: clamp(20px, 3.2vw, 36px);
 }
 
 /* =============================
+   Home QuickDash (Most/Recent)
+   ============================= */
+.quickDash {
+  margin-top: clamp(16px, 2vw, 24px);
+  display: grid;
+  gap: 1.2rem;
+
+  .dashGroup {
+    display: grid;
+    gap: 0.55rem;
+  }
+
+  .dashGroup h3 {
+    margin: 0;
+    font-weight: 650;
+    color: color.mix($link, #ffffff, 25%);
+    letter-spacing: 0.01em;
+    font-size: clamp(1rem, 1.25vw, 1.15rem);
+  }
+
+  .dashChips {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .chip {
+    display: inline-block;
+    padding: 0.38rem 0.65rem;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: #cfe3ff;
+    text-decoration: none;
+    font-weight: 600;
+    line-height: 1;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(255, 255, 255, 0.22);
+    }
+
+    &:focus-visible {
+      outline: 2px solid rgba(0, 209, 255, 0.7);
+      outline-offset: 2px;
+    }
+  }
+
+  @include maxw($cellphone-portrait) {
+    .dashChips {
+      justify-content: center;
+    }
+  }
+}
+
+/* =============================
    Reduced motion
    ============================= */
 @media (prefers-reduced-motion: reduce) {
   .siteInfo .projectLinks a::after {
+    transition: none;
+  }
+  .quickDash .chip {
     transition: none;
   }
 }

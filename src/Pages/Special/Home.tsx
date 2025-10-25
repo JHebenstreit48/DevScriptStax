@@ -1,6 +1,7 @@
-import Header from '@/Components/Shared/Header/Header';
-import NotesHome from '@/Components/PageComponents/Notes/NotesHome'; // <-- new file
-import '@/SCSS/PageStyles/HomeStyles/Home.scss';
+import Header from "@/Components/Shared/Header/Header";
+import NotesHome from "@/Components/PageComponents/Notes/NotesHome";
+import QuickDash from "@/Components/Home/QuickDash";
+import "@/SCSS/PageStyles/HomeStyles/Home.scss";
 
 const Home = () => {
   return (
@@ -8,6 +9,7 @@ const Home = () => {
       <Header />
       <div className="siteInfo">
         <NotesHome />
+        <QuickDash />
       </div>
     </>
   );
