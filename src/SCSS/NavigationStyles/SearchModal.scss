@@ -1,130 +1,185 @@
+@use "@scss/Globals" as *;
 @use "sass:color";
 
 /* ==============================
-            Variables            
-   ============================== */
-   $modal-bg: rgba(0, 0, 0, 0.6);
-   $modal-content-bg: #fff;
-   $modal-text-color: #111;
-   $modal-shadow: rgba(0, 0, 0, 0.3);
-   $close-color: #444;
-   $close-hover: #000;
-   $link-color: #007bff;
-   $link-hover-underline: underline;
-   $breadcrumb-color: #777;
-   $empty-text-color: #666;
-   
-   /* ==============================
-                  Modal Container       
-         ============================== */
-   .searchModal {
-     position: fixed;
-     inset: 0;
-     background-color: $modal-bg;
-     z-index: 999;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-   }
-   
-   /* ==============================
-                 Modal Content         
-         ============================== */
-   .searchModalContent {
-     background-color: $modal-content-bg;
-     color: $modal-text-color;
-     padding: 2rem;
-     border-radius: 10px;
-     max-width: 600px;
-     width: 90%;
-     max-height: 80vh;
-     overflow-y: auto;
-     box-shadow: 0 8px 24px $modal-shadow;
-     position: relative;
-   }
-   
-   /* ==============================
-                  Modal Header         
-      ============================== */
-   .searchModalHeader {
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     position: relative; // 💡 enables absolute positioning for the close button
-     font-size: 1.5rem;
-     margin-bottom: 1rem;
-     font-weight: bold;
-   
-     .closeButton {
-       position: absolute;
-       right: 0; // 👈 pushes it to the far right
-       top: 50%;
-       transform: translateY(-50%);
-       background: none;
-       border: none;
-       font-size: 1.8rem;
-       cursor: pointer;
-       color: $close-color;
-   
-       &:hover {
-         color: $close-hover;
-       }
-     }
-   }
-   
-   .searchControls {
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-   }
-   
-   .resetButton {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     font-size: 1.1rem;
-     cursor: pointer;
-     color: $close-color;
-     margin: 0 auto;
-   
-     &:hover {
-       color: $close-hover;
-     }
-   }
-   
-   /* ==============================
-                Empty Results          
-         ============================== */
-   .searchResultEmpty {
-     font-style: italic;
-     color: $empty-text-color;
-   }
-   
-   /* ==============================
-                    Results List       
-         ============================== */
-   ul {
-     list-style: none;
-     padding: 0;
-   
-     li {
-       margin-bottom: 1rem;
-   
-       a {
-         color: $link-color;
-         text-decoration: none;
-   
-         &:hover {
-           text-decoration: $link-hover-underline;
-         }
-   
-         .breadcrumbs {
-           font-size: 0.85rem;
-           color: $breadcrumb-color;
-           margin-left: 0.5rem;
-         }
-       }
-     }
-   }
-   
+            Variables
+============================== */
+$modal-overlay: radial-gradient(120% 100% at 50% 40%, rgba(0,0,16,.55), rgba(0,0,0,.78));
+$panel-bg: #0b0b12;
+$panel-fg: #e8ebff;
+$panel-border: rgba(255,255,255,.10);
+$panel-shadow: 0 12px 36px rgba(0,0,0,.45);
+
+$link: #7fb6ff;
+$link-hover: #a8c9ff;
+$muted: #9aa0b3;
+$muted-2: #7a8091;
+
+/* ==============================
+           Modal Container
+============================== */
+.searchModal {
+  position: fixed;
+  inset: 0;
+  background: $modal-overlay;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+}
+
+/* ==============================
+           Modal Content
+============================== */
+.searchModalContent {
+  background-color: $panel-bg;
+  color: $panel-fg;
+  border: 1px solid $panel-border;
+  border-radius: 12px;
+  padding: 1.25rem 1.25rem 1rem;
+  width: min(720px, 92vw);
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: $panel-shadow;
+  position: relative;
+
+  @include maxw($cellphone-portrait) { width: min(620px, 94vw); }
+}
+
+/* ==============================
+            Header / Close
+============================== */
+.searchModalHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: .2px;
+  margin-bottom: .75rem;
+  color: $panel-fg;
+
+  .closeButton {
+    position: absolute;
+    right: .25rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 1.6rem;
+    cursor: pointer;
+    color: $muted;
+
+    &:hover { color: $panel-fg; }
+    &:focus-visible {
+      outline: 2px solid rgba(0, 209, 255, .7);
+      outline-offset: 2px;
+      border-radius: 6px;
+    }
+  }
+}
+
+/* ==============================
+          Controls area
+============================== */
+.searchControls {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: .75rem;
+}
+
+/* Inputs */
+.searchModalContent input[type="text"],
+.searchModalContent input[type="search"] {
+  width: 100%;
+  padding: .65rem .8rem;
+  border-radius: 10px;
+  border: 1px solid $panel-border;
+  background: #0f0f19;
+  color: $panel-fg;
+  font-size: 1rem;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.02);
+
+  &::placeholder { color: rgba(232,235,255,.6); }
+
+  &:focus {
+    outline: none;
+    border-color: rgba(0, 209, 255, .65);
+    box-shadow: 0 0 0 3px rgba(0, 209, 255, .15);
+  }
+}
+
+/* Buttons (toggle/reset) */
+.searchModalContent button {
+  background: linear-gradient(180deg, #151527, #0f0f19);
+  color: $panel-fg;
+  border: 1px solid $panel-border;
+  border-radius: 10px;
+  padding: .55rem .8rem;
+  cursor: pointer;
+
+  &:hover { border-color: rgba(255,255,255,.22); }
+  &:focus-visible {
+    outline: 2px solid rgba(0, 209, 255, .7);
+    outline-offset: 2px;
+  }
+}
+
+.resetButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  cursor: pointer;
+  color: $muted;
+  margin: .25rem auto 0;
+
+  &:hover { color: $panel-fg; }
+}
+
+/* ==============================
+           Results
+============================== */
+.searchResultEmpty {
+  font-style: italic;
+  color: $muted-2;
+  padding: .5rem 0;
+}
+
+.searchModalContent ul {
+  list-style: none;
+  margin: .5rem 0 0;
+  padding: 0;
+}
+
+.searchModalContent li {
+  margin: 0;
+  padding: .5rem .4rem;
+  border-radius: 8px;
+
+  &:hover { background: rgba(255,255,255,.04); }
+}
+
+.searchModalContent a {
+  color: $link;
+  text-decoration: none;
+  font-weight: 600;
+
+  &:hover { color: $link-hover; }
+
+  .breadcrumbs {
+    display: inline-block;
+    margin-left: .5rem;
+    font-size: .85rem;
+    color: $muted;
+    font-weight: 500;
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .searchModal { backdrop-filter: none; -webkit-backdrop-filter: none; }
+}

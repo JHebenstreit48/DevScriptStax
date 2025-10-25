@@ -4,4 +4,4 @@ export const homeTheme = {
     p: 'home-p',
     link: 'home-link',
     blockquote: 'home-quote',
-  };  
+  };

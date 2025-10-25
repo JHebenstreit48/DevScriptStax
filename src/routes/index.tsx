@@ -1,8 +1,10 @@
+// src/routes/index.tsx
 import { createBrowserRouter } from 'react-router-dom';
 
 import App from '@/App';
 import ErrorPage from '@/Pages/Special/Error';
 import Home from '@/Pages/Special/Home';
+import About from '@/Pages/Special/About'; // ⬅️ NEW
 
 import backEnd from '@/routes/Sections/backEnd';
 import cloudServices from '@/routes/Sections/cloudServices';
@@ -18,10 +20,8 @@ export const router = createBrowserRouter([
     element: <App />,
     errorElement: <ErrorPage />,
     children: [
-      {
-        index: true,
-        element: <Home />,
-      },
+      { index: true, element: <Home /> },
+      { path: 'about', element: <About /> }, // ⬅️ NEW
       ...backEnd,
       ...cloudServices,
       ...frontEnd,

@@ -1,0 +1,30 @@
+@use 'sass:color';
+@use '@scss/Globals' as *;
+
+.aboutPage {
+  padding: 2.25rem 1rem 3.5rem;
+}
+
+.aboutHero {
+  text-align: center;
+  margin-bottom: 1.25rem;
+
+  h1 { margin: 0 0 .5rem; }
+  .lede {
+    opacity: .9;
+    font-size: 1.05rem;
+  }
+}
+
+.aboutBody {
+  max-width: container(xl);
+  margin-inline: auto;
+
+  h2 { margin: 1.5rem 0 .5rem; }
+  ul { margin: .5rem 0 0 1.25rem; }
+  .projectList a { text-decoration: underline; }
+}
+
+@include maxw($cellphone-portrait) {
+  .aboutPage { padding: 1.25rem 1rem 2.5rem; }
+}
