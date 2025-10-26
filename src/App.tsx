@@ -5,12 +5,12 @@ import RouteTracker from "@/Components/Shared/analytics/RouteTracker";
 import BackToTopGate from "@/Components/Shared/BackToTop/Gate";
 import WakeGate from "@/Components/Shared/WakeGate";
 
-import "@/SCSS/PageStyles/Page.scss";
-import "@/SCSS/PageStyles/Header/Header.scss";
-import "@/SCSS/PageStyles/Footer.scss";
-import "@/SCSS/NavigationStyles/Navigation.scss";
-import "@/SCSS/NavigationStyles/SearchModal.scss";
-import "@/SCSS/PageStyles/Error.scss";
+import "@/SCSS/Page/Page.scss";
+import "@/SCSS/Page/Header/Header.scss";
+import "@/SCSS/Page/Footer.scss";
+import "@/SCSS/Navigation/Navigation.scss";
+import "@/SCSS/Navigation/SearchModal.scss";
+import "@/SCSS/Page/Error.scss";
 
 export default function App() {
   return (
