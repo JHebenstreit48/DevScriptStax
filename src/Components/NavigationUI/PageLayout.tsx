@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 import { useBreadcrumbTrail } from '@/Navigation/Combined/Core/useBreadCrumbTrail';
-import '@/SCSS/NavigationStyles/PageLayout.scss';
+import '@/SCSS/Navigation/PageLayout.scss';
 
 type PageLayoutProps = {
   children: ReactNode;
