@@ -5,7 +5,7 @@ import Notes from '@/Components/PageComponents/Notes/Notes';
 
 
 const MediaElements = () => {
-    const markdownFilePath = 'FrontEnd/HTMLNotes/Intermediate/MediaAndEmbeds/Media";
+    const markdownFilePath = 'FrontEnd/HTMLNotes/Intermediate/MediaAndEmbeds/Media';
 
     return (
         <>
