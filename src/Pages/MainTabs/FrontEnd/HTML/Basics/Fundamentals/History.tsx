@@ -4,7 +4,7 @@ import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const History = () => {
-  const markdownFilePath = 'FrontEndNotes/HTMLNotes/Basics/Fundamentals/History';
+  const markdownFilePath = 'FrontEnd/HTMLNotes/Basics/Fundamentals/History';
 
   return (
     <>

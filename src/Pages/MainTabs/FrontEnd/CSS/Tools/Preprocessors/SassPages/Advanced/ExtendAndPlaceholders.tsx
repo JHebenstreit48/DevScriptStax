@@ -2,7 +2,7 @@ import Header from "@/Components/Shared/Header/Header";
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const ExtendAndPlaceholders = () => {
-    const markdownFilePath = 'FrontEndNotes/CSSNotes/Preprocessors/SassNotes/Advanced/ExtendAndPlaceholders';
+    const markdownFilePath = 'FrontEnd/CSS/Preprocessors/SassNotes/Advanced/ExtendAndPlaceholders';
 
     return (
 

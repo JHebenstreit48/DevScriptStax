@@ -4,7 +4,7 @@ import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const XSSProtection = () => {
-  const markdownFilePath = 'FrontEndNotes/AngularNotes/Advanced/Security/Fundamentals/XSSProtection.md';
+  const markdownFilePath = 'FrontEnd/Angular/Advanced/Security/Fundamentals/XSSProtection';
 
   return (
     <>

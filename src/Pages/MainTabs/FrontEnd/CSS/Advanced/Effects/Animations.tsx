@@ -4,7 +4,7 @@ import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const Animations = () => {
-  const markdownFilePath = 'FrontEndNotes/CSSNotes/Advanced/Effects/Animations';
+  const markdownFilePath = 'FrontEnd/CSS/Advanced/Effects/Animations';
 
   return (
     <>

@@ -4,7 +4,7 @@ import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const DependencyInject = () => {
-  const markdownFilePath = 'FrontEndNotes/AngularNotes/Basics/CoreConcepts/ServicesNotes/DependencyInjection';
+  const markdownFilePath = 'FrontEnd/Angular/Basics/CoreConcepts/ServicesNotes/DependencyInjection';
 
   return (
     <>

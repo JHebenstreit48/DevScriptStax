@@ -4,7 +4,7 @@ import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const SubjectsAndBehavior = () => {
-  const markdownFilePath = 'FrontEndNotes/AngularNotes/Advanced/RxJSAndReactive/SubjectsAndBehavior.md';
+  const markdownFilePath = 'FrontEnd/Angular/Advanced/RxJSAndReactive/SubjectsAndBehavior';
 
   return (
     <>

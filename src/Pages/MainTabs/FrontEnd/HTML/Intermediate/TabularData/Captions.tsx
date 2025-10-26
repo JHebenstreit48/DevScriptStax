@@ -4,7 +4,7 @@ import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const Captions = () => {
-    const markdownFilePath = "FrontEndNotes/HTMLNotes/Intermediate/TabularData/Captions";
+    const markdownFilePath = 'FrontEnd/HTMLNotes/Intermediate/TabularData/Captions";
 
     return (
         <>

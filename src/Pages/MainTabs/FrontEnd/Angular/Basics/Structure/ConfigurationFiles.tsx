@@ -1,9 +1,8 @@
-import Notes from "@/Components/PageComponents/Notes/Notes";
-import Header from "@/Components/Shared/Header/Header";
+import Notes from '@/Components/PageComponents/Notes/Notes';
+import Header from '@/Components/Shared/Header/Header';
 
 const ConfigFiles = () => {
-  const markdownFilePath =
-    "FrontEndNotes/AngularNotes/AngularBasics/ProjectStructure/ConfigurationFiles";
+  const markdownFilePath = 'FrontEnd/Angular/Basics/ProjectStructure/ConfigurationFiles';
 
   return (
     <>

@@ -10,7 +10,7 @@ const CreateRun = () => {
     <>
       <PageLayout>
         <Header />
-        <PageTitle title="Creating and Running an Angular App" />
+        <PageTitle title="Angular - Creating and Running an App" />
         <Notes filePath={markdownFilePath} />
       </PageLayout>
     </>

@@ -2,7 +2,7 @@ import Header from "@/Components/Shared/Header/Header";
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const BootstrapDropdowns = () => {
-    const markdownFilePath = 'FrontEndNotes/CSSNotes/Frameworks/BootstrapComponents/Dropdowns';
+    const markdownFilePath = 'FrontEnd/CSS/Frameworks/BootstrapComponents/Dropdowns';
 
     return (
 

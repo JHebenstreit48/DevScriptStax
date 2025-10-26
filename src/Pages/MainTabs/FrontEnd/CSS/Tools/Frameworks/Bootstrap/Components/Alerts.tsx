@@ -2,7 +2,7 @@ import Header from "@/Components/Shared/Header/Header";
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const BootstrapAlerts = () => {
-    const markdownFilePath = 'FrontEndNotes/CSSNotes/Frameworks/BootstrapComponents/Alerts';
+    const markdownFilePath = 'FrontEnd/CSS/Frameworks/BootstrapComponents/Alerts';
 
     return (
 

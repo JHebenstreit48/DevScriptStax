@@ -4,7 +4,7 @@ import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const ObservableBasics = () => {
-  const markdownFilePath = 'FrontEndNotes/AngularNotes/Advanced/RxJSAndReactive/ObservableBasics';
+  const markdownFilePath = 'FrontEnd/Angular/Advanced/RxJSAndReactive/ObservableBasics';
 
   return (
     <>

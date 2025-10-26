@@ -3,7 +3,7 @@ import Header from "@/Components/Shared/Header/Header";
 import Notes from "@/Components/PageComponents/Notes/Notes";
 
 const Forms = () => {
-  const markdownFilePath = "FrontEndNotes/HTMLNotes/HTMLBasics/HTMLForms";
+  const markdownFilePath = 'FrontEnd/HTMLNotes/HTMLBasics/HTMLForms";
 
   return (
     <>

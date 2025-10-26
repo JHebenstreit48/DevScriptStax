@@ -5,7 +5,7 @@ import PageTitle from '@/Components/PageComponents/PageTitle';
 
 const EventHandling = () => {
   const markdownFilePath =
-    'FrontEndNotes/ReactNotes/Basics/CoreConcepts/EventHandling';
+    'FrontEnd/ReactNotes/Basics/CoreConcepts/EventHandling';
 
   return (
     <>

@@ -4,7 +4,7 @@ import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const Semantics = () => {
   const markdownFilePath =
-    'FrontEndNotes/HTMLNotes/HTMLBasics/HTMLSemantics';
+    'FrontEnd/HTMLNotes/HTMLBasics/HTMLSemantics';
 
   return (
     <>

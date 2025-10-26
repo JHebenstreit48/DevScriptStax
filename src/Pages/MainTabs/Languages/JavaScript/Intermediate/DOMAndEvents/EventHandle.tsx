@@ -4,7 +4,7 @@ import Notes from "@/Components/PageComponents/Notes/Notes";
 
 const EventHandling = () => {
   const markdownFilePath =
-    "FrontEndNotes/JavaScriptNotes/Intermediate/DOMAndEvents/EventHandle";
+    'FrontEnd/JavaScriptNotes/Intermediate/DOMAndEvents/EventHandle";
 
   return (
     <>

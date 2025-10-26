@@ -4,7 +4,7 @@ import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const RxJSOperators = () => {
-  const markdownFilePath = 'FrontEndNotes/AngularNotes/Advanced/RxJSAndReactive/RxJSOperators.md';
+  const markdownFilePath = 'FrontEnd/Angular/Advanced/RxJSAndReactive/RxJSOperators';
 
   return (
     <>

@@ -4,7 +4,7 @@ import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const Authentication = () => {
-  const markdownFilePath = 'FrontEndNotes/AngularNotes/Advanced/Security/AuthenticationAuthorization/Authentication.md';
+  const markdownFilePath = 'FrontEnd/Angular/Advanced/Security/AuthenticationAuthorization/Authentication';
 
   return (
     <>

@@ -5,7 +5,7 @@ import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const ReactSetup = () => {
   const markdownFilePath =
-    'FrontEndNotes/ReactNotes/Basics/Fundamentals/Setup';
+    'FrontEnd/ReactNotes/Basics/Fundamentals/Setup';
 
   return (
     <>

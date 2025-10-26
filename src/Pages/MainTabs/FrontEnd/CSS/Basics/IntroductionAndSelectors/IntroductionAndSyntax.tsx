@@ -4,7 +4,7 @@ import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const IntroductionAndSyntax = () => {
-  const markdownFilePath = 'FrontEndNotes/CSSNotes/Basics/IntroductionAndSelectors/IntroductionAndSyntax';
+  const markdownFilePath = 'FrontEnd/CSS/Basics/IntroductionAndSelectors/IntroductionAndSyntax';
 
   return (
     <>
