@@ -4,7 +4,7 @@ import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const LazyLoading = () => {
-  const markdownFilePath = 'FrontEndNotes/AngularNotes/Basics/CoreConcepts/Modules/LazyLoading';
+  const markdownFilePath = 'FrontEnd/Angular/Basics/CoreConcepts/Modules/LazyLoading';
 
   return (
     <>

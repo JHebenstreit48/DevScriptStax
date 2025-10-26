@@ -1,12 +1,11 @@
-// Auto-generated TSX file: ReusableDesign
-
+// Auto-generated TSX file: InputsOutputs
+import PageLayout from "@/Components/NavigationUI/PageLayout";
 import Header from "@/Components/Shared/Header/Header";
 import Notes from "@/Components/PageComponents/Notes/Notes";
-import PageLayout from "@/Components/NavigationUI/PageLayout";
 
-const ReusableDesign = () => {
+const InputsOutputs = () => {
   const markdownFilePath =
-    "FrontEndNotes/AngularNotes/Basics/CoreConcepts/AngComponents/ReusableDesign";
+    "FrontEnd/Angular/Basics/CoreConcepts/Components/InputsAndOutputs";
 
   return (
     <>
@@ -18,4 +17,4 @@ const ReusableDesign = () => {
   );
 };
 
-export default ReusableDesign;
+export default InputsOutputs;

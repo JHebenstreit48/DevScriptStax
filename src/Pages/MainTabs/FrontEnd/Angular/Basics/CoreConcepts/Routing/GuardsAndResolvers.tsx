@@ -4,7 +4,7 @@ import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const GuardsAndResolvers = () => {
-  const markdownFilePath = 'FrontEndNotes/AngularNotes/Basics/CoreConcepts/RoutingPages/GuardsAndResolvers';
+  const markdownFilePath = 'FrontEnd/Angular/Basics/CoreConcepts/Routing/GuardsAndResolvers';
 
   return (
     <>

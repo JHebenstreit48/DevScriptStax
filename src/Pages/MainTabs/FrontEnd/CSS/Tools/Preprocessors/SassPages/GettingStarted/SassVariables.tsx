@@ -2,7 +2,7 @@ import Header from "@/Components/Shared/Header/Header";
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const SassVariables = () => {
-    const markdownFilePath = 'FrontEndNotes/CSSNotes/Preprocessors/SassNotes/GettingStarted/Variables';
+    const markdownFilePath = 'FrontEnd/CSS/Preprocessors/SassNotes/GettingStarted/Variables';
 
     return (
 

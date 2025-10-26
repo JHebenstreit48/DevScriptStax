@@ -6,7 +6,7 @@ import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const HTML5Features = () => {
   const markdownFilePath =
-    'FrontEndNotes/HTMLNotes/Advanced/Topics/Features';
+    'FrontEnd/HTMLNotes/Advanced/Topics/Features';
 
   return (
     <>

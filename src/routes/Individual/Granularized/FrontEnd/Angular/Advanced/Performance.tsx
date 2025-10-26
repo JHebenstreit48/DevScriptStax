@@ -2,11 +2,11 @@ import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
 const BundleOptimization = lazy(
-  () => import('@/Pages/MainTabs/FrontEnd/Angular/Advanced/PerformancePages/BundleOptimization')
+  () => import('@/Pages/MainTabs/FrontEnd/Angular/Advanced/Performance/BundleOptimization')
 );
 
 const BudgetsProfiling = lazy(
-  () => import('@/Pages/MainTabs/FrontEnd/Angular/Advanced/PerformancePages/BudgetsProfiling')
+  () => import('@/Pages/MainTabs/FrontEnd/Angular/Advanced/Performance/BudgetsProfiling')
 );
 
 const performance: RouteObject[] = [

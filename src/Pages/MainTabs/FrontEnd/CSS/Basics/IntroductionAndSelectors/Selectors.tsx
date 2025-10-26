@@ -4,7 +4,7 @@ import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const CSSSelectors = () => {
-  const markdownFilePath = 'FrontEndNotes/CSSNotes/Basics/IntroductionAndSelectors/Selectors';
+  const markdownFilePath = 'FrontEnd/CSS/Basics/IntroductionAndSelectors/Selectors';
 
   return (
     <>

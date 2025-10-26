@@ -5,7 +5,7 @@ import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const JSXAndRendering = () => {
   const markdownFilePath =
-    'FrontEndNotes/ReactNotes/Basics/CoreConcepts/JSX';
+    'FrontEnd/ReactNotes/Basics/CoreConcepts/JSX';
 
   return (
     <>

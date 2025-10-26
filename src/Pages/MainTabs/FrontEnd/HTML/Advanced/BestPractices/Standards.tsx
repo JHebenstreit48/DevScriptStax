@@ -4,7 +4,7 @@ import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const Standards = () => {
   const markdownFilePath =
-    'FrontEndNotes/HTMLNotes/Advanced/BestPractices/Standards';
+    'FrontEnd/HTMLNotes/Advanced/BestPractices/Standards';
 
   return (
     <>

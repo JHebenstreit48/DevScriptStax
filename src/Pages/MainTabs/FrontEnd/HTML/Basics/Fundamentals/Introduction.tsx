@@ -4,7 +4,7 @@ import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const Introduction = () => {
-  const markdownFilePath = 'FrontEndNotes/HTMLNotes/Basics/Fundamentals/Introduction';
+  const markdownFilePath = 'FrontEnd/HTMLNotes/Basics/Fundamentals/Introduction';
 
   return (
     <>

@@ -4,7 +4,7 @@ import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const Positioning = () => {
-  const markdownFilePath = 'FrontEndNotes/CSSNotes/Basics/BoxModelAndPosition/Positioning';
+  const markdownFilePath = 'FrontEnd/CSS/Basics/BoxModelAndPosition/Positioning';
 
   return (
     <>

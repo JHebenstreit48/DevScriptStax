@@ -4,7 +4,7 @@ import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const Structure = () => {
-  const markdownFilePath = 'FrontEndNotes/AngularNotes/AngularBasics/ProjectStructure/Structure';
+  const markdownFilePath = 'FrontEnd/Angular/Basics/ProjectStructure/Structure';
 
   return (
     <>

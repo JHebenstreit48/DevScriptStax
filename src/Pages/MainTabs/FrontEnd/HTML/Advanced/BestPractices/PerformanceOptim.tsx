@@ -4,7 +4,7 @@ import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const PerformanceOptim = () => {
   const markdownFilePath =
-    'FrontEndNotes/HTMLNotes/Advanced/BestPractices/PerformanceOptim';
+    'FrontEnd/HTMLNotes/Advanced/BestPractices/PerformanceOptim';
 
   return (
     <>

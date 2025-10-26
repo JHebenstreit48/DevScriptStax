@@ -4,7 +4,7 @@ import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const BoxModel = () => {
-  const markdownFilePath = 'FrontEndNotes/CSSNotes/Basics/BoxModelAndPosition/BoxModel';
+  const markdownFilePath = 'FrontEnd/CSS/Basics/BoxModelAndPosition/BoxModel';
 
   return (
     <>

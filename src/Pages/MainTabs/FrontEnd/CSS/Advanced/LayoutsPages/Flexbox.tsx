@@ -4,7 +4,7 @@ import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const Flexbox = () => {
-  const markdownFilePath = 'FrontEndNotes/CSSNotes/Advanced/LayoutsNotes/Flexbox';
+  const markdownFilePath = 'FrontEnd/CSS/Advanced/LayoutsNotes/Flexbox';
 
   return (
     <>

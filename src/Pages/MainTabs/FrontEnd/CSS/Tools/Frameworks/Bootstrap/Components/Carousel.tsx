@@ -2,7 +2,7 @@ import Header from "@/Components/Shared/Header/Header";
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const BootstrapCarousel = () => {
-    const markdownFilePath = 'FrontEndNotes/CSSNotes/Frameworks/BootstrapComponents/Carousel';
+    const markdownFilePath = 'FrontEnd/CSS/Frameworks/BootstrapComponents/Carousel';
 
     return (
 

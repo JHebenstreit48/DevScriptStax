@@ -2,7 +2,7 @@ import Header from "@/Components/Shared/Header/Header";
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const BootstrapAccordions = () => {
-    const markdownFilePath = 'FrontEndNotes/CSSNotes/Frameworks/BootstrapComponents/Accordions';
+    const markdownFilePath = 'FrontEnd/CSS/Frameworks/BootstrapComponents/Accordions';
 
     return (
 

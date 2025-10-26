@@ -4,7 +4,7 @@ import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const Introduction = () => {
   const markdownFilePath =
-    'FrontEndNotes/AngularNotes/Testing/Unit/Introduction';
+    'FrontEnd/Angular/Testing/Unit/Introduction';
 
   return (
     <>
