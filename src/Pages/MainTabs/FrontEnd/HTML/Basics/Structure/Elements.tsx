@@ -1,20 +1,18 @@
+import PageLayout from '@/Components/NavigationUI/PageLayout';
 import Notes from '@/Components/PageComponents/Notes/Notes';
-import Header from "@/Components/Shared/Header/Header";
-
+import Header from '@/Components/Shared/Header/Header';
 
 const Elements = () => {
-    const markdownFilePath = 'FrontEnd/HTMLNotes/Basics/Structure/Elements';
+  const markdownFilePath = 'FrontEnd/HTML/Basics/Structure/Elements';
 
-    return (
-
-        <>
-            <Header text="Elements" />
-            <Notes filePath={markdownFilePath}
-                
-            />
-        </>
-    );
-
+  return (
+    <>
+      <PageLayout>
+        <Header />
+        <Notes filePath={markdownFilePath} />
+      </PageLayout>
+    </>
+  );
 };
 
 export default Elements;
