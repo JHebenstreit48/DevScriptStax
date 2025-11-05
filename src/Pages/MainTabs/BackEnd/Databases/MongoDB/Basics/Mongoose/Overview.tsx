@@ -4,7 +4,7 @@ import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const Overview = () => {
-    const markdownFilePath = 'BackEndNotes/DatabaseNotes/MongoDB/Basics/Mongoose/Overview';
+    const markdownFilePath = 'BackEndNotes/Databases/MongoDB/Basics/Mongoose/Overview';
 
     return (
         <>
