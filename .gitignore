@@ -18,6 +18,12 @@ build/
 .env.*  # ignores .env.local, .env.production, etc.
 
 # ========================================
+# Secrets & local Firebase
+# ========================================
+serviceAccount.json
+firebase-debug.log
+
+# ========================================
 # Log files
 # ========================================
 logs/

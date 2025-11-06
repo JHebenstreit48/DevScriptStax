@@ -3,7 +3,7 @@ import { Outlet } from "react-router-dom";
 import Footer from "@/Components/Shared/Footer";
 import RouteTracker from "@/Components/Shared/analytics/RouteTracker";
 import BackToTopGate from "@/Components/Shared/BackToTop/Gate";
-import WakeGate from "@/Components/Shared/WakeGate";
+// import WakeGate from "@/Components/Shared/WakeGate";
 
 import "@/SCSS/Page/Page.scss";
 import "@/SCSS/Page/Header/Header.scss";
@@ -16,7 +16,7 @@ export default function App() {
   return (
     <div className="appContainer">
       <RouteTracker />
-      <WakeGate /> {/* pre-wakes backend in the background */}
+      {/* <WakeGate /> pre-wakes backend in the background */}
       <BackToTopGate />
 
       <div className="contentWrapper">

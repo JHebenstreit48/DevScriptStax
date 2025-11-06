@@ -4,7 +4,7 @@ import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const FeaturesAndUseCases = () => {
-  const markdownFilePath = 'BackEndNotes/DatabaseNotes/PostgreSQLNotes/Basics/Fundamentals/FeaturesAndUseCases';
+  const markdownFilePath = 'BackEndNotes/Databases/PostgreSQL/Basics/Fundamentals/FeaturesAndUseCases';
 
   return (
     <>
