@@ -4,12 +4,12 @@ const Fundamentals: Subpage = {
   name: "Fundamentals",
   subpages: [
     {
-      name: "Basics/Syntax",
-      path: "/python/basics/fundamentals/basicssyntax",
+      name: "Basics and Syntax",
+      path: "/python/basics/fundamentals/basics-and-syntax",
     },
     {
       name: "Control Flow",
-      path: "/python/basics/fundamentals/controlflow",
+      path: "/python/basics/fundamentals/control-flow",
     },
   ],
 };

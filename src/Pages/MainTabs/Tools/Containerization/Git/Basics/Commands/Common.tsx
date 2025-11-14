@@ -4,7 +4,7 @@ import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const Common = () => {
-  const markdownFilePath = 'ToolsNotes/Containerization/GitNotes/Basics/Commands/Common';
+  const markdownFilePath = 'Tools/Containerization/Git/Basics/Commands/Common';
 
   return (
     <>

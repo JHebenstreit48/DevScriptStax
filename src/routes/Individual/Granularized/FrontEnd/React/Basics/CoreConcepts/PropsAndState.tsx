@@ -6,11 +6,11 @@ const State = lazy(() => import('@/Pages/MainTabs/FrontEnd/React/Basics/CoreConc
 
 const PropsAndState: RouteObject[] = [
   {
-    path: '/react/basics/core/propsstate/props',
+    path: '/react/basics/core/props-and-state/props',
     element: <Props />,
   },
   {
-    path: '/react/basics/core/propsstate/state',
+    path: '/react/basics/core/props-and-state/state',
     element: <State />,
   },
 ];

@@ -5,15 +5,15 @@ const CoreCommands: Subpage = {
   subpages: [
     {
       name: 'cy.visit() & cy.get()',
-      path: '/testing/e2e/cypress/commands/visit-get',
+      path: '/testing/e2e/basics/cypress/commands/visit-get',
     },
     {
       name: 'cy.contains() & cy.find()',
-      path: '/testing/e2e/cypress/commands/contains-find',
+      path: '/testing/e2e/basics/cypress/commands/contains-find',
     },
     {
       name: 'Assertions Overview',
-      path: '/testing/e2e/cypress/commands/assertions',
+      path: '/testing/e2e/basics/cypress/commands/assertions',
     },
   ],
 };

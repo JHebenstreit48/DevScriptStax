@@ -4,7 +4,7 @@ import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const CoreConcepts = () => {
-  const markdownFilePath = 'BackEndNotes/APINotes/Basics/Fundamentals/CoreConcepts';
+  const markdownFilePath = 'BackEnd/API/Basics/Fundamentals/CoreConcepts';
 
   return (
     <>

@@ -5,9 +5,9 @@ import Header from "@/Components/Shared/Header/Header";
 import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
-const ReactStructure = () => {
+const Structure = () => {
   const markdownFilePath =
-    'FrontEnd/ReactNotes/Basics/Fundamentals/Structure';
+    'FrontEnd/React/Basics/SetupAndStructure/Structure';
 
   return (
     <>
@@ -20,4 +20,4 @@ const ReactStructure = () => {
   );
 };
 
-export default ReactStructure;
+export default Structure;

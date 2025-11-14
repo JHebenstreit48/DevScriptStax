@@ -5,13 +5,13 @@ import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const Props = () => {
   const markdownFilePath =
-    'FrontEnd/ReactNotes/Basics/CoreConcepts/PropsState/Props';
+    'FrontEnd/React/Basics/CoreConcepts/PropsState/Props';
 
   return (
     <>
       <PageLayout>
         <Header />
-        <PageTitle title="Props in React" />
+        <PageTitle title="React Core Concepts - Props" />
         <Notes filePath={markdownFilePath} />
       </PageLayout>
     </>

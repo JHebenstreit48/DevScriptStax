@@ -4,7 +4,7 @@ import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const Nuances = () => {
-    const markdownFilePath = 'ToolsNotes/Containerization/GitNotes/Basics/Workflow/Nuances';
+    const markdownFilePath = 'Tools/Containerization/Git/Basics/Workflow/Nuances';
 
     return (
         <>

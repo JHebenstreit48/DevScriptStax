@@ -4,7 +4,7 @@ import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const Introduction = () => {
-  const markdownFilePath = '/GraphQLAndApolloNotes/ApolloNotes/ApolloServerNotes/Basics/Introduction';
+  const markdownFilePath = '/GraphQLAndApollo/Apollo/ApolloServer/Basics/Introduction';
 
   return (
     <>

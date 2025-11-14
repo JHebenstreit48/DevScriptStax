@@ -1,17 +1,17 @@
 import { Subpage } from '@/Navigation/Combined/Core/NavigationTypes';
 
-const ReactSetupStructure: Subpage = {
+const SetupStructure: Subpage = {
   name: 'Setup & Structure',
   subpages: [
     {
       name: 'Setup & Installation',
-      path: '/react/basics/setup/setup'
+      path: '/react/basics/setup-and-structure/setup'
     },
     {
       name: 'Project Structure',
-      path: '/react/basics/setup/structure'
+      path: '/react/basics/setup-and-structure/structure'
     }
   ]
 };
 
-export default ReactSetupStructure;
+export default SetupStructure;

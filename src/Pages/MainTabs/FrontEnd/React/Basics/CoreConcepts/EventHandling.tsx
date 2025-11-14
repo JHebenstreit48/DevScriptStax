@@ -5,13 +5,13 @@ import PageTitle from '@/Components/PageComponents/PageTitle';
 
 const EventHandling = () => {
   const markdownFilePath =
-    'FrontEnd/ReactNotes/Basics/CoreConcepts/EventHandling';
+    'FrontEnd/React/Basics/CoreConcepts/EventHandling';
 
   return (
     <>
       <PageLayout>
         <Header />
-        <PageTitle title="Event Handling in React" />
+        <PageTitle title="React Core Concepts - Event Handling" />
         <Notes filePath={markdownFilePath} />
       </PageLayout>
     </>

@@ -5,13 +5,13 @@ import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const State = () => {
   const markdownFilePath =
-    'FrontEnd/ReactNotes/Basics/CoreConcepts/PropsState/State';
+    'FrontEnd/React/Basics/CoreConcepts/PropsState/State';
 
   return (
     <>
       <PageLayout>
         <Header />
-        <PageTitle title="State in React" />
+        <PageTitle title="React Core Concepts - State" />
         <Notes filePath={markdownFilePath} />
       </PageLayout>
     </>

@@ -1,6 +1,6 @@
 import { Subpage } from '@/Navigation/Combined/Core/NavigationTypes';
 
-const ReactCoreConcepts: Subpage = {
+const CoreConcepts: Subpage = {
   name: 'Core Concepts',
   subpages: [
     {
@@ -9,18 +9,18 @@ const ReactCoreConcepts: Subpage = {
     },
     {
       name: 'Event Handling',
-      path: '/react/basics/core/eventhandling'
+      path: '/react/basics/core/event-handling'
     },
     {
       name: 'Props/State',
       subpages: [
         {
           name: 'Props',
-          path: '/react/basics/core/propsstate/props'
+          path: '/react/basics/core/props-and-state/props'
         },
         {
           name: 'State',
-          path: '/react/basics/core/propsstate/state'
+          path: '/react/basics/core/props-and-state/state'
         }
       ]
     },
@@ -40,4 +40,4 @@ const ReactCoreConcepts: Subpage = {
   ]
 };
 
-export default ReactCoreConcepts;
+export default CoreConcepts;
