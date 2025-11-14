@@ -5,13 +5,13 @@ import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const Introduction = () => {
   const markdownFilePath =
-    'TestingNotes/EndToEndNotes/CypressNotes/Basics/Fundamentals/Introduction';
+    'Testing/EndToEnd/Cypress/Basics/Fundamentals/Introduction';
 
   return (
     <>
       <PageLayout>
         <Header />
-        <PageTitle title="Cypress Introduction" />
+        <PageTitle title="Cypress Basics - Introduction" />
         <Notes
           filePath={markdownFilePath}
           

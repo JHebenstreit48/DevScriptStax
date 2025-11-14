@@ -3,9 +3,9 @@ import Header from "@/Components/Shared/Header/Header";
 import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
-const ReactSetup = () => {
+const Setup = () => {
   const markdownFilePath =
-    'FrontEnd/ReactNotes/Basics/Fundamentals/Setup';
+    'FrontEnd/React/Basics/SetupAndStructure/Setup';
 
   return (
     <>
@@ -18,4 +18,4 @@ const ReactSetup = () => {
   );
 };
 
-export default ReactSetup;
+export default Setup;

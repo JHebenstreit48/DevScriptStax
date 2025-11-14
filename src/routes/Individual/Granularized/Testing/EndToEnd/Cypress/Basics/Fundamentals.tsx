@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Introduction = lazy(() => import('@/Pages/MainTabs/Testing/Cypress/Basics/Fundamentals/Introduction'));
-const Setup = lazy(() => import('@/Pages/MainTabs/Testing/Cypress/Basics/Fundamentals/Setup'));
+const Introduction = lazy(() => import('@/Pages/MainTabs/Testing/E2E/Cypress/Basics/Fundamentals/Introduction'));
+const Setup = lazy(() => import('@/Pages/MainTabs/Testing/E2E/Cypress/Basics/Fundamentals/Setup'));
 
 const Fundamentals: RouteObject[] = [
   {

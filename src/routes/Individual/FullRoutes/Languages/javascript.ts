@@ -1,4 +1,5 @@
 import { RouteObject } from "react-router-dom";
+
 import Basics from "@/routes/Individual/Granularized/Languages/JavaScript/Basics";
 import Intermediate from "@/routes/Individual/Granularized/Languages/JavaScript/Intermediate";
 import Advanced from "@/routes/Individual/Granularized/Languages/JavaScript/Advanced";

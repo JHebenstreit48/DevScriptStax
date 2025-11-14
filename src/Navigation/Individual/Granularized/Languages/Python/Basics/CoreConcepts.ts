@@ -4,16 +4,16 @@ const CoreConcepts: Subpage = {
   name: "Core Concepts",
   subpages: [
     {
-      name: "Variables/Types",
-      path: "/python/basics/coreconcepts/variablestypes",
+      name: "Variables and Types",
+      path: "/python/basics/core-concepts/variables-and-types",
     },
     {
-      name: "Functions/Modules",
-      path: "/python/basics/coreconcepts/functionsmodules",
+      name: "Functions and Modules",
+      path: "/python/basics/core-concepts/functions-and-modules",
     },
     {
       name: "OOP",
-      path: "/python/basics/coreconcepts/oop",
+      path: "/python/basics/core-concepts/oop",
     },
   ],
 };

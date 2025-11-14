@@ -5,13 +5,13 @@ import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const JSXAndRendering = () => {
   const markdownFilePath =
-    'FrontEnd/ReactNotes/Basics/CoreConcepts/JSX';
+    'FrontEnd/React/Basics/CoreConcepts/JSX';
 
   return (
     <>
       <PageLayout>
         <Header />
-        <PageTitle title="JSX in React" />
+        <PageTitle title="React Core Concepts - JSX" />
         <Notes filePath={markdownFilePath} />
       </PageLayout>
     </>

@@ -3,8 +3,8 @@ import Header from '@/Components/Shared/Header/Header';
 import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
-const ReactIntro = () => {
-  const markdownFilePath = 'FrontEnd/ReactNotes/Basics/Fundamentals/Introduction';
+const Introduction = () => {
+  const markdownFilePath = 'FrontEnd/React/Basics/Fundamentals/Introduction';
 
   return (
     <>
@@ -17,4 +17,4 @@ const ReactIntro = () => {
   );
 };
 
-export default ReactIntro;
+export default Introduction;

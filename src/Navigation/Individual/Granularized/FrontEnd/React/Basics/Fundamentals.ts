@@ -1,6 +1,6 @@
 import { Subpage } from '@/Navigation/Combined/Core/NavigationTypes';
 
-const ReactFundamentals: Subpage = {
+const Fundamentals: Subpage = {
   name: 'Fundamentals',
   subpages: [
     {
@@ -14,4 +14,4 @@ const ReactFundamentals: Subpage = {
   ]
 };
 
-export default ReactFundamentals;
+export default Fundamentals;

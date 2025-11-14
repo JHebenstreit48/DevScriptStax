@@ -4,7 +4,7 @@ import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const Workflow = () => {
-    const markdownFilePath = "ToolsNotes/Containerization/GitNotes/Basics/Workflow/FullWorkflow";
+    const markdownFilePath = "Tools/Containerization/Git/Basics/Workflow/FullWorkflow";
 
     return (
         <>
