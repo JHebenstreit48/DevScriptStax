@@ -9,9 +9,56 @@
   justify-content: center;
   align-items: center;
 }
+
 @mixin text-emphasis($clr, $size) {
   color: $clr;
   font: italic bold $size $font-main;
+}
+
+/* Word-level emphasis: subtle glow + tiny hover pop, no background blocks */
+@mixin inline-pop($clr, $size, $family: $font-main, $weight: 500) {
+  color: $clr;
+  font-size: $size;
+  font-weight: $weight;
+  font-family: $family;
+  font-style: italic;                // can be overridden after include
+  letter-spacing: 0.03em;
+
+  position: relative;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.55);
+
+  transition:
+    color 140ms ease,
+    text-shadow 140ms ease,
+    transform 110ms ease;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -0.18em;
+    height: 1px;
+    border-radius: 999px;
+    background: color.adjust($clr, $alpha: -0.5);
+    transform-origin: center;
+    transform: scaleX(0);
+    opacity: 0.9;
+    transition:
+      transform 150ms ease-out,
+      opacity 150ms ease-out;
+  }
+
+  &:hover {
+    transform: translateY(-0.02em);
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.9);
+    color: color.adjust($clr, $lightness: 6%);
+
+    &::after {
+      transform: scaleX(1);
+      opacity: 1;
+    }
+  }
 }
 
 /* =============================
@@ -81,14 +128,12 @@
     z-index: 0;
 
     background:
-      /* single oversized diagonal highlight (no tiling) */
       linear-gradient(
         var(--sheen-angle),
         rgba(255,255,255,0) var(--sheen-start),
         rgba(255,255,255,var(--sheen-alpha)) var(--sheen-peak),
         rgba(255,255,255,0) var(--sheen-end)
       ),
-      /* soft global wash */
       linear-gradient(145deg, rgba(255,255,255,0.05), transparent 60%);
     background-repeat: no-repeat;
     background-size: cover, cover;
@@ -183,6 +228,7 @@
         padding: 0 4px;
       }
     }
+
     h1 {
       font-size: $notes-h1-size;
       margin-bottom: $notes-h-margin-bottom;
@@ -204,10 +250,12 @@
         background: currentColor;
         transition: width 0.28s ease;
       }
+
       &:hover {
         color: color.adjust(#45b6ff, $lightness: 6%);
         &::after { width: 100%; }
       }
+
       &:focus-visible {
         outline: none;
         box-shadow: 0 0 0 3px color.adjust(#45b6ff, $alpha: -0.6);
@@ -234,12 +282,35 @@
       margin-right: auto;
     }
 
-    /* Emphasis helpers */
+    /* Emphasis helpers (inline words & inline code) */
+
+    /* primary keyword: gold, JetBrains Mono */
     .emphasis {
-      @include text-emphasis($notes-secondary, $notes-emphasis-size);
-      @include maxw($cellphone-portrait) { font-size: 1.1rem; }
+      @include inline-pop(
+        $notes-secondary,
+        $notes-emphasis-size,
+        $font-emphasis,
+        500
+      );
+
+      @include maxw($cellphone-portrait) {
+        font-size: 1.1rem;
+      }
     }
-    .secondEmphasis { @include text-emphasis($notes-success, $notes-emphasis-size); }
+
+    /* secondary keyword: cyan, slightly lighter, not italic */
+    .secondEmphasis {
+      @include inline-pop(
+        $notes-info,
+        $notes-emphasis-size - 1px,
+        $font-emphasis,
+        400
+      );
+      font-style: normal;           // contrast with primary emphasis
+      letter-spacing: 0.02em;
+    }
+
+    /* legacy heading-style emphasis (unchanged) */
     .subheadingEmphasis1 {
       @include flex-center;
       @include text-emphasis($notes-highlight, 40px);
@@ -247,13 +318,43 @@
       max-width: 100%;
       text-align: center;
     }
-    .subheadingEmphasis2 { @include text-emphasis($notes-secondary, $notes-sub2-size); }
-    .codeSnip { color: $notes-emphasis; font: $notes-code-font; }
+
+    .subheadingEmphasis2 {
+      @include text-emphasis($notes-secondary, $notes-sub2-size);
+    }
+
+    /* inline code pill (span-based, not backticks) */
+    .codeSnip {
+      display: inline-block;
+      padding: 0.02em 0.26em;
+      border-radius: 7px;
+
+      font: $notes-code-font;
+      background-color: color.adjust($notes-code-bg, $lightness: 10%);
+      color: #e5f4ff;
+
+      border: 1px solid rgba(6, 159, 248, 0.32);
+      box-shadow: 0 0 2px rgba(0, 0, 0, 0.65);
+
+      transition:
+        background-color 100ms ease,
+        box-shadow 100ms ease,
+        transform 100ms ease;
+
+      &:hover {
+        background-color: color.adjust($notes-code-bg, $lightness: 14%);
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
+        transform: translateY(-0.01em);
+      }
+    }
 
     /* Lists */
     .fullWidthBullet {
       column-count: 1;
-      @include maxw($cellphone-portrait) { text-align: left; }
+
+      @include maxw($cellphone-portrait) {
+        text-align: left;
+      }
     }
 
     /* Tables */
@@ -273,7 +374,9 @@
         margin-left: auto;
         margin-right: auto;
       }
+
       .tableHeader { background-color: $notes-table-header-bg; }
+
       .tableCellHeader {
         text-align: center;
         padding: $notes-table-header-padding;
@@ -282,18 +385,25 @@
         font-weight: bold;
         word-wrap: break-word;
       }
+
       .tableRow:hover {
         background-color: rgba(255, 255, 255, 0.1);
         transition: background-color 0.3s ease-in-out;
       }
-      .tableCell, .centeredCell {
+
+      .tableCell,
+      .centeredCell {
         padding: $notes-table-cell-padding;
         text-align: left;
         border: $notes-table-border;
         background-color: $notes-table-bg;
         word-wrap: break-word;
       }
-      .tableEmphasis { @include text-emphasis($notes-secondary, $notes-table-emphasis-size); }
+
+      /* table-specific emphasis uses same modern word style */
+      .tableEmphasis {
+        @include inline-pop($notes-secondary, $notes-table-emphasis-size, $mono-jetbrains);
+      }
     }
 
     /* ===== Code blocks ===== */
@@ -340,10 +450,13 @@
         padding: 0.25rem 0.5rem;
         cursor: pointer;
 
-        &:hover { background: color.adjust($notes-border-subtle, $lightness: 10%); }
+        &:hover {
+          background: color.adjust($notes-border-subtle, $lightness: 10%);
+        }
       }
 
-      pre, code {
+      pre,
+      code {
         line-height: 1.7 !important;
         white-space: pre-wrap !important;
         word-break: break-word !important;
@@ -367,5 +480,7 @@
    Reduced motion
 ============================= */
 @media (prefers-reduced-motion: reduce) {
-  .card .markdownContent a::after { transition: none; }
+  .card .markdownContent a::after {
+    transition: none;
+  }
 }
