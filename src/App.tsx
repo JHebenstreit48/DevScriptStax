@@ -1,22 +1,20 @@
-import { Suspense } from "react";
-import { Outlet } from "react-router-dom";
-import Footer from "@/Components/Shared/Footer";
-import RouteTracker from "@/Components/Shared/analytics/RouteTracker";
-import BackToTopGate from "@/Components/Shared/BackToTop/Gate";
-// import WakeGate from "@/Components/Shared/WakeGate";
+import { Suspense } from 'react';
+import { Outlet } from 'react-router-dom';
+import Footer from '@/Components/Shared/Footer';
+import RouteTracker from '@/Components/Shared/analytics/RouteTracker';
+import BackToTopGate from '@/Components/Shared/BackToTop/Gate';
 
-import "@/SCSS/Page/Page.scss";
-import "@/SCSS/Page/Header/Header.scss";
-import "@/SCSS/Page/Footer.scss";
-import "@/SCSS/Navigation/Navigation.scss";
-import "@/SCSS/Navigation/SearchModal.scss";
-import "@/SCSS/Page/Error.scss";
+import '@/SCSS/Page/Page.scss';
+import '@/SCSS/Page/Header/Header.scss';
+import '@/SCSS/Page/Footer.scss';
+import '@/SCSS/Navigation/Navigation.scss';
+import '@/SCSS/Navigation/SearchModal.scss';
+import '@/SCSS/Page/Error.scss';
 
 export default function App() {
   return (
     <div className="appContainer">
       <RouteTracker />
-      {/* <WakeGate /> pre-wakes backend in the background */}
       <BackToTopGate />
 
       <div className="contentWrapper">
