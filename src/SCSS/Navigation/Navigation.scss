@@ -450,7 +450,7 @@ button.dropdownButton.level-1::before {
 
 /* The chevron itself (inline, no absolute positioning) */
 button.dropdownButton.level-1::after {
-  content: '▸'; /* closed */
+  content: '▾'; /* closed = down */
   display: inline-block;
   width: $chev-size; /* equals spacer width */
   text-align: center;
@@ -460,7 +460,7 @@ button.dropdownButton.level-1::after {
 
 /* Open state = down arrow */
 button.dropdownButton.level-1.active::after {
-  content: '▾';
+  content: '▴'; /* open = up */
 }
 
 /* Page links never show chevrons/spacer */
