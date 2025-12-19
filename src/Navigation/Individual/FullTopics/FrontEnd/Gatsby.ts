@@ -1,13 +1,13 @@
 import { Subpage } from '@/Navigation/Combined/Core/NavigationTypes';
 
-import GatsbyBasics from '@/Navigation/Individual/Granularized/FrontEnd/Gatsby/Basics';
-import GatsbyAdvanced from '@/Navigation/Individual/Granularized/FrontEnd/Gatsby/Advanced';
+import Basics from '@/Navigation/Individual/Granularized/FrontEnd/Gatsby/Basics';
+import Advanced from '@/Navigation/Individual/Granularized/FrontEnd/Gatsby/Advanced';
 
 const Gatsby: Subpage = {
 name : 'Gatsby',
 subpages: [
-    GatsbyBasics,
-    GatsbyAdvanced
+    Basics,
+    Advanced
   ]
 };
 

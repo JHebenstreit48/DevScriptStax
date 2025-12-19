@@ -7,8 +7,8 @@ const Basics: Subpage = {
       name: "Fundamentals",
       subpages: [
         {
-          name: "Intro",
-          path: "/dart/basics/fundamentals/intro"
+          name: "Introduction",
+          path: "/dart/basics/fundamentals/introduction"
         },
         {
           name: "Install & Setup",

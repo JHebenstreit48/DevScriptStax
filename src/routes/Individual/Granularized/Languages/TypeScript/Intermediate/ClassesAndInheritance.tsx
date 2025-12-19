@@ -4,13 +4,13 @@ import { RouteObject } from 'react-router-dom';
 const ClassFeaturesAccessModifiers = lazy(
   () =>
     import(
-      '@/Pages/MainTabs/Languages/TypeScript/Intermediate/ClassesAndInheritance/FeaturesAndAccessModifiers'
+      '@/Pages/MainTabs/Languages/TypeScript/Intermediate/ClassesAndInheritance/ClassFeaturesAndAccessModifiers'
     )
 );
 const InheritanceExtends = lazy(
   () =>
     import(
-      '@/Pages/MainTabs/Languages/TypeScript/Intermediate/ClassesAndInheritance/InheritanceExtends'
+      '@/Pages/MainTabs/Languages/TypeScript/Intermediate/ClassesAndInheritance/InheritanceAndExtends'
     )
 );
 

@@ -10,7 +10,11 @@
     "preview": "vite preview",
     "clean": "del-cli \"dist\" \"src/**/*.js\"",
     "cypress:open": "cypress open",
-    "cypress:run": "cypress run"
+    "cypress:run": "cypress run",
+    "gen:report": "tsx -r tsconfig-paths/register src/scripts/cli/report.ts",
+    "gen:pages": "tsx -r tsconfig-paths/register src/scripts/cli/gen-pages.ts",
+    "gen:routes": "tsx -r tsconfig-paths/register src/scripts/cli/gen-routes.ts",
+    "gen:all": "tsx -r tsconfig-paths/register src/scripts/cli/gen-all.ts"
   },
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^7.1.0",
@@ -54,6 +58,8 @@
     "rimraf": "^6.0.1",
     "rollup-plugin-visualizer": "^5.14.0",
     "sass": "^1.89.2",
+    "tsconfig-paths": "^4.2.0",
+    "tsx": "^4.21.0",
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.0.1",
     "vite": "^7.1.10"
