@@ -3,18 +3,18 @@ import Header from '@/Components/Shared/Header/Header';
 import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
-const Introduction = () => {
-  const markdownFilePath = '/GraphQLAndApollo/Apollo/ApolloServer/Basics/Fundamentals/Introduction';
+const CodeFirst = () => {
+  const markdownFilePath = 'GraphQLAndApollo/Apollo/ApolloServer/Basics/SchemaDelivery/CodeFirst';
 
   return (
     <>
       <PageLayout>
         <Header />
-        <PageTitle title="Apollo Server - Fundamentals - Introduction" />
+        <PageTitle title="Code-First" />
         <Notes filePath={markdownFilePath} />
       </PageLayout>
     </>
   );
 };
 
-export default Introduction;
+export default CodeFirst;

@@ -11,6 +11,7 @@
     "clean": "del-cli \"dist\" \"src/**/*.js\"",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
+    
     "gen:report": "tsx -r tsconfig-paths/register src/scripts/cli/report.ts",
     "gen:pages": "tsx -r tsconfig-paths/register src/scripts/cli/gen-pages.ts",
     "gen:routes": "tsx -r tsconfig-paths/register src/scripts/cli/gen-routes.ts",
