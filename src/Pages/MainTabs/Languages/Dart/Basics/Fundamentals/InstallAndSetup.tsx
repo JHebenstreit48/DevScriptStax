@@ -10,7 +10,7 @@ const InstallAndSetup = () => {
     <>
       <PageLayout>
         <Header />
-        <PageTitle title="Install & Setup" />
+        <PageTitle title="Dart Fundamentals - Install & Setup" />
         <Notes filePath={markdownFilePath} />
       </PageLayout>
     </>

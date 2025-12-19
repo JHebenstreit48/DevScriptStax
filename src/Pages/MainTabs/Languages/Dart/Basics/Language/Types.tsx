@@ -10,7 +10,7 @@ const Types = () => {
     <>
       <PageLayout>
         <Header />
-        <PageTitle title="Types" />
+        <PageTitle title="Dart Basics - Language Types" />
         <Notes filePath={markdownFilePath} />
       </PageLayout>
     </>

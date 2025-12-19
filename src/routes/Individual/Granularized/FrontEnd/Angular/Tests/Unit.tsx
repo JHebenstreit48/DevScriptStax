@@ -2,7 +2,7 @@ import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
 const Introduction = lazy(
-  () => import('@/Pages/MainTabs/FrontEnd/Angular/Tests/Unit/Introduction')
+  () => import('@/Pages/MainTabs/FrontEnd/Angular/Testing/Unit/Introduction')
 );
 
 const Unit: RouteObject[] = [

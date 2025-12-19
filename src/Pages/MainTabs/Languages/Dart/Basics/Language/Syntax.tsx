@@ -10,7 +10,7 @@ const Syntax = () => {
     <>
       <PageLayout>
         <Header />
-        <PageTitle title="Syntax" />
+        <PageTitle title="Dart Basics - Language Syntax" />
         <Notes filePath={markdownFilePath} />
       </PageLayout>
     </>

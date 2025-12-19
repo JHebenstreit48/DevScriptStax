@@ -8,7 +8,7 @@ const CoreTypes = lazy(
 const InterfaceAndDeclare = lazy(
   () =>
     import(
-      '@/Pages/MainTabs/Languages/TypeScript/Basics/Types/InterfaceAndDeclare'
+      '@/Pages/MainTabs/Languages/TypeScript/Basics/Types/InterfaceAndDeclarations'
     )
 );
 

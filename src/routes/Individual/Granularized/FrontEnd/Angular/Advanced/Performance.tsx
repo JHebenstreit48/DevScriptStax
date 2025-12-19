@@ -6,7 +6,7 @@ const BundleOptimization = lazy(
 );
 
 const BudgetsProfiling = lazy(
-  () => import('@/Pages/MainTabs/FrontEnd/Angular/Advanced/Performance/BudgetsProfiling')
+  () => import('@/Pages/MainTabs/FrontEnd/Angular/Advanced/Performance/BudgetsAndProfiling')
 );
 
 const performance: RouteObject[] = [
