@@ -11,7 +11,7 @@ export const config = {
   sectionNameMap: {
     "Front End": "FrontEnd",
     "Back End": "BackEnd",
-    "GraphQL And Apollo": "GraphQLAndApollo",
+    "GraphQL & Apollo": "GraphQLAndApollo",
     "Cloud and Deployment": "CloudAndDeployment",
     "Languages": "Languages",
     "Testing": "Testing",
