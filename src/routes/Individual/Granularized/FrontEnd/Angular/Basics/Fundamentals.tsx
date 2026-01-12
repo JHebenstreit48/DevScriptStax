@@ -5,7 +5,7 @@ const Introduction = lazy(
   () => import('@/Pages/MainTabs/FrontEnd/Angular/Basics/Fundamentals/Introduction')
 );
 const CreateRun = lazy(
-  () => import('@/Pages/MainTabs/FrontEnd/Angular/Basics/Fundamentals/CreatingRunningApp')
+  () => import('@/Pages/MainTabs/FrontEnd/Angular/Basics/Fundamentals/CreatingRunning')
 );
 const CLI = lazy(
   () => import('@/Pages/MainTabs/FrontEnd/Angular/Basics/Fundamentals/CLI')

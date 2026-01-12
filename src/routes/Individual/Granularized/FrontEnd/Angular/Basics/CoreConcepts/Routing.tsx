@@ -5,7 +5,7 @@ const Basics = lazy(
   () => import('@/Pages/MainTabs/FrontEnd/Angular/Basics/CoreConcepts/Routing/Basics')
 );
 const GuardsAndResolvers = lazy(
-  () => import('@/Pages/MainTabs/FrontEnd/Angular/Basics/CoreConcepts/Routing/GuardsAndResolvers')
+  () => import('@/Pages/MainTabs/FrontEnd/Angular/Basics/CoreConcepts/Routing/GuardsResolvers')
 );
 const LazyLoading = lazy(
   () => import('@/Pages/MainTabs/FrontEnd/Angular/Basics/CoreConcepts/Routing/LazyLoading')

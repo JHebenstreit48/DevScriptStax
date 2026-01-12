@@ -3,13 +3,17 @@ import type { Subpage } from '@/Navigation/Combined/Core/NavigationTypes';
 import { config } from '../config';
 import { ensureDir, exists, writeIfChanged } from './fs';
 import { pascalize, sectionFolderName } from './naming';
+import { matchesWithin } from './within';
 
-import { matchesWithin } from './within'; // ✅ correct path (same folder)
+import {
+  computeLeafRouteSignatureFromPaths,
+  getLeafRouteSignatureIndex,
+} from './scanExisting';
 
 type Filter = {
   tab?: string;
   topic?: string;
-  within?: string; // NEW
+  within?: string;
   dryRun?: boolean;
   limit?: number;
 };
@@ -21,9 +25,9 @@ type Result = {
 };
 
 function makeLeafGroupRoutesFile(args: {
-  fileVarName: string;                 // e.g. ControlFlow
+  fileVarName: string;
   leafChildren: Array<{ name: string; path: string }>;
-  pageImportBaseDir: string;           // e.g. "@/Pages/MainTabs/Languages/Dart/Basics/ControlFlow"
+  pageImportBaseDir: string;
 }) {
   const used = new Map<string, number>();
 
@@ -46,9 +50,9 @@ function makeLeafGroupRoutesFile(args: {
 
     routeLines.push(
       `  {\n` +
-      `    path: '${child.path}',\n` +
-      `    element: <${varName} />,\n` +
-      `  },`
+        `    path: '${child.path}',\n` +
+        `    element: <${varName} />,\n` +
+        `  },`
     );
   }
 
@@ -79,18 +83,14 @@ export function generateLeafLazyRoutes(pagesRoot: Subpage[], filter: Filter): Re
   let createdCount = 0;
 
   const routesRoot = path.join(process.cwd(), 'src', 'routes', 'Individual', 'Granularized');
+  const sigIdx = getLeafRouteSignatureIndex(routesRoot);
 
   const walk = (section: Subpage, topic: Subpage, node: Subpage, groupPathCrumbs: string[]) => {
     if (createdCount >= limit) return;
     if (!node.subpages || node.subpages.length === 0) return;
 
-    // ✅ NEW: prune traversal outside the desired subtree
-    // Build crumbs in the same shape as flattenNav would: [Tab, Topic, ...groups..., Leaf]
-    // groupPathCrumbs represents the group chain from topic down to this node.
     const fakeCrumbs = [section.name, topic.name, ...groupPathCrumbs, '__leaf__'];
-    if (!matchesWithin(filter.within, fakeCrumbs)) {
-      return;
-    }
+    if (!matchesWithin(filter.within, fakeCrumbs)) return;
 
     const leafChildren = node.subpages.filter((c) => !!c.path) as Array<{ name: string; path: string }>;
     const nonLeafChildren = node.subpages.filter((c) => !c.path);
@@ -109,24 +109,32 @@ export function generateLeafLazyRoutes(pagesRoot: Subpage[], filter: Filter): Re
 
       const pageImportBaseDir = `@/Pages/MainTabs/${sectionFolder}/${topicFolder}/${groupFolders.join('/')}`;
 
-      const content = makeLeafGroupRoutesFile({
-        fileVarName,
-        leafChildren,
-        pageImportBaseDir,
-      });
+      const sig = computeLeafRouteSignatureFromPaths(leafChildren.map((c) => c.path));
+
+      if (sigIdx.has(sig)) {
+        out.skipped.push(sigIdx.get(sig)!);
+        return;
+      }
+
+      const content = makeLeafGroupRoutesFile({ fileVarName, leafChildren, pageImportBaseDir });
 
       if (filter.dryRun) {
-        out.wouldWrite.push(outPath);
-      } else {
-        if (exists(outPath)) {
-          out.skipped.push(outPath);
-          return;
-        }
-
-        ensureDir(outDir);
-        writeIfChanged(outPath, content);
-        out.wrote.push(outPath);
+        if (exists(outPath) || sigIdx.has(sig)) out.skipped.push(outPath);
+        else out.wouldWrite.push(outPath);
+        createdCount++;
+        return;
       }
+
+      if (exists(outPath)) {
+        out.skipped.push(outPath);
+        return;
+      }
+
+      ensureDir(outDir);
+      writeIfChanged(outPath, content);
+      out.wrote.push(outPath);
+
+      sigIdx.set(sig, outPath);
 
       createdCount++;
       return;
