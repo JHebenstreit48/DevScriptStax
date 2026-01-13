@@ -3,9 +3,9 @@ import { Subpage } from '@/Navigation/Combined/Core/NavigationTypes';
 // ---------- Deployment Platforms Navigation Start ----------
 
 // ---------- Front-End Deployment Navigation Start ----------
-import Netlify from '@/Navigation/Individual/FullTopics/CloudAndDeployment/CloudServices/DeploymentPlatforms/FrontEndNav/Netlify';
-import Vercel from "@/Navigation/Individual/FullTopics/CloudAndDeployment/CloudServices/DeploymentPlatforms/FrontEndNav/Vercel";
-import CloudflarePages from "@/Navigation/Individual/FullTopics/CloudAndDeployment/CloudServices/DeploymentPlatforms/FrontEndNav/CloudflarePages";
+import Netlify from '@/Navigation/Individual/FullTopics/CloudAndDeployment/CloudServices/DeploymentPlatforms/FrontEnd/Netlify';
+import Vercel from "@/Navigation/Individual/FullTopics/CloudAndDeployment/CloudServices/DeploymentPlatforms/FrontEnd/Vercel";
+import CloudflarePages from "@/Navigation/Individual/FullTopics/CloudAndDeployment/CloudServices/DeploymentPlatforms/FrontEnd/CloudflarePages";
 // ---------- Front-End Deployment Navigation End ----------
 
 // ---------- Full-Stack Deployment Navigation Start ----------

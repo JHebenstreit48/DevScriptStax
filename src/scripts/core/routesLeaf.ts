@@ -89,6 +89,7 @@ export function generateLeafLazyRoutes(pagesRoot: Subpage[], filter: Filter): Re
     if (createdCount >= limit) return;
     if (!node.subpages || node.subpages.length === 0) return;
 
+    // prune outside subtree
     const fakeCrumbs = [section.name, topic.name, ...groupPathCrumbs, '__leaf__'];
     if (!matchesWithin(filter.within, fakeCrumbs)) return;
 
@@ -111,6 +112,7 @@ export function generateLeafLazyRoutes(pagesRoot: Subpage[], filter: Filter): Re
 
       const sig = computeLeafRouteSignatureFromPaths(leafChildren.map((c) => c.path));
 
+      // If an equivalent route group already exists anywhere, skip (prevents duplicates on rename)
       if (sigIdx.has(sig)) {
         out.skipped.push(sigIdx.get(sig)!);
         return;
@@ -119,7 +121,8 @@ export function generateLeafLazyRoutes(pagesRoot: Subpage[], filter: Filter): Re
       const content = makeLeafGroupRoutesFile({ fileVarName, leafChildren, pageImportBaseDir });
 
       if (filter.dryRun) {
-        if (exists(outPath) || sigIdx.has(sig)) out.skipped.push(outPath);
+        if (sigIdx.has(sig)) out.skipped.push(sigIdx.get(sig)!);
+        else if (exists(outPath)) out.skipped.push(outPath);
         else out.wouldWrite.push(outPath);
         createdCount++;
         return;
@@ -134,6 +137,7 @@ export function generateLeafLazyRoutes(pagesRoot: Subpage[], filter: Filter): Re
       writeIfChanged(outPath, content);
       out.wrote.push(outPath);
 
+      // update in-memory index so later groups in same run see it
       sigIdx.set(sig, outPath);
 
       createdCount++;

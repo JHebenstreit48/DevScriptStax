@@ -12,7 +12,7 @@ export const config = {
     "Front End": "FrontEnd",
     "Back End": "BackEnd",
     "GraphQL & Apollo": "GraphQLAndApollo",
-    "Cloud and Deployment": "CloudAndDeployment",
+    "Cloud & Deploy": "CloudAndDeployment",
     "Languages": "Languages",
     "Testing": "Testing",
     "Tools": "Tools",
