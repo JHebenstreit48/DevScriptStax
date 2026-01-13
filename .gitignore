@@ -63,3 +63,4 @@ lerna-debug.log*
 coverage/
 .temp/
 .cache/
+.gen-index/
