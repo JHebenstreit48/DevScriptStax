@@ -1,4 +1,4 @@
-import path from "node:path";
+import path from 'node:path';
 import pages from '@/Navigation/Combined/Core/Pages';
 import type { Subpage } from '@/Navigation/Combined/Core/NavigationTypes';
 
@@ -21,9 +21,16 @@ function main() {
 
   // Group by leaf folder (directory containing the .tsx pages)
   const groupCounts = new Map<string, number>();
+  const groupStems = new Map<string, Set<string>>();
+
   for (const d of derived) {
     const leafFolder = path.dirname(d.pageFsPath);
+
     groupCounts.set(leafFolder, (groupCounts.get(leafFolder) ?? 0) + 1);
+
+    const set = groupStems.get(leafFolder) ?? new Set<string>();
+    set.add(d.componentName); // stems = component names
+    groupStems.set(leafFolder, set);
   }
 
   let created = 0;
@@ -35,6 +42,7 @@ function main() {
     const leafFolderFsPath = path.dirname(d.pageFsPath);
     const leafFolderParentFsPath = path.dirname(leafFolderFsPath);
     const expectedLeafCount = groupCounts.get(leafFolderFsPath) ?? 1;
+    const expectedStems = groupStems.get(leafFolderFsPath) ?? new Set([d.componentName]);
 
     const res = createPageIfMissing({
       pageFsPath: d.pageFsPath,
@@ -42,6 +50,7 @@ function main() {
       markdownFilePath: d.markdownFilePath,
       pageTitle: d.pageTitle,
       expectedLeafCount,
+      expectedStems,
       leafFolderFsPath,
       leafFolderParentFsPath,
       dryRun: args.dryRun,
@@ -52,7 +61,9 @@ function main() {
   }
 
   console.log(
-    `gen:pages tab=${args.tab ?? '(all)'} topic=${args.topic ?? '(all)'} within=${args.within ?? '(all)'} dryRun=${!!args.dryRun}`
+    `gen:pages tab=${args.tab ?? '(all)'} topic=${args.topic ?? '(all)'} within=${
+      args.within ?? '(all)'
+    } dryRun=${!!args.dryRun}`
   );
   console.log(`Created: ${created}`);
   console.log(`Skipped (already existed): ${skipped}`);

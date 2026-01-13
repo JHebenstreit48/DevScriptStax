@@ -10,16 +10,16 @@ function main() {
   const result = generateLeafLazyRoutes(pages as unknown as Subpage[], {
     tab: args.tab,
     topic: args.topic,
-    within: args.within, // ✅ NEW
+    within: args.within,
     dryRun: args.dryRun,
     limit: args.limit,
   });
 
-  if (args.dryRun) {
-    for (const p of result.wouldWrite) console.log(`[dry-run] would write ${p}`);
-  } else {
-    for (const p of result.wrote) console.log(`wrote ${p}`);
-  }
+  // if (args.dryRun) {
+  //   for (const p of result.wouldWrite) console.log(`[dry-run] would write ${p}`);
+  // } else {
+  //   for (const p of result.wrote) console.log(`wrote ${p}`);
+  // }
 
   console.log(
     `gen:routes tab=${args.tab ?? '(all)'} topic=${args.topic ?? '(all)'} within=${args.within ?? '(all)'} dryRun=${!!args.dryRun}`

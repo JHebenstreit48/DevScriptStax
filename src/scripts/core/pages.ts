@@ -1,6 +1,5 @@
-import path from "node:path";
-import { exists, writeText } from "./fs";
-import { countTsxFilesInDir, findSiblingDirWithTsxCount } from "./scanExisting";
+import { exists, writeText } from './fs';
+import { countTsxFilesInDir, findSiblingDirWithSameTsxStems } from './scanExisting';
 
 export function makePageStub(opts: {
   componentName: string;
@@ -35,11 +34,11 @@ export default ${componentName};
 /**
  * Prevent duplicates when nav-derived folder names differ from your existing folder names.
  *
- * Rule:
- * - If the expected folder already contains the expected number of .tsx files for that leaf group, skip.
- * - OR if any sibling folder under the same parent has exactly that expected count, skip (prevents creating new "RxJSAndReactiveProgramming" when "RxJSAndReactive" already matches).
+ * Updated rule (deep-nesting safe):
+ * - If the expected leaf folder already has the expected # of .tsx files, skip.
+ * - OR if any sibling folder under the same parent has the SAME set of expected .tsx stems, skip.
  *
- * To make this work, gen-pages.ts must pass `expectedLeafCount` and `leafFolderParentFsPath`.
+ * (Count-only sibling matching causes false positives when many groups have the same size, e.g. lots of 2-page groups.)
  */
 export function createPageIfMissing(args: {
   pageFsPath: string;
@@ -47,25 +46,26 @@ export function createPageIfMissing(args: {
   markdownFilePath: string;
   pageTitle: string;
 
-  // NEW: leaf group metadata
-  expectedLeafCount: number;         // how many pages should exist in this leaf group folder
-  leafFolderFsPath: string;          // folder where this page would live
-  leafFolderParentFsPath: string;    // parent folder containing the leaf folder (for sibling checks)
+  // leaf group metadata
+  expectedLeafCount: number;
+  expectedStems: Set<string>;         // NEW
+  leafFolderFsPath: string;
+  leafFolderParentFsPath: string;
 
   dryRun?: boolean;
-}): "skipped" | "created" {
+}): 'skipped' | 'created' {
   // If the file already exists exactly where we expect it, skip.
-  if (exists(args.pageFsPath)) return "skipped";
+  if (exists(args.pageFsPath)) return 'skipped';
 
   // 1) If the expected leaf folder already has the exact expected # of .tsx files, skip all new files in it.
   const currentCount = countTsxFilesInDir(args.leafFolderFsPath);
-  if (currentCount === args.expectedLeafCount && args.expectedLeafCount > 0) return "skipped";
+  if (currentCount === args.expectedLeafCount && args.expectedLeafCount > 0) return 'skipped';
 
-  // 2) If a sibling folder already has the exact expected # of .tsx files, treat it as "already done" and skip.
-  const siblingMatch = findSiblingDirWithTsxCount(args.leafFolderParentFsPath, args.expectedLeafCount);
-  if (siblingMatch) return "skipped";
+  // 2) If a sibling folder already has the same expected stems, treat it as "already done" and skip.
+  const siblingMatch = findSiblingDirWithSameTsxStems(args.leafFolderParentFsPath, args.expectedStems);
+  if (siblingMatch) return 'skipped';
 
-  if (args.dryRun) return "created";
+  if (args.dryRun) return 'created';
 
   writeText(
     args.pageFsPath,
@@ -76,5 +76,5 @@ export function createPageIfMissing(args: {
     })
   );
 
-  return "created";
+  return 'created';
 }
