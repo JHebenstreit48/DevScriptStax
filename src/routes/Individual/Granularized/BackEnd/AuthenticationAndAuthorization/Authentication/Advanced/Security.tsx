@@ -1,11 +1,11 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const BruteForce = lazy(() => import('@/Pages/MainTabs/BackEnd/AuthenticationAndAuthorization/Authentication/Advanced/Security/BruteForce'));
-const HijackingCSRF = lazy(() => import('@/Pages/MainTabs/BackEnd/AuthenticationAndAuthorization/Authentication/Advanced/Security/HijackingCSRF'));
-const CredentialStuffing = lazy(() => import('@/Pages/MainTabs/BackEnd/AuthenticationAndAuthorization/Authentication/Advanced/Security/CredentialStuffing'));
-const Passwordless = lazy(() => import('@/Pages/MainTabs/BackEnd/AuthenticationAndAuthorization/Authentication/Advanced/Security/Passwordless'));
-const ZeroTrust = lazy(() => import('@/Pages/MainTabs/BackEnd/AuthenticationAndAuthorization/Authentication/Advanced/Security/ZeroTrust'));
+const BruteForce = lazy(() => import('@/Pages/MainTabs/BackEnd/AuthenticateAndAuthorize/Authentication/Advanced/Security/BruteForce'));
+const HijackingCSRF = lazy(() => import('@/Pages/MainTabs/BackEnd/AuthenticateAndAuthorize/Authentication/Advanced/Security/HijackingCSRF'));
+const CredentialStuffing = lazy(() => import('@/Pages/MainTabs/BackEnd/AuthenticateAndAuthorize/Authentication/Advanced/Security/CredentialStuffing'));
+const Passwordless = lazy(() => import('@/Pages/MainTabs/BackEnd/AuthenticateAndAuthorize/Authentication/Advanced/Security/Passwordless'));
+const ZeroTrust = lazy(() => import('@/Pages/MainTabs/BackEnd/AuthenticateAndAuthorize/Authentication/Advanced/Security/ZeroTrust'));
 
 const Security: RouteObject[] = [
   {

@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const SocialLogins = lazy(() => import('@/Pages/MainTabs/BackEnd/AuthenticationAndAuthorization/Authentication/Intermediate/ModernMethods/SocialLogins'));
-const WebAuthn = lazy(() => import('@/Pages/MainTabs/BackEnd/AuthenticationAndAuthorization/Authentication/Intermediate/ModernMethods/WebAuthn'));
+const SocialLogins = lazy(() => import('@/Pages/MainTabs/BackEnd/AuthenticateAndAuthorize/Authentication/Intermediate/ModernMethods/SocialLogins'));
+const WebAuthn = lazy(() => import('@/Pages/MainTabs/BackEnd/AuthenticateAndAuthorize/Authentication/Intermediate/ModernMethods/WebAuthn'));
 
 const ModernMethods: RouteObject[] = [
   {

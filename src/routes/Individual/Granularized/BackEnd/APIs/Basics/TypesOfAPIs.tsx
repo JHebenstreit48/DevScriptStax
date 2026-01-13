@@ -1,7 +1,7 @@
 import { lazy } from "react";
 import { RouteObject } from "react-router-dom";
 
-const PublicVsPrivate = lazy(() => import("@/Pages/MainTabs/BackEnd/APIs/TypesOfAPIs/PubVSPrivate"));
+const PublicVsPrivate = lazy(() => import("@/Pages/MainTabs/BackEnd/APIs/Basics/TypesOfAPIs/PubVSPrivate"));
 
 const TypesOfAPIs: RouteObject[] = [
     {

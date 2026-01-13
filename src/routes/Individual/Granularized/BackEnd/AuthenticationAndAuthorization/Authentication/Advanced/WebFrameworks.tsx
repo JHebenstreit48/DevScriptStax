@@ -1,11 +1,11 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const NodeExpress = lazy(() => import('@/Pages/MainTabs/BackEnd/AuthenticationAndAuthorization/Authentication/Advanced/WebFrameworks/NodeExpress'));
-const NextJsReact = lazy(() => import('@/Pages/MainTabs/BackEnd/AuthenticationAndAuthorization/Authentication/Advanced/WebFrameworks/NextJsReact'));
-const DjangoFlask = lazy(() => import('@/Pages/MainTabs/BackEnd/AuthenticationAndAuthorization/Authentication/Advanced/WebFrameworks/DjangoFlask'));
-const LaravelPHP = lazy(() => import('@/Pages/MainTabs/BackEnd/AuthenticationAndAuthorization/Authentication/Advanced/WebFrameworks/LaravelPHP'));
-const ASPNET = lazy(() => import('@/Pages/MainTabs/BackEnd/AuthenticationAndAuthorization/Authentication/Advanced/WebFrameworks/ASPNET'));
+const NodeExpress = lazy(() => import('@/Pages/MainTabs/BackEnd/AuthenticateAndAuthorize/Authentication/Advanced/WebFrameworks/NodeExpress'));
+const NextJsReact = lazy(() => import('@/Pages/MainTabs/BackEnd/AuthenticateAndAuthorize/Authentication/Advanced/WebFrameworks/NextJsReact'));
+const DjangoFlask = lazy(() => import('@/Pages/MainTabs/BackEnd/AuthenticateAndAuthorize/Authentication/Advanced/WebFrameworks/DjangoFlask'));
+const LaravelPHP = lazy(() => import('@/Pages/MainTabs/BackEnd/AuthenticateAndAuthorize/Authentication/Advanced/WebFrameworks/LaravelPHP'));
+const ASPNET = lazy(() => import('@/Pages/MainTabs/BackEnd/AuthenticateAndAuthorize/Authentication/Advanced/WebFrameworks/ASPNET'));
 
 const WebFrameworks: RouteObject[] = [
   {

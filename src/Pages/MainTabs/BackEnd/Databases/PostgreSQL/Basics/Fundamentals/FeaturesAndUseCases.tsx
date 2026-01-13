@@ -10,7 +10,7 @@ const FeaturesAndUseCases = () => {
     <>
       <PageLayout>
         <Header />
-        <PageTitle title="Features & Use Cases" />
+        <PageTitle title="PostgreSQL Fundamentals - Features & Use Cases" />
         <Notes filePath={markdownFilePath} />
       </PageLayout>
     </>

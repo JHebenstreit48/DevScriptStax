@@ -1,10 +1,10 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Microservices = lazy(() => import('@/Pages/MainTabs/BackEnd/AuthenticationAndAuthorization/Authorization/Advanced/SystemsAndDesign/Microservices'));
-const SSOFederation = lazy(() => import('@/Pages/MainTabs/BackEnd/AuthenticationAndAuthorization/Authorization/Advanced/SystemsAndDesign/SSOFederation'));
-const CustomProviders = lazy(() => import('@/Pages/MainTabs/BackEnd/AuthenticationAndAuthorization/Authorization/Advanced/SystemsAndDesign/CustomProviders'));
-const ScalingSystems = lazy(() => import('@/Pages/MainTabs/BackEnd/AuthenticationAndAuthorization/Authorization/Advanced/SystemsAndDesign/ScalingSystems'));
+const Microservices = lazy(() => import('@/Pages/MainTabs/BackEnd/AuthenticateAndAuthorize/Authorization/Advanced/SystemsAndDesign/Microservices'));
+const SSOFederation = lazy(() => import('@/Pages/MainTabs/BackEnd/AuthenticateAndAuthorize/Authorization/Advanced/SystemsAndDesign/SSOFederation'));
+const CustomProviders = lazy(() => import('@/Pages/MainTabs/BackEnd/AuthenticateAndAuthorize/Authorization/Advanced/SystemsAndDesign/CustomProviders'));
+const ScalingSystems = lazy(() => import('@/Pages/MainTabs/BackEnd/AuthenticateAndAuthorize/Authorization/Advanced/SystemsAndDesign/ScalingSystems'));
 
 const SystemsAndDesign: RouteObject[] = [
   {

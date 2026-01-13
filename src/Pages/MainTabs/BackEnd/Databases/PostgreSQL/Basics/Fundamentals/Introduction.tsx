@@ -10,7 +10,7 @@ const Introduction = () => {
     <>
       <PageLayout>
         <Header />
-        <PageTitle title="Introduction?" />
+        <PageTitle title="PostgreSQL Fundamentals - Introduction" />
         <Notes filePath={markdownFilePath} />
       </PageLayout>
     </>
