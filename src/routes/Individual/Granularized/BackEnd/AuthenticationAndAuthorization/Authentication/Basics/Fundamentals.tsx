@@ -1,11 +1,11 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Introduction = lazy(() => import('@/Pages/MainTabs/BackEnd/AuthenticationAndAuthorization/Authentication/Basics/Fundamentals/Introduction'));
-const SessionVsToken = lazy(() => import('@/Pages/MainTabs/BackEnd/AuthenticationAndAuthorization/Authentication/Basics/Fundamentals/SessionVsToken'));
-const StatefulVsStateless = lazy(() => import('@/Pages/MainTabs/BackEnd/AuthenticationAndAuthorization/Authentication/Basics/Fundamentals/StatefulVsStateless'));
-const MFA = lazy(() => import('@/Pages/MainTabs/BackEnd/AuthenticationAndAuthorization/Authentication/Basics/Fundamentals/MFA'));
-const PasswordStorage = lazy(() => import('@/Pages/MainTabs/BackEnd/AuthenticationAndAuthorization/Authentication/Basics/Fundamentals/PasswordStorage'));
+const Introduction = lazy(() => import('@/Pages/MainTabs/BackEnd/AuthenticateAndAuthorize/Authentication/Basics/Fundamentals/Introduction'));
+const SessionVsToken = lazy(() => import('@/Pages/MainTabs/BackEnd/AuthenticateAndAuthorize/Authentication/Basics/Fundamentals/SessionVSToken'));
+const StatefulVsStateless = lazy(() => import('@/Pages/MainTabs/BackEnd/AuthenticateAndAuthorize/Authentication/Basics/Fundamentals/StatefulVSStateless'));
+const MFA = lazy(() => import('@/Pages/MainTabs/BackEnd/AuthenticateAndAuthorize/Authentication/Basics/Fundamentals/MFA'));
+const PasswordStorage = lazy(() => import('@/Pages/MainTabs/BackEnd/AuthenticateAndAuthorize/Authentication/Basics/Fundamentals/PasswordStorage'));
 
 const Fundamentals: RouteObject[] = [
   {

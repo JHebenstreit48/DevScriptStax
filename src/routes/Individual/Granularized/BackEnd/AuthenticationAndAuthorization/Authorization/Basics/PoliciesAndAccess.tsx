@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const StaticDynamicRules = lazy(() => import('@/Pages/MainTabs/BackEnd/AuthenticationAndAuthorization/Authorization/Basics/PoliciesAndAccess/StaticDynamicRules'));
-const HierarchicalRoles = lazy(() => import('@/Pages/MainTabs/BackEnd/AuthenticationAndAuthorization/Authorization/Basics/PoliciesAndAccess/HierarchicalRoles'));
+const StaticDynamicRules = lazy(() => import('@/Pages/MainTabs/BackEnd/AuthenticateAndAuthorize/Authorization/Basics/PoliciesAndAccess/StaticDynamicRules'));
+const HierarchicalRoles = lazy(() => import('@/Pages/MainTabs/BackEnd/AuthenticateAndAuthorize/Authorization/Basics/PoliciesAndAccess/HierarchicalRoles'));
 
 const PoliciesAndAccess: RouteObject[] = [
   {

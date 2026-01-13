@@ -1,11 +1,11 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const GrantTypes = lazy(() => import('@/Pages/MainTabs/BackEnd/AuthenticationAndAuthorization/Authentication/Intermediate/OAuthOIDC/GrantTypes'));
-const PKCE = lazy(() => import('@/Pages/MainTabs/BackEnd/AuthenticationAndAuthorization/Authentication/Intermediate/OAuthOIDC/PKCE'));
-const OIDC = lazy(() => import('@/Pages/MainTabs/BackEnd/AuthenticationAndAuthorization/Authentication/Intermediate/OAuthOIDC/OIDC'));
-const OAuthInReact = lazy(() => import('@/Pages/MainTabs/BackEnd/AuthenticationAndAuthorization/Authentication/Intermediate/OAuthOIDC/OAuthInReact'));
-const ServerSetup = lazy(() => import('@/Pages/MainTabs/BackEnd/AuthenticationAndAuthorization/Authentication/Intermediate/OAuthOIDC/ServerSetup'));
+const GrantTypes = lazy(() => import('@/Pages/MainTabs/BackEnd/AuthenticateAndAuthorize/Authentication/Intermediate/OAuthOIDC/GrantTypes'));
+const PKCE = lazy(() => import('@/Pages/MainTabs/BackEnd/AuthenticateAndAuthorize/Authentication/Intermediate/OAuthOIDC/PKCE'));
+const OIDC = lazy(() => import('@/Pages/MainTabs/BackEnd/AuthenticateAndAuthorize/Authentication/Intermediate/OAuthOIDC/OIDC'));
+const OAuthInReact = lazy(() => import('@/Pages/MainTabs/BackEnd/AuthenticateAndAuthorize/Authentication/Intermediate/OAuthOIDC/OAuthInReact'));
+const ServerSetup = lazy(() => import('@/Pages/MainTabs/BackEnd/AuthenticateAndAuthorize/Authentication/Intermediate/OAuthOIDC/ServerSetup'));
 
 const OAuthOIDC: RouteObject[] = [
   {
