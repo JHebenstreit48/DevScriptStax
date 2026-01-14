@@ -6,11 +6,11 @@ const HTTPSTLSServer = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/No
 
 const Security: RouteObject[] = [
   {
-    path: '/backend/frameworks/nodejs/advanced/security/crypto-basics',
+    path: '/frameworks/nodejs/advanced/security/crypto-basics',
     element: <CryptoBasics />,
   },
   {
-    path: '/backend/frameworks/nodejs/advanced/security/https-tls-server',
+    path: '/frameworks/nodejs/advanced/security/https-tls-server',
     element: <HTTPSTLSServer />,
   },
 ];

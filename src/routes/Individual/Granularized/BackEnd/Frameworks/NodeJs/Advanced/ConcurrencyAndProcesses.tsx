@@ -6,11 +6,11 @@ const ChildProcessAndSpawn = lazy(() => import('@/Pages/MainTabs/BackEnd/Framewo
 
 const ConcurrencyAndProcesses: RouteObject[] = [
   {
-    path: '/backend/frameworks/nodejs/advanced/concurrency-processes/worker-threads',
+    path: '/frameworks/nodejs/advanced/concurrency-processes/worker-threads',
     element: <WorkerThreads />,
   },
   {
-    path: '/backend/frameworks/nodejs/advanced/concurrency-processes/child-process-spawn',
+    path: '/frameworks/nodejs/advanced/concurrency-processes/child-process-spawn',
     element: <ChildProcessAndSpawn />,
   },
 ];

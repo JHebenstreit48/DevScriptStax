@@ -8,19 +8,19 @@ const NodeModulesAndResolution = lazy(() => import('@/Pages/MainTabs/BackEnd/Fra
 
 const ModulesAndPackages: RouteObject[] = [
   {
-    path: '/backend/frameworks/nodejs/basics/modules-packages/commonjs-vs-esm',
+    path: '/frameworks/nodejs/basics/modules-packages/commonjs-vs-esm',
     element: <CommonJSVsESM />,
   },
   {
-    path: '/backend/frameworks/nodejs/basics/modules-packages/package-json-scripts',
+    path: '/frameworks/nodejs/basics/modules-packages/package-json-scripts',
     element: <PackageJsonAndScripts />,
   },
   {
-    path: '/backend/frameworks/nodejs/basics/modules-packages/lockfiles-npm',
+    path: '/frameworks/nodejs/basics/modules-packages/lockfiles-npm',
     element: <Lockfiles />,
   },
   {
-    path: '/backend/frameworks/nodejs/basics/modules-packages/node-modules-resolution',
+    path: '/frameworks/nodejs/basics/modules-packages/node-modules-resolution',
     element: <NodeModulesAndResolution />,
   },
 ];

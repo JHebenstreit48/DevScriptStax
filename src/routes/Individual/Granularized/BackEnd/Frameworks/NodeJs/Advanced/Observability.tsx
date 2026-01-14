@@ -6,11 +6,11 @@ const DiagnosticsAndAsyncHooks = lazy(() => import('@/Pages/MainTabs/BackEnd/Fra
 
 const Observability: RouteObject[] = [
   {
-    path: '/backend/frameworks/nodejs/advanced/observability/logging-node',
+    path: '/frameworks/nodejs/advanced/observability/logging-node',
     element: <Logging />,
   },
   {
-    path: '/backend/frameworks/nodejs/advanced/observability/diagnostics-async-hooks',
+    path: '/frameworks/nodejs/advanced/observability/diagnostics-async-hooks',
     element: <DiagnosticsAndAsyncHooks />,
   },
 ];

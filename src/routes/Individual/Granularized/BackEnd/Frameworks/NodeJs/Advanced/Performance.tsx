@@ -6,11 +6,11 @@ const CPUAndHeapProfiling = lazy(() => import('@/Pages/MainTabs/BackEnd/Framewor
 
 const Performance: RouteObject[] = [
   {
-    path: '/backend/frameworks/nodejs/advanced/performance/perf-hooks-benchmarks',
+    path: '/frameworks/nodejs/advanced/performance/perf-hooks-benchmarks',
     element: <PerfHooksAndBenchmarks />,
   },
   {
-    path: '/backend/frameworks/nodejs/advanced/performance/cpu-heap-profiling',
+    path: '/frameworks/nodejs/advanced/performance/cpu-heap-profiling',
     element: <CPUAndHeapProfiling />,
   },
 ];

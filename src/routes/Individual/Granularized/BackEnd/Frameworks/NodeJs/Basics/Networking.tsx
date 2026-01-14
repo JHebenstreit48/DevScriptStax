@@ -6,11 +6,11 @@ const HTTPClient = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/NodeJs
 
 const Networking: RouteObject[] = [
   {
-    path: '/backend/frameworks/nodejs/basics/networking-core/http-server',
+    path: '/frameworks/nodejs/basics/networking-core/http-server',
     element: <HTTPServer />,
   },
   {
-    path: '/backend/frameworks/nodejs/basics/networking-core/http-client',
+    path: '/frameworks/nodejs/basics/networking-core/http-client',
     element: <HTTPClient />,
   },
 ];

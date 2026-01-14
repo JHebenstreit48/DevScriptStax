@@ -6,11 +6,11 @@ const StreamsBasics = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Nod
 
 const FilesAndStreams: RouteObject[] = [
   {
-    path: '/backend/frameworks/nodejs/basics/files-streams/file-io',
+    path: '/frameworks/nodejs/basics/files-streams/file-io',
     element: <FileIO />,
   },
   {
-    path: '/backend/frameworks/nodejs/basics/files-streams/streams-basics',
+    path: '/frameworks/nodejs/basics/files-streams/streams-basics',
     element: <StreamsBasics />,
   },
 ];
