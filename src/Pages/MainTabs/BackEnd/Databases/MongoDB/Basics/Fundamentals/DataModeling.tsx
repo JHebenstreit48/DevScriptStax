@@ -4,7 +4,7 @@ import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const DataModeling = () => {
-    const markdownFilePath = 'BackEndNotes/Databases/MongoDB/Basics/Fundamentals/DataModeling';
+    const markdownFilePath = 'BackEnd/Databases/MongoDB/Basics/Fundamentals/DataModeling';
 
     return (
         <>

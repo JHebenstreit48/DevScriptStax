@@ -4,7 +4,7 @@ import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const NOSQLVsSQL = () => {
-    const markdownFilePath = 'BackEndNotes/Databases/MongoDB/Basics/Fundamentals/NoSQLVsSQL';
+    const markdownFilePath = 'BackEnd/Databases/MongoDB/Basics/Fundamentals/NoSQLVsSQL';
 
     return (
         <>
