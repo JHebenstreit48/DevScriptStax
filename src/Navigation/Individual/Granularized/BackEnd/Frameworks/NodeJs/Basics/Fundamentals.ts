@@ -4,8 +4,8 @@ const Fundamentals: Subpage = {
   name: 'Fundamentals',
   subpages: [
     {
-      name: 'Intro',
-      path: '/frameworks/nodejs/basics/fundamentals/intro',
+      name: 'Introduction',
+      path: '/frameworks/nodejs/basics/fundamentals/introduction',
     },
     {
       name: 'Event Loop & Async I/O',

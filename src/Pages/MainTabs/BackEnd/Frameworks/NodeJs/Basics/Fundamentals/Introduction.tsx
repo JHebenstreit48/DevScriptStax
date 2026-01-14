@@ -3,18 +3,18 @@ import Header from '@/Components/Shared/Header/Header';
 import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
-const Intro = () => {
-  const markdownFilePath = 'BackEnd/Frameworks/NodeJs/Basics/Fundamentals/Intro';
+const Introduction = () => {
+  const markdownFilePath = 'BackEnd/Frameworks/NodeJs/Basics/Fundamentals/Introduction';
 
   return (
     <>
       <PageLayout>
         <Header />
-        <PageTitle title="Intro" />
+        <PageTitle title="Node Fundamentals - Introduction" />
         <Notes filePath={markdownFilePath} />
       </PageLayout>
     </>
   );
 };
 
-export default Intro;
+export default Introduction;
