@@ -7,15 +7,15 @@ const RuntimeAndGlobals = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks
 
 const Fundamentals: RouteObject[] = [
   {
-    path: '/backend/frameworks/nodejs/basics/fundamentals/intro',
+    path: '/frameworks/nodejs/basics/fundamentals/intro',
     element: <Intro />,
   },
   {
-    path: '/backend/frameworks/nodejs/basics/fundamentals/event-loop-async-io',
+    path: '/frameworks/nodejs/basics/fundamentals/event-loop-async-io',
     element: <EventLoopAndAsyncIO />,
   },
   {
-    path: '/backend/frameworks/nodejs/basics/fundamentals/runtime-globals',
+    path: '/frameworks/nodejs/basics/fundamentals/runtime-globals',
     element: <RuntimeAndGlobals />,
   },
 ];

@@ -6,11 +6,11 @@ const ProcessManagersAndCluster = lazy(() => import('@/Pages/MainTabs/BackEnd/Fr
 
 const Production: RouteObject[] = [
   {
-    path: '/backend/frameworks/nodejs/advanced/production/graceful-shutdown-signals',
+    path: '/frameworks/nodejs/advanced/production/graceful-shutdown-signals',
     element: <GracefulShutdownAndSignals />,
   },
   {
-    path: '/backend/frameworks/nodejs/advanced/production/process-managers-cluster',
+    path: '/frameworks/nodejs/advanced/production/process-managers-cluster',
     element: <ProcessManagersAndCluster />,
   },
 ];

@@ -6,11 +6,11 @@ const NodeVersions = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Node
 
 const Tooling: RouteObject[] = [
   {
-    path: '/backend/frameworks/nodejs/basics/tooling/npm-npx',
+    path: '/frameworks/nodejs/basics/tooling/npm-npx',
     element: <NpmAndNpx />,
   },
   {
-    path: '/backend/frameworks/nodejs/basics/tooling/nvm-versions',
+    path: '/frameworks/nodejs/basics/tooling/nvm-versions',
     element: <NodeVersions />,
   },
 ];
