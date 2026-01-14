@@ -4,7 +4,7 @@ const Fundamentals: Subpage = {
   name: 'Fundamentals',
   subpages: [
     {
-      name: 'Introduction?',
+      name: 'Introduction',
       path: '/postgresql/basics/fundamentals/introduction',
     },
     {
