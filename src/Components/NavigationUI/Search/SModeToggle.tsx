@@ -4,29 +4,28 @@ interface SModeToggleProps {
   onReset: () => void;
 }
 
-const SModeToggle: React.FC<SModeToggleProps> = ({
-  searchMode,
-  onToggle,
-  onReset
-}) => (
-  <div className="searchModeToggle">
-    <label>
-      <input
-        type="radio"
-        checked={searchMode === "instant"}
-        onChange={() => onToggle("instant")}
-      />
-      Instant
-    </label>
-    <label>
-      <input
-        type="radio"
-        checked={searchMode === "manual"}
-        onChange={() => onToggle("manual")}
-      />
-      Manual
-    </label>
-    <button className="resetButton" onClick={onReset}>Reset</button>
+const SModeToggle: React.FC<SModeToggleProps> = ({ searchMode, onToggle, onReset }) => (
+  <div className="searchModeRow">
+    <div className="segmented" role="group" aria-label="Search mode">
+      <button
+        type="button"
+        className={searchMode === "instant" ? "segBtn active" : "segBtn"}
+        onClick={() => onToggle("instant")}
+      >
+        Instant
+      </button>
+      <button
+        type="button"
+        className={searchMode === "manual" ? "segBtn active" : "segBtn"}
+        onClick={() => onToggle("manual")}
+      >
+        Manual
+      </button>
+    </div>
+
+    <button className="resetButton" onClick={onReset} type="button">
+      Reset
+    </button>
   </div>
 );
 
