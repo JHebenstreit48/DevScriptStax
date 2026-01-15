@@ -1,6 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
 import Python from '@/Navigation/Individual/FullTopics/Languages/Python';
 import JavaScript from '@/Navigation/Individual/FullTopics/Languages/JavaScript';
 import TypeScript from '@/Navigation/Individual/FullTopics/Languages/TypeScript';

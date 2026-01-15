@@ -1,6 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
 const DOMAndEvents: Subpage = {
   name: 'DOM and Events',
   subpages: [

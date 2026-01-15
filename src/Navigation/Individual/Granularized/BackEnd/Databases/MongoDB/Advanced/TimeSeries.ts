@@ -1,6 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
 const TimeSeriesAndSpecialized: Subpage = {
   name: 'Time-Series & Specialized',
   subpages: [

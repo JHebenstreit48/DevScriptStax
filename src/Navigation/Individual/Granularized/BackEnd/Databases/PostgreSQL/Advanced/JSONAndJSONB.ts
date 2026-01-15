@@ -1,6 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
 const JSONAndJSONB: Subpage = {
   name: 'JSON/JSONB',
   subpages: [

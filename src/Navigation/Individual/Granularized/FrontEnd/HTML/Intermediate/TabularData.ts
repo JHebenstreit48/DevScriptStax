@@ -1,6 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
 const TabularData: Subpage = {
   name: 'Tabular Data',
   subpages: [

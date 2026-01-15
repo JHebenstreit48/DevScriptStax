@@ -1,6 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
 import Fundamentals from '@/Navigation/Individual/Granularized/Tools/Containerization/Git/Basics/Fundamentals';
 import InstallAndConfig from '@/Navigation/Individual/Granularized/Tools/Containerization/Git/Basics/InstallAndConfig';
 import Workflow from '@/Navigation/Individual/Granularized/Tools/Containerization/Git/Basics/Workflow';

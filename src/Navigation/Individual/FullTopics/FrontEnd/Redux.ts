@@ -1,6 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
 import ReduxBasics from '@/Navigation/Individual/Granularized/FrontEnd/Redux/Basics';
 import ReduxIntermediate from '@/Navigation/Individual/Granularized/FrontEnd/Redux/Intermediate';
 import ReduxAdvanced from '@/Navigation/Individual/Granularized/FrontEnd/Redux/Advanced';

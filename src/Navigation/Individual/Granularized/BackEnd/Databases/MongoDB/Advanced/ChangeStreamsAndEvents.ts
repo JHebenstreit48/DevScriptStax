@@ -1,6 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
 const ChangeStreamsAndEvents: Subpage = {
   name: 'Change Streams & Events',
   subpages: [

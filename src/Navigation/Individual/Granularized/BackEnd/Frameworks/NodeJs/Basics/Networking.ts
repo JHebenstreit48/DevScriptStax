@@ -1,6 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
 const Networking: Subpage = {
   name: 'Networking (Core)',
   subpages: [

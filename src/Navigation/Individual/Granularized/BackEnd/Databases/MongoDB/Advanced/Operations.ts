@@ -1,6 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
 const Operations: Subpage = {
   name: 'Operations at Scale',
   subpages: [

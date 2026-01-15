@@ -1,6 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
 const ResponseAndVar: Subpage = {
   name: 'Responsive & Variables',
   subpages: [

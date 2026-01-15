@@ -1,7 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
-
 const DataModelAndPerform: Subpage = {
   name: "Data Modeling & Performance",
   subpages: [

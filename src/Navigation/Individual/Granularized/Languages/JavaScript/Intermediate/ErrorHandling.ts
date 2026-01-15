@@ -1,6 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
 const ErrorHandling: Subpage = {
   name: 'Error Handling',
   subpages: [

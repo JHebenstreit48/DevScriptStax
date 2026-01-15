@@ -1,6 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
 const MediaAndEmbeds: Subpage = {
   name: 'Media and Embeds',
   subpages: [

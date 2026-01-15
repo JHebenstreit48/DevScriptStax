@@ -1,6 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
 import Angular from '@/Navigation/Individual/FullTopics/FrontEnd/Angular';
 import CSS from '@/Navigation/Individual/FullTopics/FrontEnd/CSS';
 import Gatsby from '@/Navigation/Individual/FullTopics/FrontEnd/Gatsby';

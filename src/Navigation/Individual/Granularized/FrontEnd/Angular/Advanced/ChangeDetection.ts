@@ -1,7 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
-
 const ChangeDetection: Subpage = {
   name: "Change Detection",
   subpages: [

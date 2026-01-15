@@ -1,7 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
-
 // ------------------------- Preprocessors Navigation Start -------------------------
 import Less from '@/Navigation/Individual/Granularized/FrontEnd/CSS/Tools/Preprocessors/Less';
 import Sass from '@/Navigation/Individual/Granularized/FrontEnd/CSS/Tools/Preprocessors/Sass';

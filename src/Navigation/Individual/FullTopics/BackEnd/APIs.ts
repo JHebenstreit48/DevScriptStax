@@ -1,6 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
 import Basics from '@/Navigation/Individual/Granularized/BackEnd/APIs/Basics';
 import Advanced from '@/Navigation/Individual/Granularized/BackEnd/APIs/Advanced';
 import REST from '@/Navigation/Individual/Granularized/BackEnd/APIs/REST';

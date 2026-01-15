@@ -1,6 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
 // ---------- Deployment Platforms Navigation Start ----------
 
 // ---------- Front-End Deployment Navigation Start ----------

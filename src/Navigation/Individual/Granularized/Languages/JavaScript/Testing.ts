@@ -1,7 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
-
 // ------------------------------------------------------- Basics Start -------------------------------------------------------
 import Fundamentals from '@/Navigation/Individual/Granularized/Languages/JavaScript/Testing/Basics/Fundamentals';
 import Authoring from '@/Navigation/Individual/Granularized/Languages/JavaScript/Testing/Basics/Authoring';

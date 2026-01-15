@@ -1,6 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
 export type NavLeaf = {
   urlPath: string;      // "/angular/basics/..."
   crumbs: string[];     // ["Front End","Angular","Basics","Fundamentals","Introduction"]

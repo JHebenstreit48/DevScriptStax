@@ -1,6 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
 const ModernES6: Subpage = {
   name: 'Modern JavaScript (ES6+)',
   subpages: [

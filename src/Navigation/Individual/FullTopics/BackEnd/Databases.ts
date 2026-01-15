@@ -1,6 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
 import Firebase from '@/Navigation/Individual/FullTopics/BackEnd/Databases/Firebase';
 import MongoDB from '@/Navigation/Individual/FullTopics/BackEnd/Databases/MongoDB';
 import MySQL from '@/Navigation/Individual/FullTopics/BackEnd/Databases/MySQL';

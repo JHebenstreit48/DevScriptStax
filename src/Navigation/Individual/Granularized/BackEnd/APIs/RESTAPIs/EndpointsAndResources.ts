@@ -1,7 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
-
 const EndpointsResources: Subpage = {
   name: "Endpoints and Resources",
   subpages: [

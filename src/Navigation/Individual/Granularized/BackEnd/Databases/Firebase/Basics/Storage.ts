@@ -1,7 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
-
 const Storage: Subpage = {
   name: "Storage",
   subpages: [

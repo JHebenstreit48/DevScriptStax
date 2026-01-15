@@ -1,6 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
 const GlobalAndMultiRegion: Subpage = {
   name: 'Global & Multi-Region',
   subpages: [

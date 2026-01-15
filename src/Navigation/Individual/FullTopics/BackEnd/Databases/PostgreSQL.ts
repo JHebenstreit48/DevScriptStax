@@ -1,6 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
 import Basics from '@/Navigation/Individual/Granularized/BackEnd/Databases/PostgreSQL/Basics';
 import Intermediate from '@/Navigation/Individual/Granularized/BackEnd/Databases/PostgreSQL/Intermediate';
 import Advanced from '@/Navigation/Individual/Granularized/BackEnd/Databases/PostgreSQL/Advanced';

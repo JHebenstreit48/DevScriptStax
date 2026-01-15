@@ -1,6 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
 const DoublesAndIsolation: Subpage = {
   name: 'Doubles & Isolation',
   subpages: [

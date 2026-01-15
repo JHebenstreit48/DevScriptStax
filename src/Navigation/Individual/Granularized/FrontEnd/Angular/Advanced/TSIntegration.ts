@@ -1,7 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
-
 const TSIntegration: Subpage = {
   name: "TypeScript Integration",
   subpages: [

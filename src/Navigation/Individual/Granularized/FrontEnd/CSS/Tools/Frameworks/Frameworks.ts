@@ -1,7 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
-
 import Bootstrap from '@/Navigation/Individual/Granularized/FrontEnd/CSS/Tools/Frameworks/BootstrapsAndTailwind/Bootstrap';
 import ReactBootstrap from '@/Navigation/Individual/Granularized/FrontEnd/CSS/Tools/Frameworks/BootstrapsAndTailwind/ReactBootstrap';
 import Tailwind from '@/Navigation/Individual/Granularized/FrontEnd/CSS/Tools/Frameworks/BootstrapsAndTailwind/Tailwind';

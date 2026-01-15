@@ -1,6 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
 const CLIAndAdmin: Subpage = {
   name: 'CLI & Admin',
   subpages: [

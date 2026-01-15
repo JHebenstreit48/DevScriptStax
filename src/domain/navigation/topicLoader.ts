@@ -1,6 +1,5 @@
 import type { Subpage } from "@/types/navigation/Subpage";
 
-
 export type TopicKey =
   | 'frontEnd'
   | 'backEnd'

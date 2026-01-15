@@ -1,6 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
 const MergingAndHistory: Subpage = {
   name: 'Merging & History',
   subpages: [

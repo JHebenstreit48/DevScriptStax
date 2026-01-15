@@ -1,6 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
 const CoverageAndQuality: Subpage = {
   name: 'Coverage & Quality',
   subpages: [

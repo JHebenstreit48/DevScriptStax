@@ -1,6 +1,5 @@
 /// <reference types="cypress" />
 
-
 describe('Front End to Back End Main Tabs Dropdown Behavior', () => {
     it('opens Front End and Back End dropdowns from top tabs', () => {
       cy.visit('/');

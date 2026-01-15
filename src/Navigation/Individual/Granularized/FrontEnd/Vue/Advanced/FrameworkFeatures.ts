@@ -1,6 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
 const FrameworkFeatures: Subpage = {
   name: 'Framework Features',
   subpages: [

@@ -1,6 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
 const ConsistencyAndDurability: Subpage = {
   name: 'Consistency, Durability & Transactions',
   subpages: [

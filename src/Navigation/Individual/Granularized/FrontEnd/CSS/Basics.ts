@@ -1,6 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
 import IntroductionAndSelectors from '@/Navigation/Individual/Granularized/FrontEnd/CSS/Basics/IntroductionAndSelectors';
 import BoxModelAndPosition from '@/Navigation/Individual/Granularized/FrontEnd/CSS/Basics/BoxModelAndPositioning';
 

@@ -1,7 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
-
 const RulesAndEmulator: Subpage = {
   name: "Rules & Emulator",
   subpages: [

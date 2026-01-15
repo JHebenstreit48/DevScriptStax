@@ -1,6 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
 const ShellAndServer: Subpage = {
   name: 'Shell & Server',
   subpages: [

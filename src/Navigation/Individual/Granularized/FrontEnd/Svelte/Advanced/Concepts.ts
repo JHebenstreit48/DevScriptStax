@@ -1,6 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
 const Concepts: Subpage = {
   name: 'Concepts',
   subpages: [

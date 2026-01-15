@@ -1,6 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
 const ScaleAndReplicate: Subpage = {
   name: 'Scalability & Replication',
   subpages: [

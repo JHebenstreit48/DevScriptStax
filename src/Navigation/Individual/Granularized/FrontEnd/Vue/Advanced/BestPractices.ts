@@ -1,6 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
 const BestPractices: Subpage = {
   name: 'Best Practices',
   subpages: [

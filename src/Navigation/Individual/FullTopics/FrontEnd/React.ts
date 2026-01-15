@@ -1,6 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
 import Basics from '@/Navigation/Individual/Granularized/FrontEnd/React/Basics';
 import Advanced from '@/Navigation/Individual/Granularized/FrontEnd/React/Advanced';
 import ToolsAndTesting from '@/Navigation/Individual/Granularized/FrontEnd/React/ToolsAndTesting';

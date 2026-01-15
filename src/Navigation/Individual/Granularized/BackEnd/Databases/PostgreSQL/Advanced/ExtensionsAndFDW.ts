@@ -1,6 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
 const ExtensionsAndFDW: Subpage = {
   name: 'Extensions & FDW',
   subpages: [
