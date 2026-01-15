@@ -1,4 +1,5 @@
-import { Subpage } from '@/Navigation/Combined/Core/NavigationTypes';
+import type { Subpage } from '@/types/navigation';
+
 
 const ModernES6: Subpage = {
   name: 'Modern JavaScript (ES6+)',

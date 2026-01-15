@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { readVisits, writeVisits, type Visit } from "@/Components/Shared/hooks/useVisitTracker";
-import { resolveBreadcrumbTrail } from "@/Navigation/Combined/Core/resolveBreadCrumbTrail";
+import { resolveBreadcrumbTrail } from "@/domain/navigation/breadcrumbs";
 import { SITE_NAME } from "@/Components/Shared/dynamicSiteName";
 
 /* ---------- Title cache ---------- */

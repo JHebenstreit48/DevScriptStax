@@ -1,4 +1,5 @@
-import { Subpage } from '@/Navigation/Combined/Core/NavigationTypes';
+import type { Subpage } from '@/types/navigation';
+
 
 const MergingAndHistory: Subpage = {
   name: 'Merging & History',

@@ -1,4 +1,5 @@
-import { Subpage } from '@/Navigation/Combined/Core/NavigationTypes';
+import type { Subpage } from '@/types/navigation';
+
 
 import CoreConcepts from '@/Navigation/Individual/FullTopics/BackEnd/WebServers/CoreConcepts';
 import Nginx from '@/Navigation/Individual/FullTopics/BackEnd/WebServers/Nginx';

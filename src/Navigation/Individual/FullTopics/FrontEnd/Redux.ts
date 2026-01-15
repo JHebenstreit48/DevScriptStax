@@ -1,4 +1,5 @@
-import { Subpage } from '@/Navigation/Combined/Core/NavigationTypes';
+import type { Subpage } from '@/types/navigation';
+
 
 import ReduxBasics from '@/Navigation/Individual/Granularized/FrontEnd/Redux/Basics';
 import ReduxIntermediate from '@/Navigation/Individual/Granularized/FrontEnd/Redux/Intermediate';

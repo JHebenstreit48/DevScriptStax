@@ -1,4 +1,5 @@
-import { Subpage } from '@/Navigation/Combined/Core/NavigationTypes';
+import type { Subpage } from '@/types/navigation';
+
 
 import Fundamentals from '@/Navigation/Individual/Granularized/FrontEnd/CSS/Tools/Preprocessors/Less/Fundamentals';
 import AdvancedConcepts from '@/Navigation/Individual/Granularized/FrontEnd/CSS/Tools/Preprocessors/Less/AdvancedConcepts';

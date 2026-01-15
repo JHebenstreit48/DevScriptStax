@@ -1,4 +1,6 @@
-import { Subpage } from "@/Navigation/Combined/Core/NavigationTypes";
+import type { Subpage } from '@/types/navigation';
+
+
 
 import Fundamentals from '@/Navigation/Individual/Granularized/BackEnd/Databases/PostgreSQL/Basics/Fundamentals';
 import SetupAndConfig from '@/Navigation/Individual/Granularized/BackEnd/Databases/PostgreSQL/Basics/SetupAndConfig';

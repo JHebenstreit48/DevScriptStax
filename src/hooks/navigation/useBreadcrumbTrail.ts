@@ -1,5 +1,5 @@
 import { useLocation } from 'react-router-dom';
-import { resolveBreadcrumbTrail } from '@/Navigation/Combined/Core/resolveBreadCrumbTrail';
+import { resolveBreadcrumbTrail } from '@/domain/navigation/breadcrumbs';
 
 export function useBreadcrumbTrail(): string[] {
   const { pathname } = useLocation();

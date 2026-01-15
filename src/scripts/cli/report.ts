@@ -1,5 +1,5 @@
-import pages from "@/Navigation/Combined/Core/Pages";
-import type { Subpage } from "@/Navigation/Combined/Core/NavigationTypes";
+import pages from '@/domain/navigation/mainTabs';
+import type { Subpage } from '@/types/navigation';
 
 import { parseArgs, matchesFilter } from "@/scripts/core/args";
 import { flattenNav } from "@/scripts/core/flattenNav";

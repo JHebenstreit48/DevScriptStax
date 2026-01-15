@@ -1,4 +1,5 @@
-import { Subpage } from '@/Navigation/Combined/Core/NavigationTypes';
+import type { Subpage } from '@/types/navigation';
+
 
 import Peformance from '@/Navigation/Individual/Granularized/FrontEnd/React/Advanced/Performance';
 import BestPractices from '@/Navigation/Individual/Granularized/FrontEnd/React/Advanced/BestPractices';

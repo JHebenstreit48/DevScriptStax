@@ -1,4 +1,6 @@
-import { Subpage } from "@/Navigation/Combined/Core/NavigationTypes";
+import type { Subpage } from '@/types/navigation';
+
+
 
 import IndexesAndPerformance from "@/Navigation/Individual/Granularized/BackEnd/Databases/PostgreSQL/Intermediate/IndexesAndPerformance";
 import TransactionsAndLocking from "@/Navigation/Individual/Granularized/BackEnd/Databases/PostgreSQL/Intermediate/TransactionAndLocking";

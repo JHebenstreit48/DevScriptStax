@@ -1,4 +1,5 @@
-import { Subpage } from '@/Navigation/Combined/Core/NavigationTypes';
+import type { Subpage } from '@/types/navigation';
+
 
 const DoublesAndIsolation: Subpage = {
   name: 'Doubles & Isolation',

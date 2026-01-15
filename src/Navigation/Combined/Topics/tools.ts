@@ -1,4 +1,5 @@
-import { Subpage } from '@/Navigation/Combined/Core/NavigationTypes';
+import type { Subpage } from '@/types/navigation';
+
 
 // ---------- API Tools Navigation Start ----------
 import Insomnia from '@/Navigation/Individual/FullTopics/Tools/APITools/Insomnia';

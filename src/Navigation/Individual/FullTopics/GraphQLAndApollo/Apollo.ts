@@ -1,4 +1,5 @@
-import { Subpage } from '@/Navigation/Combined/Core/NavigationTypes';
+import type { Subpage } from '@/types/navigation';
+
 
 import ClientBasics from '@/Navigation/Individual/Granularized/GraphQLAndApollo/Apollo/ApolloClient/Basics';
 import ClientAdvanced from '@/Navigation/Individual/Granularized/GraphQLAndApollo/Apollo/ApolloClient/Advanced';

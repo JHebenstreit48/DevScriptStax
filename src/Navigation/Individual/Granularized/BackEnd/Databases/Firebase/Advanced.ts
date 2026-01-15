@@ -1,4 +1,6 @@
-import { Subpage } from "@/Navigation/Combined/Core/NavigationTypes";
+import type { Subpage } from '@/types/navigation';
+
+
 
 import DataModelAndPerform from "@/Navigation/Individual/Granularized/BackEnd/Databases/Firebase/Advanced/DataModelAndPerform";
 import OfflinePatterns from "@/Navigation/Individual/Granularized/BackEnd/Databases/Firebase/Advanced/OfflinePatterns";
