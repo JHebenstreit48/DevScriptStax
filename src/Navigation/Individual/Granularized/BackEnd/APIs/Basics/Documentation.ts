@@ -5,15 +5,15 @@ const Documentation: Subpage = {
   subpages: [
     {
       name: "Tools",
-      path: "/apis/intro/documentation/tools",
+      path: "/apis/basics/documentation/tools",
     },
     {
       name: "Best Practices",
-      path: "/apis/intro/documentation/best-practices",
-    }, // Merged multiple doc-related topics
+      path: "/apis/basics/documentation/best-practices",
+    },
     {
       name: "Examples",
-      path: "/apis/intro/documentation/examples",
+      path: "/apis/basics/documentation/examples",
     },
   ],
 };
