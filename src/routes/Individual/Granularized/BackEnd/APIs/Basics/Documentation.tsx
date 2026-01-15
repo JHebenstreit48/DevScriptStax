@@ -7,15 +7,15 @@ const Examples = lazy(() => import('@/Pages/MainTabs/BackEnd/APIs/Basics/Documen
 
 const Documentation: RouteObject[] = [
   {
-    path: '/apis/intro/documentation/tools',
+    path: '/apis/basics/documentation/tools',
     element: <Tools />,
   },
   {
-    path: '/apis/intro/documentation/best-practices',
+    path: '/apis/basics/documentation/best-practices',
     element: <BestPractices />,
   },
   {
-    path: '/apis/intro/documentation/examples',
+    path: '/apis/basics/documentation/examples',
     element: <Examples />,
   },
 ];

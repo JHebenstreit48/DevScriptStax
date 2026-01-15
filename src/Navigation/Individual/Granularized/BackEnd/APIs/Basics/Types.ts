@@ -9,7 +9,7 @@ const Types: Subpage = {
     },
     {
       name: "REST vs GraphQL vs SOAP",
-      path: "/apis/basics/types/comparison"
+      path: "/apis/basics/types/rest-vs-graphql-vs-soap"
     },
     {
       name: "Microservices & API-based Architectures",
