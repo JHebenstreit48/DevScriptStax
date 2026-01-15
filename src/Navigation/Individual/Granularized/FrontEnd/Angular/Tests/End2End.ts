@@ -1,6 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
 const EndToEnd: Subpage = {
   name: 'End-to-End (E2E)',
   subpages: [

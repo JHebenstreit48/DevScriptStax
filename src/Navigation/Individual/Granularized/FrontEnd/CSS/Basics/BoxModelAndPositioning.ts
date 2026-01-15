@@ -1,6 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
 const BoxModelAndPosition: Subpage = {
   name: 'Box Model & Positioning',
   subpages: [

@@ -1,6 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
 import GraphQL from '@/Navigation/Individual/FullTopics/GraphQLAndApollo/GraphQL';
 import Apollo from '@/Navigation/Individual/FullTopics/GraphQLAndApollo/Apollo';
 

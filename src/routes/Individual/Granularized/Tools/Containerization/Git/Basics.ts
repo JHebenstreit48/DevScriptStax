@@ -5,7 +5,6 @@ import InstallAndConfig from '@/routes/Individual/Granularized/Tools/Containeriz
 import Workflow from '@/routes/Individual/Granularized/Tools/Containerization/Git/Basics/Worflow';
 import Commands from '@/routes/Individual/Granularized/Tools/Containerization/Git/Basics/Commands';
 
-
 const Basics: RouteObject[] = [
     ...Fundamentals,
     ...InstallAndConfig,

@@ -1,6 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
 import Basics from '@/Navigation/Individual/Granularized/Testing/End2End/Cypress/Basics';
 import Intermediate from '@/Navigation/Individual/Granularized/Testing/End2End/Cypress/Intermediate';
 import Advanced from '@/Navigation/Individual/Granularized/Testing/End2End/Cypress/Advanced';

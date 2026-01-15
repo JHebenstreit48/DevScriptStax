@@ -1,6 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
 const DataLifecycle: Subpage = {
   name: 'Data Lifecycle & Governance',
   subpages: [

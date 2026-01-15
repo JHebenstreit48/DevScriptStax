@@ -1,7 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
-
 import DataModelAndPerform from "@/Navigation/Individual/Granularized/BackEnd/Databases/Firebase/Advanced/DataModelAndPerform";
 import OfflinePatterns from "@/Navigation/Individual/Granularized/BackEnd/Databases/Firebase/Advanced/OfflinePatterns";
 import RulesAndEmulator from "@/Navigation/Individual/Granularized/BackEnd/Databases/Firebase/Advanced/RulesAndEmulator";

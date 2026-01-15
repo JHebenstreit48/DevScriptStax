@@ -1,6 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
 const BackupAndRestore: Subpage = {
   name: 'Backup & Restore',
   subpages: [

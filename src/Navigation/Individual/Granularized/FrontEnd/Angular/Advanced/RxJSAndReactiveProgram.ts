@@ -1,7 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
-
 const RxJSAndReactive: Subpage = {
   name: "RxJS and Reactive Programming",
   subpages: [

@@ -1,7 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
-
 const Services: Subpage = {
   name: "Services/Dependency Injection",
   subpages: [

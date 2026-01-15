@@ -1,6 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
 const ContentElements: Subpage = {
   name: 'Content Elements',
   subpages: [

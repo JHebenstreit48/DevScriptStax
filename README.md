@@ -40,8 +40,6 @@ I used videos of the class sessions, ChatGPT, GitHub CoPilot, resources from W3S
 [JavaScript Functions Parenthesis](https://www.google.com/search?q=In+JavaScript+functions+parenthesis+are+used+to+call+the+function+correct%3F+Also+what+is+the+purpose+of+the+parenthesis+immediately+following+the+function+name%3F&num=10&sca_esv=98a6bd07f428894a&ei=jwgNaNTeMKSG0PEP_u_kwQw&ved=0ahUKEwiU4pD_jfaMAxUkAzQIHf43OcgQ4dUDCBE&uact=5&oq=In+JavaScript+functions+parenthesis+are+used+to+call+the+function+correct%3F+Also+what+is+the+purpose+of+the+parenthesis+immediately+following+the+function+name%3F&gs_lp=Egxnd3Mtd2l6LXNlcnAinwFJbiBKYXZhU2NyaXB0IGZ1bmN0aW9ucyBwYXJlbnRoZXNpcyBhcmUgdXNlZCB0byBjYWxsIHRoZSBmdW5jdGlvbiBjb3JyZWN0PyBBbHNvIHdoYXQgaXMgdGhlIHB1cnBvc2Ugb2YgdGhlIHBhcmVudGhlc2lzIGltbWVkaWF0ZWx5IGZvbGxvd2luZyB0aGUgZnVuY3Rpb24gbmFtZT9I1p0BUKQNWOubAXABeAGQAQCYAVigAYsKqgECMTm4AQPIAQD4AQGYAgGgAgjCAgoQABiwAxjWBBhHmAMAiAYBkAYIkgcBMaAH4zayBwC4BwA&sclient=gws-wiz-serp&zx=1745685271462&no_sw_cr=1)  
 [The History of ReactJS](https://hrtechcube.com/the-history-of-reactjs/)
 
-
-
 ## Tests
 
 I just used npm run dev to see what the website looked like as I made changes to it.

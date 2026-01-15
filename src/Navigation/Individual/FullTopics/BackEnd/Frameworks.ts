@@ -1,6 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
 import Django from '@/Navigation/Individual/FullTopics/BackEnd/Frameworks/Django';
 import ExpressJS from '@/Navigation/Individual/FullTopics/BackEnd/Frameworks/ExpressJS';
 import Flask from '@/Navigation/Individual/FullTopics/BackEnd/Frameworks/Flask';

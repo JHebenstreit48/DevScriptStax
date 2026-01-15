@@ -1,7 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
-
 const CostOptimization: Subpage = {
   name: "Cost Optimization",
   subpages: [

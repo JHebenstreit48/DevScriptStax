@@ -1,7 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
-
 import Fundamentals from "@/Navigation/Individual/Granularized/BackEnd/APIs/RESTAPIs/Fundamentals";
 import HTTPMethods from "@/Navigation/Individual/Granularized/BackEnd/APIs/RESTAPIs/HTTPMethods";
 import EndpointsResources from "@/Navigation/Individual/Granularized/BackEnd/APIs/RESTAPIs/EndpointsAndResources";

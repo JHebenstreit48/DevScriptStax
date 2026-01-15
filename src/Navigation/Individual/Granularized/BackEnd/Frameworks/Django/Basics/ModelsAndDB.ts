@@ -1,6 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
 const ModelsAndDB: Subpage = {
   name: 'Models & DB',
   subpages: [

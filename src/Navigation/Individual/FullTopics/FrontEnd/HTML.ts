@@ -1,6 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
 import Basics from '@/Navigation/Individual/Granularized/FrontEnd/HTML/Basics';
 import Intermediate from '@/Navigation/Individual/Granularized/FrontEnd/HTML/Intermediate';
 import Advanced from '@/Navigation/Individual/Granularized/FrontEnd/HTML/Advanced';

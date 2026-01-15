@@ -1,6 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
 import APIs from '@/Navigation/Individual/FullTopics/BackEnd/APIs';
 import AuthenticationAuthorization from '@/Navigation/Individual/FullTopics/BackEnd/AA';
 import Databases from '@/Navigation/Individual/FullTopics/BackEnd/Databases';

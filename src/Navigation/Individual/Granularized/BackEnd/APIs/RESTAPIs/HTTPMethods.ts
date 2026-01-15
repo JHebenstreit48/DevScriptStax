@@ -1,7 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
-
 const HTTPMethods: Subpage = {
   name: "HTTP Methods",
   subpages: [

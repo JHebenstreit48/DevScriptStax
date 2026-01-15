@@ -1,6 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
 const InteractiveFeatures: Subpage = {
   name: 'Interactive Features',
   subpages: [

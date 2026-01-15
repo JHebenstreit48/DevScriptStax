@@ -1,6 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
 const SEOMetadata: Subpage = {
     name: 'SEO/Metadata',
     subpages: [

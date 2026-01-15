@@ -1,6 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
 const AdvancedSQL: Subpage = {
   name: 'Advanced SQL',
   subpages: [

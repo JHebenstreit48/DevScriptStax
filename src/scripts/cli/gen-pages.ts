@@ -2,7 +2,6 @@ import path from 'node:path';
 import pages from '@/domain/navigation/mainTabs';
 import type { Subpage } from "@/types/navigation/Subpage";
 
-
 import { parseArgs, matchesFilter } from '../core/args';
 import { flattenNav } from '../core/flattenNav';
 import { derive } from '../core/derive';

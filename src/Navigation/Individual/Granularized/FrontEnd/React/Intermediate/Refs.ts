@@ -1,6 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
 const Refs: Subpage = {
   name: 'Refs',
   subpages: [

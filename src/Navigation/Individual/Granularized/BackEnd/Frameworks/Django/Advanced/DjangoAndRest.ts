@@ -1,6 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
 const RESTInDjango: Subpage = {
   name: 'REST in Django',
   subpages: [

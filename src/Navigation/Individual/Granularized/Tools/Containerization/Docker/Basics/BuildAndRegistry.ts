@@ -1,6 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
 const BuildAndRegistry: Subpage = {
   name: 'Build & Registry',
   subpages: [

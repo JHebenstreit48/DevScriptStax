@@ -1,7 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
-
 import Fundamentals from '@/Navigation/Individual/Granularized/Tools/Containerization/Docker/Basics/Fundamentals';
 import CLIAndWorkflow from '@/Navigation/Individual/Granularized/Tools/Containerization/Docker/Basics/CLIAndWorkflow';
 import Dockerfiles from '@/Navigation/Individual/Granularized/Tools/Containerization/Docker/Basics/Dockerfiles';

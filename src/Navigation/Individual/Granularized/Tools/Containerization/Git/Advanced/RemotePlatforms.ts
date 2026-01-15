@@ -1,6 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
 const RemotePlatforms: Subpage = {
   name: 'Remote Platforms',
   subpages: [

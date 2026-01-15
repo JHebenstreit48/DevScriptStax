@@ -1,6 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
 const Mongoose: Subpage = {
   name: 'Mongoose',
   subpages: [

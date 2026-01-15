@@ -1,7 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
-
 import Gateways from "@/Navigation/Individual/Granularized/BackEnd/APIs/Advanced/Gateways";
 import Caching from "@/Navigation/Individual/Granularized/BackEnd/APIs/Advanced/Caching";
 import RateLimiting from "@/Navigation/Individual/Granularized/BackEnd/APIs/Advanced/RateLimiting";

@@ -1,6 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
 const ReactAndTS: Subpage = {
     name: 'React + TS',
     subpages: [

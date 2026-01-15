@@ -1,7 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
-
 const CypressAdvanced: Subpage = {
   name: "Advanced",
   subpages: [

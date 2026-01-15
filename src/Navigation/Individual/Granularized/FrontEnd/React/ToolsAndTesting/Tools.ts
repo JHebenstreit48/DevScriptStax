@@ -1,6 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
 const ReactTools: Subpage = {
   name: 'Tools',
   subpages: [

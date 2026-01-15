@@ -1,7 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
-
 const AdminSDK: Subpage = {
   name: "Admin SDK (Server)",
   subpages: [

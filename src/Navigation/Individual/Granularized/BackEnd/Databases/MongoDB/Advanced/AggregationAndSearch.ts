@@ -1,6 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
 const AggregationAndSearch: Subpage = {
   name: 'Aggregation & Search',
   subpages: [

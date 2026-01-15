@@ -1,6 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
 const Views: Subpage = {
   name: 'Views & Materialized Views',
   subpages: [

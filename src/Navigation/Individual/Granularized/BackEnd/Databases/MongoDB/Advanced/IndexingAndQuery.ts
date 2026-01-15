@@ -1,6 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
 const IndexingAndQuery: Subpage = {
   name: 'Indexing & Query Planner',
   subpages: [

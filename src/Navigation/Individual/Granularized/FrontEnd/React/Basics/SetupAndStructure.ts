@@ -1,6 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
 const SetupStructure: Subpage = {
   name: 'Setup & Structure',
   subpages: [

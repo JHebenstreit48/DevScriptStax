@@ -1,6 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
 const ExtendedSyntax: Subpage = {
   name: 'Extended Syntax',
   subpages: [

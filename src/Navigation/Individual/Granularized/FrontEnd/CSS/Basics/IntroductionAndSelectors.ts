@@ -1,6 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
 const IntroductionAndSelectors: Subpage = {
   name: 'Introduction & Selectors',
   subpages: [

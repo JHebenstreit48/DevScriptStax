@@ -1,6 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
 import ChangeDetection from "@/Navigation/Individual/Granularized/FrontEnd/Angular/Advanced/ChangeDetection";
 import Performance from "@/Navigation/Individual/Granularized/FrontEnd/Angular/Advanced/Performance";
 import RxJSAndReactive from "@/Navigation/Individual/Granularized/FrontEnd/Angular/Advanced/RxJSAndReactiveProgram";

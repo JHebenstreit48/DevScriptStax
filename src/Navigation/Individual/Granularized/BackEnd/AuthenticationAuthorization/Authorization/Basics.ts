@@ -1,6 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
 const AuthorizationBasics: Subpage = {
   name: 'Basics',
   subpages: [

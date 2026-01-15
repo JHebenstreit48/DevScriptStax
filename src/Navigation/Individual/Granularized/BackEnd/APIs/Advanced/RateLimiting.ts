@@ -1,7 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
-
 const RateLimiting: Subpage = {
   name: "Rate Limiting",
   subpages: [

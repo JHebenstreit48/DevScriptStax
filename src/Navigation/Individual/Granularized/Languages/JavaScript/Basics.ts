@@ -1,6 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
 import Fundamentals from '@/Navigation/Individual/Granularized/Languages/JavaScript/Basics/Fundamentals';
 import CoreConcepts from '@/Navigation/Individual/Granularized/Languages/JavaScript/Basics/CoreConcepts';
 import DataTypes from '@/Navigation/Individual/Granularized/Languages/JavaScript/Basics/DataTypes';

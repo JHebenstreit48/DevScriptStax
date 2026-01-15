@@ -1,6 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
 const HeadAndMeta: Subpage = {
   name: 'Head and Metadata',
   subpages: [

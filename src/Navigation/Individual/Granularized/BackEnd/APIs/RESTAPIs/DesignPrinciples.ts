@@ -1,7 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
-
 const DesignPrinciples: Subpage = {
   name: "RESTful Design Principles",
   subpages: [

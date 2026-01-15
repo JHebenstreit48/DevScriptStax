@@ -1,7 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
-
 const OfflinePatterns: Subpage = {
   name: "Offline Patterns",
   subpages: [

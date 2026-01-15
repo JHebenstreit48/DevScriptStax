@@ -1,6 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
 import Extending from '@/Navigation/Individual/Granularized/FrontEnd/Markdown/Advanced/Extending';
 import BestPractices from '@/Navigation/Individual/Granularized/FrontEnd/Markdown/Advanced/BestPractices';
 

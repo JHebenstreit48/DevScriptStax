@@ -1,6 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
 import ScaleAndReplicate from '@/Navigation/Individual/Granularized/BackEnd/Databases/MongoDB/Advanced/ScalabilityAndReplication';
 import SecurityAndCompliance from '@/Navigation/Individual/Granularized/BackEnd/Databases/MongoDB/Advanced/SecurityAndCompliance';
 import ConsistencyAndDurability from '@/Navigation/Individual/Granularized/BackEnd/Databases/MongoDB/Advanced/ConsistencyAndDurability';

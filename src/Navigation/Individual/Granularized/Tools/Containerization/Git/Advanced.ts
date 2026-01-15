@@ -1,7 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
-
 import MergingAndHistory from "@/Navigation/Individual/Granularized/Tools/Containerization/Git/Advanced/MergingAndHistory";
 import Tools from "@/Navigation/Individual/Granularized/Tools/Containerization/Git/Advanced/Tools";
 import PerformanceAndSecurity from "@/Navigation/Individual/Granularized/Tools/Containerization/Git/Advanced/PerformanceAndSecurity";

@@ -2,8 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import type { Subpage } from '@/types/navigation';
 
-
-
 interface NavSubpagesProps {
   subpages: Subpage[];
   parentKey: string;

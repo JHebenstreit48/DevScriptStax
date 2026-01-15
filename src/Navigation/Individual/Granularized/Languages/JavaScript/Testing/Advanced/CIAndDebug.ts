@@ -1,6 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
 const CIAndDebug: Subpage = {
   name: 'CI & Debug',
   subpages: [

@@ -1,6 +1,5 @@
 import type { Subpage } from '@/types/navigation';
 
-
 const PerformanceAndSecurity: Subpage = {
   name: 'Performance & Security',
   subpages: [

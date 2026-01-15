@@ -1,7 +1,6 @@
 import pages from '@/domain/navigation/mainTabs';
 import type { Subpage } from "@/types/navigation/Subpage";
 
-
 import { parseArgs } from '../core/args';
 import { generateLeafLazyRoutes } from '../core/routesLeaf';
 
