@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import SHeader from "@/Components/NavigationUI/Search/SHeader";
 import SModeToggle from "@/Components/NavigationUI/Search/SModeToggle";
 import InputResults from "@/Components/NavigationUI/Search/InputResults";
-import { filterResults } from "@/Components/NavigationUI/Search/Utils/filterResults"; // or wherever you place this
+import { filterResults } from "@/Components/NavigationUI/Search/Utils/filterResults";
 import { GroupedSearchResult, SearchMatch } from "@/Components/NavigationUI/Search/Utils/types";
 
 interface SearchModalProps {
@@ -30,6 +30,14 @@ const Modal: React.FC<SearchModalProps> = ({
   useEffect(() => {
     setInputValue(searchTerm);
   }, [searchTerm]);
+
+  useEffect(() => {
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") onClose();
+    };
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
+  }, [onClose]);
 
   useEffect(() => {
     if (searchMode === "instant" && inputValue.trim()) {
@@ -59,7 +67,13 @@ const Modal: React.FC<SearchModalProps> = ({
   };
 
   return ReactDOM.createPortal(
-    <div className="searchModal">
+    <div
+      className="searchModal"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Search"
+      id="global-search-modal"
+    >
       <div className="searchModalContent">
         <SHeader onClose={onClose} />
         <div className="searchControls">

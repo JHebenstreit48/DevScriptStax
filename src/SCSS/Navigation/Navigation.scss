@@ -127,36 +127,127 @@
 }
 
 /* ==============================
+          Search Icon Container
+============================== */
+.searchIconContainer {
+  position: absolute;
+  left: $nav-search-left-desktop;
+  top: $nav-search-top-desktop;
+  transform: translateY(-50%);
+  z-index: $z-nav-overlay;
+
+  @include maxw($cellphone-portrait) {
+    display: flex;
+    flex-direction: column;
+    left: 50%;
+    top: $nav-search-top-mobile;
+  }
+
+  @include between($small-laptop-min, $small-laptop-max) {
+    left: $nav-search-left-laptop;
+  }
+  @include between($medium-laptop-min, $medium-laptop-max) {
+    left: calc($nav-search-left-laptop + 0.5rem);
+  }
+}
+
+/* ==============================
            Search Icon Button
 ============================== */
 .searchIconButton {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 2.25rem;
-  height: 2.25rem;
+
+  width: 2.75rem;
+  height: 2.75rem;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  background:
+    radial-gradient(120% 120% at 30% 20%, rgba(0, 209, 255, 0.22), transparent 60%),
+    rgba(255, 255, 255, 0.06);
+
+  border: 1px solid rgba(255, 255, 255, 0.14);
   color: $level-1;
-  font-size: 1.1rem;
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.35),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.04);
+
   cursor: pointer;
-  transition: box-shadow 0.18s ease, border-color 0.18s ease, background-color 0.18s ease;
+  transition: transform 0.16s ease, box-shadow 0.18s ease, border-color 0.18s ease, background-color 0.18s ease;
 
   &:hover {
-    background: rgba(255, 255, 255, 0.1);
-    border-color: rgba(255, 255, 255, 0.24);
-    box-shadow: 0 0 0 3px rgba(0, 209, 255, 0.15);
+    border-color: rgba(0, 209, 255, 0.35);
+    box-shadow:
+      0 14px 36px rgba(0, 0, 0, 0.45),
+      0 0 0 4px rgba(0, 209, 255, 0.10),
+      inset 0 0 0 1px rgba(255, 255, 255, 0.06);
+  }
+
+  &:active {
+    transform: translateY(1px) scale(0.98);
   }
 
   &:focus-visible {
-    outline: 2px solid rgba(0, 209, 255, 0.7);
-    outline-offset: 2px;
-    border-radius: 999px;
+    outline: 2px solid rgba(0, 209, 255, 0.75);
+    outline-offset: 3px;
   }
 
   svg {
+    width: 1.05rem;
+    height: 1.05rem;
     display: block;
+  }
+}
+
+/* ==============================
+           Search Pill (Desktop)
+============================== */
+.searchPill {
+  display: inline-flex;
+  align-items: center;
+  gap: .6rem;
+
+  height: 2.5rem;
+  padding: 0 .9rem;
+  border-radius: 999px;
+
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.12);
+  color: rgba(232,235,255,.92);
+
+  box-shadow: 0 10px 30px rgba(0,0,0,.25);
+  cursor: pointer;
+  transition: border-color .18s ease, box-shadow .18s ease, transform .16s ease;
+
+  &:hover {
+    border-color: rgba(0,209,255,.35);
+    box-shadow:
+      0 14px 36px rgba(0,0,0,.35),
+      0 0 0 4px rgba(0,209,255,.08);
+  }
+
+  &:active { transform: translateY(1px); }
+
+  &:focus-visible {
+    outline: 2px solid rgba(0, 209, 255, 0.75);
+    outline-offset: 3px;
+  }
+
+  .searchPillIcon {
+    opacity: .9;
+    font-size: 1.05rem;
+    line-height: 1;
+  }
+
+  .searchPillText {
+    font-weight: 600;
+    letter-spacing: .15px;
+  }
+
+  @include maxw($cellphone-portrait) {
+    display: none; // mobile uses icon-only
   }
 }
 
