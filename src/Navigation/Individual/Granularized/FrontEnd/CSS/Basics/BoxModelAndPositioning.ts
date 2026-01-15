@@ -1,4 +1,5 @@
-import { Subpage } from '@/Navigation/Combined/Core/NavigationTypes';
+import type { Subpage } from '@/types/navigation';
+
 
 const BoxModelAndPosition: Subpage = {
   name: 'Box Model & Positioning',

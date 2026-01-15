@@ -1,4 +1,6 @@
-import { Subpage } from "@/Navigation/Combined/Core/NavigationTypes";
+import type { Subpage } from '@/types/navigation';
+
+
 
 // ------------------------- Preprocessors Navigation Start -------------------------
 import Less from '@/Navigation/Individual/Granularized/FrontEnd/CSS/Tools/Preprocessors/Less';

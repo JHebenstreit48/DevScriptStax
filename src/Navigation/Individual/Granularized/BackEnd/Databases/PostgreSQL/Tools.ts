@@ -1,4 +1,6 @@
-import { Subpage } from "@/Navigation/Combined/Core/NavigationTypes";
+import type { Subpage } from '@/types/navigation';
+
+
 
 import CLIAndAdmin from "@/Navigation/Individual/Granularized/BackEnd/Databases/PostgreSQL/Tools/CLIAndAdmin";
 import BackupAndRestore from "@/Navigation/Individual/Granularized/BackEnd/Databases/PostgreSQL/Tools/BackupAndRestore";

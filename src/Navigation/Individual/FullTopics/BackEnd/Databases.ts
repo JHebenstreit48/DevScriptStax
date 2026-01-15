@@ -1,4 +1,5 @@
-import { Subpage } from '@/Navigation/Combined/Core/NavigationTypes';
+import type { Subpage } from '@/types/navigation';
+
 
 import Firebase from '@/Navigation/Individual/FullTopics/BackEnd/Databases/Firebase';
 import MongoDB from '@/Navigation/Individual/FullTopics/BackEnd/Databases/MongoDB';

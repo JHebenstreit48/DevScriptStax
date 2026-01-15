@@ -1,4 +1,5 @@
-import { Subpage } from '@/Navigation/Combined/Core/NavigationTypes';
+import type { Subpage } from '@/types/navigation';
+
 
 import Functions from '@/Navigation/Individual/Granularized/Languages/JavaScript/Advanced/Functions';
 import OOP from '@/Navigation/Individual/Granularized/Languages/JavaScript/Advanced/ObjectOriented';

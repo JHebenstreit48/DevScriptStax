@@ -1,4 +1,6 @@
-import { Subpage } from "@/Navigation/Combined/Core/NavigationTypes";
+import type { Subpage } from '@/types/navigation';
+
+
 
 import MergingAndHistory from "@/Navigation/Individual/Granularized/Tools/Containerization/Git/Advanced/MergingAndHistory";
 import Tools from "@/Navigation/Individual/Granularized/Tools/Containerization/Git/Advanced/Tools";

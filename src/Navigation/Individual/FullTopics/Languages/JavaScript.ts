@@ -1,4 +1,5 @@
-import { Subpage } from '@/Navigation/Combined/Core/NavigationTypes';
+import type { Subpage } from '@/types/navigation';
+
 
 import Basics from '@/Navigation/Individual/Granularized/Languages/JavaScript/Basics';
 import Intermediate from '@/Navigation/Individual/Granularized/Languages/JavaScript/Intermediate';

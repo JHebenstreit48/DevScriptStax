@@ -1,5 +1,6 @@
 import path from 'node:path';
-import type { Subpage } from '@/Navigation/Combined/Core/NavigationTypes';
+import type { Subpage } from "@/types/navigation/Subpage";
+
 import { config } from '../config';
 import { ensureDir, exists, writeIfChanged } from './fs';
 import { pascalize, sectionFolderName } from './naming';

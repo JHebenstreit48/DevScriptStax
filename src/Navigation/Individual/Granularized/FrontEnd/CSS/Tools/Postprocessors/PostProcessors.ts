@@ -1,4 +1,6 @@
-import { Subpage } from "@/Navigation/Combined/Core/NavigationTypes";
+import type { Subpage } from '@/types/navigation';
+
+
 
 import Basics from '@/Navigation/Individual/Granularized/FrontEnd/CSS/Tools/Postprocessors/General/Basics';
 import PostCSS from '@/Navigation/Individual/Granularized/FrontEnd/CSS/Tools/Postprocessors/PostAndLightning/PostCSS';

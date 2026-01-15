@@ -1,4 +1,5 @@
-import { Subpage } from '@/Navigation/Combined/Core/NavigationTypes';
+import type { Subpage } from '@/types/navigation';
+
 
 // --------------------------------- Spring Boot Start ---------------------------------
 import BootBasics from '@/Navigation/Individual/Granularized/BackEnd/Frameworks/Spring/SpringBoot/Basics';

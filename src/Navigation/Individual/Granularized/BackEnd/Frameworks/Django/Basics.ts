@@ -1,4 +1,5 @@
-import { Subpage } from '@/Navigation/Combined/Core/NavigationTypes';
+import type { Subpage } from '@/types/navigation';
+
 
 import Fundamentals from '@/Navigation/Individual/Granularized/BackEnd/Frameworks/Django/Basics/Fundamentals';
 import ModelsAndDB from '@/Navigation/Individual/Granularized/BackEnd/Frameworks/Django/Basics/ModelsAndDB';

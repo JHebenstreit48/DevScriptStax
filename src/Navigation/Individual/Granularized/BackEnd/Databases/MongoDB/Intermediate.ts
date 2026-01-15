@@ -1,4 +1,5 @@
-import { Subpage } from '@/Navigation/Combined/Core/NavigationTypes';
+import type { Subpage } from '@/types/navigation';
+
 
 import Indexes from '@/Navigation/Individual/Granularized/BackEnd/Databases/MongoDB/Intermediate/Indexes';
 import Aggregation from '@/Navigation/Individual/Granularized/BackEnd/Databases/MongoDB/Intermediate/Aggregation';

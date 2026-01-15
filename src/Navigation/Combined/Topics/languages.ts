@@ -1,4 +1,5 @@
-import { Subpage } from '@/Navigation/Combined/Core/NavigationTypes';
+import type { Subpage } from '@/types/navigation';
+
 
 import Python from '@/Navigation/Individual/FullTopics/Languages/Python';
 import JavaScript from '@/Navigation/Individual/FullTopics/Languages/JavaScript';

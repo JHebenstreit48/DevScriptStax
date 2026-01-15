@@ -1,4 +1,5 @@
-import { Subpage } from '@/Navigation/Combined/Core/NavigationTypes';
+import type { Subpage } from '@/types/navigation';
+
 
 import DOMAndEvents from '@/Navigation/Individual/Granularized/Languages/JavaScript/Intermediate/DOMAndEvent';
 import ModernES6 from '@/Navigation/Individual/Granularized/Languages/JavaScript/Intermediate/ModernES6';

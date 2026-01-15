@@ -1,4 +1,5 @@
-import { Subpage } from '@/Navigation/Combined/Core/NavigationTypes';
+import type { Subpage } from '@/types/navigation';
+
 
 import ShellAndServer from '@/Navigation/Individual/Granularized/BackEnd/Databases/MongoDB/Tools/ShellAndServer';
 import GUIAndCLI from '@/Navigation/Individual/Granularized/BackEnd/Databases/MongoDB/Tools/GUIAndCLI';

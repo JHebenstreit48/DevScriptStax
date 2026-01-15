@@ -1,4 +1,5 @@
-import { Subpage } from '@/Navigation/Combined/Core/NavigationTypes';
+import type { Subpage } from '@/types/navigation';
+
 
 // ---------- End To End Testing Navigation Start ----------
 import Cypress from '@/Navigation/Individual/FullTopics/Testing/End2End/Cypress';

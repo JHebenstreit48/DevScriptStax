@@ -11,3 +11,5 @@ export interface UseMenuReturn {
   toggleMenu: () => void;
   closeMenu: () => void;
 }
+
+export type { Subpage } from '@/types/navigation/Subpage';

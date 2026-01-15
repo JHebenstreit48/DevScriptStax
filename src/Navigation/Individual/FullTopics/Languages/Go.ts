@@ -1,4 +1,5 @@
-import { Subpage } from '@/Navigation/Combined/Core/NavigationTypes';
+import type { Subpage } from '@/types/navigation';
+
 
 import GoBasics from '@/Navigation/Individual/Granularized/Languages/Go/Basics';
 import GoIntermediate from '@/Navigation/Individual/Granularized/Languages/Go/Intermediate';

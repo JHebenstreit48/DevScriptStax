@@ -1,4 +1,6 @@
-import { Subpage } from "@/Navigation/Combined/Core/NavigationTypes";
+import type { Subpage } from '@/types/navigation';
+
+
 
 import Fundamentals from '@/Navigation/Individual/Granularized/Tools/Containerization/Docker/Basics/Fundamentals';
 import CLIAndWorkflow from '@/Navigation/Individual/Granularized/Tools/Containerization/Docker/Basics/CLIAndWorkflow';

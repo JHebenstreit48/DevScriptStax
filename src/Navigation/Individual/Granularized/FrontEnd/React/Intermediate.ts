@@ -1,4 +1,5 @@
-import { Subpage } from '@/Navigation/Combined/Core/NavigationTypes';
+import type { Subpage } from '@/types/navigation';
+
 
 import ContextAndHooks from '@/Navigation/Individual/Granularized/FrontEnd/React/Intermediate/ContextAndHooks';
 import Routing from '@/Navigation/Individual/Granularized/FrontEnd/React/Intermediate/Routing';

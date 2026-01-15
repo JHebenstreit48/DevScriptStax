@@ -1,4 +1,5 @@
-import { Subpage } from '@/Navigation/Combined/Core/NavigationTypes';
+import type { Subpage } from '@/types/navigation';
+
 
 import Authentication from '@/Navigation/Individual/FullTopics/BackEnd/AuthenticationAuthorization/Authentication';
 import Authorization from '@/Navigation/Individual/FullTopics/BackEnd/AuthenticationAuthorization/Authorization';

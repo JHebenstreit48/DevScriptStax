@@ -1,4 +1,6 @@
-import { Subpage } from "@/Navigation/Combined/Core/NavigationTypes";
+import type { Subpage } from '@/types/navigation';
+
+
 
 import cloudServices from "@/Navigation/Combined/Topics/CloudAndDeployment/cloudServices";
 import cloudProviders from "@/Navigation/Combined/Topics/CloudAndDeployment/cloudProviders";

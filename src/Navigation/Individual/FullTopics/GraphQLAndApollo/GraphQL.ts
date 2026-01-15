@@ -1,4 +1,5 @@
-import { Subpage } from '@/Navigation/Combined/Core/NavigationTypes';
+import type { Subpage } from '@/types/navigation';
+
 import GraphQLBasics from '@/Navigation/Individual/Granularized/GraphQLAndApollo/GraphQL/Basics';
 import GraphQLAdvanced from '@/Navigation/Individual/Granularized/GraphQLAndApollo/GraphQL/Advanced';
 

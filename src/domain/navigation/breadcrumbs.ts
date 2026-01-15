@@ -1,5 +1,6 @@
-import { Subpage } from '@/Navigation/Combined/Core/NavigationTypes';
-import allPages from '@/Navigation/Combined/Core/Pages';
+import type { Subpage } from '@/types/navigation';
+
+import allPages from '@/domain/navigation/mainTabs';
 
 export function findTrail(nodes: Subpage[], currentPath: string): string[] | null {
   for (const node of nodes) {
