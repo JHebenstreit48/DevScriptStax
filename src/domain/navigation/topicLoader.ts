@@ -1,4 +1,4 @@
-import type { Subpage } from "@/types/navigation/Subpage";
+import type { Subpage } from '@/types/navigation/Subpage';
 
 export type TopicKey =
   | 'frontEnd'

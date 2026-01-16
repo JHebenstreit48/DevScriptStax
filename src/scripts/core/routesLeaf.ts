@@ -1,5 +1,5 @@
 import path from 'node:path';
-import type { Subpage } from "@/types/navigation/Subpage";
+import type { Subpage } from '@/types/navigation/Subpage';
 
 import { config } from '../config';
 import { ensureDir, exists, writeIfChanged } from './fs';
