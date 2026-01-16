@@ -21,7 +21,7 @@
   font-size: $size;
   font-weight: $weight;
   font-family: $family;
-  font-style: italic;                // can be overridden after include
+  font-style: italic; // can be overridden after include
   letter-spacing: 0.03em;
 
   position: relative;
@@ -98,8 +98,8 @@
   --sheen-end: 56%;
 
   background:
-    linear-gradient(180deg, rgba(255,255,255,var(--frost-top)), rgba(255,255,255,var(--frost-bot))),
-    linear-gradient(180deg, rgba(18,32,112,var(--tint-top)), rgba(12,22,76,var(--tint-bot)));
+    linear-gradient(180deg, rgba(255, 255, 255, var(--frost-top)), rgba(255, 255, 255, var(--frost-bot))),
+    linear-gradient(180deg, rgba(18, 32, 112, var(--tint-top)), rgba(12, 22, 76, var(--tint-bot)));
   border: 1px solid rgba(255, 255, 255, 0.18);
   outline: 1px solid rgba(0, 255, 255, 0.18);
   outline-offset: -1px;
@@ -130,11 +130,11 @@
     background:
       linear-gradient(
         var(--sheen-angle),
-        rgba(255,255,255,0) var(--sheen-start),
-        rgba(255,255,255,var(--sheen-alpha)) var(--sheen-peak),
-        rgba(255,255,255,0) var(--sheen-end)
+        rgba(255, 255, 255, 0) var(--sheen-start),
+        rgba(255, 255, 255, var(--sheen-alpha)) var(--sheen-peak),
+        rgba(255, 255, 255, 0) var(--sheen-end)
       ),
-      linear-gradient(145deg, rgba(255,255,255,0.05), transparent 60%);
+      linear-gradient(145deg, rgba(255, 255, 255, 0.05), transparent 60%);
     background-repeat: no-repeat;
     background-size: cover, cover;
 
@@ -188,9 +188,14 @@
     z-index: 1; /* above veneers */
 
     /* Make direct children sit above the veil */
-    > * { position: relative; z-index: 1; }
+    > * {
+      position: relative;
+      z-index: 1;
+    }
 
-    p + p { margin-top: 0.5rem; }
+    p + p {
+      margin-top: 0.5rem;
+    }
 
     @include maxw($cellphone-portrait) {
       width: 100%;
@@ -198,6 +203,65 @@
       padding: 0;
       font-size: $notes-md-font-size-mobile;
       text-align: center;
+    }
+
+    /* ===== Cross-reference nav (Back/Next boxes) ===== */
+    .xrefNav {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      align-items: start;
+      margin-top: 1.25rem;
+
+      @include maxw($cellphone-portrait) {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .xrefItem {
+      display: grid;
+      gap: 8px;
+    }
+
+    /* left + right alignment while keeping buttons identical */
+    .xrefItem:first-child {
+      justify-items: start;
+    }
+    .xrefItem:last-child {
+      justify-items: end;
+    }
+
+    .xrefBtn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 140px;
+      height: 44px;
+
+      border-radius: 12px;
+      background: rgba(12, 16, 38, 0.55);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      color: $notes-secondary;
+
+      font-weight: 700;
+      font-style: italic;
+      text-decoration: none;
+    }
+
+    /* prevent your global link underline animation from changing the button look */
+    .xrefBtn::after {
+      display: none;
+    }
+
+    .xrefTitle {
+      max-width: 240px;
+      text-align: center;
+      line-height: 1.25;
+      overflow-wrap: anywhere;
+
+      color: #45b6ff;
+      font-weight: 600;
     }
 
     .loadingMessage {
@@ -213,7 +277,12 @@
     }
 
     /* Headings */
-    h1, h2, h3, h4, h5, h6 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
       color: #f1f3f9;
       text-shadow: none;
       font-weight: 700;
@@ -244,8 +313,11 @@
       &::after {
         content: '';
         position: absolute;
-        left: 0; right: 0; bottom: -2px;
-        height: 2px; width: 0%;
+        left: 0;
+        right: 0;
+        bottom: -2px;
+        height: 2px;
+        width: 0%;
         margin-inline: auto;
         background: currentColor;
         transition: width 0.28s ease;
@@ -253,7 +325,9 @@
 
       &:hover {
         color: color.adjust(#45b6ff, $lightness: 6%);
-        &::after { width: 100%; }
+        &::after {
+          width: 100%;
+        }
       }
 
       &:focus-visible {
@@ -273,8 +347,8 @@
       background: linear-gradient(
         90deg,
         transparent,
-        rgba(255,255,255,0.32) 18%,
-        rgba(255,255,255,0.32) 82%,
+        rgba(255, 255, 255, 0.32) 18%,
+        rgba(255, 255, 255, 0.32) 82%,
         transparent
       );
       width: 100%;
@@ -286,12 +360,7 @@
 
     /* primary keyword: gold, JetBrains Mono */
     .emphasis {
-      @include inline-pop(
-        $notes-secondary,
-        $notes-emphasis-size,
-        $font-emphasis,
-        500
-      );
+      @include inline-pop($notes-secondary, $notes-emphasis-size, $font-emphasis, 500);
 
       @include maxw($cellphone-portrait) {
         font-size: 1.1rem;
@@ -300,13 +369,8 @@
 
     /* secondary keyword: cyan, slightly lighter, not italic */
     .secondEmphasis {
-      @include inline-pop(
-        $notes-info,
-        $notes-emphasis-size - 1px,
-        $font-emphasis,
-        400
-      );
-      font-style: normal;           // contrast with primary emphasis
+      @include inline-pop($notes-info, $notes-emphasis-size - 1px, $font-emphasis, 400);
+      font-style: normal; // contrast with primary emphasis
       letter-spacing: 0.02em;
     }
 
@@ -375,7 +439,9 @@
         margin-right: auto;
       }
 
-      .tableHeader { background-color: $notes-table-header-bg; }
+      .tableHeader {
+        background-color: $notes-table-header-bg;
+      }
 
       .tableCellHeader {
         text-align: center;
@@ -427,9 +493,11 @@
       margin-left: auto;
       margin-right: auto;
 
-      box-shadow: 0 8px 24px rgba(0,0,0,.35);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
 
-      div { margin: 0 !important; }
+      div {
+        margin: 0 !important;
+      }
 
       .codeBlockHeader {
         @include flex-center;
