@@ -3,7 +3,7 @@ import Header from '@/Components/Shared/Header/Header';
 import { fetchHomeMarkdown } from '@/Components/PageComponents/Notes/HomeText/Utils/fetchHomeMarkdown';
 import HomeRenderer from '@/Components/PageComponents/Notes/HomeText/HomeRenderer';
 // Reuse Home.scss so .siteInfo/.siteInfoContent/.Note styles apply
-import '@/SCSS/Page/Home/Home.scss';
+import '@/scss/Page/Home/Home.scss';
 
 export default function About() {
   const [md, setMd] = useState<string>('');

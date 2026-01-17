@@ -1,6 +1,6 @@
 import { useEffect, useState, lazy, Suspense, useCallback } from "react";
 import { fetchMarkdown } from "@/Components/PageComponents/Notes/NotesRendering/Utils/fetchMarkdown";
-import '@/SCSS/Page/Notes/index.scss';
+import '@/scss/Page/Notes/index.scss';
 
 const MarkdownRenderer = lazy(
   () =>
