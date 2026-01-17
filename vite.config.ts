@@ -20,7 +20,7 @@ export default defineConfig({
       '@pages': resolve(__dirname, 'src/Pages'),
       '@components': resolve(__dirname, 'src/Components'),
       '@routes': resolve(__dirname, 'src/routes'),
-      '@scss': resolve(__dirname, 'src/SCSS'),
+      '@scss': resolve(__dirname, 'src/scss'),
       '@navFull': resolve(__dirname, 'src/Navigation/Individual/FullTopics'),
       '@navGranular': resolve(__dirname, 'src/Navigation/Individual/Granularized'),
       '@routeFull': resolve(__dirname, 'src/routes/Individual/FullRoutes'),
