@@ -1,0 +1,53 @@
+@use 'sass:color';
+@use '@scss/Globals' as *;
+@use '../mixins' as *;
+
+.tableWrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      overflow-x: auto;
+
+      .notesTable {
+        width: 100%;
+        border-collapse: collapse;
+        margin: $notes-table-margin;
+        table-layout: fixed;
+        word-wrap: break-word;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .tableHeader {
+        background-color: $notes-table-header-bg;
+      }
+
+      .tableCellHeader {
+        text-align: center;
+        padding: $notes-table-header-padding;
+        border: $notes-table-border;
+        background-color: $notes-table-cell-bg;
+        font-weight: bold;
+        word-wrap: break-word;
+      }
+
+      .tableRow:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+        transition: background-color 0.3s ease-in-out;
+      }
+
+      .tableCell,
+      .centeredCell {
+        padding: $notes-table-cell-padding;
+        text-align: left;
+        border: $notes-table-border;
+        background-color: $notes-table-bg;
+        word-wrap: break-word;
+      }
+
+      /* table-specific emphasis uses same modern word style */
+      .tableEmphasis {
+        @include inline-pop($notes-secondary, $notes-table-emphasis-size, $mono-jetbrains);
+      }
+    }

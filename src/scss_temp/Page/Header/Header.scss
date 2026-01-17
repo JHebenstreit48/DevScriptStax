@@ -1,0 +1,136 @@
+@use 'sass:color';
+@use '@scss/Globals' as *;
+
+/* ==============================
+            Variables           
+   ============================== */
+$header-bg-color: rgba(0, 0, 0, 0.9);
+$header-border-color: rgba(0, 255, 255, 0.2);
+$header-blur: 10px;
+
+$text-color: #032c2c;
+$text-glow: #00ffff;
+
+$header-height: 4rem;
+/* fix comma → decimal to avoid layout weirdness */
+$site-name-height: 2.5rem;
+$font-size-default: 2.4rem;
+$cellphone-portrait: 480px;
+
+/* ==============================
+            Base Styles       
+   ============================== */
+.HeaderBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: $header-height;
+  background-color: $header-bg-color;
+  backdrop-filter: blur($header-blur);
+  border-bottom: 1px solid $header-border-color;
+  z-index: 12;
+
+  @media only screen and (max-width: $cellphone-portrait) {
+    height: 4.5rem;
+  }
+}
+
+.HeaderLeft {
+  display: flex;
+  padding-left: 2rem;
+
+  @media only screen and (max-width: $cellphone-portrait) {
+    padding-left: 2rem;
+  }
+}
+
+.HeaderRight {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* ==============================
+         Header Title Styling    
+   ============================== */
+.Header {
+  font-size: $font-size-default;
+  background-color: $header-bg-color;
+  backdrop-filter: blur($header-blur);
+  -webkit-backdrop-filter: blur($header-blur);
+  color: $text-color;
+  text-shadow: 0 0 6px $text-glow, 0 0 4px $text-glow, 0 0 10px $text-glow;
+  white-space: nowrap;
+  margin: 0 auto;
+  text-align: center;
+  height: $site-name-height;
+  line-height: $site-name-height; /* keep baseline identical to pre-link look */
+
+  /* If you ever need left alignment */
+  &.HeaderAlignLeft {
+    margin: 0;
+    text-align: left;
+  }
+
+  /* --- Title-as-link resets (stop global <a> rules from styling it) --- */
+  .HeaderHomeLink {
+    display: inline-block;     /* bigger click target, stable layout */
+    color: inherit;            /* inherit the h1 color/glow */
+    text-decoration: none;     /* kill text underlines */
+    border: 0;                 /* kill border-bottom underlines */
+    border-bottom: none !important;
+    position: relative;        /* neutralize absolute ::after lines */
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      border-bottom: none !important;
+    }
+
+    /* In case global CSS adds animated bars on links */
+    &::after,
+    &::before {
+      content: none !important;
+    }
+
+    /* Accessible focus without visual noise */
+    &:focus-visible {
+      outline: 2px solid currentColor;
+      outline-offset: 2px;
+    }
+  }
+}
+
+/* ==============================
+          Size Variants           
+   ============================== */
+// .Header.sm {
+//   font-size: clamp(1.8rem, 4.5vw, 2.3rem);
+//   @media only screen and (max-width: $cellphone-portrait) {
+//     font-size: clamp(1.7rem, 4.5vw, 2.2rem);
+//   }
+// }
+
+.Header.md {
+  font-size: clamp(2.3rem, 5vw, 2.8rem);
+
+  @media only screen and (max-width: $cellphone-portrait) {
+    font-size: clamp(2.2rem, 5vw, 2.6rem);
+  }
+}
+
+.Header.lg {
+  font-size: clamp(3rem, 6vw, 4.5rem);
+
+  @media only screen and (max-width: $cellphone-portrait) {
+    font-size: clamp(2.6rem, 6vw, 3.8rem);
+    max-width: 85%;
+  }
+}

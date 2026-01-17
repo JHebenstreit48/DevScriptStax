@@ -1,0 +1,29 @@
+/* Navigation font sizes */
+$font-lg: 1.6rem;
+$font-md: 1.3rem;
+$font-sm: 1.25rem;
+$font-xs: 1rem;
+
+/* Tooltip font */
+$mono-jetbrains: 'JetBrains Mono', monospace;
+$tooltip-font-size: 0.95rem;
+
+/* Modal */
+$modal-header-size: 1.5rem;
+$modal-body-font: 1.1rem; // used by .resetButton etc.
+
+/* ===== Notes: fonts & sizes ===== */
+$font-main: 'Arial', sans-serif;
+
+/* Display / cursive-style font for emphasized keywords */
+$font-emphasis: 'Playfair Display', 'Times New Roman', serif;
+
+/* JetBrains is the default monospace for notes */
+$font-monospace: $mono-jetbrains;
+
+$notes-emphasis-size: 21px;          // slightly smaller so it feels lighter
+$notes-sub2-size: 30px;
+$notes-table-emphasis-size: 1.35rem;
+
+/* used by inline code + code blocks */
+$notes-code-font: normal 1rem/1.5 $font-monospace;
