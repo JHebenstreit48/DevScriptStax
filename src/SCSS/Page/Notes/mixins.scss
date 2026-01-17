@@ -1,0 +1,59 @@
+@use 'sass:color';
+@use '@scss/Globals' as *;
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin text-emphasis($clr, $size) {
+  color: $clr;
+  font: italic bold $size $font-main;
+}
+
+/* Word-level emphasis: subtle glow + tiny hover pop, no background blocks */
+@mixin inline-pop($clr, $size, $family: $font-main, $weight: 500) {
+  color: $clr;
+  font-size: $size;
+  font-weight: $weight;
+  font-family: $family;
+  font-style: italic; // can be overridden after include
+  letter-spacing: 0.03em;
+
+  position: relative;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.55);
+
+  transition:
+    color 140ms ease,
+    text-shadow 140ms ease,
+    transform 110ms ease;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -0.18em;
+    height: 1px;
+    border-radius: 999px;
+    background: color.adjust($clr, $alpha: -0.5);
+    transform-origin: center;
+    transform: scaleX(0);
+    opacity: 0.9;
+    transition:
+      transform 150ms ease-out,
+      opacity 150ms ease-out;
+  }
+
+  &:hover {
+    transform: translateY(-0.02em);
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.9);
+    color: color.adjust($clr, $lightness: 6%);
+
+    &::after {
+      transform: scaleX(1);
+      opacity: 1;
+    }
+  }
+}

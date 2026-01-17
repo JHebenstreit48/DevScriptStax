@@ -1,0 +1,11 @@
+@use 'sass:color';
+@use '@scss/Globals' as *;
+// @use './mixins' as *;
+
+.fullWidthBullet {
+      column-count: 1;
+
+      @include maxw($cellphone-portrait) {
+        text-align: left;
+      }
+    }

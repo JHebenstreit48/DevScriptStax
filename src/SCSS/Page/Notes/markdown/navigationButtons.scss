@@ -1,0 +1,108 @@
+@use 'sass:color';
+@use '@scss/Globals' as *;
+@use '../mixins' as *;
+
+.xrefNav {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      align-items: start;
+      margin-top: 1.25rem;
+
+      /* Keep 2 columns on phones so Back/Next stay side-by-side */
+      @include maxw($cellphone-portrait) {
+        gap: 10px;
+        margin-top: 1rem;
+      }
+
+      /* ✅ ONLY ONE item? shove it to the right */
+      > .xrefItem:only-child {
+        grid-column: 2;
+        justify-items: end;
+
+        @include maxw($cellphone-portrait) {
+          grid-column: 2; /* keep it on the right column */
+          justify-items: end;
+        }
+      }
+    }
+
+    .xrefItem {
+      display: grid;
+      gap: 8px;
+
+      /* Critical: allow grid children to shrink so text can wrap */
+      min-width: 0;
+
+      @include maxw($cellphone-portrait) {
+        gap: 6px;
+      }
+    }
+
+    /* left + right alignment while keeping buttons identical */
+    .xrefItem:first-child {
+      justify-items: start;
+      text-align: left;
+    }
+    .xrefItem:last-child {
+      justify-items: end;
+      text-align: right;
+    }
+
+    .xrefBtn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      /* Keep your look, but make it flexible */
+      width: 140px;
+      height: 44px;
+
+      border-radius: 12px;
+      background: rgba(12, 16, 38, 0.55);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      color: $notes-secondary;
+
+      font-weight: 700;
+      font-style: italic;
+      text-decoration: none;
+
+      /* Mobile: smaller button */
+      @include maxw($cellphone-portrait) {
+        width: auto; /* don’t force fixed width */
+        min-width: 110px; /* keep it button-like */
+        height: 38px;
+        padding: 0 0.65rem; /* comfortable tap size */
+        font-size: 0.9rem;
+        border-radius: 10px;
+      }
+    }
+
+    /* prevent your global link underline animation from changing the button look */
+    .xrefBtn::after {
+      display: none;
+    }
+
+    .xrefTitle {
+      max-width: 240px;
+      line-height: 1.25;
+      overflow-wrap: anywhere;
+
+      color: #45b6ff;
+      font-weight: 600;
+
+      /* Let it wrap without pushing the other column */
+      min-width: 0;
+      white-space: normal;
+      word-break: break-word;
+
+      /* Align titles with their button side */
+      text-align: inherit;
+      text-align-last: center;
+
+      @include maxw($cellphone-portrait) {
+        max-width: 100%;
+        font-size: 0.85rem;
+        line-height: 1.2;
+      }
+    }

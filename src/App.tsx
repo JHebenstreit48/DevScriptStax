@@ -7,8 +7,8 @@ import BackToTopGate from '@/Components/Shared/BackToTop/Gate';
 import '@/SCSS/Page/Page.scss';
 import '@/SCSS/Page/Header/Header.scss';
 import '@/SCSS/Page/Footer.scss';
-import '@/SCSS/Navigation/Navigation.scss';
-import '@/SCSS/Navigation/SearchModal.scss';
+import '@/SCSS/Navigation/index.scss';
+
 import '@/SCSS/Page/Error.scss';
 
 export default function App() {
