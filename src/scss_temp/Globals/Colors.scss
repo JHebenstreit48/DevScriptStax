@@ -1,0 +1,60 @@
+/* Navigation palette */
+$level-1: rgb(7, 193, 255);
+$level-2: rgb(218, 165, 32);
+$level-3: rgb(19, 145, 2);
+$level-4: rgb(201, 84, 255);
+$level-5: rgb(165, 0, 206);
+$nav-level-1-brand: #1e90ff; // explicit top-level link color
+
+$background-dark: rgb(22, 22, 22);
+$dropdown-bg: rgb(0, 0, 0);
+$dropdown-hover: rgb(60, 60, 60);
+$scrollbar-track: rgb(73, 73, 73);
+
+/* Navigation */
+$text-shadow-dim: rgb(68, 68, 68);      // for nav text-shadow
+$nav-overlay-bg: rgba(0, 0, 0, 0.95);   // mobile open menu bg overlay
+
+/* PageLayout tooltip */
+$tooltip-bg-strong: rgba(0, 0, 0, 0.95);
+$tooltip-cyan: #00ffff;
+$tooltip-cyan-dim: #00cccc;
+$tooltip-border-cyan: rgba(0, 255, 255, 0.2);
+
+/* SearchModal colors */
+$modal-bg: rgba(0, 0, 0, 0.6);
+$modal-content-bg: #fff;
+$modal-text-color: #111;
+$modal-shadow-color: rgba(0, 0, 0, 0.3);
+$close-color: #444;
+$close-hover: #000;
+$link-color: #007bff;           // matches your $royal-blue
+$link-hover-underline: underline;
+$breadcrumb-color: #777;
+$empty-text-color: #666;
+
+/* ===== Notes: palette & surfaces ===== */
+$notes-primary: rgb(6, 159, 248);   // main blue accent (used for inline-code border/glow)
+$notes-secondary: rgb(243, 175, 28); // gold for primary emphasis
+$notes-header: rgb(125, 213, 248);
+$notes-emphasis: rgb(255, 56, 209);  // legacy pink accent (still available if needed)
+$notes-success: rgb(47, 185, 20);    // legacy "success" green
+$notes-highlight: rgb(175, 28, 243);
+$notes-info: rgb(12, 217, 231);      // bright cyan (secondary emphasis)
+$notes-bullet: rgb(0, 255, 60);
+
+$notes-bg-dark: rgba(41, 40, 40, 0.4);
+$notes-code-bg: rgb(29, 31, 33);       // shared between code blocks & inline code pills
+$notes-table-bg: #1b1b1b;
+$notes-code-header-bg: rgb(40, 44, 52);
+
+$notes-table-border-color: #ddd;
+$notes-table-header-bg: #333;
+$notes-table-cell-bg: #444;
+
+/* Utility for borders/buttons in code block area */
+$notes-border-subtle: #444;
+
+/* Reuse existing dropdown-hover for hovers inside Notes (already defined):
+   $dropdown-hover: rgb(60, 60, 60);
+*/

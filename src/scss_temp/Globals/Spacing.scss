@@ -1,0 +1,78 @@
+/* Navigation layout */
+$dropdown-width: 17rem;
+
+/* Navigation — positions, spacing, sizes */
+$nav-left-desktop: 25rem;           // .navigationMenu left (desktop)
+$nav-mobile-margin-top: 0.5rem;     // .navigationMenu margin-top (mobile)
+$nav-mobile-right: 0.5rem;          // .navigationMenu right (mobile)
+
+$nav-search-left-desktop: 86.5rem;    // .searchIconContainer left (desktop)
+$nav-search-left-laptop: 2.5rem;    // .searchIconContainer left (small-laptop range)
+$nav-search-top-desktop: 60%;       // .searchIconContainer top (desktop)
+$nav-search-top-mobile: 1rem;     // .searchIconContainer top (mobile)
+
+$mainnav-margin-top: 0.2rem;        // .mainNav margin-top
+
+/* ✅ Single-token shorthand instead of Y/X split */
+$nav-dropdown-padding: 1rem 0;      // .dropdownContent padding
+$nav-dropdown-max-height: 31.2rem;  // active dropdown max-height
+$nav-dropdown-mobile-margin-top: 0.5rem;
+$nav-dropdown-offset: 14px;      // offset from bottom of button to top of dropdown
+
+$nav-gap-mobile: 1rem;              // mobile gap inside .dropdownButton
+$scrollbar-width-thin: 6px;         // thin scrollbar width
+
+/* Z-index (optional centralization) */
+$z-nav: 10;
+$z-nav-overlay: 11;
+$z-nav-dropdown: 12;
+$z-nav-hamburger: 15;
+
+/* PageLayout tooltip */
+$tooltip-pad-y: 0.75rem;
+$tooltip-pad-x: 1.25rem;
+$tooltip-min-width: 250px;
+
+/* Modal spacing */
+$modal-pad: 2rem;
+$modal-content-max-width: 600px;
+$modal-content-max-height: 80vh;
+$modal-border-radius: 10px;
+
+/* ===== Notes: layout & spacing ===== */
+$notes-card-width-desktop: 60%;
+$notes-card-margin: 4rem auto 3rem auto;
+$notes-card-padding: 0 0 2rem;
+$notes-md-width: 85%;
+$notes-md-margin: 1rem auto;
+$notes-md-font-size: 20px;
+$notes-md-padding: 1rem;
+$notes-md-line-height: 1.5;
+$notes-md-width-mobile: 96%;
+$notes-md-font-size-mobile: 1rem;
+$notes-md-padding-top-mobile: 1rem;
+$notes-loading-font-size: 1.8rem;
+$notes-loading-margin-top: 2rem;
+$notes-h1-size: 2.5rem;
+$notes-h-margin-bottom: 1rem;
+$notes-p-width: 85%;
+$notes-p-width-mobile: 19rem;
+$notes-hr-width-desktop: 61rem;
+$notes-hr-width-mobile: 21rem;
+$notes-sub1-margin: 1.6rem auto;
+$notes-bullet1-width: 75%;
+$notes-bullet1-margin: 0.5rem auto 0 auto;
+$notes-bullet1-pad-left: 4rem;
+$notes-bullet2-width: 55%;
+$notes-bullet2-margin: 0.5rem auto 0 auto;
+$notes-bullet2-pad-left: 8rem;
+$notes-bullet2-li-width: 10%;
+$notes-bullet3-width: 40rem;
+$notes-bullet4-pad-left: 15rem;
+$notes-table-width: 35rem;
+$notes-table-margin: 1rem 0;
+$notes-table-cell-padding: 10px;
+$notes-table-header-padding: 12px;
+$notes-code-header-padding: 0.5rem 1rem;
+$notes-token-width: 10rem;
+$notes-token-line-height: 2.4rem;

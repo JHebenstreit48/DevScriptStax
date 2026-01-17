@@ -1,0 +1,21 @@
+/* =============================
+   Variables
+   ============================= */
+   $text-color: white;
+   $font-size-lg: 1.8rem;
+   $margin-top-lg: 17rem;
+   
+   /* =============================
+      Error Page Styling
+      ============================= */
+   #error-page {
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     align-items: center;
+     line-height: 2.5;
+     color: $text-color;
+     font-size: $font-size-lg;
+     margin-top: $margin-top-lg;
+   }
+   
