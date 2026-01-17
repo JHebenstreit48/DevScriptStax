@@ -216,6 +216,17 @@
       @include maxw($cellphone-portrait) {
         grid-template-columns: 1fr;
       }
+
+      /* ✅ ONLY ONE item? shove it to the right */
+      > .xrefItem:only-child {
+        grid-column: 2;
+        justify-items: end;
+
+        @include maxw($cellphone-portrait) {
+          grid-column: auto;
+          justify-items: center; // or start if you prefer
+        }
+      }
     }
 
     .xrefItem {
