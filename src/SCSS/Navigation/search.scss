@@ -1,0 +1,385 @@
+@use "@scss/Globals" as *;
+@use "sass:color";
+
+/* ==============================
+            Variables
+============================== */
+$modal-overlay: radial-gradient(120% 120% at 50% 30%, rgba(20, 20, 60, .55), rgba(0,0,0,.84));
+$panel-bg: rgba(12, 12, 20, .88);
+$panel-fg: #e8ebff;
+$panel-border: rgba(255,255,255,.12);
+
+$link: #7fb6ff;
+$link-hover: #a8c9ff;
+$muted: #9aa0b3;
+$muted-2: #7a8091;
+
+/* ==============================
+           Modal Container
+============================== */
+.searchModal {
+  position: fixed;
+  inset: 0;
+  background: $modal-overlay;
+  z-index: 999;
+  display: grid;
+  place-items: center;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  animation: fadeIn .14s ease-out both;
+}
+
+/* ==============================
+           Modal Content
+============================== */
+.searchModalContent {
+  width: min(820px, 92vw);
+  max-height: 78vh;
+
+  background: $panel-bg;
+  color: $panel-fg;
+  border: 1px solid $panel-border;
+  border-radius: 16px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 20px 70px rgba(0,0,0,.55),
+    inset 0 0 0 1px rgba(255,255,255,.04);
+
+  transform-origin: 50% 40%;
+  animation: popIn .16s ease-out both;
+
+  display: grid;
+  grid-template-rows: auto 1fr;
+
+  @include maxw($cellphone-portrait) { width: min(620px, 94vw); }
+}
+
+/* ==============================
+            Header / Close
+============================== */
+.searchModalHeader {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 1rem 1.1rem .75rem;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+
+  background: linear-gradient(180deg, rgba(12,12,20,.92), rgba(12,12,20,.70));
+  backdrop-filter: blur(10px);
+
+  font-size: 1.15rem;
+  font-weight: 750;
+  letter-spacing: .2px;
+
+  .closeButton {
+    position: absolute;
+    right: .7rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255,255,255,.06);
+    border: 1px solid rgba(255,255,255,.12);
+    border-radius: 10px;
+    width: 2.2rem;
+    height: 2.2rem;
+    font-size: 1.4rem;
+    line-height: 1;
+    cursor: pointer;
+    color: $muted;
+
+    &:hover { color: $panel-fg; border-color: rgba(0,209,255,.35); }
+    &:focus-visible {
+      outline: 2px solid rgba(0, 209, 255, .75);
+      outline-offset: 3px;
+    }
+  }
+}
+
+/* ==============================
+          Controls area
+============================== */
+.searchControls {
+  padding: 1rem 1.1rem 1.15rem;
+  overflow: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: .9rem;
+}
+
+/* Inputs */
+.searchModalContent input[type="text"],
+.searchModalContent input[type="search"] {
+  width: 100%;
+  padding: .75rem .9rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,.12);
+  background: rgba(15, 15, 26, .9);
+  color: $panel-fg;
+  font-size: 1rem;
+
+  box-shadow:
+    inset 0 0 0 1px rgba(255,255,255,.03),
+    0 10px 30px rgba(0,0,0,.25);
+
+  &::placeholder { color: rgba(232,235,255,.55); }
+
+  &:focus {
+    outline: none;
+    border-color: rgba(0, 209, 255, .65);
+    box-shadow:
+      0 0 0 4px rgba(0, 209, 255, .12),
+      0 10px 30px rgba(0,0,0,.25);
+  }
+}
+
+/* ==============================
+   Segmented toggle + Reset row
+============================== */
+.searchModeRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .75rem;
+}
+
+.segmented {
+  display: inline-flex;
+  border-radius: 999px;
+  padding: .2rem;
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.10);
+}
+
+.segBtn {
+  border: none;
+  background: transparent;
+  color: rgba(232,235,255,.75);
+  padding: .5rem .85rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background .16s ease, color .16s ease, box-shadow .16s ease;
+
+  &:hover { color: rgba(232,235,255,.95); }
+
+  &.active {
+    background: rgba(0,209,255,.14);
+    color: rgba(232,235,255,.98);
+    box-shadow: 0 0 0 3px rgba(0,209,255,.08);
+  }
+
+  &:focus-visible {
+    outline: 2px solid rgba(0, 209, 255, .75);
+    outline-offset: 3px;
+  }
+}
+
+.resetButton {
+  border: 1px solid rgba(255,255,255,.12);
+  background: rgba(255,255,255,.06);
+  color: $muted;
+  border-radius: 12px;
+  padding: .55rem .85rem;
+  cursor: pointer;
+
+  &:hover { color: $panel-fg; border-color: rgba(0,209,255,.35); }
+
+  &:focus-visible {
+    outline: 2px solid rgba(0, 209, 255, .75);
+    outline-offset: 3px;
+  }
+}
+
+/* ==============================
+           Results
+============================== */
+.searchResultEmpty {
+  font-style: italic;
+  color: $muted-2;
+  padding: .5rem 0;
+}
+
+.searchModalContent ul {
+  list-style: none;
+  margin: .5rem 0 0;
+  padding: 0;
+}
+
+.searchModalContent li {
+  margin: 0;
+  padding: .55rem .5rem;
+  border-radius: 10px;
+
+  &:hover { background: rgba(255,255,255,.05); }
+}
+
+.searchModalContent a {
+  color: $link;
+  text-decoration: none;
+  font-weight: 650;
+
+  &:hover { color: $link-hover; }
+
+  .breadcrumbs {
+    display: inline-block;
+    margin-left: .5rem;
+    font-size: .85rem;
+    color: $muted;
+    font-weight: 500;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes popIn {
+  from { opacity: 0; transform: translateY(10px) scale(.985); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .searchModal { backdrop-filter: none; -webkit-backdrop-filter: none; animation: none; }
+  .searchModalContent { animation: none; }
+}
+
+/* ==============================
+          Search Icon Container
+============================== */
+.searchIconContainer {
+  position: absolute;
+  left: $nav-search-left-desktop;
+  top: $nav-search-top-desktop;
+  transform: translateY(-50%);
+  z-index: $z-nav-overlay;
+
+  @include maxw($cellphone-portrait) {
+    display: flex;
+    flex-direction: column;
+    left: 50%;
+    top: $nav-search-top-mobile;
+  }
+
+  @include between($small-laptop-min, $small-laptop-max) {
+    left: $nav-search-left-laptop;
+  }
+  @include between($medium-laptop-min, $medium-laptop-max) {
+    left: calc($nav-search-left-laptop + 0.5rem);
+  }
+}
+
+/* ==============================
+           Search Icon Button
+============================== */
+.searchIconButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 999px;
+
+  background: radial-gradient(120% 120% at 30% 20%, rgba(0, 209, 255, 0.22), transparent 60%), rgba(255, 255, 255, 0.06);
+
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: $level-1;
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.35),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.04);
+
+  cursor: pointer;
+  transition:
+    transform 0.16s ease,
+    box-shadow 0.18s ease,
+    border-color 0.18s ease,
+    background-color 0.18s ease;
+
+  &:hover {
+    border-color: rgba(0, 209, 255, 0.35);
+    box-shadow:
+      0 14px 36px rgba(0, 0, 0, 0.45),
+      0 0 0 4px rgba(0, 209, 255, 0.1),
+      inset 0 0 0 1px rgba(255, 255, 255, 0.06);
+  }
+
+  &:active {
+    transform: translateY(1px) scale(0.98);
+  }
+
+  &:focus-visible {
+    outline: 2px solid rgba(0, 209, 255, 0.75);
+    outline-offset: 3px;
+  }
+
+  svg {
+    width: 1.05rem;
+    height: 1.05rem;
+    display: block;
+  }
+}
+
+/* ==============================
+           Search Pill (Desktop)
+============================== */
+.searchPill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+
+  height: 2.5rem;
+  padding: 0 0.9rem;
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: rgba(232, 235, 255, 0.92);
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition:
+    border-color 0.18s ease,
+    box-shadow 0.18s ease,
+    transform 0.16s ease;
+
+  &:hover {
+    border-color: rgba(0, 209, 255, 0.35);
+    box-shadow:
+      0 14px 36px rgba(0, 0, 0, 0.35),
+      0 0 0 4px rgba(0, 209, 255, 0.08);
+  }
+
+  &:active {
+    transform: translateY(1px);
+  }
+
+  &:focus-visible {
+    outline: 2px solid rgba(0, 209, 255, 0.75);
+    outline-offset: 3px;
+  }
+
+  .searchPillIcon {
+    opacity: 0.9;
+    font-size: 1.05rem;
+    line-height: 1;
+  }
+
+  .searchPillText {
+    font-weight: 600;
+    letter-spacing: 0.15px;
+  }
+
+  @include maxw($cellphone-portrait) {
+    display: none; // mobile uses icon-only
+  }
+}
