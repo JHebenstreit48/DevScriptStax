@@ -1,35 +1,41 @@
 export const config = {
   // Where to import the navigation root from (Subpage[])
-  navEntryModule: "@/Navigation/Combined/Core/Pages",
+  navEntryModule: '@/domain/navigation/mainTabs', // <- match your new structure
 
   // Output roots
-  pagesRoot: "src/Pages/MainTabs",
-  routesSectionsRoot: "src/routes/Sections",
+  pagesRoot: 'src/Pages/MainTabs',
+  routesSectionsRoot: 'src/routes/Sections',
 
-  // Map nav “Main Tab” display names -> folder names you actually use
-  // Add/adjust per repo as needed.
   sectionNameMap: {
-    "Front End": "FrontEnd",
-    "Back End": "BackEnd",
-    "GraphQL & Apollo": "GraphQLAndApollo",
-    "Cloud & Deploy": "CloudAndDeployment",
-    "Languages": "Languages",
-    "Testing": "Testing",
-    "Tools": "Tools",
-    "Stacks": "Stacks",
+    'Front End': 'FrontEnd',
+    'Back End': 'BackEnd',
+    'GraphQL & Apollo': 'GraphQLAndApollo',
+    'Cloud & Deploy': 'CloudAndDeployment',
+    'Languages': 'Languages',
+    'Testing': 'Testing',
+    'Tools': 'Tools',
+    'Stacks': 'Stacks',
   } as Record<string, string>,
 
-  // If the leaf name is “generic”, make the H1 slightly richer:
-  // “Fundamentals: Introduction”
+  // Optional: override topic folder names
+  topicNameMap: {
+    // Keep empty unless you truly need it.
+  } as Record<string, string>,
+
+  // ✅ Same idea as backend: shorten group folder names deterministically
+  groupFolderNameMap: {
+    'Services/Dependency Injection': 'Services',
+    'Authentication & Authorization': 'AuthenticationAuthorization',
+  } as Record<string, string>,
+
   genericLeafNames: new Set([
-    "Introduction",
-    "Overview",
-    "Basics",
-    "Fundamentals",
-    "Getting Started",
-    "Setup",
+    'Introduction',
+    'Overview',
+    'Basics',
+    'Fundamentals',
+    'Getting Started',
+    'Setup',
   ]),
 
-  // Optional safety cap default (can be overridden by CLI --limit)
   defaultLimit: 10_000,
 };

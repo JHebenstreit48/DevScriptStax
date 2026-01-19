@@ -40,10 +40,6 @@
     }
 
     /* left + right alignment while keeping buttons identical */
-    .xrefItem:first-child {
-      justify-items: start;
-      text-align: left;
-    }
     .xrefItem:last-child {
       justify-items: end;
       text-align: right;
@@ -84,21 +80,9 @@
     }
 
     .xrefTitle {
-      max-width: 240px;
+      max-width: 12rem;
       line-height: 1.25;
-      overflow-wrap: anywhere;
-
       color: #45b6ff;
-      font-weight: 600;
-
-      /* Let it wrap without pushing the other column */
-      min-width: 0;
-      white-space: normal;
-      word-break: break-word;
-
-      /* Align titles with their button side */
-      text-align: inherit;
-      text-align-last: center;
 
       @include maxw($cellphone-portrait) {
         max-width: 100%;

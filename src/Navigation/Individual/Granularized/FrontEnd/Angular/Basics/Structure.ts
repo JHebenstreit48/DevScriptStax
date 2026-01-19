@@ -5,7 +5,7 @@ const Structure: Subpage = {
   subpages: [
     {
       name: "Project Structure",
-      path: "/angular/basics/structure/structure",
+      path: "/angular/basics/structure/project-structure",
     },
     {
       name: "Configuration Files",
