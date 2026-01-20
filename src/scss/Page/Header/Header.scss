@@ -48,9 +48,13 @@ $cellphone-portrait: 480px;
   z-index: 12;
 
   @include maxw($cellphone-portrait) {
-    height: 4.5rem;
-    position: fixed;
+    display: grid;
+    grid-template-columns: 3.25rem 1fr 3.25rem; // left / center / right
+    align-items: center;
     padding: 0 0.75rem;
+
+    // makes the header feel like a single unit; reduces "see-through" vibes
+    background-color: rgba(6, 6, 10, 0.98);
   }
 }
 
@@ -71,9 +75,9 @@ $cellphone-portrait: 480px;
   padding-left: 2rem;
 
   @include maxw($cellphone-portrait) {
-    padding-left: 0;
-    flex: 1;
+    grid-column: 2;
     justify-content: center;
+    padding-left: 0.8rem;
   }
 }
 
@@ -85,8 +89,9 @@ $cellphone-portrait: 480px;
   gap: 2rem;
 
   @include maxw($cellphone-portrait) {
-    flex: 0;
+    grid-column: 3;
     justify-content: flex-end;
+    width: 100%;
   }
 }
 
@@ -103,6 +108,13 @@ $cellphone-portrait: 480px;
   text-align: center;
   height: $site-name-height;
   line-height: $site-name-height;
+
+  @include maxw($cellphone-portrait) {
+    font-size: 1.85rem; // tweak if needed
+    height: 2.2rem;
+    line-height: 2.2rem;
+    margin: 0;
+  }
 
   &.HeaderAlignLeft {
     margin: 0;

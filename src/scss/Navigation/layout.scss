@@ -16,14 +16,20 @@
   display: none;
 
   @include maxw($cellphone-portrait) {
-    display: block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 2.75rem;
+    height: 2.75rem;
+
     background: none;
     border: none;
     font-size: 2rem;
     color: $level-1;
     cursor: pointer;
+
     z-index: $z-nav-hamburger;
-    align-self: center;
   }
 }
 
@@ -50,12 +56,17 @@
   position: fixed;
 
   @include maxw($cellphone-portrait) {
-    position: relative;
-    left: 0;
-    margin-top: $nav-mobile-margin-top;
-    justify-content: flex-end;
-    right: $nav-mobile-right;
-    width: 100%;
+    // IMPORTANT: keep the header row stable
+    position: static;          // was relative; fixed on desktop is fine, but not on mobile
+    left: auto;
+    right: auto;
+    margin-top: 0;             // was $nav-mobile-margin-top (this can push things down / misalign)
+    width: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; // keep hamburger on the far right
+    gap: 0.5rem;
   }
 
   @include between($small-laptop-min, $small-laptop-max) {
