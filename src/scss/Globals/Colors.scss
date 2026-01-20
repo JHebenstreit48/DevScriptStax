@@ -1,19 +1,25 @@
-/* Navigation palette */
-$level-1: rgb(7, 193, 255);
-$level-2: rgb(218, 165, 32);
-$level-3: rgb(19, 145, 2);
-$level-4: rgb(201, 84, 255);
-$level-5: rgb(165, 0, 206);
-$nav-level-1-brand: #1e90ff; // explicit top-level link color
+$nav-level-1-brand: #1e90ff;
 
-$background-dark: rgb(22, 22, 22);
-$dropdown-bg: rgb(0, 0, 0);
-$dropdown-hover: rgb(60, 60, 60);
-$scrollbar-track: rgb(73, 73, 73);
+$level-1: $nav-level-1-brand;
+$level-2: #f3af1c;
+$level-3: rgba(241, 243, 249, 0.94);
+$level-4: rgba(241, 243, 249, 0.86);
+$level-5: rgba(241, 243, 249, 0.80);
+$level-6: #4dd6ff;
+$level-7: rgba(241, 243, 249, 0.74);
 
-/* Navigation */
-$text-shadow-dim: rgb(68, 68, 68);      // for nav text-shadow
-$nav-overlay-bg: rgba(0, 0, 0, 0.95);   // mobile open menu bg overlay
+$dropdown-bg: rgba(0, 0, 0, 0.72);
+$dropdown-hover: rgba(255, 255, 255, 0.08);
+$scrollbar-track: rgba(255, 255, 255, 0.10);
+
+$text-shadow-dim: rgba(0, 0, 0, 0.72);
+$nav-overlay-bg: rgba(0, 0, 0, 0.92);
+
+$nav-glass-border: rgba(255, 255, 255, 0.10);
+$nav-glass-rim: rgba(0, 255, 255, 0.16);
+$nav-glass-sheen-top: rgba(0, 0, 0, 0.83);
+$nav-glass-sheen-bot: rgba(0, 0, 0, 0.88);
+$nav-glass-blur: 18px;
 
 /* PageLayout tooltip */
 $tooltip-bg-strong: rgba(0, 0, 0, 0.95);

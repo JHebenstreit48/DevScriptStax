@@ -8,15 +8,15 @@ const Basics: Subpage = {
       subpages: [
         {
           name: "Introduction",
-          path: "/netlify/basics/fundamentals/introduction"
+          path: "/cloud-services/deployment/front-end/netlify/basics/fundamentals/introduction"
         },
         {
           name: "Platform Model",
-          path: "/netlify/basics/fundamentals/platform-model"
+          path: "/cloud-services/deployment/front-end/netlify/basics/fundamentals/platform-model"
         },
         {
           name: "Pricing & Plans",
-          path: "/netlify/basics/fundamentals/pricing-plans"
+          path: "/cloud-services/deployment/front-end/netlify/basics/fundamentals/pricing-plans"
         }
       ]
     },
@@ -25,15 +25,15 @@ const Basics: Subpage = {
       subpages: [
         {
           name: "Create Account",
-          path: "/netlify/basics/setup/create-account"
+          path: "/cloud-services/deployment/front-end/netlify/basics/setup/create-account"
         },
         {
           name: "Connect Repo & Deploy",
-          path: "/netlify/basics/setup/connect-repo-deploy"
+          path: "/cloud-services/deployment/front-end/netlify/basics/setup/connect-repo-deploy"
         },
         {
           name: "Custom Domain & HTTPS",
-          path: "/netlify/basics/setup/custom-domain-https"
+          path: "/cloud-services/deployment/front-end/netlify/basics/setup/custom-domain-https"
         }
       ]
     },
@@ -42,11 +42,11 @@ const Basics: Subpage = {
       subpages: [
         {
           name: "Build Settings (netlify.toml)",
-          path: "/netlify/basics/builds-config/build-settings"
+          path: "/cloud-services/deployment/front-end/netlify/basics/builds-config/build-settings"
         },
         {
           name: "Env Vars & Secrets",
-          path: "/netlify/basics/builds-config/env-vars-secrets"
+          path: "/cloud-services/deployment/front-end/netlify/basics/builds-config/env-vars-secrets"
         }
       ]
     },
@@ -55,11 +55,11 @@ const Basics: Subpage = {
       subpages: [
         {
           name: "Deploy Previews & Branches",
-          path: "/netlify/basics/deploys/previews-branches"
+          path: "/cloud-services/deployment/front-end/netlify/basics/deploys/previews-branches"
         },
         {
           name: "Rollbacks & Locks",
-          path: "/netlify/basics/deploys/rollbacks-locks"
+          path: "/cloud-services/deployment/front-end/netlify/basics/deploys/rollbacks-locks"
         }
       ]
     },
@@ -68,11 +68,11 @@ const Basics: Subpage = {
       subpages: [
         {
           name: "Redirects & Rewrites",
-          path: "/netlify/basics/routing-headers/redirects-rewrites"
+          path: "/cloud-services/deployment/front-end/netlify/basics/routing-headers/redirects-rewrites"
         },
         {
           name: "Headers & CORS",
-          path: "/netlify/basics/routing-headers/headers-cors"
+          path: "/cloud-services/deployment/front-end/netlify/basics/routing-headers/headers-cors"
         }
       ]
     },
@@ -81,11 +81,11 @@ const Basics: Subpage = {
       subpages: [
         {
           name: "Forms Basics",
-          path: "/netlify/basics/forms-identity/forms-basics"
+          path: "/cloud-services/deployment/front-end/netlify/basics/forms-identity/forms-basics"
         },
         {
           name: "Identity Basics",
-          path: "/netlify/basics/forms-identity/identity-basics"
+          path: "/cloud-services/deployment/front-end/netlify/basics/forms-identity/identity-basics"
         }
       ]
     },
@@ -94,11 +94,11 @@ const Basics: Subpage = {
       subpages: [
         {
           name: "Logs & Metrics",
-          path: "/netlify/basics/monitoring/logs-metrics"
+          path: "/cloud-services/deployment/front-end/netlify/basics/monitoring/logs-metrics"
         },
         {
           name: "Debugging Deploys",
-          path: "/netlify/basics/monitoring/debugging-deploys"
+          path: "/cloud-services/deployment/front-end/netlify/basics/monitoring/debugging-deploys"
         }
       ]
     }
