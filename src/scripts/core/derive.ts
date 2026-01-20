@@ -42,7 +42,7 @@ export function derive(leaf: { urlPath: string; crumbs: string[] }): Derived {
   const groupsRaw = rest.slice(0, -1);
   const leafRaw = rest.at(-1) ?? "Page";
 
-  const groupFolders = groupsRaw.map(pascalize);
+  const groupFolders = groupsRaw.map((g) => config.groupFolderNameMap[g] ?? pascalize(g));
   const componentName = pascalize(leafRaw);
 
   const pageFsPath = path.join(

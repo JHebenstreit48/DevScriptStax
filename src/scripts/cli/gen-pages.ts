@@ -56,8 +56,27 @@ function main() {
       dryRun: args.dryRun,
     });
 
-    if (res === 'created') created++;
-    else skipped++;
+    if (res === 'created') {
+      created++;
+
+      // ✅ Only print details in dry-run so it stays noise-free
+      if (args.dryRun) {
+        console.log(`[dry-run] would create: ${d.pageFsPath}`);
+        console.log(`          import: ${d.pageImportPath}`);
+        console.log(`          url:    ${d.urlPath}`);
+        console.log(
+          `          crumbs: ${[
+            d.sectionCrumb,
+            d.topicCrumb,
+            ...d.groupFolders,
+            d.componentName,
+          ].join(' > ')}`
+        );
+        console.log('');
+      }
+    } else {
+      skipped++;
+    }
   }
 
   console.log(

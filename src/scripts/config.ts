@@ -26,6 +26,7 @@ export const config = {
   groupFolderNameMap: {
     'Services/Dependency Injection': 'Services',
     'Authentication & Authorization': 'AuthenticationAuthorization',
+    'RxJS & Reactive Programming': 'RxJSAndReactive',
   } as Record<string, string>,
 
   genericLeafNames: new Set([
