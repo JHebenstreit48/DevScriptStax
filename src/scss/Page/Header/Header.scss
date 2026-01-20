@@ -2,23 +2,23 @@
 @use '@scss/Globals' as *;
 
 /* ==============================
-            Variables           
+            Variables
    ============================== */
-$header-bg-color: rgba(0, 0, 0, 0.9);
-$header-border-color: rgba(0, 255, 255, 0.2);
+$header-bg-color: rgba(6, 6, 10, 0.96);
+$header-border-color: rgba(255, 255, 255, 0.10);
+$header-rim: rgba(0, 255, 255, 0.16);
 $header-blur: 10px;
 
 $text-color: #032c2c;
 $text-glow: #00ffff;
 
 $header-height: 4rem;
-/* fix comma → decimal to avoid layout weirdness */
 $site-name-height: 2.5rem;
 $font-size-default: 2.4rem;
 $cellphone-portrait: 480px;
 
 /* ==============================
-            Base Styles       
+            Base Styles
    ============================== */
 .HeaderBar {
   display: flex;
@@ -29,22 +29,51 @@ $cellphone-portrait: 480px;
   left: 0;
   width: 100%;
   height: $header-height;
-  background-color: $header-bg-color;
-  backdrop-filter: blur($header-blur);
+
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.01)),
+    $header-bg-color;
+
+  backdrop-filter: blur($header-blur) saturate(140%);
+  -webkit-backdrop-filter: blur($header-blur) saturate(140%);
+
   border-bottom: 1px solid $header-border-color;
+
+  box-shadow:
+    0 14px 50px rgba(0, 0, 0, 0.65),
+    0 0 18px rgba(0, 255, 255, 0.10),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.55);
+
   z-index: 12;
 
-  @media only screen and (max-width: $cellphone-portrait) {
+  @include maxw($cellphone-portrait) {
     height: 4.5rem;
+    position: fixed;
+    padding: 0 0.75rem;
   }
+}
+
+.HeaderBar::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, $header-rim, transparent);
+  pointer-events: none;
+  opacity: 0.9;
 }
 
 .HeaderLeft {
   display: flex;
   padding-left: 2rem;
 
-  @media only screen and (max-width: $cellphone-portrait) {
-    padding-left: 2rem;
+  @include maxw($cellphone-portrait) {
+    padding-left: 0;
+    flex: 1;
+    justify-content: center;
   }
 }
 
@@ -54,39 +83,47 @@ $cellphone-portrait: 480px;
   justify-content: center;
   align-items: center;
   gap: 2rem;
+
+  @include maxw($cellphone-portrait) {
+    flex: 0;
+    justify-content: flex-end;
+  }
 }
 
 /* ==============================
-         Header Title Styling    
+         Header Title Styling
    ============================== */
 .Header {
   font-size: $font-size-default;
-  background-color: $header-bg-color;
-  backdrop-filter: blur($header-blur);
-  -webkit-backdrop-filter: blur($header-blur);
+  background: transparent;
   color: $text-color;
   text-shadow: 0 0 6px $text-glow, 0 0 4px $text-glow, 0 0 10px $text-glow;
   white-space: nowrap;
   margin: 0 auto;
   text-align: center;
   height: $site-name-height;
-  line-height: $site-name-height; /* keep baseline identical to pre-link look */
+  line-height: $site-name-height;
 
-  /* If you ever need left alignment */
   &.HeaderAlignLeft {
     margin: 0;
     text-align: left;
   }
 
-  /* --- Title-as-link resets (stop global <a> rules from styling it) --- */
   .HeaderHomeLink {
-    display: inline-block;     /* bigger click target, stable layout */
-    color: inherit;            /* inherit the h1 color/glow */
-    text-decoration: none;     /* kill text underlines */
-    border: 0;                 /* kill border-bottom underlines */
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+    border: 0;
     border-bottom: none !important;
-    position: relative;        /* neutralize absolute ::after lines */
+    position: relative;
     cursor: pointer;
+
+    background: transparent !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    filter: none !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
 
     &:hover,
     &:focus {
@@ -94,43 +131,16 @@ $cellphone-portrait: 480px;
       border-bottom: none !important;
     }
 
-    /* In case global CSS adds animated bars on links */
-    &::after,
-    &::before {
+    &::before,
+    &::after {
       content: none !important;
+      background: transparent !important;
+      box-shadow: none !important;
     }
 
-    /* Accessible focus without visual noise */
     &:focus-visible {
       outline: 2px solid currentColor;
       outline-offset: 2px;
     }
-  }
-}
-
-/* ==============================
-          Size Variants           
-   ============================== */
-// .Header.sm {
-//   font-size: clamp(1.8rem, 4.5vw, 2.3rem);
-//   @media only screen and (max-width: $cellphone-portrait) {
-//     font-size: clamp(1.7rem, 4.5vw, 2.2rem);
-//   }
-// }
-
-.Header.md {
-  font-size: clamp(2.3rem, 5vw, 2.8rem);
-
-  @media only screen and (max-width: $cellphone-portrait) {
-    font-size: clamp(2.2rem, 5vw, 2.6rem);
-  }
-}
-
-.Header.lg {
-  font-size: clamp(3rem, 6vw, 4.5rem);
-
-  @media only screen and (max-width: $cellphone-portrait) {
-    font-size: clamp(2.6rem, 6vw, 3.8rem);
-    max-width: 85%;
   }
 }

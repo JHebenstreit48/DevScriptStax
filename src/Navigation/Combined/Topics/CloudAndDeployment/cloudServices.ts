@@ -42,7 +42,7 @@ const cloudServices: Subpage = {
       name: 'Deployment Platforms',
       subpages: [
         {
-          name: 'Front-End Deployment',
+          name: 'Front-End',
           subpages: [
             Netlify,
             Vercel,

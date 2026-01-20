@@ -263,10 +263,9 @@ $muted-2: #7a8091;
   z-index: $z-nav-overlay;
 
   @include maxw($cellphone-portrait) {
-    display: flex;
-    flex-direction: column;
-    left: 50%;
-    top: $nav-search-top-mobile;
+    left: 0.75rem;
+    top: 0;
+    transform: translateY(-50%);
   }
 
   @include between($small-laptop-min, $small-laptop-max) {
