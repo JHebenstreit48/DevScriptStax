@@ -4,8 +4,8 @@ const Fundamentals: Subpage = {
   name: "Fundamentals",
   subpages: [
     {
-      name: "Overview",
-      path: "/firebase/basics/fundamentals/overview",
+      name: "Introduction",
+      path: "/firebase/basics/fundamentals/introduction",
     },
     {
       name: "Firebase vs Traditional",

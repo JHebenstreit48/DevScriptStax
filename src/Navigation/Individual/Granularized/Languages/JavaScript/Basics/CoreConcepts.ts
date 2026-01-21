@@ -4,8 +4,8 @@ const CoreConcepts: Subpage = {
   name: 'Core Concepts',
   subpages: [
     {
-      name: 'Syntax/Structure',
-      path: '/javascript/basics/core/syntax',
+      name: 'Syntax & Structure',
+      path: '/javascript/basics/core/syntax-and-structure',
     },
     {
       name: 'Variables',
