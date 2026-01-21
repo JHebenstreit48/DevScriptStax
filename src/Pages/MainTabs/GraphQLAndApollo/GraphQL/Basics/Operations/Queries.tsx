@@ -3,18 +3,18 @@ import Header from '@/Components/Shared/Header/Header';
 import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
-const Mutations = () => {
-  const markdownFilePath = 'GraphQLAndApollo/GraphQL/Basics/Mutations';
+const Queries = () => {
+  const markdownFilePath = 'GraphQLAndApollo/GraphQL/Basics/Operations/Queries';
 
   return (
     <>
       <PageLayout>
         <Header />
-        <PageTitle title="Mutations" />
+        <PageTitle title="Queries" />
         <Notes filePath={markdownFilePath} />
       </PageLayout>
     </>
   );
 };
 
-export default Mutations;
+export default Queries;

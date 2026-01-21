@@ -3,18 +3,18 @@ import Header from '@/Components/Shared/Header/Header';
 import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
-const Queries = () => {
-  const markdownFilePath = 'GraphQLAndApollo/GraphQL/Basics/Queries';
+const CustomScalars = () => {
+  const markdownFilePath = 'GraphQLAndApollo/GraphQL/Advanced/SchemaDesign/CustomScalars';
 
   return (
     <>
       <PageLayout>
         <Header />
-        <PageTitle title="Queries" />
+        <PageTitle title="Custom Scalars" />
         <Notes filePath={markdownFilePath} />
       </PageLayout>
     </>
   );
 };
 
-export default Queries;
+export default CustomScalars;
