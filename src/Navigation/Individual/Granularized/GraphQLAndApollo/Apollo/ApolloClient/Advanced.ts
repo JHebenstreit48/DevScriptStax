@@ -8,11 +8,11 @@ const ClientAdvanced: Subpage = {
       subpages: [
         {
           name: "HttpLink & Split",
-          path: "/graphqlandapollo/apollo/client/advanced/link-stack/http-split"
+          path: "/apollo/client/advanced/link-stack/http-split"
         },
         {
           name: "AuthLink & Context",
-          path: "/graphqlandapollo/apollo/client/advanced/link-stack/auth-context"
+          path: "/apollo/client/advanced/link-stack/auth-context"
         }
       ]
     },
@@ -21,11 +21,11 @@ const ClientAdvanced: Subpage = {
       subpages: [
         {
           name: "Fetch Policies",
-          path: "/graphqlandapollo/apollo/client/advanced/cache-policies/fetch-policies"
+          path: "/apollo/client/advanced/cache-policies/fetch-policies"
         },
         {
           name: "Field Policies",
-          path: "/graphqlandapollo/apollo/client/advanced/cache-policies/field-policies"
+          path: "/apollo/client/advanced/cache-policies/field-policies"
         }
       ]
     },
@@ -34,11 +34,11 @@ const ClientAdvanced: Subpage = {
       subpages: [
         {
           name: "Offset",
-          path: "/graphqlandapollo/apollo/client/advanced/pagination/offset"
+          path: "/apollo/client/advanced/pagination/offset"
         },
         {
           name: "Cursor/Relay",
-          path: "/graphqlandapollo/apollo/client/advanced/pagination/cursor-relay"
+          path: "/apollo/client/advanced/pagination/cursor-relay"
         }
       ]
     },
@@ -47,11 +47,11 @@ const ClientAdvanced: Subpage = {
       subpages: [
         {
           name: "Error Handling",
-          path: "/graphqlandapollo/apollo/client/advanced/errors-retry/error-handling"
+          path: "/apollo/client/advanced/errors-retry/error-handling"
         },
         {
           name: "Retry Link",
-          path: "/graphqlandapollo/apollo/client/advanced/errors-retry/retry-link"
+          path: "/apollo/client/advanced/errors-retry/retry-link"
         }
       ]
     },
@@ -60,11 +60,11 @@ const ClientAdvanced: Subpage = {
       subpages: [
         {
           name: "WebSocket Link",
-          path: "/graphqlandapollo/apollo/client/advanced/subscriptions-transport/websocket-link"
+          path: "/apollo/client/advanced/subscriptions-transport/websocket-link"
         },
         {
           name: "SSE Link",
-          path: "/graphqlandapollo/apollo/client/advanced/subscriptions-transport/sse-link"
+          path: "/apollo/client/advanced/subscriptions-transport/sse-link"
         }
       ]
     },
@@ -73,11 +73,11 @@ const ClientAdvanced: Subpage = {
       subpages: [
         {
           name: "Codegen",
-          path: "/graphqlandapollo/apollo/client/advanced/tooling/codegen"
+          path: "/apollo/client/advanced/tooling/codegen"
         },
         {
           name: "DevTools",
-          path: "/graphqlandapollo/apollo/client/advanced/tooling/devtools"
+          path: "/apollo/client/advanced/tooling/devtools"
         }
       ]
     }

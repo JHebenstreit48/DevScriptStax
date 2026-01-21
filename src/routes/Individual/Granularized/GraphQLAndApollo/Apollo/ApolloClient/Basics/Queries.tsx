@@ -6,11 +6,11 @@ const VariablesAndHeaders = lazy(() => import('@/Pages/MainTabs/GraphQLAndApollo
 
 const Queries: RouteObject[] = [
   {
-    path: '/graphqlandapollo/apollo/client/basics/queries/usequery',
+    path: '/apollo/client/basics/queries/usequery',
     element: <UseQuery />,
   },
   {
-    path: '/graphqlandapollo/apollo/client/basics/queries/variables-headers',
+    path: '/apollo/client/basics/queries/variables-headers',
     element: <VariablesAndHeaders />,
   },
 ];

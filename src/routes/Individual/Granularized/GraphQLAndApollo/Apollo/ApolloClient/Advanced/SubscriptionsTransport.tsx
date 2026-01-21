@@ -6,11 +6,11 @@ const SSELink = lazy(() => import('@/Pages/MainTabs/GraphQLAndApollo/Apollo/Apol
 
 const SubscriptionsTransport: RouteObject[] = [
   {
-    path: '/graphqlandapollo/apollo/client/advanced/subscriptions-transport/websocket-link',
+    path: '/apollo/client/advanced/subscriptions-transport/websocket-link',
     element: <WebSocketLink />,
   },
   {
-    path: '/graphqlandapollo/apollo/client/advanced/subscriptions-transport/sse-link',
+    path: '/apollo/client/advanced/subscriptions-transport/sse-link',
     element: <SSELink />,
   },
 ];

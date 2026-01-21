@@ -6,11 +6,11 @@ const Normalization = lazy(() => import('@/Pages/MainTabs/GraphQLAndApollo/Apoll
 
 const CacheBasics: RouteObject[] = [
   {
-    path: '/graphqlandapollo/apollo/client/basics/cache/store',
+    path: '/apollo/client/basics/cache/store',
     element: <Store />,
   },
   {
-    path: '/graphqlandapollo/apollo/client/basics/cache/normalization',
+    path: '/apollo/client/basics/cache/normalization',
     element: <Normalization />,
   },
 ];

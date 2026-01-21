@@ -4,15 +4,15 @@ const ClientBasics: Subpage = {
   name: "Basics",
   subpages: [
     {
-      name: "Getting Started",
+      name: "Fundamentals",
       subpages: [
         {
           name: "Introduction",
-          path: "/graphqlandapollo/apollo/client/basics/getting-started/introduction"
+          path: "/apollo/client/basics/fundamentals/introduction"
         },
         {
           name: "Install & Setup",
-          path: "/graphqlandapollo/apollo/client/basics/getting-started/install-setup"
+          path: "/apollo/client/basics/fundamentals/install-setup"
         }
       ]
     },
@@ -21,11 +21,11 @@ const ClientBasics: Subpage = {
       subpages: [
         {
           name: "useQuery",
-          path: "/graphqlandapollo/apollo/client/basics/queries/usequery"
+          path: "/apollo/client/basics/queries/usequery"
         },
         {
           name: "Variables & Headers",
-          path: "/graphqlandapollo/apollo/client/basics/queries/variables-headers"
+          path: "/apollo/client/basics/queries/variables-headers"
         }
       ]
     },
@@ -34,11 +34,11 @@ const ClientBasics: Subpage = {
       subpages: [
         {
           name: "useMutation",
-          path: "/graphqlandapollo/apollo/client/basics/mutations/usemutation"
+          path: "/apollo/client/basics/mutations/usemutation"
         },
         {
           name: "Optimistic UI",
-          path: "/graphqlandapollo/apollo/client/basics/mutations/optimistic-ui"
+          path: "/apollo/client/basics/mutations/optimistic-ui"
         }
       ]
     },
@@ -47,11 +47,11 @@ const ClientBasics: Subpage = {
       subpages: [
         {
           name: "Store",
-          path: "/graphqlandapollo/apollo/client/basics/cache/store"
+          path: "/apollo/client/basics/cache/store"
         },
         {
           name: "Normalization",
-          path: "/graphqlandapollo/apollo/client/basics/cache/normalization"
+          path: "/apollo/client/basics/cache/normalization"
         }
       ]
     }

@@ -8,11 +8,11 @@ const ServerAdvanced: Subpage = {
       subpages: [
         {
           name: "APQ Setup",
-          path: "/graphqlandapollo/apollo/server/advanced/persisted-queries/apq-setup"
+          path: "/apollo/server/advanced/persisted-queries/apq-setup"
         },
         {
           name: "CDN Strategy",
-          path: "/graphqlandapollo/apollo/server/advanced/persisted-queries/cdn-strategy"
+          path: "/apollo/server/advanced/persisted-queries/cdn-strategy"
         }
       ]
     },
@@ -21,11 +21,11 @@ const ServerAdvanced: Subpage = {
       subpages: [
         {
           name: "WebSocket (graphql-ws)",
-          path: "/graphqlandapollo/apollo/server/advanced/subscriptions-transport/websocket"
+          path: "/apollo/server/advanced/subscriptions-transport/websocket"
         },
         {
           name: "SSE (graphql-sse)",
-          path: "/graphqlandapollo/apollo/server/advanced/subscriptions-transport/sse"
+          path: "/apollo/server/advanced/subscriptions-transport/sse"
         }
       ]
     },
@@ -34,11 +34,11 @@ const ServerAdvanced: Subpage = {
       subpages: [
         {
           name: "RESTDataSource",
-          path: "/graphqlandapollo/apollo/server/advanced/datasource-integrations/rest-datasource"
+          path: "/apollo/server/advanced/datasource-integrations/rest-datasource"
         },
         {
           name: "Custom DataSource",
-          path: "/graphqlandapollo/apollo/server/advanced/datasource-integrations/custom"
+          path: "/apollo/server/advanced/datasource-integrations/custom"
         }
       ]
     },
@@ -47,11 +47,11 @@ const ServerAdvanced: Subpage = {
       subpages: [
         {
           name: "Plugin API",
-          path: "/graphqlandapollo/apollo/server/advanced/plugins-lifecycle/plugin-api"
+          path: "/apollo/server/advanced/plugins-lifecycle/plugin-api"
         },
         {
           name: "Error Masks",
-          path: "/graphqlandapollo/apollo/server/advanced/plugins-lifecycle/error-masks"
+          path: "/apollo/server/advanced/plugins-lifecycle/error-masks"
         }
       ]
     },
@@ -60,11 +60,11 @@ const ServerAdvanced: Subpage = {
       subpages: [
         {
           name: "Cache Hints",
-          path: "/graphqlandapollo/apollo/server/advanced/cache-hints/cache-hints"
+          path: "/apollo/server/advanced/cache-hints/cache-hints"
         },
         {
           name: "Response Cache",
-          path: "/graphqlandapollo/apollo/server/advanced/cache-hints/response-cache"
+          path: "/apollo/server/advanced/cache-hints/response-cache"
         }
       ]
     },
@@ -73,11 +73,11 @@ const ServerAdvanced: Subpage = {
       subpages: [
         {
           name: "Studio Metrics",
-          path: "/graphqlandapollo/apollo/server/advanced/observability/studio-metrics"
+          path: "/apollo/server/advanced/observability/studio-metrics"
         },
         {
           name: "Tracing",
-          path: "/graphqlandapollo/apollo/server/advanced/observability/tracing"
+          path: "/apollo/server/advanced/observability/tracing"
         }
       ]
     },
@@ -86,11 +86,11 @@ const ServerAdvanced: Subpage = {
       subpages: [
         {
           name: "Checks & Contracts",
-          path: "/graphqlandapollo/apollo/server/advanced/schema-governance/checks-contracts"
+          path: "/apollo/server/advanced/schema-governance/checks-contracts"
         },
         {
           name: "Operation Registry",
-          path: "/graphqlandapollo/apollo/server/advanced/schema-governance/operation-registry"
+          path: "/apollo/server/advanced/schema-governance/operation-registry"
         }
       ]
     }

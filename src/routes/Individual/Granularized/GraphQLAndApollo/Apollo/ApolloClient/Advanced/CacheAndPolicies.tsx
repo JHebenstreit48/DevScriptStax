@@ -6,11 +6,11 @@ const FieldPolicies = lazy(() => import('@/Pages/MainTabs/GraphQLAndApollo/Apoll
 
 const CacheAndPolicies: RouteObject[] = [
   {
-    path: '/graphqlandapollo/apollo/client/advanced/cache-policies/fetch-policies',
+    path: '/apollo/client/advanced/cache-policies/fetch-policies',
     element: <FetchPolicies />,
   },
   {
-    path: '/graphqlandapollo/apollo/client/advanced/cache-policies/field-policies',
+    path: '/apollo/client/advanced/cache-policies/field-policies',
     element: <FieldPolicies />,
   },
 ];
