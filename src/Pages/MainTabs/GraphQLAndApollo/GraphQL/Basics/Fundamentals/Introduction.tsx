@@ -3,18 +3,18 @@ import Header from '@/Components/Shared/Header/Header';
 import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
-const Federation = () => {
-  const markdownFilePath = 'GraphQLAndApollo/GraphQL/Advanced/Federation';
+const Introduction = () => {
+  const markdownFilePath = 'GraphQLAndApollo/GraphQL/Basics/Fundamentals/Introduction';
 
   return (
     <>
       <PageLayout>
         <Header />
-        <PageTitle title="Federation" />
+        <PageTitle title="Fundamentals: Introduction" />
         <Notes filePath={markdownFilePath} />
       </PageLayout>
     </>
   );
 };
 
-export default Federation;
+export default Introduction;

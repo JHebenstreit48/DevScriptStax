@@ -4,7 +4,7 @@ import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const Schema = () => {
-  const markdownFilePath = 'GraphQLAndApollo/GraphQL/Basics/Schema';
+  const markdownFilePath = 'GraphQLAndApollo/GraphQL/Basics/SchemaAndExecution/Schema';
 
   return (
     <>
