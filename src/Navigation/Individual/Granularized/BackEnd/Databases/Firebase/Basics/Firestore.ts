@@ -4,8 +4,8 @@ const Firestore: Subpage = {
   name: "Firestore",
   subpages: [
     {
-      name: "Overview",
-      path: "/firebase/basics/firestore/overview",
+      name: "Introduction",
+      path: "/firebase/basics/firestore/introduction",
     },
     {
       name: "Firestore vs Realtime",

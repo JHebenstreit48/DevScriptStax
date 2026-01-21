@@ -8,7 +8,7 @@ const ListenersSyncing = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/F
 
 const RealtimeDatabase: RouteObject[] = [
   {
-    path: '/firebase/basics/realtime-db/overview',
+    path: '/firebase/basics/realtime-db/introduction',
     element: <Introduction />,
   },
   {

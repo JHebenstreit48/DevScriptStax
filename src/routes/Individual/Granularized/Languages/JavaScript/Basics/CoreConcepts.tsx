@@ -11,7 +11,7 @@ const ScopeAndContext = lazy(() => import('@/Pages/MainTabs/Languages/JavaScript
 
 const CoreConcepts: RouteObject[] = [
   {
-    path: '/javascript/basics/core/syntax',
+    path: '/javascript/basics/core/syntax-and-structure',
     element: <SyntaxStructure />,
   },
   {
