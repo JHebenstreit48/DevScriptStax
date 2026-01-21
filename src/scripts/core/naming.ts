@@ -17,6 +17,11 @@ export function sectionFolderName(sectionCrumb: string): string {
   return config.sectionNameMap[sectionCrumb] ?? pascalize(sectionCrumb);
 }
 
+// ✅ add this for uniformity across repos
+export function topicFolderName(topicCrumb: string): string {
+  return config.topicNameMap?.[topicCrumb] ?? pascalize(topicCrumb);
+}
+
 export function safeLazyVarName(parts: string[]): string {
   // Must be a valid JS identifier. Prefix to avoid starting with a number.
   const name = parts.map(pascalize).join("");

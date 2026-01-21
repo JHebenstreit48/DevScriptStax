@@ -6,6 +6,7 @@ export const config = {
   pagesRoot: 'src/Pages/MainTabs',
   routesSectionsRoot: 'src/routes/Sections',
 
+  // prettier-ignore
   sectionNameMap: {
     'Front End': 'FrontEnd',
     'Back End': 'BackEnd',
@@ -21,6 +22,10 @@ export const config = {
   topicNameMap: {
     // Keep empty unless you truly need it.
   } as Record<string, string>,
+
+  topicFsPrefixMap: {
+    // e.g. 'Some Topic': ['ExtraLayer']
+  } as Record<string, string[]>,
 
   // ✅ Same idea as backend: shorten group folder names deterministically
   groupFolderNameMap: {
