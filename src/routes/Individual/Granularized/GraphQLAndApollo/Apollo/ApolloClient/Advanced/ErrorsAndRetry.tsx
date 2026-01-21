@@ -6,11 +6,11 @@ const RetryLink = lazy(() => import('@/Pages/MainTabs/GraphQLAndApollo/Apollo/Ap
 
 const ErrorsAndRetry: RouteObject[] = [
   {
-    path: '/graphqlandapollo/apollo/client/advanced/errors-retry/error-handling',
+    path: '/apollo/client/advanced/errors-retry/error-handling',
     element: <ErrorHandling />,
   },
   {
-    path: '/graphqlandapollo/apollo/client/advanced/errors-retry/retry-link',
+    path: '/apollo/client/advanced/errors-retry/retry-link',
     element: <RetryLink />,
   },
 ];

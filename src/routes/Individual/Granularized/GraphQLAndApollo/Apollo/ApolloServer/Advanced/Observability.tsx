@@ -6,11 +6,11 @@ const Tracing = lazy(() => import('@/Pages/MainTabs/GraphQLAndApollo/Apollo/Apol
 
 const Observability: RouteObject[] = [
   {
-    path: '/graphqlandapollo/apollo/server/advanced/observability/studio-metrics',
+    path: '/apollo/server/advanced/observability/studio-metrics',
     element: <StudioMetrics />,
   },
   {
-    path: '/graphqlandapollo/apollo/server/advanced/observability/tracing',
+    path: '/apollo/server/advanced/observability/tracing',
     element: <Tracing />,
   },
 ];

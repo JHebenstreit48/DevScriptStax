@@ -6,11 +6,11 @@ const OptimisticUI = lazy(() => import('@/Pages/MainTabs/GraphQLAndApollo/Apollo
 
 const Mutations: RouteObject[] = [
   {
-    path: '/graphqlandapollo/apollo/client/basics/mutations/usemutation',
+    path: '/apollo/client/basics/mutations/usemutation',
     element: <UseMutation />,
   },
   {
-    path: '/graphqlandapollo/apollo/client/basics/mutations/optimistic-ui',
+    path: '/apollo/client/basics/mutations/optimistic-ui',
     element: <OptimisticUI />,
   },
 ];

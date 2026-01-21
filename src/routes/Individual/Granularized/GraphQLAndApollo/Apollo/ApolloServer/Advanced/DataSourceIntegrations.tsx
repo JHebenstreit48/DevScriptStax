@@ -6,11 +6,11 @@ const CustomDataSource = lazy(() => import('@/Pages/MainTabs/GraphQLAndApollo/Ap
 
 const DataSourceIntegrations: RouteObject[] = [
   {
-    path: '/graphqlandapollo/apollo/server/advanced/datasource-integrations/rest-datasource',
+    path: '/apollo/server/advanced/datasource-integrations/rest-datasource',
     element: <RESTDataSource />,
   },
   {
-    path: '/graphqlandapollo/apollo/server/advanced/datasource-integrations/custom',
+    path: '/apollo/server/advanced/datasource-integrations/custom',
     element: <CustomDataSource />,
   },
 ];

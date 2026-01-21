@@ -6,11 +6,11 @@ const ResponseCache = lazy(() => import('@/Pages/MainTabs/GraphQLAndApollo/Apoll
 
 const CacheAndHints: RouteObject[] = [
   {
-    path: '/graphqlandapollo/apollo/server/advanced/cache-hints/cache-hints',
+    path: '/apollo/server/advanced/cache-hints/cache-hints',
     element: <CacheHints />,
   },
   {
-    path: '/graphqlandapollo/apollo/server/advanced/cache-hints/response-cache',
+    path: '/apollo/server/advanced/cache-hints/response-cache',
     element: <ResponseCache />,
   },
 ];

@@ -6,11 +6,11 @@ const DevTools = lazy(() => import('@/Pages/MainTabs/GraphQLAndApollo/Apollo/Apo
 
 const Tooling: RouteObject[] = [
   {
-    path: '/graphqlandapollo/apollo/client/advanced/tooling/codegen',
+    path: '/apollo/client/advanced/tooling/codegen',
     element: <Codegen />,
   },
   {
-    path: '/graphqlandapollo/apollo/client/advanced/tooling/devtools',
+    path: '/apollo/client/advanced/tooling/devtools',
     element: <DevTools />,
   },
 ];

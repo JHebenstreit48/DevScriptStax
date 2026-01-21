@@ -6,11 +6,11 @@ const OperationRegistry = lazy(() => import('@/Pages/MainTabs/GraphQLAndApollo/A
 
 const SchemaGovernance: RouteObject[] = [
   {
-    path: '/graphqlandapollo/apollo/server/advanced/schema-governance/checks-contracts',
+    path: '/apollo/server/advanced/schema-governance/checks-contracts',
     element: <ChecksAndContracts />,
   },
   {
-    path: '/graphqlandapollo/apollo/server/advanced/schema-governance/operation-registry',
+    path: '/apollo/server/advanced/schema-governance/operation-registry',
     element: <OperationRegistry />,
   },
 ];

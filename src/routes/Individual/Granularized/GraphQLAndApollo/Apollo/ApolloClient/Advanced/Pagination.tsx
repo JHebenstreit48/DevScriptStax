@@ -6,11 +6,11 @@ const CursorRelay = lazy(() => import('@/Pages/MainTabs/GraphQLAndApollo/Apollo/
 
 const Pagination: RouteObject[] = [
   {
-    path: '/graphqlandapollo/apollo/client/advanced/pagination/offset',
+    path: '/apollo/client/advanced/pagination/offset',
     element: <Offset />,
   },
   {
-    path: '/graphqlandapollo/apollo/client/advanced/pagination/cursor-relay',
+    path: '/apollo/client/advanced/pagination/cursor-relay',
     element: <CursorRelay />,
   },
 ];

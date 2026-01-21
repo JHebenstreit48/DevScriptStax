@@ -6,11 +6,11 @@ const ErrorMasks = lazy(() => import('@/Pages/MainTabs/GraphQLAndApollo/Apollo/A
 
 const PluginsAndLifecycle: RouteObject[] = [
   {
-    path: '/graphqlandapollo/apollo/server/advanced/plugins-lifecycle/plugin-api',
+    path: '/apollo/server/advanced/plugins-lifecycle/plugin-api',
     element: <PluginAPI />,
   },
   {
-    path: '/graphqlandapollo/apollo/server/advanced/plugins-lifecycle/error-masks',
+    path: '/apollo/server/advanced/plugins-lifecycle/error-masks',
     element: <ErrorMasks />,
   },
 ];

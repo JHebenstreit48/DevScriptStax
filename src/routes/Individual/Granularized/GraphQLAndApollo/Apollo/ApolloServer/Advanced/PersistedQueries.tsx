@@ -6,11 +6,11 @@ const CDNStrategy = lazy(() => import('@/Pages/MainTabs/GraphQLAndApollo/Apollo/
 
 const PersistedQueries: RouteObject[] = [
   {
-    path: '/graphqlandapollo/apollo/server/advanced/persisted-queries/apq-setup',
+    path: '/apollo/server/advanced/persisted-queries/apq-setup',
     element: <APQSetup />,
   },
   {
-    path: '/graphqlandapollo/apollo/server/advanced/persisted-queries/cdn-strategy',
+    path: '/apollo/server/advanced/persisted-queries/cdn-strategy',
     element: <CDNStrategy />,
   },
 ];

@@ -6,11 +6,11 @@ const AuthLinkAndContext = lazy(() => import('@/Pages/MainTabs/GraphQLAndApollo/
 
 const LinkStack: RouteObject[] = [
   {
-    path: '/graphqlandapollo/apollo/client/advanced/link-stack/http-split',
+    path: '/apollo/client/advanced/link-stack/http-split',
     element: <HttpLinkAndSplit />,
   },
   {
-    path: '/graphqlandapollo/apollo/client/advanced/link-stack/auth-context',
+    path: '/apollo/client/advanced/link-stack/auth-context',
     element: <AuthLinkAndContext />,
   },
 ];
