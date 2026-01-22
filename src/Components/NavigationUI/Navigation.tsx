@@ -1,9 +1,10 @@
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import pages from '@/domain/navigation/mainTabs';
-import { flattenNavigation } from '@/Components/NavigationUI/Search/Utils/flattenNavigation';
 import type { SearchMatch } from '@/Components/NavigationUI/Search/Utils/types';
+
+import { getSearchIndex } from '@/Components/NavigationUI/Search/Utils/searchIndex';
 
 import SearchIcon from '@/Components/NavigationUI/Search/SearchIcon';
 import SearchModal from '@/Components/NavigationUI/Search/Modal';
@@ -18,10 +19,17 @@ const Navigation = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [showModal, setShowModal] = useState(false);
 
-  const [searchMode, setSearchMode] = useLocalStorageState<'instant' | 'manual'>('searchMode', 'instant', {
-    serialize: (v) => v,
-    deserialize: (raw) => (raw === 'manual' ? 'manual' : 'instant'),
-  });
+  // ✅ only created when modal opens
+  const [allPages, setAllPages] = useState<SearchMatch[] | null>(null);
+
+  const [searchMode, setSearchMode] = useLocalStorageState<'instant' | 'manual'>(
+    'searchMode',
+    'instant',
+    {
+      serialize: (v) => v,
+      deserialize: (raw) => (raw === 'manual' ? 'manual' : 'instant'),
+    }
+  );
 
   const navRef = useRef<HTMLDivElement | null>(null);
   const { activeDropdown, toggleDropdown, closeAll } = useNavDropdown();
@@ -33,13 +41,15 @@ const Navigation = () => {
 
   useClickOutside(navRef, closeAll);
 
-  const allPages: SearchMatch[] = useMemo(() => flattenNavigation(pages), []);
+  // ✅ build once, only when needed
+  useEffect(() => {
+    if (showModal && !allPages) {
+      setAllPages(getSearchIndex());
+    }
+  }, [showModal, allPages]);
 
   return (
-    <div
-      className="navigationMenu"
-      ref={navRef}
-    >
+    <div className="navigationMenu" ref={navRef}>
       <SearchIcon onClick={() => setShowModal(true)} />
       <button
         className="hamburgerButton"
@@ -50,13 +60,11 @@ const Navigation = () => {
       </button>
 
       <div className={`navigationContent ${isMenuOpen ? 'open' : ''}`}>
-        
-
         {showModal && (
           <SearchModal
             searchTerm={searchTerm}
             setSearchTerm={setSearchTerm}
-            allPages={allPages}
+            allPages={allPages ?? []}
             searchMode={searchMode}
             setSearchMode={setSearchMode}
             onClose={() => {
@@ -72,15 +80,9 @@ const Navigation = () => {
             const isActive = activeDropdown.has(pageKey);
 
             return (
-              <div
-                key={pageKey}
-                className="dropdown"
-              >
+              <div key={pageKey} className="dropdown">
                 {!page.subpages?.length ? (
-                  <Link
-                    to="/"
-                    className="dropdownButton level-1"
-                  >
+                  <Link to="/" className="dropdownButton level-1">
                     {page.name}
                   </Link>
                 ) : (
