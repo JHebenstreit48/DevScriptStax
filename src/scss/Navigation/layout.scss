@@ -62,7 +62,6 @@
     right: auto;
     margin-top: 0;             // was $nav-mobile-margin-top (this can push things down / misalign)
     width: auto;
-
     display: flex;
     align-items: center;
     justify-content: flex-end; // keep hamburger on the far right
@@ -71,12 +70,16 @@
 
   @include between($small-laptop-min, $small-laptop-max) {
     gap: 0.5rem;
+
   }
+
   @include between($medium-laptop-min, $medium-laptop-max) {
     gap: 0.75rem;
   }
+  
   @include between($large-laptop-min, $large-laptop-max) {
     gap: 0.9rem;
+    left: $nav-left-large-laptop;
   }
 }
 

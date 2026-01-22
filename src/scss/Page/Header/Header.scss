@@ -79,6 +79,10 @@ $cellphone-portrait: 480px;
     justify-content: center;
     padding-left: 0.8rem;
   }
+
+   @include between($large-laptop-min, $large-laptop-max) {
+    padding-left: 1rem;
+  }
 }
 
 .HeaderRight {
@@ -126,28 +130,30 @@ $cellphone-portrait: 480px;
     color: inherit;
     text-decoration: none;
     border: 0;
-    border-bottom: none !important;
+    border-bottom: none;
     position: relative;
     cursor: pointer;
+    background: transparent;
+    background-color: transparent;
+    box-shadow: none;
+    filter: none;
+    padding: 0;
+    border-radius: 0;
 
-    background: transparent !important;
-    background-color: transparent !important;
-    box-shadow: none !important;
-    filter: none !important;
-    padding: 0 !important;
-    border-radius: 0 !important;
+    @include between($large-laptop-min, $large-laptop-max) {
+  }
 
     &:hover,
     &:focus {
       text-decoration: none;
-      border-bottom: none !important;
+      border-bottom: none;
     }
 
     &::before,
     &::after {
-      content: none !important;
-      background: transparent !important;
-      box-shadow: none !important;
+      content: none;
+      background: transparent;
+      box-shadow: none;
     }
 
     &:focus-visible {

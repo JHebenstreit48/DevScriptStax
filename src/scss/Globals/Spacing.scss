@@ -3,11 +3,12 @@ $dropdown-width: 17rem;
 
 /* Navigation — positions, spacing, sizes */
 $nav-left-desktop: 25rem;           // .navigationMenu left (desktop)
+$nav-left-large-laptop: 16rem;
 $nav-mobile-margin-top: 0.5rem;     // .navigationMenu margin-top (mobile)
 $nav-mobile-right: 0.5rem;          // .navigationMenu right (mobile)
 
 $nav-search-left-desktop: 86.5rem;    // .searchIconContainer left (desktop)
-$nav-search-left-laptop: 2.5rem;    // .searchIconContainer left (small-laptop range)
+$nav-search-left-large-laptop: 82rem;    // .searchIconContainer left (small-laptop range)
 $nav-search-top-desktop: 50%;       // .searchIconContainer top (desktop)
 $nav-search-top-mobile: 1rem;     // .searchIconContainer top (mobile)
 

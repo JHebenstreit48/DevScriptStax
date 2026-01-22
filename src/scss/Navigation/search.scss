@@ -312,10 +312,13 @@ $muted-2: #7a8091;
   }
 
   @include between($small-laptop-min, $small-laptop-max) {
-    left: $nav-search-left-laptop;
   }
+  
   @include between($medium-laptop-min, $medium-laptop-max) {
-    left: calc($nav-search-left-laptop + 0.5rem);
+  }
+
+  @include between($large-laptop-min, $large-laptop-max) {
+    left: $nav-search-left-large-laptop;
   }
 }
 
