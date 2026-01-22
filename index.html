@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -31,8 +31,15 @@
     />
 
     <style>
-      html, body { margin: 0; height: 100%; background: #0d0d0d; }
-      #root { min-height: 100%; }
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+        background: #0d0d0d;
+      }
+      #root {
+        min-height: 100%;
+      }
     </style>
 
     <!-- Preload hero/logo (optional) -->
@@ -149,10 +156,19 @@
       href="https://fonts.gstatic.com"
       crossorigin
     />
+
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+      media="print"
+      onload="this.media = 'all'"
     />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+      />
+    </noscript>
   </head>
 
   <body>
@@ -162,5 +178,4 @@
       src="/src/main.tsx"
     ></script>
   </body>
-
 </html>
