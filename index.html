@@ -4,25 +4,13 @@
     <meta charset="UTF-8" />
 
     <!-- Viewport -->
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Title / Theme -->
     <title>DevScriptStax</title>
-    <meta
-      name="theme-color"
-      content="#0b0b21"
-    />
-    <meta
-      name="application-name"
-      content="DevScriptStax"
-    />
-    <meta
-      name="apple-mobile-web-app-title"
-      content="DevScriptStax"
-    />
+    <meta name="theme-color" content="#0b0b21" />
+    <meta name="application-name" content="DevScriptStax" />
+    <meta name="apple-mobile-web-app-title" content="DevScriptStax" />
 
     <!-- Meta Description -->
     <meta
@@ -30,6 +18,7 @@
       content="Structured web-dev knowledge base: FrontEnd, BackEnd, GraphQL & Apollo, Languages, Testing, and Tools — fast to browse, easy to reference."
     />
 
+    <!-- Critical layout skeleton: prevents white flash + CLS before SCSS loads -->
     <style>
       html,
       body {
@@ -37,131 +26,87 @@
         height: 100%;
         background: #0d0d0d;
       }
+
       #root {
         min-height: 100%;
+      }
+
+      /* Prevent footer jumping while CSS bundle loads */
+      .appContainer {
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        min-height: 100vh;
+      }
+
+      /* Your header is fixed at 4rem; reserve space early */
+      .contentWrapper {
+        padding-top: 4rem;
+      }
+
+      /* Small phones: reserve footer height early to prevent CLS */
+      @media (max-width: 480px) {
+        .siteFooter {
+          min-height: 110px;
+        }
       }
     </style>
 
     <!-- Preload hero/logo (optional) -->
-    <link
-      rel="preload"
-      as="image"
-      href="/Favicon/DevScriptStax.webp"
-      type="image/webp"
-    />
+    <link rel="preload" as="image" href="/Favicon/DevScriptStax.webp" type="image/webp" />
 
     <!-- Favicons -->
-    <link
-      rel="icon"
-      href="/Favicon/favicon.ico"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/Favicon/DevScriptStax-32x32.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/Favicon/apple-touch-icon.png"
-    />
+    <link rel="icon" href="/Favicon/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/Favicon/DevScriptStax-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/Favicon/apple-touch-icon.png" />
 
     <!-- ===== Social previews (Open Graph + Twitter) ===== -->
-    <meta
-      property="og:site_name"
-      content="DevScriptStax"
-    />
-    <meta
-      property="og:title"
-      content="DevScriptStax — Web-Dev Notes & References"
-    />
+    <meta property="og:site_name" content="DevScriptStax" />
+    <meta property="og:title" content="DevScriptStax — Web-Dev Notes & References" />
     <meta
       property="og:description"
       content="A clean, organized stash of notes across FrontEnd, BackEnd, GraphQL & Apollo, Languages, Testing, and Tools."
     />
-    <meta
-      property="og:type"
-      content="website"
-    />
-    <meta
-      property="og:url"
-      content="https://devscriptstax.netlify.app/"
-    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://devscriptstax.netlify.app/" />
 
-    <!-- Absolute HTTPS image + cache-buster -->
-    <meta
-      property="og:image"
-      content="https://devscriptstax.netlify.app/og/devscriptstax-1200x630.png?v=1"
-    />
+    <meta property="og:image" content="https://devscriptstax.netlify.app/og/devscriptstax-1200x630.png?v=1" />
     <meta
       property="og:image:secure_url"
       content="https://devscriptstax.netlify.app/og/devscriptstax-1200x630.png?v=1"
     />
-    <meta
-      property="og:image:type"
-      content="image/png"
-    />
-    <meta
-      property="og:image:width"
-      content="1200"
-    />
-    <meta
-      property="og:image:height"
-      content="630"
-    />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     <meta
       property="og:image:alt"
       content="DevScriptStax — sections: BackEnd, FrontEnd, GraphQL & Apollo, Languages, Testing, Tools"
     />
-    <meta
-      property="og:locale"
-      content="en_US"
-    />
+    <meta property="og:locale" content="en_US" />
 
-    <meta
-      name="twitter:card"
-      content="summary_large_image"
-    />
-    <meta
-      name="twitter:title"
-      content="DevScriptStax — Web-Dev Notes & References"
-    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="DevScriptStax — Web-Dev Notes & References" />
     <meta
       name="twitter:description"
       content="FrontEnd, BackEnd, GraphQL & Apollo, Languages, Testing, and Tools — fast, organized, searchable."
     />
-    <meta
-      name="twitter:image"
-      content="https://devscriptstax.netlify.app/og/devscriptstax-1200x630.png?v=1"
-    />
+    <meta name="twitter:image" content="https://devscriptstax.netlify.app/og/devscriptstax-1200x630.png?v=1" />
     <meta
       name="twitter:image:alt"
       content="DevScriptStax — overview of main tabs: BackEnd, FrontEnd, GraphQL & Apollo, Languages, Testing, Tools"
     />
 
     <!-- Canonical -->
-    <link
-      rel="canonical"
-      href="https://devscriptstax.netlify.app/"
-    />
+    <link rel="canonical" href="https://devscriptstax.netlify.app/" />
 
-    <!-- Fonts: JetBrains Mono (code) + Playfair Display (emphasis) -->
-    <link
-      rel="preconnect"
-      href="https://fonts.googleapis.com"
-    />
-    <link
-      rel="preconnect"
-      href="https://fonts.gstatic.com"
-      crossorigin
-    />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- (optional) remove fonts.gstatic preconnect to avoid Lighthouse "unused" warning -->
 
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap"
       media="print"
-      onload="this.media = 'all'"
+      onload="this.media='all'"
     />
     <noscript>
       <link
@@ -173,9 +118,6 @@
 
   <body>
     <div id="root"></div>
-    <script
-      type="module"
-      src="/src/main.tsx"
-    ></script>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
