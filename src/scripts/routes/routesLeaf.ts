@@ -1,15 +1,15 @@
 import path from 'node:path';
 import type { Subpage } from '@/types/navigation/Subpage';
 
-import { config } from '../config';
-import { ensureDir, exists, writeIfChanged } from './fs';
-import { pascalize, sectionFolderName } from './naming';
-import { matchesWithin } from './within';
+import { config } from '../shared/config';
+import { ensureDir, exists, writeIfChanged } from '@/scripts/shared/utils/fs';
+import { pascalize, sectionFolderName } from '@/scripts/shared/utils/naming';
+import { matchesWithin } from '@/scripts/shared/utils/within';
 
 import {
   computeLeafRouteSignatureFromPaths,
   getLeafRouteSignatureIndex,
-} from './scanExisting';
+} from '@/scripts/shared/utils/scanExisting';
 
 type Filter = {
   tab?: string;

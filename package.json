@@ -9,18 +9,21 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "clean": "del-cli \"dist\" \"src/**/*.js\"",
-
+    
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
-    
+
     "gen:report": "tsx -r tsconfig-paths/register src/scripts/cli/report.ts",
     "gen:all": "tsx -r tsconfig-paths/register src/scripts/cli/gen-all.ts",
 
-    "gen:pages": "tsx -r tsconfig-paths/register src/scripts/cli/gen-pages.ts",
-    "gen:pages:all": "tsx -r tsconfig-paths/register src/scripts/cli/gen-pages.ts",
+    "gen:pages": "tsx -r tsconfig-paths/register src/scripts/pages/gen-pages.ts",
+    "gen:pages:all": "tsx -r tsconfig-paths/register src/scripts/pages/gen-pages.ts",
 
-    "gen:routes": "tsx -r tsconfig-paths/register src/scripts/cli/gen-routes.ts",
-    "gen:routes:all": "tsx -r tsconfig-paths/register src/scripts/cli/gen-routes.ts"
+    "gen:routes": "tsx -r tsconfig-paths/register src/scripts/routes/gen-routes.ts",
+    "gen:routes:all": "tsx -r tsconfig-paths/register src/scripts/routes/gen-routes.ts",
+
+    "gen:stitch": "tsx -r tsconfig-paths/register src/scripts/routes/gen-stitch.ts",
+    "gen:stitch:all": "tsx -r tsconfig-paths/register src/scripts/routes/gen-stitch.ts"
   },
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^7.1.0",

@@ -1,12 +1,12 @@
 import path from 'node:path';
-import { config } from '../config';
+import { config } from '@/scripts/shared/config';
 import {
   pascalize,
   sectionFolderName,
   topicFolderName,
   isGenericLeafName,
   safeLazyVarName,
-} from './naming';
+} from '@/scripts/shared/utils/naming';
 
 export type Derived = {
   sectionCrumb: string;

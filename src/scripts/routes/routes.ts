@@ -1,5 +1,5 @@
 import path from "node:path";
-import { writeIfChanged } from "./fs";
+import { writeIfChanged } from "@/scripts/shared/utils/fs";
 
 export type RouteEntry = {
   urlPath: string;

@@ -8,3 +8,4 @@ const args = process.argv.slice(2).join(" ");
 
 run(`tsx -r tsconfig-paths/register src/scripts/cli/gen-pages.ts ${args}`);
 run(`tsx -r tsconfig-paths/register src/scripts/cli/gen-routes.ts ${args}`);
+run(`tsx -r tsconfig-paths/register src/scripts/routes/gen-stitch.ts ${args}`);

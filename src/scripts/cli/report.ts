@@ -1,10 +1,10 @@
 import pages from '@/domain/navigation/mainTabs';
 import type { Subpage } from '@/types/navigation';
 
-import { parseArgs, matchesFilter } from "@/scripts/core/args";
-import { flattenNav } from "@/scripts/core/flattenNav";
-import { derive } from "@/scripts/core/derive";
-import { fileExists } from "@/scripts/core/scanExisting";
+import { parseArgs, matchesFilter } from "@/scripts/shared/args";
+import { flattenNav } from "@/scripts/shared/model/flattenNav";
+import { derive } from "@/scripts/shared/model/derive";
+import { fileExists } from "@/scripts/shared/utils/scanExisting";
 
 function main() {
   const args = parseArgs(process.argv.slice(2));
