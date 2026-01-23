@@ -1,7 +1,10 @@
 import { RouteObject } from "react-router-dom";
 
-const graphQL: RouteObject[] = [
+import Basics from "@/routes/Individual/Granularized/GraphQLAndApollo/GraphQL/Basics";
+import Advanced from "@/routes/Individual/Granularized/GraphQLAndApollo/GraphQL/Advanced";
 
+const GraphQL: RouteObject[] = [
+  ...Basics,
+  ...Advanced,
 ];
-
-export default graphQL;
+export default GraphQL;

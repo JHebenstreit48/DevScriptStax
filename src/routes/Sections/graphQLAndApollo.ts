@@ -4,8 +4,8 @@ import GraphQL from "@/routes/Individual/FullRoutes/GraphQLAndApollo/graphQL";
 import Apollo from "@/routes/Individual/FullRoutes/GraphQLAndApollo/apollo";
 
 const graphQLAndApollo: RouteObject[] = [
-    ...GraphQL,
-    ...Apollo,
+  ...GraphQL,
+  ...Apollo,
 ];
 
 export default graphQLAndApollo;

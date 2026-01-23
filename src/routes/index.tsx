@@ -4,14 +4,15 @@ import App from '@/App';
 import ErrorPage from '@/Pages/Special/Error';
 import Home from '@/Pages/Special/Home';
 import About from '@/Pages/Special/About';
-
-import backEnd from '@/routes/Sections/backEnd';
-import cloudServices from '@/routes/Sections/cloudServices';
 import frontEnd from '@/routes/Sections/frontEnd';
-import graphQLAndApollo from '@/routes/Sections/graphQLAndApollo';
 import languages from '@/routes/Sections/languages';
+import backEnd from '@/routes/Sections/backEnd';
+import cloudAndDeployment from '@/routes/Sections/cloudAndDeployment';
 import testing from '@/routes/Sections/testing';
 import tools from '@/routes/Sections/tools';
+import graphQLAndApollo from '@/routes/Sections/graphQLAndApollo';
+import stacks from '@/routes/Sections/stacks';
+
 
 export const router = createBrowserRouter([
   {
@@ -19,15 +20,22 @@ export const router = createBrowserRouter([
     element: <App />,
     errorElement: <ErrorPage />,
     children: [
-      { index: true, element: <Home /> },
-      { path: 'about', element: <About /> },
-      ...backEnd,
-      ...cloudServices,
+      {
+        index: true,
+        element: <Home />
+      },
+      {
+        path: 'about',
+        element: <About />
+      },
       ...frontEnd,
-      ...graphQLAndApollo,
       ...languages,
+      ...backEnd,
+      ...cloudAndDeployment,
       ...testing,
       ...tools,
+      ...graphQLAndApollo,
+      ...stacks,
     ],
   },
 ]);
