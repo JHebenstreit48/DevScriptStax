@@ -3,18 +3,18 @@ import Header from '@/Components/Shared/Header/Header';
 import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
-const Grid = () => {
-  const markdownFilePath = 'FrontEnd/CSS/Advanced/Layouts/Grid';
+const ErrorHandling = () => {
+  const markdownFilePath = 'Languages/Ruby/Basics/DataAndErrors/ErrorHandling';
 
   return (
     <>
       <PageLayout>
         <Header />
-        <PageTitle title="CSS Layouts - Grid" />
+        <PageTitle title="Error Handling" />
         <Notes filePath={markdownFilePath} />
       </PageLayout>
     </>
   );
 };
 
-export default Grid;
+export default ErrorHandling;

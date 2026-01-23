@@ -4,7 +4,7 @@ import { RouteObject } from 'react-router-dom';
 const BestPractices = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Preprocessors/SCSS/BestPractices/BestPractices'));
 const StyleGuidelines = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Preprocessors/SCSS/BestPractices/StyleGuidelines'));
 
-const BestPractices: RouteObject[] = [
+const SCSSBestPractices: RouteObject[] = [
   {
     path: '/css/tools/preprocessors/scss/best-practices/best-practices',
     element: <BestPractices />,
@@ -15,4 +15,4 @@ const BestPractices: RouteObject[] = [
   },
 ];
 
-export default BestPractices;
+export default SCSSBestPractices;

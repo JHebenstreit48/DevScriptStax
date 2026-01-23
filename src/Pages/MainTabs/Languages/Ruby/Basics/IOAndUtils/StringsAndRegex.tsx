@@ -3,18 +3,18 @@ import Header from '@/Components/Shared/Header/Header';
 import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
-const Grid = () => {
-  const markdownFilePath = 'FrontEnd/CSS/Advanced/Layouts/Grid';
+const StringsAndRegex = () => {
+  const markdownFilePath = 'Languages/Ruby/Basics/IOAndUtils/StringsAndRegex';
 
   return (
     <>
       <PageLayout>
         <Header />
-        <PageTitle title="CSS Layouts - Grid" />
+        <PageTitle title="Strings & Regex" />
         <Notes filePath={markdownFilePath} />
       </PageLayout>
     </>
   );
 };
 
-export default Grid;
+export default StringsAndRegex;

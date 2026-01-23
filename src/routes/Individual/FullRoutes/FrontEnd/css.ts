@@ -5,9 +5,8 @@ import Advanced from "@/routes/Individual/Granularized/FrontEnd/CSS/Advanced";
 import Tools from "@/routes/Individual/Granularized/FrontEnd/CSS/Tools";
 
 const CSS: RouteObject[] = [
-    ...Basics,
-    ...Advanced,
-    ...Tools
+  ...Basics,
+  ...Advanced,
+  ...Tools,
 ];
-
 export default CSS;

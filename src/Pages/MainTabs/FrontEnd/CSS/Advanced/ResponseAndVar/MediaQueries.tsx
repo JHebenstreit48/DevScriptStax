@@ -4,7 +4,7 @@ import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const MediaQueries = () => {
-  const markdownFilePath = 'FrontEnd/CSS/Advanced/ResponseAndVar/MediaQueries';
+  const markdownFilePath = 'FrontEnd/CSS/Advanced/ResponseAndVariables/MediaQueries';
 
   return (
     <>

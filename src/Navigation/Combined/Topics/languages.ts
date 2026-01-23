@@ -3,6 +3,7 @@ import type { Subpage } from '@/types/navigation';
 import Python from '@/Navigation/Individual/FullTopics/Languages/Python';
 import JavaScript from '@/Navigation/Individual/FullTopics/Languages/JavaScript';
 import TypeScript from '@/Navigation/Individual/FullTopics/Languages/TypeScript';
+import Ruby from '@/Navigation/Individual/FullTopics/Languages/Ruby';
 import Rust from '@/Navigation/Individual/FullTopics/Languages/Rust';
 import Go from '@/Navigation/Individual/FullTopics/Languages/Go';
 import Dart from '@/Navigation/Individual/FullTopics/Languages/Dart';
@@ -14,6 +15,7 @@ const languages: Subpage = {
     TypeScript,
     Python,
     Rust,
+    Ruby,
     Go,
     Dart
   ]
