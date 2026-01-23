@@ -10,7 +10,7 @@ const Introduction = () => {
     <>
       <PageLayout>
         <Header />
-        <PageTitle title="Fundamentals: Introduction" />
+        <PageTitle title="Vue Fundamentals - Introduction" />
         <Notes filePath={markdownFilePath} />
       </PageLayout>
     </>

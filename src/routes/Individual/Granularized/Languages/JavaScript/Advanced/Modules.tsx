@@ -2,7 +2,7 @@ import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
 const Overview = lazy(() => import('@/Pages/MainTabs/Languages/JavaScript/Advanced/Modules/Overview'));
-const ImportExportSyntax = lazy(() => import('@/Pages/MainTabs/Languages/JavaScript/Advanced/Modules/ImportExportSyntax'));
+const ImportExportSyntax = lazy(() => import('@/Pages/MainTabs/Languages/JavaScript/Advanced/Modules/Syntax'));
 const DynamicImports = lazy(() => import('@/Pages/MainTabs/Languages/JavaScript/Advanced/Modules/DynamicImports'));
 const PathsAndAliases = lazy(() => import('@/Pages/MainTabs/Languages/JavaScript/Advanced/Modules/PathsAndAliases'));
 

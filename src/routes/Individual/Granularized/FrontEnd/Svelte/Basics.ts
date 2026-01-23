@@ -4,8 +4,8 @@ import Fundamentals from "@/routes/Individual/Granularized/FrontEnd/Svelte/Basic
 import CoreConcepts from "@/routes/Individual/Granularized/FrontEnd/Svelte/Basics/CoreConcepts";
 
 const Basics: RouteObject[] = [
-    ...Fundamentals,
-    ...CoreConcepts,
+  ...Fundamentals,
+  ...CoreConcepts,
 ];
 
 export default Basics;

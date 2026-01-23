@@ -7,8 +7,8 @@ const Basics: Subpage = {
       name: "Fundamentals",
       subpages: [
         {
-          name: "Overview",
-          path: "/redux/basics/fundamentals/overview"
+          name: "Introduction",
+          path: "/redux/basics/fundamentals/introduction"
         },
         {
           name: "Core Concepts",
