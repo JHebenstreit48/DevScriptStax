@@ -1,0 +1,38 @@
+/* ================================
+   SECTION: Base Primitives (Hex)
+   ================================ */
+$white: #ffffff;
+$black: #000000;
+
+/* Neutrals (dark → light-ish) */
+$neutral-900: #111111; // near-black (great for text on light surfaces)
+$neutral-700: #444444; // mid-dark neutral (borders, muted icons)
+$neutral-600: #666666; // muted text
+$neutral-500: #777777; // lighter muted text
+$blue-500: #007bff; // bootstrap-y link/primary blue
+
+/* Accents */
+$cyan-glow: #00ffff;
+$gold-500: #F3AF1C;
+/* ================================
+   END SECTION: Base Primitives (Hex)
+   ================================ */
+
+
+/* ================================
+   SECTION: Alpha Primitives (RGBA)
+   ================================ */
+/* Cyan alphas */
+$cyan-a40: rgba(0, 255, 255, 0.4);
+$cyan-a20: rgba(0, 255, 255, 0.2);
+$cyan-a16: rgba(0, 255, 255, 0.16);
+
+/* White alphas */
+$white-a10: rgba(255, 255, 255, 0.10);
+
+/* Black alphas (useful for overlays + shadows) */
+$black-a60: rgba(0, 0, 0, 0.6);
+$black-a30: rgba(0, 0, 0, 0.3);
+/* ================================
+   END SECTION: Alpha Primitives (RGBA)
+   ================================ */

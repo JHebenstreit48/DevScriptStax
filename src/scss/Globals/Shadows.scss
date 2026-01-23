@@ -1,4 +1,4 @@
-@use 'Colors' as *;
+@use './Colors' as *;
 
 /* ==============================
    Navigation Shadows
@@ -11,15 +11,15 @@ $nav-text-shadow-dim: 2px 2px 2px $text-shadow-dim;
 $nav-dropdown-elevation: 0 8px 16px rgba(0, 0, 0, 0.2);
 
 /* Tooltip glow */
-$tooltip-cyan-medium: rgba(0, 255, 255, 0.4);
+$tooltip-cyan-medium: $cyan-a40;
 $tooltip-box-glow: 0 0 10px $tooltip-cyan-medium;
 
 /* Modal */
 $modal-drop: 0 8px 24px $modal-shadow-color;
 
 /* ===== Notes: shadows ===== */
-$notes-text-shadow: 1px 2px 1px black;
-$notes-hr-shadow: 2px 2px 2px black;
+$notes-text-shadow: 1px 2px 1px $black;
+$notes-hr-shadow: 2px 2px 2px $black;
 
 $notes-card-inner: inset 0 0 17px 5px rgba(0, 0, 0, 0.4);
 $notes-card-outer: 0 0 6px 1px $notes-secondary;

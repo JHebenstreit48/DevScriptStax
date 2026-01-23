@@ -1,0 +1,21 @@
+@use './shared' as *;
+
+/* ================================
+   SearchModal colors
+   ================================ */
+$modal-bg: $black-a60;            // was: rgba(0, 0, 0, 0.6)
+$modal-content-bg: $white;        // was: #fff
+$modal-text-color: $neutral-900;  // was: #111
+$modal-shadow-color: $black-a30;  // was: rgba(0, 0, 0, 0.3)
+
+$close-color: $neutral-700;       // already tokenized
+$close-hover: $black;             // was: #000
+
+$link-color: $blue-500;             // keep literal unless reused elsewhere
+$link-hover-underline: underline;
+
+$breadcrumb-color: $neutral-500;  // was: #777
+$empty-text-color: $neutral-600;  // was: #666
+/* ================================
+   END SearchModal colors
+   ================================ */

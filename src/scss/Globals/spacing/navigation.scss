@@ -1,0 +1,35 @@
+/* Navigation layout */
+$dropdown-width: 17rem;
+
+/* Navigation — positions, spacing, sizes */
+$nav-left-desktop: 25rem;           // .navigationMenu left (desktop)
+$nav-left-large-laptop: 16rem;
+$nav-mobile-margin-top: 0.5rem;     // .navigationMenu margin-top (mobile)
+$nav-mobile-right: 0.5rem;          // .navigationMenu right (mobile)
+
+$nav-search-left-desktop: 86.5rem;    // .searchIconContainer left (desktop)
+$nav-search-left-large-laptop: 82rem;    // .searchIconContainer left (small-laptop range)
+$nav-search-top-desktop: 50%;       // .searchIconContainer top (desktop)
+$nav-search-top-mobile: 1rem;     // .searchIconContainer top (mobile)
+
+$mainnav-margin-top: 0.2rem;        // .mainNav margin-top
+
+/* ✅ Single-token shorthand instead of Y/X split */
+$nav-dropdown-padding: 1rem 0;      // .dropdownContent padding
+$nav-dropdown-max-height: 31.2rem;  // active dropdown max-height
+$nav-dropdown-mobile-margin-top: 0.5rem;
+$nav-dropdown-offset: 14px;      // offset from bottom of button to top of dropdown
+
+$nav-gap-mobile: 1rem;              // mobile gap inside .dropdownButton
+$scrollbar-width-thin: 6px;         // thin scrollbar width
+
+/* Z-index (optional centralization) */
+$z-nav: 10;
+$z-nav-overlay: 11;
+$z-nav-dropdown: 12;
+$z-nav-hamburger: 15;
+
+/* PageLayout tooltip */
+$tooltip-pad-y: 0.75rem;
+$tooltip-pad-x: 1.25rem;
+$tooltip-min-width: 250px;

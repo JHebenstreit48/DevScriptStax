@@ -1,21 +1,4 @@
-@use 'sass:color';
-@use '@scss/Globals' as *;
-
-/* ==============================
-            Variables
-   ============================== */
-$header-bg-color: rgba(6, 6, 10, 0.96);
-$header-border-color: rgba(255, 255, 255, 0.10);
-$header-rim: rgba(0, 255, 255, 0.16);
-$header-blur: 10px;
-
-$text-color: #032c2c;
-$text-glow: #00ffff;
-
-$header-height: 4rem;
-$site-name-height: 2.5rem;
-$font-size-default: 2.4rem;
-$cellphone-portrait: 480px;
+@use '@scss/Globals/index' as *;
 
 /* ==============================
             Base Styles
@@ -96,69 +79,5 @@ $cellphone-portrait: 480px;
     grid-column: 3;
     justify-content: flex-end;
     width: 100%;
-  }
-}
-
-/* ==============================
-         Header Title Styling
-   ============================== */
-.Header {
-  font-size: $font-size-default;
-  background: transparent;
-  color: $text-color;
-  text-shadow: 0 0 6px $text-glow, 0 0 4px $text-glow, 0 0 10px $text-glow;
-  white-space: nowrap;
-  margin: 0 auto;
-  text-align: center;
-  height: $site-name-height;
-  line-height: $site-name-height;
-
-  @include maxw($cellphone-portrait) {
-    font-size: 1.85rem; // tweak if needed
-    height: 2.2rem;
-    line-height: 2.2rem;
-    margin: 0;
-  }
-
-  &.HeaderAlignLeft {
-    margin: 0;
-    text-align: left;
-  }
-
-  .HeaderHomeLink {
-    display: inline-block;
-    color: inherit;
-    text-decoration: none;
-    border: 0;
-    border-bottom: none;
-    position: relative;
-    cursor: pointer;
-    background: transparent;
-    background-color: transparent;
-    box-shadow: none;
-    filter: none;
-    padding: 0;
-    border-radius: 0;
-
-    @include between($large-laptop-min, $large-laptop-max) {
-  }
-
-    &:hover,
-    &:focus {
-      text-decoration: none;
-      border-bottom: none;
-    }
-
-    &::before,
-    &::after {
-      content: none;
-      background: transparent;
-      box-shadow: none;
-    }
-
-    &:focus-visible {
-      outline: 2px solid currentColor;
-      outline-offset: 2px;
-    }
   }
 }
