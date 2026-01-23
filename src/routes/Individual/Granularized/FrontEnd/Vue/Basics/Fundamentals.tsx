@@ -8,7 +8,7 @@ const Components = lazy(() => import('@/Pages/MainTabs/FrontEnd/Vue/Basics/Funda
 
 const Fundamentals: RouteObject[] = [
   {
-    path: '/vue/basics/fundamentals/intro',
+    path: '/vue/basics/fundamentals/introduction',
     element: <Introduction />,
   },
   {

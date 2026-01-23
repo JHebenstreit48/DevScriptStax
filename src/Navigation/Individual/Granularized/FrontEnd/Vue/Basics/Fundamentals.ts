@@ -5,7 +5,7 @@ const Fundamentals: Subpage = {
   subpages: [
     {
       name: 'Introduction',
-      path: '/vue/basics/fundamentals/intro',
+      path: '/vue/basics/fundamentals/introduction',
     },
     {
       name: 'Vue CLI',

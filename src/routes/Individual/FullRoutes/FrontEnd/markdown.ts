@@ -5,9 +5,8 @@ import Intermediate from "@/routes/Individual/Granularized/FrontEnd/Markdown/Int
 import Advanced from "@/routes/Individual/Granularized/FrontEnd/Markdown/Advanced";
 
 const Markdown: RouteObject[] = [
-    ...Basics,
-    ...Intermediate,
-    ...Advanced,
+  ...Basics,
+  ...Intermediate,
+  ...Advanced,
 ];
-
 export default Markdown;

@@ -4,8 +4,8 @@ import Fundamentals from "@/routes/Individual/Granularized/Languages/Python/Basi
 import CoreConcepts from "@/routes/Individual/Granularized/Languages/Python/Basics/CoreConcepts";
 
 const Basics: RouteObject[] = [
-    ...Fundamentals,
-    ...CoreConcepts
+  ...Fundamentals,
+  ...CoreConcepts,
 ];
 
 export default Basics;

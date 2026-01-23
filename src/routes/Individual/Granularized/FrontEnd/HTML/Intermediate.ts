@@ -5,9 +5,9 @@ import TabularData from "@/routes/Individual/Granularized/FrontEnd/HTML/Intermed
 import HeadAndMeta from "@/routes/Individual/Granularized/FrontEnd/HTML/Intermediate/HeadAndMeta";
 
 const Intermediate: RouteObject[] = [
-    ...MediaAndEmbeds,
-    ...TabularData,
-    ...HeadAndMeta
+  ...MediaAndEmbeds,
+  ...TabularData,
+  ...HeadAndMeta,
 ];
 
 export default Intermediate;

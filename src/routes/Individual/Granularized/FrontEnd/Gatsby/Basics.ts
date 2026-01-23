@@ -6,10 +6,10 @@ import AssetsAndStyling from "@/routes/Individual/Granularized/FrontEnd/Gatsby/B
 import ConfigAndPlugins from "@/routes/Individual/Granularized/FrontEnd/Gatsby/Basics/ConfigAndPlugins";
 
 const Basics: RouteObject[] = [
-    ...Fundamentals,
-    ...CoreConcepts,
-    ...AssetsAndStyling,
-    ...ConfigAndPlugins,
+  ...Fundamentals,
+  ...CoreConcepts,
+  ...AssetsAndStyling,
+  ...ConfigAndPlugins,
 ];
 
 export default Basics;

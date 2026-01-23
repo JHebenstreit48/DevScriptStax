@@ -9,5 +9,4 @@ const HTML: RouteObject[] = [
   ...Intermediate,
   ...Advanced,
 ];
-
 export default HTML;

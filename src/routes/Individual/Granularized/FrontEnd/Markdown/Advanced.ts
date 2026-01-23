@@ -4,8 +4,8 @@ import Extending from "@/routes/Individual/Granularized/FrontEnd/Markdown/Advanc
 import BestPractices from "@/routes/Individual/Granularized/FrontEnd/Markdown/Advanced/BestPractices";
 
 const Advanced: RouteObject[] = [
-    ...BestPractices,
-    ...Extending,
+  ...Extending,
+  ...BestPractices,
 ];
 
 export default Advanced;
