@@ -1,0 +1,27 @@
+@use './shared' as *;
+
+$nav-level-1-brand: #1e90ff;
+
+$level-1: $nav-level-1-brand;
+$level-2: $gold-500;
+$level-3: rgba(241, 243, 249, 0.94);
+$level-4: rgba(241, 243, 249, 0.86);
+$level-5: rgba(241, 243, 249, 0.80);
+$level-6: #4dd6ff;
+$level-7: rgba(241, 243, 249, 0.74);
+
+$dropdown-bg: rgba(0, 0, 0, 0.72);
+$dropdown-hover: rgba(255, 255, 255, 0.08);
+$scrollbar-track: $white-a10;
+
+$text-shadow-dim: rgba(0, 0, 0, 0.72);
+$nav-overlay-bg: rgba(0, 0, 0, 0.92);
+
+$nav-glass-border: $white-a10;
+$nav-glass-rim: $cyan-a16;
+$nav-glass-sheen-top: rgba(0, 0, 0, 0.83);
+$nav-glass-sheen-bot: rgba(0, 0, 0, 0.88);
+$nav-glass-blur: 18px;
+
+/* PageLayout tooltip */
+$tooltip-border-cyan: $cyan-a20;

@@ -1,0 +1,33 @@
+/* ===== Phones ===== */
+$cellphone-portrait: 480px;  /* phone portrait max-width */
+$phone-landscape-wide: 900px;/* optional: landscape max-width */
+$phone-landscape-short-h: 480px; /* optional: landscape max-height (short viewports) */
+
+/* ===== Tablets ===== */
+$tablet-portrait: 768px;
+$tablet-landscape: 1024px;
+
+/* ===== Laptops ===== */
+$small-laptop-min: 1024px;
+$small-laptop-max: 1366px;
+$medium-laptop-min: 1367px;
+$medium-laptop-max: 1536px;
+$large-laptop-min: 1537px;
+$large-laptop-max: 1919px;
+
+/* ===== Desktops / Monitors ===== */
+$desktop-1080p: 1920px;  /* 24" */
+$desktop-1440p: 2560px;  /* 27" */
+$desktop-4k: 3840px;
+
+/* ===== Optional container caps ===== */
+$container-xl: 1280px;
+$container-xxl: 1440px;  /* good for 24–27" */
+$container-max: 1600px;
+
+@function container($key) {
+  @if $key == xl  { @return $container-xl; }
+  @if $key == xxl { @return $container-xxl; }
+  @if $key == max { @return $container-max; }
+  @return $container-xl;
+}

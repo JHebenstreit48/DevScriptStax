@@ -143,7 +143,7 @@ $pad-wrap: clamp(20px, 3.2vw, 36px);
   border-radius: $radius-md;
   background: rgba(20, 20, 40, 0.28);
   border: 1px solid rgba(255, 255, 255, 0.12);
-  color: color.mix($text-main, #ffffff, 92%);
+  color: color.mix($text-main, $white, 92%);
 }
 
 .errorDetails {

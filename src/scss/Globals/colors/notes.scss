@@ -1,0 +1,23 @@
+@use './shared' as *;
+
+/* ===== Notes: palette & surfaces ===== */
+$notes-primary: rgb(6, 159, 248);   // main blue accent (used for inline-code border/glow)
+$notes-secondary: $gold-500; // gold for primary emphasis
+$notes-header: rgb(125, 213, 248);
+$notes-emphasis: rgb(255, 56, 209);  // legacy pink accent (still available if needed)
+$notes-success: rgb(47, 185, 20);    // legacy "success" green
+$notes-highlight: rgb(175, 28, 243);
+$notes-info: rgb(12, 217, 231);      // bright cyan (secondary emphasis)
+$notes-bullet: rgb(0, 255, 60);
+
+$notes-bg-dark: rgba(41, 40, 40, 0.4);
+$notes-code-bg: rgb(29, 31, 33);       // shared between code blocks & inline code pills
+$notes-table-bg: #1b1b1b;
+$notes-code-header-bg: rgb(40, 44, 52);
+
+$notes-table-border-color: #ddd;
+$notes-table-header-bg: #333;
+$notes-table-cell-bg: $neutral-700;
+
+/* Utility for borders/buttons in code block area */
+$notes-border-subtle: $neutral-700;

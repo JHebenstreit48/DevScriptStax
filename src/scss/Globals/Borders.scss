@@ -1,4 +1,4 @@
-@use 'Colors' as *;
+@use './Colors' as *;
 
 /* Tooltip */
 $tooltip-border: 1px solid $tooltip-border-cyan;
@@ -17,3 +17,7 @@ $notes-code-header-divider: 1px solid $notes-border-subtle;
 
 $notes-table-border: 1px solid $notes-table-border-color;
 $notes-hr-border: 1.5px solid $notes-primary;
+
+// Home Page styles
+$radius-lg: 18px;
+$radius-md: 12px;
