@@ -4,7 +4,7 @@ import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const Variables = () => {
-  const markdownFilePath = 'FrontEnd/CSS/Advanced/ResponseAndVar/Variables';
+  const markdownFilePath = 'FrontEnd/CSS/Advanced/ResponseAndVariables/Variables';
 
   return (
     <>

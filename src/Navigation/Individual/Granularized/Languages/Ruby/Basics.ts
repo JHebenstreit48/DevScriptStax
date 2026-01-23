@@ -7,8 +7,8 @@ const Basics: Subpage = {
       name: "Fundamentals",
       subpages: [
         {
-          name: "Intro",
-          path: "/languages/ruby/basics/fundamentals/intro"
+          name: "Introduction",
+          path: "/languages/ruby/basics/fundamentals/introduction"
         },
         {
           name: "Syntax & Types",
