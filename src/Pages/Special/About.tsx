@@ -1,10 +1,11 @@
 import { lazy, Suspense, useMemo } from "react";
 import Header from "@/Components/Shared/Header/Header";
 import aboutMd from "@/content/About.md?raw";
-// Reuse Home.scss so .siteInfo/.siteInfoContent/.Note styles apply
 import "@/scss/Page/Home/Home.scss";
 
-const HomeRenderer = lazy(() => import("@/Components/PageComponents/Notes/HomeText/HomeRenderer"));
+const HomeRenderer = lazy(
+  () => import("@/Components/PageComponents/Notes/HomeText/HomeRenderer")
+);
 
 export default function About() {
   const content = useMemo(() => aboutMd, []);

@@ -3,16 +3,16 @@ import NotesHome from "@/Components/PageComponents/Notes/NotesHome";
 import QuickDash from "@/Components/Home/QuickDash";
 import "@/scss/Page/Home/Home.scss";
 
-const Home = () => {
+export default function Home() {
   return (
     <>
       <Header />
-      <div className="siteInfo">
-        <NotesHome />
-        <QuickDash />
-      </div>
+      <main className="homePage">
+        <div className="siteInfo">
+          <NotesHome />
+          <QuickDash />
+        </div>
+      </main>
     </>
   );
-};
-
-export default Home;
+}
