@@ -1,8 +1,8 @@
 import pages from '@/domain/navigation/mainTabs';
 import type { Subpage } from '@/types/navigation/Subpage';
 
-import { parseArgs } from '../core/args';
-import { generateLeafLazyRoutes } from '../core/routesLeaf';
+import { parseArgs } from '@/scripts/shared/args';
+import { generateLeafLazyRoutes } from '@/scripts/routes/routesLeaf';
 
 function main() {
   const args = parseArgs(process.argv.slice(2));

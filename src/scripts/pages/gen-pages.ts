@@ -2,12 +2,12 @@ import path from 'node:path';
 import pages from '@/domain/navigation/mainTabs';
 import type { Subpage } from '@/types/navigation/Subpage';
 
-import { parseArgs, matchesFilter } from '../core/args';
-import { flattenNav } from '../core/flattenNav';
-import { derive } from '../core/derive';
-import { createPageIfMissing } from '../core/pages';
-import { config } from '../config';
-import { matchesWithin } from '../core/within';
+import { parseArgs, matchesFilter } from '@/scripts/shared/args';
+import { flattenNav } from '../shared/model/flattenNav';
+import { derive } from '@/scripts/shared/model/derive';
+import { createPageIfMissing } from '@/scripts/pages/pages';
+import { config } from '@/scripts/shared/config';
+import { matchesWithin } from '../shared/utils/within';
 
 function main() {
   const args = parseArgs(process.argv.slice(2));

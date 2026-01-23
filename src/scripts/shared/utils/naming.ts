@@ -1,4 +1,4 @@
-import { config } from "../config";
+import { config } from "@/scripts/shared/config";
 
 export function pascalize(raw: string): string {
   return raw

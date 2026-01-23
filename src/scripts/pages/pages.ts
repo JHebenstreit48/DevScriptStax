@@ -1,5 +1,5 @@
-import { exists, writeText } from './fs';
-import { countTsxFilesInDir, findSiblingDirWithSameTsxStems } from './scanExisting';
+import { exists, writeText } from '@/scripts/shared/utils/fs';
+import { countTsxFilesInDir, findSiblingDirWithSameTsxStems } from '@/scripts/shared/utils/scanExisting';
 
 export function makePageStub(opts: {
   componentName: string;
