@@ -1,6 +1,10 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState, useCallback } from "react";
 import { Link } from "react-router-dom";
-import { readVisits, writeVisits, type Visit } from "@/Components/Shared/hooks/useVisitTracker";
+import {
+  readVisits,
+  writeVisits,
+  type Visit,
+} from "@/Components/Shared/hooks/useVisitTracker";
 import { resolveBreadcrumbTrail } from "@/domain/navigation/breadcrumbs";
 import { SITE_NAME } from "@/Components/Shared/dynamicSiteName";
 
@@ -26,7 +30,7 @@ const normalizePath = (p: string) => {
     const clean = decodeURIComponent(u.pathname || "/");
     return clean !== "/" ? clean.replace(/\/+$/, "") : "/";
   } catch {
-    const pathOnly = (p.split("#")[0].split("?")[0] || "/");
+    const pathOnly = p.split("#")[0].split("?")[0] || "/";
     return pathOnly !== "/" ? decodeURIComponent(pathOnly).replace(/\/+$/, "") : "/";
   }
 };
@@ -37,7 +41,11 @@ const pathToNiceTitle = (path: string) => {
   return last.replace(/[-_]+/g, " ").replace(/\b([a-z])/g, (_, c) => c.toUpperCase());
 };
 
-const chooseTitle = (path: string, visitTitle: string, known: Record<string, string>): string => {
+const chooseTitle = (
+  path: string,
+  visitTitle: string,
+  known: Record<string, string>
+): string => {
   const key = canonicalPath(path);
 
   // 1) Authoritative PageTitle
@@ -59,6 +67,7 @@ const chooseTitle = (path: string, visitTitle: string, known: Record<string, str
 
 export default function QuickDash() {
   const [titles, setTitles] = useState<Record<string, string>>(() => readTitleMap());
+
   const [visits, setVisits] = useState<Visit[]>(() =>
     readVisits()
       .map((v) => ({ ...v, path: canonicalPath(v.path), title: v.title ?? "" }))
@@ -69,7 +78,7 @@ export default function QuickDash() {
    * Sync visits from storage and overlay authoritative titles.
    * (Single source of truth: readVisits().)
    */
-  const syncVisits = () => {
+  const syncVisits = useCallback(() => {
     const fresh: Visit[] = readVisits()
       .map((v) => {
         const path = canonicalPath(v.path);
@@ -79,14 +88,10 @@ export default function QuickDash() {
       .filter((v) => v.path !== "/");
 
     setVisits(fresh);
-  };
+  }, [titles]);
 
   /**
-   * Keep visits fresh WITHOUT polling:
-   * - on window focus
-   * - on tab becoming visible again
-   * - on localStorage changes from other tabs/windows
-   * - right after titles change (since they affect overlay)
+   * Attach listeners ONCE (do not re-attach on titles updates).
    */
   useEffect(() => {
     const onFocus = () => syncVisits();
@@ -95,7 +100,6 @@ export default function QuickDash() {
     };
 
     const onStorage = (e: StorageEvent) => {
-      // If your app uses different key names, this still won’t break — it just won’t trigger from storage.
       if (e.key === TITLES_KEY || e.key === VISITS_KEY || e.key === null) {
         syncVisits();
       }
@@ -113,10 +117,11 @@ export default function QuickDash() {
       document.removeEventListener("visibilitychange", onVis);
       window.removeEventListener("storage", onStorage);
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [titles]);
+  }, [syncVisits]);
 
-  // Listen for authoritative titles from PageTitle.tsx
+  /**
+   * Listen for authoritative titles from PageTitle.tsx
+   */
   useEffect(() => {
     const onPageTitle = (ev: Event) => {
       const d = (ev as CustomEvent).detail as { title?: string; path?: string } | undefined;
@@ -148,7 +153,9 @@ export default function QuickDash() {
     return () => window.removeEventListener("page:title", onPageTitle as EventListener);
   }, []);
 
-  // One-pass fix-up: never downgrade if we have a hard title
+  /**
+   * One-pass fix-up: never downgrade if we have a hard title
+   */
   useEffect(() => {
     if (!visits.length) return;
 
@@ -196,6 +203,15 @@ export default function QuickDash() {
     [visits]
   );
 
+  // Memoize tooltip strings (avoid repeated resolveBreadcrumbTrail calls in render)
+  const tooltipMap = useMemo(() => {
+    const m: Record<string, string> = {};
+    for (const v of visits) {
+      m[v.path] = resolveBreadcrumbTrail(v.path).join(" > ");
+    }
+    return m;
+  }, [visits]);
+
   if (!visits.length) return null;
 
   return (
@@ -205,7 +221,7 @@ export default function QuickDash() {
         <ul className="dashChips">
           {mostVisited.map((v) => (
             <li key={v.path}>
-              <Link to={v.path} className="chip" title={resolveBreadcrumbTrail(v.path).join(" > ")}>
+              <Link to={v.path} className="chip" title={tooltipMap[v.path] || ""}>
                 {chooseTitle(v.path, v.title, titles)}
               </Link>
             </li>
@@ -218,7 +234,7 @@ export default function QuickDash() {
         <ul className="dashChips">
           {recent.map((v) => (
             <li key={v.path}>
-              <Link to={v.path} className="chip" title={resolveBreadcrumbTrail(v.path).join(" > ")}>
+              <Link to={v.path} className="chip" title={tooltipMap[v.path] || ""}>
                 {chooseTitle(v.path, v.title, titles)}
               </Link>
             </li>

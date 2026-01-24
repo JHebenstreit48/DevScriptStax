@@ -1,7 +1,9 @@
+import { lazy, Suspense } from "react";
 import Header from "@/Components/Shared/Header/Header";
-import QuickDash from "@/Components/HomeAndAbout/QuickDash";
 import HomeContent from "@/Components/HomeAndAbout/homeContent";
 import "@/scss/Page/Home/Home.scss";
+
+const QuickDash = lazy(() => import("@/Components/HomeAndAbout/QuickDash"));
 
 export default function Home() {
   return (
@@ -10,7 +12,9 @@ export default function Home() {
       <main className="homePage">
         <div className="siteInfo">
           <HomeContent />
-          <QuickDash />
+          <Suspense fallback={null}>
+            <QuickDash />
+          </Suspense>
         </div>
       </main>
     </>
