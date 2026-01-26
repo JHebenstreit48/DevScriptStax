@@ -6,11 +6,11 @@ const SpEL = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Spring/Sprin
 
 const ResourcesAndSpEL: RouteObject[] = [
   {
-    path: '/backend/frameworks/spring/spring-main/advanced/resources-spel/resource-loading',
+    path: '/frameworks/spring/spring-main/advanced/resources-spel/resource-loading',
     element: <ResourceLoading />,
   },
   {
-    path: '/backend/frameworks/spring/spring-main/advanced/resources-spel/spel',
+    path: '/frameworks/spring/spring-main/advanced/resources-spel/spel',
     element: <SpEL />,
   },
 ];

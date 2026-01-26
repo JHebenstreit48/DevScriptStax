@@ -7,15 +7,15 @@ const CSRF = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/KoaJs/Advanc
 
 const Security: RouteObject[] = [
   {
-    path: '/backend/frameworks/koa/advanced/security/cors',
+    path: '/frameworks/koa/advanced/security/cors',
     element: <CORS />,
   },
   {
-    path: '/backend/frameworks/koa/advanced/security/helmet',
+    path: '/frameworks/koa/advanced/security/helmet',
     element: <Helmet />,
   },
   {
-    path: '/backend/frameworks/koa/advanced/security/csrf',
+    path: '/frameworks/koa/advanced/security/csrf',
     element: <CSRF />,
   },
 ];

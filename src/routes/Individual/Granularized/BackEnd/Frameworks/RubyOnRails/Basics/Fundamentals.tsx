@@ -8,19 +8,19 @@ const MVC = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/RubyOnRails/B
 
 const Fundamentals: RouteObject[] = [
   {
-    path: '/backend/frameworks/ruby-on-rails/basics/fundamentals/intro',
+    path: '/frameworks/ruby-on-rails/basics/fundamentals/intro',
     element: <Intro />,
   },
   {
-    path: '/backend/frameworks/ruby-on-rails/basics/fundamentals/install-setup',
+    path: '/frameworks/ruby-on-rails/basics/fundamentals/install-setup',
     element: <InstallAndSetup />,
   },
   {
-    path: '/backend/frameworks/ruby-on-rails/basics/fundamentals/project-structure',
+    path: '/frameworks/ruby-on-rails/basics/fundamentals/project-structure',
     element: <ProjectStructure />,
   },
   {
-    path: '/backend/frameworks/ruby-on-rails/basics/fundamentals/mvc',
+    path: '/frameworks/ruby-on-rails/basics/fundamentals/mvc',
     element: <MVC />,
   },
 ];

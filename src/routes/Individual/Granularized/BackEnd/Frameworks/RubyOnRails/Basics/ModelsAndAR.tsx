@@ -7,15 +7,15 @@ const Validations = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/RubyO
 
 const ModelsAndAR: RouteObject[] = [
   {
-    path: '/backend/frameworks/ruby-on-rails/basics/models-ar/models-migrations',
+    path: '/frameworks/ruby-on-rails/basics/models-ar/models-migrations',
     element: <ModelsAndMigrations />,
   },
   {
-    path: '/backend/frameworks/ruby-on-rails/basics/models-ar/associations',
+    path: '/frameworks/ruby-on-rails/basics/models-ar/associations',
     element: <Associations />,
   },
   {
-    path: '/backend/frameworks/ruby-on-rails/basics/models-ar/validations',
+    path: '/frameworks/ruby-on-rails/basics/models-ar/validations',
     element: <Validations />,
   },
 ];

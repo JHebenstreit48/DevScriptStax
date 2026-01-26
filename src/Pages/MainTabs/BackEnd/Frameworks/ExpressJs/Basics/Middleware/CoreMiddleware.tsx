@@ -4,7 +4,7 @@ import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const CoreMiddleware = () => {
-  const markdownFilePath = 'BackEnd/Frameworks/ExpressJs/Basics/Middleware/CoreMiddleware';
+  const markdownFilePath = 'BackEnd/Frameworks/ExpressJS/Basics/Middleware/CoreMiddleware';
 
   return (
     <>

@@ -1,21 +1,21 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Overview = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/ExpressJs/Basics/Fundamentals/Overview'));
+const Introduction = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/ExpressJs/Basics/Fundamentals/Introduction'));
 const InstallAndSetup = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/ExpressJs/Basics/Fundamentals/InstallAndSetup'));
 const ProjectStructure = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/ExpressJs/Basics/Fundamentals/ProjectStructure'));
 
 const Fundamentals: RouteObject[] = [
   {
-    path: '/backend/frameworks/express/basics/fundamentals/overview',
-    element: <Overview />,
+    path: '/frameworks/express/basics/fundamentals/introduction',
+    element: <Introduction />,
   },
   {
-    path: '/backend/frameworks/express/basics/fundamentals/install-setup',
+    path: '/frameworks/express/basics/fundamentals/install-setup',
     element: <InstallAndSetup />,
   },
   {
-    path: '/backend/frameworks/express/basics/fundamentals/project-structure',
+    path: '/frameworks/express/basics/fundamentals/project-structure',
     element: <ProjectStructure />,
   },
 ];

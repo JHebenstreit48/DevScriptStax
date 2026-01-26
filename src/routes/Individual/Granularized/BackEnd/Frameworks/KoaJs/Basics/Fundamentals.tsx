@@ -8,19 +8,19 @@ const AppAndContext = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Koa
 
 const Fundamentals: RouteObject[] = [
   {
-    path: '/backend/frameworks/koa/basics/fundamentals/overview',
+    path: '/frameworks/koa/basics/fundamentals/overview',
     element: <Overview />,
   },
   {
-    path: '/backend/frameworks/koa/basics/fundamentals/install-setup',
+    path: '/frameworks/koa/basics/fundamentals/install-setup',
     element: <InstallAndSetup />,
   },
   {
-    path: '/backend/frameworks/koa/basics/fundamentals/app-structure',
+    path: '/frameworks/koa/basics/fundamentals/app-structure',
     element: <AppStructure />,
   },
   {
-    path: '/backend/frameworks/koa/basics/fundamentals/app-context',
+    path: '/frameworks/koa/basics/fundamentals/app-context',
     element: <AppAndContext />,
   },
 ];

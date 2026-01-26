@@ -7,15 +7,15 @@ const Passport = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/KoaJs/Ad
 
 const Auth: RouteObject[] = [
   {
-    path: '/backend/frameworks/koa/advanced/auth/jwt-koa',
+    path: '/frameworks/koa/advanced/auth/jwt-koa',
     element: <JWT />,
   },
   {
-    path: '/backend/frameworks/koa/advanced/auth/sessions',
+    path: '/frameworks/koa/advanced/auth/sessions',
     element: <Sessions />,
   },
   {
-    path: '/backend/frameworks/koa/advanced/auth/passport-koa',
+    path: '/frameworks/koa/advanced/auth/passport-koa',
     element: <Passport />,
   },
 ];

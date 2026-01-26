@@ -6,11 +6,11 @@ const StaticFiles = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Flask
 
 const TemplatesAndStatic: RouteObject[] = [
   {
-    path: '/backend/frameworks/flask/basics/templates-static/jinja2',
+    path: '/frameworks/flask/basics/templates-static/jinja2',
     element: <Jinja2 />,
   },
   {
-    path: '/backend/frameworks/flask/basics/templates-static/static-files',
+    path: '/frameworks/flask/basics/templates-static/static-files',
     element: <StaticFiles />,
   },
 ];

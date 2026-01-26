@@ -6,11 +6,11 @@ const ETagsAndConditionalGET = lazy(() => import('@/Pages/MainTabs/BackEnd/Frame
 
 const PerformanceAndCaching: RouteObject[] = [
   {
-    path: '/backend/frameworks/ruby-on-rails/advanced/performance-caching/caching',
+    path: '/frameworks/ruby-on-rails/advanced/performance-caching/caching',
     element: <Caching />,
   },
   {
-    path: '/backend/frameworks/ruby-on-rails/advanced/performance-caching/etags-conditional',
+    path: '/frameworks/ruby-on-rails/advanced/performance-caching/etags-conditional',
     element: <ETagsAndConditionalGET />,
   },
 ];

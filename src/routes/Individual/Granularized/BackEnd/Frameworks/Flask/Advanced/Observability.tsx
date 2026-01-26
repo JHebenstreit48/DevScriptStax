@@ -6,11 +6,11 @@ const MetricsAndTracing = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks
 
 const Observability: RouteObject[] = [
   {
-    path: '/backend/frameworks/flask/advanced/observability/logging',
+    path: '/frameworks/flask/advanced/observability/logging',
     element: <Logging />,
   },
   {
-    path: '/backend/frameworks/flask/advanced/observability/metrics-tracing',
+    path: '/frameworks/flask/advanced/observability/metrics-tracing',
     element: <MetricsAndTracing />,
   },
 ];

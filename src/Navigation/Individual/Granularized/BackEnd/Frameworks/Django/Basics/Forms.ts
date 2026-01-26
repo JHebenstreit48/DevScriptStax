@@ -5,19 +5,19 @@ const Forms: Subpage = {
   subpages: [
     {
       name: 'Working with Forms',
-      path: '/backend/frameworks/django/basics/forms/working',
+      path: '/frameworks/django/basics/forms/working',
     },
     {
       name: 'Model Forms',
-      path: '/backend/frameworks/django/basics/forms/model-forms',
+      path: '/frameworks/django/basics/forms/model-forms',
     },
     {
       name: 'Validation & Errors',
-      path: '/backend/frameworks/django/basics/forms/validation-errors',
+      path: '/frameworks/django/basics/forms/validation-errors',
     },
     {
       name: 'File Uploads',
-      path: '/backend/frameworks/django/basics/forms/file-uploads',
+      path: '/frameworks/django/basics/forms/file-uploads',
     },
   ],
 };

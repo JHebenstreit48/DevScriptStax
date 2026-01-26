@@ -6,11 +6,11 @@ const Listeners = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Spring/
 
 const Events: RouteObject[] = [
   {
-    path: '/backend/frameworks/spring/spring-main/advanced/events/application-events',
+    path: '/frameworks/spring/spring-main/advanced/events/application-events',
     element: <ApplicationEvents />,
   },
   {
-    path: '/backend/frameworks/spring/spring-main/advanced/events/listeners',
+    path: '/frameworks/spring/spring-main/advanced/events/listeners',
     element: <Listeners />,
   },
 ];

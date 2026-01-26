@@ -6,11 +6,11 @@ const TxAOP = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Spring/Spri
 
 const AOPAdvanced: RouteObject[] = [
   {
-    path: '/backend/frameworks/spring/spring-main/advanced/aop-advanced/pointcuts-proxies',
+    path: '/frameworks/spring/spring-main/advanced/aop-advanced/pointcuts-proxies',
     element: <PointcutsAndProxies />,
   },
   {
-    path: '/backend/frameworks/spring/spring-main/advanced/aop-advanced/transaction-aop',
+    path: '/frameworks/spring/spring-main/advanced/aop-advanced/transaction-aop',
     element: <TxAOP />,
   },
 ];

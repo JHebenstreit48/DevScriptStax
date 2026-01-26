@@ -7,16 +7,16 @@ const Basics: Subpage = {
       name: "Fundamentals",
       subpages: [
         {
-          name: "Overview",
-          path: "/backend/frameworks/express/basics/fundamentals/overview"
+          name: "Introduction",
+          path: '/frameworks/express/basics/fundamentals/introduction'
         },
         {
           name: "Install & Setup",
-          path: "/backend/frameworks/express/basics/fundamentals/install-setup"
+          path: '/frameworks/express/basics/fundamentals/install-setup'
         },
         {
           name: "Project Structure",
-          path: "/backend/frameworks/express/basics/fundamentals/project-structure"
+          path: '/frameworks/express/basics/fundamentals/project-structure'
         }
       ]
     },
@@ -25,15 +25,15 @@ const Basics: Subpage = {
       subpages: [
         {
           name: "Routes",
-          path: "/backend/frameworks/express/basics/routing/routes"
+          path: '/frameworks/express/basics/routing/routes'
         },
         {
           name: "Params & Query",
-          path: "/backend/frameworks/express/basics/routing/params-query"
+          path: '/frameworks/express/basics/routing/params-query'
         },
         {
           name: "Error Handling",
-          path: "/backend/frameworks/express/basics/routing/error-handling"
+          path: '/frameworks/express/basics/routing/error-handling'
         }
       ]
     },
@@ -42,11 +42,11 @@ const Basics: Subpage = {
       subpages: [
         {
           name: "Core Middleware",
-          path: "/backend/frameworks/express/basics/middleware/core"
+          path: '/frameworks/express/basics/middleware/core'
         },
         {
           name: "Custom Middleware",
-          path: "/backend/frameworks/express/basics/middleware/custom"
+          path: '/frameworks/express/basics/middleware/custom'
         }
       ]
     },
@@ -55,11 +55,11 @@ const Basics: Subpage = {
       subpages: [
         {
           name: "JSON & urlencoded",
-          path: "/backend/frameworks/express/basics/data/json-urlencoded"
+          path: '/frameworks/express/basics/data/json-urlencoded'
         },
         {
           name: "File Uploads",
-          path: "/backend/frameworks/express/basics/data/file-uploads"
+          path: '/frameworks/express/basics/data/file-uploads'
         }
       ]
     },
@@ -68,15 +68,15 @@ const Basics: Subpage = {
       subpages: [
         {
           name: "Static Files",
-          path: "/backend/frameworks/express/basics/views-static/static-files"
+          path: '/frameworks/express/basics/views-static/static-files'
         },
         {
           name: "EJS",
-          path: "/backend/frameworks/express/basics/views-static/ejs"
+          path: '/frameworks/express/basics/views-static/ejs'
         },
         {
           name: "Handlebars",
-          path: "/backend/frameworks/express/basics/views-static/handlebars"
+          path: '/frameworks/express/basics/views-static/handlebars'
         }
       ]
     }

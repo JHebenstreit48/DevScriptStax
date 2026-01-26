@@ -6,11 +6,11 @@ const GracefulShutdown = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/
 
 const Production: RouteObject[] = [
   {
-    path: '/backend/frameworks/spring/spring-boot/advanced/production/packaging-jar-war',
+    path: '/frameworks/spring/spring-boot/advanced/production/packaging-jar-war',
     element: <Packaging />,
   },
   {
-    path: '/backend/frameworks/spring/spring-boot/advanced/production/graceful-shutdown',
+    path: '/frameworks/spring/spring-boot/advanced/production/graceful-shutdown',
     element: <GracefulShutdown />,
   },
 ];

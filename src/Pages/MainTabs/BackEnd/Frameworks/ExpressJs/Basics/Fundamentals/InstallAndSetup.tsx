@@ -4,13 +4,13 @@ import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const InstallAndSetup = () => {
-  const markdownFilePath = 'BackEnd/Frameworks/ExpressJs/Basics/Fundamentals/InstallAndSetup';
+  const markdownFilePath = 'BackEnd/Frameworks/ExpressJS/Basics/Fundamentals/InstallAndSetup';
 
   return (
     <>
       <PageLayout>
         <Header />
-        <PageTitle title="Install & Setup" />
+        <PageTitle title="Express.js Fundamentals - Install & Setup" />
         <Notes filePath={markdownFilePath} />
       </PageLayout>
     </>

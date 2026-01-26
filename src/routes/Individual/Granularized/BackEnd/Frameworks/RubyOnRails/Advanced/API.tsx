@@ -6,11 +6,11 @@ const JSONRendering = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Rub
 
 const API: RouteObject[] = [
   {
-    path: '/backend/frameworks/ruby-on-rails/advanced/api/api-mode',
+    path: '/frameworks/ruby-on-rails/advanced/api/api-mode',
     element: <APIMode />,
   },
   {
-    path: '/backend/frameworks/ruby-on-rails/advanced/api/json-rendering',
+    path: '/frameworks/ruby-on-rails/advanced/api/json-rendering',
     element: <JSONRendering />,
   },
 ];

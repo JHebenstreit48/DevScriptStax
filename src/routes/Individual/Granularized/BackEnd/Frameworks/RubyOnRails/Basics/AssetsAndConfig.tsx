@@ -6,11 +6,11 @@ const Environments = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Ruby
 
 const AssetsAndConfig: RouteObject[] = [
   {
-    path: '/backend/frameworks/ruby-on-rails/basics/assets-config/asset-pipeline-importmap',
+    path: '/frameworks/ruby-on-rails/basics/assets-config/asset-pipeline-importmap',
     element: <AssetPipelineImportmap />,
   },
   {
-    path: '/backend/frameworks/ruby-on-rails/basics/assets-config/environments',
+    path: '/frameworks/ruby-on-rails/basics/assets-config/environments',
     element: <Environments />,
   },
 ];

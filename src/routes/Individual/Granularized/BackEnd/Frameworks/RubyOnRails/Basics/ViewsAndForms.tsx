@@ -7,15 +7,15 @@ const FormsAndCSRF = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Ruby
 
 const ViewsAndForms: RouteObject[] = [
   {
-    path: '/backend/frameworks/ruby-on-rails/basics/views-forms/erb-layouts',
+    path: '/frameworks/ruby-on-rails/basics/views-forms/erb-layouts',
     element: <ERBAndLayouts />,
   },
   {
-    path: '/backend/frameworks/ruby-on-rails/basics/views-forms/partials-helpers',
+    path: '/frameworks/ruby-on-rails/basics/views-forms/partials-helpers',
     element: <PartialsAndHelpers />,
   },
   {
-    path: '/backend/frameworks/ruby-on-rails/basics/views-forms/forms-csrf',
+    path: '/frameworks/ruby-on-rails/basics/views-forms/forms-csrf',
     element: <FormsAndCSRF />,
   },
 ];

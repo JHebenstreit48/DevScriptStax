@@ -4,13 +4,13 @@ import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const JSONAndUrlencoded = () => {
-  const markdownFilePath = 'BackEnd/Frameworks/ExpressJs/Basics/DataHandling/JSONAndUrlencoded';
+  const markdownFilePath = 'BackEnd/Frameworks/ExpressJS/Basics/DataHandling/JSONAndURLEncoded';
 
   return (
     <>
       <PageLayout>
         <Header />
-        <PageTitle title="JSON & urlencoded" />
+        <PageTitle title="Express.js Data Handling - JSON & urlencoded" />
         <Notes filePath={markdownFilePath} />
       </PageLayout>
     </>

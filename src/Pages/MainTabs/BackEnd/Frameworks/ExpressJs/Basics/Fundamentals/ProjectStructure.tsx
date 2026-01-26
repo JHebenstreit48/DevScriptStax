@@ -4,13 +4,13 @@ import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const ProjectStructure = () => {
-  const markdownFilePath = 'BackEnd/Frameworks/ExpressJs/Basics/Fundamentals/ProjectStructure';
+  const markdownFilePath = 'BackEnd/Frameworks/ExpressJS/Basics/Fundamentals/ProjectStructure';
 
   return (
     <>
       <PageLayout>
         <Header />
-        <PageTitle title="Project Structure" />
+        <PageTitle title="Express.js Fundamentals - Project Structure" />
         <Notes filePath={markdownFilePath} />
       </PageLayout>
     </>

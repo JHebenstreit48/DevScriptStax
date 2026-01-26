@@ -6,11 +6,11 @@ const StaticFiles = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Sprin
 
 const ViewsAndStatic: RouteObject[] = [
   {
-    path: '/backend/frameworks/spring/spring-boot/basics/views-static/thymeleaf',
+    path: '/frameworks/spring/spring-boot/basics/views-static/thymeleaf',
     element: <Thymeleaf />,
   },
   {
-    path: '/backend/frameworks/spring/spring-boot/basics/views-static/static-files',
+    path: '/frameworks/spring/spring-boot/basics/views-static/static-files',
     element: <StaticFiles />,
   },
 ];

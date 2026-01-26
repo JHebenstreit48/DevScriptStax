@@ -6,11 +6,11 @@ const FileUploads = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Flask
 
 const DataAndForms: RouteObject[] = [
   {
-    path: '/backend/frameworks/flask/basics/data-forms/json-form-data',
+    path: '/frameworks/flask/basics/data-forms/json-form-data',
     element: <JSONAndFormData />,
   },
   {
-    path: '/backend/frameworks/flask/basics/data-forms/file-uploads',
+    path: '/frameworks/flask/basics/data-forms/file-uploads',
     element: <FileUploads />,
   },
 ];

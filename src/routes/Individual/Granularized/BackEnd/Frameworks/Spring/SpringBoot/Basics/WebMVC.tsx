@@ -7,15 +7,15 @@ const ValidationAndBinding = lazy(() => import('@/Pages/MainTabs/BackEnd/Framewo
 
 const WebMVC: RouteObject[] = [
   {
-    path: '/backend/frameworks/spring/spring-boot/basics/web-mvc/controllers',
+    path: '/frameworks/spring/spring-boot/basics/web-mvc/controllers',
     element: <Controllers />,
   },
   {
-    path: '/backend/frameworks/spring/spring-boot/basics/web-mvc/routing-params',
+    path: '/frameworks/spring/spring-boot/basics/web-mvc/routing-params',
     element: <RoutingAndParams />,
   },
   {
-    path: '/backend/frameworks/spring/spring-boot/basics/web-mvc/validation-binding',
+    path: '/frameworks/spring/spring-boot/basics/web-mvc/validation-binding',
     element: <ValidationAndBinding />,
   },
 ];

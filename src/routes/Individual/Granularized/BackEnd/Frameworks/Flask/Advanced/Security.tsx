@@ -6,11 +6,11 @@ const CSRF = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Flask/Advanc
 
 const Security: RouteObject[] = [
   {
-    path: '/backend/frameworks/flask/advanced/security/cors',
+    path: '/frameworks/flask/advanced/security/cors',
     element: <CORS />,
   },
   {
-    path: '/backend/frameworks/flask/advanced/security/csrf',
+    path: '/frameworks/flask/advanced/security/csrf',
     element: <CSRF />,
   },
 ];

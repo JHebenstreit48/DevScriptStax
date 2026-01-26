@@ -6,11 +6,11 @@ const Instrumentation = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/R
 
 const Observability: RouteObject[] = [
   {
-    path: '/backend/frameworks/ruby-on-rails/advanced/observability/logging',
+    path: '/frameworks/ruby-on-rails/advanced/observability/logging',
     element: <Logging />,
   },
   {
-    path: '/backend/frameworks/ruby-on-rails/advanced/observability/instrumentation',
+    path: '/frameworks/ruby-on-rails/advanced/observability/instrumentation',
     element: <Instrumentation />,
   },
 ];

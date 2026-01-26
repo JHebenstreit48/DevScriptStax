@@ -6,11 +6,11 @@ const AOPBasics = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Spring/
 
 const DIAndAOP: RouteObject[] = [
   {
-    path: '/backend/frameworks/spring/spring-main/basics/di-aop/dependency-injection',
+    path: '/frameworks/spring/spring-main/basics/di-aop/dependency-injection',
     element: <DependencyInjection />,
   },
   {
-    path: '/backend/frameworks/spring/spring-main/basics/di-aop/aop-basics',
+    path: '/frameworks/spring/spring-main/basics/di-aop/aop-basics',
     element: <AOPBasics />,
   },
 ];

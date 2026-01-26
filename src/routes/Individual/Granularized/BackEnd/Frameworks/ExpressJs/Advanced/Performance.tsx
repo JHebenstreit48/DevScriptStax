@@ -7,15 +7,15 @@ const RouterSplitting = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/E
 
 const Performance: RouteObject[] = [
   {
-    path: '/backend/frameworks/express/advanced/performance/compression-etag',
+    path: '/frameworks/express/advanced/performance/compression-etag',
     element: <CompressionAndETag />,
   },
   {
-    path: '/backend/frameworks/express/advanced/performance/static-cache-control',
+    path: '/frameworks/express/advanced/performance/static-cache-control',
     element: <StaticCacheControl />,
   },
   {
-    path: '/backend/frameworks/express/advanced/performance/router-splitting',
+    path: '/frameworks/express/advanced/performance/router-splitting',
     element: <RouterSplitting />,
   },
 ];

@@ -7,15 +7,15 @@ const ExternalConfigAndEnv = lazy(() => import('@/Pages/MainTabs/BackEnd/Framewo
 
 const Config: RouteObject[] = [
   {
-    path: '/backend/frameworks/spring/spring-boot/basics/config/properties-yaml',
+    path: '/frameworks/spring/spring-boot/basics/config/properties-yaml',
     element: <PropertiesAndYAML />,
   },
   {
-    path: '/backend/frameworks/spring/spring-boot/basics/config/profiles',
+    path: '/frameworks/spring/spring-boot/basics/config/profiles',
     element: <Profiles />,
   },
   {
-    path: '/backend/frameworks/spring/spring-boot/basics/config/external-config-env',
+    path: '/frameworks/spring/spring-boot/basics/config/external-config-env',
     element: <ExternalConfigAndEnv />,
   },
 ];

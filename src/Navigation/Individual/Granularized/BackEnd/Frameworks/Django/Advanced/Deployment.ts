@@ -5,11 +5,11 @@ const Deployment: Subpage = {
   subpages: [
     {
       name: 'Gunicorn',
-      path: '/backend/frameworks/django/advanced/deployment/gunicorn',
+      path: '/frameworks/django/advanced/deployment/gunicorn',
     },
     {
       name: 'Scaling',
-      path: '/backend/frameworks/django/advanced/deployment/scaling',
+      path: '/frameworks/django/advanced/deployment/scaling',
     },
   ],
 };

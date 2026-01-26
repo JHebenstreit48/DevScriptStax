@@ -8,11 +8,11 @@ const Advanced: Subpage = {
       subpages: [
         {
           name: "Using Orbs for Reusability",
-          path: "/tools/cicd/circleci/advanced/orbs-and-reuse/orbs"
+          path: "/ci-cd/circle-ci/advanced/orbs-and-reuse/orbs"
         },
         {
           name: "Reusable Commands",
-          path: "/tools/cicd/circleci/advanced/orbs-and-reuse/reusable-commands"
+          path: "/ci-cd/circle-ci/advanced/orbs-and-reuse/reusable-commands"
         }
       ]
     },
@@ -21,11 +21,11 @@ const Advanced: Subpage = {
       subpages: [
         {
           name: "Executors (Docker/Machine)",
-          path: "/tools/cicd/circleci/advanced/runners-and-executors/executors"
+          path: "/ci-cd/circle-ci/advanced/runners-and-executors/executors"
         },
         {
           name: "Self-Hosted Runners",
-          path: "/tools/cicd/circleci/advanced/runners-and-executors/runners"
+          path: "/ci-cd/circle-ci/advanced/runners-and-executors/runners"
         }
       ]
     },
@@ -34,15 +34,15 @@ const Advanced: Subpage = {
       subpages: [
         {
           name: "Caching & Performance Tuning",
-          path: "/tools/cicd/circleci/advanced/performance-and-scale/caching"
+          path: "/ci-cd/circle-ci/advanced/performance-and-scale/caching"
         },
         {
           name: "Parallelism & Test Splitting",
-          path: "/tools/cicd/circleci/advanced/performance-and-scale/parallelism"
+          path: "/ci-cd/circle-ci/advanced/performance-and-scale/parallelism"
         },
         {
           name: "Optimizing CI/CD Workflows",
-          path: "/tools/cicd/circleci/advanced/performance-and-scale/optimization"
+          path: "/ci-cd/circle-ci/advanced/performance-and-scale/optimization"
         }
       ]
     },
@@ -51,11 +51,11 @@ const Advanced: Subpage = {
       subpages: [
         {
           name: "Security & Compliance in CircleCI",
-          path: "/tools/cicd/circleci/advanced/security/security"
+          path: "/ci-cd/circle-ci/advanced/security/security"
         },
         {
           name: "Contexts & Secrets",
-          path: "/tools/cicd/circleci/advanced/security/contexts-secrets"
+          path: "/ci-cd/circle-ci/advanced/security/contexts-secrets"
         }
       ]
     }

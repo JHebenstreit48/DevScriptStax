@@ -8,19 +8,19 @@ const AuthAndPermissions = lazy(() => import('@/Pages/MainTabs/BackEnd/Framework
 
 const RESTInDjango: RouteObject[] = [
   {
-    path: '/backend/frameworks/django/advanced/rest-in-django/intro',
+    path: '/frameworks/django/advanced/rest-in-django/intro',
     element: <IntroToDRF />,
   },
   {
-    path: '/backend/frameworks/django/advanced/rest-in-django/serializers',
+    path: '/frameworks/django/advanced/rest-in-django/serializers',
     element: <Serializers />,
   },
   {
-    path: '/backend/frameworks/django/advanced/rest-in-django/viewsets-routers',
+    path: '/frameworks/django/advanced/rest-in-django/viewsets-routers',
     element: <ViewsetsAndRouters />,
   },
   {
-    path: '/backend/frameworks/django/advanced/rest-in-django/auth-permissions',
+    path: '/frameworks/django/advanced/rest-in-django/auth-permissions',
     element: <AuthAndPermissions />,
   },
 ];

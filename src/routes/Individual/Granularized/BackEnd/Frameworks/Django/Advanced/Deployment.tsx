@@ -6,11 +6,11 @@ const Scaling = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Django/Ad
 
 const Deployment: RouteObject[] = [
   {
-    path: '/backend/frameworks/django/advanced/deployment/gunicorn',
+    path: '/frameworks/django/advanced/deployment/gunicorn',
     element: <Gunicorn />,
   },
   {
-    path: '/backend/frameworks/django/advanced/deployment/scaling',
+    path: '/frameworks/django/advanced/deployment/scaling',
     element: <Scaling />,
   },
 ];

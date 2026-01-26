@@ -6,11 +6,11 @@ const Authorization = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Rub
 
 const Security: RouteObject[] = [
   {
-    path: '/backend/frameworks/ruby-on-rails/advanced/security/devise-auth',
+    path: '/frameworks/ruby-on-rails/advanced/security/devise-auth',
     element: <Devise />,
   },
   {
-    path: '/backend/frameworks/ruby-on-rails/advanced/security/authorization',
+    path: '/frameworks/ruby-on-rails/advanced/security/authorization',
     element: <Authorization />,
   },
 ];

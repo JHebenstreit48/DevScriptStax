@@ -6,11 +6,11 @@ const Transactions = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Spri
 
 const Data: RouteObject[] = [
   {
-    path: '/backend/frameworks/spring/spring-main/basics/data-core/jdbc-template',
+    path: '/frameworks/spring/spring-main/basics/data-core/jdbc-template',
     element: <JDBCTemplate />,
   },
   {
-    path: '/backend/frameworks/spring/spring-main/basics/data-core/transactions',
+    path: '/frameworks/spring/spring-main/basics/data-core/transactions',
     element: <Transactions />,
   },
 ];

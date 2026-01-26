@@ -7,15 +7,15 @@ const Sessions = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Flask/Ad
 
 const Auth: RouteObject[] = [
   {
-    path: '/backend/frameworks/flask/advanced/auth/flask-login',
+    path: '/frameworks/flask/advanced/auth/flask-login',
     element: <FlaskLogin />,
   },
   {
-    path: '/backend/frameworks/flask/advanced/auth/jwt',
+    path: '/frameworks/flask/advanced/auth/jwt',
     element: <JWT />,
   },
   {
-    path: '/backend/frameworks/flask/advanced/auth/sessions',
+    path: '/frameworks/flask/advanced/auth/sessions',
     element: <Sessions />,
   },
 ];

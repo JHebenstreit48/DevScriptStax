@@ -6,11 +6,11 @@ const Templating = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/KoaJs/
 
 const TemplatesAndStatic: RouteObject[] = [
   {
-    path: '/backend/frameworks/koa/basics/templates-static/static-files',
+    path: '/frameworks/koa/basics/templates-static/static-files',
     element: <StaticFiles />,
   },
   {
-    path: '/backend/frameworks/koa/basics/templates-static/templating',
+    path: '/frameworks/koa/basics/templates-static/templating',
     element: <Templating />,
   },
 ];

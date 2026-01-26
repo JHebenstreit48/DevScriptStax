@@ -8,11 +8,11 @@ const Advanced: Subpage = {
       subpages: [
         {
           name: "REST in Express",
-          path: "/backend/frameworks/express/advanced/api-patterns/rest-in-express"
+          path: '/frameworks/express/advanced/api-patterns/rest-in-express'
         },
         {
           name: "GraphQL (Express)",
-          path: "/backend/frameworks/express/advanced/api-patterns/graphql-express"
+          path: '/frameworks/express/advanced/api-patterns/graphql-express'
         }
       ]
     },
@@ -21,15 +21,15 @@ const Advanced: Subpage = {
       subpages: [
         {
           name: "Passport.js",
-          path: "/backend/frameworks/express/advanced/auth/passport"
+          path: '/frameworks/express/advanced/auth/passport'
         },
         {
           name: "JWT",
-          path: "/backend/frameworks/express/advanced/auth/jwt"
+          path: '/frameworks/express/advanced/auth/jwt'
         },
         {
           name: "Sessions",
-          path: "/backend/frameworks/express/advanced/auth/sessions"
+          path: '/frameworks/express/advanced/auth/sessions'
         }
       ]
     },
@@ -38,15 +38,15 @@ const Advanced: Subpage = {
       subpages: [
         {
           name: "CORS (Express)",
-          path: "/backend/frameworks/express/advanced/security/cors"
+          path: '/frameworks/express/advanced/security/cors'
         },
         {
           name: "Helmet & Rate Limit",
-          path: "/backend/frameworks/express/advanced/security/helmet-rate-limit"
+          path: '/frameworks/express/advanced/security/helmet-rate-limit'
         },
         {
           name: "CSRF (Cookies)",
-          path: "/backend/frameworks/express/advanced/security/csrf-cookies"
+          path: '/frameworks/express/advanced/security/csrf-cookies'
         }
       ]
     },
@@ -55,15 +55,15 @@ const Advanced: Subpage = {
       subpages: [
         {
           name: "Compression & ETag",
-          path: "/backend/frameworks/express/advanced/performance/compression-etag"
+          path: '/frameworks/express/advanced/performance/compression-etag'
         },
         {
           name: "Static Cache Control",
-          path: "/backend/frameworks/express/advanced/performance/static-cache-control"
+          path: '/frameworks/express/advanced/performance/static-cache-control'
         },
         {
           name: "Router Splitting",
-          path: "/backend/frameworks/express/advanced/performance/router-splitting"
+          path: '/frameworks/express/advanced/performance/router-splitting'
         }
       ]
     },
@@ -72,11 +72,11 @@ const Advanced: Subpage = {
       subpages: [
         {
           name: "Trust Proxy",
-          path: "/backend/frameworks/express/advanced/production/trust-proxy"
+          path: '/frameworks/express/advanced/production/trust-proxy'
         },
         {
           name: "Prod Error Strategy",
-          path: "/backend/frameworks/express/advanced/production/prod-error-strategy"
+          path: '/frameworks/express/advanced/production/prod-error-strategy'
         }
       ]
     },
@@ -85,11 +85,11 @@ const Advanced: Subpage = {
       subpages: [
         {
           name: "Logging Middleware",
-          path: "/backend/frameworks/express/advanced/observability/logging-middleware"
+          path: '/frameworks/express/advanced/observability/logging-middleware'
         },
         {
           name: "Metrics & Tracing",
-          path: "/backend/frameworks/express/advanced/observability/metrics-tracing"
+          path: '/frameworks/express/advanced/observability/metrics-tracing'
         }
       ]
     }

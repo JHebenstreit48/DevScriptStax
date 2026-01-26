@@ -8,19 +8,19 @@ const ComponentScan = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Spr
 
 const Fundamentals: RouteObject[] = [
   {
-    path: '/backend/frameworks/spring/spring-main/basics/fundamentals/introduction',
+    path: '/frameworks/spring/spring-main/basics/fundamentals/introduction',
     element: <Introduction />,
   },
   {
-    path: '/backend/frameworks/spring/spring-main/basics/fundamentals/ioc-beans',
+    path: '/frameworks/spring/spring-main/basics/fundamentals/ioc-beans',
     element: <IoCContainerAndBeans />,
   },
   {
-    path: '/backend/frameworks/spring/spring-main/basics/fundamentals/config-javaconfig-xml',
+    path: '/frameworks/spring/spring-main/basics/fundamentals/config-javaconfig-xml',
     element: <Config />,
   },
   {
-    path: '/backend/frameworks/spring/spring-main/basics/fundamentals/component-scan',
+    path: '/frameworks/spring/spring-main/basics/fundamentals/component-scan',
     element: <ComponentScan />,
   },
 ];

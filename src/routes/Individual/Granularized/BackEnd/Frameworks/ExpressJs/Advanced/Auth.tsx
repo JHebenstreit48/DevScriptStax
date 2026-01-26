@@ -7,15 +7,15 @@ const Sessions = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/ExpressJ
 
 const Auth: RouteObject[] = [
   {
-    path: '/backend/frameworks/express/advanced/auth/passport',
+    path: '/frameworks/express/advanced/auth/passport',
     element: <PassportJs />,
   },
   {
-    path: '/backend/frameworks/express/advanced/auth/jwt',
+    path: '/frameworks/express/advanced/auth/jwt',
     element: <JWT />,
   },
   {
-    path: '/backend/frameworks/express/advanced/auth/sessions',
+    path: '/frameworks/express/advanced/auth/sessions',
     element: <Sessions />,
   },
 ];

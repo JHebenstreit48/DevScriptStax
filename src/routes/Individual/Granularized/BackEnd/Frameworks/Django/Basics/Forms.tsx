@@ -8,19 +8,19 @@ const FileUploads = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Djang
 
 const Forms: RouteObject[] = [
   {
-    path: '/backend/frameworks/django/basics/forms/working',
+    path: '/frameworks/django/basics/forms/working',
     element: <WorkingWithForms />,
   },
   {
-    path: '/backend/frameworks/django/basics/forms/model-forms',
+    path: '/frameworks/django/basics/forms/model-forms',
     element: <ModelForms />,
   },
   {
-    path: '/backend/frameworks/django/basics/forms/validation-errors',
+    path: '/frameworks/django/basics/forms/validation-errors',
     element: <ValidationAndErrors />,
   },
   {
-    path: '/backend/frameworks/django/basics/forms/file-uploads',
+    path: '/frameworks/django/basics/forms/file-uploads',
     element: <FileUploads />,
   },
 ];

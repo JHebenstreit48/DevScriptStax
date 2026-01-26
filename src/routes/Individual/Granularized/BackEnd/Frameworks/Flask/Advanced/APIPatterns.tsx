@@ -6,11 +6,11 @@ const GraphQL = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Flask/Adv
 
 const APIPatterns: RouteObject[] = [
   {
-    path: '/backend/frameworks/flask/advanced/api-patterns/rest-in-flask',
+    path: '/frameworks/flask/advanced/api-patterns/rest-in-flask',
     element: <RESTInFlask />,
   },
   {
-    path: '/backend/frameworks/flask/advanced/api-patterns/graphql-flask',
+    path: '/frameworks/flask/advanced/api-patterns/graphql-flask',
     element: <GraphQL />,
   },
 ];

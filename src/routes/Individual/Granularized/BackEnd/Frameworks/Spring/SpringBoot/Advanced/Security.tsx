@@ -7,15 +7,15 @@ const OAuth2OIDC = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Spring
 
 const Security: RouteObject[] = [
   {
-    path: '/backend/frameworks/spring/spring-boot/advanced/security/spring-security',
+    path: '/frameworks/spring/spring-boot/advanced/security/spring-security',
     element: <SpringSecurity />,
   },
   {
-    path: '/backend/frameworks/spring/spring-boot/advanced/security/jwt-spring',
+    path: '/frameworks/spring/spring-boot/advanced/security/jwt-spring',
     element: <JWT />,
   },
   {
-    path: '/backend/frameworks/spring/spring-boot/advanced/security/oauth2-oidc',
+    path: '/frameworks/spring/spring-boot/advanced/security/oauth2-oidc',
     element: <OAuth2OIDC />,
   },
 ];

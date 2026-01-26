@@ -8,11 +8,11 @@ const Advanced: Subpage = {
       subpages: [
         {
           name: "REST in Flask",
-          path: "/backend/frameworks/flask/advanced/api-patterns/rest-in-flask"
+          path: '/frameworks/flask/advanced/api-patterns/rest-in-flask'
         },
         {
           name: "GraphQL (Flask)",
-          path: "/backend/frameworks/flask/advanced/api-patterns/graphql-flask"
+          path: '/frameworks/flask/advanced/api-patterns/graphql-flask'
         }
       ]
     },
@@ -21,15 +21,15 @@ const Advanced: Subpage = {
       subpages: [
         {
           name: "Flask-Login",
-          path: "/backend/frameworks/flask/advanced/auth/flask-login"
+          path: '/frameworks/flask/advanced/auth/flask-login'
         },
         {
           name: "JWT",
-          path: "/backend/frameworks/flask/advanced/auth/jwt"
+          path: '/frameworks/flask/advanced/auth/jwt'
         },
         {
           name: "Sessions",
-          path: "/backend/frameworks/flask/advanced/auth/sessions"
+          path: '/frameworks/flask/advanced/auth/sessions'
         }
       ]
     },
@@ -38,11 +38,11 @@ const Advanced: Subpage = {
       subpages: [
         {
           name: "CORS (Flask-CORS)",
-          path: "/backend/frameworks/flask/advanced/security/cors"
+          path: '/frameworks/flask/advanced/security/cors'
         },
         {
           name: "CSRF (WTF-CSRF)",
-          path: "/backend/frameworks/flask/advanced/security/csrf"
+          path: '/frameworks/flask/advanced/security/csrf'
         }
       ]
     },
@@ -51,11 +51,11 @@ const Advanced: Subpage = {
       subpages: [
         {
           name: "Caching (Flask-Caching)",
-          path: "/backend/frameworks/flask/advanced/performance/caching"
+          path: '/frameworks/flask/advanced/performance/caching'
         },
         {
           name: "Compression",
-          path: "/backend/frameworks/flask/advanced/performance/compression"
+          path: '/frameworks/flask/advanced/performance/compression'
         }
       ]
     },
@@ -64,11 +64,11 @@ const Advanced: Subpage = {
       subpages: [
         {
           name: "Proxy Fix",
-          path: "/backend/frameworks/flask/advanced/production/proxy-fix"
+          path: '/frameworks/flask/advanced/production/proxy-fix'
         },
         {
           name: "Error Strategy",
-          path: "/backend/frameworks/flask/advanced/production/error-strategy"
+          path: '/frameworks/flask/advanced/production/error-strategy'
         }
       ]
     },
@@ -77,11 +77,11 @@ const Advanced: Subpage = {
       subpages: [
         {
           name: "Logging",
-          path: "/backend/frameworks/flask/advanced/observability/logging"
+          path: '/frameworks/flask/advanced/observability/logging'
         },
         {
           name: "Metrics & Tracing",
-          path: "/backend/frameworks/flask/advanced/observability/metrics-tracing"
+          path: '/frameworks/flask/advanced/observability/metrics-tracing'
         }
       ]
     }

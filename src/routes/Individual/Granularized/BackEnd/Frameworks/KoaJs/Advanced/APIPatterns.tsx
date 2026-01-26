@@ -6,11 +6,11 @@ const GraphQL = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/KoaJs/Adv
 
 const APIPatterns: RouteObject[] = [
   {
-    path: '/backend/frameworks/koa/advanced/api-patterns/rest-in-koa',
+    path: '/frameworks/koa/advanced/api-patterns/rest-in-koa',
     element: <RESTInKoa />,
   },
   {
-    path: '/backend/frameworks/koa/advanced/api-patterns/graphql-koa',
+    path: '/frameworks/koa/advanced/api-patterns/graphql-koa',
     element: <GraphQL />,
   },
 ];

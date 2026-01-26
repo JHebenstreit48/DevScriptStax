@@ -6,11 +6,11 @@ const CustomMiddleware = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/
 
 const Middleware: RouteObject[] = [
   {
-    path: '/backend/frameworks/express/basics/middleware/core',
+    path: '/frameworks/express/basics/middleware/core',
     element: <CoreMiddleware />,
   },
   {
-    path: '/backend/frameworks/express/basics/middleware/custom',
+    path: '/frameworks/express/basics/middleware/custom',
     element: <CustomMiddleware />,
   },
 ];

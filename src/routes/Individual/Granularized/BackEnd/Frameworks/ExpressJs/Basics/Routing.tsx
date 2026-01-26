@@ -7,15 +7,15 @@ const ErrorHandling = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Exp
 
 const Routing: RouteObject[] = [
   {
-    path: '/backend/frameworks/express/basics/routing/routes',
+    path: '/frameworks/express/basics/routing/routes',
     element: <Routes />,
   },
   {
-    path: '/backend/frameworks/express/basics/routing/params-query',
+    path: '/frameworks/express/basics/routing/params-query',
     element: <ParamsAndQuery />,
   },
   {
-    path: '/backend/frameworks/express/basics/routing/error-handling',
+    path: '/frameworks/express/basics/routing/error-handling',
     element: <ErrorHandling />,
   },
 ];

@@ -7,15 +7,15 @@ const CSRF = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/ExpressJs/Ad
 
 const Security: RouteObject[] = [
   {
-    path: '/backend/frameworks/express/advanced/security/cors',
+    path: '/frameworks/express/advanced/security/cors',
     element: <CORS />,
   },
   {
-    path: '/backend/frameworks/express/advanced/security/helmet-rate-limit',
+    path: '/frameworks/express/advanced/security/helmet-rate-limit',
     element: <HelmetAndRateLimit />,
   },
   {
-    path: '/backend/frameworks/express/advanced/security/csrf-cookies',
+    path: '/frameworks/express/advanced/security/csrf-cookies',
     element: <CSRF />,
   },
 ];

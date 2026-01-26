@@ -1,17 +1,17 @@
 import { RouteObject } from "react-router-dom";
 
-// import APITools from "@/routes/Individual/FullRoutes/Tools/api";
-// import CICDTools from "@/routes/Individual/FullRoutes/Tools/cICDTools";
+import API from "@/routes/Individual/FullRoutes/Tools/api";
+import CICD from "@/routes/Individual/FullRoutes/Tools/cicd";
 // import CodeQuality from "@/routes/Individual/FullRoutes/Tools/codeQuality";
 // import PackageAndBundling from "@/routes/Individual/FullRoutes/Tools/packageAndBundling";
-// import Containerization from "@/routes/Individual/FullRoutes/Tools/containerization";
+import Containerization from "@/routes/Individual/FullRoutes/Tools/containerization";
 
 const tools: RouteObject[] = [
-  // ...APITools,
-  // ...CICDTools,
+  ...API,
+  ...CICD,
   // ...CodeQuality,
   // ...PackageAndBundling,
-  // ...Containerization,
+  ...Containerization,
 ];
 
 export default tools;
