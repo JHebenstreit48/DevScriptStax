@@ -8,11 +8,11 @@ const Basics: Subpage = {
       subpages: [
         {
           name: "Introduction to CircleCI",
-          path: "/tools/cicd/circleci/basics/fundamentals/intro"
+          path: "/ci-cd/circle-ci/basics/fundamentals/introduction"
         },
         {
           name: "Key Concepts",
-          path: "/tools/cicd/circleci/basics/fundamentals/concepts"
+          path: "/ci-cd/circle-ci/basics/fundamentals/concepts"
         }
       ]
     },
@@ -21,11 +21,11 @@ const Basics: Subpage = {
       subpages: [
         {
           name: "Installing & Setting Up CircleCI",
-          path: "/tools/cicd/circleci/basics/circleci-setup/setup"
+          path: "/ci-cd/circle-ci/basics/circle-ci-setup/setup"
         },
         {
           name: "Configuring a .circleci/config.yml",
-          path: "/tools/cicd/circleci/basics/circleci-setup/config"
+          path: "/ci-cd/circle-ci/basics/circle-ci-setup/config"
         }
       ]
     },
@@ -34,11 +34,11 @@ const Basics: Subpage = {
       subpages: [
         {
           name: "Jobs & Steps",
-          path: "/tools/cicd/circleci/basics/jobs-and-workflows/jobs-steps"
+          path: "/ci-cd/circle-ci/basics/jobs-and-workflows/jobs-steps"
         },
         {
           name: "Understanding CircleCI Workflows",
-          path: "/tools/cicd/circleci/basics/jobs-and-workflows/workflows"
+          path: "/ci-cd/circle-ci/basics/jobs-and-workflows/workflows"
         }
       ]
     },
@@ -47,15 +47,15 @@ const Basics: Subpage = {
       subpages: [
         {
           name: "Creating CI/CD Pipelines",
-          path: "/tools/cicd/circleci/basic/pipelines/pipelines"
+          path: "/ci-cd/circle-ci/basics/pipelines/pipelines"
         },
         {
           name: "Running Tests in CircleCI",
-          path: "/tools/cicd/circleci/basics/pipelines/testing"
+          path: "/ci-cd/circle-ci/basics/pipelines/testing"
         },
         {
           name: "Building & Deploying Applications",
-          path: "/tools/cicd/circleci/basics/pipelines/deployment"
+          path: "/ci-cd/circle-ci/basics/pipelines/deployment"
         }
       ]
     }
