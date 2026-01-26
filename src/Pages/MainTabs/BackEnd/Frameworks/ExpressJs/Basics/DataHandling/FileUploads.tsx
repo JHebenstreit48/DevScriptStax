@@ -4,7 +4,7 @@ import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const FileUploads = () => {
-  const markdownFilePath = 'BackEnd/Frameworks/ExpressJs/Basics/DataHandling/FileUploads';
+  const markdownFilePath = 'BackEnd/Frameworks/ExpressJS/Basics/DataHandling/FileUploads';
 
   return (
     <>

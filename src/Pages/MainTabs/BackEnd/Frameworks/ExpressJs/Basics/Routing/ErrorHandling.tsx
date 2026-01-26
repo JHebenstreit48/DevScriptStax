@@ -4,7 +4,7 @@ import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const ErrorHandling = () => {
-  const markdownFilePath = 'BackEnd/Frameworks/ExpressJs/Basics/Routing/ErrorHandling';
+  const markdownFilePath = 'BackEnd/Frameworks/ExpressJS/Basics/Routing/ErrorHandling';
 
   return (
     <>

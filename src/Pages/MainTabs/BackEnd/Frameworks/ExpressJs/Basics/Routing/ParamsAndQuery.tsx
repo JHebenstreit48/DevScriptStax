@@ -4,7 +4,7 @@ import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const ParamsAndQuery = () => {
-  const markdownFilePath = 'BackEnd/Frameworks/ExpressJs/Basics/Routing/ParamsAndQuery';
+  const markdownFilePath = 'BackEnd/Frameworks/ExpressJS/Basics/Routing/ParamsAndQuery';
 
   return (
     <>
