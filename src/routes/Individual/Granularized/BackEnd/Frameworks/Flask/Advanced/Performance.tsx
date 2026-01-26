@@ -6,11 +6,11 @@ const Compression = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Flask
 
 const Performance: RouteObject[] = [
   {
-    path: '/backend/frameworks/flask/advanced/performance/caching',
+    path: '/frameworks/flask/advanced/performance/caching',
     element: <Caching />,
   },
   {
-    path: '/backend/frameworks/flask/advanced/performance/compression',
+    path: '/frameworks/flask/advanced/performance/compression',
     element: <Compression />,
   },
 ];

@@ -6,11 +6,11 @@ const ProdErrorStrategy = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks
 
 const Production: RouteObject[] = [
   {
-    path: '/backend/frameworks/express/advanced/production/trust-proxy',
+    path: '/frameworks/express/advanced/production/trust-proxy',
     element: <TrustProxy />,
   },
   {
-    path: '/backend/frameworks/express/advanced/production/prod-error-strategy',
+    path: '/frameworks/express/advanced/production/prod-error-strategy',
     element: <ProdErrorStrategy />,
   },
 ];

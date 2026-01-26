@@ -6,11 +6,11 @@ const MetricsAndTracing = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks
 
 const Observability: RouteObject[] = [
   {
-    path: '/backend/frameworks/koa/advanced/observability/logging-middleware',
+    path: '/frameworks/koa/advanced/observability/logging-middleware',
     element: <LoggingMiddleware />,
   },
   {
-    path: '/backend/frameworks/koa/advanced/observability/metrics-tracing',
+    path: '/frameworks/koa/advanced/observability/metrics-tracing',
     element: <MetricsAndTracing />,
   },
 ];

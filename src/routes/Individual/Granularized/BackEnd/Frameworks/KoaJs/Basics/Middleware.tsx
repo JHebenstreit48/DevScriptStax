@@ -7,15 +7,15 @@ const ErrorHandling = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Koa
 
 const Middleware: RouteObject[] = [
   {
-    path: '/backend/frameworks/koa/basics/middleware/core',
+    path: '/frameworks/koa/basics/middleware/core',
     element: <CoreMiddleware />,
   },
   {
-    path: '/backend/frameworks/koa/basics/middleware/custom',
+    path: '/frameworks/koa/basics/middleware/custom',
     element: <CustomMiddleware />,
   },
   {
-    path: '/backend/frameworks/koa/basics/middleware/error-handling',
+    path: '/frameworks/koa/basics/middleware/error-handling',
     element: <ErrorHandling />,
   },
 ];

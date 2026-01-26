@@ -6,11 +6,11 @@ const Scheduling = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Spring
 
 const AsyncAndScheduling: RouteObject[] = [
   {
-    path: '/backend/frameworks/spring/spring-boot/advanced/async-scheduling/async-executors',
+    path: '/frameworks/spring/spring-boot/advanced/async-scheduling/async-executors',
     element: <AsyncAndExecutors />,
   },
   {
-    path: '/backend/frameworks/spring/spring-boot/advanced/async-scheduling/scheduling',
+    path: '/frameworks/spring/spring-boot/advanced/async-scheduling/scheduling',
     element: <Scheduling />,
   },
 ];

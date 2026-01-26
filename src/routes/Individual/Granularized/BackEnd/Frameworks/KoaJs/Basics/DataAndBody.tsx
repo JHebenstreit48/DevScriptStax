@@ -6,11 +6,11 @@ const FileUploads = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/KoaJs
 
 const DataAndBody: RouteObject[] = [
   {
-    path: '/backend/frameworks/koa/basics/data-body/json-urlencoded',
+    path: '/frameworks/koa/basics/data-body/json-urlencoded',
     element: <JSONAndUrlencoded />,
   },
   {
-    path: '/backend/frameworks/koa/basics/data-body/file-uploads',
+    path: '/frameworks/koa/basics/data-body/file-uploads',
     element: <FileUploads />,
   },
 ];

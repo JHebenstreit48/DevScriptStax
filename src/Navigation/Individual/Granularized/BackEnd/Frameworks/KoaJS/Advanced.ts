@@ -8,11 +8,11 @@ const Advanced: Subpage = {
       subpages: [
         {
           name: "REST in Koa",
-          path: "/backend/frameworks/koa/advanced/api-patterns/rest-in-koa"
+          path: '/frameworks/koa/advanced/api-patterns/rest-in-koa'
         },
         {
           name: "GraphQL (Koa)",
-          path: "/backend/frameworks/koa/advanced/api-patterns/graphql-koa"
+          path: '/frameworks/koa/advanced/api-patterns/graphql-koa'
         }
       ]
     },
@@ -21,15 +21,15 @@ const Advanced: Subpage = {
       subpages: [
         {
           name: "JWT (Koa)",
-          path: "/backend/frameworks/koa/advanced/auth/jwt-koa"
+          path: '/frameworks/koa/advanced/auth/jwt-koa'
         },
         {
           name: "Sessions",
-          path: "/backend/frameworks/koa/advanced/auth/sessions"
+          path: '/frameworks/koa/advanced/auth/sessions'
         },
         {
           name: "Passport (Koa)",
-          path: "/backend/frameworks/koa/advanced/auth/passport-koa"
+          path: '/frameworks/koa/advanced/auth/passport-koa'
         }
       ]
     },
@@ -38,15 +38,15 @@ const Advanced: Subpage = {
       subpages: [
         {
           name: "CORS",
-          path: "/backend/frameworks/koa/advanced/security/cors"
+          path: '/frameworks/koa/advanced/security/cors'
         },
         {
           name: "Helmet",
-          path: "/backend/frameworks/koa/advanced/security/helmet"
+          path: '/frameworks/koa/advanced/security/helmet'
         },
         {
           name: "CSRF (koa-csrf)",
-          path: "/backend/frameworks/koa/advanced/security/csrf"
+          path: '/frameworks/koa/advanced/security/csrf'
         }
       ]
     },
@@ -55,11 +55,11 @@ const Advanced: Subpage = {
       subpages: [
         {
           name: "Compression & ETag",
-          path: "/backend/frameworks/koa/advanced/performance/compression-etag"
+          path: '/frameworks/koa/advanced/performance/compression-etag'
         },
         {
           name: "Static Cache Control",
-          path: "/backend/frameworks/koa/advanced/performance/static-cache-control"
+          path: '/frameworks/koa/advanced/performance/static-cache-control'
         }
       ]
     },
@@ -68,11 +68,11 @@ const Advanced: Subpage = {
       subpages: [
         {
           name: "Trust Proxy",
-          path: "/backend/frameworks/koa/advanced/production/trust-proxy"
+          path: '/frameworks/koa/advanced/production/trust-proxy'
         },
         {
           name: "Error Strategy",
-          path: "/backend/frameworks/koa/advanced/production/error-strategy"
+          path: '/frameworks/koa/advanced/production/error-strategy'
         }
       ]
     },
@@ -81,11 +81,11 @@ const Advanced: Subpage = {
       subpages: [
         {
           name: "Logging Middleware",
-          path: "/backend/frameworks/koa/advanced/observability/logging-middleware"
+          path: '/frameworks/koa/advanced/observability/logging-middleware'
         },
         {
           name: "Metrics & Tracing",
-          path: "/backend/frameworks/koa/advanced/observability/metrics-tracing"
+          path: '/frameworks/koa/advanced/observability/metrics-tracing'
         }
       ]
     }

@@ -5,19 +5,19 @@ const ViewsAndTemplates: Subpage = {
   subpages: [
     {
       name: 'Views',
-      path: '/backend/frameworks/django/basics/views-templates/views',
+      path: '/frameworks/django/basics/views-templates/views',
     },
     {
       name: 'Template Engine',
-      path: '/backend/frameworks/django/basics/views-templates/templates',
+      path: '/frameworks/django/basics/views-templates/templates',
     },
     {
       name: 'Class vs Function',
-      path: '/backend/frameworks/django/basics/views-templates/class-vs-function',
+      path: '/frameworks/django/basics/views-templates/class-vs-function',
     },
     {
       name: 'Rendering Context',
-      path: '/backend/frameworks/django/basics/views-templates/rendering-context',
+      path: '/frameworks/django/basics/views-templates/rendering-context',
     },
   ],
 };

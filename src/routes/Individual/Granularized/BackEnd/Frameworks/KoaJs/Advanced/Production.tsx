@@ -6,11 +6,11 @@ const ErrorStrategy = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Koa
 
 const Production: RouteObject[] = [
   {
-    path: '/backend/frameworks/koa/advanced/production/trust-proxy',
+    path: '/frameworks/koa/advanced/production/trust-proxy',
     element: <TrustProxy />,
   },
   {
-    path: '/backend/frameworks/koa/advanced/production/error-strategy',
+    path: '/frameworks/koa/advanced/production/error-strategy',
     element: <ErrorStrategy />,
   },
 ];

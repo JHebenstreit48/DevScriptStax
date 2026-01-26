@@ -8,19 +8,19 @@ const Basics: Subpage = {
       subpages: [
         {
           name: "Overview",
-          path: "/backend/frameworks/flask/basics/fundamentals/overview"
+          path: '/frameworks/flask/basics/fundamentals/overview'
         },
         {
           name: "Install & Setup",
-          path: "/backend/frameworks/flask/basics/fundamentals/install-setup"
+          path: '/frameworks/flask/basics/fundamentals/install-setup'
         },
         {
           name: "App Structure",
-          path: "/backend/frameworks/flask/basics/fundamentals/app-structure"
+          path: '/frameworks/flask/basics/fundamentals/app-structure'
         },
         {
           name: "App Factory",
-          path: "/backend/frameworks/flask/basics/fundamentals/app-factory"
+          path: '/frameworks/flask/basics/fundamentals/app-factory'
         }
       ]
     },
@@ -29,15 +29,15 @@ const Basics: Subpage = {
       subpages: [
         {
           name: "Basics",
-          path: "/backend/frameworks/flask/basics/routing/basics"
+          path: '/frameworks/flask/basics/routing/basics'
         },
         {
           name: "Dynamic Routes",
-          path: "/backend/frameworks/flask/basics/routing/dynamic-routes"
+          path: '/frameworks/flask/basics/routing/dynamic-routes'
         },
         {
           name: "Error Handling",
-          path: "/backend/frameworks/flask/basics/routing/error-handling"
+          path: '/frameworks/flask/basics/routing/error-handling'
         }
       ]
     },
@@ -46,11 +46,11 @@ const Basics: Subpage = {
       subpages: [
         {
           name: "Request Hooks",
-          path: "/backend/frameworks/flask/basics/middleware-hooks/request-hooks"
+          path: '/frameworks/flask/basics/middleware-hooks/request-hooks'
         },
         {
           name: "WSGI Middleware",
-          path: "/backend/frameworks/flask/basics/middleware-hooks/wsgi-middleware"
+          path: '/frameworks/flask/basics/middleware-hooks/wsgi-middleware'
         }
       ]
     },
@@ -59,11 +59,11 @@ const Basics: Subpage = {
       subpages: [
         {
           name: "JSON & Form Data",
-          path: "/backend/frameworks/flask/basics/data-forms/json-form-data"
+          path: '/frameworks/flask/basics/data-forms/json-form-data'
         },
         {
           name: "File Uploads",
-          path: "/backend/frameworks/flask/basics/data-forms/file-uploads"
+          path: '/frameworks/flask/basics/data-forms/file-uploads'
         }
       ]
     },
@@ -72,11 +72,11 @@ const Basics: Subpage = {
       subpages: [
         {
           name: "Jinja2",
-          path: "/backend/frameworks/flask/basics/templates-static/jinja2"
+          path: '/frameworks/flask/basics/templates-static/jinja2'
         },
         {
           name: "Static Files",
-          path: "/backend/frameworks/flask/basics/templates-static/static-files"
+          path: '/frameworks/flask/basics/templates-static/static-files'
         }
       ]
     }

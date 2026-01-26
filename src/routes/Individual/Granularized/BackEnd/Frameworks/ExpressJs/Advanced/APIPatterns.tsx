@@ -6,11 +6,11 @@ const GraphQL = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/ExpressJs
 
 const APIPatterns: RouteObject[] = [
   {
-    path: '/backend/frameworks/express/advanced/api-patterns/rest-in-express',
+    path: '/frameworks/express/advanced/api-patterns/rest-in-express',
     element: <RESTInExpress />,
   },
   {
-    path: '/backend/frameworks/express/advanced/api-patterns/graphql-express',
+    path: '/frameworks/express/advanced/api-patterns/graphql-express',
     element: <GraphQL />,
   },
 ];

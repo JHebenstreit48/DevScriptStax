@@ -6,11 +6,11 @@ const ExceptionHandling = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks
 
 const API: RouteObject[] = [
   {
-    path: '/backend/frameworks/spring/spring-boot/advanced/api-spring/rest-in-spring',
+    path: '/frameworks/spring/spring-boot/advanced/api-spring/rest-in-spring',
     element: <RESTInSpring />,
   },
   {
-    path: '/backend/frameworks/spring/spring-boot/advanced/api-spring/exception-handling',
+    path: '/frameworks/spring/spring-boot/advanced/api-spring/exception-handling',
     element: <ExceptionHandling />,
   },
 ];

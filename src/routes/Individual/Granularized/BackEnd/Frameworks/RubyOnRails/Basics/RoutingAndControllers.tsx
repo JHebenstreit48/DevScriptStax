@@ -7,15 +7,15 @@ const ParamsAndStrongParams = lazy(() => import('@/Pages/MainTabs/BackEnd/Framew
 
 const RoutingAndControllers: RouteObject[] = [
   {
-    path: '/backend/frameworks/ruby-on-rails/basics/routing-controllers/routing',
+    path: '/frameworks/ruby-on-rails/basics/routing-controllers/routing',
     element: <Routing />,
   },
   {
-    path: '/backend/frameworks/ruby-on-rails/basics/routing-controllers/controllers',
+    path: '/frameworks/ruby-on-rails/basics/routing-controllers/controllers',
     element: <Controllers />,
   },
   {
-    path: '/backend/frameworks/ruby-on-rails/basics/routing-controllers/params-strong',
+    path: '/frameworks/ruby-on-rails/basics/routing-controllers/params-strong',
     element: <ParamsAndStrongParams />,
   },
 ];

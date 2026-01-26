@@ -8,19 +8,19 @@ const Basics: Subpage = {
       subpages: [
         {
           name: "Introduction",
-          path: "/backend/frameworks/spring/spring-main/basics/fundamentals/introduction"
+          path: '/frameworks/spring/spring-main/basics/fundamentals/introduction'
         },
         {
           name: "IoC Container & Beans",
-          path: "/backend/frameworks/spring/spring-main/basics/fundamentals/ioc-beans"
+          path: '/frameworks/spring/spring-main/basics/fundamentals/ioc-beans'
         },
         {
           name: "Config (JavaConfig/XML)",
-          path: "/backend/frameworks/spring/spring-main/basics/fundamentals/config-javaconfig-xml"
+          path: '/frameworks/spring/spring-main/basics/fundamentals/config-javaconfig-xml'
         },
         {
           name: "Component Scan",
-          path: "/backend/frameworks/spring/spring-main/basics/fundamentals/component-scan"
+          path: '/frameworks/spring/spring-main/basics/fundamentals/component-scan'
         }
       ]
     },
@@ -29,11 +29,11 @@ const Basics: Subpage = {
       subpages: [
         {
           name: "Dependency Injection",
-          path: "/backend/frameworks/spring/spring-main/basics/di-aop/dependency-injection"
+          path: '/frameworks/spring/spring-main/basics/di-aop/dependency-injection'
         },
         {
           name: "AOP Basics",
-          path: "/backend/frameworks/spring/spring-main/basics/di-aop/aop-basics"
+          path: '/frameworks/spring/spring-main/basics/di-aop/aop-basics'
         }
       ]
     },
@@ -42,11 +42,11 @@ const Basics: Subpage = {
       subpages: [
         {
           name: "JDBC Template",
-          path: "/backend/frameworks/spring/spring-main/basics/data-core/jdbc-template"
+          path: '/frameworks/spring/spring-main/basics/data-core/jdbc-template'
         },
         {
           name: "Transactions",
-          path: "/backend/frameworks/spring/spring-main/basics/data-core/transactions"
+          path: '/frameworks/spring/spring-main/basics/data-core/transactions'
         }
       ]
     }

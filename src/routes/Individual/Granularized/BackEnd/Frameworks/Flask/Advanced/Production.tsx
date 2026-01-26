@@ -6,11 +6,11 @@ const ErrorStrategy = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Fla
 
 const Production: RouteObject[] = [
   {
-    path: '/backend/frameworks/flask/advanced/production/proxy-fix',
+    path: '/frameworks/flask/advanced/production/proxy-fix',
     element: <ProxyFix />,
   },
   {
-    path: '/backend/frameworks/flask/advanced/production/error-strategy',
+    path: '/frameworks/flask/advanced/production/error-strategy',
     element: <ErrorStrategy />,
   },
 ];

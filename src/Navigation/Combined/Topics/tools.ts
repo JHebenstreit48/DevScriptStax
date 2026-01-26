@@ -1,9 +1,6 @@
 import type { Subpage } from '@/types/navigation';
 
-// ---------- API Tools Navigation Start ----------
-import Insomnia from '@/Navigation/Individual/FullTopics/Tools/APITools/Insomnia';
-import Postman from '@/Navigation/Individual/FullTopics/Tools/APITools/Postman';
-// ---------- API Tools Navigation End ----------
+import API from '@/Navigation/Individual/FullTopics/Tools/API';
 
 // ---------- CICD Tools Navigation Start ----------
 import CircleCI from '@/Navigation/Individual/FullTopics/Tools/CICD/CircleCI';
@@ -31,25 +28,16 @@ import Webpack from '@/Navigation/Individual/FullTopics/Tools/PackageAndBundle/B
 
 // ---------------- Package & Bundling End ---------------------------------
 
-// ---------- Containerization Navigation Start ----------
-import Docker from '@/Navigation/Individual/FullTopics/Tools/Containerization/Docker';
-import Git from '@/Navigation/Individual/FullTopics/Tools/Containerization/Git'
-// ---------- Containerization Navigation End ----------
-
 // --------------------- Environment Variables Navigation Start -----------------
 // import EnvVariables from '@/Navigation/Individual/FullTopics/Tools/EnvVariables';
 // ---------------------- Environment Variables Navigation End -------------------
 
+import Containerization from '@/Navigation/Individual/FullTopics/Tools/Containerization';
+
 const tools: Subpage = {
   name: 'Tools',
   subpages: [
-    {
-      name: 'API Tools',
-      subpages: [
-        Insomnia,
-        Postman
-      ]
-    },
+    API,
     {
       name: 'CICD Tools',
       subpages: [
@@ -85,13 +73,7 @@ const tools: Subpage = {
         }
       ]
     },
-    {
-      name: 'Containerization',
-      subpages: [
-        Docker,
-        Git
-      ]
-    }
+    Containerization
     // EnvironmentVariables
   ]
 };

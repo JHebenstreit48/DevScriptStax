@@ -8,19 +8,19 @@ const Basics: Subpage = {
       subpages: [
         {
           name: "Intro",
-          path: "/backend/frameworks/ruby-on-rails/basics/fundamentals/intro"
+          path: '/frameworks/ruby-on-rails/basics/fundamentals/intro'
         },
         {
           name: "Install & Setup",
-          path: "/backend/frameworks/ruby-on-rails/basics/fundamentals/install-setup"
+          path: '/frameworks/ruby-on-rails/basics/fundamentals/install-setup'
         },
         {
           name: "Project Structure",
-          path: "/backend/frameworks/ruby-on-rails/basics/fundamentals/project-structure"
+          path: '/frameworks/ruby-on-rails/basics/fundamentals/project-structure'
         },
         {
           name: "MVC",
-          path: "/backend/frameworks/ruby-on-rails/basics/fundamentals/mvc"
+          path: '/frameworks/ruby-on-rails/basics/fundamentals/mvc'
         }
       ]
     },
@@ -29,15 +29,15 @@ const Basics: Subpage = {
       subpages: [
         {
           name: "Routing",
-          path: "/backend/frameworks/ruby-on-rails/basics/routing-controllers/routing"
+          path: '/frameworks/ruby-on-rails/basics/routing-controllers/routing'
         },
         {
           name: "Controllers",
-          path: "/backend/frameworks/ruby-on-rails/basics/routing-controllers/controllers"
+          path: '/frameworks/ruby-on-rails/basics/routing-controllers/controllers'
         },
         {
           name: "Params & Strong Params",
-          path: "/backend/frameworks/ruby-on-rails/basics/routing-controllers/params-strong"
+          path: '/frameworks/ruby-on-rails/basics/routing-controllers/params-strong'
         }
       ]
     },
@@ -46,15 +46,15 @@ const Basics: Subpage = {
       subpages: [
         {
           name: "Models & Migrations",
-          path: "/backend/frameworks/ruby-on-rails/basics/models-ar/models-migrations"
+          path: '/frameworks/ruby-on-rails/basics/models-ar/models-migrations'
         },
         {
           name: "Associations",
-          path: "/backend/frameworks/ruby-on-rails/basics/models-ar/associations"
+          path: '/frameworks/ruby-on-rails/basics/models-ar/associations'
         },
         {
           name: "Validations",
-          path: "/backend/frameworks/ruby-on-rails/basics/models-ar/validations"
+          path: '/frameworks/ruby-on-rails/basics/models-ar/validations'
         }
       ]
     },
@@ -63,15 +63,15 @@ const Basics: Subpage = {
       subpages: [
         {
           name: "ERB & Layouts",
-          path: "/backend/frameworks/ruby-on-rails/basics/views-forms/erb-layouts"
+          path: '/frameworks/ruby-on-rails/basics/views-forms/erb-layouts'
         },
         {
           name: "Partials & Helpers",
-          path: "/backend/frameworks/ruby-on-rails/basics/views-forms/partials-helpers"
+          path: '/frameworks/ruby-on-rails/basics/views-forms/partials-helpers'
         },
         {
           name: "Forms & CSRF",
-          path: "/backend/frameworks/ruby-on-rails/basics/views-forms/forms-csrf"
+          path: '/frameworks/ruby-on-rails/basics/views-forms/forms-csrf'
         }
       ]
     },
@@ -80,11 +80,11 @@ const Basics: Subpage = {
       subpages: [
         {
           name: "Asset Pipeline / Importmap",
-          path: "/backend/frameworks/ruby-on-rails/basics/assets-config/asset-pipeline-importmap"
+          path: '/frameworks/ruby-on-rails/basics/assets-config/asset-pipeline-importmap'
         },
         {
           name: "Environments",
-          path: "/backend/frameworks/ruby-on-rails/basics/assets-config/environments"
+          path: '/frameworks/ruby-on-rails/basics/assets-config/environments'
         }
       ]
     }

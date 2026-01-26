@@ -6,11 +6,11 @@ const WSGIMiddleware = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Fl
 
 const MiddlewareAndHooks: RouteObject[] = [
   {
-    path: '/backend/frameworks/flask/basics/middleware-hooks/request-hooks',
+    path: '/frameworks/flask/basics/middleware-hooks/request-hooks',
     element: <RequestHooks />,
   },
   {
-    path: '/backend/frameworks/flask/basics/middleware-hooks/wsgi-middleware',
+    path: '/frameworks/flask/basics/middleware-hooks/wsgi-middleware',
     element: <WSGIMiddleware />,
   },
 ];

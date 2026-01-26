@@ -8,19 +8,19 @@ const ProjectStructure = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/
 
 const Fundamentals: RouteObject[] = [
   {
-    path: '/backend/frameworks/django/basics/fundamentals/overview',
+    path: '/frameworks/django/basics/fundamentals/overview',
     element: <Overview />,
   },
   {
-    path: '/backend/frameworks/django/basics/fundamentals/comparison',
+    path: '/frameworks/django/basics/fundamentals/comparison',
     element: <DjangoVsOtherFrameworks />,
   },
   {
-    path: '/backend/frameworks/django/basics/fundamentals/install-setup',
+    path: '/frameworks/django/basics/fundamentals/install-setup',
     element: <InstallAndSetup />,
   },
   {
-    path: '/backend/frameworks/django/basics/fundamentals/project-structure',
+    path: '/frameworks/django/basics/fundamentals/project-structure',
     element: <ProjectStructure />,
   },
 ];

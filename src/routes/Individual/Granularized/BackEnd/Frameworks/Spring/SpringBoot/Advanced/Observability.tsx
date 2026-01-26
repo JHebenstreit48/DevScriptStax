@@ -6,11 +6,11 @@ const MetricsAndTracing = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks
 
 const Observability: RouteObject[] = [
   {
-    path: '/backend/frameworks/spring/spring-boot/advanced/observability/actuator',
+    path: '/frameworks/spring/spring-boot/advanced/observability/actuator',
     element: <Actuator />,
   },
   {
-    path: '/backend/frameworks/spring/spring-boot/advanced/observability/metrics-tracing',
+    path: '/frameworks/spring/spring-boot/advanced/observability/metrics-tracing',
     element: <MetricsAndTracing />,
   },
 ];

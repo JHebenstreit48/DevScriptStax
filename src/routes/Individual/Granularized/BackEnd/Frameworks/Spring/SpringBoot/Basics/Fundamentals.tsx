@@ -8,19 +8,19 @@ const StartersAndAutoConfig = lazy(() => import('@/Pages/MainTabs/BackEnd/Framew
 
 const Fundamentals: RouteObject[] = [
   {
-    path: '/backend/frameworks/spring/spring-boot/basics/fundamentals/intro',
+    path: '/frameworks/spring/spring-boot/basics/fundamentals/intro',
     element: <Intro />,
   },
   {
-    path: '/backend/frameworks/spring/spring-boot/basics/fundamentals/install-setup',
+    path: '/frameworks/spring/spring-boot/basics/fundamentals/install-setup',
     element: <InstallAndSetup />,
   },
   {
-    path: '/backend/frameworks/spring/spring-boot/basics/fundamentals/project-structure',
+    path: '/frameworks/spring/spring-boot/basics/fundamentals/project-structure',
     element: <ProjectStructure />,
   },
   {
-    path: '/backend/frameworks/spring/spring-boot/basics/fundamentals/starters-auto-config',
+    path: '/frameworks/spring/spring-boot/basics/fundamentals/starters-auto-config',
     element: <StartersAndAutoConfig />,
   },
 ];

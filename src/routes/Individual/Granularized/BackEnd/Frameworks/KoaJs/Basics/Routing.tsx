@@ -7,15 +7,15 @@ const ParamsAndQuery = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Ko
 
 const Routing: RouteObject[] = [
   {
-    path: '/backend/frameworks/koa/basics/routing/basics',
+    path: '/frameworks/koa/basics/routing/basics',
     element: <Basics />,
   },
   {
-    path: '/backend/frameworks/koa/basics/routing/koa-router',
+    path: '/frameworks/koa/basics/routing/koa-router',
     element: <KoaRouter />,
   },
   {
-    path: '/backend/frameworks/koa/basics/routing/params-query',
+    path: '/frameworks/koa/basics/routing/params-query',
     element: <ParamsAndQuery />,
   },
 ];

@@ -6,11 +6,11 @@ const ActionCable = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/RubyO
 
 const BackgroundAndRealtime: RouteObject[] = [
   {
-    path: '/backend/frameworks/ruby-on-rails/advanced/background-realtime/active-job-sidekiq',
+    path: '/frameworks/ruby-on-rails/advanced/background-realtime/active-job-sidekiq',
     element: <ActiveJobAndSidekiq />,
   },
   {
-    path: '/backend/frameworks/ruby-on-rails/advanced/background-realtime/action-cable',
+    path: '/frameworks/ruby-on-rails/advanced/background-realtime/action-cable',
     element: <ActionCable />,
   },
 ];

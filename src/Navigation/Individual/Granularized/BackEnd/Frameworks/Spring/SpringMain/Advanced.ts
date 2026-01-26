@@ -8,11 +8,11 @@ const Advanced: Subpage = {
       subpages: [
         {
           name: "ApplicationContext",
-          path: "/backend/frameworks/spring/spring-main/advanced/context-profiles/application-context"
+          path: '/frameworks/spring/spring-main/advanced/context-profiles/application-context'
         },
         {
           name: "Profiles & Properties",
-          path: "/backend/frameworks/spring/spring-main/advanced/context-profiles/profiles-properties"
+          path: '/frameworks/spring/spring-main/advanced/context-profiles/profiles-properties'
         }
       ]
     },
@@ -21,11 +21,11 @@ const Advanced: Subpage = {
       subpages: [
         {
           name: "Pointcuts & Proxies",
-          path: "/backend/frameworks/spring/spring-main/advanced/aop-advanced/pointcuts-proxies"
+          path: '/frameworks/spring/spring-main/advanced/aop-advanced/pointcuts-proxies'
         },
         {
           name: "Tx AOP",
-          path: "/backend/frameworks/spring/spring-main/advanced/aop-advanced/transaction-aop"
+          path: '/frameworks/spring/spring-main/advanced/aop-advanced/transaction-aop'
         }
       ]
     },
@@ -34,11 +34,11 @@ const Advanced: Subpage = {
       subpages: [
         {
           name: "Resource Loading",
-          path: "/backend/frameworks/spring/spring-main/advanced/resources-spel/resource-loading"
+          path: '/frameworks/spring/spring-main/advanced/resources-spel/resource-loading'
         },
         {
           name: "SpEL",
-          path: "/backend/frameworks/spring/spring-main/advanced/resources-spel/spel"
+          path: '/frameworks/spring/spring-main/advanced/resources-spel/spel'
         }
       ]
     },
@@ -47,11 +47,11 @@ const Advanced: Subpage = {
       subpages: [
         {
           name: "Application Events",
-          path: "/backend/frameworks/spring/spring-main/advanced/events/application-events"
+          path: '/frameworks/spring/spring-main/advanced/events/application-events'
         },
         {
           name: "Listeners",
-          path: "/backend/frameworks/spring/spring-main/advanced/events/listeners"
+          path: '/frameworks/spring/spring-main/advanced/events/listeners'
         }
       ]
     }

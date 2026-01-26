@@ -8,19 +8,19 @@ const ORMAndQuerySets = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/D
 
 const ModelsAndDB: RouteObject[] = [
   {
-    path: '/backend/frameworks/django/basics/models-db/defining-models',
+    path: '/frameworks/django/basics/models-db/defining-models',
     element: <DefiningModels />,
   },
   {
-    path: '/backend/frameworks/django/basics/models-db/relationships',
+    path: '/frameworks/django/basics/models-db/relationships',
     element: <ModelRelationships />,
   },
   {
-    path: '/backend/frameworks/django/basics/models-db/migrations',
+    path: '/frameworks/django/basics/models-db/migrations',
     element: <Migrations />,
   },
   {
-    path: '/backend/frameworks/django/basics/models-db/orm-querysets',
+    path: '/frameworks/django/basics/models-db/orm-querysets',
     element: <ORMAndQuerySets />,
   },
 ];

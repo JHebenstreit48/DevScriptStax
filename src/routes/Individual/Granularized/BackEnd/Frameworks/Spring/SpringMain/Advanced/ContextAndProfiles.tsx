@@ -6,11 +6,11 @@ const ProfilesAndProperties = lazy(() => import('@/Pages/MainTabs/BackEnd/Framew
 
 const ContextAndProfiles: RouteObject[] = [
   {
-    path: '/backend/frameworks/spring/spring-main/advanced/context-profiles/application-context',
+    path: '/frameworks/spring/spring-main/advanced/context-profiles/application-context',
     element: <ApplicationContext />,
   },
   {
-    path: '/backend/frameworks/spring/spring-main/advanced/context-profiles/profiles-properties',
+    path: '/frameworks/spring/spring-main/advanced/context-profiles/profiles-properties',
     element: <ProfilesAndProperties />,
   },
 ];

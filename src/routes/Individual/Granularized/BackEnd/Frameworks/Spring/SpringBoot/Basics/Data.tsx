@@ -6,11 +6,11 @@ const Repositories = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Spri
 
 const Data: RouteObject[] = [
   {
-    path: '/backend/frameworks/spring/spring-boot/basics/data-spring/jpa-entities',
+    path: '/frameworks/spring/spring-boot/basics/data-spring/jpa-entities',
     element: <JPAAndEntities />,
   },
   {
-    path: '/backend/frameworks/spring/spring-boot/basics/data-spring/repositories',
+    path: '/frameworks/spring/spring-boot/basics/data-spring/repositories',
     element: <Repositories />,
   },
 ];

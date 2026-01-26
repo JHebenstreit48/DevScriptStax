@@ -8,19 +8,19 @@ const RenderingContext = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/
 
 const ViewsAndTemplates: RouteObject[] = [
   {
-    path: '/backend/frameworks/django/basics/views-templates/views',
+    path: '/frameworks/django/basics/views-templates/views',
     element: <Views />,
   },
   {
-    path: '/backend/frameworks/django/basics/views-templates/templates',
+    path: '/frameworks/django/basics/views-templates/templates',
     element: <TemplateEngine />,
   },
   {
-    path: '/backend/frameworks/django/basics/views-templates/class-vs-function',
+    path: '/frameworks/django/basics/views-templates/class-vs-function',
     element: <ClassVsFunction />,
   },
   {
-    path: '/backend/frameworks/django/basics/views-templates/rendering-context',
+    path: '/frameworks/django/basics/views-templates/rendering-context',
     element: <RenderingContext />,
   },
 ];

@@ -8,11 +8,11 @@ const Advanced: Subpage = {
       subpages: [
         {
           name: "API Mode",
-          path: "/backend/frameworks/ruby-on-rails/advanced/api/api-mode"
+          path: '/frameworks/ruby-on-rails/advanced/api/api-mode'
         },
         {
           name: "JSON Rendering",
-          path: "/backend/frameworks/ruby-on-rails/advanced/api/json-rendering"
+          path: '/frameworks/ruby-on-rails/advanced/api/json-rendering'
         }
       ]
     },
@@ -21,11 +21,11 @@ const Advanced: Subpage = {
       subpages: [
         {
           name: "Active Job & Sidekiq",
-          path: "/backend/frameworks/ruby-on-rails/advanced/background-realtime/active-job-sidekiq"
+          path: '/frameworks/ruby-on-rails/advanced/background-realtime/active-job-sidekiq'
         },
         {
           name: "Action Cable",
-          path: "/backend/frameworks/ruby-on-rails/advanced/background-realtime/action-cable"
+          path: '/frameworks/ruby-on-rails/advanced/background-realtime/action-cable'
         }
       ]
     },
@@ -34,11 +34,11 @@ const Advanced: Subpage = {
       subpages: [
         {
           name: "Devise (Auth)",
-          path: "/backend/frameworks/ruby-on-rails/advanced/security/devise-auth"
+          path: '/frameworks/ruby-on-rails/advanced/security/devise-auth'
         },
         {
           name: "Authorization",
-          path: "/backend/frameworks/ruby-on-rails/advanced/security/authorization"
+          path: '/frameworks/ruby-on-rails/advanced/security/authorization'
         }
       ]
     },
@@ -47,11 +47,11 @@ const Advanced: Subpage = {
       subpages: [
         {
           name: "Caching",
-          path: "/backend/frameworks/ruby-on-rails/advanced/performance-caching/caching"
+          path: '/frameworks/ruby-on-rails/advanced/performance-caching/caching'
         },
         {
           name: "ETags & Conditional GET",
-          path: "/backend/frameworks/ruby-on-rails/advanced/performance-caching/etags-conditional"
+          path: '/frameworks/ruby-on-rails/advanced/performance-caching/etags-conditional'
         }
       ]
     },
@@ -60,11 +60,11 @@ const Advanced: Subpage = {
       subpages: [
         {
           name: "Logging",
-          path: "/backend/frameworks/ruby-on-rails/advanced/observability/logging"
+          path: '/frameworks/ruby-on-rails/advanced/observability/logging'
         },
         {
           name: "Instrumentation",
-          path: "/backend/frameworks/ruby-on-rails/advanced/observability/instrumentation"
+          path: '/frameworks/ruby-on-rails/advanced/observability/instrumentation'
         }
       ]
     }

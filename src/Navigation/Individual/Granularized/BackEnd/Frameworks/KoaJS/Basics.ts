@@ -8,19 +8,19 @@ const Basics: Subpage = {
       subpages: [
         {
           name: "Overview",
-          path: "/backend/frameworks/koa/basics/fundamentals/overview"
+          path: '/frameworks/koa/basics/fundamentals/overview'
         },
         {
           name: "Install & Setup",
-          path: "/backend/frameworks/koa/basics/fundamentals/install-setup"
+          path: '/frameworks/koa/basics/fundamentals/install-setup'
         },
         {
           name: "App Structure",
-          path: "/backend/frameworks/koa/basics/fundamentals/app-structure"
+          path: '/frameworks/koa/basics/fundamentals/app-structure'
         },
         {
           name: "App & Context",
-          path: "/backend/frameworks/koa/basics/fundamentals/app-context"
+          path: '/frameworks/koa/basics/fundamentals/app-context'
         }
       ]
     },
@@ -29,15 +29,15 @@ const Basics: Subpage = {
       subpages: [
         {
           name: "Basics",
-          path: "/backend/frameworks/koa/basics/routing/basics"
+          path: '/frameworks/koa/basics/routing/basics'
         },
         {
           name: "Koa Router",
-          path: "/backend/frameworks/koa/basics/routing/koa-router"
+          path: '/frameworks/koa/basics/routing/koa-router'
         },
         {
           name: "Params & Query",
-          path: "/backend/frameworks/koa/basics/routing/params-query"
+          path: '/frameworks/koa/basics/routing/params-query'
         }
       ]
     },
@@ -46,15 +46,15 @@ const Basics: Subpage = {
       subpages: [
         {
           name: "Core Middleware",
-          path: "/backend/frameworks/koa/basics/middleware/core"
+          path: '/frameworks/koa/basics/middleware/core'
         },
         {
           name: "Custom Middleware",
-          path: "/backend/frameworks/koa/basics/middleware/custom"
+          path: '/frameworks/koa/basics/middleware/custom'
         },
         {
           name: "Error Handling",
-          path: "/backend/frameworks/koa/basics/middleware/error-handling"
+          path: '/frameworks/koa/basics/middleware/error-handling'
         }
       ]
     },
@@ -63,11 +63,11 @@ const Basics: Subpage = {
       subpages: [
         {
           name: "JSON & urlencoded",
-          path: "/backend/frameworks/koa/basics/data-body/json-urlencoded"
+          path: '/frameworks/koa/basics/data-body/json-urlencoded'
         },
         {
           name: "File Uploads",
-          path: "/backend/frameworks/koa/basics/data-body/file-uploads"
+          path: '/frameworks/koa/basics/data-body/file-uploads'
         }
       ]
     },
@@ -76,11 +76,11 @@ const Basics: Subpage = {
       subpages: [
         {
           name: "Static Files",
-          path: "/backend/frameworks/koa/basics/templates-static/static-files"
+          path: '/frameworks/koa/basics/templates-static/static-files'
         },
         {
           name: "Templating (koa-views)",
-          path: "/backend/frameworks/koa/basics/templates-static/templating"
+          path: '/frameworks/koa/basics/templates-static/templating'
         }
       ]
     }

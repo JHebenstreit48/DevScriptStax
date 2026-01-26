@@ -7,15 +7,15 @@ const ErrorHandling = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Fla
 
 const Routing: RouteObject[] = [
   {
-    path: '/backend/frameworks/flask/basics/routing/basics',
+    path: '/frameworks/flask/basics/routing/basics',
     element: <Basics />,
   },
   {
-    path: '/backend/frameworks/flask/basics/routing/dynamic-routes',
+    path: '/frameworks/flask/basics/routing/dynamic-routes',
     element: <DynamicRoutes />,
   },
   {
-    path: '/backend/frameworks/flask/basics/routing/error-handling',
+    path: '/frameworks/flask/basics/routing/error-handling',
     element: <ErrorHandling />,
   },
 ];

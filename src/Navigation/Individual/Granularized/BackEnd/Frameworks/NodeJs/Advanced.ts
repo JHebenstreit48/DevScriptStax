@@ -8,11 +8,11 @@ const Advanced: Subpage = {
       subpages: [
         {
           name: "Worker Threads",
-          path: "/backend/frameworks/nodejs/advanced/concurrency-processes/worker-threads"
+          path: '/frameworks/nodejs/advanced/concurrency-processes/worker-threads'
         },
         {
           name: "child_process & spawn",
-          path: "/backend/frameworks/nodejs/advanced/concurrency-processes/child-process-spawn"
+          path: '/frameworks/nodejs/advanced/concurrency-processes/child-process-spawn'
         }
       ]
     },
@@ -21,11 +21,11 @@ const Advanced: Subpage = {
       subpages: [
         {
           name: "perf_hooks & Benchmarks",
-          path: "/backend/frameworks/nodejs/advanced/performance/perf-hooks-benchmarks"
+          path: '/frameworks/nodejs/advanced/performance/perf-hooks-benchmarks'
         },
         {
           name: "CPU & Heap Profiling",
-          path: "/backend/frameworks/nodejs/advanced/performance/cpu-heap-profiling"
+          path: '/frameworks/nodejs/advanced/performance/cpu-heap-profiling'
         }
       ]
     },
@@ -34,11 +34,11 @@ const Advanced: Subpage = {
       subpages: [
         {
           name: "Logging (Node)",
-          path: "/backend/frameworks/nodejs/advanced/observability/logging-node"
+          path: '/frameworks/nodejs/advanced/observability/logging-node'
         },
         {
           name: "Diagnostics & async_hooks",
-          path: "/backend/frameworks/nodejs/advanced/observability/diagnostics-async-hooks"
+          path: '/frameworks/nodejs/advanced/observability/diagnostics-async-hooks'
         }
       ]
     },
@@ -47,11 +47,11 @@ const Advanced: Subpage = {
       subpages: [
         {
           name: "Graceful Shutdown & Signals",
-          path: "/backend/frameworks/nodejs/advanced/production/graceful-shutdown-signals"
+          path: '/frameworks/nodejs/advanced/production/graceful-shutdown-signals'
         },
         {
           name: "Process Managers & Cluster",
-          path: "/backend/frameworks/nodejs/advanced/production/process-managers-cluster"
+          path: '/frameworks/nodejs/advanced/production/process-managers-cluster'
         }
       ]
     },
@@ -60,11 +60,11 @@ const Advanced: Subpage = {
       subpages: [
         {
           name: "Crypto Basics",
-          path: "/backend/frameworks/nodejs/advanced/security/crypto-basics"
+          path: '/frameworks/nodejs/advanced/security/crypto-basics'
         },
         {
           name: "HTTPS/TLS Server",
-          path: "/backend/frameworks/nodejs/advanced/security/https-tls-server"
+          path: '/frameworks/nodejs/advanced/security/https-tls-server'
         }
       ]
     }

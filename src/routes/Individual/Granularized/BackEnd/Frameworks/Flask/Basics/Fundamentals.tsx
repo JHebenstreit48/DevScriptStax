@@ -8,19 +8,19 @@ const AppFactory = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Flask/
 
 const Fundamentals: RouteObject[] = [
   {
-    path: '/backend/frameworks/flask/basics/fundamentals/overview',
+    path: '/frameworks/flask/basics/fundamentals/overview',
     element: <Overview />,
   },
   {
-    path: '/backend/frameworks/flask/basics/fundamentals/install-setup',
+    path: '/frameworks/flask/basics/fundamentals/install-setup',
     element: <InstallAndSetup />,
   },
   {
-    path: '/backend/frameworks/flask/basics/fundamentals/app-structure',
+    path: '/frameworks/flask/basics/fundamentals/app-structure',
     element: <AppStructure />,
   },
   {
-    path: '/backend/frameworks/flask/basics/fundamentals/app-factory',
+    path: '/frameworks/flask/basics/fundamentals/app-factory',
     element: <AppFactory />,
   },
 ];

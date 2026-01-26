@@ -6,11 +6,11 @@ const FileUploads = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Expre
 
 const DataHandling: RouteObject[] = [
   {
-    path: '/backend/frameworks/express/basics/data/json-urlencoded',
+    path: '/frameworks/express/basics/data/json-urlencoded',
     element: <JSONAndUrlencoded />,
   },
   {
-    path: '/backend/frameworks/express/basics/data/file-uploads',
+    path: '/frameworks/express/basics/data/file-uploads',
     element: <FileUploads />,
   },
 ];

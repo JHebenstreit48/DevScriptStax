@@ -6,11 +6,11 @@ const StaticCacheControl = lazy(() => import('@/Pages/MainTabs/BackEnd/Framework
 
 const Performance: RouteObject[] = [
   {
-    path: '/backend/frameworks/koa/advanced/performance/compression-etag',
+    path: '/frameworks/koa/advanced/performance/compression-etag',
     element: <CompressionAndETag />,
   },
   {
-    path: '/backend/frameworks/koa/advanced/performance/static-cache-control',
+    path: '/frameworks/koa/advanced/performance/static-cache-control',
     element: <StaticCacheControl />,
   },
 ];

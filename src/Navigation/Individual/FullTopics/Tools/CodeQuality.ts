@@ -1,0 +1,1 @@
+import type { Subpage } from '@/types/navigation';

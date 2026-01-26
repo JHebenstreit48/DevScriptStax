@@ -8,11 +8,11 @@ const Advanced: Subpage = {
       subpages: [
         {
           name: "REST in Spring",
-          path: "/backend/frameworks/spring/spring-boot/advanced/api-spring/rest-in-spring"
+          path: '/frameworks/spring/spring-boot/advanced/api-spring/rest-in-spring'
         },
         {
           name: "Exception Handling",
-          path: "/backend/frameworks/spring/spring-boot/advanced/api-spring/exception-handling"
+          path: '/frameworks/spring/spring-boot/advanced/api-spring/exception-handling'
         }
       ]
     },
@@ -21,15 +21,15 @@ const Advanced: Subpage = {
       subpages: [
         {
           name: "Spring Security",
-          path: "/backend/frameworks/spring/spring-boot/advanced/security/spring-security"
+          path: '/frameworks/spring/spring-boot/advanced/security/spring-security'
         },
         {
           name: "JWT (Spring)",
-          path: "/backend/frameworks/spring/spring-boot/advanced/security/jwt-spring"
+          path: '/frameworks/spring/spring-boot/advanced/security/jwt-spring'
         },
         {
           name: "OAuth2 / OIDC",
-          path: "/backend/frameworks/spring/spring-boot/advanced/security/oauth2-oidc"
+          path: '/frameworks/spring/spring-boot/advanced/security/oauth2-oidc'
         }
       ]
     },
@@ -38,11 +38,11 @@ const Advanced: Subpage = {
       subpages: [
         {
           name: "Transactions",
-          path: "/backend/frameworks/spring/spring-boot/advanced/data-advanced/transactions"
+          path: '/frameworks/spring/spring-boot/advanced/data-advanced/transactions'
         },
         {
           name: "Paging & Specs",
-          path: "/backend/frameworks/spring/spring-boot/advanced/data-advanced/paging-specifications"
+          path: '/frameworks/spring/spring-boot/advanced/data-advanced/paging-specifications'
         }
       ]
     },
@@ -51,11 +51,11 @@ const Advanced: Subpage = {
       subpages: [
         {
           name: "Actuator",
-          path: "/backend/frameworks/spring/spring-boot/advanced/observability/actuator"
+          path: '/frameworks/spring/spring-boot/advanced/observability/actuator'
         },
         {
           name: "Metrics & Tracing",
-          path: "/backend/frameworks/spring/spring-boot/advanced/observability/metrics-tracing"
+          path: '/frameworks/spring/spring-boot/advanced/observability/metrics-tracing'
         }
       ]
     },
@@ -64,11 +64,11 @@ const Advanced: Subpage = {
       subpages: [
         {
           name: "Packaging (Jar/War)",
-          path: "/backend/frameworks/spring/spring-boot/advanced/production/packaging-jar-war"
+          path: '/frameworks/spring/spring-boot/advanced/production/packaging-jar-war'
         },
         {
           name: "Graceful Shutdown",
-          path: "/backend/frameworks/spring/spring-boot/advanced/production/graceful-shutdown"
+          path: '/frameworks/spring/spring-boot/advanced/production/graceful-shutdown'
         }
       ]
     },
@@ -77,11 +77,11 @@ const Advanced: Subpage = {
       subpages: [
         {
           name: "Async & Executors",
-          path: "/backend/frameworks/spring/spring-boot/advanced/async-scheduling/async-executors"
+          path: '/frameworks/spring/spring-boot/advanced/async-scheduling/async-executors'
         },
         {
           name: "Scheduling",
-          path: "/backend/frameworks/spring/spring-boot/advanced/async-scheduling/scheduling"
+          path: '/frameworks/spring/spring-boot/advanced/async-scheduling/scheduling'
         }
       ]
     }

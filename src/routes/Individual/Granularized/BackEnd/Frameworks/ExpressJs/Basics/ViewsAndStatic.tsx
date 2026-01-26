@@ -7,15 +7,15 @@ const Handlebars = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Expres
 
 const ViewsAndStatic: RouteObject[] = [
   {
-    path: '/backend/frameworks/express/basics/views-static/static-files',
+    path: '/frameworks/express/basics/views-static/static-files',
     element: <StaticFiles />,
   },
   {
-    path: '/backend/frameworks/express/basics/views-static/ejs',
+    path: '/frameworks/express/basics/views-static/ejs',
     element: <EJS />,
   },
   {
-    path: '/backend/frameworks/express/basics/views-static/handlebars',
+    path: '/frameworks/express/basics/views-static/handlebars',
     element: <Handlebars />,
   },
 ];

@@ -6,11 +6,11 @@ const PagingAndSpecs = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Sp
 
 const Data: RouteObject[] = [
   {
-    path: '/backend/frameworks/spring/spring-boot/advanced/data-advanced/transactions',
+    path: '/frameworks/spring/spring-boot/advanced/data-advanced/transactions',
     element: <Transactions />,
   },
   {
-    path: '/backend/frameworks/spring/spring-boot/advanced/data-advanced/paging-specifications',
+    path: '/frameworks/spring/spring-boot/advanced/data-advanced/paging-specifications',
     element: <PagingAndSpecs />,
   },
 ];
