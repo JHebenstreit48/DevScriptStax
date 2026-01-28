@@ -10,7 +10,7 @@ const Introduction = () => {
     <>
       <PageLayout>
         <Header />
-        <PageTitle title="Node Fundamentals - Introduction" />
+        <PageTitle title="Node.js Fundamentals - Introduction" />
         <Notes filePath={markdownFilePath} />
       </PageLayout>
     </>

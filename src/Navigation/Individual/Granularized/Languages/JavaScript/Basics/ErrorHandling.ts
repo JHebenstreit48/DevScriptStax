@@ -5,11 +5,11 @@ const ErrorHandling: Subpage = {
   subpages: [
     {
       name: 'Try/Catch and Error Types',
-      path: '/javascript/intermediate/errors/try-catch',
+      path: '/javascript/basics/errors/try-catch',
     },
     {
       name: 'Error Handling Patterns',
-      path: '/javascript/intermediate/errors/patterns',
+      path: '/javascript/basics/errors/patterns',
     },
   ],
 };

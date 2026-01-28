@@ -5,11 +5,11 @@ const DOMAndEvents: Subpage = {
   subpages: [
     {
       name: 'DOM Manipulation',
-      path: '/javascript/intermediate/dom/dom-manipulation',
+      path: '/javascript/basics/dom/dom-manipulation',
     },
     {
       name: 'Event Handling',
-      path: '/javascript/intermediate/dom/event-handling',
+      path: '/javascript/basics/dom/event-handling',
     },
   ],
 };

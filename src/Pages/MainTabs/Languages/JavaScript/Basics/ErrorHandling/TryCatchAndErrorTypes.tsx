@@ -4,7 +4,7 @@ import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const TryCatchAndErrorTypes = () => {
-  const markdownFilePath = 'Languages/JavaScript/Intermediate/ErrorHandling/TryCatchAndErrorTypes';
+  const markdownFilePath = 'Languages/JavaScript/Basics/ErrorHandling/TryCatchAndErrorTypes';
 
   return (
     <>

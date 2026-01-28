@@ -13,7 +13,7 @@ const Arrays: Subpage = {
     },
     {
       name: 'Advanced Array Techniques', // reduce, sort, slice, etc.
-      path: '/javascript/basics/arrays/advanced',
+      path: '/javascript/basics/arrays/advanced-techniques',
     },
   ],
 };
