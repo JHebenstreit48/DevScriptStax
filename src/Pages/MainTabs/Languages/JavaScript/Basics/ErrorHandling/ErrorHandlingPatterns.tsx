@@ -3,18 +3,18 @@ import Header from '@/Components/Shared/Header/Header';
 import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
-const EventLoopAndAsyncIO = () => {
-  const markdownFilePath = 'BackEnd/Frameworks/NodeJs/Basics/Fundamentals/EventLoopAndAsync';
+const ErrorHandlingPatterns = () => {
+  const markdownFilePath = 'Languages/JavaScript/Basics/ErrorHandling/ErrorHandlingPatterns';
 
   return (
     <>
       <PageLayout>
         <Header />
-        <PageTitle title="Node.js Basics - Event Loop & Async I/O" />
+        <PageTitle title="Error Handling Patterns" />
         <Notes filePath={markdownFilePath} />
       </PageLayout>
     </>
   );
 };
 
-export default EventLoopAndAsyncIO;
+export default ErrorHandlingPatterns;

@@ -4,12 +4,12 @@ const ModernES6: Subpage = {
   name: 'Modern JavaScript (ES6+)',
   subpages: [
     {
-      name: 'ES6 Features Overview',
-      path: '/javascript/intermediate/es6/features',
+      name: 'ES6 Features Introduction',
+      path: '/javascript/basics/es6/features-introduction',
     },
     {
       name: 'Promises and Async/Await',
-      path: '/javascript/intermediate/es6/promises-and-async',
+      path: '/javascript/basics/es6/promises-and-async',
     },
   ],
 };

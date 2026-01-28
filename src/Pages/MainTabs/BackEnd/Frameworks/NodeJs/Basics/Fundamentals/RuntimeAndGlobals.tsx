@@ -10,7 +10,7 @@ const RuntimeAndGlobals = () => {
     <>
       <PageLayout>
         <Header />
-        <PageTitle title="Runtime & Globals" />
+        <PageTitle title="Node.js Basics - Runtime & Globals" />
         <Notes filePath={markdownFilePath} />
       </PageLayout>
     </>
