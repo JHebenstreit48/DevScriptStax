@@ -5,6 +5,7 @@ const Overview = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/Firebase/
 const UploadingAndDownloadingFiles = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/Firebase/Basics/Storage/UploadingAndDownloadingFiles'));
 const SecurityRulesAndAccessControl = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/Firebase/Basics/Storage/SecurityRulesAndAccessControl'));
 const ManagingStorageCosts = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/Firebase/Basics/Storage/ManagingStorageCosts'));
+const AuditingAndFileCounts = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/Firebase/Basics/Storage/AuditingAndFileCounts'));
 
 const Storage: RouteObject[] = [
   {
@@ -23,6 +24,10 @@ const Storage: RouteObject[] = [
     path: '/firebase/basics/storage/costs',
     element: <ManagingStorageCosts />,
   },
+  {
+    path: '/firebase/basics/storage/auditing-counts',
+    element: <AuditingAndFileCounts />,
+  }
 ];
 
 export default Storage;

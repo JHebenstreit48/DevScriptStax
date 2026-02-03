@@ -19,6 +19,10 @@ const Storage: Subpage = {
       name: "Managing Storage Costs",
       path: "/firebase/basics/storage/costs",
     },
+    {
+      name: "Auditing & File Counts",
+      path: "/firebase/basics/storage/auditing-counts",
+    },
   ],
 };
 
