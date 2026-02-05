@@ -8,8 +8,8 @@ const GUIAndCLI: Subpage = {
       path: '/mongodb/tools/gui-and-cli/compass',
     },
     {
-      name: 'Atlas CLI',
-      path: '/mongodb/tools/gui-and-cli/atlas-cli',
+      name: 'Atlas',
+      path: '/mongodb/tools/gui-and-cli/atlas',
     },
   ],
 };
