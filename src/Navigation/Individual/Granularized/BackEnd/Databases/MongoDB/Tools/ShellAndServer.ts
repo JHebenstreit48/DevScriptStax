@@ -4,8 +4,8 @@ const ShellAndServer: Subpage = {
   name: 'Shell & Server',
   subpages: [
     {
-      name: 'Overview',
-      path: '/mongodb/tools/shell-and-server/overview',
+      name: 'Introdution',
+      path: '/mongodb/tools/shell-and-server/introduction',
     },
     {
       name: 'Shell & Server Commands',
