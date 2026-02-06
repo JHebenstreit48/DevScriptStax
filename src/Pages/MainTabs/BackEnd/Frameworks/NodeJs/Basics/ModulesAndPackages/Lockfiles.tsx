@@ -4,7 +4,7 @@ import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const Lockfiles = () => {
-  const markdownFilePath = 'BackEnd/Frameworks/NodeJs/Basics/ModulesAndPackages/Lockfiles';
+  const markdownFilePath = 'BackEnd/Frameworks/Node/Basics/ModulesAndPackages/LockfilesNpm';
 
   return (
     <>

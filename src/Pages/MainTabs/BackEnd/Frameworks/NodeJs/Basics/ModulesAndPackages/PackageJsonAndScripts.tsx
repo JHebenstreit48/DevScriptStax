@@ -4,7 +4,7 @@ import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const PackageJsonAndScripts = () => {
-  const markdownFilePath = 'BackEnd/Frameworks/NodeJs/Basics/ModulesAndPackages/PackageDotJsonAndScripts';
+  const markdownFilePath = 'BackEnd/Frameworks/Node/Basics/ModulesAndPackages/PackageJsonAndScripts';
 
   return (
     <>
