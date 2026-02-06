@@ -4,7 +4,7 @@ import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const EventLoopAndAsyncIO = () => {
-  const markdownFilePath = 'BackEnd/Frameworks/Node/Basics/Fundamentals/EventLoopAsyncIO';
+  const markdownFilePath = 'BackEnd/Frameworks/NodeJs/Basics/Fundamentals/EventLoopAsyncIO';
 
   return (
     <>
