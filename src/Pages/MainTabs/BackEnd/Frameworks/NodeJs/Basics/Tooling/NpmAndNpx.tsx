@@ -4,7 +4,7 @@ import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const NpmAndNpx = () => {
-  const markdownFilePath = 'BackEnd/Frameworks/NodeJs/Basics/Tooling/NpmAndNpx';
+  const markdownFilePath = 'BackEnd/Frameworks/Node/Basics/Tooling/NpmNpx';
 
   return (
     <>
