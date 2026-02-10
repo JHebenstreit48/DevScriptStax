@@ -37,11 +37,11 @@ const Advanced: Subpage = {
           subpages: [
             {
               name: 'Linting/Strict',
-              path: '/typescript/best-practices/tooling/lintingstrict',
+              path: '/typescript/advanced/best-practices/tooling/lintingstrict',
             },
             {
               name: 'Organization',
-              path: '/typescript/best-practices/tooling/organization',
+              path: '/typescript/advanced/best-practices/tooling/organization',
             },
           ],
         },
@@ -50,11 +50,11 @@ const Advanced: Subpage = {
           subpages: [
             {
               name: 'Naming, Modularity, Conventions',
-              path: '/typescript/best-practices/patterns/naming-conventions',
+              path: '/typescript/advanced/best-practices/patterns/naming-conventions',
             },
             {
               name: 'Errors',
-              path: '/typescript/best-practices/patterns/error-handling',
+              path: '/typescript/advanced/best-practices/patterns/error-handling',
             },
           ],
         },
