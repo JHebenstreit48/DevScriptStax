@@ -6,11 +6,11 @@ const Organization = lazy(() => import('@/Pages/MainTabs/Languages/TypeScript/Ad
 
 const ToolingConfig: RouteObject[] = [
   {
-    path: '/typescript/best-practices/tooling/lintingstrict',
+    path: '/typescript/advanced/best-practices/tooling/lintingstrict',
     element: <LintingStrict />,
   },
   {
-    path: '/typescript/best-practices/tooling/organization',
+    path: '/typescript/advanced/best-practices/tooling/organization',
     element: <Organization />,
   },
 ];

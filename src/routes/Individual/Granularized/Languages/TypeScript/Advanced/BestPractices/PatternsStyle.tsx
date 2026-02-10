@@ -6,11 +6,11 @@ const Errors = lazy(() => import('@/Pages/MainTabs/Languages/TypeScript/Advanced
 
 const PatternsStyle: RouteObject[] = [
   {
-    path: '/typescript/best-practices/patterns/naming-conventions',
+    path: '/typescript/advanced/best-practices/patterns/naming-conventions',
     element: <NamingModularityConventions />,
   },
   {
-    path: '/typescript/best-practices/patterns/error-handling',
+    path: '/typescript/advanced/best-practices/patterns/error-handling',
     element: <Errors />,
   },
 ];

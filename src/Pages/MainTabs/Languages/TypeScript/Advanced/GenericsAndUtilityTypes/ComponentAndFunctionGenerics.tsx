@@ -4,7 +4,7 @@ import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const ComponentAndFunctionGenerics = () => {
-  const markdownFilePath = 'Languages/TypeScript/Advanced/GenericsAndUtilityTypes/ComponentAndFunctionGenerics';
+  const markdownFilePath = 'Languages/TypeScript/Advanced/GenericsAndUtilityTypes/ComponentFunction';
 
   return (
     <>
