@@ -83,7 +83,7 @@ const Notes = ({ filePath }: NotesProps) => {
         {loadState === "ready" ? (
           <>
             <Suspense
-              fallback={<p className="loadingMessage">Rendering Markdown...</p>}
+              fallback={<p className="loadingMessage">Rendering...</p>}
             >
               <MarkdownRenderer
                 content={markdownContent}
