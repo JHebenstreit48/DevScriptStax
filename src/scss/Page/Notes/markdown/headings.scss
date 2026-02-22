@@ -1,63 +1,131 @@
-@use 'sass:color';
-@use '@scss/Globals' as *;
-// @use './mixins' as *;
+@use "sass:color";
+@use "@scss/Globals" as *;
+// @use "./mixins" as *;
 
- h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      color: #f1f3f9;
-      text-shadow: none;
-      font-weight: 700;
-      letter-spacing: 0.01em;
-      text-align: center;
-      margin-left: auto;
-      margin-right: auto;
-      max-width: 100%;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #f1f3f9;
+  text-shadow: none;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
 
-      @include maxw($cellphone-portrait) {
-        width: auto;
-        padding: 0 4px;
-      }
+  @include maxw($cellphone-portrait) {
+    width: auto;
+    padding: 0 4px;
+  }
+}
+
+h1 {
+  font-size: $notes-h1-size;
+  margin-bottom: $notes-h-margin-bottom;
+}
+
+/* ============================
+   Dividers (Notes markdown)
+   - Default hr / dividerMain / dividerSection => white feathered
+   - dividerSubsection1/2 + dividerExample => gold feathered (brighter)
+============================ */
+
+/* Base HR (markdown `---` and any plain <hr>) */
+.markdownContent hr {
+  border: 0;
+  height: 1px;
+  margin: 14px 0 22px;
+  opacity: 1;
+  box-shadow: none;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.32) 18%,
+    rgba(255, 255, 255, 0.32) 82%,
+    transparent
+  );
+
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Width variants */
+.markdownContent hr.dividerMain {
+  width: 100%;
+  margin: 1.6rem auto;
+}
+
+.markdownContent hr.dividerSection {
+  width: 75%;
+  margin: 1.25rem auto;
+}
+
+.markdownContent hr.dividerSubsection1 {
+  width: 55%;
+  margin: 1rem auto;
+}
+
+.markdownContent hr.dividerSubsection2 {
+  width: 45%;
+  margin: 0.95rem auto;
+}
+
+.markdownContent hr.dividerExample {
+  width: 35%;
+  margin: 0.85rem auto;
+  opacity: 0.9;
+}
+
+/* Gold (brighter) ONLY for the smaller dividers */
+.markdownContent hr.dividerSubsection1,
+.markdownContent hr.dividerSubsection2,
+.markdownContent hr.dividerExample {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #{color.change($gold-500, $alpha: 0.65)} 18%,
+    #{color.change($gold-500, $alpha: 0.65)} 82%,
+    transparent
+  );
+}
+
+/* Links */
+a {
+  color: #45b6ff;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.25s ease;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -2px;
+    height: 2px;
+    width: 0%;
+    margin-inline: auto;
+    background: currentColor;
+    transition: width 0.28s ease;
+  }
+
+  &:hover {
+    color: color.adjust(#45b6ff, $lightness: 6%);
+
+    &::after {
+      width: 100%;
     }
+  }
 
-    h1 {
-      font-size: $notes-h1-size;
-      margin-bottom: $notes-h-margin-bottom;
-    }
-
-    /* Links */
-    a {
-      color: #45b6ff;
-      text-decoration: none;
-      position: relative;
-      transition: color 0.25s ease;
-
-      &::after {
-        content: '';
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: -2px;
-        height: 2px;
-        width: 0%;
-        margin-inline: auto;
-        background: currentColor;
-        transition: width 0.28s ease;
-      }
-
-      &:hover {
-        color: color.adjust(#45b6ff, $lightness: 6%);
-        &::after {
-          width: 100%;
-        }
-      }
-
-      &:focus-visible {
-        outline: none;
-        box-shadow: 0 0 0 3px color.adjust(#45b6ff, $alpha: -0.6);
-        border-radius: 6px;
-      }
-    }
+  &:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px color.adjust(#45b6ff, $alpha: -0.6);
+    border-radius: 6px;
+  }
+}

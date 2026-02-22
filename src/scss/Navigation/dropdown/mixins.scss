@@ -1,0 +1,20 @@
+@use "sass:color";
+@use "@scss/Globals" as *;
+
+/* =========================================================
+   Shared level treatment
+   - darker (higher) -> lighter (deeper)
+   ========================================================= */
+@mixin nav-level($c, $size, $weight, $borderAlpha, $bgTop, $bgBot, $sheenAlpha) {
+  color: $c;
+  font-size: $size;
+  font-weight: $weight;
+  letter-spacing: 0.12px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.72);
+
+  border-top: 1px solid color.change($c, $alpha: $borderAlpha);
+
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, $sheenAlpha), rgba(255, 255, 255, 0)),
+    linear-gradient(180deg, rgba(255, 255, 255, $bgTop) 0%, rgba(0, 0, 0, $bgBot) 100%);
+}
