@@ -12,7 +12,7 @@ import Svelte from '@/Navigation/Individual/FullTopics/FrontEnd/Svelte';
 import Vue from '@/Navigation/Individual/FullTopics/FrontEnd/Vue';
 
 const frontEnd: Subpage = {
-  name: 'Front End',
+  name: 'Frontend',
   subpages: [
     Angular,
     CSS,

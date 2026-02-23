@@ -4,7 +4,7 @@ import cloudServices from "@/Navigation/Combined/Topics/CloudAndDeployment/cloud
 import cloudProviders from "@/Navigation/Combined/Topics/CloudAndDeployment/cloudProviders";
 
 const cloudAndDeployment: Subpage = {
-  name: "Cloud & Deploy",
+  name: "CloudOps",
   subpages: [
     cloudServices,
     cloudProviders

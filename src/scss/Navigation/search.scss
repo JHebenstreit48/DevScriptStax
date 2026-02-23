@@ -313,7 +313,7 @@ $muted-2: #7a8091;
 
   @include between($small-laptop-min, $small-laptop-max) {
   }
-  
+
   @include between($medium-laptop-min, $medium-laptop-max) {
   }
 
@@ -343,10 +343,10 @@ $muted-2: #7a8091;
     0 10px 30px rgba(0, 0, 0, 0.35),
     inset 0 0 0 1px rgba(255, 255, 255, 0.04);
 
-    @include maxw($cellphone-portrait) {
-      width: 2rem;
-      height: 2rem;
-    }
+  @include maxw($cellphone-portrait) {
+    width: 2rem;
+    height: 2rem;
+  }
 
   cursor: pointer;
   transition:
