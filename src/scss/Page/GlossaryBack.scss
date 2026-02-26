@@ -1,0 +1,36 @@
+@use "sass:color";
+
+/* =============================
+   Glossary Button Styles
+   ============================= */
+
+// Variables
+$glossary-bg-color: #007bff;
+$glossary-hover-bg: #0056b3;
+$glossary-text-color: #fff;
+$glossary-border-radius: 4px;
+$glossary-font-size: 14px;
+$glossary-padding: 8px 16px;
+$glossary-position: absolute;
+$glossary-top: 23.5rem;
+$glossary-left: 53.5rem;
+$glossary-z-index: 2;
+
+// Glossary Button
+.glossaryBack {
+  position: $glossary-position;
+  top: $glossary-top;
+  left: $glossary-left;
+  padding: $glossary-padding;
+  background-color: $glossary-bg-color;
+  color: $glossary-text-color;
+  border: none;
+  border-radius: $glossary-border-radius;
+  font-size: $glossary-font-size;
+  cursor: pointer;
+  z-index: $glossary-z-index;
+
+  &:hover {
+    background-color: $glossary-hover-bg;
+  }
+}

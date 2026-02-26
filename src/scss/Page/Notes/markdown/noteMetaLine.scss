@@ -1,0 +1,19 @@
+.noteMetaLine {
+  margin-top: 1.25rem;
+  padding-top: .85rem;
+  border-top: 1px solid rgba(255,255,255,.08);
+  opacity: .85;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+  white-space: nowrap;
+}
+
+@media (max-width: 480px) {
+  .noteMetaLine {
+    justify-content: center;
+    text-align: center;
+    white-space: normal;
+  }
+}

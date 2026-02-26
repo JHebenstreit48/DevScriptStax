@@ -113,8 +113,10 @@
 
 .mainNav {
   margin-top: $mainnav-margin-top;
+  margin-left: 11rem;
 
   @include maxw($cellphone-portrait) {
     margin-top: 2rem;
+    margin-left: 0;
   }
 }

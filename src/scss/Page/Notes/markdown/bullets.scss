@@ -3,19 +3,9 @@
 // @use './mixins' as *;
 
 .fullWidthBullet {
-  column-count: 1;
+      column-count: 1;
 
-  @include maxw($cellphone-portrait) {
-    text-align: left;
-  }
-}
-
-.twoColumnBullet ul {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: .9rem 2rem;
-
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
-}
+      @include maxw($cellphone-portrait) {
+        text-align: left;
+      }
+    }

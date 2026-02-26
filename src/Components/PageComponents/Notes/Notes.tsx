@@ -1,72 +1,72 @@
-import { useEffect, useState, lazy, Suspense, useCallback } from "react";
-import { fetchMarkdown } from "@/Components/PageComponents/Notes/NotesRendering/Utils/fetchMarkdown";
+import { useEffect, useState, lazy, Suspense, useCallback } from 'react';
+import { fetchMarkdown } from '@/utils/notes/fetchMarkdown';
+import { fetchNoteMeta } from '@/utils/notes/fetchNoteMeta';
+import NoteMetaLine from '@/Components/PageComponents/Notes/NotesRendering/CustomComponents/NoteMetaLine';
 import '@/scss/Page/Notes/index.scss';
 
 const MarkdownRenderer = lazy(
-  () =>
-    import(
-      "@/Components/PageComponents/Notes/NotesRendering/CustomComponents/MarkdownRenderer"
-    )
+  () => import('@/Components/PageComponents/Notes/NotesRendering/CustomComponents/MarkdownRenderer')
 );
 
 interface NotesProps {
   filePath: string;
   markdownContent?: string;
 }
-type LoadState = "loading" | "ready" | "missing";
+type LoadState = 'loading' | 'ready' | 'missing';
 
 // header-only = just a single MD heading line
 const isHeaderOnly = (t: string) => {
   const lines = t
-    .split("\n")
+    .split('\n')
     .map((s) => s.trim())
     .filter(Boolean);
   return lines.length === 1 && /^#{1,6}\s+\S/.test(lines[0]);
 };
 
 const Notes = ({ filePath }: NotesProps) => {
-  const [markdownContent, setMarkdownContent] = useState("");
+  const [markdownContent, setMarkdownContent] = useState('');
   const [copiedCode, setCopiedCode] = useState(false);
-  const [loadState, setLoadState] = useState<LoadState>("loading");
+  const [loadState, setLoadState] = useState<LoadState>('loading');
   const [showComingSoon, setShowComingSoon] = useState(false);
+  const [sourceUpdatedAt, setSourceUpdatedAt] = useState<Date | null>(null);
 
   useEffect(() => {
     if (filePath) {
-      setLoadState("loading");
+      setLoadState('loading');
       setShowComingSoon(false);
       fetchMarkdown(filePath)
         .then((text) => {
-          const trimmed = (text || "").trim();
+          const trimmed = (text || '').trim();
           if (!trimmed) {
-            setMarkdownContent("");
-            setLoadState("missing");
+            setMarkdownContent('');
+            setLoadState('missing');
             return;
           }
           setMarkdownContent(text);
-          setLoadState("ready");
+          setLoadState('ready');
           if (isHeaderOnly(trimmed)) setShowComingSoon(true);
         })
         .catch((error) => {
-          console.error("❌ Error loading Markdown:", error);
-          setMarkdownContent("");
-          setLoadState("missing");
+          console.error('❌ Error loading Markdown:', error);
+          setMarkdownContent('');
+          setLoadState('missing');
         });
+
+      fetchNoteMeta(filePath)
+        .then((meta) => setSourceUpdatedAt(meta.sourceUpdatedAt))
+        .catch(() => setSourceUpdatedAt(null));
     } else {
-      setMarkdownContent("");
-      setLoadState("missing");
+      setMarkdownContent('');
+      setLoadState('missing');
     }
   }, [filePath]);
 
   useEffect(() => {
-    if (markdownContent && typeof window !== "undefined") {
+    if (markdownContent && typeof window !== 'undefined') {
       const hash = window.location.hash;
       if (hash) {
         const el = document.getElementById(hash.substring(1));
-        if (el)
-          setTimeout(
-            () => el.scrollIntoView({ block: "start", behavior: "auto" }),
-            0
-          );
+        if (el) setTimeout(() => el.scrollIntoView({ block: 'start', behavior: 'auto' }), 0);
       }
     }
   }, [markdownContent]);
@@ -80,11 +80,9 @@ const Notes = ({ filePath }: NotesProps) => {
   return (
     <div className="card">
       <div className="markdownContent">
-        {loadState === "ready" ? (
+        {loadState === 'ready' ? (
           <>
-            <Suspense
-              fallback={<p className="loadingMessage">Rendering...</p>}
-            >
+            <Suspense fallback={<p className="loadingMessage">Rendering...</p>}>
               <MarkdownRenderer
                 content={markdownContent}
                 copyToClipboard={copyToClipboard}
@@ -92,20 +90,34 @@ const Notes = ({ filePath }: NotesProps) => {
               />
             </Suspense>
             {showComingSoon && (
-              <p className="loadingMessage" aria-live="polite">
-                Notes coming soon…{" "}
-                <span role="img" aria-label="under construction">
+              <p
+                className="loadingMessage"
+                aria-live="polite"
+              >
+                Notes coming soon…{' '}
+                <span
+                  role="img"
+                  aria-label="under construction"
+                >
                   🚧
                 </span>
               </p>
             )}
+
+            <NoteMetaLine sourceUpdatedAt={sourceUpdatedAt} />
           </>
-        ) : loadState === "loading" ? (
+        ) : loadState === 'loading' ? (
           <p className="loadingMessage">Loading content...</p>
         ) : (
-          <p className="loadingMessage" aria-live="polite">
-            Coming Soon…{" "}
-            <span role="img" aria-label="under construction">
+          <p
+            className="loadingMessage"
+            aria-live="polite"
+          >
+            Coming Soon…{' '}
+            <span
+              role="img"
+              aria-label="under construction"
+            >
               🚧
             </span>
           </p>

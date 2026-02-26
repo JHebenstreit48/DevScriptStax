@@ -1,5 +1,5 @@
-@use 'sass:color';
-@use '@scss/Globals' as *;
+@use "sass:color";
+@use "@scss/Globals" as *;
 
 /* =========================================================
    Local tokens
@@ -13,7 +13,7 @@ $dd-offset-y: 6px;
 $chev-size: 0.95rem;
 
 /* =========================================================
-   Level palette (no fallbacks needed; defined in Colors.scss)
+   Level palette
    ========================================================= */
 $nav-l2: $level-2;
 $nav-l3: $level-3;
@@ -21,11 +21,14 @@ $nav-l4: $level-4;
 $nav-l5: $level-5;
 $nav-l6: $level-6;
 $nav-l7: $level-7;
+$nav-l8: $level-8;
+$nav-l9: $level-9;
 
 /* =========================================================
-   Shared level treatment: consistent ladder
+   Shared level treatment
+   - darker (higher) -> lighter (deeper)
    ========================================================= */
-@mixin nav-level($c, $size, $weight, $borderAlpha, $bgTop, $bgBot) {
+@mixin nav-level($c, $size, $weight, $borderAlpha, $bgTop, $bgBot, $sheenAlpha) {
   color: $c;
   font-size: $size;
   font-weight: $weight;
@@ -34,172 +37,9 @@ $nav-l7: $level-7;
 
   border-top: 1px solid color.change($c, $alpha: $borderAlpha);
 
-  background: linear-gradient(to bottom, rgba(255, 255, 255, $bgTop) 0%, rgba(0, 0, 0, $bgBot) 100%);
-}
-
-/* =========================================================
-   Dropdown Button
-   ========================================================= */
-.dropdownButton {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-
-  color: $nav-level-1-brand;
-  font: inherit;
-  line-height: 1.2;
-
-  text-align: center;
-  text-decoration: none;
-  text-shadow: $nav-text-shadow-dim;
-
-  width: 100%;
-  box-sizing: border-box;
-
-  align-items: center;
-  justify-content: center;
-
-  white-space: normal;
-  overflow-wrap: anywhere;
-  word-break: break-word;
-  hyphens: auto;
-
-  padding-block: 0.3rem;
-  padding-inline: 0.55rem;
-
-  appearance: none;
-  -webkit-appearance: none;
-
-  &:hover {
-    background-color: $dd-hover;
-    text-decoration: none;
-  }
-
-  &:focus-visible {
-    outline: 2px solid rgba(0, 255, 255, 0.7);
-    outline-offset: 2px;
-    border-radius: 8px;
-  }
-
-  /* Level ladder */
-  &.level-1 {
-    color: $nav-level-1-brand;
-    font-size: $font-lg;
-    font-weight: 700;
-    margin: 0 auto;
-    padding: 0;
-    letter-spacing: 0.3px;
-    border-top: 0;
-    background: none;
-    text-shadow: $nav-text-shadow-dim;
-  }
-
-  &.level-2 {
-    @include nav-level($nav-l2, 1.06rem, 760, 0.18, 0.08, 0.18);
-  }
-  &.level-3 {
-    @include nav-level($nav-l3, 1.03rem, 700, 0.12, 0.03, 0.14);
-  }
-  &.level-4 {
-    @include nav-level($nav-l4, 0.99rem, 650, 0.1, 0.02, 0.12);
-  }
-  &.level-5 {
-    @include nav-level($nav-l5, 0.95rem, 610, 0.1, 0.02, 0.12);
-  }
-
-  &.level-6 {
-    @include nav-level($nav-l6, 0.91rem, 590, 0.16, 0.02, 0.14);
-    opacity: 0.98;
-  }
-  &.level-7 {
-    @include nav-level($nav-l7, 0.88rem, 540, 0.08, 0.02, 0.14);
-    opacity: 0.92;
-  }
-
-  .level-1,
-  .level-2,
-  .level-3,
-  .level-4,
-  .level-5,
-  .level-6,
-  .level-7 {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin: 0 auto;
-    justify-content: center;
-  }
-
-  @include maxw($cellphone-portrait) {
-    font-size: 1.05rem;
-    padding: 0.4rem;
-    gap: $nav-gap-mobile;
-
-    &.level-2 {
-      font-size: 1.04rem;
-    }
-    &.level-3 {
-      font-size: 1.01rem;
-    }
-    &.level-4 {
-      font-size: 0.97rem;
-    }
-    &.level-5 {
-      font-size: 0.93rem;
-    }
-    &.level-6 {
-      font-size: 0.9rem;
-    }
-    &.level-7 {
-      font-size: 0.88rem;
-    }
-  }
-  @include between($small-laptop-min, $small-laptop-max) {
-    font-size: 1.25rem;
-  }
-  @include between($medium-laptop-min, $medium-laptop-max) {
-    font-size: 1.35rem;
-  }
-  @include between($large-laptop-min, $large-laptop-max) {
-    font-size: 1.4rem;
-  }
-}
-
-/* Links vs buttons */
-.dropdownItem a.dropdownButton {
-  font-weight: 600;
-}
-.dropdownItem button.dropdownButton {
-  font-weight: 700;
-}
-
-/* Force level colors for BOTH <a> and <button> */
-.dropdownItem :is(a, button).dropdownButton {
-  &.level-1 {
-    color: $nav-level-1-brand;
-  }
-  &.level-2 {
-    color: $nav-l2;
-  }
-  &.level-3 {
-    color: $nav-l3;
-  }
-  &.level-4 {
-    color: $nav-l4;
-  }
-  &.level-5 {
-    color: $nav-l5;
-  }
-  &.level-6 {
-    color: $nav-l6;
-  }
-  &.level-7 {
-    color: $nav-l7;
-  }
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, $sheenAlpha), rgba(255, 255, 255, 0)),
+    linear-gradient(180deg, rgba(255, 255, 255, $bgTop) 0%, rgba(0, 0, 0, $bgBot) 100%);
 }
 
 /* =========================================================
@@ -219,16 +59,247 @@ $nav-l7: $level-7;
   }
 }
 
-/* separators */
+/* =========================================================
+   Items + separators + page-vs-heading cues
+   ========================================================= */
 .dropdownItem {
   width: 100%;
   border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  /* Links vs buttons */
+  a.dropdownButton {
+    font-weight: 600;
+
+    /* Pages: gold underline cue (works at ANY depth) */
+    text-decoration: underline;
+    text-decoration-color: rgba(243, 175, 28, 0.26);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 6px;
+  }
+
+  button.dropdownButton {
+    font-weight: 700;
+
+    /* Headings/groups: cyan underline cue (works at ANY depth) */
+    text-decoration: underline;
+    text-decoration-color: rgba(0, 255, 255, 0.22);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 6px;
+  }
+
+  /* Force level colors for BOTH <a> and <button> */
+  :is(a, button).dropdownButton {
+    &.level-1 { color: $nav-level-1-brand; }
+    &.level-2 { color: $nav-l2; }
+    &.level-3 { color: $nav-l3; }
+    &.level-4 { color: $nav-l4; }
+    &.level-5 { color: $nav-l5; }
+    &.level-6 { color: $nav-l6; }
+    &.level-7 { color: $nav-l7; }
+    &.level-8 { color: $nav-l8; }
+    &.level-9 { color: $nav-l9; }
+  }
 }
-.dropdownItem:last-child {
-  border-bottom: none;
-}
+
 .dropdownContent .dropdownItem:first-child .dropdownButton {
   border-top: 0;
+}
+
+/* =========================================================
+   Dropdown Button
+   ========================================================= */
+.dropdownButton {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  color: $nav-level-1-brand;
+  font: inherit;
+
+  /* Helps deep levels feel "index-like" instead of headline-like */
+  line-height: 1.15;
+
+  text-align: center;
+  text-decoration: none; /* underline cues added in .dropdownItem */
+  text-shadow: $nav-text-shadow-dim;
+
+  width: 100%;
+  box-sizing: border-box;
+
+  align-items: center;
+  justify-content: center;
+
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  hyphens: auto;
+
+  padding-block: 0.3rem;
+  padding-inline: 0.55rem;
+
+  appearance: none;
+  -webkit-appearance: none;
+
+  /* No scaling: avoids eye-strain + text re-rasterization */
+  transition:
+    box-shadow 140ms ease,
+    background-color 140ms ease,
+    filter 140ms ease;
+
+  &:hover {
+    background-color: $dd-hover;
+
+    box-shadow:
+      inset 0 0 0 1px rgba(255, 255, 255, 0.08),
+      0 0 18px rgba(0, 255, 255, 0.10),
+      inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  }
+
+  &:focus-visible {
+    outline: 2px solid rgba(0, 255, 255, 0.7);
+    outline-offset: 2px;
+    border-radius: 8px;
+  }
+
+  /* Current page */
+  &.isCurrent {
+    filter: brightness(1.06);
+
+    /* Make current page underline clearly cyan even if it's level-8+ */
+    text-decoration: underline;
+    text-decoration-color: rgba(0, 255, 255, 0.78);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 6px;
+
+    box-shadow:
+      inset 0 0 0 1px rgba(0, 255, 255, 0.28),
+      0 0 22px rgba(0, 255, 255, 0.18),
+      inset 0 1px 0 rgba(255, 255, 255, 0.10);
+  }
+
+  /* Open group state */
+  &.active {
+    box-shadow:
+      inset 2px 0 0 $nav-glass-rim,
+      inset 0 -1px 0 rgba(0, 0, 0, 0.55);
+  }
+
+  /* =======================================================
+     Level ladder (dark -> light)
+     ======================================================= */
+  &.level-1 {
+    color: $nav-level-1-brand;
+    font-size: $font-lg;
+    font-weight: 700;
+
+    margin: 0 auto;
+    padding: 0;
+    letter-spacing: 0.3px;
+    border-top: 0;
+    background: none;
+
+    /* keep top tabs stable and clean */
+    text-decoration: none;
+
+    &:hover {
+      background-color: transparent;
+      box-shadow: none;
+      filter: none;
+    }
+  }
+
+  &.level-2 { @include nav-level($nav-l2, 1.06rem, 760, 0.20, 0.03, 0.36, 0.06); }
+  &.level-3 { @include nav-level($nav-l3, 1.03rem, 710, 0.16, 0.05, 0.30, 0.07); }
+
+  /* separation bump */
+  &.level-4 { @include nav-level($nav-l4, 0.99rem, 670, 0.13, 0.11, 0.22, 0.09); }
+  &.level-5 { @include nav-level($nav-l5, 0.95rem, 630, 0.11, 0.18, 0.16, 0.11); }
+
+  &.level-6 {
+    @include nav-level($nav-l6, 0.91rem, 600, 0.16, 0.22, 0.13, 0.12);
+    opacity: 0.98;
+    letter-spacing: 0.10px;
+
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.06),
+      inset 0 -1px 0 rgba(0, 0, 0, 0.55);
+  }
+
+  &.level-7 {
+    @include nav-level($nav-l7, 0.88rem, 560, 0.12, 0.25, 0.12, 0.13);
+    opacity: 0.95;
+    letter-spacing: 0.08px;
+
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.06),
+      inset 0 -1px 0 rgba(0, 0, 0, 0.55);
+  }
+
+  &.level-8 {
+    @include nav-level($nav-l8, 0.84rem, 540, 0.10, 0.28, 0.11, 0.14);
+    opacity: 0.93;
+    letter-spacing: 0.06px;
+
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.06),
+      inset 0 -1px 0 rgba(0, 0, 0, 0.55);
+  }
+
+  &.level-9 {
+    @include nav-level($nav-l9, 0.82rem, 520, 0.10, 0.30, 0.10, 0.14);
+    opacity: 0.91;
+    letter-spacing: 0.05px;
+
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.06),
+      inset 0 -1px 0 rgba(0, 0, 0, 0.55);
+  }
+
+  /* Safety net if you ever go beyond 9 */
+  &.level-10,
+  &.level-11,
+  &.level-12 {
+    font-size: 0.80rem;
+    font-weight: 510;
+    opacity: 0.90;
+    letter-spacing: 0.04px;
+  }
+
+  /* Responsive ladder */
+  @include maxw($cellphone-portrait) {
+    font-size: 1.05rem;
+    padding: 0.4rem;
+    gap: $nav-gap-mobile;
+
+    &.level-2 { font-size: 1.04rem; }
+    &.level-3 { font-size: 1.01rem; }
+    &.level-4 { font-size: 0.97rem; }
+    &.level-5 { font-size: 0.93rem; }
+    &.level-6 { font-size: 0.90rem; }
+    &.level-7 { font-size: 0.88rem; }
+    &.level-8 { font-size: 0.86rem; }
+    &.level-9 { font-size: 0.84rem; }
+  }
+
+  @include between($small-laptop-min, $small-laptop-max) {
+    font-size: 1.25rem;
+  }
+
+  @include between($medium-laptop-min, $medium-laptop-max) {
+    font-size: 1.35rem;
+  }
+
+  @include between($large-laptop-min, $large-laptop-max) {
+    font-size: 1.4rem;
+  }
 }
 
 /* =========================================================
@@ -286,16 +357,20 @@ $nav-l7: $level-7;
     &::-webkit-scrollbar {
       width: $scrollbar-width-thin;
     }
+
     &::-webkit-scrollbar-thumb {
       background: $dropdown-hover;
       border-radius: $dropdown-radius;
+
       &:hover {
         background: color.adjust($dropdown-hover, $lightness: 10%);
       }
     }
+
     &::-webkit-scrollbar-track {
       background: transparent;
     }
+
     &::-webkit-scrollbar-button {
       display: none;
     }
@@ -303,6 +378,7 @@ $nav-l7: $level-7;
     @include maxw($cellphone-portrait) {
       position: static;
       transform: none;
+
       background: linear-gradient(180deg, $nav-glass-sheen-top, $nav-glass-sheen-bot), $dd-bg;
 
       backdrop-filter: blur($nav-glass-blur) saturate(140%);
@@ -317,13 +393,23 @@ $nav-l7: $level-7;
   }
 }
 
-/* nested menu background */
-.dropdownMenu.active {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: center;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.01)), $dd-bg-nested;
+/* =========================================================
+   Nested menu background
+   ========================================================= */
+.dropdownMenu {
+  &.active {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.04),
+        rgba(255, 255, 255, 0.01)
+      ),
+      $dd-bg-nested;
+  }
 }
 
 /* =========================================================
@@ -335,43 +421,43 @@ button.dropdownButton.level-1 {
   align-items: center;
   justify-content: center;
   gap: 0.35rem;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: $chev-size;
+    height: 1px;
+  }
+
+  &::after {
+    content: "▾";
+    display: inline-block;
+    width: $chev-size;
+    text-align: center;
+    line-height: 1;
+    opacity: 0.9;
+  }
+
+  &.active::after {
+    content: "▴";
+  }
 }
 
-button.dropdownButton.level-1::before {
-  content: '';
-  display: inline-block;
-  width: $chev-size;
-  height: 1px;
+/* Remove chevrons from page links */
+.dropdownItem a.dropdownButton {
+  &::before,
+  &::after {
+    content: none;
+    display: none;
+  }
 }
 
-button.dropdownButton.level-1::after {
-  content: '▾';
-  display: inline-block;
-  width: $chev-size;
-  text-align: center;
-  line-height: 1;
-  opacity: 0.9;
-}
-
-button.dropdownButton.level-1.active::after {
-  content: '▴';
-}
-
-.dropdownItem a.dropdownButton::before,
-.dropdownItem a.dropdownButton::after {
-  content: none;
-  display: none;
-}
-
-/* open accent line */
-button.dropdownButton.active {
-  box-shadow:
-    inset 2px 0 0 $nav-glass-rim,
-    inset 0 -1px 0 rgba(0, 0, 0, 0.55);
-}
-
-/* reduced motion */
+/* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
+  .dropdownButton {
+    transition: none;
+  }
+
   button.dropdownButton.level-1::after {
     transition: none;
   }
