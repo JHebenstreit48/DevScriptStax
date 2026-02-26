@@ -8,7 +8,7 @@ import CodeBlock from '@/Components/PageComponents/Notes/NotesRendering/CustomCo
 import LinkRenderer from '@/Components/PageComponents/Notes/NotesRendering/CustomComponents/LinkRenderer';
 import TableWrapper from '@/Components/PageComponents/Notes/NotesRendering/CustomComponents/TableWrapper';
 import IconRenderer from '@/Components/PageComponents/Notes/NotesRendering/CustomComponents/IconRenderer';
-import { remarkIconPlugin } from '@/Components/PageComponents/Notes/NotesRendering/Utils/remarkIconPlugin'; // ✅ make sure this is correct
+import { remarkIconPlugin } from '@/utils/notes/remarkIconPlugin'; // ✅ make sure this is correct
 
 interface RendererProps {
   content: string;

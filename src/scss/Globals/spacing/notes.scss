@@ -3,9 +3,11 @@ $notes-card-width-desktop: 60%;
 $notes-card-margin: 4rem auto 3rem auto;
 $notes-card-padding: 0 0 2rem;
 $notes-md-width: 85%;
-$notes-md-margin: 1rem auto;
+
+/* Markdown Spacing */
+$notes-md-margin: 0rem auto;
 $notes-md-font-size: 20px;
-$notes-md-padding: 1rem;
+$notes-md-padding: 0rem;
 $notes-md-line-height: 1.5;
 $notes-md-width-mobile: 96%;
 $notes-md-font-size-mobile: 1rem;

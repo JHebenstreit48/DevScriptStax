@@ -1,6 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import type { Subpage } from '@/types/navigation';
+import { NavLink } from "react-router-dom";
+import type { Subpage } from "@/types/navigation";
 
 interface NavSubpagesProps {
   subpages: Subpage[];
@@ -21,24 +21,43 @@ const NavSubpages: React.FC<NavSubpagesProps> = ({
     <>
       {subpages.map((sp, index) => {
         const key = `${parentKey}-${index}`;
-        const isActive = activeDropdown.has(key);
+        const isOpen = activeDropdown.has(key);
 
         return (
           <div key={key} className={`dropdownItem level-${level}`}>
             {sp.path ? (
-              <Link to={sp.path} className={`dropdownButton level-${level}`}>
+              <NavLink
+                to={sp.path}
+                className={({ isActive }) =>
+                  [
+                    "dropdownButton",
+                    `level-${level}`,
+                    isActive ? "isCurrent" : "",
+                  ]
+                    .filter(Boolean)
+                    .join(" ")
+                }
+              >
                 {sp.name}
-              </Link>
+              </NavLink>
             ) : (
               <>
-                <div
-                  className={`dropdownButton level-${level} ${isActive ? "active" : ""}`}
+                <button
+                  type="button"
+                  className={[
+                    "dropdownButton",
+                    `level-${level}`,
+                    isOpen ? "active" : "",
+                    "isGroup",
+                  ]
+                    .filter(Boolean)
+                    .join(" ")}
                   onClick={() => toggleDropdown(key)}
                 >
                   {sp.name}
-                </div>
+                </button>
 
-                {isActive && sp.subpages && (
+                {isOpen && sp.subpages && (
                   <div className="dropdownMenu active">
                     <NavSubpages
                       subpages={sp.subpages}
