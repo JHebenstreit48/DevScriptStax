@@ -1,0 +1,92 @@
+@use '@scss/Globals' as *;
+
+/* ---- Wrappers ---- */
+
+.centeredNumberedList {
+  margin: 0 auto 0 1rem;
+  max-width: 50rem // slightly wider so it doesn't feel too narrow in a 50% card
+}
+
+.centeredBullet {
+  margin: 0.5rem auto;
+  max-width: 80ch;
+}
+
+/* If your markdown renderer outputs <ol> for "1. 2. 3." lines,
+   this keeps number indentation consistent */
+.centeredNumberedList ol {
+  margin: 0.75rem 0;
+  padding-left: 1.6rem;
+}
+
+/* If it does NOT output <ol>, this won't hurt anything */
+.centeredNumberedList li {
+  margin: 0.4rem 0;
+}
+
+/* ---- Column helpers (apply to UL) ---- */
+
+.fullWidthBullet {
+  column-count: 1;
+}
+
+.twoColumnBullet {
+  column-count: 2;
+  column-gap: 2rem;
+
+  li {
+    break-inside: avoid;
+  }
+
+  @include maxw($cellphone-portrait) {
+    column-count: 1;
+  }
+}
+
+/* ---- Diamond bullet list (apply to UL) ----
+   We use ::before (not ::marker) for consistent emoji spacing across browsers */
+.diamondBullets {
+  margin: 0.75rem 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    position: relative;
+    padding-left: 1.85rem; // gutter where the bullet lives
+    margin: 0.35rem 0;
+    line-height: 1.55;
+  }
+
+  li::before {
+    content: "🔹";
+    position: absolute;
+    left: 0;
+    top: 0.06em;    // tiny baseline tweak for emoji
+    width: 1.35rem; // fixed slot so text aligns perfectly
+  }
+}
+
+/* Optional tighter version for narrow areas */
+.diamondBulletsTight {
+  li {
+    padding-left: 1.6rem;
+  }
+
+  li::before {
+    width: 1.2rem;
+  }
+}
+
+/* If you want bullet blocks to go wider for specific long sections */
+.notesWide {
+  max-width: 92ch;
+}
+
+/* Mobile: let blocks breathe and align naturally */
+@include maxw($cellphone-portrait) {
+  .centeredNumberedList,
+  .centeredBullet,
+  .notesWide {
+    max-width: 100%;
+  }
+}
