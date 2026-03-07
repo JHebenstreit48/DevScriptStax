@@ -1,6 +1,6 @@
 import type { Subpage } from '@/types/navigation';
 
-import MERN from '@/Navigation/Individual/FullTopics/Stacks/MERN';
+import MERN from '@/Navigation/Individual/Topics/Stacks/MERN';
 
 const stacks: Subpage = {
   name: 'Stacks',

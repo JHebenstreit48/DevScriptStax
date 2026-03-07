@@ -1,7 +1,7 @@
 import type { Subpage } from '@/types/navigation';
 
-import GraphQL from '@/Navigation/Individual/FullTopics/GraphQLAndApollo/GraphQL';
-import Apollo from '@/Navigation/Individual/FullTopics/GraphQLAndApollo/Apollo';
+import GraphQL from '@/Navigation/Individual/Topics/GraphQLAndApollo/GraphQL';
+import Apollo from '@/Navigation/Individual/Topics/GraphQLAndApollo/Apollo';
 
 const graphQLAndApollo: Subpage = {
   name: 'GraphQL',

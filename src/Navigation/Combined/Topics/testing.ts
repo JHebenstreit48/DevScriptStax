@@ -1,8 +1,8 @@
 import type { Subpage } from '@/types/navigation';
 
 // ---------- End To End Testing Navigation Start ----------
-import Cypress from '@/Navigation/Individual/FullTopics/Testing/End2End/Cypress';
-import Playwright from '@/Navigation/Individual/FullTopics/Testing/End2End/Playwright';
+import Cypress from '@/Navigation/Individual/Topics/Testing/End2End/Cypress';
+import Playwright from '@/Navigation/Individual/Topics/Testing/End2End/Playwright';
 // ---------- End To End Testing Navigation End ----------
 
 // ---------- Framework Testing Navigation Start ----------

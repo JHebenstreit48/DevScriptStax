@@ -109,6 +109,10 @@
       z-index: $z-nav-overlay;
     }
   }
+
+  @include between($small-laptop-min, $small-laptop-max) {
+    margin-left: 0px;
+  }
 }
 
 .mainNav {
@@ -118,5 +122,9 @@
   @include maxw($cellphone-portrait) {
     margin-top: 2rem;
     margin-left: 0;
+  }
+
+  @include between($small-laptop-min, $small-laptop-max) {
+    margin-left: 1rem;
   }
 }
