@@ -1,14 +1,21 @@
 /* ===== Phones ===== */
-$cellphone-portrait: 480px;  /* phone portrait max-width */
-$phone-landscape-wide: 900px;/* optional: landscape max-width */
-$phone-landscape-short-h: 480px; /* optional: landscape max-height (short viewports) */
+$cellphone-portrait: 480px;           /* phone portrait max-width — unchanged */
+$phone-landscape-wide: 900px;         /* optional: landscape max-width — unchanged */
+$phone-landscape-short-h: 480px;      /* optional: landscape max-height (short viewports) — unchanged */
 
 /* ===== Tablets ===== */
-$tablet-portrait: 768px;
-$tablet-landscape: 1024px;
+$tablet-portrait: 768px;              /* existing — unchanged (often used as max-width) */
+$tablet-landscape: 1024px;            /* existing — unchanged (often used as max-width) */
+
+/* New: explicit min/max for better control without renaming anything */
+$tablet-portrait-min: 481px;          /* after small phones */
+$tablet-portrait-max: 767px;          /* typical portrait tablets / large phones */
+
+$tablet-landscape-min: 768px;         /* start of tablet landscape */
+$tablet-landscape-max: 1199px;        /* covers modern iPad Air/Pro/Surface landscape (~1180–1210px) */
 
 /* ===== Laptops ===== */
-$small-laptop-min: 1024px;
+$small-laptop-min: 1024px;            /* unchanged — still starts right after your existing $tablet-landscape */
 $small-laptop-max: 1366px;
 $medium-laptop-min: 1367px;
 $medium-laptop-max: 1536px;
@@ -16,13 +23,13 @@ $large-laptop-min: 1537px;
 $large-laptop-max: 1919px;
 
 /* ===== Desktops / Monitors ===== */
-$desktop-1080p: 1920px;  /* 24" */
-$desktop-1440p: 2560px;  /* 27" */
+$desktop-1080p: 1920px;               /* 24" — unchanged */
+$desktop-1440p: 2560px;               /* 27" — unchanged */
 $desktop-4k: 3840px;
 
 /* ===== Optional container caps ===== */
 $container-xl: 1280px;
-$container-xxl: 1440px;  /* good for 24–27" */
+$container-xxl: 1440px;               /* good for 24–27" */
 $container-max: 1600px;
 
 @function container($key) {
