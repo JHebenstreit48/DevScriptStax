@@ -81,6 +81,8 @@
       box-shadow: none;
       filter: none;
     }
+
+    @include between($small-laptop-min, $small-laptop-max) { font-size: 1.29rem; }
   }
 
   /* Responsive ladder */

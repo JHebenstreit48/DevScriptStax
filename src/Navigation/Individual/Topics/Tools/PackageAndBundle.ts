@@ -1,7 +1,7 @@
 import type { Subpage } from '@/types/navigation';
 
-import PackageManagement from '@/Navigation/Individual/FullTopics/Tools/PackageAndBundle/PackageManagement';
-import Bundling from '@/Navigation/Individual/FullTopics/Tools/PackageAndBundle/Bundling';
+import PackageManagement from '@/Navigation/Individual/Topics/Tools/PackageAndBundle/PackageManagement';
+import Bundling from '@/Navigation/Individual/Topics/Tools/PackageAndBundle/Bundling';
 
 const PackageAndBundle: Subpage = {
     name: 'Package Management & Bundling',

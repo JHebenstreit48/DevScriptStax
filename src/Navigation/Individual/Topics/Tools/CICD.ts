@@ -1,7 +1,7 @@
 import type { Subpage } from '@/types/navigation';
 
-import CircleCI from '@/Navigation/Individual/FullTopics/Tools/CICD/CircleCI';
-import Jenkins from '@/Navigation/Individual/FullTopics/Tools/CICD/Jenkins';
+import CircleCI from '@/Navigation/Individual/Topics/Tools/CICD/CircleCI';
+import Jenkins from '@/Navigation/Individual/Topics/Tools/CICD/Jenkins';
 
 const CICD: Subpage = {
   name: 'CI/CD',

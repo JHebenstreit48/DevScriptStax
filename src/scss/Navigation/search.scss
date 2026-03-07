@@ -312,6 +312,7 @@ $muted-2: #7a8091;
   }
 
   @include between($small-laptop-min, $small-laptop-max) {
+    left: 69rem;
   }
   
   @include between($medium-laptop-min, $medium-laptop-max) {

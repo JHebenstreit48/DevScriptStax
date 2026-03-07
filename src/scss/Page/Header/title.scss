@@ -21,6 +21,10 @@
     margin: 0;
   }
 
+   @include between($small-laptop-min, $small-laptop-max) {
+    line-height: 2rem;
+  }
+
   &.HeaderAlignLeft {
     margin: 0;
     text-align: left;
@@ -42,6 +46,10 @@
     border-radius: 0;
 
     @include between($large-laptop-min, $large-laptop-max) {
+  }
+
+  @include between($small-laptop-min, $small-laptop-max) {
+    font-size: 2.2rem;
   }
 
     &:hover,

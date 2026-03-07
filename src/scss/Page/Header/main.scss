@@ -63,10 +63,11 @@
     padding-left: 0.8rem;
   }
 
-   @include between($large-laptop-min, $large-laptop-max) {
-    padding-left: 1rem;
+  @include between($small-laptop-min, $small-laptop-max) {
+    padding-left: 9px;  // temporary — keep nested
   }
 }
+
 
 .HeaderRight {
   flex: 2;
