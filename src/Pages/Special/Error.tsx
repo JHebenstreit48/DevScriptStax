@@ -6,7 +6,6 @@ import {
 } from "react-router-dom";
 
 import { isKnownPath } from "@/domain/navigation/knownPaths";
-import "@/scss/Page/Error.scss";
 
 type PageState = "planned" | "not_found" | "unavailable";
 

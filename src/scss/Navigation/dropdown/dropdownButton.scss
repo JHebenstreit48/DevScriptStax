@@ -1,4 +1,4 @@
-@use "@scss/Globals" as *;
+@use '@scss/Globals' as *;
 
 .dropdownButton {
   display: flex;
@@ -43,7 +43,7 @@
     background-color: $dropdown-hover;
     box-shadow:
       inset 0 0 0 1px rgba(255, 255, 255, 0.08),
-      0 0 18px rgba(0, 255, 255, 0.10),
+      0 0 18px rgba(0, 255, 255, 0.1),
       inset 0 1px 0 rgba(255, 255, 255, 0.08);
   }
 
@@ -81,27 +81,50 @@
       box-shadow: none;
       filter: none;
     }
-
-    @include between($small-laptop-min, $small-laptop-max) { font-size: 1.29rem; }
   }
 
   /* Responsive ladder */
   @include maxw($cellphone-portrait) {
     font-size: 1.05rem;
-    padding: 0.4rem;
+    padding: 0.4rem 0.75rem 0.4rem 1rem; // add left padding for breathing room
     gap: $nav-gap-mobile;
+    text-align: left; // add this
+    align-items: flex-start; // add this
+    justify-content: flex-start; // add this
 
-    &.level-2 { font-size: 1.04rem; }
-    &.level-3 { font-size: 1.01rem; }
-    &.level-4 { font-size: 0.97rem; }
-    &.level-5 { font-size: 0.93rem; }
-    &.level-6 { font-size: 0.90rem; }
-    &.level-7 { font-size: 0.88rem; }
-    &.level-8 { font-size: 0.86rem; }
-    &.level-9 { font-size: 0.84rem; }
+    &.level-2 {
+      font-size: 1.04rem;
+    }
+    &.level-3 {
+      font-size: 1.01rem;
+    }
+    &.level-4 {
+      font-size: 0.97rem;
+    }
+    &.level-5 {
+      font-size: 0.93rem;
+    }
+    &.level-6 {
+      font-size: 0.9rem;
+    }
+    &.level-7 {
+      font-size: 0.88rem;
+    }
+    &.level-8 {
+      font-size: 0.86rem;
+    }
+    &.level-9 {
+      font-size: 0.84rem;
+    }
   }
 
-  @include between($small-laptop-min, $small-laptop-max) { font-size: 1.25rem; }
-  @include between($medium-laptop-min, $medium-laptop-max) { font-size: 1.35rem; }
-  @include between($large-laptop-min, $large-laptop-max) { font-size: 1.4rem; }
+  @include between($small-laptop-min, $small-laptop-max) {
+    font-size: 1.25rem;
+  }
+  @include between($medium-laptop-min, $medium-laptop-max) {
+    font-size: 1.35rem;
+  }
+  @include between($large-laptop-min, $large-laptop-max) {
+    font-size: 1.4rem;
+  }
 }

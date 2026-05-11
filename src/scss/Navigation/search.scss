@@ -298,23 +298,18 @@ $muted-2: #7a8091;
   z-index: $z-nav-overlay;
 
   @include maxw($cellphone-portrait) {
-    // Pin it to the HEADER on mobile so it stays left and stable.
-    position: fixed;
-
-    // Align with your fixed header:
-    // Header mobile height is 4.5rem in Header.scss, so center is 2.25rem.
-    top: 2rem;
-
-    left: 2.5rem;
-
-    transform: translateY(-50%);
-    z-index: 13; // must be >= .HeaderBar z-index (yours is 12)
-  }
+  position: fixed;
+  top: 2rem;
+  left: auto;
+  right: 0.75rem;      // pin to right edge of header
+  transform: translateY(-50%);
+  z-index: $z-nav-hamburger; // use same z-index token as hamburger
+}
 
   @include between($small-laptop-min, $small-laptop-max) {
-    left: 69rem;
+    left: 64rem;
   }
-  
+
   @include between($medium-laptop-min, $medium-laptop-max) {
   }
 

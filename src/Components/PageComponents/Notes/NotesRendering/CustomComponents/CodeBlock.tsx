@@ -4,7 +4,7 @@ import js from 'react-syntax-highlighter/dist/esm/languages/prism/javascript';
 import html from 'react-syntax-highlighter/dist/esm/languages/prism/markup';
 import css from 'react-syntax-highlighter/dist/esm/languages/prism/css';
 import bash from 'react-syntax-highlighter/dist/esm/languages/prism/bash';
-import { darkGrayTheme } from '@/Components/PageComponents/Notes/NotesRendering/Utils/Theme';
+import { darkGrayTheme } from '@/utils/notes/theme';
 import { ReactNode } from 'react';
 
 // Register only the languages you need

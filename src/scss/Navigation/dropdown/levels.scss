@@ -1,3 +1,4 @@
+@use "sass:color";
 @use "@scss/Globals" as *;
 @use "./mixins" as mixins;
 
@@ -12,18 +13,59 @@ $nav-l8: $level-8;
 $nav-l9: $level-9;
 
 .dropdownButton {
-  &.level-2 { @include mixins.nav-level($nav-l2, 1.06rem, 760, 0.20, 0.03, 0.36, 0.06); }
-  &.level-3 { @include mixins.nav-level($nav-l3, 1.03rem, 710, 0.16, 0.05, 0.30, 0.07); }
+  &.level-2 {
+    @include mixins.nav-level($nav-l2, 1.06rem, 760, 0.20, 0.03, 0.36, 0.06);
+    @include maxw($cellphone-portrait) {
+      padding-left: 1rem;
+      background: transparent;
+      border-top: 1px solid color.change($nav-l2, $alpha: 0.15);
+      box-shadow: none;
+    }
+  }
+
+  &.level-3 {
+    @include mixins.nav-level($nav-l3, 1.03rem, 710, 0.16, 0.05, 0.30, 0.07);
+    @include maxw($cellphone-portrait) {
+      padding-left: 1.75rem;
+      background: transparent;
+      border-top: 1px solid color.change($nav-l3, $alpha: 0.15);
+      box-shadow: none;
+    }
+  }
 
   /* separation bump */
-  &.level-4 { @include mixins.nav-level($nav-l4, 0.99rem, 670, 0.13, 0.11, 0.22, 0.09); }
-  &.level-5 { @include mixins.nav-level($nav-l5, 0.95rem, 630, 0.11, 0.18, 0.16, 0.11); }
+  &.level-4 {
+    @include mixins.nav-level($nav-l4, 0.99rem, 670, 0.13, 0.11, 0.22, 0.09);
+    @include maxw($cellphone-portrait) {
+      padding-left: 2.5rem;
+      background: transparent;
+      border-top: 1px solid color.change($nav-l4, $alpha: 0.15);
+      box-shadow: none;
+    }
+  }
+
+  &.level-5 {
+    @include mixins.nav-level($nav-l5, 0.95rem, 630, 0.11, 0.18, 0.16, 0.11);
+    @include maxw($cellphone-portrait) {
+      padding-left: 3.25rem;
+      background: transparent;
+      border-top: 1px solid color.change($nav-l5, $alpha: 0.15);
+      box-shadow: none;
+    }
+  }
 
   &.level-6 {
     @include mixins.nav-level($nav-l6, 0.91rem, 600, 0.16, 0.22, 0.13, 0.12);
     opacity: 0.98;
     letter-spacing: 0.10px;
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06), inset 0 -1px 0 rgba(0, 0, 0, 0.55);
+    @include maxw($cellphone-portrait) {
+      padding-left: 4rem;
+      background: transparent;
+      border-top: 1px solid color.change($nav-l6, $alpha: 0.15);
+      box-shadow: none;
+      opacity: 1;
+    }
   }
 
   &.level-7 {
@@ -31,6 +73,13 @@ $nav-l9: $level-9;
     opacity: 0.95;
     letter-spacing: 0.08px;
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06), inset 0 -1px 0 rgba(0, 0, 0, 0.55);
+    @include maxw($cellphone-portrait) {
+      padding-left: 4.5rem;
+      background: transparent;
+      border-top: 1px solid color.change($nav-l7, $alpha: 0.15);
+      box-shadow: none;
+      opacity: 1;
+    }
   }
 
   &.level-8 {
@@ -38,6 +87,13 @@ $nav-l9: $level-9;
     opacity: 0.93;
     letter-spacing: 0.06px;
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06), inset 0 -1px 0 rgba(0, 0, 0, 0.55);
+    @include maxw($cellphone-portrait) {
+      padding-left: 5rem;
+      background: transparent;
+      border-top: 1px solid color.change($nav-l8, $alpha: 0.15);
+      box-shadow: none;
+      opacity: 1;
+    }
   }
 
   &.level-9 {
@@ -45,6 +101,13 @@ $nav-l9: $level-9;
     opacity: 0.91;
     letter-spacing: 0.05px;
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06), inset 0 -1px 0 rgba(0, 0, 0, 0.55);
+    @include maxw($cellphone-portrait) {
+      padding-left: 5.5rem;
+      background: transparent;
+      border-top: 1px solid color.change($nav-l9, $alpha: 0.15);
+      box-shadow: none;
+      opacity: 1;
+    }
   }
 
   &.level-10,
@@ -54,5 +117,12 @@ $nav-l9: $level-9;
     font-weight: 510;
     opacity: 0.90;
     letter-spacing: 0.04px;
+    @include maxw($cellphone-portrait) {
+      padding-left: 6rem;
+      background: transparent;
+      border-top: 1px solid rgba(255, 255, 255, 0.10);
+      box-shadow: none;
+      opacity: 1;
+    }
   }
 }
