@@ -1,0 +1,45 @@
+@use 'sass:color';
+@use '@scss/Globals/index' as *;
+
+/* Overrides only — glass card from Home.scss */
+.relatedProjectsPage {
+  .siteInfo {
+    text-align: center;  // center h1 + intro p
+    max-width: 900px;    // wider card
+    padding: clamp(2.5rem, 6vw, 4rem);  // more room
+  }
+
+  h1 {
+    font-size: clamp(2.8rem, 7vw, 4.2rem);  // bigger heading
+    margin-bottom: 2.5rem;
+  }
+
+  p {
+    font-size: clamp(1.25rem, 2.8vw, 1.55rem);  // larger paragraphs
+    line-height: 1.85;
+  }
+
+  .projectLinks {
+    li {
+      font-size: clamp(1.3rem, 3vw, 1.6rem);  // larger links
+    }
+
+    a {
+      padding: 0.75rem 1.25rem;
+      border-radius: 10px;
+      transition: all 0.25s ease;
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.08);
+        transform: translateY(-4px) scale(1.03);
+      }
+    }
+  }
+
+  /* Force note left-aligned */
+  .Note {
+    text-align: left !important;
+    margin: 2rem auto;
+    max-width: 700px;
+  }
+}

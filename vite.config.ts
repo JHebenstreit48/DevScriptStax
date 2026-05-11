@@ -21,6 +21,7 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': resolve(__dirname, 'src'),
+      '@scripts': resolve(__dirname, 'scripts'), // added — was in tsconfig but missing here
       '@pages': resolve(__dirname, 'src/Pages'),
       '@components': resolve(__dirname, 'src/Components'),
       '@routes': resolve(__dirname, 'src/routes'),
@@ -40,7 +41,7 @@ export default defineConfig({
         target: 'http://localhost:3001',
         changeOrigin: true,
         secure: false,
-        rewrite: (path) => path, // preserve full /api path
+        rewrite: (path) => path,
       },
     },
   },

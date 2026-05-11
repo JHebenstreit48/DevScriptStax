@@ -1,5 +1,5 @@
-@use "sass:color";
-@use "@scss/Globals" as *;
+@use 'sass:color';
+@use '@scss/Globals' as *;
 
 /* =========================================================
    Local tokens (temporary home until moved into Globals)
@@ -25,7 +25,8 @@ $chev-size: 0.95rem;
   @include maxw($cellphone-portrait) {
     display: block;
     width: 100%;
-    margin: 0 auto;
+    margin: 0;
+    text-align: left;
   }
 }
 
@@ -105,17 +106,23 @@ $chev-size: 0.95rem;
     @include maxw($cellphone-portrait) {
       position: static;
       transform: none;
+      left: auto;
 
-      background: linear-gradient(180deg, $nav-glass-sheen-top, $nav-glass-sheen-bot), $dd-bg;
-
-      backdrop-filter: blur($nav-glass-blur) saturate(140%);
-      -webkit-backdrop-filter: blur($nav-glass-blur) saturate(140%);
-
+      background: transparent;
+      backdrop-filter: none;
+      -webkit-backdrop-filter: none;
+      border: none;
       box-shadow: none;
+      border-radius: 0;
+
       padding: 0;
       margin-top: $nav-dropdown-mobile-margin-top;
       width: 100%;
-      border-radius: 0;
+      max-height: none;
+      overflow-y: visible;
+
+      row-gap: 0;
+      justify-items: stretch;
     }
   }
 }
@@ -136,6 +143,11 @@ $chev-size: 0.95rem;
         rgba(255, 255, 255, 0.01)
       ),
       $dd-bg-nested;
+
+    @include maxw($cellphone-portrait) {
+      background: transparent;
+      align-items: flex-start;
+    }
   }
 }
 
@@ -150,14 +162,14 @@ button.dropdownButton.level-1 {
   gap: 0.35rem;
 
   &::before {
-    content: "";
+    content: '';
     display: inline-block;
     width: $chev-size;
     height: 1px;
   }
 
   &::after {
-    content: "▾";
+    content: '▾';
     display: inline-block;
     width: $chev-size;
     text-align: center;
@@ -166,7 +178,18 @@ button.dropdownButton.level-1 {
   }
 
   &.active::after {
-    content: "▴";
+    content: '▴';
+  }
+
+  @include maxw($cellphone-portrait) {
+    justify-content: flex-start;
+    width: 100%;
+    padding-left: 0.75rem;
+    text-align: left;
+
+    &::before {
+      display: none;
+    }
   }
 }
 

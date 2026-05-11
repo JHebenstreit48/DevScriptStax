@@ -1,4 +1,5 @@
 @use 'sass:color';
 @use '@scss/Globals' as *;
-@use './Header/main';
-@use './Header/title';
+
+@use './main';
+@use './title';
