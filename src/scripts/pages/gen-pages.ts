@@ -7,7 +7,7 @@ import { flattenNav } from '../shared/model/flattenNav';
 import { derive } from '@/scripts/shared/model/derive';
 import { createPageIfMissing } from '@/scripts/pages/pages';
 import { config } from '@/scripts/shared/config';
-import { matchesWithin } from '../shared/utils/within';
+import { matchesWithin } from '@/scripts/shared/utils/within';
 
 function main() {
   const args = parseArgs(process.argv.slice(2));

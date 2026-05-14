@@ -31,19 +31,16 @@
         min-height: 100%;
       }
 
-      /* Prevent footer jumping while CSS bundle loads */
       .appContainer {
         display: grid;
         grid-template-rows: auto 1fr auto;
         min-height: 100vh;
       }
 
-      /* Your header is fixed at 4rem; reserve space early */
       .contentWrapper {
         padding-top: 4rem;
       }
 
-      /* Small phones: reserve footer height early to prevent CLS */
       @media (max-width: 480px) {
         .siteFooter {
           min-height: 110px;
@@ -70,17 +67,11 @@
     <meta property="og:url" content="https://devscriptstax.netlify.app/" />
 
     <meta property="og:image" content="https://devscriptstax.netlify.app/og/devscriptstax-1200x630.png?v=1" />
-    <meta
-      property="og:image:secure_url"
-      content="https://devscriptstax.netlify.app/og/devscriptstax-1200x630.png?v=1"
-    />
+    <meta property="og:image:secure_url" content="https://devscriptstax.netlify.app/og/devscriptstax-1200x630.png?v=1" />
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta
-      property="og:image:alt"
-      content="DevScriptStax — sections: BackEnd, FrontEnd, GraphQL & Apollo, Languages, Testing, Tools"
-    />
+    <meta property="og:image:alt" content="DevScriptStax — sections: BackEnd, FrontEnd, GraphQL & Apollo, Languages, Testing, Tools" />
     <meta property="og:locale" content="en_US" />
 
     <meta name="twitter:card" content="summary_large_image" />
@@ -90,17 +81,19 @@
       content="FrontEnd, BackEnd, GraphQL & Apollo, Languages, Testing, and Tools — fast, organized, searchable."
     />
     <meta name="twitter:image" content="https://devscriptstax.netlify.app/og/devscriptstax-1200x630.png?v=1" />
-    <meta
-      name="twitter:image:alt"
-      content="DevScriptStax — overview of main tabs: BackEnd, FrontEnd, GraphQL & Apollo, Languages, Testing, Tools"
-    />
+    <meta name="twitter:image:alt" content="DevScriptStax — overview of main tabs: BackEnd, FrontEnd, GraphQL & Apollo, Languages, Testing, Tools" />
 
     <!-- Canonical -->
     <link rel="canonical" href="https://devscriptstax.netlify.app/" />
 
+    <!-- Content Discovery -->
+    <meta name="content-index"
+      content="https://raw.githubusercontent.com/JHebenstreit48/DevScriptStax-API/main/content.json" />
+    <meta name="sitemap-index"
+      content="https://raw.githubusercontent.com/JHebenstreit48/DevScriptStax-API/main/sitemap.json" />
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <!-- (optional) remove fonts.gstatic preconnect to avoid Lighthouse "unused" warning -->
 
     <link
       rel="stylesheet"

@@ -1,8 +1,8 @@
 import type { Subpage } from '@/types/navigation';
 
 export type NavLeaf = {
-  urlPath: string;      // "/angular/basics/..."
-  crumbs: string[];     // ["Front End","Angular","Basics","Fundamentals","Introduction"]
+  urlPath: string;
+  crumbs: string[];
 };
 
 export function flattenNav(pages: Subpage[]): NavLeaf[] {
@@ -13,7 +13,7 @@ export function flattenNav(pages: Subpage[]): NavLeaf[] {
       const next = [...parent, n.name];
 
       if (n.path) {
-        out.push({ urlPath: n.path, crumbs: next });
+        out.push({ "urlPath": n.path, "crumbs": next });
         continue;
       }
 

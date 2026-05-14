@@ -13,8 +13,13 @@ export function parseArgs(argv: string[]): CliArgs {
     const a = argv[i];
 
     if (a === '--tab') args.tab = argv[++i];
+    else if (a.startsWith('--tab=')) args.tab = a.slice(6);
+
     else if (a === '--topic') args.topic = argv[++i];
+    else if (a.startsWith('--topic=')) args.topic = a.slice(8);
+
     else if (a === '--within') args.within = argv[++i];
+    else if (a.startsWith('--within=')) args.within = a.slice(9);
 
     // ✅ accept both styles + "=true"
     else if (a === '--dry-run' || a === '--dryRun') args.dryRun = true;
