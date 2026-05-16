@@ -7,8 +7,8 @@ const Basics: Subpage = {
       name: "Fundamentals",
       subpages: [
         {
-          name: "Intro",
-          path: "/testing/e2e/playwright/basics/fundamentals/intro"
+          name: "Introduction",
+          path: "/testing/e2e/playwright/basics/fundamentals/introduction"
         },
         {
           name: "Install & Setup",

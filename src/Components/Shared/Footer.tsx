@@ -37,7 +37,7 @@ export default function Footer() {
       <div className="footerMeta">
         <div className="metaInner pageContainer">
           <div className="metaLeft">
-            <span>© {year} AppFoundry</span>
+            <span>© {year} DevScriptStax</span>
             <span className="dot">•</span>
             <span>Built as a learning reference</span>
           </div>
