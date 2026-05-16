@@ -4,16 +4,16 @@ const Structure: Subpage = {
   name: 'Project Structure',
   subpages: [
     {
-      name: 'Project Structure',
-      path: '/testing/e2e/cypress/project-structure',
+      name: 'Structure',
+      path: '/testing/e2e/cypress/basics/project-structure/structure',
     },
     {
       name: 'Cypress CLI & Configuration',
-      path: '/testing/e2e/cypress/cli-config',
+      path: '/testing/e2e/cypress/basics/project-structure/cli-config',
     },
     {
       name: 'Test File Patterns',
-      path: '/testing/e2e/cypress/file-patterns',
+      path: '/testing/e2e/cypress/basics/project-structure/file-patterns',
     },
     // {
     //   name: 'Environment Variables',
@@ -21,7 +21,7 @@ const Structure: Subpage = {
     // },
     {
       name: 'Fixtures & Plugins',
-      path: '/testing/e2e/cypress/fixtures-plugins',
+      path: '/testing/e2e/cypress/basics/project-structure/fixtures-plugins',
     },
   ],
 };
