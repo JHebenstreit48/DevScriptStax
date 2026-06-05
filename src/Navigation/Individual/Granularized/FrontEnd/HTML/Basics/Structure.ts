@@ -4,8 +4,8 @@ const Structure: Subpage = {
   name: 'Structure',
   subpages: [
     {
-      name: 'Elements / Tags',
-      path: '/html/basics/structure/elements',
+      name: 'Elements & Tags',
+      path: '/html/basics/structure/elements-and-tags',
     },
     {
       name: 'Attributes',

@@ -10,7 +10,7 @@ const ElementsTags = () => {
     <>
       <PageLayout>
         <Header />
-        <PageTitle title="Elements / Tags" />
+        <PageTitle title="HTML Structure - Elements & Tags" />
         <Notes filePath={markdownFilePath} />
       </PageLayout>
     </>
