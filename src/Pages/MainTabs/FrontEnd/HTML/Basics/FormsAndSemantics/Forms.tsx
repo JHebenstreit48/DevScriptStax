@@ -4,13 +4,13 @@ import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const Forms = () => {
-  const markdownFilePath = 'FrontEnd/HTML/HTMLBasics/HTMLForms';
+  const markdownFilePath = 'FrontEnd/HTML/Basics/FormsAndSemantics/Forms';
 
   return (
     <>
       <PageLayout>
         <Header />
-        <PageTitle title="HTML Basics - Forms" />
+        <PageTitle title="HTML Forms and Semantics - Forms" />
         <Notes filePath={markdownFilePath} />
       </PageLayout>
     </>
