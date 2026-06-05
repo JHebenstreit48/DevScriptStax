@@ -4,13 +4,13 @@ import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const Semantics = () => {
-  const markdownFilePath = 'FrontEnd/HTML/Basics/HTMLSemantics';
+  const markdownFilePath = 'FrontEnd/HTML/Basics/FormsAndSemantics/Semantics';
 
   return (
     <>
       <PageLayout>
         <Header />
-        <PageTitle title="HTML Basics - Semantics" />
+        <PageTitle title="HTML Forms and Semantics - Semantics" />
         <Notes filePath={markdownFilePath} />
       </PageLayout>
     </>

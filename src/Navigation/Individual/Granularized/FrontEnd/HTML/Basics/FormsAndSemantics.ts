@@ -1,7 +1,7 @@
 import type { Subpage } from '@/types/navigation';
 
 const FormsAndSemantics: Subpage = {
-  name: 'Forms / Semantics',
+  name: 'Forms & Semantics',
   subpages: [
     {
       name: 'Forms',
