@@ -10,7 +10,7 @@ const Attributes = () => {
     <>
       <PageLayout>
         <Header />
-        <PageTitle title="HTML Basics - Attributes" />
+        <PageTitle title="HTML Structure - Attributes" />
         <Notes filePath={markdownFilePath} />
       </PageLayout>
     </>
