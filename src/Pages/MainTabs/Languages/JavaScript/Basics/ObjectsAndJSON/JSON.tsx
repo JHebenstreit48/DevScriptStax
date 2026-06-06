@@ -10,7 +10,7 @@ const JSON = () => {
     <>
       <PageLayout>
         <Header />
-        <PageTitle title="Working with JSON" />
+        <PageTitle title="JavaScript Objects & JSON - Working with JSON" />
         <Notes filePath={markdownFilePath} />
       </PageLayout>
     </>

@@ -5,7 +5,7 @@ const Indexes: Subpage = {
   subpages: [
     {
       name: 'Introduction',
-      path: '/mongodb/intermediate/indexes/overview',
+      path: '/mongodb/intermediate/indexes/introduction',
     },
     {
       name: 'Index Types',

@@ -4,13 +4,13 @@ import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const Delete = () => {
-  const markdownFilePath = 'BackEnd/Databases/MongoDB/Basics/CRUDOperations/Delete';
+  const markdownFilePath = 'BackEnd/Databases/MongoDB/Basics/CRUD/Delete';
 
   return (
     <>
       <PageLayout>
         <Header />
-        <PageTitle title="Delete" />
+        <PageTitle title="MongoDB - CRUD Operations - Delete" />
         <Notes filePath={markdownFilePath} />
       </PageLayout>
     </>
