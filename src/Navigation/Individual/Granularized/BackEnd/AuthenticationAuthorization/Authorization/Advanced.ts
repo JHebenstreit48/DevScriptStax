@@ -8,19 +8,19 @@ const Advanced: Subpage = {
       subpages: [
         {
           name: 'Microservices',
-          path: '/authz/advanced/design/microservices'
+          path: '/authorization/advanced/design/microservices'
         },
         {
           name: 'SSO / Federation',
-          path: '/authz/advanced/design/sso'
+          path: '/authorization/advanced/design/sso'
         },
         {
           name: 'Custom Providers',
-          path: '/authz/advanced/design/custom'
+          path: '/authorization/advanced/design/custom'
         },
         {
           name: 'Scaling Systems',
-          path: '/authz/advanced/design/scaling'
+          path: '/authorization/advanced/design/scaling'
         }
       ]
     },
@@ -29,11 +29,11 @@ const Advanced: Subpage = {
       subpages: [
         {
           name: 'Access Logging',
-          path: '/authz/advanced/audit/logging'
+          path: '/authorization/advanced/audit/logging'
         },
         {
           name: 'Fine-Grained Control',
-          path: '/authz/advanced/audit/fine-grained'
+          path: '/authorization/advanced/audit/fine-grained'
         }
       ]
     }

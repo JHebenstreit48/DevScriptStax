@@ -8,19 +8,19 @@ const ScalingSystems = lazy(() => import('@/Pages/MainTabs/BackEnd/AuthenticateA
 
 const SystemsAndDesign: RouteObject[] = [
   {
-    path: '/authz/advanced/design/microservices',
+    path: '/authorization/advanced/design/microservices',
     element: <Microservices />,
   },
   {
-    path: '/authz/advanced/design/sso',
+    path: '/authorization/advanced/design/sso',
     element: <SSOFederation />,
   },
   {
-    path: '/authz/advanced/design/custom',
+    path: '/authorization/advanced/design/custom',
     element: <CustomProviders />,
   },
   {
-    path: '/authz/advanced/design/scaling',
+    path: '/authorization/advanced/design/scaling',
     element: <ScalingSystems />,
   },
 ];

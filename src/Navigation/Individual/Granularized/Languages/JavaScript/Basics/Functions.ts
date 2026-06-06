@@ -13,7 +13,7 @@ const Functions: Subpage = {
     },
     {
       name: 'Arrow Functions',
-      path: '/javascript/basics/functions/arrow',
+      path: '/javascript/basics/functions/arrow-functions',
     },
     {
       name: 'Parameters and Arguments',
@@ -21,7 +21,7 @@ const Functions: Subpage = {
     },
     {
       name: 'Higher-Order Functions',
-      path: '/javascript/basics/functions/higher-order',
+      path: '/javascript/basics/functions/higher-order-functions',
     },
     {
       name: 'This Keyword',
