@@ -4,13 +4,13 @@ import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const Update = () => {
-  const markdownFilePath = 'BackEnd/Databases/MongoDB/Basics/CRUDOperations/Update';
+  const markdownFilePath = 'BackEnd/Databases/MongoDB/Basics/CRUD/Update';
 
   return (
     <>
       <PageLayout>
         <Header />
-        <PageTitle title="Update" />
+        <PageTitle title="MongoDB - CRUD Operations - Update" />
         <Notes filePath={markdownFilePath} />
       </PageLayout>
     </>

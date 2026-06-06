@@ -1,21 +1,14 @@
-import type { Subpage } from "@/types/navigation";
+import type { Subpage } from '@/types/navigation';
+
+import Foundations from '@/Navigation/Individual/Granularized/BackEnd/APIs/Basics/HTTPClients/Foundations';
+import Axios from '@/Navigation/Individual/Granularized/BackEnd/APIs/Basics/HTTPClients/Axios';
 
 const HTTPClients: Subpage = {
-  name: "HTTP Clients",
+  name: 'HTTP Clients',
   subpages: [
-    {
-      name: "Introduction",
-      path: "/apis/basics/http-clients/introduction",
-    },
-    {
-      name: "Promises & Response Handling",
-      path: "/apis/basics/http-clients/promises-response-handling",
-    },
-    {
-      name: "Axios",
-      path: "/apis/basics/http-clients/axios",
-    },
-  ],
+    Foundations,
+    Axios
+  ]
 };
 
 export default HTTPClients;

@@ -8,7 +8,7 @@ const Performance = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/MongoD
 
 const Indexes: RouteObject[] = [
   {
-    path: '/mongodb/intermediate/indexes/overview',
+    path: '/mongodb/intermediate/indexes/introduction',
     element: <Introduction />,
   },
   {
