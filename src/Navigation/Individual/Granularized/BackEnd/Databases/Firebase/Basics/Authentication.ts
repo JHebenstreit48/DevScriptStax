@@ -4,8 +4,8 @@ const Authentication: Subpage = {
   name: "Authentication",
   subpages: [
     {
-      name: "Overview",
-      path: "/firebase/basics/authentication/overview",
+      name: "Introduction",
+      path: "/firebase/basics/authentication/introduction",
     },
     {
       name: "Implementation",

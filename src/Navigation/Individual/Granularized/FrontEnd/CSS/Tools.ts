@@ -1,25 +1,13 @@
 import type { Subpage } from '@/types/navigation';
 
-// ------------------------- Preprocessors Navigation Start -------------------------
-import Less from '@/Navigation/Individual/Granularized/FrontEnd/CSS/Tools/Preprocessors/Less';
-import Sass from '@/Navigation/Individual/Granularized/FrontEnd/CSS/Tools/Preprocessors/Sass';
-import SCSS from '@/Navigation/Individual/Granularized/FrontEnd/CSS/Tools/Preprocessors/SCSS';
-// ------------------------- Preprocessors Navigation End ---------------------------
-
+import Preprocessors from '@/Navigation/Individual/Granularized/FrontEnd/CSS/Tools/Preprocessors/Preprocessors';
 import Postprocessors from '@/Navigation/Individual/Granularized/FrontEnd/CSS/Tools/Postprocessors/PostProcessors';
 import Frameworks from '@/Navigation/Individual/Granularized/FrontEnd/CSS/Tools/Frameworks/Frameworks';
 
 const Tools: Subpage = {
   name: "Tools",
   subpages: [
-    {
-      name: "Preprocessors",
-      subpages: [
-        Less,
-        Sass,
-        SCSS
-      ]
-    },
+    Preprocessors,
     Postprocessors,
     Frameworks
   ]

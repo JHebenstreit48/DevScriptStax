@@ -9,23 +9,23 @@ const OAuthScopes = lazy(() => import('@/Pages/MainTabs/BackEnd/AuthenticateAndA
 
 const Fundamentals: RouteObject[] = [
   {
-    path: '/authz/basics/fundamentals/intro',
+    path: '/authorization/basics/fundamentals/intro',
     element: <Introduction />,
   },
   {
-    path: '/authz/basics/fundamentals/rbac',
+    path: '/authorization/basics/fundamentals/rbac',
     element: <RBAC />,
   },
   {
-    path: '/authz/basics/fundamentals/pbac',
+    path: '/authorization/basics/fundamentals/pbac',
     element: <PBAC />,
   },
   {
-    path: '/authz/basics/fundamentals/jwt',
+    path: '/authorization/basics/fundamentals/jwt',
     element: <JWTClaims />,
   },
   {
-    path: '/authz/basics/fundamentals/oauth-scopes',
+    path: '/authorization/basics/fundamentals/oauth-scopes',
     element: <OAuthScopes />,
   },
 ];

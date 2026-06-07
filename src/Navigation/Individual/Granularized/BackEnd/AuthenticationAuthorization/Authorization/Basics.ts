@@ -8,23 +8,23 @@ const AuthorizationBasics: Subpage = {
       subpages: [
         {
           name: 'Introduction',
-          path: '/authz/basics/fundamentals/intro'
+          path: '/authorization/basics/fundamentals/intro'
         },
         {
           name: 'RBAC',
-          path: '/authz/basics/fundamentals/rbac'
+          path: '/authorization/basics/fundamentals/rbac'
         },
         {
           name: 'PBAC',
-          path: '/authz/basics/fundamentals/pbac'
+          path: '/authorization/basics/fundamentals/pbac'
         },
         {
           name: 'JWT / Claims',
-          path: '/authz/basics/fundamentals/jwt'
+          path: '/authorization/basics/fundamentals/jwt'
         },
         {
           name: 'OAuth Scopes',
-          path: '/authz/basics/fundamentals/oauth-scopes'
+          path: '/authorization/basics/fundamentals/oauth-scopes'
         }
       ]
     },
@@ -33,11 +33,11 @@ const AuthorizationBasics: Subpage = {
       subpages: [
         {
           name: 'Static / Dynamic Rules',
-          path: '/authz/basics/policies/static-dynamic'
+          path: '/authorization/basics/policies/static-dynamic'
         },
         {
           name: 'Hierarchical Roles',
-          path: '/authz/basics/policies/roles-hierarchy'
+          path: '/authorization/basics/policies/roles-hierarchy'
         }
       ]
     }

@@ -6,11 +6,11 @@ const HierarchicalRoles = lazy(() => import('@/Pages/MainTabs/BackEnd/Authentica
 
 const PoliciesAndAccess: RouteObject[] = [
   {
-    path: '/authz/basics/policies/static-dynamic',
+    path: '/authorization/basics/policies/static-dynamic',
     element: <StaticDynamicRules />,
   },
   {
-    path: '/authz/basics/policies/roles-hierarchy',
+    path: '/authorization/basics/policies/roles-hierarchy',
     element: <HierarchicalRoles />,
   },
 ];

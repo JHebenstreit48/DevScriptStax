@@ -1,7 +1,7 @@
 import type { Subpage } from '@/types/navigation';
 
-const AdvancedConcepts: Subpage = {
-  name: 'Advanced Concepts',
+const Concepts: Subpage = {
+  name: 'Concepts',
   subpages: [
     {
       name: 'Control Directives & Loops',
@@ -12,14 +12,10 @@ const AdvancedConcepts: Subpage = {
       path: '/css/tools/preprocessors/sass/advanced/operators-calculations',
     },
     {
-      name: 'Partials & Imports',
-      path: '/css/tools/preprocessors/sass/advanced/partials-imports',
-    },
-    {
       name: 'Extend & Placeholder',
       path: '/css/tools/preprocessors/sass/advanced/extend-placeholder',
     },
   ],
 };
 
-export default AdvancedConcepts;
+export default Concepts;

@@ -4,8 +4,8 @@ const Storage: Subpage = {
   name: "Storage",
   subpages: [
     {
-      name: "Overview",
-      path: "/firebase/basics/storage/overview",
+      name: "Introduction",
+      path: "/firebase/basics/storage/introduction",
     },
     {
       name: "Uploading & Downloading Files",

@@ -4,6 +4,7 @@ import Basics from '@/Navigation/Individual/Granularized/BackEnd/Databases/Mongo
 import Intermediate from '@/Navigation/Individual/Granularized/BackEnd/Databases/MongoDB/Intermediate';
 import Advanced from '@/Navigation/Individual/Granularized/BackEnd/Databases/MongoDB/Advanced';
 import Tools from '@/Navigation/Individual/Granularized/BackEnd/Databases/MongoDB/Tools';
+import Testing from '@/Navigation/Individual/Granularized/BackEnd/Databases/MongoDB/Testing';
 
 const MongoDB: Subpage = {
   name: 'MongoDB',
@@ -11,7 +12,8 @@ const MongoDB: Subpage = {
     Basics,
     Intermediate,
     Advanced,
-    Tools
+    Tools,
+    Testing
   ]
 };
 

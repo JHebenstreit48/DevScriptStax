@@ -4,8 +4,8 @@ const Aggregation: Subpage = {
   name: 'Aggregation',
   subpages: [
     {
-      name: 'Overview',
-      path: '/mongodb/intermediate/aggregation/overview',
+      name: 'Introduction',
+      path: '/mongodb/intermediate/aggregation/introduction',
     },
     {
       name: 'Pipelines',
@@ -17,7 +17,7 @@ const Aggregation: Subpage = {
     },
     {
       name: 'Optimization',
-      path: '/mongodb/intermediate/aggregation/performance',
+      path: '/mongodb/intermediate/aggregation/optimization',
     },
   ],
 };

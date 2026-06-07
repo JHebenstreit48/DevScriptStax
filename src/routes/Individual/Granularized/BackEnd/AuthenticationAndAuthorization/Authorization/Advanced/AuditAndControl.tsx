@@ -6,11 +6,11 @@ const FineGrainedControl = lazy(() => import('@/Pages/MainTabs/BackEnd/Authentic
 
 const AuditAndControl: RouteObject[] = [
   {
-    path: '/authz/advanced/audit/logging',
+    path: '/authorization/advanced/audit/logging',
     element: <AccessLogging />,
   },
   {
-    path: '/authz/advanced/audit/fine-grained',
+    path: '/authorization/advanced/audit/fine-grained',
     element: <FineGrainedControl />,
   },
 ];
