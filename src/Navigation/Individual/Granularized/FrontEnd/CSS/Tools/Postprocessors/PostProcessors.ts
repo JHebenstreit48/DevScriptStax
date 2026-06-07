@@ -1,17 +1,15 @@
 import type { Subpage } from '@/types/navigation';
 
-import Basics from '@/Navigation/Individual/Granularized/FrontEnd/CSS/Tools/Postprocessors/General/Basics';
-import PostCSS from '@/Navigation/Individual/Granularized/FrontEnd/CSS/Tools/Postprocessors/PostAndLightning/PostCSS';
-import LightningCSS from '@/Navigation/Individual/Granularized/FrontEnd/CSS/Tools/Postprocessors/PostAndLightning/LightningCSS';
-import Advanced from '@/Navigation/Individual/Granularized/FrontEnd/CSS/Tools/Postprocessors/General/Advanced';
+import Foundations from '@/Navigation/Individual/Granularized/FrontEnd/CSS/Tools/Postprocessors/Combined/Foundations';
+import LightningCSS from '@/Navigation/Individual/Granularized/FrontEnd/CSS/Tools/Postprocessors/Combined/LightningCSS';
+import PostCSS from '@/Navigation/Individual/Granularized/FrontEnd/CSS/Tools/Postprocessors/Combined/PostCSS';
 
 const Postprocessors: Subpage = {
     name: "Postprocessors",
     subpages: [
-        Basics,
+        Foundations,
         PostCSS,
         LightningCSS,
-        Advanced
     ]
 };
 

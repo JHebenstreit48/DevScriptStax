@@ -4,8 +4,8 @@ const Mongoose: Subpage = {
   name: 'Mongoose',
   subpages: [
     {
-        name: 'Overview',
-        path: '/mongodb/basics/mongoose/overview'
+        name: 'Introduction',
+        path: '/mongodb/basics/mongoose/introduction'
     },
     {
         name: 'Schemas & Models',
