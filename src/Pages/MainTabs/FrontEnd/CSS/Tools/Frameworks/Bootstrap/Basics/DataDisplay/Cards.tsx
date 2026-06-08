@@ -3,18 +3,18 @@ import Header from '@/Components/Shared/Header/Header';
 import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
-const ImagesAndFigures = () => {
-  const markdownFilePath = 'FrontEnd/CSS/Tools/Frameworks/Bootstrap/Basics/TypographyAndContent/ImagesAndFigures';
+const Cards = () => {
+  const markdownFilePath = 'FrontEnd/CSS/Tools/Frameworks/Bootstrap/Basics/DataDisplay/Cards';
 
   return (
     <>
       <PageLayout>
         <Header />
-        <PageTitle title="CSS Frameworks - Bootstrap Utilities - Images and Figures" />
+        <PageTitle title="Cards" />
         <Notes filePath={markdownFilePath} />
       </PageLayout>
     </>
   );
 };
 
-export default ImagesAndFigures;
+export default Cards;
