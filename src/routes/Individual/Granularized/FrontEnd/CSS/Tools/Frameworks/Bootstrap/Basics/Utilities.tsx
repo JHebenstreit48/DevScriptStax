@@ -2,7 +2,8 @@ import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
 const SpacingAndSizing = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Frameworks/Bootstrap/Basics/Utilities/SpacingAndSizing'));
-const DisplayAndVisibility = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Frameworks/Bootstrap/Basics/Utilities/DisplayAndVisibility'));
+const ColorsAndDisplay = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Frameworks/Bootstrap/Basics/Utilities/ColorsAndDisplay'));
+const Buttons = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Frameworks/Bootstrap/Basics/Utilities/Buttons'));
 
 const Utilities: RouteObject[] = [
   {
@@ -10,9 +11,13 @@ const Utilities: RouteObject[] = [
     element: <SpacingAndSizing />,
   },
   {
-    path: '/frameworks/bootstrap/basics/utilities/display-and-visibility',
-    element: <DisplayAndVisibility />,
+    path: '/frameworks/bootstrap/basics/utilities/colors-and-display',
+    element: <ColorsAndDisplay />,
   },
+  {
+    path: '/frameworks/bootstrap/basics/utilities/buttons',
+    element: <Buttons />
+  }
 ];
 
 export default Utilities;

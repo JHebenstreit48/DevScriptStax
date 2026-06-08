@@ -3,8 +3,8 @@ import Header from '@/Components/Shared/Header/Header';
 import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
-const Utilities = () => {
-  const markdownFilePath = 'FrontEnd/CSS/Frameworks/GettingStarted/BootstrapUtilities';
+const SpacingAndSizing = () => {
+  const markdownFilePath = 'FrontEnd/CSS/Tools/Frameworks/Bootstrap/Basics/Utilities/SpacingAndSizing';
 
   return (
     <>
@@ -17,4 +17,4 @@ const Utilities = () => {
   );
 };
 
-export default Utilities;
+export default SpacingAndSizing;

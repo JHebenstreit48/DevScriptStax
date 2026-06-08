@@ -3,18 +3,18 @@ import Header from '@/Components/Shared/Header/Header';
 import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
-const BreadcrumbsAndPagination = () => {
-  const markdownFilePath = 'FrontEnd/CSS/Tools/Frameworks/Bootstrap/Basics/Components/Navigation/BreadcrumbsAndPagination';
+const AlertsAndBadges = () => {
+  const markdownFilePath = 'FrontEnd/CSS/Tools/Frameworks/Bootstrap/Basics/Feedback/AlertsAndBadges';
 
   return (
     <>
       <PageLayout>
         <Header />
-        <PageTitle title="Breadcrumbs & Pagination" />
+        <PageTitle title="Alerts & Badges" />
         <Notes filePath={markdownFilePath} />
       </PageLayout>
     </>
   );
 };
 
-export default BreadcrumbsAndPagination;
+export default AlertsAndBadges;

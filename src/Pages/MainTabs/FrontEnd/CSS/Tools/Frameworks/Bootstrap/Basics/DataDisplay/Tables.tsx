@@ -3,18 +3,18 @@ import Header from '@/Components/Shared/Header/Header';
 import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
-const Modals = () => {
-  const markdownFilePath = 'FrontEnd/CSS/Tools/Frameworks/Bootstrap/Basics/Components/Overlays/Modals';
+const Tables = () => {
+  const markdownFilePath = 'FrontEnd/CSS/Tools/Frameworks/Bootstrap/Basics/DataDisplay/Tables';
 
   return (
     <>
       <PageLayout>
         <Header />
-        <PageTitle title="Modals" />
+        <PageTitle title="Tables" />
         <Notes filePath={markdownFilePath} />
       </PageLayout>
     </>
   );
 };
 
-export default Modals;
+export default Tables;

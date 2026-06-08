@@ -4,14 +4,20 @@ import Fundamentals from "@/routes/Individual/Granularized/FrontEnd/CSS/Tools/Fr
 import Layout from "@/routes/Individual/Granularized/FrontEnd/CSS/Tools/Frameworks/Bootstrap/Basics/Layout";
 import Utilities from "@/routes/Individual/Granularized/FrontEnd/CSS/Tools/Frameworks/Bootstrap/Basics/Utilities";
 import TypographyAndContent from "@/routes/Individual/Granularized/FrontEnd/CSS/Tools/Frameworks/Bootstrap/Basics/TypographyAndContent";
-import Components from "@/routes/Individual/Granularized/FrontEnd/CSS/Tools/Frameworks/Bootstrap/Basics/Components";
+import Navigation from "@/routes/Individual/Granularized/FrontEnd/CSS/Tools/Frameworks/Bootstrap/Basics/Navigation";
+import Overlays from "@/routes/Individual/Granularized/FrontEnd/CSS/Tools/Frameworks/Bootstrap/Basics/Overlays";
+import DataDisplay from "@/routes/Individual/Granularized/FrontEnd/CSS/Tools/Frameworks/Bootstrap/Basics/DataDisplay";
+import Feedback from "@/routes/Individual/Granularized/FrontEnd/CSS/Tools/Frameworks/Bootstrap/Basics/Feedback";
 
 const Basics: RouteObject[] = [
   ...Fundamentals,
   ...Layout,
   ...Utilities,
   ...TypographyAndContent,
-  ...Components,
+  ...Navigation,
+  ...Overlays,
+  ...DataDisplay,
+  ...Feedback
 ];
 
 export default Basics;

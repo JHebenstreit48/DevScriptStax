@@ -4,13 +4,13 @@ import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const Typography = () => {
-  const markdownFilePath = 'FrontEnd/CSS/Frameworks/GettingStarted/BootstrapTypography';
+  const markdownFilePath = 'FrontEnd/CSS/Tools/Frameworks/Bootstrap/Basics/TypographyAndContent/Typography';
 
   return (
     <>
       <PageLayout>
         <Header />
-        <PageTitle title="CSS Frameworks - Bootstrap Typography" />
+        <PageTitle title="CSS Frameworks - Bootstrap Utilities - Typography" />
         <Notes filePath={markdownFilePath} />
       </PageLayout>
     </>

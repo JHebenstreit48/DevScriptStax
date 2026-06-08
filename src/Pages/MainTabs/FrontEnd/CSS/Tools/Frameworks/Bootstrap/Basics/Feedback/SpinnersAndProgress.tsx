@@ -3,18 +3,18 @@ import Header from '@/Components/Shared/Header/Header';
 import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
-const DropdownsAndTooltipsAPI = () => {
-  const markdownFilePath = 'FrontEnd/CSS/Tools/Frameworks/Bootstrap/Advanced/Components/Overlays/DropdownsAndTooltipsAPI';
+const SpinnersAndProgress = () => {
+  const markdownFilePath = 'FrontEnd/CSS/Tools/Frameworks/Bootstrap/Basics/Feedback/SpinnersAndProgress';
 
   return (
     <>
       <PageLayout>
         <Header />
-        <PageTitle title="Dropdowns & Tooltips API" />
+        <PageTitle title="Spinners & Progress" />
         <Notes filePath={markdownFilePath} />
       </PageLayout>
     </>
   );
 };
 
-export default DropdownsAndTooltipsAPI;
+export default SpinnersAndProgress;
