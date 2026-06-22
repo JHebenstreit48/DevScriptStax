@@ -9,7 +9,7 @@ const OAuthScopes = lazy(() => import('@/Pages/MainTabs/BackEnd/AuthenticateAndA
 
 const Fundamentals: RouteObject[] = [
   {
-    path: '/authorization/basics/fundamentals/intro',
+    path: '/authorization/basics/fundamentals/introduction',
     element: <Introduction />,
   },
   {

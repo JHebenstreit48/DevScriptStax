@@ -9,7 +9,7 @@ const PasswordStorage = lazy(() => import('@/Pages/MainTabs/BackEnd/Authenticate
 
 const Fundamentals: RouteObject[] = [
   {
-    path: '/authentication/basics/fundamentals/intro',
+    path: '/authentication/basics/fundamentals/introduction',
     element: <Introduction />,
   },
   {
@@ -25,7 +25,7 @@ const Fundamentals: RouteObject[] = [
     element: <MFA />,
   },
   {
-    path: '/authentication/basics/fundamentals/passwords',
+    path: '/authentication/basics/fundamentals/password-storage',
     element: <PasswordStorage />,
   },
 ];

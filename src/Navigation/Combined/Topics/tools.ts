@@ -4,7 +4,7 @@ import API from '@/Navigation/Individual/Topics/Tools/API';
 import CICD from '@/Navigation/Individual/Topics/Tools/CICD';
 import CodeQuality from '@/Navigation/Individual/Topics/Tools/CodeQuality';
 import Containerization from '@/Navigation/Individual/Topics/Tools/Containerization';
-// import DevTools from '@/Navigation/Individual/Topics/Tools/DevTools';
+import DevTools from '@/Navigation/Individual/Topics/Tools/DevTools';
 import Editors from '@/Navigation/Individual/Topics/Tools/Editors';
 import EnvVariables from '@/Navigation/Individual/Topics/Tools/EnvVariables';
 import PackageAndBundle from '@/Navigation/Individual/Topics/Tools/PackageAndBundle';
@@ -17,7 +17,7 @@ const tools: Subpage = {
     CICD,
     CodeQuality,
     Containerization,
-    // DevTools,
+    DevTools,
     Editors,
     EnvVariables,
     PackageAndBundle,

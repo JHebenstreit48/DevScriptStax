@@ -8,7 +8,7 @@ const Basics: Subpage = {
       subpages: [
         {
           name: 'Introduction',
-          path: '/authentication/basics/fundamentals/intro',
+          path: '/authentication/basics/fundamentals/introduction',
         },
         {
           name: 'Session vs Token',
@@ -24,7 +24,7 @@ const Basics: Subpage = {
         },
         {
           name: 'Password Storage',
-          path: '/authentication/basics/fundamentals/passwords',
+          path: '/authentication/basics/fundamentals/password-storage',
         },
       ],
     },
