@@ -1,7 +1,7 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const IntroductionToCircleCI = lazy(() => import('@/Pages/MainTabs/Tools/CICD/CircleCI/Basics/Fundamentals/IntroductionToCircleCI'));
+const IntroductionToCircleCI = lazy(() => import('@/Pages/MainTabs/Tools/CICD/CircleCI/Basics/Fundamentals/Introduction'));
 const KeyConcepts = lazy(() => import('@/Pages/MainTabs/Tools/CICD/CircleCI/Basics/Fundamentals/KeyConcepts'));
 
 const Fundamentals: RouteObject[] = [

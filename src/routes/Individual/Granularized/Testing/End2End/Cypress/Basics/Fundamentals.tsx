@@ -7,15 +7,15 @@ const RunningTestsAndModes = lazy(() => import('@/Pages/MainTabs/Testing/End2End
 
 const Fundamentals: RouteObject[] = [
   {
-    path: '/testing/e2e/cypress/basics/fundamentals/introduction',
+    path: '/e2e/cypress/basics/fundamentals/introduction',
     element: <Introduction />,
   },
   {
-    path: '/testing/e2e/cypress/basics/fundamentals/setup',
+    path: '/e2e/cypress/basics/fundamentals/setup',
     element: <Setup />,
   },
   {
-    path: '/testing/e2e/cypress/basics/fundamentals/first-test',
+    path: '/e2e/cypress/basics/fundamentals/first-test',
     element: <RunningTestsAndModes />,
   }
 ];

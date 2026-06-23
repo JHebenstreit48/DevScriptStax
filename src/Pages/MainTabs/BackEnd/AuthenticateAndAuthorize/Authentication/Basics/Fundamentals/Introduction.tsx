@@ -4,7 +4,7 @@ import PageTitle from '@/Components/PageComponents/PageTitle'
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const Introduction = () => {
-  const markdownFilePath = 'BackEndNotes/AuthenAndAuthorNotes/AuthenticationNotes/Basics/Fundamentals/Introduction';
+  const markdownFilePath = 'BackEnd/AuthenticationAndAuthorization/Authentication/Basics/Fundamentals/Introduction';
 
   return (
     <>

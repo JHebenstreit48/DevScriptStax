@@ -5,23 +5,23 @@ const Syntax: Subpage = {
   subpages: [
     {
       name: 'Test Block Structure',
-      path: '/testing/e2e/cypress/syntax/test-blocks',
+      path: '/e2e/cypress/basics/syntax/test-blocks',
     },
     {
       name: 'Selector Strategies',
-      path: '/testing/e2e/cypress/syntax/selector-strategies',
+      path: '/e2e/cypress/basics/syntax/selector-strategies',
+    },
+    {
+      name: 'Commands & Querying',
+      path: '/e2e/cypress/basics/syntax/commands-querying',
     },
     {
       name: 'Assertions',
-      path: '/testing/e2e/cypress/syntax/assertions',
-    },
-    {
-      name: 'Commands & Chaining',
-      path: '/testing/e2e/cypress/syntax/commands-chaining',
+      path: '/e2e/cypress/basics/syntax/assertions',
     },
     {
       name: 'Hooks & Lifecycle',
-      path: '/testing/e2e/cypress/syntax/hooks-lifecycle',
+      path: '/e2e/cypress/basics/syntax/hooks-lifecycle',
     },
   ],
 };

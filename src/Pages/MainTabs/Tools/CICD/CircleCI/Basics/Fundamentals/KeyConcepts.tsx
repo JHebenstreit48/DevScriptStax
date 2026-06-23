@@ -4,7 +4,7 @@ import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
 const KeyConcepts = () => {
-  const markdownFilePath = 'Tools/CICDTools/CircleCI/Basics/Fundamentals/KeyConcepts';
+  const markdownFilePath = 'Tools/CICD/CircleCI/Basics/Fundamentals/Concepts';
 
   return (
     <>
