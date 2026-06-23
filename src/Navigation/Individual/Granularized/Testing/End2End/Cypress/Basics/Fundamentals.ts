@@ -5,15 +5,15 @@ const Fundamentals: Subpage = {
   subpages: [
     {
       name: 'Introduction',
-      path: '/testing/e2e/cypress/basics/fundamentals/introduction',
+      path: '/e2e/cypress/basics/fundamentals/introduction',
     },
     {
       name: 'Setup & Installation',
-      path: '/testing/e2e/cypress/basics/fundamentals/setup',
+      path: '/e2e/cypress/basics/fundamentals/setup',
     },
     {
-      name: 'Running Tests & Modes',
-      path: '/testing/e2e/cypress/basics/fundamentals/first-test',
+      name: 'Writing Your First Test',
+      path: '/e2e/cypress/basics/fundamentals/first-test',
     },
   ],
 };

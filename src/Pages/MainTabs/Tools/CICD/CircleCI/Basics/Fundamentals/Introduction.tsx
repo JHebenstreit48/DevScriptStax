@@ -3,18 +3,18 @@ import Header from '@/Components/Shared/Header/Header';
 import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
-const KeyConcepts = () => {
-  const markdownFilePath = 'Tools/CICD/CircleCI/Basics/Fundamentals/Concepts';
+const IntroductionToCircleCI = () => {
+  const markdownFilePath = 'Tools/CICD/CircleCI/Basics/Fundamentals/Introduction';
 
   return (
     <>
       <PageLayout>
         <Header />
-        <PageTitle title="Key Concepts" />
+        <PageTitle title="Introduction to CircleCI" />
         <Notes filePath={markdownFilePath} />
       </PageLayout>
     </>
   );
 };
 
-export default KeyConcepts;
+export default IntroductionToCircleCI;

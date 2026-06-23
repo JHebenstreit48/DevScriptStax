@@ -12,6 +12,7 @@ import testing from '@/routes/Sections/testing';
 import tools from '@/routes/Sections/tools';
 import graphQLAndApollo from '@/routes/Sections/graphQLAndApollo';
 import stacks from '@/routes/Sections/stacks';
+import glossary from '@/routes/Sections/glossary';
 
 
 export const router = createBrowserRouter([
@@ -36,6 +37,7 @@ export const router = createBrowserRouter([
       ...tools,
       ...graphQLAndApollo,
       ...stacks,
+      ...glossary,
     ],
   },
 ]);
