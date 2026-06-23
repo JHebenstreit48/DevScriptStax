@@ -8,7 +8,7 @@ const AuthorizationBasics: Subpage = {
       subpages: [
         {
           name: 'Introduction',
-          path: '/authorization/basics/fundamentals/intro'
+          path: '/authorization/basics/fundamentals/introduction'
         },
         {
           name: 'RBAC',
