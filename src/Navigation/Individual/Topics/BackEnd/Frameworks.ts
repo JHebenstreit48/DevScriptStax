@@ -7,7 +7,7 @@ import Django from '@/Navigation/Individual/Topics/BackEnd/Frameworks/Django';
 import Flask from '@/Navigation/Individual/Topics/BackEnd/Frameworks/Flask';
 import RubyOnRails from '@/Navigation/Individual/Topics/BackEnd/Frameworks/RubyOnRails';
 import Spring from '@/Navigation/Individual/Topics/BackEnd/Frameworks/Spring';
-// import WebSockets from '@/Navigation/Individual/Topics/BackEnd/Frameworks/WebSockets';
+import WebSockets from '@/Navigation/Individual/Topics/BackEnd/Frameworks/WebSockets';
 
 const Frameworks: Subpage = {
     name: 'Frameworks',
@@ -19,7 +19,7 @@ const Frameworks: Subpage = {
         Flask,
         RubyOnRails,
         Spring,
-        // WebSockets
+        WebSockets
     ]
 };
 
