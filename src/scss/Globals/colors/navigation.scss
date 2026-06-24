@@ -1,4 +1,4 @@
-@use './shared' as *;
+@use './core' as *;
 
 $nav-level-1-brand: #1e90ff;
 
@@ -23,7 +23,5 @@ $nav-glass-border: $white-a10;
 $nav-glass-rim: $cyan-a16;
 $nav-glass-sheen-top: rgba(0, 0, 0, 0.83);
 $nav-glass-sheen-bot: rgba(0, 0, 0, 0.88);
-$nav-glass-blur: 18px;
 
-/* PageLayout tooltip */
 $tooltip-border-cyan: $cyan-a20;

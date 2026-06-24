@@ -1,6 +1,5 @@
-@use './devices' as *;
+@use './breakpoints' as *;
 
-/* ===== Shorthand mixins (match your style) ===== */
 @mixin phone-portrait {
   @media only screen and (max-width: $cellphone-portrait) and (orientation: portrait) { @content; }
 }
@@ -22,7 +21,6 @@
 @mixin desktop-1440p-up { @media only screen and (min-width: $desktop-1440p) { @content; } }
 @mixin desktop-4k-up    { @media only screen and (min-width: $desktop-4k)    { @content; } }
 
-/* Generic helpers */
-@mixin maxw($w)   { @media only screen and (max-width: #{$w})  { @content; } }
-@mixin minw($w)   { @media only screen and (min-width: #{$w})  { @content; } }
+@mixin maxw($w)       { @media only screen and (max-width: #{$w})  { @content; } }
+@mixin minw($w)       { @media only screen and (min-width: #{$w})  { @content; } }
 @mixin between($a,$b) { @media only screen and (min-width: #{$a}) and (max-width: #{$b}) { @content; } }

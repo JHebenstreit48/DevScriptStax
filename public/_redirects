@@ -1,1 +1,3 @@
-/*  /index.html  200
+/og/*       /og/:splat      200
+/Favicon/*  /Favicon/:splat 200
+/*          /index.html     200
