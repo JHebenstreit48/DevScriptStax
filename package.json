@@ -13,13 +13,10 @@
     "cypress:run": "cypress run",
     "gen:report": "tsx -r tsconfig-paths/register src/scripts/cli/report.ts",
     "gen:all": "tsx -r tsconfig-paths/register src/scripts/cli/gen-all.ts",
-
     "gen:pages": "tsx -r tsconfig-paths/register src/scripts/pages/gen-pages.ts",
     "gen:pages:all": "tsx -r tsconfig-paths/register src/scripts/pages/gen-pages.ts",
-
     "gen:routes": "tsx -r tsconfig-paths/register src/scripts/routes/gen-routes.ts",
     "gen:routes:all": "tsx -r tsconfig-paths/register src/scripts/routes/gen-routes.ts",
-    
     "gen:stitch": "tsx -r tsconfig-paths/register src/scripts/routes/gen-stitch.ts",
     "gen:stitch:all": "tsx -r tsconfig-paths/register src/scripts/routes/gen-stitch.ts"
   },
@@ -67,6 +64,7 @@
     "rimraf": "^6.0.1",
     "rollup-plugin-visualizer": "^5.14.0",
     "sass": "^1.89.2",
+    "sharp": "^0.35.2",
     "tsconfig-paths": "^4.2.0",
     "tsx": "^4.21.0",
     "typescript": "^5.5.3",

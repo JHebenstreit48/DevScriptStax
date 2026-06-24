@@ -1,7 +1,6 @@
 @use 'sass:color';
 @use '@scss/Globals/index' as *;
 
-/* ===== Theme tokens (local) ===== */
 $glass-border: rgba(255, 255, 255, 0.18);
 $rim-cyan: rgba(0, 255, 255, 0.18);
 
@@ -15,9 +14,6 @@ $radius-md: 12px;
 $max-wrap: clamp(720px, 70vw, container(max));
 $pad-wrap: clamp(20px, 3.2vw, 36px);
 
-/* =============================
-   Page shell
-   ============================= */
 .homePage {
   display: flex;
   flex-direction: column;
@@ -36,20 +32,16 @@ $pad-wrap: clamp(20px, 3.2vw, 36px);
   }
 }
 
-/* =============================
-   Site Info (Glass Card)
-   ============================= */
 .siteInfo {
-  /* quick knobs for translucency/blur */
-  --glass-blur: 26px; /* 22–30px */
+  --glass-blur: 26px;
   --frost-top: 0.06;
   --frost-bot: 0.02;
-  --tint-top: 0.14; /* brand tint */
+  --tint-top: 0.14;
   --tint-bot: 0.06;
 
   width: min(95rem, 100%);
   max-width: $max-wrap;
-  margin: 2.5rem auto 0 auto;
+  margin: 4rem auto 2rem auto;
   padding: $pad-wrap;
   color: $text-main;
   text-align: left;
@@ -58,7 +50,6 @@ $pad-wrap: clamp(20px, 3.2vw, 36px);
   isolation: isolate;
   box-sizing: border-box;
 
-  /* frosted + tinted, but lighter so background shows through */
   background: linear-gradient(180deg, rgba(255, 255, 255, var(--frost-top)), rgba(255, 255, 255, var(--frost-bot))),
     linear-gradient(180deg, rgba(18, 32, 112, var(--tint-top)), rgba(12, 22, 76, var(--tint-bot)));
   border: 1px solid $glass-border;
@@ -71,7 +62,6 @@ $pad-wrap: clamp(20px, 3.2vw, 36px);
   box-shadow: 0 28px 80px rgba(0, 0, 0, 0.55), 0 0 26px rgba(0, 255, 255, 0.14), inset 0 1px 0 rgba(255, 255, 255, 0.3),
     inset 0 -1px 0 rgba(255, 255, 255, 0.05);
 
-  /* subtle sheen */
   &::after {
     content: '';
     position: absolute;
@@ -83,7 +73,6 @@ $pad-wrap: clamp(20px, 3.2vw, 36px);
     mix-blend-mode: screen;
   }
 
-  /* ultra-light texture (feel free to remove) */
   &::before {
     content: '';
     position: absolute;
@@ -110,19 +99,14 @@ $pad-wrap: clamp(20px, 3.2vw, 36px);
   }
 
   @include maxw($cellphone-portrait) {
-    margin-top: 6rem;
-    width: 21rem;
-    width: clamp(18rem, 92vw, 23rem); /* ✅ never wider than 21rem; shrinks on tiny phones */
-    padding: 16px; /* ✅ reduce padding for small screens */
-    margin-left: auto; /* ✅ true centering */
-    margin-right: auto;
+    margin: 2rem auto 2rem auto;
+    width: clamp(18rem, 92vw, 23rem);
+    padding: 16px;
   }
 
   @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
     background: linear-gradient(180deg, rgba(12, 22, 76, 0.28), rgba(12, 22, 76, 0.14));
   }
-
-  /* ---------- inner content ---------- */
 
   .siteInfoContent {
     max-width: $max-wrap;
@@ -189,18 +173,15 @@ $pad-wrap: clamp(20px, 3.2vw, 36px);
     box-shadow: inset 0 0 18px rgba(0, 0, 0, 0.25);
     text-align: left;
 
-    /* layout scaffolding */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    box-sizing: border-box; /* ✅ padding won’t change width */
+    box-sizing: border-box;
 
-    /* desktop/tablet: follow parent width naturally */
     width: 100%;
     max-width: 100%;
 
     @include maxw($cellphone-portrait) {
-      /* ✅ center the block inside .siteInfo and cap its width */
       width: clamp(18rem, 92vw, 21rem);
       margin-left: auto;
       margin-right: auto;
@@ -276,9 +257,6 @@ $pad-wrap: clamp(20px, 3.2vw, 36px);
   }
 }
 
-/* =============================
-   Home QuickDash (Most/Recent)
-   ============================= */
 .quickDash {
   margin-top: clamp(16px, 2vw, 24px);
   display: grid;
@@ -335,9 +313,6 @@ $pad-wrap: clamp(20px, 3.2vw, 36px);
   }
 }
 
-/* =============================
-   Reduced motion
-   ============================= */
 @media (prefers-reduced-motion: reduce) {
   .siteInfo .projectLinks a::after {
     transition: none;

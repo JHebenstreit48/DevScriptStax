@@ -1,0 +1,24 @@
+@use '@scss/Globals/breakpoints/index' as *;
+@use './core' as *;
+
+@mixin locked-gradient($mid, $end) {
+  background: radial-gradient(ellipse 115% 100% at 50% 70%, $mid 5%, $end 80%);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+
+  @supports not (background: radial-gradient(ellipse at center, $end)) {
+    background: -webkit-radial-gradient(ellipse at 50% 70%, $mid 5%, $end 80%);
+    background: -moz-radial-gradient(ellipse at 50% 70%, $mid 5%, $end 80%);
+    background: -o-radial-gradient(ellipse at 50% 70%, $mid 5%, $end 80%);
+    background: -ms-radial-gradient(ellipse at 50% 70%, $mid 5%, $end 82%);
+  }
+
+  @include maxw($cellphone-portrait) {
+    background: radial-gradient(ellipse 120% 110% at 50% 72%, $mid 6%, $end 82%);
+  }
+
+  @media (hover: none) and (pointer: coarse) {
+    background: radial-gradient(ellipse 120% 110% at 50% 72%, $mid 6%, $end 82%);
+  }
+}

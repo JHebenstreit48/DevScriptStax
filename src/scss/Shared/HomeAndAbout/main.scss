@@ -1,0 +1,21 @@
+@use 'sass:color';
+@use '@scss/Globals/index' as *;
+
+.homePage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+
+  .headerVeil {
+    position: sticky;
+    top: var(--header-height, 70px);
+    height: 56px;
+    width: 100%;
+    pointer-events: none;
+    z-index: 1;
+    background: linear-gradient(180deg, rgba(8, 8, 20, 0.55), transparent);
+  }
+}
