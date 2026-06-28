@@ -33,7 +33,7 @@
   @include maxw($cellphone-portrait) {
     display: grid;
     grid-template-columns: 3.25rem 1fr 3.25rem;
-    grid-template-rows: $header-height; // explicit row height locks everything in
+    grid-template-rows: $header-height;
     align-items: center;
     padding: 0 0.75rem;
     background-color: rgba(6, 6, 10, 0.98);
@@ -54,19 +54,49 @@
 
 .HeaderLeft {
   display: flex;
-  padding-left: 2rem;
+  align-items: center;
+  padding-left: 1rem;
 
   @include maxw($cellphone-portrait) {
     grid-column: 2;
     grid-row: 1;
     justify-content: center;
     align-items: center;
-    padding-left: 0.8rem;
+    padding-left: 0rem;
     height: $header-height;
   }
 
   @include between($large-laptop-min, $large-laptop-max) {
     padding-left: 1rem;
+  }
+
+  .SiteLogo {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    margin-right: 0.75rem;
+    text-decoration: none;
+
+    @include maxw($cellphone-portrait) {
+      margin-right: 0.4rem;
+    }
+
+    .SiteLogoImg {
+      width: 42px;
+      height: 42px;
+      object-fit: contain;
+      display: block;
+
+      @include maxw($cellphone-portrait) {
+        width: 28px;
+        height: 28px;
+      }
+
+      @include between($large-laptop-min, $large-laptop-max) {
+        width: 36px;
+        height: 36px;
+      }
+    }
   }
 }
 
@@ -79,10 +109,10 @@
 
   @include maxw($cellphone-portrait) {
     grid-column: 1;
-    grid-row: 1; // explicitly in row 1 — prevents dropping below
+    grid-row: 1;
     justify-content: flex-start;
     align-items: center;
-    height: $header-height; // match header height so it stays inside
+    height: $header-height;
     width: 100%;
     padding: 0;
     gap: 0;
