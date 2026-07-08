@@ -1,5 +1,5 @@
 @use "sass:color";
-@use "@scss/Globals/index" as *;
+@use "@scss/globals/index" as *;
 
 /* ===== Local tokens (move to Globals later if desired) ===== */
 $glass-border: rgba(255, 255, 255, 0.18);

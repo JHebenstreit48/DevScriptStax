@@ -4,11 +4,11 @@ import Footer from '@/Components/Shared/Footer';
 import RouteTracker from '@/Components/Shared/analytics/RouteTracker';
 import BackToTopGate from '@/Components/Shared/BackToTop/Gate';
 
-import '@/scss/Page/Page.scss';
-import '@/scss/Shared/Header/index.scss';
-import '@/scss/Shared/Footer.scss';
-import '@/scss/Navigation/index.scss';
-import '@/scss/Shared/Error.scss';
+import '@/scss/page//Page.scss';
+import '@/scss/shared/Header/index.scss';
+import '@/scss/shared/Footer.scss';
+import '@/scss/navigation/index.scss';
+import '@/scss/shared/Error.scss';
 
 function RouteFallback() {
   return <div className="routeFallback">Loading…</div>;

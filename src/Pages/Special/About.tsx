@@ -1,6 +1,6 @@
 import Header from "@/Components/Shared/Header/Header";
 import AboutContent from "@/Components/HomeAndAbout/aboutContent";
-import "@/scss/Shared/HomeAndAbout/index.scss";
+import "@/scss/shared/HomeAndAbout/index.scss";
 
 export default function About() {
   return (
