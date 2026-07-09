@@ -23,7 +23,7 @@ export default defineConfig({
       '@': resolve(__dirname, 'src'),
       '@scripts': resolve(__dirname, 'scripts'), // added — was in tsconfig but missing here
       '@pages': resolve(__dirname, 'src/Pages'),
-      '@components': resolve(__dirname, 'src/Components'),
+      '@components': resolve(__dirname, 'src/components'),
       '@routes': resolve(__dirname, 'src/routes'),
       '@scss': resolve(__dirname, 'src/scss'),
       '@navFull': resolve(__dirname, 'src/navigation/Individual/Topics'),

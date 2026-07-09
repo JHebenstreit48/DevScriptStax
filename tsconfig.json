@@ -12,14 +12,14 @@
       "@/*": ["./src/*"],
       "@scripts/*": ["./scripts/*"],
       "@pages/*": ["./src/Pages/*"],
-      "@components/*": ["./src/Components/*"],
+      "@components/*": ["./src/components/*"],
       "@routes/*": ["./src/routes/*"],
       "@scss/*": ["./src/scss/*"]
     },
     "allowSyntheticDefaultImports": true,
     "resolveJsonModule": true,
     "typeRoots": ["./node_modules/@types"],
-    "types": ["node"]           // ← ADD THIS
+    "types": ["node"]
   },
   "include": ["src"],
   "exclude": ["node_modules", "dist"]
