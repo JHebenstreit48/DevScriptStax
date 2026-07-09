@@ -1,5 +1,5 @@
-import PageLayout from "@/Components/NavigationUI/PageLayout";
-import Notes from "@/Components/PageComponents/Notes/Notes";
+import PageLayout from '@/components/navigationUI/pageLayout';
+import Notes from '@/components/pageComponents/notes/notes';
 
 const ReusableDesign = () => {
   const markdownFilePath =

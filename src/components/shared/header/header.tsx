@@ -1,6 +1,6 @@
-import Navigation from "@/Components/NavigationUI/Navigation";
-import HeaderTitle from "@/Components/Shared/Header/HeaderTitle";
-import { SITE_NAME } from "@/Components/Shared/dynamicSiteName";
+import Navigation from '@/components/navigationUI/navigation';
+import HeaderTitle from '@/components/shared/header/headerTitle';
+import { SITE_NAME } from '@/components/shared/dynamicSiteName';
 import { Link } from "react-router-dom";
 
 export default function Header() {

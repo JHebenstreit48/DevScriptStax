@@ -1,7 +1,7 @@
 import type { Subpage } from '@/types/navigation';
 
-import Basics from "@/Navigation/Individual/Granularized/Tools/CICD/CircleCI/Basics";
-import Advanced from "@/Navigation/Individual/Granularized/Tools/CICD/CircleCI/Advanced";
+import Basics from '@/Navigation/Individual/Granularized/Tools/CICD/CircleCI/Basics';
+import Advanced from '@/Navigation/Individual/Granularized/Tools/CICD/CircleCI/Advanced';
 
 const CircleCI: Subpage = {
   name: "CircleCI",

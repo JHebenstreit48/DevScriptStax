@@ -1,6 +1,6 @@
 import PageLayout from '@components/NavigationUI/PageLayout';
-import PageTitle from '@/Components/PageComponents/PageTitle';
-import Notes from '@/Components/PageComponents/Notes/Notes';
+import PageTitle from '@/components/pageComponents/pageTitle';
+import Notes from '@/components/pageComponents/notes/notes';
 
 const TemplateLiterals = () => {
   const markdownFilePath = 'Languages/JavaScript/Basics/DataTypes/TemplateLiterals';

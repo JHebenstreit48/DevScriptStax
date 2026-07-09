@@ -2,13 +2,13 @@ import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import pages from '@/domain/navigation/mainTabs';
-import type { SearchMatch } from '@/Components/NavigationUI/Search/Utils/types';
+import type { SearchMatch } from '@/components/navigationUI/search/utils/types';
 
-import { getSearchIndex } from '@/Components/NavigationUI/Search/Utils/searchIndex';
+import { getSearchIndex } from '@/components/navigationUI/search/utils/searchIndex';
 
-import SearchIcon from '@/Components/NavigationUI/Search/SearchIcon';
-import SearchModal from '@/Components/NavigationUI/Search/Modal';
-import NavSubpages from '@/Components/NavigationUI/Dropdown/NavSubpages';
+import SearchIcon from '@/components/navigationUI/search/searchIcon';
+import SearchModal from '@/components/navigationUI/search/modal';
+import NavSubpages from '@/components/navigationUI/dropdown/navSubpages';
 
 import { useNavDropdown } from '@/hooks/navigation/useNavDropdown';
 import { useClickOutside } from '@/hooks/ui/useClickOutside';

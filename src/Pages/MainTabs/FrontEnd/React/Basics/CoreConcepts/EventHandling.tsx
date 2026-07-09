@@ -1,6 +1,6 @@
-import PageLayout from '@/Components/NavigationUI/PageLayout';
-import Notes from '@/Components/PageComponents/Notes/Notes';
-import PageTitle from '@/Components/PageComponents/PageTitle';
+import PageLayout from '@/components/navigationUI/pageLayout';
+import Notes from '@/components/pageComponents/notes/notes';
+import PageTitle from '@/components/pageComponents/pageTitle';
 
 const EventHandling = () => {
   const markdownFilePath =

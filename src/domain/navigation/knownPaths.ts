@@ -1,5 +1,5 @@
-import type { Subpage } from "@/types/navigation";
-import pages from "@/domain/navigation/mainTabs";
+import type { Subpage } from '@/types/navigation';
+import pages from '@/domain/navigation/mainTabs';
 
 /** Walk a Subpage tree and collect any defined `path`. */
 function collectPaths(node: Subpage, out: Set<string>) {

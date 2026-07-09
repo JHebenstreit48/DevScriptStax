@@ -1,6 +1,6 @@
-import PageLayout from '@/Components/NavigationUI/PageLayout';
-import PageTitle from '@/Components/PageComponents/PageTitle';
-import Notes from '@/Components/PageComponents/Notes/Notes';
+import PageLayout from '@/components/navigationUI/pageLayout';
+import PageTitle from '@/components/pageComponents/pageTitle';
+import Notes from '@/components/pageComponents/notes/notes';
 
 const ReactConfig = () => {
   const markdownFilePath = 'Tools/CodeQuality/ESLint/Basics/Frameworks/ReactConfig';
@@ -8,7 +8,6 @@ const ReactConfig = () => {
   return (
     <>
       <PageLayout>
-        <Header />
         <PageTitle title="React Config" />
         <Notes filePath={markdownFilePath} />
       </PageLayout>

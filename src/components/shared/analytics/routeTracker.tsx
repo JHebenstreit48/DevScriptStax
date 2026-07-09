@@ -1,5 +1,5 @@
 import { useLocation } from "react-router-dom";
-import { useVisitTracker } from "@/Components/Shared/hooks/useVisitTracker";
+import { useVisitTracker } from '@/components/shared/hooks/useVisitTracker';
 
 export default function RouteTracker() {
   const { pathname } = useLocation();

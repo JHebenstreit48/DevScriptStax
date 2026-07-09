@@ -1,11 +1,11 @@
 import type { Subpage } from '@/types/navigation';
 
-import ChangeDetection from "@/Navigation/Individual/Granularized/FrontEnd/Angular/Advanced/ChangeDetection";
-import Performance from "@/Navigation/Individual/Granularized/FrontEnd/Angular/Advanced/Performance";
-import RxJSAndReactive from "@/Navigation/Individual/Granularized/FrontEnd/Angular/Advanced/RxJSAndReactiveProgram";
-import Animations from "@/Navigation/Individual/Granularized/FrontEnd/Angular/Advanced/Animations";
-import TSIntegration from "@/Navigation/Individual/Granularized/FrontEnd/Angular/Advanced/TSIntegration";
-import Security from "@/Navigation/Individual/Granularized/FrontEnd/Angular/Advanced/Security";
+import ChangeDetection from '@/Navigation/Individual/Granularized/FrontEnd/Angular/Advanced/ChangeDetection';
+import Performance from '@/Navigation/Individual/Granularized/FrontEnd/Angular/Advanced/Performance';
+import RxJSAndReactive from '@/Navigation/Individual/Granularized/FrontEnd/Angular/Advanced/RxJSAndReactiveProgram';
+import Animations from '@/Navigation/Individual/Granularized/FrontEnd/Angular/Advanced/Animations';
+import TSIntegration from '@/Navigation/Individual/Granularized/FrontEnd/Angular/Advanced/TSIntegration';
+import Security from '@/Navigation/Individual/Granularized/FrontEnd/Angular/Advanced/Security';
 
 const Advanced: Subpage = {
   name: "Advanced",

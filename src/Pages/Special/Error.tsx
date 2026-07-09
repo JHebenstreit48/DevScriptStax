@@ -5,7 +5,7 @@ import {
   Link,
 } from "react-router-dom";
 
-import { isKnownPath } from "@/domain/navigation/knownPaths";
+import { isKnownPath } from '@/domain/navigation/knownPaths';
 
 type PageState = "planned" | "not_found" | "unavailable";
 

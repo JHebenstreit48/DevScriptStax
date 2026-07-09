@@ -1,6 +1,6 @@
-import PageLayout from '@/Components/NavigationUI/PageLayout';
-import PageTitle from '@/Components/PageComponents/PageTitle';
-import Notes from '@/Components/PageComponents/Notes/Notes';
+import PageLayout from '@/components/navigationUI/pageLayout';
+import PageTitle from '@/components/pageComponents/pageTitle';
+import Notes from '@/components/pageComponents/notes/notes';
 
 const ProjectInit = () => {
   const markdownFilePath = 'CloudAndDeployment/CloudServices/Provisioning/AWSCDK/Basics/Setup/ProjectInit';

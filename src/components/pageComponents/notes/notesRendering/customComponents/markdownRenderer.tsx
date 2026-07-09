@@ -4,10 +4,10 @@ import rehypeSlug from 'rehype-slug';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import remarkGfm from 'remark-gfm';
 
-import CodeBlock from '@/Components/PageComponents/Notes/NotesRendering/CustomComponents/CodeBlock';
-import LinkRenderer from '@/Components/PageComponents/Notes/NotesRendering/CustomComponents/LinkRenderer';
-import TableWrapper from '@/Components/PageComponents/Notes/NotesRendering/CustomComponents/TableWrapper';
-import IconRenderer from '@/Components/PageComponents/Notes/NotesRendering/CustomComponents/IconRenderer';
+import CodeBlock from '@/components/pageComponents/notes/notesRendering/customComponents/CodeBlock';
+import LinkRenderer from '@/components/pageComponents/notes/notesRendering/customComponents/LinkRenderer';
+import TableWrapper from '@/components/pageComponents/notes/notesRendering/customComponents/TableWrapper';
+import IconRenderer from '@/components/pageComponents/notes/notesRendering/customComponents/IconRenderer';
 import { remarkIconPlugin } from '@/utils/notes/remarkIconPlugin'; // ✅ make sure this is correct
 
 interface RendererProps {

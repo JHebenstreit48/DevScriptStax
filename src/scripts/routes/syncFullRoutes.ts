@@ -24,7 +24,7 @@ function makeFullRoutesFile(args: {
   for (const b of args.buckets) {
     const varName = pascalize(b);
     lines.push(
-      `import ${varName} from "@/routes/Individual/Granularized/${args.sectionFolder}/${args.topicFolder}/${varName}";`
+      `import ${varName} from '@/routes/Individual/Granularized/${args.sectionFolder}/${args.topicFolder}/${varName}';`
     );
   }
 
