@@ -1,0 +1,161 @@
+@use '@scss/globals/index' as *;
+
+.qrPage {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 16px;
+  font-family: 'Inter', sans-serif;
+}
+
+.qrCard {
+  width: 100%;
+  max-width: 380px;
+  background: linear-gradient(160deg, rgba(37, 0, 105, 0.8) 0%, rgba(15, 0, 43, 0.9) 60%, rgba(37, 0, 105, 0.7) 100%);
+  border: 1px solid rgba(0, 209, 255, 0.2);
+  border-radius: 20px;
+  padding: 40px 32px 36px;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(12px);
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.04) inset,
+    0 32px 80px rgba(0, 0, 0, 0.7);
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(0, 209, 255, 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 209, 255, 0.04) 1px, transparent 1px);
+    background-size: 32px 32px;
+    pointer-events: none;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 10%;
+    right: 10%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #00d1ff, #7b2fff, transparent);
+  }
+
+  &__wordmark {
+    font-size: 26px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 4px;
+    letter-spacing: 0.02em;
+  }
+
+  &__accent {
+    color: #00d1ff;
+  }
+
+  &__tagline {
+    font-size: 9px;
+    font-weight: 500;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: #00d1ff;
+    margin-bottom: 32px;
+    opacity: 0.85;
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+  }
+
+  &__frame {
+    padding: 14px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 0 1px rgba(0, 209, 255, 0.3), 0 8px 32px rgba(0, 0, 0, 0.5);
+
+    canvas {
+      display: block;
+      border-radius: 4px;
+    }
+  }
+
+  &__download {
+    display: block;
+    margin: 0 auto 24px;
+    background: transparent;
+    border: 1px solid rgba(0, 209, 255, 0.4);
+    color: #00d1ff;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 8px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s, border-color 0.2s;
+
+    &:hover {
+      background: rgba(0, 209, 255, 0.1);
+      border-color: #00d1ff;
+    }
+  }
+
+  &__divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(0, 209, 255, 0.3), rgba(123, 47, 255, 0.3), transparent);
+    margin-bottom: 24px;
+  }
+
+  &__info {
+    text-align: center;
+  }
+
+  &__name {
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 6px;
+  }
+
+  &__role {
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #00d1ff;
+    margin-bottom: 16px;
+  }
+
+  &__url {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+    letter-spacing: 0.04em;
+  }
+
+  &__hint {
+    margin-top: 28px;
+    text-align: center;
+    font-size: 9.5px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.2);
+  }
+}
+
+.qrCard__back {
+  margin-top: 24px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.3);
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  transition: color 0.2s;
+
+  &:hover {
+    color: #00d1ff;
+  }
+}

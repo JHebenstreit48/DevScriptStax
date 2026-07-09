@@ -1,0 +1,148 @@
+@use 'sass:color';
+@use '@scss/globals' as *;
+
+/* -------- sizing + colors -------- */
+$footer-bg: rgba(0,0,0,.72);
+$footer-top-border: rgba(255,255,255,.08);
+$link: #9bc9ff;
+$link-hover: #cfe3ff;
+
+.siteFooter {
+  font-size: clamp(1rem, 1vw + .9rem, 1.075rem);
+  line-height: 1.4;
+  margin-top: auto;
+  color: white;
+  background: $footer-bg;
+  border-top: 1px solid $footer-top-border;
+
+  a {
+    color: $link;
+    text-decoration: none;
+    transition: color .18s ease;
+
+    &:hover {
+      color: $link-hover;
+      text-decoration: underline;
+    }
+
+    &:focus-visible {
+      outline: 2px solid rgba(0, 209, 255, .7);
+      outline-offset: 2px;
+      border-radius: 6px;
+      text-decoration: none;
+    }
+  }
+}
+
+/* -------- top row -------- */
+.footerInner {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  padding: 1rem 1rem;
+  gap: .75rem;
+}
+
+/* Left side */
+.footerLinks {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+
+  li {
+    display: inline-flex;
+  }
+}
+
+/* Right side (utility links — clean text style) */
+.utilityLinks {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 1.25rem;
+
+  li {
+    display: inline-flex;
+  }
+
+  a {
+    background: transparent;
+    border: none;
+    padding: 0;
+    font-weight: 500;
+  }
+}
+
+/* -------- divider + bottom row -------- */
+.footerMeta {
+  border-top: 1px solid $footer-top-border;
+}
+
+.footerMeta .metaInner {
+  font-size: 1.02rem;
+  opacity: .95;
+  padding: .7rem 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .75rem;
+}
+
+.footerMeta .metaLeft {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+}
+
+.footerMeta .metaRight {
+  opacity: .85;
+  font-size: .98em;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.footerMeta .dot {
+  opacity: .6;
+}
+
+/* -------- responsive -------- */
+@include maxw($cellphone-portrait) {
+  .footerInner {
+    grid-template-columns: 1fr;
+    row-gap: .6rem;
+  }
+
+  .footerLinks {
+    justify-content: center;
+  }
+
+  .utilityLinks {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .footerMeta .metaInner {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: .3rem;
+    font-size: 1rem;
+  }
+
+  .footerMeta .metaLeft {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .footerMeta .metaRight {
+    width: 100%;
+    text-align: center;
+    white-space: normal;
+  }
+}

@@ -1,0 +1,126 @@
+@use '@scss/globals' as *;
+
+/* ---- Wrappers ---- */
+
+.centeredNumberedList {
+  margin: 0 auto 0 1rem;
+  max-width: 50rem; // slightly wider so it doesn't feel too narrow in a 50% card
+
+  ol {
+    margin: 0.75rem 0;
+    padding-left: 1.6rem;
+  }
+
+  li {
+    margin: 0.4rem 0;
+  }
+}
+
+.centeredBullet {
+  margin: 0.5rem auto;
+  max-width: 80ch;
+}
+
+/* ---- Column helpers (apply to UL) ---- */
+
+.fullWidthBullet {
+  column-count: 1;
+}
+
+.twoColumnBullet {
+  column-count: 2;
+  column-gap: 2rem;
+
+  li {
+    break-inside: avoid;
+  }
+
+  @include maxw($cellphone-portrait) {
+    column-count: 1;
+  }
+}
+
+/* ---- Diamond bullet list (apply to UL) ----
+   We use ::before (not ::marker) for consistent emoji spacing across browsers */
+.diamondBullets {
+  margin: 0.75rem 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    position: relative;
+    padding-left: 1.85rem;
+    margin: 0.35rem 0;
+    line-height: 1.55;
+  }
+
+  li::before {
+    content: "🔹";
+    position: absolute;
+    left: 0;
+    top: 0.06em;
+    width: 1.35rem;
+  }
+}
+
+/* Optional tighter version for narrow areas */
+.diamondBulletsTight {
+  li {
+    padding-left: 1.6rem;
+  }
+
+  li::before {
+    width: 1.2rem;
+  }
+}
+
+/* ---- NEW: Nested Hollow Circle Bullets (for lists inside <li>) ----
+   Parent <li> has NO bullet; sub-items use clean empty circle */
+.nestedHollowBullets {
+  list-style: none;
+  margin: 0.25rem 0 0.25rem 1.6rem; /* Slightly less indent for parent */
+  padding: 0;
+
+  li {
+    position: relative;
+    padding-left: 0.5rem; /* Reduced from 1.6rem to shrink gap */
+    margin: 0.2rem 0;
+    line-height: 1.55;
+  }
+
+  li::before {
+    content: "○";
+    position: absolute;
+    left: -1.3rem; /* Match the reduced padding-left */
+    top: 0.06em;
+    width: 1.3rem;
+  }
+}
+
+/* Tighter version of nested hollow bullets */
+.nestedHollowBulletsTight {
+  margin-left: 1.4rem;
+
+  li {
+    padding-left: 1.4rem;
+  }
+
+  li::before {
+    left: -1.4rem;
+    width: 1.2rem;
+  }
+}
+
+/* If you want bullet blocks to go wider for specific long sections */
+.notesWide {
+  max-width: 92ch;
+}
+
+/* Mobile: let blocks breathe and align naturally */
+@include maxw($cellphone-portrait) {
+  .centeredNumberedList,
+  .centeredBullet,
+  .notesWide {
+    max-width: 100%;
+  }
+}
