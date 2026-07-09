@@ -123,7 +123,7 @@ function makeNewSectionFile(args: {
   for (const t of args.topics) {
     const varName = pascalize(t.topicCrumb);
     const fileBase = topicFileBase(t.topicFolder);
-    lines.push(`import ${varName} from "@/routes/Individual/FullRoutes/${args.sectionFolder}/${fileBase}";`);
+    lines.push(`import ${varName} from '@/routes/Individual/FullRoutes/${args.sectionFolder}/${fileBase}';`);
   }
 
   lines.push(``);
@@ -192,7 +192,7 @@ export function syncSections(args: {
     const topicFolder = t.topicFolder ?? topicFolderName(t.topicCrumb);
     const fileBase = topicFileBase(topicFolder);
 
-    const importLine = `import ${varName} from "@/routes/Individual/FullRoutes/${target.sectionFolder}/${fileBase}";`;
+    const importLine = `import ${varName} from '@/routes/Individual/FullRoutes/${target.sectionFolder}/${fileBase}';`;
     lines = ensureImportLine(lines, importLine);
 
     const patched = ensureSpreadInArrayBlock(lines.join('\n'), sectionVar, varName);

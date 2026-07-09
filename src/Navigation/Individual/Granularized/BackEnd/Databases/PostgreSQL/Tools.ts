@@ -1,8 +1,8 @@
 import type { Subpage } from '@/types/navigation';
 
-import CLIAndAdmin from "@/Navigation/Individual/Granularized/BackEnd/Databases/PostgreSQL/Tools/CLIAndAdmin";
-import BackupAndRestore from "@/Navigation/Individual/Granularized/BackEnd/Databases/PostgreSQL/Tools/BackupAndRestore";
-import GUIClients from "@/Navigation/Individual/Granularized/BackEnd/Databases/PostgreSQL/Tools/GUIClients";
+import CLIAndAdmin from '@/Navigation/Individual/Granularized/BackEnd/Databases/PostgreSQL/Tools/CLIAndAdmin';
+import BackupAndRestore from '@/Navigation/Individual/Granularized/BackEnd/Databases/PostgreSQL/Tools/BackupAndRestore';
+import GUIClients from '@/Navigation/Individual/Granularized/BackEnd/Databases/PostgreSQL/Tools/GUIClients';
 
 const Tools: Subpage = {
   name: "Tools",

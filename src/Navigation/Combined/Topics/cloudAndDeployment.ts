@@ -1,7 +1,7 @@
 import type { Subpage } from '@/types/navigation';
 
-import cloudServices from "@/Navigation/Combined/Topics/CloudAndDeployment/cloudServices";
-import cloudProviders from "@/Navigation/Combined/Topics/CloudAndDeployment/cloudProviders";
+import cloudServices from '@/Navigation/Combined/Topics/CloudAndDeployment/cloudServices';
+import cloudProviders from '@/Navigation/Combined/Topics/CloudAndDeployment/cloudProviders';
 
 const cloudAndDeployment: Subpage = {
   name: "CloudOps",

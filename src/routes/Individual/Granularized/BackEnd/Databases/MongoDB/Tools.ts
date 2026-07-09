@@ -1,10 +1,10 @@
 import { RouteObject } from "react-router-dom";
 
-import ShellAndServer from "@/routes/Individual/Granularized/BackEnd/Databases/MongoDB/Tools/ShellAndServer";
-import GUIAndCLI from "@/routes/Individual/Granularized/BackEnd/Databases/MongoDB/Tools/GUIAndCLI";
+import ShellAndServer from '@/routes/Individual/Granularized/BackEnd/Databases/MongoDB/Tools/ShellAndServer';
+import GUIAndCLI from '@/routes/Individual/Granularized/BackEnd/Databases/MongoDB/Tools/GUIAndCLI';
 
 
-import DevWorkflow from "@/routes/Individual/Granularized/BackEnd/Databases/MongoDB/Tools/DevWorkflow";
+import DevWorkflow from '@/routes/Individual/Granularized/BackEnd/Databases/MongoDB/Tools/DevWorkflow';
 
 const Tools: RouteObject[] = [
 

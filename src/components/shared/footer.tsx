@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useFooterBuildInfo } from "@/hooks/footer/useFooterBuildInfo";
+import { useFooterBuildInfo } from '@/hooks/footer/useFooterBuildInfo';
 
 export default function Footer() {
   const { year, lastUpdatedText } = useFooterBuildInfo();

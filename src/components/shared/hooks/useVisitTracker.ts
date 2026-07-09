@@ -1,6 +1,6 @@
 import { useEffect } from "react";
-import { resolveBreadcrumbTrail } from "@/domain/navigation/breadcrumbs";
-import { SITE_NAME } from "@/Components/Shared/dynamicSiteName";
+import { resolveBreadcrumbTrail } from '@/domain/navigation/breadcrumbs';
+import { SITE_NAME } from '@/components/shared/dynamicSiteName';
 
 // Extend Window to include our flag
 declare global {

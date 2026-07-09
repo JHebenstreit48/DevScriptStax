@@ -1,7 +1,7 @@
 import type { Subpage } from '@/types/navigation';
 
-import Basics from "@/Navigation/Individual/Granularized/Tools/PackageAndBundle/Bundling/Webpack/Basics";
-import Advanced from "@/Navigation/Individual/Granularized/Tools/PackageAndBundle/Bundling/Webpack/Advanced";
+import Basics from '@/Navigation/Individual/Granularized/Tools/PackageAndBundle/Bundling/Webpack/Basics';
+import Advanced from '@/Navigation/Individual/Granularized/Tools/PackageAndBundle/Bundling/Webpack/Advanced';
 
 const Webpack: Subpage = {
   name: "Webpack",
