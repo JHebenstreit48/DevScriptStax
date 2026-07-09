@@ -29,6 +29,9 @@ export default function Footer() {
               <li>
                 <Link to="/projects">Projects</Link>
               </li>
+              <li>
+                <Link to="/qrcode">Digital Card</Link>
+              </li>
             </ul>
           </nav>
         </div>

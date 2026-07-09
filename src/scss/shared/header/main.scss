@@ -13,9 +13,7 @@
   width: 100%;
   height: $header-height;
 
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.01)),
-    $header-bg-color;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.01)), $header-bg-color;
 
   backdrop-filter: blur($header-blur) saturate(140%);
   -webkit-backdrop-filter: blur($header-blur) saturate(140%);
@@ -24,7 +22,7 @@
 
   box-shadow:
     0 14px 50px rgba(0, 0, 0, 0.65),
-    0 0 18px rgba(0, 255, 255, 0.10),
+    0 0 18px rgba(0, 255, 255, 0.1),
     inset 0 1px 0 rgba(255, 255, 255, 0.06),
     inset 0 -1px 0 rgba(0, 0, 0, 0.55);
 
@@ -41,7 +39,7 @@
 }
 
 .HeaderBar::after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   right: 0;
@@ -75,7 +73,15 @@
     align-items: center;
     flex-shrink: 0;
     margin-right: 0.75rem;
-    text-decoration: none;
+
+    &,
+    &:hover,
+    &:focus,
+    &:active,
+    &:visited {
+      text-decoration: none !important;
+      text-decoration-line: none !important;
+    }
 
     @include maxw($cellphone-portrait) {
       margin-right: 0.4rem;

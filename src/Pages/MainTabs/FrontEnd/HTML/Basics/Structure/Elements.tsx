@@ -1,5 +1,4 @@
 import PageLayout from '@/Components/NavigationUI/PageLayout';
-import Header from '@/Components/Shared/Header/Header';
 import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
@@ -9,7 +8,6 @@ const ElementsTags = () => {
   return (
     <>
       <PageLayout>
-        <Header />
         <PageTitle title="HTML Structure - Elements & Tags" />
         <Notes filePath={markdownFilePath} />
       </PageLayout>

@@ -1,5 +1,4 @@
 import PageLayout from '@/Components/NavigationUI/PageLayout';
-import Header from '@/Components/Shared/Header/Header';
 import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
@@ -9,7 +8,6 @@ const EdgeFunctions = () => {
   return (
     <>
       <PageLayout>
-        <Header />
         <PageTitle title="Edge Functions" />
         <Notes filePath={markdownFilePath} />
       </PageLayout>

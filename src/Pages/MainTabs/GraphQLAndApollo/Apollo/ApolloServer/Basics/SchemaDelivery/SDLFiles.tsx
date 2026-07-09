@@ -1,5 +1,4 @@
 import PageLayout from '@/Components/NavigationUI/PageLayout';
-import Header from '@/Components/Shared/Header/Header';
 import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
@@ -9,7 +8,6 @@ const SDLFiles = () => {
   return (
     <>
       <PageLayout>
-        <Header />
         <PageTitle title="SDL Files" />
         <Notes filePath={markdownFilePath} />
       </PageLayout>

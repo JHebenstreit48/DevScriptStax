@@ -9,7 +9,6 @@ export function makePageStub(opts: {
   const { componentName, markdownFilePath, pageTitle } = opts;
 
   return `import PageLayout from '@/Components/NavigationUI/PageLayout';
-import Header from '@/Components/Shared/Header/Header';
 import PageTitle from '@/Components/PageComponents/PageTitle';
 import Notes from '@/Components/PageComponents/Notes/Notes';
 
@@ -19,7 +18,6 @@ const ${componentName} = () => {
   return (
     <>
       <PageLayout>
-        <Header />
         <PageTitle title="${pageTitle}" />
         <Notes filePath={markdownFilePath} />
       </PageLayout>
