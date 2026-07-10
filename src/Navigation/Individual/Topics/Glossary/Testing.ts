@@ -1,11 +1,11 @@
 import type { Subpage } from '@/types/navigation';
 
-import Cypress from '@/Navigation/Individual/Granularized/Glossary/Testing/Cypress';
+import EndToEnd from '@/Navigation/Individual/Granularized/Glossary/Testing/EndToEnd';
 
 const Testing: Subpage = {
   name: 'Testing',
   subpages: [
-    Cypress,
+    EndToEnd,
   ],
 };
 

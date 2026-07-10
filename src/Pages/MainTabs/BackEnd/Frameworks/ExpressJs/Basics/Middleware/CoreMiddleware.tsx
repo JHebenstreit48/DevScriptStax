@@ -3,7 +3,7 @@ import PageTitle from '@/components/pageComponents/pageTitle';
 import Notes from '@/components/pageComponents/notes/notes';
 
 const CoreMiddleware = () => {
-  const markdownFilePath = 'BackEnd/Frameworks/ExpressJS/Basics/Middleware/CoreMiddleware';
+  const markdownFilePath = 'BackEnd/Frameworks/ExpressJS/Basics/Middleware/Core';
 
   return (
     <>

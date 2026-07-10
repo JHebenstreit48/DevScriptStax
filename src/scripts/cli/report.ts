@@ -16,8 +16,6 @@ function main() {
 
   const missingPages = derived.filter((d) => !fileExists(d.pageFsPath));
 
-  // Routes: in section-level mode, route files are per-section; "missing routes"
-  // means: section file missing OR (if it exists) we still compute missing pages/routes primarily by pages.
   const sections = Array.from(new Set(derived.map((d) => d.sectionFolder))).sort();
   const missingRouteSectionFiles = sections.filter((section) => {
     const base = section.charAt(0).toLowerCase() + section.slice(1);
