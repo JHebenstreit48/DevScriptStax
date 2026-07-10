@@ -2,17 +2,17 @@ import PageLayout from '@/components/navigationUI/pageLayout';
 import PageTitle from '@/components/pageComponents/pageTitle';
 import Notes from '@/components/pageComponents/notes/notes';
 
-const CustomMiddleware = () => {
-  const markdownFilePath = 'BackEnd/Frameworks/ExpressJS/Basics/Middleware/Custom';
+const CoreConcepts = () => {
+  const markdownFilePath = 'Glossary/BackEnd/Frameworks/NodeJS/CoreConcepts';
 
   return (
     <>
       <PageLayout>
-        <PageTitle title="Custom Middleware" />
+        <PageTitle title="Glossary - Node.js - Core Concepts" />
         <Notes filePath={markdownFilePath} />
       </PageLayout>
     </>
   );
 };
 
-export default CustomMiddleware;
+export default CoreConcepts;

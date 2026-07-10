@@ -1,9 +1,9 @@
 import { RouteObject } from 'react-router-dom';
 
-import Cypress from '@/routes/Individual/Granularized/Glossary/Testing/Cypress';
+import EndToEnd from '@/routes/Individual/Granularized/Glossary/Testing/EndToEnd';
 
 const Testing: RouteObject[] = [
-    ...Cypress
+    ...EndToEnd,
 ];
 
 export default Testing;

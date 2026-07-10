@@ -5,11 +5,11 @@ const Cypress: Subpage = {
   subpages: [
     {
       name: 'Core Commands',
-      path: '/glossary/testing/cypress/core-commands',
+      path: '/glossary/testing/end-to-end/cypress/core-commands',
     },
     {
       name: 'Test Structure',
-      path: '/glossary/testing/cypress/test-structure',
+      path: '/glossary/testing/end-to-end/cypress/test-structure',
     },
   ],
 };
