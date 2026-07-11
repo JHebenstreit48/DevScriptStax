@@ -4,40 +4,45 @@ const CoreConcepts: Subpage = {
   name: 'Core Concepts',
   subpages: [
     {
-      name: 'JSX',
-      path: '/react/basics/core/jsx'
+      name: 'Fundamentals',
+      subpages: [
+        {
+          name: 'JSX',
+          path: '/react/basics/core/fundamentals/jsx',
+        },
+        {
+          name: 'Event Handling',
+          path: '/react/basics/core/fundamentals/event-handling',
+        },
+      ],
     },
     {
-      name: 'Event Handling',
-      path: '/react/basics/core/event-handling'
-    },
-    {
-      name: 'Props/State',
+      name: 'Props & State',
       subpages: [
         {
           name: 'Props',
-          path: '/react/basics/core/props-and-state/props'
+          path: '/react/basics/core/props-and-state/props',
         },
         {
           name: 'State',
-          path: '/react/basics/core/props-and-state/state'
-        }
-      ]
+          path: '/react/basics/core/props-and-state/state',
+        },
+      ],
     },
     {
       name: 'Forms',
       subpages: [
         {
           name: 'Controlled vs Uncontrolled',
-          path: '/react/basics/core/forms/controlled'
+          path: '/react/basics/core/forms/controlled',
         },
         {
           name: 'Patterns & Libraries',
-          path: '/react/basics/core/forms/libraries'
-        }
-      ]
-    }
-  ]
+          path: '/react/basics/core/forms/libraries',
+        },
+      ],
+    },
+  ],
 };
 
 export default CoreConcepts;

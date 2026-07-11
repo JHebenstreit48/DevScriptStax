@@ -17,11 +17,11 @@ const EventHandling = lazy(
 
 const JSXAndEvent: RouteObject[] = [
   {
-    path: '/react/basics/core/jsx',
+    path: '/react/basics/core/fundamentals/jsx',
     element: <JSX />,
   },
   {
-    path: '/react/basics/core/event-handling',
+    path: '/react/basics/core/fundamentals/event-handling',
     element: <EventHandling />,
   },
 ];
