@@ -2,17 +2,17 @@ import PageLayout from '@/components/navigationUI/pageLayout';
 import PageTitle from '@/components/pageComponents/pageTitle';
 import Notes from '@/components/pageComponents/notes/notes';
 
-const ExternalDatabases = () => {
-  const markdownFilePath = 'CloudAndDeployment/CloudServices/DeploymentPlatforms/FullStack/Render/Basics/Data/ExternalDatabases';
+const BuildAndStart = () => {
+  const markdownFilePath = 'CloudAndDeploy/CloudServices/DeploymentPlatforms/FullStack/Render/Basics/Configuration/BuildStart';
 
   return (
     <>
       <PageLayout>
-        <PageTitle title="External Databases" />
+        <PageTitle title="Build & Start" />
         <Notes filePath={markdownFilePath} />
       </PageLayout>
     </>
   );
 };
 
-export default ExternalDatabases;
+export default BuildAndStart;

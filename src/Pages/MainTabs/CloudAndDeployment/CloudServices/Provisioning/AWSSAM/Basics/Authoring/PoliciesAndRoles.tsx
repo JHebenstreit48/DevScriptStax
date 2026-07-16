@@ -3,7 +3,7 @@ import PageTitle from '@/components/pageComponents/pageTitle';
 import Notes from '@/components/pageComponents/notes/notes';
 
 const PoliciesAndRoles = () => {
-  const markdownFilePath = 'CloudAndDeployment/CloudServices/Provisioning/AWSSAM/Basics/Authoring/PoliciesAndRoles';
+  const markdownFilePath = 'CloudAndDeploy/CloudServices/Provisioning/AWSSAM/Basics/Authoring/PoliciesAndRoles';
 
   return (
     <>

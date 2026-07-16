@@ -8,7 +8,7 @@ const Advanced: Subpage = {
       subpages: [
         {
           name: "render.yaml",
-          path: "/render/advanced/blueprints/intro"
+          path: "/render/advanced/blueprints/render-yaml"
         },
         {
           name: "Monorepos & Multi-Service",
@@ -24,12 +24,8 @@ const Advanced: Subpage = {
           path: "/render/advanced/security-networking/ssl-tls-https"
         },
         {
-          name: "Firewall Rules",
-          path: "/render/advanced/security-networking/firewall"
-        },
-        {
-          name: "Private Networking",
-          path: "/render/advanced/security-networking/private-networking"
+          name: "Firewall & Private Networking",
+          path: "/render/advanced/security-networking/firewall-and-private"
         }
       ]
     },
@@ -41,12 +37,8 @@ const Advanced: Subpage = {
           path: "/render/advanced/scaling-reliability/scaling"
         },
         {
-          name: "Health Checks",
-          path: "/render/advanced/scaling-reliability/health-checks"
-        },
-        {
-          name: "Zero-Downtime Deploys",
-          path: "/render/advanced/scaling-reliability/zero-downtime"
+          name: "Health Checks & Zero-Downtime",
+          path: "/render/advanced/scaling-reliability/health-and-zero-downtime"
         }
       ]
     },
@@ -54,12 +46,8 @@ const Advanced: Subpage = {
       name: "Observability",
       subpages: [
         {
-          name: "Logs & Metrics",
-          path: "/render/advanced/observability/logs-metrics"
-        },
-        {
-          name: "Debugging",
-          path: "/render/advanced/observability/debugging"
+          name: "Logs, Metrics & Debugging",
+          path: "/render/advanced/observability/logs-metrics-debugging"
         },
         {
           name: "Alerts & Notifications",
@@ -84,12 +72,8 @@ const Advanced: Subpage = {
       name: "Advanced Topics",
       subpages: [
         {
-          name: "Docker Images",
-          path: "/render/advanced/advanced-topics/docker-images"
-        },
-        {
-          name: "WebSockets (Render)",
-          path: "/render/advanced/advanced-topics/websockets"
+          name: "Docker & WebSockets",
+          path: "/render/advanced/advanced-topics/docker-and-websockets"
         },
         {
           name: "Backups",

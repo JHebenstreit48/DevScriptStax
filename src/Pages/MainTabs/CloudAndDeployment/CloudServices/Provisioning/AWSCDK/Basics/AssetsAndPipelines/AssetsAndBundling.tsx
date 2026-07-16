@@ -3,7 +3,7 @@ import PageTitle from '@/components/pageComponents/pageTitle';
 import Notes from '@/components/pageComponents/notes/notes';
 
 const AssetsAndBundling = () => {
-  const markdownFilePath = 'CloudAndDeployment/CloudServices/Provisioning/AWSCDK/Basics/AssetsAndPipelines/AssetsAndBundling';
+  const markdownFilePath = 'CloudAndDeploy/CloudServices/Provisioning/AWSCDK/Basics/AssetsAndPipelines/AssetsAndBundling';
 
   return (
     <>

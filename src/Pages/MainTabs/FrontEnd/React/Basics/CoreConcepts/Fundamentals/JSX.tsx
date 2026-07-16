@@ -3,8 +3,7 @@ import PageTitle from '@/components/pageComponents/pageTitle';
 import Notes from '@/components/pageComponents/notes/notes';
 
 const JSXAndRendering = () => {
-  const markdownFilePath =
-    'FrontEnd/React/Basics/CoreConcepts/JSX';
+  const markdownFilePath = 'FrontEnd/React/Basics/CoreConcepts/Fundamentals/JSX';
 
   return (
     <>

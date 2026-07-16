@@ -4,7 +4,7 @@ import PageTitle from '@/components/pageComponents/pageTitle';
 
 const EventHandling = () => {
   const markdownFilePath =
-    'FrontEnd/React/Basics/CoreConcepts/EventHandling';
+    'FrontEnd/React/Basics/CoreConcepts/Fundamentals/EventHandling';
 
   return (
     <>
