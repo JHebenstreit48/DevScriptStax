@@ -4,7 +4,7 @@ const Arrays: Subpage = {
   name: 'Arrays',
   subpages: [
     {
-      name: 'Introduction to Arrays',
+      name: 'Introduction',
       path: '/javascript/basics/arrays/introduction',
     },
     {

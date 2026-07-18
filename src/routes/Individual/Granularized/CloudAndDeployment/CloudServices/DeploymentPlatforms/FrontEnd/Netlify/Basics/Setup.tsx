@@ -1,21 +1,16 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const CreateAccount = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/DeploymentPlatforms/FrontEnd/Netlify/Basics/Setup/CreateAccount'));
-const ConnectRepoAndDeploy = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/DeploymentPlatforms/FrontEnd/Netlify/Basics/Setup/ConnectRepoAndDeploy'));
+const CreateAccountAndDeploy = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/DeploymentPlatforms/FrontEnd/Netlify/Basics/Setup/CreateAccountAndDeploy'));
 const CustomDomainAndHTTPS = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/DeploymentPlatforms/FrontEnd/Netlify/Basics/Setup/CustomDomainAndHTTPS'));
 
 const Setup: RouteObject[] = [
   {
-    path: '/netlify/basics/setup/create-account',
-    element: <CreateAccount />,
+    path: '/cloud-services/deployment/front-end/netlify/basics/setup/account-and-first-deploy',
+    element: <CreateAccountAndDeploy />,
   },
   {
-    path: '/netlify/basics/setup/connect-repo-deploy',
-    element: <ConnectRepoAndDeploy />,
-  },
-  {
-    path: '/netlify/basics/setup/custom-domain-https',
+    path: '/cloud-services/deployment/front-end/netlify/basics/setup/custom-domain-https',
     element: <CustomDomainAndHTTPS />,
   },
 ];

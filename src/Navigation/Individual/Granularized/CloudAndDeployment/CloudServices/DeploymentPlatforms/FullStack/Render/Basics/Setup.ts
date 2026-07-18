@@ -4,16 +4,12 @@ const Setup: Subpage = {
   name: 'Setup',
   subpages: [
     {
-      name: 'Account',
-      path: '/render/basics/setup/account',
-    },
-    {
-      name: 'First Deployment',
-      path: '/render/basics/setup/first-deployment',
+      name: 'Account & First Deployment',
+      path: '/render/basics/setup/account-and-first-deployment',
     },
     {
       name: 'Custom Domain',
-      path: '/render/basics/setup/custom-domain',
+      path: '/render/basics/setup/custom-domains',
     },
     {
       name: 'CLI',
