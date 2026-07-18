@@ -4,24 +4,24 @@ import { RouteObject } from 'react-router-dom';
 const JSX = lazy(
   () =>
     import(
-      '@/Pages/MainTabs/FrontEnd/React/Basics/CoreConcepts/JSX'
+      '@/Pages/MainTabs/FrontEnd/React/Basics/CoreConcepts/Fundamentals/JSX'
     )
 );
 
 const EventHandling = lazy(
   () =>
     import(
-      '@/Pages/MainTabs/FrontEnd/React/Basics/CoreConcepts/EventHandling'
+      '@/Pages/MainTabs/FrontEnd/React/Basics/CoreConcepts/Fundamentals/EventHandling'
     )
 );
 
 const JSXAndEvent: RouteObject[] = [
   {
-    path: '/react/basics/core/jsx',
+    path: '/react/basics/core/fundamentals/jsx',
     element: <JSX />,
   },
   {
-    path: '/react/basics/core/event-handling',
+    path: '/react/basics/core/fundamentals/event-handling',
     element: <EventHandling />,
   },
 ];

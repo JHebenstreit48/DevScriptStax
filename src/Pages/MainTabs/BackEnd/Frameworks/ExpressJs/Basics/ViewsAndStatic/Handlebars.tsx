@@ -3,7 +3,7 @@ import PageTitle from '@/components/pageComponents/pageTitle';
 import Notes from '@/components/pageComponents/notes/notes';
 
 const Handlebars = () => {
-  const markdownFilePath = 'BackEnd/Frameworks/ExpressJs/Basics/ViewsAndStatic/Handlebars';
+  const markdownFilePath = 'BackEnd/Frameworks/ExpressJS/Basics/ViewsAndStatic/Handlebars';
 
   return (
     <>

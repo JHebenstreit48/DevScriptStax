@@ -2,17 +2,17 @@ import PageLayout from '@/components/navigationUI/pageLayout';
 import PageTitle from '@/components/pageComponents/pageTitle';
 import Notes from '@/components/pageComponents/notes/notes';
 
-const CreateAccount = () => {
-  const markdownFilePath = 'CloudAndDeployment/CloudServices/DeploymentPlatforms/FrontEndDeployment/Netlify/Basics/Setup/CreateAccount';
+const StaticSites = () => {
+  const markdownFilePath = 'CloudAndDeploy/CloudServices/DeploymentPlatforms/FullStack/Render/Basics/Services/StaticSitesAndWebServices';
 
   return (
     <>
       <PageLayout>
-        <PageTitle title="Create Account" />
+        <PageTitle title="Clould Services - Deployment - Render - Static Sites & Web Services" />
         <Notes filePath={markdownFilePath} />
       </PageLayout>
     </>
   );
 };
 
-export default CreateAccount;
+export default StaticSites;

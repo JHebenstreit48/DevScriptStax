@@ -3,12 +3,12 @@ import PageTitle from '@/components/pageComponents/pageTitle';
 import Notes from '@/components/pageComponents/notes/notes';
 
 const Introduction = () => {
-  const markdownFilePath = 'CloudAndDeployment/CloudServices/DeploymentPlatforms/FullStack/Render/Basics/Fundamentals/Introduction';
+  const markdownFilePath = 'CloudAndDeploy/CloudServices/DeploymentPlatforms/FullStack/Render/Basics/Fundamentals/Introduction';
 
   return (
     <>
       <PageLayout>
-        <PageTitle title="Fundamentals: Introduction" />
+        <PageTitle title="Cloud Services - Deployment - Render - Introduction" />
         <Notes filePath={markdownFilePath} />
       </PageLayout>
     </>

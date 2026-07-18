@@ -28,7 +28,7 @@ const CoreConcepts: Subpage = {
       path: '/javascript/basics/core/loops',
     },
     {
-      name: 'Scope / Context',
+      name: 'Scope & Context',
       path: '/javascript/basics/core/scope-and-context',
     },
   ],

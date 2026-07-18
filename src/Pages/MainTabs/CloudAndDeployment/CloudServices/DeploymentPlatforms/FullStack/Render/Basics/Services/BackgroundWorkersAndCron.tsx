@@ -2,17 +2,17 @@ import PageLayout from '@/components/navigationUI/pageLayout';
 import PageTitle from '@/components/pageComponents/pageTitle';
 import Notes from '@/components/pageComponents/notes/notes';
 
-const PersistentStorage = () => {
-  const markdownFilePath = 'CloudAndDeployment/CloudServices/DeploymentPlatforms/FullStack/Render/Basics/Data/PersistentStorage';
+const BackgroundWorkers = () => {
+  const markdownFilePath = 'CloudAndDeploy/CloudServices/DeploymentPlatforms/FullStack/Render/Basics/Services/WorkersAndCron';
 
   return (
     <>
       <PageLayout>
-        <PageTitle title="Persistent Storage" />
+        <PageTitle title="Cloud Services - Deployment - Render - Background Workers & Cron Jobs" />
         <Notes filePath={markdownFilePath} />
       </PageLayout>
     </>
   );
 };
 
-export default PersistentStorage;
+export default BackgroundWorkers;

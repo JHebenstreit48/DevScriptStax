@@ -3,12 +3,12 @@ import PageTitle from '@/components/pageComponents/pageTitle';
 import Notes from '@/components/pageComponents/notes/notes';
 
 const StaticFiles = () => {
-  const markdownFilePath = 'BackEnd/Frameworks/ExpressJs/Basics/ViewsAndStatic/StaticFiles';
+  const markdownFilePath = 'BackEnd/Frameworks/ExpressJS/Basics/ViewsAndStatic/StaticFiles';
 
   return (
     <>
       <PageLayout>
-        <PageTitle title="Static Files" />
+        <PageTitle title="Frameworks - ExpressJS - Views & Static - Static Files" />
         <Notes filePath={markdownFilePath} />
       </PageLayout>
     </>

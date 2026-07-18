@@ -2,21 +2,16 @@ import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
 const ManagedPostgreSQL = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/DeploymentPlatforms/FullStack/Render/Basics/Data/ManagedPostgreSQL'));
-const ExternalDatabases = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/DeploymentPlatforms/FullStack/Render/Basics/Data/ExternalDatabases'));
-const PersistentStorage = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/DeploymentPlatforms/FullStack/Render/Basics/Data/PersistentStorage'));
+const ExternalDatabasesAndStorage = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/DeploymentPlatforms/FullStack/Render/Basics/Data/ExternalDatabasesAndStorage'));
 
 const Data: RouteObject[] = [
   {
-    path: '/render/basics/data/postgresql-managed',
+    path: '/render/basics/data/managed-postgresql',
     element: <ManagedPostgreSQL />,
   },
   {
-    path: '/render/basics/data/external-databases',
-    element: <ExternalDatabases />,
-  },
-  {
-    path: '/render/basics/data/persistent-storage',
-    element: <PersistentStorage />,
+    path: '/render/basics/data/external-and-storage',
+    element: <ExternalDatabasesAndStorage />,
   },
 ];
 
