@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import { GroupedSearchResult } from '@/components/navigationUI/search/utils/types';
+import { GroupedSearchResult } from "@/types/navigation/types";
 
 interface InputResultsProps {
   inputValue: string;
@@ -19,6 +19,12 @@ const InputResults: React.FC<InputResultsProps> = ({
   hasSearched,
   onClose
 }) => {
+  const inputRef = useRef<HTMLInputElement | null>(null);
+
+  useEffect(() => {
+    inputRef.current?.focus();
+  }, []);
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     onChange(e.target.value);
   };
@@ -33,6 +39,7 @@ const InputResults: React.FC<InputResultsProps> = ({
     <>
       <div className="inputWithClear">
         <input
+          ref={inputRef}
           type="text"
           placeholder="Type to search..."
           value={inputValue}

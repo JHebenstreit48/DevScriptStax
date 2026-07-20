@@ -12,6 +12,10 @@ const RemotePlatforms: Subpage = {
       path: '/git/advanced/remote-platforms/gitlab',
     },
     {
+      name: 'SSH Authentication',
+      path: '/git/advanced/remote-platforms/ssh-authentication',
+    },
+    {
       name: 'GitHub & GitLab - CI/CD',
       path: '/git/advanced/remote-platforms/cicd',
     },

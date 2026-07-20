@@ -28,6 +28,12 @@ $muted-2: #7a8091;
   -webkit-backdrop-filter: blur(10px);
 
   animation: fadeIn 0.14s ease-out both;
+
+  @media (prefers-reduced-motion: reduce) {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    animation: none;
+  }
 }
 
 /* ==============================
@@ -56,6 +62,72 @@ $muted-2: #7a8091;
 
   @include maxw($cellphone-portrait) {
     width: min(620px, 94vw);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    animation: none;
+  }
+
+  /* Inputs */
+  input[type='text'],
+  input[type='search'] {
+    width: 100%;
+    padding: 0.75rem 0.9rem;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(15, 15, 26, 0.9);
+    color: $panel-fg;
+    font-size: 1rem;
+
+    box-shadow:
+      inset 0 0 0 1px rgba(255, 255, 255, 0.03),
+      0 10px 30px rgba(0, 0, 0, 0.25);
+
+    &::placeholder {
+      color: rgba(232, 235, 255, 0.55);
+    }
+
+    &:focus {
+      outline: none;
+      border-color: rgba(0, 209, 255, 0.65);
+      box-shadow:
+        0 0 0 4px rgba(0, 209, 255, 0.12),
+        0 10px 30px rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  ul {
+    list-style: none;
+    margin: 0.5rem 0 0;
+    padding: 0;
+  }
+
+  li {
+    margin: 0;
+    padding: 0.55rem 0.5rem;
+    border-radius: 10px;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.05);
+    }
+  }
+
+  a {
+    color: $link;
+    text-decoration: none;
+    font-weight: 650;
+
+    &:hover {
+      color: $link-hover;
+    }
+
+    .breadcrumbs {
+      display: inline-block;
+      margin-left: 0.5rem;
+      font-size: 0.85rem;
+      color: $muted;
+      font-weight: 500;
+    }
   }
 }
 
@@ -100,6 +172,7 @@ $muted-2: #7a8091;
       color: $panel-fg;
       border-color: rgba(0, 209, 255, 0.35);
     }
+
     &:focus-visible {
       outline: 2px solid rgba(0, 209, 255, 0.75);
       outline-offset: 3px;
@@ -118,31 +191,47 @@ $muted-2: #7a8091;
   gap: 0.9rem;
 }
 
-/* Inputs */
-.searchModalContent input[type='text'],
-.searchModalContent input[type='search'] {
-  width: 100%;
-  padding: 0.75rem 0.9rem;
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  background: rgba(15, 15, 26, 0.9);
-  color: $panel-fg;
-  font-size: 1rem;
+/* ==============================
+   Input wrapper + clear button
+============================== */
+.inputWithClear {
+  position: relative;
 
-  box-shadow:
-    inset 0 0 0 1px rgba(255, 255, 255, 0.03),
-    0 10px 30px rgba(0, 0, 0, 0.25);
-
-  &::placeholder {
-    color: rgba(232, 235, 255, 0.55);
+  .filterInput {
+    padding-right: 2.5rem; // room for the clear button
   }
 
-  &:focus {
-    outline: none;
-    border-color: rgba(0, 209, 255, 0.65);
-    box-shadow:
-      0 0 0 4px rgba(0, 209, 255, 0.12),
-      0 10px 30px rgba(0, 0, 0, 0.25);
+  .clearButton {
+    position: absolute;
+    right: 0.6rem;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 1.6rem;
+    height: 1.6rem;
+    padding: 0;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    background: transparent;
+    border: none;
+    border-radius: 999px;
+    color: $muted;
+    cursor: pointer;
+    font-size: 1rem;
+    line-height: 1;
+
+    &:hover {
+      color: $panel-fg;
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    &:focus-visible {
+      outline: 2px solid rgba(0, 209, 255, 0.75);
+      outline-offset: 2px;
+    }
   }
 }
 
@@ -220,73 +309,6 @@ $muted-2: #7a8091;
   padding: 0.5rem 0;
 }
 
-.searchModalContent ul {
-  list-style: none;
-  margin: 0.5rem 0 0;
-  padding: 0;
-}
-
-.searchModalContent li {
-  margin: 0;
-  padding: 0.55rem 0.5rem;
-  border-radius: 10px;
-
-  &:hover {
-    background: rgba(255, 255, 255, 0.05);
-  }
-}
-
-.searchModalContent a {
-  color: $link;
-  text-decoration: none;
-  font-weight: 650;
-
-  &:hover {
-    color: $link-hover;
-  }
-
-  .breadcrumbs {
-    display: inline-block;
-    margin-left: 0.5rem;
-    font-size: 0.85rem;
-    color: $muted;
-    font-weight: 500;
-  }
-}
-
-/* Animations */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes popIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px) scale(0.985);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-}
-
-/* Reduced motion */
-@media (prefers-reduced-motion: reduce) {
-  .searchModal {
-    backdrop-filter: none;
-    -webkit-backdrop-filter: none;
-    animation: none;
-  }
-  .searchModalContent {
-    animation: none;
-  }
-}
-
 /* ==============================
           Search Icon Container
 ============================== */
@@ -298,13 +320,13 @@ $muted-2: #7a8091;
   z-index: $z-nav-overlay;
 
   @include maxw($cellphone-portrait) {
-  position: fixed;
-  top: 2rem;
-  left: auto;
-  right: 0.75rem;      // pin to right edge of header
-  transform: translateY(-50%);
-  z-index: $z-nav-hamburger; // use same z-index token as hamburger
-}
+    position: fixed;
+    top: 2rem;
+    left: auto;
+    right: 0.75rem; // pin to right edge of header
+    transform: translateY(-50%);
+    z-index: $z-nav-hamburger; // use same z-index token as hamburger
+  }
 
   @include between($small-laptop-min, $small-laptop-max) {
     left: 64rem;
@@ -339,17 +361,17 @@ $muted-2: #7a8091;
     0 10px 30px rgba(0, 0, 0, 0.35),
     inset 0 0 0 1px rgba(255, 255, 255, 0.04);
 
-    @include maxw($cellphone-portrait) {
-      width: 2rem;
-      height: 2rem;
-    }
-
   cursor: pointer;
   transition:
     transform 0.16s ease,
     box-shadow 0.18s ease,
     border-color 0.18s ease,
     background-color 0.18s ease;
+
+  @include maxw($cellphone-portrait) {
+    width: 2rem;
+    height: 2rem;
+  }
 
   &:hover {
     border-color: rgba(0, 209, 255, 0.35);
@@ -398,6 +420,10 @@ $muted-2: #7a8091;
     box-shadow 0.18s ease,
     transform 0.16s ease;
 
+  @include maxw($cellphone-portrait) {
+    display: none; // mobile uses icon-only
+  }
+
   &:hover {
     border-color: rgba(0, 209, 255, 0.35);
     box-shadow:
@@ -424,8 +450,29 @@ $muted-2: #7a8091;
     font-weight: 600;
     letter-spacing: 0.15px;
   }
+}
 
-  @include maxw($cellphone-portrait) {
-    display: none; // mobile uses icon-only
+/* ==============================
+           Animations
+   (kept at file end — @keyframes
+   isn't scoped to a class)
+============================== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes popIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px) scale(0.985);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
   }
 }
