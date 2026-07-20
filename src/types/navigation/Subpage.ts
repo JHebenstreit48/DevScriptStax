@@ -1,5 +1,6 @@
 export type Subpage = {
-    name: string;
-    path?: string;
-    subpages?: Subpage[];
-  };
+  name: string;
+  path?: string;
+  filePath?: string;
+  subpages?: Subpage[];
+};

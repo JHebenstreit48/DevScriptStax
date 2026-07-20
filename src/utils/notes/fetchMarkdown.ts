@@ -1,4 +1,4 @@
-import { dbNotes, SITE_ID } from '@/Firebase/client';
+import { dbNotes, SITE_ID } from "@/Firebase/client";
 import { collection, getDocs, limit, query, where } from "firebase/firestore";
 
 // Normalize repo-style path → Firestore fullPath (strip .md, trim leading slash)
