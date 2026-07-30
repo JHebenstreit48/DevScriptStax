@@ -5,6 +5,7 @@ export interface SearchMatch {
   section?: string;
   breadcrumbs: string[];
   content?: string;
+  snippet?: string;
 }
 
 export interface GroupedSearchResult {

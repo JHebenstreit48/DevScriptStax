@@ -1,4 +1,14 @@
 import { SearchMatch, GroupedSearchResult } from "@/types/navigation/types";
+import { buildSnippet } from "@/utils/navigation/search/buildSnippet";
+
+function escapeRegExp(str: string): string {
+  return str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+function contentHasWholeWord(content: string, term: string): boolean {
+  const pattern = new RegExp(`(?<![a-z0-9])${escapeRegExp(term)}(?![a-z0-9])`, "i");
+  return pattern.test(content);
+}
 
 export function filterResults(
   allPages: SearchMatch[],
@@ -6,14 +16,21 @@ export function filterResults(
 ): GroupedSearchResult[] {
   const terms = searchTerm.toLowerCase().split(/\s+/).filter(Boolean);
 
-  const filtered = allPages.filter(({ name, breadcrumbs, content }) => {
+  const filtered = allPages.reduce<SearchMatch[]>((acc, item) => {
+    const { name, breadcrumbs, content } = item;
     const navHaystack = [name, ...breadcrumbs].join(" ").toLowerCase();
-    const contentHaystack = (content ?? "").toLowerCase();
+    const contentHaystack = content ?? "";
 
-    return terms.every(
-      (term) => navHaystack.includes(term) || contentHaystack.includes(term)
+    const isMatch = terms.every(
+      (term) => navHaystack.includes(term) || contentHasWholeWord(contentHaystack, term)
     );
-  });
+
+    if (!isMatch) return acc;
+
+    const snippet = content ? buildSnippet(content, terms, searchTerm) : null;
+    acc.push(snippet ? { ...item, snippet } : item);
+    return acc;
+  }, []);
 
   const grouped: Record<string, SearchMatch[]> = {};
 

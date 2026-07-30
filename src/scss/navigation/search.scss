@@ -128,6 +128,27 @@ $muted-2: #7a8091;
       color: $muted;
       font-weight: 500;
     }
+
+    .searchSnippet {
+      display: block;
+      margin-top: 0.3rem;
+      font-size: 0.85rem;
+      font-weight: 400;
+      color: $muted;
+      line-height: 1.4;
+
+      mark.searchHighlight {
+        background: rgba(0, 209, 255, 0.22);
+        color: $panel-fg;
+        border-radius: 3px;
+        padding: 0 0.15em;
+        font-weight: 600;
+      }
+
+      @include maxw($cellphone-portrait) {
+        font-size: 0.8rem;
+      }
+    }
   }
 }
 

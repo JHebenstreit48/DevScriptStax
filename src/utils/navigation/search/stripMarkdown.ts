@@ -1,12 +1,23 @@
+const ENTITY_MAP: Record<string, string> = {
+  "&nbsp;": " ",
+  "&amp;": "&",
+  "&lt;": "<",
+  "&gt;": ">",
+  "&quot;": '"',
+  "&#39;": "'",
+};
+
 export function stripMarkdown(md: string): string {
   return md
-    .replace(/```[\s\S]*?```/g, " ")        // code blocks
-    .replace(/`[^`]*`/g, " ")               // inline code
-    .replace(/!\[.*?\]\(.*?\)/g, " ")       // images
-    .replace(/\[([^\]]*)\]\([^)]*\)/g, "$1") // links -> keep label text
-    .replace(/^#{1,6}\s+/gm, "")            // heading marks
-    .replace(/[*_~>#-]/g, " ")              // md punctuation
-    .replace(/\|/g, " ")                    // table pipes
+    .replace(/```[\s\S]*?```/g, " ")
+    .replace(/`[^`]*`/g, " ")
+    .replace(/!\[.*?\]\(.*?\)/g, " ")
+    .replace(/\[([^\]]*)\]\([^)]*\)/g, "$1")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/^#{1,6}\s+/gm, "")
+    .replace(/[*_~>#-]/g, " ")
+    .replace(/\|/g, " ")
+    .replace(/&nbsp;|&amp;|&lt;|&gt;|&quot;|&#39;/g, (e) => ENTITY_MAP[e] ?? e)
     .replace(/\s+/g, " ")
     .trim();
 }
