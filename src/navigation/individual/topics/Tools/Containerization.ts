@@ -1,7 +1,7 @@
 import type { Subpage } from '@/types/navigation';
 
-import Docker from '@/Navigation/Individual/Topics/Tools/Containerization/Docker';
-import Git from '@/Navigation/Individual/Topics/Tools/Containerization/Git';
+import Docker from '@/navigation/individual/topics/Tools/Containerization/Docker';
+import Git from '@/navigation/individual/topics/Tools/Containerization/Git';
 
 const Containerization: Subpage = {
     name: 'Containerization',

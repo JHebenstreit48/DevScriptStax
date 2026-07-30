@@ -1,7 +1,7 @@
 import type { Subpage } from '@/types/navigation';
 
-import Basics from '@/Navigation/Individual/Granularized/FrontEnd/Gatsby/Basics';
-import Advanced from '@/Navigation/Individual/Granularized/FrontEnd/Gatsby/Advanced';
+import Basics from '@/navigation/individual/modularized/FrontEnd/Gatsby/Basics';
+import Advanced from '@/navigation/individual/modularized/FrontEnd/Gatsby/Advanced';
 
 const Gatsby: Subpage = {
 name : 'Gatsby',

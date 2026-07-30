@@ -1,7 +1,7 @@
 import type { Subpage } from '@/types/navigation';
 
-import Basics from '@/Navigation/Individual/Granularized/Testing/Unit/Pytest/Basics';
-import Advanced from '@/Navigation/Individual/Granularized/Testing/Unit/Pytest/Advanced';
+import Basics from '@/navigation/individual/modularized/Testing/Unit/Pytest/Basics';
+import Advanced from '@/navigation/individual/modularized/Testing/Unit/Pytest/Advanced';
 
 
 const Pytest: Subpage = {

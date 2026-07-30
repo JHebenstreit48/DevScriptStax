@@ -1,7 +1,7 @@
 import type { Subpage } from '@/types/navigation';
 
-import Basics from '@/Navigation/Individual/Granularized/FrontEnd/NextJS/Basics';
-import Advanced from '@/Navigation/Individual/Granularized/FrontEnd/NextJS/Advanced';
+import Basics from '@/navigation/individual/modularized/FrontEnd/NextJS/Basics';
+import Advanced from '@/navigation/individual/modularized/FrontEnd/NextJS/Advanced';
 
 const NextJS: Subpage = {
   name: 'Next.js',

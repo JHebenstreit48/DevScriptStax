@@ -1,7 +1,7 @@
 import type { Subpage } from '@/types/navigation';
 
-import Basics from '@/Navigation/Individual/Granularized/CloudAndDeployment/CloudProviders/Enterprise/OracleCloud/Basics';
-import Advanced from '@/Navigation/Individual/Granularized/CloudAndDeployment/CloudProviders/Enterprise/OracleCloud/Advanced';
+import Basics from '@/navigation/individual/modularized/CloudAndDeployment/CloudProviders/Enterprise/OracleCloud/Basics';
+import Advanced from '@/navigation/individual/modularized/CloudAndDeployment/CloudProviders/Enterprise/OracleCloud/Advanced';
 
 
 const OracleCloud: Subpage = {

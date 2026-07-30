@@ -1,7 +1,7 @@
 import type { Subpage } from '@/types/navigation';
 
-import Basics from '@/Navigation/Individual/Granularized/FrontEnd/Vue/Basics';
-import Advanced from '@/Navigation/Individual/Granularized/FrontEnd/Vue/Advanced';
+import Basics from '@/navigation/individual/modularized/FrontEnd/Vue/Basics';
+import Advanced from '@/navigation/individual/modularized/FrontEnd/Vue/Advanced';
 
 const Vue: Subpage = {
   name: 'Vue',

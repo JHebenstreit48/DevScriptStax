@@ -1,9 +1,9 @@
 import type { Subpage } from '@/types/navigation';
 
-import DigitalOcean from '@/Navigation/Individual/Topics/CloudAndDeployment/CloudProviders/VPS/DigitalOcean';
-import Linode from '@/Navigation/Individual/Topics/CloudAndDeployment/CloudProviders/VPS/Linode';
-import HetznerCloud from '@/Navigation/Individual/Topics/CloudAndDeployment/CloudProviders/VPS/HetznerCloud';
-import Scaleway from '@/Navigation/Individual/Topics/CloudAndDeployment/CloudProviders/VPS/Scaleway';
+import DigitalOcean from '@/navigation/individual/topics/CloudAndDeployment/CloudProviders/VPS/DigitalOcean';
+import Linode from '@/navigation/individual/topics/CloudAndDeployment/CloudProviders/VPS/Linode';
+import HetznerCloud from '@/navigation/individual/topics/CloudAndDeployment/CloudProviders/VPS/HetznerCloud';
+import Scaleway from '@/navigation/individual/topics/CloudAndDeployment/CloudProviders/VPS/Scaleway';
 
 const VPS: Subpage = {
   name: 'VPS',

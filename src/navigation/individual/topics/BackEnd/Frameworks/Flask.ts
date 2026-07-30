@@ -1,7 +1,7 @@
 import type { Subpage } from '@/types/navigation';
 
-import Basics from '@/Navigation/Individual/Granularized/BackEnd/Frameworks/Flask/Basics';
-import Advanced from '@/Navigation/Individual/Granularized/BackEnd/Frameworks/Flask/Advanced';
+import Basics from '@/navigation/individual/modularized/BackEnd/Frameworks/Flask/Basics';
+import Advanced from '@/navigation/individual/modularized/BackEnd/Frameworks/Flask/Advanced';
 
 const Flask: Subpage = {
 name: 'Flask',

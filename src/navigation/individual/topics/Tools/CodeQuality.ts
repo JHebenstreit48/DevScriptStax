@@ -1,9 +1,9 @@
 import type { Subpage } from '@/types/navigation';
 
-import ESLint from '@/Navigation/Individual/Topics/Tools/CodeQuality/ESLint';
-import Prettier from '@/Navigation/Individual/Topics/Tools/CodeQuality/Prettier';
-import TSLint from '@/Navigation/Individual/Topics/Tools/CodeQuality/TSLint';
-import StandardJS from '@/Navigation/Individual/Topics/Tools/CodeQuality/StandardJS';
+import ESLint from '@/navigation/individual/topics/Tools/CodeQuality/ESLint';
+import Prettier from '@/navigation/individual/topics/Tools/CodeQuality/Prettier';
+import TSLint from '@/navigation/individual/topics/Tools/CodeQuality/TSLint';
+import StandardJS from '@/navigation/individual/topics/Tools/CodeQuality/StandardJS';
 
 const CodeQuality: Subpage = {
     name: 'Code Quality',

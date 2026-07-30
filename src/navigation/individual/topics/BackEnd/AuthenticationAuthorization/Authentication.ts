@@ -1,8 +1,8 @@
 import type { Subpage } from '@/types/navigation';
 
-import Basics from '@/Navigation/Individual/Granularized/BackEnd/AuthenticationAuthorization/Authentication/Basics';
-import Intermediate from '@/Navigation/Individual/Granularized/BackEnd/AuthenticationAuthorization/Authentication/Intermediate';
-import Advanced from '@/Navigation/Individual/Granularized/BackEnd/AuthenticationAuthorization/Authentication/Advanced';
+import Basics from '@/navigation/individual/modularized/BackEnd/AuthenticationAuthorization/Authentication/Basics';
+import Intermediate from '@/navigation/individual/modularized/BackEnd/AuthenticationAuthorization/Authentication/Intermediate';
+import Advanced from '@/navigation/individual/modularized/BackEnd/AuthenticationAuthorization/Authentication/Advanced';
 
 const Authentication: Subpage = {
     name: 'Authentication',

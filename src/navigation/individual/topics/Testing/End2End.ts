@@ -1,7 +1,7 @@
 import type { Subpage } from '@/types/navigation';
 
-import Cypress from '@/Navigation/Individual/Topics/Testing/End2End/Cypress';
-import Playwright from '@/Navigation/Individual/Topics/Testing/End2End/Playwright';
+import Cypress from '@/navigation/individual/topics/Testing/End2End/Cypress';
+import Playwright from '@/navigation/individual/topics/Testing/End2End/Playwright';
 
 const End2End: Subpage = {
     name: 'End To End',

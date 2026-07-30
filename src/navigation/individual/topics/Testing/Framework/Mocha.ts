@@ -1,7 +1,7 @@
 import type { Subpage } from '@/types/navigation';
 
-import Basics from '@/Navigation/Individual/Granularized/Testing/Framework/Mocha/Basics';
-import Advanced from '@/Navigation/Individual/Granularized/Testing/Framework/Mocha/Advanced';
+import Basics from '@/navigation/individual/modularized/Testing/Framework/Mocha/Basics';
+import Advanced from '@/navigation/individual/modularized/Testing/Framework/Mocha/Advanced';
 
 
 const Mocha: Subpage = {

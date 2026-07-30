@@ -1,10 +1,10 @@
 import type { Subpage } from '@/types/navigation';
 
-import Basics from '@/Navigation/Individual/Granularized/BackEnd/Databases/MongoDB/Basics';
-import Intermediate from '@/Navigation/Individual/Granularized/BackEnd/Databases/MongoDB/Intermediate';
-import Advanced from '@/Navigation/Individual/Granularized/BackEnd/Databases/MongoDB/Advanced';
-import Tools from '@/Navigation/Individual/Granularized/BackEnd/Databases/MongoDB/Tools';
-import Testing from '@/Navigation/Individual/Granularized/BackEnd/Databases/MongoDB/Testing';
+import Basics from '@/navigation/individual/modularized/BackEnd/Databases/MongoDB/Basics';
+import Intermediate from '@/navigation/individual/modularized/BackEnd/Databases/MongoDB/Intermediate';
+import Advanced from '@/navigation/individual/modularized/BackEnd/Databases/MongoDB/Advanced';
+import Tools from '@/navigation/individual/modularized/BackEnd/Databases/MongoDB/Tools';
+import Testing from '@/navigation/individual/modularized/BackEnd/Databases/MongoDB/Testing';
 
 const MongoDB: Subpage = {
   name: 'MongoDB',

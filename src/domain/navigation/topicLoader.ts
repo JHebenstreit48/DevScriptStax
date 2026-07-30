@@ -27,21 +27,21 @@ export async function loadTopic(key: TopicKey): Promise<Subpage>
   switch (key)
   {
     case 'frontEnd':
-      return (await import('@/Navigation/Combined/Topics/frontEnd')).default;
+      return (await import('@/navigation/combined/topics/frontEnd')).default;
     case 'backEnd':
-      return (await import('@/Navigation/Combined/Topics/backEnd')).default;
+      return (await import('@/navigation/combined/topics/backEnd')).default;
     case 'cloudAndDeployment':
-      return (await import('@/Navigation/Combined/Topics/cloudAndDeployment')).default;
+      return (await import('@/navigation/combined/topics/cloudAndDeployment')).default;
     case 'testing':
-      return (await import('@/Navigation/Combined/Topics/testing')).default;
+      return (await import('@/navigation/combined/topics/testing')).default;
     case 'tools':
-      return (await import('@/Navigation/Combined/Topics/tools')).default;
+      return (await import('@/navigation/combined/topics/tools')).default;
     case 'languages':
-      return (await import('@/Navigation/Combined/Topics/languages')).default;
+      return (await import('@/navigation/combined/topics/languages')).default;
     case 'graphQLAndApollo':
-      return (await import('@/Navigation/Combined/Topics/graphQLAndApollo')).default;
+      return (await import('@/navigation/combined/topics/graphQLAndApollo')).default;
     case 'stacks':
-      return (await import('@/Navigation/Combined/Topics/stacks')).default;
+      return (await import('@/navigation/combined/topics/stacks')).default;
     default:
       throw new Error(`Unknown topic key: ${key as string}`);
   }

@@ -1,8 +1,8 @@
 import type { Subpage } from '@/types/navigation';
 
-import Foundations from '@/Navigation/Individual/Granularized/FrontEnd/CSS/Tools/Postprocessors/Combined/Foundations';
-import LightningCSS from '@/Navigation/Individual/Granularized/FrontEnd/CSS/Tools/Postprocessors/Combined/LightningCSS';
-import PostCSS from '@/Navigation/Individual/Granularized/FrontEnd/CSS/Tools/Postprocessors/Combined/PostCSS';
+import Foundations from '@/navigation/individual/modularized/FrontEnd/CSS/Tools/Postprocessors/Combined/Foundations';
+import LightningCSS from '@/navigation/individual/modularized/FrontEnd/CSS/Tools/Postprocessors/Combined/LightningCSS';
+import PostCSS from '@/navigation/individual/modularized/FrontEnd/CSS/Tools/Postprocessors/Combined/PostCSS';
 
 const Postprocessors: Subpage = {
     name: "Postprocessors",

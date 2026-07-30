@@ -1,7 +1,7 @@
 import type { Subpage } from '@/types/navigation';
 
-import Basics from '@/Navigation/Individual/Granularized/BackEnd/Databases/Firebase/Basics';
-import Advanced from '@/Navigation/Individual/Granularized/BackEnd/Databases/Firebase/Advanced';
+import Basics from '@/navigation/individual/modularized/BackEnd/Databases/Firebase/Basics';
+import Advanced from '@/navigation/individual/modularized/BackEnd/Databases/Firebase/Advanced';
 
 const Firebase: Subpage = {
   name: 'Firebase',

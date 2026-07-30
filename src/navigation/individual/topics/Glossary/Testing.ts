@@ -1,6 +1,6 @@
 import type { Subpage } from '@/types/navigation';
 
-import EndToEnd from '@/Navigation/Individual/Granularized/Glossary/Testing/EndToEnd';
+import EndToEnd from '@/navigation/individual/modularized/Glossary/Testing/EndToEnd';
 
 const Testing: Subpage = {
   name: 'Testing',

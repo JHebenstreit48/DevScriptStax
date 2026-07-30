@@ -1,8 +1,8 @@
 import type { Subpage } from '@/types/navigation';
 
-import Layouts from '@/Navigation/Individual/Granularized/FrontEnd/CSS/Advanced/Layouts';
-import Effects from '@/Navigation/Individual/Granularized/FrontEnd/CSS/Advanced/Effects';
-import ResponseAndVar from '@/Navigation/Individual/Granularized/FrontEnd/CSS/Advanced/ResponseAndVar';
+import Layouts from '@/navigation/individual/modularized/FrontEnd/CSS/Advanced/Layouts';
+import Effects from '@/navigation/individual/modularized/FrontEnd/CSS/Advanced/Effects';
+import ResponseAndVar from '@/navigation/individual/modularized/FrontEnd/CSS/Advanced/ResponseAndVar';
 
 const Advanced: Subpage = {
   name: "Advanced",

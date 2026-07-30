@@ -1,9 +1,9 @@
 import type { Subpage } from '@/types/navigation';
 
-import Basics from '@/Navigation/Individual/Granularized/FrontEnd/React/Basics';
-import Advanced from '@/Navigation/Individual/Granularized/FrontEnd/React/Advanced';
-import ToolsAndTesting from '@/Navigation/Individual/Granularized/FrontEnd/React/ToolsAndTesting';
-import Intermediate from '@/Navigation/Individual/Granularized/FrontEnd/React/Intermediate';
+import Basics from '@/navigation/individual/modularized/FrontEnd/React/Basics';
+import Advanced from '@/navigation/individual/modularized/FrontEnd/React/Advanced';
+import ToolsAndTesting from '@/navigation/individual/modularized/FrontEnd/React/ToolsAndTesting';
+import Intermediate from '@/navigation/individual/modularized/FrontEnd/React/Intermediate';
 
 const React: Subpage = {
   name: 'React',

@@ -1,7 +1,7 @@
 import type { Subpage } from '@/types/navigation';
 
-import Basics from '@/Navigation/Individual/Granularized/CloudAndDeployment/CloudProviders/VPS/DigitalOcean/Basics';
-import Advanced from '@/Navigation/Individual/Granularized/CloudAndDeployment/CloudProviders/VPS/DigitalOcean/Advanced';
+import Basics from '@/navigation/individual/modularized/CloudAndDeployment/CloudProviders/VPS/DigitalOcean/Basics';
+import Advanced from '@/navigation/individual/modularized/CloudAndDeployment/CloudProviders/VPS/DigitalOcean/Advanced';
 
 const DigitalOcean: Subpage = {
   name: 'DigitalOcean',

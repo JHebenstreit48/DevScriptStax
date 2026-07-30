@@ -1,7 +1,7 @@
 import type { Subpage } from '@/types/navigation';
 
-import Basics from '@/Navigation/Individual/Granularized/CloudAndDeployment/CloudProviders/VPS/HetznerCloud/Basics';
-import Advanced from '@/Navigation/Individual/Granularized/CloudAndDeployment/CloudProviders/VPS/HetznerCloud/Advanced';
+import Basics from '@/navigation/individual/modularized/CloudAndDeployment/CloudProviders/VPS/HetznerCloud/Basics';
+import Advanced from '@/navigation/individual/modularized/CloudAndDeployment/CloudProviders/VPS/HetznerCloud/Advanced';
 
 const HetznerCloud: Subpage = {
   name: 'Hetzner Cloud',

@@ -1,7 +1,7 @@
 import type { Subpage } from '@/types/navigation';
 
-import Basics from '@/Navigation/Individual/Granularized/Testing/Framework/Jest/Basics';
-import Advanced from '@/Navigation/Individual/Granularized/Testing/Framework/Jest/Advanced';
+import Basics from '@/navigation/individual/modularized/Testing/Framework/Jest/Basics';
+import Advanced from '@/navigation/individual/modularized/Testing/Framework/Jest/Advanced';
 
 
 const Jest: Subpage = {

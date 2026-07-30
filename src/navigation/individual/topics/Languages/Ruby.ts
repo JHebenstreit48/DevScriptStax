@@ -1,7 +1,7 @@
 import type { Subpage } from '@/types/navigation';
 
-import Basics from '@/Navigation/Individual/Granularized/Languages/Ruby/Basics';
-import Advanced from '@/Navigation/Individual/Granularized/Languages/Ruby/Advanced';
+import Basics from '@/navigation/individual/modularized/Languages/Ruby/Basics';
+import Advanced from '@/navigation/individual/modularized/Languages/Ruby/Advanced';
 
 const Ruby: Subpage = {
   name: 'Ruby',

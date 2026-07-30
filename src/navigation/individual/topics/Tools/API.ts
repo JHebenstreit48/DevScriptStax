@@ -1,7 +1,7 @@
 import type { Subpage } from '@/types/navigation';
 
-import Insomnia from '@/Navigation/Individual/Topics/Tools/API/Insomnia';
-import Postman from '@/Navigation/Individual/Topics/Tools/API/Postman';
+import Insomnia from '@/navigation/individual/topics/Tools/API/Insomnia';
+import Postman from '@/navigation/individual/topics/Tools/API/Postman';
 
 const API: Subpage = {
   name: 'API',

@@ -1,7 +1,7 @@
 import type { Subpage } from '@/types/navigation';
 
-import Concepts from '@/Navigation/Individual/Granularized/FrontEnd/Svelte/Advanced/Concepts';
-import BestPractices from '@/Navigation/Individual/Granularized/FrontEnd/Svelte/Advanced/BestPractices';
+import Concepts from '@/navigation/individual/modularized/FrontEnd/Svelte/Advanced/Concepts';
+import BestPractices from '@/navigation/individual/modularized/FrontEnd/Svelte/Advanced/BestPractices';
 
 const Advanced: Subpage = {
   name: 'Advanced',

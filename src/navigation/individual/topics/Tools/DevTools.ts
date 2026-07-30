@@ -1,6 +1,6 @@
 import type { Subpage } from '@/types/navigation';
 
-import Chrome from '@/Navigation/Individual/Topics/Tools/DevTools/Chrome';
+import Chrome from '@/navigation/individual/topics/Tools/DevTools/Chrome';
 
 const DevTools: Subpage = {
     name: 'DevTools',

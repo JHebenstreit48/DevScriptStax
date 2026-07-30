@@ -1,7 +1,7 @@
 import type { Subpage } from '@/types/navigation';
 
-import Basics from '@/Navigation/Individual/Granularized/CloudAndDeployment/CloudProviders/Hyperscalers/AWS/Basics';
-import Advanced from '@/Navigation/Individual/Granularized/CloudAndDeployment/CloudProviders/Hyperscalers/AWS/Advanced';
+import Basics from '@/navigation/individual/modularized/CloudAndDeployment/CloudProviders/Hyperscalers/AWS/Basics';
+import Advanced from '@/navigation/individual/modularized/CloudAndDeployment/CloudProviders/Hyperscalers/AWS/Advanced';
 
 const AWS: Subpage = {
   name: 'AWS',

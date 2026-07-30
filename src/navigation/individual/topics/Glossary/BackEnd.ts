@@ -1,6 +1,6 @@
 import type { Subpage } from '@/types/navigation';
 
-import Frameworks from '@/Navigation/Individual/Granularized/Glossary/BackEnd/Frameworks';
+import Frameworks from '@/navigation/individual/modularized/Glossary/BackEnd/Frameworks';
 
 const BackEnd: Subpage = {
   name: 'BackEnd',

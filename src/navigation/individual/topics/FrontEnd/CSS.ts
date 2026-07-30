@@ -1,8 +1,8 @@
 import type { Subpage } from '@/types/navigation';
 
-import Basics from '@/Navigation/Individual/Granularized/FrontEnd/CSS/Basics';
-import Advanced from '@/Navigation/Individual/Granularized/FrontEnd/CSS/Advanced';
-import Tools from '@/Navigation/Individual/Granularized/FrontEnd/CSS/Tools';
+import Basics from '@/navigation/individual/modularized/FrontEnd/CSS/Basics';
+import Advanced from '@/navigation/individual/modularized/FrontEnd/CSS/Advanced';
+import Tools from '@/navigation/individual/modularized/FrontEnd/CSS/Tools';
 
 const CSS: Subpage = {
   name: 'CSS',

@@ -1,9 +1,9 @@
 import type { Subpage } from '@/types/navigation';
 
-import AWSLambda from '@/Navigation/Individual/Topics/CloudAndDeployment/CloudServices/ServerlessComputing/AWSLambda';
-import GoogleCloudFunctions from '@/Navigation/Individual/Topics/CloudAndDeployment/CloudServices/ServerlessComputing/GoogleCloudFunctions';
-import AzureFunctions from '@/Navigation/Individual/Topics/CloudAndDeployment/CloudServices/ServerlessComputing/AzureFunctions';
-import FirebaseFunctions from '@/Navigation/Individual/Topics/CloudAndDeployment/CloudServices/ServerlessComputing/FirebaseFunctions';
+import AWSLambda from '@/navigation/individual/topics/CloudAndDeployment/CloudServices/ServerlessComputing/AWSLambda';
+import GoogleCloudFunctions from '@/navigation/individual/topics/CloudAndDeployment/CloudServices/ServerlessComputing/GoogleCloudFunctions';
+import AzureFunctions from '@/navigation/individual/topics/CloudAndDeployment/CloudServices/ServerlessComputing/AzureFunctions';
+import FirebaseFunctions from '@/navigation/individual/topics/CloudAndDeployment/CloudServices/ServerlessComputing/FirebaseFunctions';
 
 const ServerlessComputing: Subpage = {
   name: 'Serverless Computing',

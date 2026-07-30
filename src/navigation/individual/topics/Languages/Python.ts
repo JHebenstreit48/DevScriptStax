@@ -1,8 +1,8 @@
 import type { Subpage } from '@/types/navigation';
 
-import Basics from '@/Navigation/Individual/Granularized/Languages/Python/Basics';
-import Intermediate from '@/Navigation/Individual/Granularized/Languages/Python/Intermediate';
-import Advanced from '@/Navigation/Individual/Granularized/Languages/Python/Advanced';
+import Basics from '@/navigation/individual/modularized/Languages/Python/Basics';
+import Intermediate from '@/navigation/individual/modularized/Languages/Python/Intermediate';
+import Advanced from '@/navigation/individual/modularized/Languages/Python/Advanced';
 
 const Python: Subpage = {
   name: 'Python',

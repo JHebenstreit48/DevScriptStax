@@ -1,8 +1,8 @@
 import type { Subpage } from '@/types/navigation';
 
-import Basics from '@/Navigation/Individual/Granularized/Tools/EnvVariables/Basics';
-import Advanced from '@/Navigation/Individual/Granularized/Tools/EnvVariables/Advanced';
-import Tools from '@/Navigation/Individual/Granularized/Tools/EnvVariables/Tools';
+import Basics from '@/navigation/individual/modularized/Tools/EnvVariables/Basics';
+import Advanced from '@/navigation/individual/modularized/Tools/EnvVariables/Advanced';
+import Tools from '@/navigation/individual/modularized/Tools/EnvVariables/Tools';
 
 const EnvVariables: Subpage = {
   name: 'Env Variables',

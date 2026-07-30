@@ -1,7 +1,7 @@
 import type { Subpage } from '@/types/navigation';
 
-import Fundamentals from '@/Navigation/Individual/Granularized/Languages/TypeScript/Basics/Fundamentals';
-import Types from '@/Navigation/Individual/Granularized/Languages/TypeScript/Basics/Types';
+import Fundamentals from '@/navigation/individual/modularized/Languages/TypeScript/Basics/Fundamentals';
+import Types from '@/navigation/individual/modularized/Languages/TypeScript/Basics/Types';
 
 const Basics: Subpage = {
   name: 'Basics',

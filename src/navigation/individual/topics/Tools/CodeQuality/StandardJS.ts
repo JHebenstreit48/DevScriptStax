@@ -1,7 +1,7 @@
 import type { Subpage } from '@/types/navigation';
 
-import Basics from '@/Navigation/Individual/Granularized/Tools/CodeQuality/StandardJS/Basics';
-import Advanced from '@/Navigation/Individual/Granularized/Tools/CodeQuality/StandardJS/Advanced';
+import Basics from '@/navigation/individual/modularized/Tools/CodeQuality/StandardJS/Basics';
+import Advanced from '@/navigation/individual/modularized/Tools/CodeQuality/StandardJS/Advanced';
 
 const StandardJS: Subpage = {
     name: 'StandardJS',

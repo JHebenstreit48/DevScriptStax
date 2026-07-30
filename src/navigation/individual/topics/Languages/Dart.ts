@@ -1,9 +1,9 @@
 import type { Subpage } from '@/types/navigation';
 
-import Basics from '@/Navigation/Individual/Granularized/Languages/Dart/Basics';
-import Advanced from '@/Navigation/Individual/Granularized/Languages/Dart/Advanced';
-import Testing from '@/Navigation/Individual/Granularized/Languages/Dart/Testing';
-import Tools from '@/Navigation/Individual/Granularized/Languages/Dart/Tools';
+import Basics from '@/navigation/individual/modularized/Languages/Dart/Basics';
+import Advanced from '@/navigation/individual/modularized/Languages/Dart/Advanced';
+import Testing from '@/navigation/individual/modularized/Languages/Dart/Testing';
+import Tools from '@/navigation/individual/modularized/Languages/Dart/Tools';
 
 const Dart: Subpage = {
   name: 'Dart',

@@ -1,7 +1,7 @@
 import type { Subpage } from '@/types/navigation';
 
-import Basics from '@/Navigation/Individual/Granularized/CloudAndDeployment/CloudServices/ServerlessComputing/GoogleCloudFunctions/Basics';
-import Advanced from '@/Navigation/Individual/Granularized/CloudAndDeployment/CloudServices/ServerlessComputing/GoogleCloudFunctions/Advanced';
+import Basics from '@/navigation/individual/modularized/CloudAndDeployment/CloudServices/ServerlessComputing/GoogleCloudFunctions/Basics';
+import Advanced from '@/navigation/individual/modularized/CloudAndDeployment/CloudServices/ServerlessComputing/GoogleCloudFunctions/Advanced';
 
 const GoogleCloudFunctions: Subpage = {
     name: 'Google Cloud Functions',

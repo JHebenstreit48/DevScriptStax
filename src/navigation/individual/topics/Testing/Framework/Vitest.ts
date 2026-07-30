@@ -1,7 +1,7 @@
 import type { Subpage } from '@/types/navigation';
 
-import Basics from '@/Navigation/Individual/Granularized/Testing/Framework/Vitest/Basics';
-import Advanced from '@/Navigation/Individual/Granularized/Testing/Framework/Vitest/Advanced';
+import Basics from '@/navigation/individual/modularized/Testing/Framework/Vitest/Basics';
+import Advanced from '@/navigation/individual/modularized/Testing/Framework/Vitest/Advanced';
 
 
 const Vitest: Subpage = {

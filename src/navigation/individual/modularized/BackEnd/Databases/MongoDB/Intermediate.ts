@@ -1,7 +1,7 @@
 import type { Subpage } from '@/types/navigation';
 
-import Indexes from '@/Navigation/Individual/Granularized/BackEnd/Databases/MongoDB/Intermediate/Indexes';
-import Aggregation from '@/Navigation/Individual/Granularized/BackEnd/Databases/MongoDB/Intermediate/Aggregation';
+import Indexes from '@/navigation/individual/modularized/BackEnd/Databases/MongoDB/Intermediate/Indexes';
+import Aggregation from '@/navigation/individual/modularized/BackEnd/Databases/MongoDB/Intermediate/Aggregation';
 
 const Intermediate: Subpage = {
   name: 'Intermediate',

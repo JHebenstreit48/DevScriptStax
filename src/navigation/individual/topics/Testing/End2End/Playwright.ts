@@ -1,7 +1,7 @@
 import type { Subpage } from '@/types/navigation';
 
-import Basics from '@/Navigation/Individual/Granularized/Testing/End2End/Playwright/Basics';
-import Advanced from '@/Navigation/Individual/Granularized/Testing/End2End/Playwright/Advanced';
+import Basics from '@/navigation/individual/modularized/Testing/End2End/Playwright/Basics';
+import Advanced from '@/navigation/individual/modularized/Testing/End2End/Playwright/Advanced';
 
 const Playwright: Subpage = {
   name: 'Playwright',

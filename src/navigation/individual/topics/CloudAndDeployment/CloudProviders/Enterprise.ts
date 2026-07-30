@@ -1,7 +1,7 @@
 import type { Subpage } from '@/types/navigation';
 
-import IBMCloud from '@/Navigation/Individual/Topics/CloudAndDeployment/CloudProviders/Enterprise/IBMCloud';
-import OracleCloud from '@/Navigation/Individual/Topics/CloudAndDeployment/CloudProviders/Enterprise/OracleCloud';
+import IBMCloud from '@/navigation/individual/topics/CloudAndDeployment/CloudProviders/Enterprise/IBMCloud';
+import OracleCloud from '@/navigation/individual/topics/CloudAndDeployment/CloudProviders/Enterprise/OracleCloud';
 
 const Enterprise: Subpage = {
   name: 'Enterprise',

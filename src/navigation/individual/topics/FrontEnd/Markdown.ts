@@ -1,8 +1,8 @@
 import type { Subpage } from '@/types/navigation';
 
-import MarkdownBasics from '@/Navigation/Individual/Granularized/FrontEnd/Markdown/Basics';  
-import MarkdownIntermediate from '@/Navigation/Individual/Granularized/FrontEnd/Markdown/Intermediate';
-import MarkdownAdvanced from '@/Navigation/Individual/Granularized/FrontEnd/Markdown/Advanced';
+import MarkdownBasics from '@/navigation/individual/modularized/FrontEnd/Markdown/Basics';  
+import MarkdownIntermediate from '@/navigation/individual/modularized/FrontEnd/Markdown/Intermediate';
+import MarkdownAdvanced from '@/navigation/individual/modularized/FrontEnd/Markdown/Advanced';
 
 const Markdown: Subpage = {
   name: 'Markdown',

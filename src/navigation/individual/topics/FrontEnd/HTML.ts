@@ -1,9 +1,9 @@
 import type { Subpage } from '@/types/navigation';
 
-import Basics from '@/Navigation/Individual/Granularized/FrontEnd/HTML/Basics';
-import Intermediate from '@/Navigation/Individual/Granularized/FrontEnd/HTML/Intermediate';
-import Advanced from '@/Navigation/Individual/Granularized/FrontEnd/HTML/Advanced';
-import Images from '@/Navigation/Individual/Granularized/FrontEnd/HTML/Images';
+import Basics from '@/navigation/individual/modularized/FrontEnd/HTML/Basics';
+import Intermediate from '@/navigation/individual/modularized/FrontEnd/HTML/Intermediate';
+import Advanced from '@/navigation/individual/modularized/FrontEnd/HTML/Advanced';
+import Images from '@/navigation/individual/modularized/FrontEnd/HTML/Images';
 
 const HTML: Subpage = {
   name: 'HTML',

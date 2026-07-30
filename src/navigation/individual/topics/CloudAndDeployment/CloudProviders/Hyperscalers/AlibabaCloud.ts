@@ -1,7 +1,7 @@
 import type { Subpage } from '@/types/navigation';
 
-import Basics from '@/Navigation/Individual/Granularized/CloudAndDeployment/CloudProviders/Hyperscalers/AlibabaCloud/Basics';
-import Advanced from '@/Navigation/Individual/Granularized/CloudAndDeployment/CloudProviders/Hyperscalers/AlibabaCloud/Advanced';
+import Basics from '@/navigation/individual/modularized/CloudAndDeployment/CloudProviders/Hyperscalers/AlibabaCloud/Basics';
+import Advanced from '@/navigation/individual/modularized/CloudAndDeployment/CloudProviders/Hyperscalers/AlibabaCloud/Advanced';
 
 const AlibabaCloud: Subpage = {
   name: 'Alibaba Cloud',

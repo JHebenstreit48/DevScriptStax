@@ -1,7 +1,7 @@
 import type { Subpage } from '@/types/navigation';
 
-import Basics from '@/Navigation/Individual/Granularized/Tools/CodeQuality/ESLint/Basics';
-import Advanced from '@/Navigation/Individual/Granularized/Tools/CodeQuality/ESLint/Advanced';
+import Basics from '@/navigation/individual/modularized/Tools/CodeQuality/ESLint/Basics';
+import Advanced from '@/navigation/individual/modularized/Tools/CodeQuality/ESLint/Advanced';
 
 const ESLint: Subpage = {
     name: 'ESLint',

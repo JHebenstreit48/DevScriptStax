@@ -1,8 +1,8 @@
 import type { Subpage } from '@/types/navigation';
 
-import Basics from '@/Navigation/Individual/Granularized/BackEnd/APIs/Basics';
-import Advanced from '@/Navigation/Individual/Granularized/BackEnd/APIs/Advanced';
-import REST from '@/Navigation/Individual/Granularized/BackEnd/APIs/REST';
+import Basics from '@/navigation/individual/modularized/BackEnd/APIs/Basics';
+import Advanced from '@/navigation/individual/modularized/BackEnd/APIs/Advanced';
+import REST from '@/navigation/individual/modularized/BackEnd/APIs/REST';
 
 const APIs: Subpage = {
     name: "APIs",

@@ -1,7 +1,7 @@
 import type { Subpage } from '@/types/navigation';
 
-import Basics from '@/Navigation/Individual/Granularized/BackEnd/Databases/MySQL/Basics';
-import Advanced from '@/Navigation/Individual/Granularized/BackEnd/Databases/MySQL/Advanced';
+import Basics from '@/navigation/individual/modularized/BackEnd/Databases/MySQL/Basics';
+import Advanced from '@/navigation/individual/modularized/BackEnd/Databases/MySQL/Advanced';
 
 const MySQL: Subpage = {
 name: 'MySQL',

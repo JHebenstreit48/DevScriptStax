@@ -1,10 +1,10 @@
 import type { Subpage } from '@/types/navigation';
 
-import Gateways from '@/Navigation/Individual/Granularized/BackEnd/APIs/Advanced/Gateways';
-import Caching from '@/Navigation/Individual/Granularized/BackEnd/APIs/Advanced/Caching';
-import RateLimiting from '@/Navigation/Individual/Granularized/BackEnd/APIs/Advanced/RateLimiting';
-import Versioning from '@/Navigation/Individual/Granularized/BackEnd/APIs/Advanced/Versioning';
-import Webhooks from '@/Navigation/Individual/Granularized/BackEnd/APIs/Advanced/Webhooks';
+import Gateways from '@/navigation/individual/modularized/BackEnd/APIs/Advanced/Gateways';
+import Caching from '@/navigation/individual/modularized/BackEnd/APIs/Advanced/Caching';
+import RateLimiting from '@/navigation/individual/modularized/BackEnd/APIs/Advanced/RateLimiting';
+import Versioning from '@/navigation/individual/modularized/BackEnd/APIs/Advanced/Versioning';
+import Webhooks from '@/navigation/individual/modularized/BackEnd/APIs/Advanced/Webhooks';
 
 const Advanced: Subpage = {
     name: "Advanced",

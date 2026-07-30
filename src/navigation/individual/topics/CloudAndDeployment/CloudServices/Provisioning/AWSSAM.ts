@@ -1,7 +1,7 @@
 import type { Subpage } from '@/types/navigation';
 
-import Basics from '@/Navigation/Individual/Granularized/CloudAndDeployment/CloudServices/Provisioning/AWSSAM/Basics';
-import Advanced from '@/Navigation/Individual/Granularized/CloudAndDeployment/CloudServices/Provisioning/AWSSAM/Advanced';
+import Basics from '@/navigation/individual/modularized/CloudAndDeployment/CloudServices/Provisioning/AWSSAM/Basics';
+import Advanced from '@/navigation/individual/modularized/CloudAndDeployment/CloudServices/Provisioning/AWSSAM/Advanced';
 
 const AWSSAM: Subpage = {
     name: 'AWS SAM',

@@ -1,7 +1,7 @@
 import type { Subpage } from '@/types/navigation';
 
-import Fundamentals from '@/Navigation/Individual/Granularized/Languages/Python/Basics/Fundamentals';
-import CoreConcepts from '@/Navigation/Individual/Granularized/Languages/Python/Basics/CoreConcepts';
+import Fundamentals from '@/navigation/individual/modularized/Languages/Python/Basics/Fundamentals';
+import CoreConcepts from '@/navigation/individual/modularized/Languages/Python/Basics/CoreConcepts';
 
 const Basics: Subpage = {
   name: "Basics",

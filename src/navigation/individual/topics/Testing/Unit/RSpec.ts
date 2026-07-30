@@ -1,7 +1,7 @@
 import type { Subpage } from '@/types/navigation';
 
-import Basics from '@/Navigation/Individual/Granularized/Testing/Unit/RSpec/Basics';
-import Advanced from '@/Navigation/Individual/Granularized/Testing/Unit/RSpec/Advanced';
+import Basics from '@/navigation/individual/modularized/Testing/Unit/RSpec/Basics';
+import Advanced from '@/navigation/individual/modularized/Testing/Unit/RSpec/Advanced';
 
 
 const RSpec: Subpage = {

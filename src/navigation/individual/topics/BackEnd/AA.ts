@@ -1,7 +1,7 @@
 import type { Subpage } from '@/types/navigation';
 
-import Authentication from '@/Navigation/Individual/Topics/BackEnd/AuthenticationAuthorization/Authentication';
-import Authorization from '@/Navigation/Individual/Topics/BackEnd/AuthenticationAuthorization/Authorization';
+import Authentication from '@/navigation/individual/topics/BackEnd/AuthenticationAuthorization/Authentication';
+import Authorization from '@/navigation/individual/topics/BackEnd/AuthenticationAuthorization/Authorization';
 
 const AuthenticationAuthorization: Subpage = {
     name: 'Authentication & Authorization',

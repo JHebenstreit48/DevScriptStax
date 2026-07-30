@@ -1,7 +1,7 @@
 import type { Subpage } from '@/types/navigation';
 
-import Basics from '@/Navigation/Individual/Granularized/Tools/Containerization/Git/Basics';
-import Advanced from '@/Navigation/Individual/Granularized/Tools/Containerization/Git/Advanced';
+import Basics from '@/navigation/individual/modularized/Tools/Containerization/Git/Basics';
+import Advanced from '@/navigation/individual/modularized/Tools/Containerization/Git/Advanced';
 
 const Git: Subpage = {
   name: 'Git',

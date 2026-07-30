@@ -1,10 +1,10 @@
 import type { Subpage } from '@/types/navigation';
 
-import ClientBasics from '@/Navigation/Individual/Granularized/GraphQLAndApollo/Apollo/ApolloClient/Basics';
-import ClientAdvanced from '@/Navigation/Individual/Granularized/GraphQLAndApollo/Apollo/ApolloClient/Advanced';
+import ClientBasics from '@/navigation/individual/modularized/GraphQLAndApollo/Apollo/ApolloClient/Basics';
+import ClientAdvanced from '@/navigation/individual/modularized/GraphQLAndApollo/Apollo/ApolloClient/Advanced';
 
-import ServerBasics from '@/Navigation/Individual/Granularized/GraphQLAndApollo/Apollo/ApolloServer/Basics';
-import ServerAdvanced from '@/Navigation/Individual/Granularized/GraphQLAndApollo/Apollo/ApolloServer/Advanced';
+import ServerBasics from '@/navigation/individual/modularized/GraphQLAndApollo/Apollo/ApolloServer/Basics';
+import ServerAdvanced from '@/navigation/individual/modularized/GraphQLAndApollo/Apollo/ApolloServer/Advanced';
 
 const Apollo: Subpage = {
   name: 'Apollo',

@@ -1,9 +1,9 @@
 import type { Subpage } from '@/types/navigation';
 
-import AWS from '@/Navigation/Individual/Topics/CloudAndDeployment/CloudProviders/Hyperscalers/AWS';
-import GoogleCloud from '@/Navigation/Individual/Topics/CloudAndDeployment/CloudProviders/Hyperscalers/GoogleCloud';
-import Azure from '@/Navigation/Individual/Topics/CloudAndDeployment/CloudProviders/Hyperscalers/Azure';
-import AlibabaCloud from '@/Navigation/Individual/Topics/CloudAndDeployment/CloudProviders/Hyperscalers/AlibabaCloud';
+import AWS from '@/navigation/individual/topics/CloudAndDeployment/CloudProviders/Hyperscalers/AWS';
+import GoogleCloud from '@/navigation/individual/topics/CloudAndDeployment/CloudProviders/Hyperscalers/GoogleCloud';
+import Azure from '@/navigation/individual/topics/CloudAndDeployment/CloudProviders/Hyperscalers/Azure';
+import AlibabaCloud from '@/navigation/individual/topics/CloudAndDeployment/CloudProviders/Hyperscalers/AlibabaCloud';
 
 const Hyperscalers: Subpage = {
   name: 'Hyperscalers',

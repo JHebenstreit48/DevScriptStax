@@ -1,7 +1,7 @@
 import type { Subpage } from '@/types/navigation';
 
-import NodeJS from '@/Navigation/Individual/Granularized/Glossary/BackEnd/Frameworks/NodeJS';
-import ExpressJS from '@/Navigation/Individual/Granularized/Glossary/BackEnd/Frameworks/ExpressJS';
+import NodeJS from '@/navigation/individual/modularized/Glossary/BackEnd/Frameworks/NodeJS';
+import ExpressJS from '@/navigation/individual/modularized/Glossary/BackEnd/Frameworks/ExpressJS';
 
 const Frameworks: Subpage = {
   name: 'Frameworks',

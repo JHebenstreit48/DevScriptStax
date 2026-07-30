@@ -1,7 +1,7 @@
 import type { Subpage } from '@/types/navigation';
 
-import Basics from '@/Navigation/Individual/Granularized/Tools/Containerization/Docker/Basics';
-import Advanced from '@/Navigation/Individual/Granularized/Tools/Containerization/Docker/Advanced';
+import Basics from '@/navigation/individual/modularized/Tools/Containerization/Docker/Basics';
+import Advanced from '@/navigation/individual/modularized/Tools/Containerization/Docker/Advanced';
 
 const Docker: Subpage = {
   name: 'Docker',

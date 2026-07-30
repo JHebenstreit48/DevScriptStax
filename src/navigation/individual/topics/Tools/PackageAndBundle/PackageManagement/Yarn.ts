@@ -1,7 +1,7 @@
 import type { Subpage } from '@/types/navigation';
 
-import Basics from '@/Navigation/Individual/Granularized/Tools/PackageAndBundle/PackageManagement/Yarn/Basics';
-import Advanced from '@/Navigation/Individual/Granularized/Tools/PackageAndBundle/PackageManagement/Yarn/Advanced';
+import Basics from '@/navigation/individual/modularized/Tools/PackageAndBundle/PackageManagement/Yarn/Basics';
+import Advanced from '@/navigation/individual/modularized/Tools/PackageAndBundle/PackageManagement/Yarn/Advanced';
 
 const Yarn: Subpage = {
     name: "Yarn",

@@ -1,8 +1,8 @@
 import type { Subpage } from '@/types/navigation';
 
-import GoBasics from '@/Navigation/Individual/Granularized/Languages/Go/Basics';
-import GoIntermediate from '@/Navigation/Individual/Granularized/Languages/Go/Intermediate';
-import GoAdvanced from '@/Navigation/Individual/Granularized/Languages/Go/Advanced';
+import GoBasics from '@/navigation/individual/modularized/Languages/Go/Basics';
+import GoIntermediate from '@/navigation/individual/modularized/Languages/Go/Intermediate';
+import GoAdvanced from '@/navigation/individual/modularized/Languages/Go/Advanced';
 
 const Go: Subpage = {
   name: 'Go',
