@@ -6,7 +6,7 @@ import Footer from '@/components/shared/footer';
 import RouteTracker from '@/components/shared/analytics/routeTracker';
 import BackToTopGate from '@/components/shared/backToTop/gate';
 
-import '@/scss/page/page.scss';
+import '@/scss/shared/page/page.scss';
 import '@/scss/shared/header/index.scss';
 import '@/scss/shared/footer.scss';
 import '@/scss/navigation/index.scss';
