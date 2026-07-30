@@ -1,0 +1,33 @@
+import { lazy } from 'react';
+import { RouteObject } from 'react-router-dom';
+
+const GrantTypes = lazy(() => import('@/pages/mainTabs/BackEnd/AuthenticateAndAuthorize/Authentication/Intermediate/OAuthOIDC/GrantTypes'));
+const PKCE = lazy(() => import('@/pages/mainTabs/BackEnd/AuthenticateAndAuthorize/Authentication/Intermediate/OAuthOIDC/PKCE'));
+const OIDC = lazy(() => import('@/pages/mainTabs/BackEnd/AuthenticateAndAuthorize/Authentication/Intermediate/OAuthOIDC/OIDC'));
+const OAuthInReact = lazy(() => import('@/pages/mainTabs/BackEnd/AuthenticateAndAuthorize/Authentication/Intermediate/OAuthOIDC/OAuthInReact'));
+const ServerSetup = lazy(() => import('@/pages/mainTabs/BackEnd/AuthenticateAndAuthorize/Authentication/Intermediate/OAuthOIDC/ServerSetup'));
+
+const OAuthOIDC: RouteObject[] = [
+  {
+    path: '/authentication/intermediate/oauth-oidc/grant-types',
+    element: <GrantTypes />,
+  },
+  {
+    path: '/authentication/intermediate/oauth-oidc/pkce',
+    element: <PKCE />,
+  },
+  {
+    path: '/authentication/intermediate/oauth-oidc/oidc',
+    element: <OIDC />,
+  },
+  {
+    path: '/authentication/intermediate/oauth-oidc/oauth-react',
+    element: <OAuthInReact />,
+  },
+  {
+    path: '/authentication/intermediate/oauth-oidc/server-setup',
+    element: <ServerSetup />,
+  },
+];
+
+export default OAuthOIDC;

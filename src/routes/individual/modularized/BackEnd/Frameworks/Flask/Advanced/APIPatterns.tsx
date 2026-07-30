@@ -1,0 +1,18 @@
+import { lazy } from 'react';
+import { RouteObject } from 'react-router-dom';
+
+const RESTInFlask = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/Flask/Advanced/APIPatterns/RESTInFlask'));
+const GraphQL = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/Flask/Advanced/APIPatterns/GraphQL'));
+
+const APIPatterns: RouteObject[] = [
+  {
+    path: '/frameworks/flask/advanced/api-patterns/rest-in-flask',
+    element: <RESTInFlask />,
+  },
+  {
+    path: '/frameworks/flask/advanced/api-patterns/graphql-flask',
+    element: <GraphQL />,
+  },
+];
+
+export default APIPatterns;

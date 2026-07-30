@@ -1,0 +1,29 @@
+import { lazy } from 'react';
+import { RouteObject } from 'react-router-dom';
+
+const JSX = lazy(
+  () =>
+    import(
+      '@/pages/mainTabs/FrontEnd/React/Basics/CoreConcepts/Fundamentals/JSX'
+    )
+);
+
+const EventHandling = lazy(
+  () =>
+    import(
+      '@/pages/mainTabs/FrontEnd/React/Basics/CoreConcepts/Fundamentals/EventHandling'
+    )
+);
+
+const JSXAndEvent: RouteObject[] = [
+  {
+    path: '/react/basics/core/fundamentals/jsx',
+    element: <JSX />,
+  },
+  {
+    path: '/react/basics/core/fundamentals/event-handling',
+    element: <EventHandling />,
+  },
+];
+
+export default JSXAndEvent;

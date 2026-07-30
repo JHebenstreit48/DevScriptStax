@@ -109,7 +109,7 @@ export function generateLeafLazyRoutes(pagesRoot: Subpage[], filter: Filter): Re
       const outDir = path.join(routesRoot, sectionFolder, topicFolder, ...groupFolders.slice(0, -1));
       const outPath = path.join(outDir, `${fileVarName}.tsx`);
 
-      const pageImportBaseDir = `@/Pages/MainTabs/${sectionFolder}/${topicFolder}/${groupFolders.join('/')}`;
+      const pageImportBaseDir = `@/pages/mainTabs/${sectionFolder}/${topicFolder}/${groupFolders.join('/')}`;
 
       const sig = computeLeafRouteSignatureFromPaths(leafChildren.map((c) => c.path));
 

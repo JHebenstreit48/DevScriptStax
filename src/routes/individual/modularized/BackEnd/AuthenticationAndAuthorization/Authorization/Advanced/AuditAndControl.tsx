@@ -1,0 +1,18 @@
+import { lazy } from 'react';
+import { RouteObject } from 'react-router-dom';
+
+const AccessLogging = lazy(() => import('@/pages/mainTabs/BackEnd/AuthenticateAndAuthorize/Authorization/Advanced/AuditAndControl/AccessLogging'));
+const FineGrainedControl = lazy(() => import('@/pages/mainTabs/BackEnd/AuthenticateAndAuthorize/Authorization/Advanced/AuditAndControl/FineGrainedControl'));
+
+const AuditAndControl: RouteObject[] = [
+  {
+    path: '/authorization/advanced/audit/logging',
+    element: <AccessLogging />,
+  },
+  {
+    path: '/authorization/advanced/audit/fine-grained',
+    element: <FineGrainedControl />,
+  },
+];
+
+export default AuditAndControl;

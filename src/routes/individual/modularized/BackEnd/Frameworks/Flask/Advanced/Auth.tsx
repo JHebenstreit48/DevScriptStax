@@ -1,0 +1,23 @@
+import { lazy } from 'react';
+import { RouteObject } from 'react-router-dom';
+
+const FlaskLogin = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/Flask/Advanced/Auth/FlaskLogin'));
+const JWT = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/Flask/Advanced/Auth/JWT'));
+const Sessions = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/Flask/Advanced/Auth/Sessions'));
+
+const Auth: RouteObject[] = [
+  {
+    path: '/frameworks/flask/advanced/auth/flask-login',
+    element: <FlaskLogin />,
+  },
+  {
+    path: '/frameworks/flask/advanced/auth/jwt',
+    element: <JWT />,
+  },
+  {
+    path: '/frameworks/flask/advanced/auth/sessions',
+    element: <Sessions />,
+  },
+];
+
+export default Auth;

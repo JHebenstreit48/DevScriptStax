@@ -1,0 +1,18 @@
+import { lazy } from 'react';
+import { RouteObject } from 'react-router-dom';
+
+const ErrorHandling = lazy(() => import('@/pages/mainTabs/GraphQLAndApollo/Apollo/ApolloClient/Advanced/ErrorsAndRetry/ErrorHandling'));
+const RetryLink = lazy(() => import('@/pages/mainTabs/GraphQLAndApollo/Apollo/ApolloClient/Advanced/ErrorsAndRetry/RetryLink'));
+
+const ErrorsAndRetry: RouteObject[] = [
+  {
+    path: '/apollo/client/advanced/errors-retry/error-handling',
+    element: <ErrorHandling />,
+  },
+  {
+    path: '/apollo/client/advanced/errors-retry/retry-link',
+    element: <RetryLink />,
+  },
+];
+
+export default ErrorsAndRetry;

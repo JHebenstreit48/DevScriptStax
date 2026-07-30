@@ -1,0 +1,23 @@
+import { lazy } from 'react';
+import { RouteObject } from 'react-router-dom';
+
+const Introduction = lazy(() => import('@/pages/mainTabs/Testing/End2End/Cypress/Basics/Fundamentals/Introduction'));
+const Setup = lazy(() => import('@/pages/mainTabs/Testing/End2End/Cypress/Basics/Fundamentals/Setup'));
+const RunningTestsAndModes = lazy(() => import('@/pages/mainTabs/Testing/End2End/Cypress/Basics/Fundamentals/RunningTestsAndModes'));
+
+const Fundamentals: RouteObject[] = [
+  {
+    path: '/e2e/cypress/basics/fundamentals/introduction',
+    element: <Introduction />,
+  },
+  {
+    path: '/e2e/cypress/basics/fundamentals/setup',
+    element: <Setup />,
+  },
+  {
+    path: '/e2e/cypress/basics/fundamentals/first-test',
+    element: <RunningTestsAndModes />,
+  }
+];
+
+export default Fundamentals;

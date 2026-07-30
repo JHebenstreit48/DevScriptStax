@@ -1,0 +1,28 @@
+import { lazy } from 'react';
+import { RouteObject } from 'react-router-dom';
+
+const Overview = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/KoaJs/Basics/Fundamentals/Overview'));
+const InstallAndSetup = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/KoaJs/Basics/Fundamentals/InstallAndSetup'));
+const AppStructure = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/KoaJs/Basics/Fundamentals/AppStructure'));
+const AppAndContext = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/KoaJs/Basics/Fundamentals/AppAndContext'));
+
+const Fundamentals: RouteObject[] = [
+  {
+    path: '/frameworks/koa/basics/fundamentals/overview',
+    element: <Overview />,
+  },
+  {
+    path: '/frameworks/koa/basics/fundamentals/install-setup',
+    element: <InstallAndSetup />,
+  },
+  {
+    path: '/frameworks/koa/basics/fundamentals/app-structure',
+    element: <AppStructure />,
+  },
+  {
+    path: '/frameworks/koa/basics/fundamentals/app-context',
+    element: <AppAndContext />,
+  },
+];
+
+export default Fundamentals;

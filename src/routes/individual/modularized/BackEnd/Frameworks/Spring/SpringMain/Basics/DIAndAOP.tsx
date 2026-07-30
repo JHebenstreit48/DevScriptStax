@@ -1,0 +1,18 @@
+import { lazy } from 'react';
+import { RouteObject } from 'react-router-dom';
+
+const DependencyInjection = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/Spring/SpringMain/Basics/DIAndAOP/DependencyInjection'));
+const AOPBasics = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/Spring/SpringMain/Basics/DIAndAOP/AOPBasics'));
+
+const DIAndAOP: RouteObject[] = [
+  {
+    path: '/frameworks/spring/spring-main/basics/di-aop/dependency-injection',
+    element: <DependencyInjection />,
+  },
+  {
+    path: '/frameworks/spring/spring-main/basics/di-aop/aop-basics',
+    element: <AOPBasics />,
+  },
+];
+
+export default DIAndAOP;
