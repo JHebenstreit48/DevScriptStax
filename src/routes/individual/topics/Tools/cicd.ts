@@ -1,7 +1,7 @@
 import { RouteObject } from "react-router-dom";
 
-import CircleCI from '@/routes/Individual/FullRoutes/Tools/CICD/CircleCI';
-import Jenkins from '@/routes/Individual/FullRoutes/Tools/CICD/Jenkins';
+import CircleCI from '@/routes/individual/topics/Tools/CICD/CircleCI';
+import Jenkins from '@/routes/individual/topics/Tools/CICD/Jenkins';
 
 const CICD: RouteObject[] = [
   ...CircleCI,

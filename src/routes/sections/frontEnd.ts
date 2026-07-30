@@ -1,15 +1,15 @@
 import { RouteObject } from "react-router-dom";
 
-import Angular from '@/routes/Individual/FullRoutes/FrontEnd/angular';
-import CSS from '@/routes/Individual/FullRoutes/FrontEnd/css';
-import Gatsby from '@/routes/Individual/FullRoutes/FrontEnd/gatsby';
-import HTML from '@/routes/Individual/FullRoutes/FrontEnd/html';
-import Markdown from '@/routes/Individual/FullRoutes/FrontEnd/markdown';
-import NextJs from '@/routes/Individual/FullRoutes/FrontEnd/nextJS';
-import React from '@/routes/Individual/FullRoutes/FrontEnd/react';
-import Redux from '@/routes/Individual/FullRoutes/FrontEnd/redux';
-import Svelte from '@/routes/Individual/FullRoutes/FrontEnd/svelte';
-import Vue from '@/routes/Individual/FullRoutes/FrontEnd/vue';
+import Angular from '@/routes/individual/topics/FrontEnd/angular';
+import CSS from '@/routes/individual/topics/FrontEnd/css';
+import Gatsby from '@/routes/individual/topics/FrontEnd/gatsby';
+import HTML from '@/routes/individual/topics/FrontEnd/html';
+import Markdown from '@/routes/individual/topics/FrontEnd/markdown';
+import NextJs from '@/routes/individual/topics/FrontEnd/nextJS';
+import React from '@/routes/individual/topics/FrontEnd/react';
+import Redux from '@/routes/individual/topics/FrontEnd/redux';
+import Svelte from '@/routes/individual/topics/FrontEnd/svelte';
+import Vue from '@/routes/individual/topics/FrontEnd/vue';
 
 const frontEnd: RouteObject[] = [
   ...Angular,

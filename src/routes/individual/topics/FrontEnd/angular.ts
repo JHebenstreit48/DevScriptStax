@@ -1,8 +1,8 @@
 import { RouteObject } from "react-router-dom";
 
-import Basics from '@/routes/Individual/Granularized/FrontEnd/Angular/Basics';
-import Advanced from '@/routes/Individual/Granularized/FrontEnd/Angular/Advanced';
-import Testing from '@/routes/Individual/Granularized/FrontEnd/Angular/Testing';
+import Basics from '@/routes/individual/modularized/FrontEnd/Angular/Basics';
+import Advanced from '@/routes/individual/modularized/FrontEnd/Angular/Advanced';
+import Testing from '@/routes/individual/modularized/FrontEnd/Angular/Testing';
 
 const Angular: RouteObject[] = [
     ...Basics,

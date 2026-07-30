@@ -1,6 +1,6 @@
 import { RouteObject } from "react-router-dom";
 
-import PersistedQueries from '@/routes/Individual/Granularized/GraphQLAndApollo/Apollo/ApolloServer/Advanced/PersistedQueries';
+import PersistedQueries from '@/routes/individual/modularized/GraphQLAndApollo/Apollo/ApolloServer/Advanced/PersistedQueries';
 
 const ServerAdvanced: RouteObject[] = [
     ...PersistedQueries,

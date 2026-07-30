@@ -1,8 +1,8 @@
 import { RouteObject } from "react-router-dom";
 
-import Basics from '@/routes/Individual/Granularized/FrontEnd/React/Basics';
-import Intermediate from '@/routes/Individual/Granularized/FrontEnd/React/Intermediate';
-import Advanced from '@/routes/Individual/Granularized/FrontEnd/React/Advanced';
+import Basics from '@/routes/individual/modularized/FrontEnd/React/Basics';
+import Intermediate from '@/routes/individual/modularized/FrontEnd/React/Intermediate';
+import Advanced from '@/routes/individual/modularized/FrontEnd/React/Advanced';
 
 const React: RouteObject[] = [
    ...Basics, 

@@ -1,9 +1,9 @@
 import { RouteObject } from "react-router-dom";
 
-import Errors from '@/routes/Individual/Granularized/Languages/Go/Advanced/Errors';
-import Modules from '@/routes/Individual/Granularized/Languages/Go/Advanced/Modules';
-import Concurrency from '@/routes/Individual/Granularized/Languages/Go/Advanced/Concurrency';
-import PerformanceAndMemory from '@/routes/Individual/Granularized/Languages/Go/Advanced/PerformanceAndMemory';
+import Errors from '@/routes/individual/modularized/Languages/Go/Advanced/Errors';
+import Modules from '@/routes/individual/modularized/Languages/Go/Advanced/Modules';
+import Concurrency from '@/routes/individual/modularized/Languages/Go/Advanced/Concurrency';
+import PerformanceAndMemory from '@/routes/individual/modularized/Languages/Go/Advanced/PerformanceAndMemory';
 
 const Advanced: RouteObject[] = [
   ...Errors,

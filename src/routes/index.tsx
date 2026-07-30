@@ -1,19 +1,21 @@
 import { createBrowserRouter } from 'react-router-dom';
 
 import App from '@/App';
+
 import ErrorPage from '@/pages/special/Error';
 import Home from '@/pages/special/Home';
 import About from '@/pages/special/About';
 import QRCodePage from '@/pages/special/qrCode';
-import frontEnd from '@/routes/Sections/frontEnd';
-import languages from '@/routes/Sections/languages';
-import backEnd from '@/routes/Sections/backEnd';
-import cloudAndDeployment from '@/routes/Sections/cloudAndDeployment';
-import testing from '@/routes/Sections/testing';
-import tools from '@/routes/Sections/tools';
-import graphQLAndApollo from '@/routes/Sections/graphQLAndApollo';
-import stacks from '@/routes/Sections/stacks';
-import glossary from '@/routes/Sections/glossary';
+
+import frontEnd from '@/routes/sections/frontEnd';
+import languages from '@/routes/sections/languages';
+import backEnd from '@/routes/sections/backEnd';
+import cloudAndDeployment from '@/routes/sections/cloudAndDeployment';
+import testing from '@/routes/sections/testing';
+import tools from '@/routes/sections/tools';
+import graphQLAndApollo from '@/routes/sections/graphQLAndApollo';
+import stacks from '@/routes/sections/stacks';
+import glossary from '@/routes/sections/glossary';
 
 export const router = createBrowserRouter([
   {

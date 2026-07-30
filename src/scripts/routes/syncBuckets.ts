@@ -15,7 +15,7 @@ function importPathForGroup(args: {
   // groupCrumbs includes bucket name as first element
   const mappedFolders = args.groupCrumbs.map((g) => config.groupFolderNameMap?.[g] ?? pascalize(g));
   const rel = mappedFolders.join('/');
-  return `@/routes/Individual/Granularized/${args.sectionFolder}/${args.topicFolder}/${rel}`;
+  return `@/routes/individual/modularized/${args.sectionFolder}/${args.topicFolder}/${rel}`;
 }
 
 function fsPathForGroup(args: {

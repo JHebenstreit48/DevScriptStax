@@ -1,12 +1,12 @@
 import { RouteObject } from "react-router-dom";
 
-import JavaScript from '@/routes/Individual/FullRoutes/Languages/javascript';
-import TypeScript from '@/routes/Individual/FullRoutes/Languages/typescript';
-import Python from '@/routes/Individual/FullRoutes/Languages/python';
-import Ruby from '@/routes/Individual/FullRoutes/Languages/ruby';
-import Rust from '@/routes/Individual/FullRoutes/Languages/rust';
-import Go from '@/routes/Individual/FullRoutes/Languages/go';
-import Dart from '@/routes/Individual/FullRoutes/Languages/dart';
+import JavaScript from '@/routes/individual/topics/Languages/javascript';
+import TypeScript from '@/routes/individual/topics/Languages/typescript';
+import Python from '@/routes/individual/topics/Languages/python';
+import Ruby from '@/routes/individual/topics/Languages/ruby';
+import Rust from '@/routes/individual/topics/Languages/rust';
+import Go from '@/routes/individual/topics/Languages/go';
+import Dart from '@/routes/individual/topics/Languages/dart';
 
 
 const languages: RouteObject[] = [

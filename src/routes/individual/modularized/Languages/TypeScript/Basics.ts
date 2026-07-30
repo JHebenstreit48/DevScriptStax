@@ -1,7 +1,7 @@
 import { RouteObject } from "react-router-dom";
 
-import Fundamentals from '@/routes/Individual/Granularized/Languages/TypeScript/Basics/Fundamentals';
-import Types from '@/routes/Individual/Granularized/Languages/TypeScript/Basics/Types';
+import Fundamentals from '@/routes/individual/modularized/Languages/TypeScript/Basics/Fundamentals';
+import Types from '@/routes/individual/modularized/Languages/TypeScript/Basics/Types';
 
 const Basics: RouteObject[] = [
     ...Fundamentals,

@@ -1,7 +1,7 @@
 import { RouteObject } from "react-router-dom";
 
-import FrontEnd from '@/routes/Individual/FullRoutes/CloudOps/CloudServices/DeploymentPlatforms/FrontEnd';
-import FullStack from '@/routes/Individual/FullRoutes/CloudOps/CloudServices/DeploymentPlatforms/FullStack';
+import FrontEnd from '@/routes/individual/topics/CloudOps/CloudServices/DeploymentPlatforms/FrontEnd';
+import FullStack from '@/routes/individual/topics/CloudOps/CloudServices/DeploymentPlatforms/FullStack';
 
 const DeploymentPlatforms: RouteObject[] = [
     ...FrontEnd,
