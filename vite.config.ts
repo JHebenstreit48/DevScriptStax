@@ -28,8 +28,8 @@ export default defineConfig({
       '@scss': resolve(__dirname, 'src/scss'),
       '@navFull': resolve(__dirname, 'src/navigation/individual/topics'),
       '@navGranular': resolve(__dirname, 'src/navigation/individual/modularized'),
-      '@routeFull': resolve(__dirname, 'src/routes/Individual/FullRoutes'),
-      '@routeGranular': resolve(__dirname, 'src/routes/Individual/Granularized'),
+      '@routeFull': resolve(__dirname, 'src/routes/individual/topics'),
+      '@routeGranular': resolve(__dirname, 'src/routes/individual/modularized'),
     },
   },
 
