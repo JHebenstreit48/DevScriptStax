@@ -3,6 +3,24 @@
 
 .PageLayout {
   position: relative;
+
+  mark {
+    background: none;
+    color: inherit;
+  }
+
+  mark.searchHighlight {
+    background: $cyan-a40;
+    color: $cyan-glow;
+    border-radius: 3px;
+    padding: 0 0.15em;
+    box-shadow: 0 0 8px $cyan-a40;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+
+    @include phone-portrait {
+      box-shadow: none;
+    }
+  }
 }
 
 .BreadcrumbTooltip {
