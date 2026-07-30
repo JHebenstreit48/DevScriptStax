@@ -1,4 +1,4 @@
-import { dbNotes, SITE_ID } from "@/Firebase/client";
+import { dbNotes, SITE_ID } from "@/firebase/client";
 import { collection, getDocs, query, where } from "firebase/firestore";
 
 export interface NoteBody {

@@ -1,5 +1,5 @@
 import type { NotesAdapter, NoteMeta, NoteDoc } from '@/lib/notesAdapter';
-import { dbNotes, SITE_ID } from '@/Firebase/client';
+import { dbNotes, SITE_ID } from '@/firebase/client';
 import {
   collection, getDocs, query, where, orderBy, limit, FirestoreDataConverter, DocumentData
 } from "firebase/firestore";
