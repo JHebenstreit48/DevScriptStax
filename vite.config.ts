@@ -22,7 +22,7 @@ export default defineConfig({
     alias: {
       '@': resolve(__dirname, 'src'),
       '@scripts': resolve(__dirname, 'scripts'), // added — was in tsconfig but missing here
-      '@pages': resolve(__dirname, 'src/Pages'),
+      '@pages': resolve(__dirname, 'src/pages'),
       '@components': resolve(__dirname, 'src/components'),
       '@routes': resolve(__dirname, 'src/routes'),
       '@scss': resolve(__dirname, 'src/scss'),
