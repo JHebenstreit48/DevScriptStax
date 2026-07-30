@@ -1,10 +1,10 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Introduction = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/Firebase/Basics/Fundamentals/Introduction'));
-const FirebaseVsTraditional = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/Firebase/Basics/Fundamentals/FirebaseVsTraditional'));
-const UseCasesForFirebase = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/Firebase/Basics/Fundamentals/UseCasesForFirebase'));
-const ProjectSetup = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/Firebase/Basics/Fundamentals/ProjectSetup'));
+const Introduction = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/Firebase/Basics/Fundamentals/Introduction'));
+const FirebaseVsTraditional = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/Firebase/Basics/Fundamentals/FirebaseVsTraditional'));
+const UseCasesForFirebase = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/Firebase/Basics/Fundamentals/UseCasesForFirebase'));
+const ProjectSetup = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/Firebase/Basics/Fundamentals/ProjectSetup'));
 
 const Fundamentals: RouteObject[] = [
   {

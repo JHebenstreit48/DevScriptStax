@@ -1,9 +1,9 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Basics = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Flask/Basics/Routing/Basics'));
-const DynamicRoutes = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Flask/Basics/Routing/DynamicRoutes'));
-const ErrorHandling = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Flask/Basics/Routing/ErrorHandling'));
+const Basics = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/Flask/Basics/Routing/Basics'));
+const DynamicRoutes = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/Flask/Basics/Routing/DynamicRoutes'));
+const ErrorHandling = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/Flask/Basics/Routing/ErrorHandling'));
 
 const Routing: RouteObject[] = [
   {

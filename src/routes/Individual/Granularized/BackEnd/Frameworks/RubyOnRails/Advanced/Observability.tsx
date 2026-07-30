@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Logging = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/RubyOnRails/Advanced/Observability/Logging'));
-const Instrumentation = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/RubyOnRails/Advanced/Observability/Instrumentation'));
+const Logging = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/RubyOnRails/Advanced/Observability/Logging'));
+const Instrumentation = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/RubyOnRails/Advanced/Observability/Instrumentation'));
 
 const Observability: RouteObject[] = [
   {

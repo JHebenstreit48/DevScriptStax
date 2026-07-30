@@ -1,9 +1,9 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Scaling = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/DeploymentPlatforms/FullStack/Render/Advanced/ScalingAndReliability/Scaling'));
-const HealthChecks = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/DeploymentPlatforms/FullStack/Render/Advanced/ScalingAndReliability/HealthChecks'));
-const ZeroDowntimeDeploys = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/DeploymentPlatforms/FullStack/Render/Advanced/ScalingAndReliability/ZeroDowntimeDeploys'));
+const Scaling = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/DeploymentPlatforms/FullStack/Render/Advanced/ScalingAndReliability/Scaling'));
+const HealthChecks = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/DeploymentPlatforms/FullStack/Render/Advanced/ScalingAndReliability/HealthChecks'));
+const ZeroDowntimeDeploys = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/DeploymentPlatforms/FullStack/Render/Advanced/ScalingAndReliability/ZeroDowntimeDeploys'));
 
 const ScalingAndReliability: RouteObject[] = [
   {

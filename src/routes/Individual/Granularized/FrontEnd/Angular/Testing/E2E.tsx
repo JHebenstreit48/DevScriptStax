@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Introduction = lazy(() => import('@/Pages/MainTabs/FrontEnd/Angular/Testing/E2E/Introduction'));
-const Writing = lazy(() => import('@/Pages/MainTabs/FrontEnd/Angular/Testing/E2E/Writing'));
+const Introduction = lazy(() => import('@/pages/mainTabs/FrontEnd/Angular/Testing/E2E/Introduction'));
+const Writing = lazy(() => import('@/pages/mainTabs/FrontEnd/Angular/Testing/E2E/Writing'));
 
 const EndToEnd: RouteObject[] = [
   {

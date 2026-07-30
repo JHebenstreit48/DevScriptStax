@@ -2,13 +2,13 @@ import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
 const ProjectStructure = lazy(
-  () => import('@/Pages/MainTabs/FrontEnd/Angular/Basics/Structure/ProjectStructure')
+  () => import('@/pages/mainTabs/FrontEnd/Angular/Basics/Structure/ProjectStructure')
 );
 const ConfigFiles = lazy(
-  () => import('@/Pages/MainTabs/FrontEnd/Angular/Basics/Structure/ConfigurationFiles')
+  () => import('@/pages/mainTabs/FrontEnd/Angular/Basics/Structure/ConfigurationFiles')
 );
 const NamingConventions = lazy(
-  () => import('@/Pages/MainTabs/FrontEnd/Angular/Basics/Structure/NamingConventions')
+  () => import('@/pages/mainTabs/FrontEnd/Angular/Basics/Structure/NamingConventions')
 );
 
 const Structure: RouteObject[] = [

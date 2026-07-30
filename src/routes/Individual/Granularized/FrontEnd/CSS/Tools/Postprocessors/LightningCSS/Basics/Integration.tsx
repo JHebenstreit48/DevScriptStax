@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const ViteParcel = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Postprocessors/LightningCSS/Basics/Integration/ViteParcel'));
-const WebpackRollup = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Postprocessors/LightningCSS/Basics/Integration/WebpackRollup'));
+const ViteParcel = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Tools/Postprocessors/LightningCSS/Basics/Integration/ViteParcel'));
+const WebpackRollup = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Tools/Postprocessors/LightningCSS/Basics/Integration/WebpackRollup'));
 
 const Integration: RouteObject[] = [
   {

@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const GcloudAndAuth = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/ServerlessComputing/GoogleCloudFunctions/Basics/Setup/GcloudAndAuth'));
-const FirstDeploy = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/ServerlessComputing/GoogleCloudFunctions/Basics/Setup/FirstDeploy'));
+const GcloudAndAuth = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/ServerlessComputing/GoogleCloudFunctions/Basics/Setup/GcloudAndAuth'));
+const FirstDeploy = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/ServerlessComputing/GoogleCloudFunctions/Basics/Setup/FirstDeploy'));
 
 const Setup: RouteObject[] = [
   {

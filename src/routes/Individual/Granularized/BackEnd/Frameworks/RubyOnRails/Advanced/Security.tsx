@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Devise = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/RubyOnRails/Advanced/Security/Devise'));
-const Authorization = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/RubyOnRails/Advanced/Security/Authorization'));
+const Devise = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/RubyOnRails/Advanced/Security/Devise'));
+const Authorization = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/RubyOnRails/Advanced/Security/Authorization'));
 
 const Security: RouteObject[] = [
   {

@@ -1,10 +1,10 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const ResourceNamingConventions = lazy(() => import('@/Pages/MainTabs/BackEnd/APIs/REST/RESTfulDesignPrinciples/ResourceNamingConventions'));
-const Versioning = lazy(() => import('@/Pages/MainTabs/BackEnd/APIs/REST/RESTfulDesignPrinciples/Versioning'));
-const HATEOASAndHypermedia = lazy(() => import('@/Pages/MainTabs/BackEnd/APIs/REST/RESTfulDesignPrinciples/HATEOASAndHypermedia'));
-const SecurityBestPractices = lazy(() => import('@/Pages/MainTabs/BackEnd/APIs/REST/RESTfulDesignPrinciples/SecurityBestPractices'));
+const ResourceNamingConventions = lazy(() => import('@/pages/mainTabs/BackEnd/APIs/REST/RESTfulDesignPrinciples/ResourceNamingConventions'));
+const Versioning = lazy(() => import('@/pages/mainTabs/BackEnd/APIs/REST/RESTfulDesignPrinciples/Versioning'));
+const HATEOASAndHypermedia = lazy(() => import('@/pages/mainTabs/BackEnd/APIs/REST/RESTfulDesignPrinciples/HATEOASAndHypermedia'));
+const SecurityBestPractices = lazy(() => import('@/pages/mainTabs/BackEnd/APIs/REST/RESTfulDesignPrinciples/SecurityBestPractices'));
 
 const RESTfulDesignPrinciples: RouteObject[] = [
   {

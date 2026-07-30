@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const TLSAndMTLS = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/EdgeComputing/FastlyCompute/Advanced/SecurityAndAccess/TLSAndMTLS'));
-const WAFAndControls = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/EdgeComputing/FastlyCompute/Advanced/SecurityAndAccess/WAFAndControls'));
+const TLSAndMTLS = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/EdgeComputing/FastlyCompute/Advanced/SecurityAndAccess/TLSAndMTLS'));
+const WAFAndControls = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/EdgeComputing/FastlyCompute/Advanced/SecurityAndAccess/WAFAndControls'));
 
 const SecurityAndAccess: RouteObject[] = [
   {

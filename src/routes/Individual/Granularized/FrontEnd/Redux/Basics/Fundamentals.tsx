@@ -1,9 +1,9 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Introduction = lazy(() => import('@/Pages/MainTabs/FrontEnd/Redux/Basics/Fundamentals/Introduction'));
-const CoreConcepts = lazy(() => import('@/Pages/MainTabs/FrontEnd/Redux/Basics/Fundamentals/CoreConcepts'));
-const DataFlow = lazy(() => import('@/Pages/MainTabs/FrontEnd/Redux/Basics/Fundamentals/DataFlow'));
+const Introduction = lazy(() => import('@/pages/mainTabs/FrontEnd/Redux/Basics/Fundamentals/Introduction'));
+const CoreConcepts = lazy(() => import('@/pages/mainTabs/FrontEnd/Redux/Basics/Fundamentals/CoreConcepts'));
+const DataFlow = lazy(() => import('@/pages/mainTabs/FrontEnd/Redux/Basics/Fundamentals/DataFlow'));
 
 const Fundamentals: RouteObject[] = [
   {

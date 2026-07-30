@@ -1,9 +1,9 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const AvoidingReRenders = lazy(() => import('@/Pages/MainTabs/FrontEnd/Redux/Advanced/Performance/AvoidingReRenders'));
-const BatchingAndSubscriptions = lazy(() => import('@/Pages/MainTabs/FrontEnd/Redux/Advanced/Performance/BatchingAndSubscriptions'));
-const ImmutableUpdatesAtScale = lazy(() => import('@/Pages/MainTabs/FrontEnd/Redux/Advanced/Performance/ImmutableUpdatesAtScale'));
+const AvoidingReRenders = lazy(() => import('@/pages/mainTabs/FrontEnd/Redux/Advanced/Performance/AvoidingReRenders'));
+const BatchingAndSubscriptions = lazy(() => import('@/pages/mainTabs/FrontEnd/Redux/Advanced/Performance/BatchingAndSubscriptions'));
+const ImmutableUpdatesAtScale = lazy(() => import('@/pages/mainTabs/FrontEnd/Redux/Advanced/Performance/ImmutableUpdatesAtScale'));
 
 const Performance: RouteObject[] = [
   {

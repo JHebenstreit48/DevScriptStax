@@ -1,9 +1,9 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const AliasingElementsAndRequests = lazy(() => import('@/Pages/MainTabs/Testing/End2End/Cypress/Intermediate/UtilitiesAndNavigation/AliasingElementsAndRequests'));
-const WaitingAndTimeouts = lazy(() => import('@/Pages/MainTabs/Testing/End2End/Cypress/Intermediate/UtilitiesAndNavigation/WaitingAndTimeouts'));
-const DebuggingAndLogging = lazy(() => import('@/Pages/MainTabs/Testing/End2End/Cypress/Intermediate/UtilitiesAndNavigation/DebuggingAndLogging'));
+const AliasingElementsAndRequests = lazy(() => import('@/pages/mainTabs/Testing/End2End/Cypress/Intermediate/UtilitiesAndNavigation/AliasingElementsAndRequests'));
+const WaitingAndTimeouts = lazy(() => import('@/pages/mainTabs/Testing/End2End/Cypress/Intermediate/UtilitiesAndNavigation/WaitingAndTimeouts'));
+const DebuggingAndLogging = lazy(() => import('@/pages/mainTabs/Testing/End2End/Cypress/Intermediate/UtilitiesAndNavigation/DebuggingAndLogging'));
 
 const UtilitiesAndNavigation: RouteObject[] = [
   {

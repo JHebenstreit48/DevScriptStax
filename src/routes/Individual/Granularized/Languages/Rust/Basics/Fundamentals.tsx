@@ -1,10 +1,10 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const IntroAndSyntax = lazy(() => import('@/Pages/MainTabs/Languages/Rust/Basics/Fundamentals/IntroAndSyntax'));
-const OwnershipAndBorrowing = lazy(() => import('@/Pages/MainTabs/Languages/Rust/Basics/Fundamentals/OwnershipAndBorrowing'));
-const TypesAndEnums = lazy(() => import('@/Pages/MainTabs/Languages/Rust/Basics/Fundamentals/TypesAndEnums'));
-const TraitsAndGenerics = lazy(() => import('@/Pages/MainTabs/Languages/Rust/Basics/Fundamentals/TraitsAndGenerics'));
+const IntroAndSyntax = lazy(() => import('@/pages/mainTabs/Languages/Rust/Basics/Fundamentals/IntroAndSyntax'));
+const OwnershipAndBorrowing = lazy(() => import('@/pages/mainTabs/Languages/Rust/Basics/Fundamentals/OwnershipAndBorrowing'));
+const TypesAndEnums = lazy(() => import('@/pages/mainTabs/Languages/Rust/Basics/Fundamentals/TypesAndEnums'));
+const TraitsAndGenerics = lazy(() => import('@/pages/mainTabs/Languages/Rust/Basics/Fundamentals/TraitsAndGenerics'));
 
 const Fundamentals: RouteObject[] = [
   {

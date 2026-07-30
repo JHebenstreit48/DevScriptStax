@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const ComponentAndFunctionGenerics = lazy(() => import('@/Pages/MainTabs/Languages/TypeScript/Advanced/GenericsAndUtilityTypes/ComponentAndFunctionGenerics'));
-const BuiltInUtilityTypes = lazy(() => import('@/Pages/MainTabs/Languages/TypeScript/Advanced/GenericsAndUtilityTypes/BuiltInUtilityTypes'));
+const ComponentAndFunctionGenerics = lazy(() => import('@/pages/mainTabs/Languages/TypeScript/Advanced/GenericsAndUtilityTypes/ComponentAndFunctionGenerics'));
+const BuiltInUtilityTypes = lazy(() => import('@/pages/mainTabs/Languages/TypeScript/Advanced/GenericsAndUtilityTypes/BuiltInUtilityTypes'));
 
 const GenericsAndUtilityTypes: RouteObject[] = [
   {

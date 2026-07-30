@@ -1,9 +1,9 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const PropertiesAndYAML = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Spring/SpringBoot/Basics/Config/PropertiesAndYAML'));
-const Profiles = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Spring/SpringBoot/Basics/Config/Profiles'));
-const ExternalConfigAndEnv = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Spring/SpringBoot/Basics/Config/ExternalConfigAndEnv'));
+const PropertiesAndYAML = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/Spring/SpringBoot/Basics/Config/PropertiesAndYAML'));
+const Profiles = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/Spring/SpringBoot/Basics/Config/Profiles'));
+const ExternalConfigAndEnv = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/Spring/SpringBoot/Basics/Config/ExternalConfigAndEnv'));
 
 const Config: RouteObject[] = [
   {

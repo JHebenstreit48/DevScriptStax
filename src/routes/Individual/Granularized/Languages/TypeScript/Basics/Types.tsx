@@ -3,12 +3,12 @@ import { RouteObject } from 'react-router-dom';
 
 const CoreTypes = lazy(
   () =>
-    import('@/Pages/MainTabs/Languages/TypeScript/Basics/Types/CoreTypes')
+    import('@/pages/mainTabs/Languages/TypeScript/Basics/Types/CoreTypes')
 );
 const InterfaceAndDeclare = lazy(
   () =>
     import(
-      '@/Pages/MainTabs/Languages/TypeScript/Basics/Types/InterfaceAndDeclarations'
+      '@/pages/mainTabs/Languages/TypeScript/Basics/Types/InterfaceAndDeclarations'
     )
 );
 

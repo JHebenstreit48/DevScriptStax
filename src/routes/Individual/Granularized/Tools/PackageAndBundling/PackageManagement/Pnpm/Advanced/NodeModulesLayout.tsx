@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const SymlinkedStructure = lazy(() => import('@/Pages/MainTabs/Tools/PackageAndBundling/PackageManagement/Pnpm/Advanced/NodeModulesLayout/SymlinkedStructure'));
-const HoistingOptions = lazy(() => import('@/Pages/MainTabs/Tools/PackageAndBundling/PackageManagement/Pnpm/Advanced/NodeModulesLayout/HoistingOptions'));
+const SymlinkedStructure = lazy(() => import('@/pages/mainTabs/Tools/PackageAndBundling/PackageManagement/Pnpm/Advanced/NodeModulesLayout/SymlinkedStructure'));
+const HoistingOptions = lazy(() => import('@/pages/mainTabs/Tools/PackageAndBundling/PackageManagement/Pnpm/Advanced/NodeModulesLayout/HoistingOptions'));
 
 const NodeModulesLayout: RouteObject[] = [
   {

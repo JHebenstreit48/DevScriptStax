@@ -1,9 +1,9 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Syntax = lazy(() => import('@/Pages/MainTabs/Languages/Go/Basics/Fundamentals/Syntax'));
-const ControlFlow = lazy(() => import('@/Pages/MainTabs/Languages/Go/Basics/Fundamentals/ControlFlow'));
-const FunctionsAndPackages = lazy(() => import('@/Pages/MainTabs/Languages/Go/Basics/Fundamentals/FunctionsAndPackages'));
+const Syntax = lazy(() => import('@/pages/mainTabs/Languages/Go/Basics/Fundamentals/Syntax'));
+const ControlFlow = lazy(() => import('@/pages/mainTabs/Languages/Go/Basics/Fundamentals/ControlFlow'));
+const FunctionsAndPackages = lazy(() => import('@/pages/mainTabs/Languages/Go/Basics/Fundamentals/FunctionsAndPackages'));
 
 const Fundamentals: RouteObject[] = [
   {

@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Logging = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Flask/Advanced/Observability/Logging'));
-const MetricsAndTracing = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Flask/Advanced/Observability/MetricsAndTracing'));
+const Logging = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/Flask/Advanced/Observability/Logging'));
+const MetricsAndTracing = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/Flask/Advanced/Observability/MetricsAndTracing'));
 
 const Observability: RouteObject[] = [
   {

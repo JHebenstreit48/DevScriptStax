@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const VCLInterop = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/EdgeComputing/FastlyCompute/Advanced/Integrations/VCLInterop'));
-const CDNFeatures = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/EdgeComputing/FastlyCompute/Advanced/Integrations/CDNFeatures'));
+const VCLInterop = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/EdgeComputing/FastlyCompute/Advanced/Integrations/VCLInterop'));
+const CDNFeatures = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/EdgeComputing/FastlyCompute/Advanced/Integrations/CDNFeatures'));
 
 const Integrations: RouteObject[] = [
   {

@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const GoModules = lazy(() => import('@/Pages/MainTabs/Languages/Go/Advanced/Modules/GoModules'));
-const Versioning = lazy(() => import('@/Pages/MainTabs/Languages/Go/Advanced/Modules/Versioning'));
+const GoModules = lazy(() => import('@/pages/mainTabs/Languages/Go/Advanced/Modules/GoModules'));
+const Versioning = lazy(() => import('@/pages/mainTabs/Languages/Go/Advanced/Modules/Versioning'));
 
 const Modules: RouteObject[] = [
   {

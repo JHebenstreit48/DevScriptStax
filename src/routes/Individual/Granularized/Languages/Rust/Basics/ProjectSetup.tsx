@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const CargoAndCrates = lazy(() => import('@/Pages/MainTabs/Languages/Rust/Basics/ProjectSetup/CargoAndCrates'));
-const ModulesAndWorkspaces = lazy(() => import('@/Pages/MainTabs/Languages/Rust/Basics/ProjectSetup/ModulesAndWorkspaces'));
+const CargoAndCrates = lazy(() => import('@/pages/mainTabs/Languages/Rust/Basics/ProjectSetup/CargoAndCrates'));
+const ModulesAndWorkspaces = lazy(() => import('@/pages/mainTabs/Languages/Rust/Basics/ProjectSetup/ModulesAndWorkspaces'));
 
 const ProjectSetup: RouteObject[] = [
   {

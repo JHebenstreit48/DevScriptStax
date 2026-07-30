@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Distributions = lazy(() => import('@/Pages/MainTabs/Languages/Python/Advanced/Packaging/Distributions'));
-const Publishing = lazy(() => import('@/Pages/MainTabs/Languages/Python/Advanced/Packaging/Publishing'));
+const Distributions = lazy(() => import('@/pages/mainTabs/Languages/Python/Advanced/Packaging/Distributions'));
+const Publishing = lazy(() => import('@/pages/mainTabs/Languages/Python/Advanced/Packaging/Publishing'));
 
 const Packaging: RouteObject[] = [
   {

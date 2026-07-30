@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Flexbox = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Advanced/Layouts/Flexbox'));
-const Grid = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Advanced/Layouts/Grid'));
+const Flexbox = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Advanced/Layouts/Flexbox'));
+const Grid = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Advanced/Layouts/Grid'));
 
 const Layouts: RouteObject[] = [
   {

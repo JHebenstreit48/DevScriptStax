@@ -1,9 +1,9 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Basics = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/KoaJs/Basics/Routing/Basics'));
-const KoaRouter = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/KoaJs/Basics/Routing/KoaRouter'));
-const ParamsAndQuery = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/KoaJs/Basics/Routing/ParamsAndQuery'));
+const Basics = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/KoaJs/Basics/Routing/Basics'));
+const KoaRouter = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/KoaJs/Basics/Routing/KoaRouter'));
+const ParamsAndQuery = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/KoaJs/Basics/Routing/ParamsAndQuery'));
 
 const Routing: RouteObject[] = [
   {

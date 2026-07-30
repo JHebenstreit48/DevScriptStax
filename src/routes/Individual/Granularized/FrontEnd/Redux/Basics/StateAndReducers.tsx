@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const ActionsAndReducers = lazy(() => import('@/Pages/MainTabs/FrontEnd/Redux/Basics/StateAndReducers/ActionsAndReducers'));
-const ImmutabilityBasics = lazy(() => import('@/Pages/MainTabs/FrontEnd/Redux/Basics/StateAndReducers/ImmutabilityBasics'));
+const ActionsAndReducers = lazy(() => import('@/pages/mainTabs/FrontEnd/Redux/Basics/StateAndReducers/ActionsAndReducers'));
+const ImmutabilityBasics = lazy(() => import('@/pages/mainTabs/FrontEnd/Redux/Basics/StateAndReducers/ImmutabilityBasics'));
 
 const StateAndReducers: RouteObject[] = [
   {

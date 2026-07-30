@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const CustomRules = lazy(() => import('@/Pages/MainTabs/Tools/CodeQuality/ESLint/Advanced/Customization/CustomRules'));
-const ShareableConfigs = lazy(() => import('@/Pages/MainTabs/Tools/CodeQuality/ESLint/Advanced/Customization/ShareableConfigs'));
+const CustomRules = lazy(() => import('@/pages/mainTabs/Tools/CodeQuality/ESLint/Advanced/Customization/CustomRules'));
+const ShareableConfigs = lazy(() => import('@/pages/mainTabs/Tools/CodeQuality/ESLint/Advanced/Customization/ShareableConfigs'));
 
 const Customization: RouteObject[] = [
   {

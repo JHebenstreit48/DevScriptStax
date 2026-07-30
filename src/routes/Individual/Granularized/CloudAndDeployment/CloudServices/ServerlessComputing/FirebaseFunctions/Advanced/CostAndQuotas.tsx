@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const BudgetsAndQuotas = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/ServerlessComputing/FirebaseFunctions/Advanced/CostAndQuotas/BudgetsAndQuotas'));
-const Optimization = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/ServerlessComputing/FirebaseFunctions/Advanced/CostAndQuotas/Optimization'));
+const BudgetsAndQuotas = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/ServerlessComputing/FirebaseFunctions/Advanced/CostAndQuotas/BudgetsAndQuotas'));
+const Optimization = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/ServerlessComputing/FirebaseFunctions/Advanced/CostAndQuotas/Optimization'));
 
 const CostAndQuotas: RouteObject[] = [
   {

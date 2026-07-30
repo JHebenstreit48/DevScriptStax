@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const NpmAndNpx = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/NodeJs/Basics/Tooling/NpmAndNpx'));
-const NodeVersions = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/NodeJs/Basics/Tooling/NodeVersions'));
+const NpmAndNpx = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/NodeJs/Basics/Tooling/NpmAndNpx'));
+const NodeVersions = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/NodeJs/Basics/Tooling/NodeVersions'));
 
 const Tooling: RouteObject[] = [
   {

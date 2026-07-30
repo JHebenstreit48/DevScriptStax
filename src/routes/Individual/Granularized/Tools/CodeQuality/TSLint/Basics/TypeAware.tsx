@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const ProjectAndTsconfig = lazy(() => import('@/Pages/MainTabs/Tools/CodeQuality/TSLint/Basics/TypeAware/ProjectAndTsconfig'));
-const TypeCheckedRules = lazy(() => import('@/Pages/MainTabs/Tools/CodeQuality/TSLint/Basics/TypeAware/TypeCheckedRules'));
+const ProjectAndTsconfig = lazy(() => import('@/pages/mainTabs/Tools/CodeQuality/TSLint/Basics/TypeAware/ProjectAndTsconfig'));
+const TypeCheckedRules = lazy(() => import('@/pages/mainTabs/Tools/CodeQuality/TSLint/Basics/TypeAware/TypeCheckedRules'));
 
 const TypeAware: RouteObject[] = [
   {

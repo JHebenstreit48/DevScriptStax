@@ -1,10 +1,10 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const NavbarsAndTabs = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Frameworks/Bootstrap/Basics/Navigation/NavbarsAndTabs'));
-const BreadcrumbsAndPagination = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Frameworks/Bootstrap/Basics/Navigation/BreadcrumbsAndPagination'));
-const NavbarCollapseAndEvents = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Frameworks/Bootstrap/Basics/Navigation/NavbarCollapseAndEvents'));
-const TabsAndPillsJS = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Frameworks/Bootstrap/Basics/Navigation/TabsAndPillsJS'));
+const NavbarsAndTabs = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Tools/Frameworks/Bootstrap/Basics/Navigation/NavbarsAndTabs'));
+const BreadcrumbsAndPagination = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Tools/Frameworks/Bootstrap/Basics/Navigation/BreadcrumbsAndPagination'));
+const NavbarCollapseAndEvents = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Tools/Frameworks/Bootstrap/Basics/Navigation/NavbarCollapseAndEvents'));
+const TabsAndPillsJS = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Tools/Frameworks/Bootstrap/Basics/Navigation/TabsAndPillsJS'));
 
 const Navigation: RouteObject[] = [
   {

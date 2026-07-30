@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const InstallingAndSettingUpCircleCI = lazy(() => import('@/Pages/MainTabs/Tools/CICD/CircleCI/Basics/CircleCISetup/InstallingAndSettingUpCircleCI'));
-const ConfiguringACircleciConfigYml = lazy(() => import('@/Pages/MainTabs/Tools/CICD/CircleCI/Basics/CircleCISetup/ConfiguringACircleciConfigYml'));
+const InstallingAndSettingUpCircleCI = lazy(() => import('@/pages/mainTabs/Tools/CICD/CircleCI/Basics/CircleCISetup/InstallingAndSettingUpCircleCI'));
+const ConfiguringACircleciConfigYml = lazy(() => import('@/pages/mainTabs/Tools/CICD/CircleCI/Basics/CircleCISetup/ConfiguringACircleciConfigYml'));
 
 const Setup: RouteObject[] = [
   {

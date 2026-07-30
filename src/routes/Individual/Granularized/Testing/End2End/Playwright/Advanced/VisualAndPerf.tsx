@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const VisualTesting = lazy(() => import('@/Pages/MainTabs/Testing/EndToEnd/Playwright/Advanced/VisualAndPerf/VisualTesting'));
-const Performance = lazy(() => import('@/Pages/MainTabs/Testing/EndToEnd/Playwright/Advanced/VisualAndPerf/Performance'));
+const VisualTesting = lazy(() => import('@/pages/mainTabs/Testing/End2End/Playwright/Advanced/VisualAndPerf/VisualTesting'));
+const Performance = lazy(() => import('@/pages/mainTabs/Testing/End2End/Playwright/Advanced/VisualAndPerf/Performance'));
 
 const VisualAndPerf: RouteObject[] = [
   {

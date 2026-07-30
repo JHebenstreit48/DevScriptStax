@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const APIMode = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/RubyOnRails/Advanced/API/APIMode'));
-const JSONRendering = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/RubyOnRails/Advanced/API/JSONRendering'));
+const APIMode = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/RubyOnRails/Advanced/API/APIMode'));
+const JSONRendering = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/RubyOnRails/Advanced/API/JSONRendering'));
 
 const API: RouteObject[] = [
   {

@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const WorkspaceConfig = lazy(() => import('@/Pages/MainTabs/Tools/PackageAndBundling/PackageManagement/Pnpm/Advanced/Workspaces/WorkspaceConfig'));
-const FilteringAndRecursive = lazy(() => import('@/Pages/MainTabs/Tools/PackageAndBundling/PackageManagement/Pnpm/Advanced/Workspaces/FilteringAndRecursive'));
+const WorkspaceConfig = lazy(() => import('@/pages/mainTabs/Tools/PackageAndBundling/PackageManagement/Pnpm/Advanced/Workspaces/WorkspaceConfig'));
+const FilteringAndRecursive = lazy(() => import('@/pages/mainTabs/Tools/PackageAndBundling/PackageManagement/Pnpm/Advanced/Workspaces/FilteringAndRecursive'));
 
 const Workspaces: RouteObject[] = [
   {

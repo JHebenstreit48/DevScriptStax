@@ -1,10 +1,10 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Overview = lazy(() => import('@/Pages/MainTabs/BackEnd/APIs/REST/HTTPMethods/Overview'));
-const DetailedGuide = lazy(() => import('@/Pages/MainTabs/BackEnd/APIs/REST/HTTPMethods/DetailedGuide'));
-const BestPractices = lazy(() => import('@/Pages/MainTabs/BackEnd/APIs/REST/HTTPMethods/BestPractices'));
-const IdempotencyAndSafe = lazy(() => import('@/Pages/MainTabs/BackEnd/APIs/REST/HTTPMethods/IdempotencyAndSafe'));
+const Overview = lazy(() => import('@/pages/mainTabs/BackEnd/APIs/REST/HTTPMethods/Overview'));
+const DetailedGuide = lazy(() => import('@/pages/mainTabs/BackEnd/APIs/REST/HTTPMethods/DetailedGuide'));
+const BestPractices = lazy(() => import('@/pages/mainTabs/BackEnd/APIs/REST/HTTPMethods/BestPractices'));
+const IdempotencyAndSafe = lazy(() => import('@/pages/mainTabs/BackEnd/APIs/REST/HTTPMethods/IdempotencyAndSafe'));
 
 const HTTPMethods: RouteObject[] = [
   {

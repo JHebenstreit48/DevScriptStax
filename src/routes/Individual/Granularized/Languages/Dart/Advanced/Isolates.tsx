@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Basics = lazy(() => import('@/Pages/MainTabs/Languages/Dart/Advanced/Isolates/Basics'));
-const MessagePassing = lazy(() => import('@/Pages/MainTabs/Languages/Dart/Advanced/Isolates/MessagePassing'));
+const Basics = lazy(() => import('@/pages/mainTabs/Languages/Dart/Advanced/Isolates/Basics'));
+const MessagePassing = lazy(() => import('@/pages/mainTabs/Languages/Dart/Advanced/Isolates/MessagePassing'));
 
 const Isolates: RouteObject[] = [
   {

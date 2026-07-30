@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Optimization = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/Provisioning/AWSSAM/Advanced/CostAndScaling/Optimization'));
-const QuotasAndLimits = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/Provisioning/AWSSAM/Advanced/CostAndScaling/QuotasAndLimits'));
+const Optimization = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/Provisioning/AWSSAM/Advanced/CostAndScaling/Optimization'));
+const QuotasAndLimits = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/Provisioning/AWSSAM/Advanced/CostAndScaling/QuotasAndLimits'));
 
 const CostAndScaling: RouteObject[] = [
   {

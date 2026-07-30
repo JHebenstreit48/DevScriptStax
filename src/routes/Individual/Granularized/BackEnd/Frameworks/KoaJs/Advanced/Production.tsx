@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const TrustProxy = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/KoaJs/Advanced/Production/TrustProxy'));
-const ErrorStrategy = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/KoaJs/Advanced/Production/ErrorStrategy'));
+const TrustProxy = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/KoaJs/Advanced/Production/TrustProxy'));
+const ErrorStrategy = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/KoaJs/Advanced/Production/ErrorStrategy'));
 
 const Production: RouteObject[] = [
   {

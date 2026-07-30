@@ -1,9 +1,9 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Consistency = lazy(() => import('@/Pages/MainTabs/FrontEnd/Markdown/Advanced/BestPractices/Consistency'));
-const Readability = lazy(() => import('@/Pages/MainTabs/FrontEnd/Markdown/Advanced/BestPractices/Readability'));
-const VersionControl = lazy(() => import('@/Pages/MainTabs/FrontEnd/Markdown/Advanced/BestPractices/VersionControl'));
+const Consistency = lazy(() => import('@/pages/mainTabs/FrontEnd/Markdown/Advanced/BestPractices/Consistency'));
+const Readability = lazy(() => import('@/pages/mainTabs/FrontEnd/Markdown/Advanced/BestPractices/Readability'));
+const VersionControl = lazy(() => import('@/pages/mainTabs/FrontEnd/Markdown/Advanced/BestPractices/VersionControl'));
 
 const BestPractices: RouteObject[] = [
   {

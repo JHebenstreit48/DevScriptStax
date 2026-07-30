@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Scripts = lazy(() => import('@/Pages/MainTabs/Tools/API/Postman/Advanced/Automation/Scripts'));
-const PreAndTests = lazy(() => import('@/Pages/MainTabs/Tools/API/Postman/Advanced/Automation/PreAndTests'));
+const Scripts = lazy(() => import('@/pages/mainTabs/Tools/API/Postman/Advanced/Automation/Scripts'));
+const PreAndTests = lazy(() => import('@/pages/mainTabs/Tools/API/Postman/Advanced/Automation/PreAndTests'));
 
 const Automation: RouteObject[] = [
   {

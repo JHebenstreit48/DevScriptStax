@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const VSCode = lazy(() => import('@/Pages/MainTabs/Languages/Dart/Tools/IDESupport/VSCode'));
-const IntelliJAndroidStudio = lazy(() => import('@/Pages/MainTabs/Languages/Dart/Tools/IDESupport/IntelliJAndroidStudio'));
+const VSCode = lazy(() => import('@/pages/mainTabs/Languages/Dart/Tools/IDESupport/VSCode'));
+const IntelliJAndroidStudio = lazy(() => import('@/pages/mainTabs/Languages/Dart/Tools/IDESupport/IntelliJAndroidStudio'));
 
 const IDESupport: RouteObject[] = [
   {

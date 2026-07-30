@@ -1,10 +1,10 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const ControlDirectivesAndLoops = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Preprocessors/Sass/AdvancedConcepts/ControlDirectivesAndLoops'));
-const OperatorsAndCalculations = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Preprocessors/Sass/AdvancedConcepts/OperatorsAndCalculations'));
-const PartialsAndImports = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Preprocessors/Sass/AdvancedConcepts/PartialsAndImports'));
-const ExtendAndPlaceholder = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Preprocessors/Sass/AdvancedConcepts/ExtendAndPlaceholder'));
+const ControlDirectivesAndLoops = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Tools/Preprocessors/Sass/AdvancedConcepts/ControlDirectivesAndLoops'));
+const OperatorsAndCalculations = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Tools/Preprocessors/Sass/AdvancedConcepts/OperatorsAndCalculations'));
+const PartialsAndImports = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Tools/Preprocessors/Sass/AdvancedConcepts/PartialsAndImports'));
+const ExtendAndPlaceholder = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Tools/Preprocessors/Sass/AdvancedConcepts/ExtendAndPlaceholder'));
 
 const AdvancedConcepts: RouteObject[] = [
   {

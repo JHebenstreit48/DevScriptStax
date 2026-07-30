@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const ChangeStreams = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/MongoDB/Advanced/ChangeStreamsAndEvents/ChangeStreams'));
-const TriggersAndOutboxPattern = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/MongoDB/Advanced/ChangeStreamsAndEvents/TriggersAndOutboxPattern'));
+const ChangeStreams = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/MongoDB/Advanced/ChangeStreamsAndEvents/ChangeStreams'));
+const TriggersAndOutboxPattern = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/MongoDB/Advanced/ChangeStreamsAndEvents/TriggersAndOutboxPattern'));
 
 const ChangeStreamsAndEvents: RouteObject[] = [
   {

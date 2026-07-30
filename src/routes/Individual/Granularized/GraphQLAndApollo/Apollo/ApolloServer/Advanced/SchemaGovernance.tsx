@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const ChecksAndContracts = lazy(() => import('@/Pages/MainTabs/GraphQLAndApollo/Apollo/ApolloServer/Advanced/SchemaGovernance/ChecksAndContracts'));
-const OperationRegistry = lazy(() => import('@/Pages/MainTabs/GraphQLAndApollo/Apollo/ApolloServer/Advanced/SchemaGovernance/OperationRegistry'));
+const ChecksAndContracts = lazy(() => import('@/pages/mainTabs/GraphQLAndApollo/Apollo/ApolloServer/Advanced/SchemaGovernance/ChecksAndContracts'));
+const OperationRegistry = lazy(() => import('@/pages/mainTabs/GraphQLAndApollo/Apollo/ApolloServer/Advanced/SchemaGovernance/OperationRegistry'));
 
 const SchemaGovernance: RouteObject[] = [
   {

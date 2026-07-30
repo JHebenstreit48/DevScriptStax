@@ -1,10 +1,10 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const CoreConcepts = lazy(() => import('@/Pages/MainTabs/BackEnd/APIs/Basics/Fundamentals/CoreConcepts'));
-const UseCases = lazy(() => import('@/Pages/MainTabs/BackEnd/APIs/Basics/Fundamentals/UseCases'));
-const WebDevelopment = lazy(() => import('@/Pages/MainTabs/BackEnd/APIs/Basics/Fundamentals/WebDevelopment'));
-const CommonMisconceptions = lazy(() => import('@/Pages/MainTabs/BackEnd/APIs/Basics/Fundamentals/CommonMisconceptions'));
+const CoreConcepts = lazy(() => import('@/pages/mainTabs/BackEnd/APIs/Basics/Fundamentals/CoreConcepts'));
+const UseCases = lazy(() => import('@/pages/mainTabs/BackEnd/APIs/Basics/Fundamentals/UseCases'));
+const WebDevelopment = lazy(() => import('@/pages/mainTabs/BackEnd/APIs/Basics/Fundamentals/WebDevelopment'));
+const CommonMisconceptions = lazy(() => import('@/pages/mainTabs/BackEnd/APIs/Basics/Fundamentals/CommonMisconceptions'));
 
 const APIFundamentals: RouteObject[] = [
   {

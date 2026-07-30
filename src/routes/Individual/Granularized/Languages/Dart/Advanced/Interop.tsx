@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const FFI = lazy(() => import('@/Pages/MainTabs/Languages/Dart/Advanced/Interop/FFI'));
-const JSInterop = lazy(() => import('@/Pages/MainTabs/Languages/Dart/Advanced/Interop/JSInterop'));
+const FFI = lazy(() => import('@/pages/mainTabs/Languages/Dart/Advanced/Interop/FFI'));
+const JSInterop = lazy(() => import('@/pages/mainTabs/Languages/Dart/Advanced/Interop/JSInterop'));
 
 const Interop: RouteObject[] = [
   {

@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const OfflineCache = lazy(() => import('@/Pages/MainTabs/Tools/PackageAndBundling/PackageManagement/Yarn/Advanced/PerfAndCache/OfflineCache'));
-const SelectiveInstalls = lazy(() => import('@/Pages/MainTabs/Tools/PackageAndBundling/PackageManagement/Yarn/Advanced/PerfAndCache/SelectiveInstalls'));
+const OfflineCache = lazy(() => import('@/pages/mainTabs/Tools/PackageAndBundling/PackageManagement/Yarn/Advanced/PerfAndCache/OfflineCache'));
+const SelectiveInstalls = lazy(() => import('@/pages/mainTabs/Tools/PackageAndBundling/PackageManagement/Yarn/Advanced/PerfAndCache/SelectiveInstalls'));
 
 const PerfAndCache: RouteObject[] = [
   {

@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Logging = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/NodeJs/Advanced/Observability/Logging'));
-const DiagnosticsAndAsyncHooks = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/NodeJs/Advanced/Observability/DiagnosticsAndAsyncHooks'));
+const Logging = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/NodeJs/Advanced/Observability/Logging'));
+const DiagnosticsAndAsyncHooks = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/NodeJs/Advanced/Observability/DiagnosticsAndAsyncHooks'));
 
 const Observability: RouteObject[] = [
   {

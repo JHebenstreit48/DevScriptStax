@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Basics = lazy(() => import('@/Pages/MainTabs/Tools/Containerization/Docker/Basics/Dockerfiles/Basics'));
-const Dockerignore = lazy(() => import('@/Pages/MainTabs/Tools/Containerization/Docker/Basics/Dockerfiles/Dockerignore'));
+const Basics = lazy(() => import('@/pages/mainTabs/Tools/Containerization/Docker/Basics/Dockerfiles/Basics'));
+const Dockerignore = lazy(() => import('@/pages/mainTabs/Tools/Containerization/Docker/Basics/Dockerfiles/Dockerignore'));
 
 const Dockerfiles: RouteObject[] = [
   {

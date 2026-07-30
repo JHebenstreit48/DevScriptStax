@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Concepts = lazy(() => import('@/Pages/MainTabs/Languages/Dart/Basics/NullSafety/Concepts'));
-const DefiniteAssign = lazy(() => import('@/Pages/MainTabs/Languages/Dart/Basics/NullSafety/DefiniteAssign'));
+const Concepts = lazy(() => import('@/pages/mainTabs/Languages/Dart/Basics/NullSafety/Concepts'));
+const DefiniteAssign = lazy(() => import('@/pages/mainTabs/Languages/Dart/Basics/NullSafety/DefiniteAssign'));
 
 const NullSafety: RouteObject[] = [
   {

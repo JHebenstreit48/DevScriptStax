@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const WorkingWithUseRef = lazy(() => import('@/Pages/MainTabs/FrontEnd/React/Intermediate/Refs/WorkingWithUseRef'));
-const UseImperativeHandleAndForwardRef = lazy(() => import('@/Pages/MainTabs/FrontEnd/React/Intermediate/Refs/UseImperativeHandleAndForwardRef'));
+const WorkingWithUseRef = lazy(() => import('@/pages/mainTabs/FrontEnd/React/Intermediate/Refs/WorkingWithUseRef'));
+const UseImperativeHandleAndForwardRef = lazy(() => import('@/pages/mainTabs/FrontEnd/React/Intermediate/Refs/UseImperativeHandleAndForwardRef'));
 
 const Refs: RouteObject[] = [
   {

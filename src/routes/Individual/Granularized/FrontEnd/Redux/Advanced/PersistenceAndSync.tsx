@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const ReduxPersist = lazy(() => import('@/Pages/MainTabs/FrontEnd/Redux/Advanced/PersistenceAndSync/ReduxPersist'));
-const CrossTabSync = lazy(() => import('@/Pages/MainTabs/FrontEnd/Redux/Advanced/PersistenceAndSync/CrossTabSync'));
+const ReduxPersist = lazy(() => import('@/pages/mainTabs/FrontEnd/Redux/Advanced/PersistenceAndSync/ReduxPersist'));
+const CrossTabSync = lazy(() => import('@/pages/mainTabs/FrontEnd/Redux/Advanced/PersistenceAndSync/CrossTabSync'));
 
 const PersistenceAndSync: RouteObject[] = [
   {

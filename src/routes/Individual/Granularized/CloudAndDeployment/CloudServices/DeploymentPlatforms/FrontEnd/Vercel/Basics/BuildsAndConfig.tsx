@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const VercelJson = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/DeploymentPlatforms/FrontEnd/Vercel/Basics/BuildsAndConfig/VercelJson'));
-const FrameworkPresets = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/DeploymentPlatforms/FrontEnd/Vercel/Basics/BuildsAndConfig/FrameworkPresets'));
+const VercelJson = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/DeploymentPlatforms/FrontEnd/Vercel/Basics/BuildsAndConfig/VercelJson'));
+const FrameworkPresets = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/DeploymentPlatforms/FrontEnd/Vercel/Basics/BuildsAndConfig/FrameworkPresets'));
 
 const BuildsAndConfig: RouteObject[] = [
   {

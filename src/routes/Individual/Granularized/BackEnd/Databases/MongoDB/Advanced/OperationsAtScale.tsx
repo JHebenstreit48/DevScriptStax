@@ -1,9 +1,9 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const BackupsAndPITR = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/MongoDB/Advanced/OperationsAtScale/BackupsAndPITR'));
-const UpgradesAndFCVManagement = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/MongoDB/Advanced/OperationsAtScale/UpgradesAndFCVManagement'));
-const ShardedOpsAndResharding = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/MongoDB/Advanced/OperationsAtScale/ShardedOpsAndResharding'));
+const BackupsAndPITR = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/MongoDB/Advanced/OperationsAtScale/BackupsAndPITR'));
+const UpgradesAndFCVManagement = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/MongoDB/Advanced/OperationsAtScale/UpgradesAndFCVManagement'));
+const ShardedOpsAndResharding = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/MongoDB/Advanced/OperationsAtScale/ShardedOpsAndResharding'));
 
 const OperationsAtScale: RouteObject[] = [
   {

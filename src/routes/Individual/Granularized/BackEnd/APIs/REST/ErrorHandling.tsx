@@ -1,10 +1,10 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const HTTPStatusCodes = lazy(() => import('@/Pages/MainTabs/BackEnd/APIs/REST/ErrorHandling/HTTPStatusCodes'));
-const ErrorResponseStructure = lazy(() => import('@/Pages/MainTabs/BackEnd/APIs/REST/ErrorHandling/ErrorResponseStructure'));
-const BestPractices = lazy(() => import('@/Pages/MainTabs/BackEnd/APIs/REST/ErrorHandling/BestPractices'));
-const LoggingAndMonitoringErrors = lazy(() => import('@/Pages/MainTabs/BackEnd/APIs/REST/ErrorHandling/LoggingAndMonitoringErrors'));
+const HTTPStatusCodes = lazy(() => import('@/pages/mainTabs/BackEnd/APIs/REST/ErrorHandling/HTTPStatusCodes'));
+const ErrorResponseStructure = lazy(() => import('@/pages/mainTabs/BackEnd/APIs/REST/ErrorHandling/ErrorResponseStructure'));
+const BestPractices = lazy(() => import('@/pages/mainTabs/BackEnd/APIs/REST/ErrorHandling/BestPractices'));
+const LoggingAndMonitoringErrors = lazy(() => import('@/pages/mainTabs/BackEnd/APIs/REST/ErrorHandling/LoggingAndMonitoringErrors'));
 
 const ErrorHandling: RouteObject[] = [
   {

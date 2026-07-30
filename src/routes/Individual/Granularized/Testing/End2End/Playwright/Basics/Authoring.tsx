@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const LocatorsAndSelectors = lazy(() => import('@/Pages/MainTabs/Testing/End2End/Playwright/Basics/Authoring/LocatorsAndSelectors'));
-const UIInteractions = lazy(() => import('@/Pages/MainTabs/Testing/End2End/Playwright/Basics/Authoring/UIInteractions'));
+const LocatorsAndSelectors = lazy(() => import('@/pages/mainTabs/Testing/End2End/Playwright/Basics/Authoring/LocatorsAndSelectors'));
+const UIInteractions = lazy(() => import('@/pages/mainTabs/Testing/End2End/Playwright/Basics/Authoring/UIInteractions'));
 
 const Authoring: RouteObject[] = [
   {

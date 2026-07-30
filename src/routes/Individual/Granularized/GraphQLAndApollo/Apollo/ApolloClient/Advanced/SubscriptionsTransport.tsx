@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const WebSocketLink = lazy(() => import('@/Pages/MainTabs/GraphQLAndApollo/Apollo/ApolloClient/Advanced/SubscriptionsTransport/WebSocketLink'));
-const SSELink = lazy(() => import('@/Pages/MainTabs/GraphQLAndApollo/Apollo/ApolloClient/Advanced/SubscriptionsTransport/SSELink'));
+const WebSocketLink = lazy(() => import('@/pages/mainTabs/GraphQLAndApollo/Apollo/ApolloClient/Advanced/SubscriptionsTransport/WebSocketLink'));
+const SSELink = lazy(() => import('@/pages/mainTabs/GraphQLAndApollo/Apollo/ApolloClient/Advanced/SubscriptionsTransport/SSELink'));
 
 const SubscriptionsTransport: RouteObject[] = [
   {

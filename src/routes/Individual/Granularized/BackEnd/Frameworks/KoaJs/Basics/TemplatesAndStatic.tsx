@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const StaticFiles = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/KoaJs/Basics/TemplatesAndStatic/StaticFiles'));
-const Templating = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/KoaJs/Basics/TemplatesAndStatic/Templating'));
+const StaticFiles = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/KoaJs/Basics/TemplatesAndStatic/StaticFiles'));
+const Templating = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/KoaJs/Basics/TemplatesAndStatic/Templating'));
 
 const TemplatesAndStatic: RouteObject[] = [
   {

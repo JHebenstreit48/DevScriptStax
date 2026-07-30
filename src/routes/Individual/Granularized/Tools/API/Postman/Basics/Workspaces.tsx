@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Collections = lazy(() => import('@/Pages/MainTabs/Tools/API/Postman/Basics/Workspaces/Collections'));
-const Sharing = lazy(() => import('@/Pages/MainTabs/Tools/API/Postman/Basics/Workspaces/Sharing'));
+const Collections = lazy(() => import('@/pages/mainTabs/Tools/API/Postman/Basics/Workspaces/Collections'));
+const Sharing = lazy(() => import('@/pages/mainTabs/Tools/API/Postman/Basics/Workspaces/Sharing'));
 
 const Workspaces: RouteObject[] = [
   {

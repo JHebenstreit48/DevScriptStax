@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const PostcssConfig = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Postprocessors/PostCSS/Basics/Configuration/PostcssConfig'));
-const BrowserslistAndEnv = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Postprocessors/PostCSS/Basics/Configuration/BrowserslistAndEnv'));
+const PostcssConfig = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Tools/Postprocessors/PostCSS/Basics/Configuration/PostcssConfig'));
+const BrowserslistAndEnv = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Tools/Postprocessors/PostCSS/Basics/Configuration/BrowserslistAndEnv'));
 
 const Configuration: RouteObject[] = [
   {

@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const UnionAndIntersectionTypes = lazy(() => import('@/Pages/MainTabs/Languages/TypeScript/Advanced/TypesAndGuards/UnionAndIntersectionTypes'));
-const GuardsAndAssertions = lazy(() => import('@/Pages/MainTabs/Languages/TypeScript/Advanced/TypesAndGuards/GuardsAndAssertions'));
+const UnionAndIntersectionTypes = lazy(() => import('@/pages/mainTabs/Languages/TypeScript/Advanced/TypesAndGuards/UnionAndIntersectionTypes'));
+const GuardsAndAssertions = lazy(() => import('@/pages/mainTabs/Languages/TypeScript/Advanced/TypesAndGuards/GuardsAndAssertions'));
 
 const TypesAndGuards: RouteObject[] = [
   {

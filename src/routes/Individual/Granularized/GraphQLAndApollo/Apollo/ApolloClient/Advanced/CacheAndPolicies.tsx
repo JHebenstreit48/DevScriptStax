@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const FetchPolicies = lazy(() => import('@/Pages/MainTabs/GraphQLAndApollo/Apollo/ApolloClient/Advanced/CacheAndPolicies/FetchPolicies'));
-const FieldPolicies = lazy(() => import('@/Pages/MainTabs/GraphQLAndApollo/Apollo/ApolloClient/Advanced/CacheAndPolicies/FieldPolicies'));
+const FetchPolicies = lazy(() => import('@/pages/mainTabs/GraphQLAndApollo/Apollo/ApolloClient/Advanced/CacheAndPolicies/FetchPolicies'));
+const FieldPolicies = lazy(() => import('@/pages/mainTabs/GraphQLAndApollo/Apollo/ApolloClient/Advanced/CacheAndPolicies/FieldPolicies'));
 
 const CacheAndPolicies: RouteObject[] = [
   {

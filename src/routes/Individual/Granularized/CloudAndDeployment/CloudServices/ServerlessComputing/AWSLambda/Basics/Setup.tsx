@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const IAMAndCLI = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/ServerlessComputing/AWSLambda/Basics/Setup/IAMAndCLI'));
-const FirstFunction = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/ServerlessComputing/AWSLambda/Basics/Setup/FirstFunction'));
+const IAMAndCLI = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/ServerlessComputing/AWSLambda/Basics/Setup/IAMAndCLI'));
+const FirstFunction = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/ServerlessComputing/AWSLambda/Basics/Setup/FirstFunction'));
 
 const Setup: RouteObject[] = [
   {

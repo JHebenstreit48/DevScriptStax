@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const JobsAndSteps = lazy(() => import('@/Pages/MainTabs/Tools/CICD/CircleCI/Basics/JobsAndWorkflows/JobsAndSteps'));
-const UnderstandingCircleCIWorkflows = lazy(() => import('@/Pages/MainTabs/Tools/CICD/CircleCI/Basics/JobsAndWorkflows/UnderstandingCircleCIWorkflows'));
+const JobsAndSteps = lazy(() => import('@/pages/mainTabs/Tools/CICD/CircleCI/Basics/JobsAndWorkflows/JobsAndSteps'));
+const UnderstandingCircleCIWorkflows = lazy(() => import('@/pages/mainTabs/Tools/CICD/CircleCI/Basics/JobsAndWorkflows/UnderstandingCircleCIWorkflows'));
 
 const JobsAndWorkflows: RouteObject[] = [
   {

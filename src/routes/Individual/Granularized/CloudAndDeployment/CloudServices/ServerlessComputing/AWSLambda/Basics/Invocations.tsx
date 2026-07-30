@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const SyncVsAsync = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/ServerlessComputing/AWSLambda/Basics/Invocations/SyncVsAsync'));
-const EventSources = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/ServerlessComputing/AWSLambda/Basics/Invocations/EventSources'));
+const SyncVsAsync = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/ServerlessComputing/AWSLambda/Basics/Invocations/SyncVsAsync'));
+const EventSources = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/ServerlessComputing/AWSLambda/Basics/Invocations/EventSources'));
 
 const Invocations: RouteObject[] = [
   {

@@ -1,10 +1,10 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const CommonJSVsESM = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/NodeJs/Basics/ModulesAndPackages/CommonJSVsESM'));
-const PackageJsonAndScripts = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/NodeJs/Basics/ModulesAndPackages/PackageJsonAndScripts'));
-const Lockfiles = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/NodeJs/Basics/ModulesAndPackages/Lockfiles'));
-const NodeModulesAndResolution = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/NodeJs/Basics/ModulesAndPackages/NodeModulesAndResolution'));
+const CommonJSVsESM = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/NodeJs/Basics/ModulesAndPackages/CommonJSVsESM'));
+const PackageJsonAndScripts = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/NodeJs/Basics/ModulesAndPackages/PackageJsonAndScripts'));
+const Lockfiles = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/NodeJs/Basics/ModulesAndPackages/Lockfiles'));
+const NodeModulesAndResolution = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/NodeJs/Basics/ModulesAndPackages/NodeModulesAndResolution'));
 
 const ModulesAndPackages: RouteObject[] = [
   {

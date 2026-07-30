@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const UseQuery = lazy(() => import('@/Pages/MainTabs/GraphQLAndApollo/Apollo/ApolloClient/Basics/Queries/UseQuery'));
-const VariablesAndHeaders = lazy(() => import('@/Pages/MainTabs/GraphQLAndApollo/Apollo/ApolloClient/Basics/Queries/VariablesAndHeaders'));
+const UseQuery = lazy(() => import('@/pages/mainTabs/GraphQLAndApollo/Apollo/ApolloClient/Basics/Queries/UseQuery'));
+const VariablesAndHeaders = lazy(() => import('@/pages/mainTabs/GraphQLAndApollo/Apollo/ApolloClient/Basics/Queries/VariablesAndHeaders'));
 
 const Queries: RouteObject[] = [
   {

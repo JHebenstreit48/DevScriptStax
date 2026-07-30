@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const InstallAndScripts = lazy(() => import('@/Pages/MainTabs/Tools/CodeQuality/StandardJS/Basics/Setup/InstallAndScripts'));
-const IgnoreAndOverrides = lazy(() => import('@/Pages/MainTabs/Tools/CodeQuality/StandardJS/Basics/Setup/IgnoreAndOverrides'));
+const InstallAndScripts = lazy(() => import('@/pages/mainTabs/Tools/CodeQuality/StandardJS/Basics/Setup/InstallAndScripts'));
+const IgnoreAndOverrides = lazy(() => import('@/pages/mainTabs/Tools/CodeQuality/StandardJS/Basics/Setup/IgnoreAndOverrides'));
 
 const Setup: RouteObject[] = [
   {

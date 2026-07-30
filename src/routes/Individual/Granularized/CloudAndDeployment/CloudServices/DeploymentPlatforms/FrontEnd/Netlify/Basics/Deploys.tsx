@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const DeployPreviewsAndBranches = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/DeploymentPlatforms/FrontEnd/Netlify/Basics/Deploys/DeployPreviewsAndBranches'));
-const RollbacksAndLocks = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/DeploymentPlatforms/FrontEnd/Netlify/Basics/Deploys/RollbacksAndLocks'));
+const DeployPreviewsAndBranches = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/DeploymentPlatforms/FrontEnd/Netlify/Basics/Deploys/DeployPreviewsAndBranches'));
+const RollbacksAndLocks = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/DeploymentPlatforms/FrontEnd/Netlify/Basics/Deploys/RollbacksAndLocks'));
 
 const Deploys: RouteObject[] = [
   {

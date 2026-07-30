@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Layers = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/Provisioning/ServerlessFramework/Advanced/Packaging/Layers'));
-const CustomBuild = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/Provisioning/ServerlessFramework/Advanced/Packaging/CustomBuild'));
+const Layers = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/Provisioning/ServerlessFramework/Advanced/Packaging/Layers'));
+const CustomBuild = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/Provisioning/ServerlessFramework/Advanced/Packaging/CustomBuild'));
 
 const Packaging: RouteObject[] = [
   {

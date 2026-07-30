@@ -1,11 +1,11 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const SelectorsAndAssertions = lazy(() => import('@/Pages/MainTabs/Testing/End2End/Cypress/Intermediate/TestWritingPatterns/SelectorsAndAssertions'));
-const HandlingUIEvents = lazy(() => import('@/Pages/MainTabs/Testing/End2End/Cypress/Intermediate/TestWritingPatterns/HandlingUIEvents'));
-const WorkingWithFixtures = lazy(() => import('@/Pages/MainTabs/Testing/End2End/Cypress/Intermediate/TestWritingPatterns/WorkingWithFixtures'));
-const MockingAPIResponses = lazy(() => import('@/Pages/MainTabs/Testing/End2End/Cypress/Intermediate/TestWritingPatterns/MockingAPIResponses'));
-const CustomCypressCommands = lazy(() => import('@/Pages/MainTabs/Testing/End2End/Cypress/Intermediate/TestWritingPatterns/CustomCypressCommands'));
+const SelectorsAndAssertions = lazy(() => import('@/pages/mainTabs/Testing/End2End/Cypress/Intermediate/TestWritingPatterns/SelectorsAndAssertions'));
+const HandlingUIEvents = lazy(() => import('@/pages/mainTabs/Testing/End2End/Cypress/Intermediate/TestWritingPatterns/HandlingUIEvents'));
+const WorkingWithFixtures = lazy(() => import('@/pages/mainTabs/Testing/End2End/Cypress/Intermediate/TestWritingPatterns/WorkingWithFixtures'));
+const MockingAPIResponses = lazy(() => import('@/pages/mainTabs/Testing/End2End/Cypress/Intermediate/TestWritingPatterns/MockingAPIResponses'));
+const CustomCypressCommands = lazy(() => import('@/pages/mainTabs/Testing/End2End/Cypress/Intermediate/TestWritingPatterns/CustomCypressCommands'));
 
 const TestWritingPatterns: RouteObject[] = [
   {

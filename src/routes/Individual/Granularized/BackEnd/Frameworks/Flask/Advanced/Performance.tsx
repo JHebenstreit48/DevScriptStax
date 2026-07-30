@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Caching = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Flask/Advanced/Performance/Caching'));
-const Compression = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Flask/Advanced/Performance/Compression'));
+const Caching = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/Flask/Advanced/Performance/Caching'));
+const Compression = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/Flask/Advanced/Performance/Compression'));
 
 const Performance: RouteObject[] = [
   {

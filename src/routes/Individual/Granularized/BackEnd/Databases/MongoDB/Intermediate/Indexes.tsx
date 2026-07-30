@@ -1,10 +1,10 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Introduction = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/MongoDB/Intermediate/Indexes/Introduction'));
-const IndexTypes = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/MongoDB/Intermediate/Indexes/IndexTypes'));
-const Management = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/MongoDB/Intermediate/Indexes/Management'));
-const Performance = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/MongoDB/Intermediate/Indexes/Performance'));
+const Introduction = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/MongoDB/Intermediate/Indexes/Introduction'));
+const IndexTypes = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/MongoDB/Intermediate/Indexes/IndexTypes'));
+const Management = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/MongoDB/Intermediate/Indexes/Management'));
+const Performance = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/MongoDB/Intermediate/Indexes/Performance'));
 
 const Indexes: RouteObject[] = [
   {

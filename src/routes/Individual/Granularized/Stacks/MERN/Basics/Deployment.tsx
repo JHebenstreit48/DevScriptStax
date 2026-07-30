@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const SingleVsSplitOrigin = lazy(() => import('@/Pages/MainTabs/Stacks/MERN/Basics/Deployment/SingleVsSplitOrigin'));
-const ProdEnvAndSecrets = lazy(() => import('@/Pages/MainTabs/Stacks/MERN/Basics/Deployment/ProdEnvAndSecrets'));
+const SingleVsSplitOrigin = lazy(() => import('@/pages/mainTabs/Stacks/MERN/Basics/Deployment/SingleVsSplitOrigin'));
+const ProdEnvAndSecrets = lazy(() => import('@/pages/mainTabs/Stacks/MERN/Basics/Deployment/ProdEnvAndSecrets'));
 
 const Deployment: RouteObject[] = [
   {

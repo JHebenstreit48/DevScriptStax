@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const ParallelExecution = lazy(() => import('@/Pages/MainTabs/Testing/EndToEnd/Playwright/Advanced/ParallelismAndProjects/ParallelExecution'));
-const ProjectsAndShards = lazy(() => import('@/Pages/MainTabs/Testing/EndToEnd/Playwright/Advanced/ParallelismAndProjects/ProjectsAndShards'));
+const ParallelExecution = lazy(() => import('@/pages/mainTabs/Testing/End2End/Playwright/Advanced/ParallelismAndProjects/ParallelExecution'));
+const ProjectsAndShards = lazy(() => import('@/pages/mainTabs/Testing/End2End/Playwright/Advanced/ParallelismAndProjects/ProjectsAndShards'));
 
 const ParallelismAndProjects: RouteObject[] = [
   {

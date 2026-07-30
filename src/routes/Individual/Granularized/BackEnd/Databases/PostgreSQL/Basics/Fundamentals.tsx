@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Introduction = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/PostgreSQL/Basics/Fundamentals/Introduction'));
-const FeaturesAndUseCases = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/PostgreSQL/Basics/Fundamentals/FeaturesAndUseCases'));
+const Introduction = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/PostgreSQL/Basics/Fundamentals/Introduction'));
+const FeaturesAndUseCases = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/PostgreSQL/Basics/Fundamentals/FeaturesAndUseCases'));
 
 const Fundamentals: RouteObject[] = [
   {

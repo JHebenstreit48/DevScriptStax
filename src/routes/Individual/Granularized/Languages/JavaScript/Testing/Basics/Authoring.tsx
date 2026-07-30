@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const StructureAndNaming = lazy(() => import('@/Pages/MainTabs/Languages/JavaScript/Testing/Basics/Authoring/StructureAndNaming'));
-const Assertions = lazy(() => import('@/Pages/MainTabs/Languages/JavaScript/Testing/Basics/Authoring/Assertions'));
+const StructureAndNaming = lazy(() => import('@/pages/mainTabs/Languages/JavaScript/Testing/Basics/Authoring/StructureAndNaming'));
+const Assertions = lazy(() => import('@/pages/mainTabs/Languages/JavaScript/Testing/Basics/Authoring/Assertions'));
 
 const Authoring: RouteObject[] = [
   {

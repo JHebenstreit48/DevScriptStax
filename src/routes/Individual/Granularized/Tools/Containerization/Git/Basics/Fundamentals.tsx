@@ -1,9 +1,9 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Introduction = lazy(() => import('@/Pages/MainTabs/Tools/Containerization/Git/Basics/Fundamentals/Introduction'));
+const Introduction = lazy(() => import('@/pages/mainTabs/Tools/Containerization/Git/Basics/Fundamentals/Introduction'));
 const VersionControl = lazy(
-  () => import('@/Pages/MainTabs/Tools/Containerization/Git/Basics/Fundamentals/VersionControl')
+  () => import('@/pages/mainTabs/Tools/Containerization/Git/Basics/Fundamentals/VersionControl')
 );
 
 const Fundamentals: RouteObject[] = [

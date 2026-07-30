@@ -3,7 +3,7 @@ import { RouteObject } from "react-router-dom";
 
 const Introduction = lazy(
   () =>
-    import('@/Pages/MainTabs/BackEnd/Databases/MySQL/Basics/Fundamentals/Introduction')
+    import('@/pages/mainTabs/BackEnd/Databases/MySQL/Basics/Fundamentals/Introduction')
 );
 
 const Fundamentals: RouteObject[] = [

@@ -1,9 +1,9 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const GraphQLDataLayer = lazy(() => import('@/Pages/MainTabs/FrontEnd/Gatsby/Basics/CoreConcepts/GraphQLDataLayer'));
-const FileRoutingAndPages = lazy(() => import('@/Pages/MainTabs/FrontEnd/Gatsby/Basics/CoreConcepts/FileRoutingAndPages'));
-const LayoutsAndHeadAPI = lazy(() => import('@/Pages/MainTabs/FrontEnd/Gatsby/Basics/CoreConcepts/LayoutsAndHeadAPI'));
+const GraphQLDataLayer = lazy(() => import('@/pages/mainTabs/FrontEnd/Gatsby/Basics/CoreConcepts/GraphQLDataLayer'));
+const FileRoutingAndPages = lazy(() => import('@/pages/mainTabs/FrontEnd/Gatsby/Basics/CoreConcepts/FileRoutingAndPages'));
+const LayoutsAndHeadAPI = lazy(() => import('@/pages/mainTabs/FrontEnd/Gatsby/Basics/CoreConcepts/LayoutsAndHeadAPI'));
 
 const CoreConcepts: RouteObject[] = [
   {

@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Profiling = lazy(() => import('@/Pages/MainTabs/Languages/Ruby/Advanced/PerfAndTooling/Profiling'));
-const GCAndMemory = lazy(() => import('@/Pages/MainTabs/Languages/Ruby/Advanced/PerfAndTooling/GCAndMemory'));
+const Profiling = lazy(() => import('@/pages/mainTabs/Languages/Ruby/Advanced/PerfAndTooling/Profiling'));
+const GCAndMemory = lazy(() => import('@/pages/mainTabs/Languages/Ruby/Advanced/PerfAndTooling/GCAndMemory'));
 
 const PerfAndTooling: RouteObject[] = [
   {

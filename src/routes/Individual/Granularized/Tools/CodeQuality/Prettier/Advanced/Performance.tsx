@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const LargeRepos = lazy(() => import('@/Pages/MainTabs/Tools/CodeQuality/Prettier/Advanced/Performance/LargeRepos'));
-const CIFormatting = lazy(() => import('@/Pages/MainTabs/Tools/CodeQuality/Prettier/Advanced/Performance/CIFormatting'));
+const LargeRepos = lazy(() => import('@/pages/mainTabs/Tools/CodeQuality/Prettier/Advanced/Performance/LargeRepos'));
+const CIFormatting = lazy(() => import('@/pages/mainTabs/Tools/CodeQuality/Prettier/Advanced/Performance/CIFormatting'));
 
 const Performance: RouteObject[] = [
   {

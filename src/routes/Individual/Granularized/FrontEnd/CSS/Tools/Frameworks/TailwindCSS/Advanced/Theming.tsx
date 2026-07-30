@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const DarkModeStrategies = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Frameworks/TailwindCSS/Advanced/Theming/DarkModeStrategies'));
-const DesignTokensAndCSSVars = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Frameworks/TailwindCSS/Advanced/Theming/DesignTokensAndCSSVars'));
+const DarkModeStrategies = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Tools/Frameworks/TailwindCSS/Advanced/Theming/DarkModeStrategies'));
+const DesignTokensAndCSSVars = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Tools/Frameworks/TailwindCSS/Advanced/Theming/DesignTokensAndCSSVars'));
 
 const Theming: RouteObject[] = [
   {

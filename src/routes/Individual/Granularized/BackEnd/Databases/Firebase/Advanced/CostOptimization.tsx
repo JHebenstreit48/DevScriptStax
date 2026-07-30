@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const ReadsWritesAndPricing = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/Firebase/Advanced/CostOptimization/ReadsWritesAndPricing'));
-const StorageAndBandwidth = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/Firebase/Advanced/CostOptimization/StorageAndBandwidth'));
+const ReadsWritesAndPricing = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/Firebase/Advanced/CostOptimization/ReadsWritesAndPricing'));
+const StorageAndBandwidth = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/Firebase/Advanced/CostOptimization/StorageAndBandwidth'));
 
 const CostOptimization: RouteObject[] = [
   {

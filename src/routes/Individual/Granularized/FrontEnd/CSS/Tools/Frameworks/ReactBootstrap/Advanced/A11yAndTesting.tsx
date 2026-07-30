@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Accessibility = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Frameworks/ReactBootstrap/Advanced/A11yAndTesting/Accessibility'));
-const ComponentTesting = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Frameworks/ReactBootstrap/Advanced/A11yAndTesting/ComponentTesting'));
+const Accessibility = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Tools/Frameworks/ReactBootstrap/Advanced/A11yAndTesting/Accessibility'));
+const ComponentTesting = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Tools/Frameworks/ReactBootstrap/Advanced/A11yAndTesting/ComponentTesting'));
 
 const A11yAndTesting: RouteObject[] = [
   {

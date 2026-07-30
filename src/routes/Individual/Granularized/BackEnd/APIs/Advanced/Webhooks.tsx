@@ -1,9 +1,9 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Introduction = lazy(() => import('@/Pages/MainTabs/BackEnd/APIs/Advanced/Webhooks/Introduction'));
-const Fundamentals = lazy(() => import('@/Pages/MainTabs/BackEnd/APIs/Advanced/Webhooks/Fundamentals'));
-const SecurityConsiderations = lazy(() => import('@/Pages/MainTabs/BackEnd/APIs/Advanced/Webhooks/SecurityConsiderations'));
+const Introduction = lazy(() => import('@/pages/mainTabs/BackEnd/APIs/Advanced/Webhooks/Introduction'));
+const Fundamentals = lazy(() => import('@/pages/mainTabs/BackEnd/APIs/Advanced/Webhooks/Fundamentals'));
+const SecurityConsiderations = lazy(() => import('@/pages/mainTabs/BackEnd/APIs/Advanced/Webhooks/SecurityConsiderations'));
 
 const Webhooks: RouteObject[] = [
   {

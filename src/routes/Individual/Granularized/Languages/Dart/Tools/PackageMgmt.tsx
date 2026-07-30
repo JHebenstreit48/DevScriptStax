@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const PubspecYaml = lazy(() => import('@/Pages/MainTabs/Languages/Dart/Tools/PackageMgmt/PubspecYaml'));
-const PubGetUpgrade = lazy(() => import('@/Pages/MainTabs/Languages/Dart/Tools/PackageMgmt/PubGetUpgrade'));
+const PubspecYaml = lazy(() => import('@/pages/mainTabs/Languages/Dart/Tools/PackageMgmt/PubspecYaml'));
+const PubGetUpgrade = lazy(() => import('@/pages/mainTabs/Languages/Dart/Tools/PackageMgmt/PubGetUpgrade'));
 
 const PackageMgmt: RouteObject[] = [
   {

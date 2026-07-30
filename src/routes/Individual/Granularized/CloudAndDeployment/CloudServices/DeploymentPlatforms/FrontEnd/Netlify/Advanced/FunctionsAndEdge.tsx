@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const EdgeFunctions = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/DeploymentPlatforms/FrontEnd/Netlify/Advanced/FunctionsAndEdge/EdgeFunctions'));
-const ServerlessPatterns = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/DeploymentPlatforms/FrontEnd/Netlify/Advanced/FunctionsAndEdge/ServerlessPatterns'));
+const EdgeFunctions = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/DeploymentPlatforms/FrontEnd/Netlify/Advanced/FunctionsAndEdge/EdgeFunctions'));
+const ServerlessPatterns = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/DeploymentPlatforms/FrontEnd/Netlify/Advanced/FunctionsAndEdge/ServerlessPatterns'));
 
 const FunctionsAndEdge: RouteObject[] = [
   {

@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Introduction = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/MongoDB/Tools/ShellAndServer/Introduction'));
-const Commands = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/MongoDB/Tools/ShellAndServer/Commands'));
+const Introduction = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/MongoDB/Tools/ShellAndServer/Introduction'));
+const Commands = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/MongoDB/Tools/ShellAndServer/Commands'));
 
 const ShellAndServer: RouteObject[] = [
   {

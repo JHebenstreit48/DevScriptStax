@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const MockServer = lazy(() => import('@/Pages/MainTabs/Tools/API/Insomnia/Advanced/Mocking/MockServer'));
-const RouteVariants = lazy(() => import('@/Pages/MainTabs/Tools/API/Insomnia/Advanced/Mocking/RouteVariants'));
+const MockServer = lazy(() => import('@/pages/mainTabs/Tools/API/Insomnia/Advanced/Mocking/MockServer'));
+const RouteVariants = lazy(() => import('@/pages/mainTabs/Tools/API/Insomnia/Advanced/Mocking/RouteVariants'));
 
 const Mocking: RouteObject[] = [
   {

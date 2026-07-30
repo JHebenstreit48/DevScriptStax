@@ -1,9 +1,9 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Metaprogramming = lazy(() => import('@/Pages/MainTabs/Languages/Ruby/Advanced/Language/Metaprogramming'));
-const MixinsAndRefinements = lazy(() => import('@/Pages/MainTabs/Languages/Ruby/Advanced/Language/MixinsAndRefinements'));
-const EnumeratorsAndLazy = lazy(() => import('@/Pages/MainTabs/Languages/Ruby/Advanced/Language/EnumeratorsAndLazy'));
+const Metaprogramming = lazy(() => import('@/pages/mainTabs/Languages/Ruby/Advanced/Language/Metaprogramming'));
+const MixinsAndRefinements = lazy(() => import('@/pages/mainTabs/Languages/Ruby/Advanced/Language/MixinsAndRefinements'));
+const EnumeratorsAndLazy = lazy(() => import('@/pages/mainTabs/Languages/Ruby/Advanced/Language/EnumeratorsAndLazy'));
 
 const Language: RouteObject[] = [
   {

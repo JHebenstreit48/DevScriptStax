@@ -3,27 +3,27 @@ import { RouteObject } from "react-router-dom";
 
 const Introduction = lazy(
   () =>
-    import('@/Pages/MainTabs/BackEnd/Databases/MongoDB/Basics/Fundamentals/Introduction')
+    import('@/pages/mainTabs/BackEnd/Databases/MongoDB/Basics/Fundamentals/Introduction')
 );
 const NoSQLvsSQL = lazy(
   () =>
-    import('@/Pages/MainTabs/BackEnd/Databases/MongoDB/Basics/Fundamentals/NOSQLVsSQL')
+    import('@/pages/mainTabs/BackEnd/Databases/MongoDB/Basics/Fundamentals/NOSQLVsSQL')
 );
 const Setup = lazy(
   () =>
-    import('@/Pages/MainTabs/BackEnd/Databases/MongoDB/Basics/Fundamentals/Setup')
+    import('@/pages/mainTabs/BackEnd/Databases/MongoDB/Basics/Fundamentals/Setup')
 );
 const UseCases = lazy(
   () =>
-    import('@/Pages/MainTabs/BackEnd/Databases/MongoDB/Basics/Fundamentals/UseCases')
+    import('@/pages/mainTabs/BackEnd/Databases/MongoDB/Basics/Fundamentals/UseCases')
 );
 const BSONAndObject = lazy(
   () =>
-    import('@/Pages/MainTabs/BackEnd/Databases/MongoDB/Basics/Fundamentals/BSONAndObject')
+    import('@/pages/mainTabs/BackEnd/Databases/MongoDB/Basics/Fundamentals/BSONAndObject')
 );
 const DataModeling = lazy(
   () =>
-    import('@/Pages/MainTabs/BackEnd/Databases/MongoDB/Basics/Fundamentals/DataModeling')
+    import('@/pages/mainTabs/BackEnd/Databases/MongoDB/Basics/Fundamentals/DataModeling')
 );
 
 const Fundamentals: RouteObject[] = [

@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const PrettierPlugins = lazy(() => import('@/Pages/MainTabs/Tools/CodeQuality/Prettier/Advanced/PluginsAndExt/PrettierPlugins'));
-const EmbeddedLanguages = lazy(() => import('@/Pages/MainTabs/Tools/CodeQuality/Prettier/Advanced/PluginsAndExt/EmbeddedLanguages'));
+const PrettierPlugins = lazy(() => import('@/pages/mainTabs/Tools/CodeQuality/Prettier/Advanced/PluginsAndExt/PrettierPlugins'));
+const EmbeddedLanguages = lazy(() => import('@/pages/mainTabs/Tools/CodeQuality/Prettier/Advanced/PluginsAndExt/EmbeddedLanguages'));
 
 const PluginsAndExt: RouteObject[] = [
   {

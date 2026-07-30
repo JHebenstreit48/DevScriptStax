@@ -1,9 +1,9 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const CORS = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/ExpressJs/Advanced/Security/CORS'));
-const HelmetAndRateLimit = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/ExpressJs/Advanced/Security/HelmetAndRateLimit'));
-const CSRF = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/ExpressJs/Advanced/Security/CSRF'));
+const CORS = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/ExpressJs/Advanced/Security/CORS'));
+const HelmetAndRateLimit = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/ExpressJs/Advanced/Security/HelmetAndRateLimit'));
+const CSRF = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/ExpressJs/Advanced/Security/CSRF'));
 
 const Security: RouteObject[] = [
   {

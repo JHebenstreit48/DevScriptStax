@@ -1,9 +1,9 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const GettingStarted = lazy(() => import('@/Pages/MainTabs/FrontEnd/Gatsby/Basics/Fundamentals/GettingStarted'));
-const ProjectStructure = lazy(() => import('@/Pages/MainTabs/FrontEnd/Gatsby/Basics/Fundamentals/ProjectStructure'));
-const CLIAndWorkflow = lazy(() => import('@/Pages/MainTabs/FrontEnd/Gatsby/Basics/Fundamentals/CLIAndWorkflow'));
+const GettingStarted = lazy(() => import('@/pages/mainTabs/FrontEnd/Gatsby/Basics/Fundamentals/GettingStarted'));
+const ProjectStructure = lazy(() => import('@/pages/mainTabs/FrontEnd/Gatsby/Basics/Fundamentals/ProjectStructure'));
+const CLIAndWorkflow = lazy(() => import('@/pages/mainTabs/FrontEnd/Gatsby/Basics/Fundamentals/CLIAndWorkflow'));
 
 const Fundamentals: RouteObject[] = [
   {

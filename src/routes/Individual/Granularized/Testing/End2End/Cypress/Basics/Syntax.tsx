@@ -1,11 +1,11 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const TestBlockStructure = lazy(() => import('@/Pages/MainTabs/Testing/End2End/Cypress/Basics/Syntax/TestBlockStructure'));
-const SelectorStrategies = lazy(() => import('@/Pages/MainTabs/Testing/End2End/Cypress/Basics/Syntax/SelectorStrategies'));
-const Assertions = lazy(() => import('@/Pages/MainTabs/Testing/End2End/Cypress/Basics/Syntax/Assertions'));
-const CommandsAndChaining = lazy(() => import('@/Pages/MainTabs/Testing/End2End/Cypress/Basics/Syntax/CommandsAndChaining'));
-const HooksAndLifecycle = lazy(() => import('@/Pages/MainTabs/Testing/End2End/Cypress/Basics/Syntax/HooksAndLifecycle'));
+const TestBlockStructure = lazy(() => import('@/pages/mainTabs/Testing/End2End/Cypress/Basics/Syntax/TestBlockStructure'));
+const SelectorStrategies = lazy(() => import('@/pages/mainTabs/Testing/End2End/Cypress/Basics/Syntax/SelectorStrategies'));
+const Assertions = lazy(() => import('@/pages/mainTabs/Testing/End2End/Cypress/Basics/Syntax/Assertions'));
+const CommandsAndChaining = lazy(() => import('@/pages/mainTabs/Testing/End2End/Cypress/Basics/Syntax/CommandsAndChaining'));
+const HooksAndLifecycle = lazy(() => import('@/pages/mainTabs/Testing/End2End/Cypress/Basics/Syntax/HooksAndLifecycle'));
 
 const Syntax: RouteObject[] = [
   {

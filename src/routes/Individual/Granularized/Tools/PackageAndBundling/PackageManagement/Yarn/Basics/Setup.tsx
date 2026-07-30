@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const InstallAndInit = lazy(() => import('@/Pages/MainTabs/Tools/PackageAndBundling/PackageManagement/Yarn/Basics/Setup/InstallAndInit'));
-const Config = lazy(() => import('@/Pages/MainTabs/Tools/PackageAndBundling/PackageManagement/Yarn/Basics/Setup/Config'));
+const InstallAndInit = lazy(() => import('@/pages/mainTabs/Tools/PackageAndBundling/PackageManagement/Yarn/Basics/Setup/InstallAndInit'));
+const Config = lazy(() => import('@/pages/mainTabs/Tools/PackageAndBundling/PackageManagement/Yarn/Basics/Setup/Config'));
 
 const Setup: RouteObject[] = [
   {

@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const PerformanceTuning = lazy(() => import('@/Pages/MainTabs/Tools/CodeQuality/ESLint/Advanced/Performance/PerformanceTuning'));
-const CachingStrategies = lazy(() => import('@/Pages/MainTabs/Tools/CodeQuality/ESLint/Advanced/Performance/CachingStrategies'));
+const PerformanceTuning = lazy(() => import('@/pages/mainTabs/Tools/CodeQuality/ESLint/Advanced/Performance/PerformanceTuning'));
+const CachingStrategies = lazy(() => import('@/pages/mainTabs/Tools/CodeQuality/ESLint/Advanced/Performance/CachingStrategies'));
 
 const Performance: RouteObject[] = [
   {

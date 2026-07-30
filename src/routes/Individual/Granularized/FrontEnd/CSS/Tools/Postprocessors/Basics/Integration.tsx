@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const ViteWebpackParcel = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Postprocessors/Basics/Integration/ViteWebpackParcel'));
-const ConfigPatterns = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Postprocessors/Basics/Integration/ConfigPatterns'));
+const ViteWebpackParcel = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Tools/Postprocessors/Basics/Integration/ViteWebpackParcel'));
+const ConfigPatterns = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Tools/Postprocessors/Basics/Integration/ConfigPatterns'));
 
 const Integration: RouteObject[] = [
   {

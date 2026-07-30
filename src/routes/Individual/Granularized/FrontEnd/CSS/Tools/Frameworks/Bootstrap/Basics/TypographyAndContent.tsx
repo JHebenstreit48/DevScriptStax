@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Typography = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Frameworks/Bootstrap/Basics/TypographyAndContent/Typography'));
-const ImagesAndFigures = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Frameworks/Bootstrap/Basics/TypographyAndContent/ImagesAndFigures'));
+const Typography = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Tools/Frameworks/Bootstrap/Basics/TypographyAndContent/Typography'));
+const ImagesAndFigures = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Tools/Frameworks/Bootstrap/Basics/TypographyAndContent/ImagesAndFigures'));
 
 const TypographyAndContent: RouteObject[] = [
   {

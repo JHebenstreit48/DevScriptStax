@@ -1,10 +1,10 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Introduction = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/Firebase/Basics/Firestore/Introduction'));
-const FirestoreVsRealtime = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/Firebase/Basics/Firestore/FirestoreVsRealtime'));
-const DocumentAndCollectionModel = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/Firebase/Basics/Firestore/DocumentAndCollectionModel'));
-const QueryingAndIndexingData = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/Firebase/Basics/Firestore/QueryingAndIndexingData'));
+const Introduction = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/Firebase/Basics/Firestore/Introduction'));
+const FirestoreVsRealtime = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/Firebase/Basics/Firestore/FirestoreVsRealtime'));
+const DocumentAndCollectionModel = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/Firebase/Basics/Firestore/DocumentAndCollectionModel'));
+const QueryingAndIndexingData = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/Firebase/Basics/Firestore/QueryingAndIndexingData'));
 
 const Firestore: RouteObject[] = [
   {

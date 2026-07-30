@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const FileAndCLI = lazy(() => import('@/Pages/MainTabs/Languages/Rust/Basics/IOAndData/FileAndCLI'));
-const SerdeJSON = lazy(() => import('@/Pages/MainTabs/Languages/Rust/Basics/IOAndData/SerdeJSON'));
+const FileAndCLI = lazy(() => import('@/pages/mainTabs/Languages/Rust/Basics/IOAndData/FileAndCLI'));
+const SerdeJSON = lazy(() => import('@/pages/mainTabs/Languages/Rust/Basics/IOAndData/SerdeJSON'));
 
 const IOAndData: RouteObject[] = [
   {

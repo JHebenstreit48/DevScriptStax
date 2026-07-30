@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const ACIDAndMVCC = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/PostgreSQL/Intermediate/TransactionsAndLocking/ACIDAndMVCC'));
-const IsolationLevelsAndLocks = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/PostgreSQL/Intermediate/TransactionsAndLocking/IsolationLevelsAndLocks'));
+const ACIDAndMVCC = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/PostgreSQL/Intermediate/TransactionsAndLocking/ACIDAndMVCC'));
+const IsolationLevelsAndLocks = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/PostgreSQL/Intermediate/TransactionsAndLocking/IsolationLevelsAndLocks'));
 
 const TransactionsAndLocking: RouteObject[] = [
   {

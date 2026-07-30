@@ -1,9 +1,9 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const PassportJs = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/ExpressJs/Advanced/Auth/PassportJs'));
-const JWT = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/ExpressJs/Advanced/Auth/JWT'));
-const Sessions = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/ExpressJs/Advanced/Auth/Sessions'));
+const PassportJs = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/ExpressJs/Advanced/Auth/PassportJs'));
+const JWT = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/ExpressJs/Advanced/Auth/JWT'));
+const Sessions = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/ExpressJs/Advanced/Auth/Sessions'));
 
 const Auth: RouteObject[] = [
   {

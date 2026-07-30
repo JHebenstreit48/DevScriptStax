@@ -1,10 +1,10 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Introduction = lazy(() => import('@/Pages/MainTabs/Languages/Ruby/Basics/Fundamentals/Introduction'));
-const SyntaxAndTypes = lazy(() => import('@/Pages/MainTabs/Languages/Ruby/Basics/Fundamentals/SyntaxAndTypes'));
-const ControlFlow = lazy(() => import('@/Pages/MainTabs/Languages/Ruby/Basics/Fundamentals/ControlFlow'));
-const OOPAndModules = lazy(() => import('@/Pages/MainTabs/Languages/Ruby/Basics/Fundamentals/OOPAndModules'));
+const Introduction = lazy(() => import('@/pages/mainTabs/Languages/Ruby/Basics/Fundamentals/Introduction'));
+const SyntaxAndTypes = lazy(() => import('@/pages/mainTabs/Languages/Ruby/Basics/Fundamentals/SyntaxAndTypes'));
+const ControlFlow = lazy(() => import('@/pages/mainTabs/Languages/Ruby/Basics/Fundamentals/ControlFlow'));
+const OOPAndModules = lazy(() => import('@/pages/mainTabs/Languages/Ruby/Basics/Fundamentals/OOPAndModules'));
 
 const Fundamentals: RouteObject[] = [
   {

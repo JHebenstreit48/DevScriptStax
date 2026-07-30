@@ -1,9 +1,9 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const CypressAndContinuousIntegration = lazy(() => import('@/Pages/MainTabs/Testing/EndToEnd/Cypress/Advanced/CICDIntegration/CypressAndContinuousIntegration'));
-const UsingCypressWithCircleCI = lazy(() => import('@/Pages/MainTabs/Testing/EndToEnd/Cypress/Advanced/CICDIntegration/UsingCypressWithCircleCI'));
-const GitHubActionsAndOtherRunners = lazy(() => import('@/Pages/MainTabs/Testing/EndToEnd/Cypress/Advanced/CICDIntegration/GitHubActionsAndOtherRunners'));
+const CypressAndContinuousIntegration = lazy(() => import('@/pages/mainTabs/Testing/End2End/Cypress/Advanced/CICDIntegration/CypressAndContinuousIntegration'));
+const UsingCypressWithCircleCI = lazy(() => import('@/pages/mainTabs/Testing/End2End/Cypress/Advanced/CICDIntegration/UsingCypressWithCircleCI'));
+const GitHubActionsAndOtherRunners = lazy(() => import('@/pages/mainTabs/Testing/End2End/Cypress/Advanced/CICDIntegration/GitHubActionsAndOtherRunners'));
 
 const CICDIntegration: RouteObject[] = [
   {

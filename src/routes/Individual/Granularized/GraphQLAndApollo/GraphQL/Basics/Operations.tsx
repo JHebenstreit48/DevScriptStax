@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Queries = lazy(() => import('@/Pages/MainTabs/GraphQLAndApollo/GraphQL/Basics/Operations/Queries'));
-const Mutations = lazy(() => import('@/Pages/MainTabs/GraphQLAndApollo/GraphQL/Basics/Operations/Mutations'));
+const Queries = lazy(() => import('@/pages/mainTabs/GraphQLAndApollo/GraphQL/Basics/Operations/Queries'));
+const Mutations = lazy(() => import('@/pages/mainTabs/GraphQLAndApollo/GraphQL/Basics/Operations/Mutations'));
 
 const Operations: RouteObject[] = [
   {

@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const UsingBuildPlugins = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/DeploymentPlatforms/FrontEnd/Netlify/Advanced/PluginsAndExtensibility/UsingBuildPlugins'));
-const AuthoringPlugins = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/DeploymentPlatforms/FrontEnd/Netlify/Advanced/PluginsAndExtensibility/AuthoringPlugins'));
+const UsingBuildPlugins = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/DeploymentPlatforms/FrontEnd/Netlify/Advanced/PluginsAndExtensibility/UsingBuildPlugins'));
+const AuthoringPlugins = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/DeploymentPlatforms/FrontEnd/Netlify/Advanced/PluginsAndExtensibility/AuthoringPlugins'));
 
 const PluginsAndExtensibility: RouteObject[] = [
   {

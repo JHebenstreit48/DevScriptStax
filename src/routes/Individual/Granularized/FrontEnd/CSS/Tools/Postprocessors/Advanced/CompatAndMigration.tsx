@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const PostCSS8AndESM = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Postprocessors/Advanced/CompatAndMigration/PostCSS8AndESM'));
-const LegacyBuildMigration = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Postprocessors/Advanced/CompatAndMigration/LegacyBuildMigration'));
+const PostCSS8AndESM = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Tools/Postprocessors/Advanced/CompatAndMigration/PostCSS8AndESM'));
+const LegacyBuildMigration = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Tools/Postprocessors/Advanced/CompatAndMigration/LegacyBuildMigration'));
 
 const CompatAndMigration: RouteObject[] = [
   {

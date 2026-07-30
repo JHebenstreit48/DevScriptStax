@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const APIsAndIntegrations = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/Provisioning/AWSSAM/Advanced/Architecture/APIsAndIntegrations'));
-const EventDriven = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/Provisioning/AWSSAM/Advanced/Architecture/EventDriven'));
+const APIsAndIntegrations = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/Provisioning/AWSSAM/Advanced/Architecture/APIsAndIntegrations'));
+const EventDriven = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/Provisioning/AWSSAM/Advanced/Architecture/EventDriven'));
 
 const Architecture: RouteObject[] = [
   {

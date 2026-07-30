@@ -1,10 +1,10 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Introduction = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Spring/SpringMain/Basics/Fundamentals/Introduction'));
-const IoCContainerAndBeans = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Spring/SpringMain/Basics/Fundamentals/IoCContainerAndBeans'));
-const Config = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Spring/SpringMain/Basics/Fundamentals/Config'));
-const ComponentScan = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Spring/SpringMain/Basics/Fundamentals/ComponentScan'));
+const Introduction = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/Spring/SpringMain/Basics/Fundamentals/Introduction'));
+const IoCContainerAndBeans = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/Spring/SpringMain/Basics/Fundamentals/IoCContainerAndBeans'));
+const Config = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/Spring/SpringMain/Basics/Fundamentals/Config'));
+const ComponentScan = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/Spring/SpringMain/Basics/Fundamentals/ComponentScan'));
 
 const Fundamentals: RouteObject[] = [
   {

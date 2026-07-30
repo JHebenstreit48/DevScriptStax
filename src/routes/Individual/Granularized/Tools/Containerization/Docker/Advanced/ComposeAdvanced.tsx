@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const ProfilesAndOverrides = lazy(() => import('@/Pages/MainTabs/Tools/Containerization/Docker/Advanced/ComposeAdvanced/ProfilesAndOverrides'));
-const ProdDeployAndEnvFiles = lazy(() => import('@/Pages/MainTabs/Tools/Containerization/Docker/Advanced/ComposeAdvanced/ProdDeployAndEnvFiles'));
+const ProfilesAndOverrides = lazy(() => import('@/pages/mainTabs/Tools/Containerization/Docker/Advanced/ComposeAdvanced/ProfilesAndOverrides'));
+const ProdDeployAndEnvFiles = lazy(() => import('@/pages/mainTabs/Tools/Containerization/Docker/Advanced/ComposeAdvanced/ProdDeployAndEnvFiles'));
 
 const ComposeAdvanced: RouteObject[] = [
   {

@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Plugins = lazy(() => import('@/Pages/MainTabs/Tools/API/Insomnia/Advanced/Extensibility/Plugins'));
-const TemplateTags = lazy(() => import('@/Pages/MainTabs/Tools/API/Insomnia/Advanced/Extensibility/TemplateTags'));
+const Plugins = lazy(() => import('@/pages/mainTabs/Tools/API/Insomnia/Advanced/Extensibility/Plugins'));
+const TemplateTags = lazy(() => import('@/pages/mainTabs/Tools/API/Insomnia/Advanced/Extensibility/TemplateTags'));
 
 const Extensibility: RouteObject[] = [
   {

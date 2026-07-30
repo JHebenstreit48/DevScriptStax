@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const CoreCommands = lazy(() => import('@/Pages/MainTabs/Glossary/Testing/EndToEnd/Cypress/CoreCommands'));
-const TestStructure = lazy(() => import('@/Pages/MainTabs/Glossary/Testing/EndToEnd/Cypress/TestStructure'));
+const CoreCommands = lazy(() => import('@/pages/mainTabs/Glossary/Testing/EndToEnd/Cypress/CoreCommands'));
+const TestStructure = lazy(() => import('@/pages/mainTabs/Glossary/Testing/EndToEnd/Cypress/TestStructure'));
 
 const Switching: RouteObject[] = [
   {

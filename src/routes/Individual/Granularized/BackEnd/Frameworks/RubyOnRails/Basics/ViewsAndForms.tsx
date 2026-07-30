@@ -1,9 +1,9 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const ERBAndLayouts = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/RubyOnRails/Basics/ViewsAndForms/ERBAndLayouts'));
-const PartialsAndHelpers = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/RubyOnRails/Basics/ViewsAndForms/PartialsAndHelpers'));
-const FormsAndCSRF = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/RubyOnRails/Basics/ViewsAndForms/FormsAndCSRF'));
+const ERBAndLayouts = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/RubyOnRails/Basics/ViewsAndForms/ERBAndLayouts'));
+const PartialsAndHelpers = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/RubyOnRails/Basics/ViewsAndForms/PartialsAndHelpers'));
+const FormsAndCSRF = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/RubyOnRails/Basics/ViewsAndForms/FormsAndCSRF'));
 
 const ViewsAndForms: RouteObject[] = [
   {

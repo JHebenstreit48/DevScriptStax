@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const ChoosingARunner = lazy(() => import('@/Pages/MainTabs/Languages/JavaScript/Testing/Advanced/Runners/ChoosingARunner'));
-const DOMVsNodeEnvs = lazy(() => import('@/Pages/MainTabs/Languages/JavaScript/Testing/Advanced/Runners/DOMVsNodeEnvs'));
+const ChoosingARunner = lazy(() => import('@/pages/mainTabs/Languages/JavaScript/Testing/Advanced/Runners/ChoosingARunner'));
+const DOMVsNodeEnvs = lazy(() => import('@/pages/mainTabs/Languages/JavaScript/Testing/Advanced/Runners/DOMVsNodeEnvs'));
 
 const Runners: RouteObject[] = [
   {

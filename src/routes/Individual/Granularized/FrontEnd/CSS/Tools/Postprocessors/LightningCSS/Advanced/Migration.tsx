@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const FromPostCSSStack = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Postprocessors/LightningCSS/Advanced/Migration/FromPostCSSStack'));
-const MixedPipelines = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Postprocessors/LightningCSS/Advanced/Migration/MixedPipelines'));
+const FromPostCSSStack = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Tools/Postprocessors/LightningCSS/Advanced/Migration/FromPostCSSStack'));
+const MixedPipelines = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Tools/Postprocessors/LightningCSS/Advanced/Migration/MixedPipelines'));
 
 const Migration: RouteObject[] = [
   {

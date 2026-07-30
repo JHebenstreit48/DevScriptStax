@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const CICDAndCLI = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/EdgeComputing/AkamaiEdgeWorkers/Advanced/Workflows/CICDAndCLI'));
-const CanaryAndAB = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/EdgeComputing/AkamaiEdgeWorkers/Advanced/Workflows/CanaryAndAB'));
+const CICDAndCLI = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/EdgeComputing/AkamaiEdgeWorkers/Advanced/Workflows/CICDAndCLI'));
+const CanaryAndAB = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/EdgeComputing/AkamaiEdgeWorkers/Advanced/Workflows/CanaryAndAB'));
 
 const Workflows: RouteObject[] = [
   {

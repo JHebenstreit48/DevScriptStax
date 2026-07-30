@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Volumes = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/DeploymentPlatforms/FullStack/Fly/Basics/StorageAndEnv/Volumes'));
-const SecretsAndEnvVars = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/DeploymentPlatforms/FullStack/Fly/Basics/StorageAndEnv/SecretsAndEnvVars'));
+const Volumes = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/DeploymentPlatforms/FullStack/Fly/Basics/StorageAndEnv/Volumes'));
+const SecretsAndEnvVars = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/DeploymentPlatforms/FullStack/Fly/Basics/StorageAndEnv/SecretsAndEnvVars'));
 
 const StorageAndEnv: RouteObject[] = [
   {

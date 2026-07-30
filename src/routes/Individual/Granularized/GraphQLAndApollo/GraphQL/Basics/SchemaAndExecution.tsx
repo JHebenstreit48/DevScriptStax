@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Schema = lazy(() => import('@/Pages/MainTabs/GraphQLAndApollo/GraphQL/Basics/SchemaAndExecution/Schema'));
-const Resolvers = lazy(() => import('@/Pages/MainTabs/GraphQLAndApollo/GraphQL/Basics/SchemaAndExecution/Resolvers'));
+const Schema = lazy(() => import('@/pages/mainTabs/GraphQLAndApollo/GraphQL/Basics/SchemaAndExecution/Schema'));
+const Resolvers = lazy(() => import('@/pages/mainTabs/GraphQLAndApollo/GraphQL/Basics/SchemaAndExecution/Resolvers'));
 
 const SchemaAndExecution: RouteObject[] = [
   {

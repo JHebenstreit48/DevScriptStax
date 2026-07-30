@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const CachingAndMinify = lazy(() => import('@/Pages/MainTabs/Tools/PackageAndBundling/Bundling/Webpack/Advanced/PerfAndCodeSplit/CachingAndMinify'));
-const CodeSplitting = lazy(() => import('@/Pages/MainTabs/Tools/PackageAndBundling/Bundling/Webpack/Advanced/PerfAndCodeSplit/CodeSplitting'));
+const CachingAndMinify = lazy(() => import('@/pages/mainTabs/Tools/PackageAndBundling/Bundling/Webpack/Advanced/PerfAndCodeSplit/CachingAndMinify'));
+const CodeSplitting = lazy(() => import('@/pages/mainTabs/Tools/PackageAndBundling/Bundling/Webpack/Advanced/PerfAndCodeSplit/CodeSplitting'));
 
 const PerfAndCodeSplit: RouteObject[] = [
   {

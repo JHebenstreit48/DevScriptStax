@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const BuildAndDeploy = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/EdgeComputing/FastlyCompute/Basics/Deploys/BuildAndDeploy'));
-const VersionsAndActivations = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/EdgeComputing/FastlyCompute/Basics/Deploys/VersionsAndActivations'));
+const BuildAndDeploy = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/EdgeComputing/FastlyCompute/Basics/Deploys/BuildAndDeploy'));
+const VersionsAndActivations = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/EdgeComputing/FastlyCompute/Basics/Deploys/VersionsAndActivations'));
 
 const Deploys: RouteObject[] = [
   {

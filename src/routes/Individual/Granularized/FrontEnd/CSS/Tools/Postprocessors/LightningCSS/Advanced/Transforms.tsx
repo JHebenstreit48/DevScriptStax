@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const NestingAndLayer = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Postprocessors/LightningCSS/Advanced/Transforms/NestingAndLayer'));
-const CustomMediaAndSelectors = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Postprocessors/LightningCSS/Advanced/Transforms/CustomMediaAndSelectors'));
+const NestingAndLayer = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Tools/Postprocessors/LightningCSS/Advanced/Transforms/NestingAndLayer'));
+const CustomMediaAndSelectors = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Tools/Postprocessors/LightningCSS/Advanced/Transforms/CustomMediaAndSelectors'));
 
 const Transforms: RouteObject[] = [
   {

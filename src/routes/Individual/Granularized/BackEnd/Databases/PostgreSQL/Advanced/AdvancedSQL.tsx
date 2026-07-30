@@ -1,10 +1,10 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const CommonTableExpressions = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/PostgreSQL/Advanced/AdvancedSQL/CommonTableExpressions'));
-const WindowFunctions = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/PostgreSQL/Advanced/AdvancedSQL/WindowFunctions'));
-const RecursiveQueries = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/PostgreSQL/Advanced/AdvancedSQL/RecursiveQueries'));
-const FullTextSearch = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/PostgreSQL/Advanced/AdvancedSQL/FullTextSearch'));
+const CommonTableExpressions = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/PostgreSQL/Advanced/AdvancedSQL/CommonTableExpressions'));
+const WindowFunctions = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/PostgreSQL/Advanced/AdvancedSQL/WindowFunctions'));
+const RecursiveQueries = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/PostgreSQL/Advanced/AdvancedSQL/RecursiveQueries'));
+const FullTextSearch = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/PostgreSQL/Advanced/AdvancedSQL/FullTextSearch'));
 
 const AdvancedSQL: RouteObject[] = [
   {

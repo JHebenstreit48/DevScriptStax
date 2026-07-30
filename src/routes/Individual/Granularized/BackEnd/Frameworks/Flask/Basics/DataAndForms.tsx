@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const JSONAndFormData = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Flask/Basics/DataAndForms/JSONAndFormData'));
-const FileUploads = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Flask/Basics/DataAndForms/FileUploads'));
+const JSONAndFormData = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/Flask/Basics/DataAndForms/JSONAndFormData'));
+const FileUploads = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/Flask/Basics/DataAndForms/FileUploads'));
 
 const DataAndForms: RouteObject[] = [
   {

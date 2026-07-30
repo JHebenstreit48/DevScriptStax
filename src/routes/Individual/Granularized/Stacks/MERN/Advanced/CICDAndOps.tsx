@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const BuildTestDeploy = lazy(() => import('@/Pages/MainTabs/Stacks/MERN/Advanced/CICDAndOps/BuildTestDeploy'));
-const LogsAndMonitoring = lazy(() => import('@/Pages/MainTabs/Stacks/MERN/Advanced/CICDAndOps/LogsAndMonitoring'));
+const BuildTestDeploy = lazy(() => import('@/pages/mainTabs/Stacks/MERN/Advanced/CICDAndOps/BuildTestDeploy'));
+const LogsAndMonitoring = lazy(() => import('@/pages/mainTabs/Stacks/MERN/Advanced/CICDAndOps/LogsAndMonitoring'));
 
 const CICDAndOps: RouteObject[] = [
   {

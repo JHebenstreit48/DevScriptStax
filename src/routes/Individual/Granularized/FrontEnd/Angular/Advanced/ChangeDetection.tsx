@@ -1,10 +1,10 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Basics = lazy(() => import('@/Pages/MainTabs/FrontEnd/Angular/Advanced/ChangeDetection/Basics'));
-const Optimizing = lazy(() => import('@/Pages/MainTabs/FrontEnd/Angular/Advanced/ChangeDetection/Optimizing'));
+const Basics = lazy(() => import('@/pages/mainTabs/FrontEnd/Angular/Advanced/ChangeDetection/Basics'));
+const Optimizing = lazy(() => import('@/pages/mainTabs/FrontEnd/Angular/Advanced/ChangeDetection/Optimizing'));
 const TemplateRenderOptim = lazy(
-  () => import('@/Pages/MainTabs/FrontEnd/Angular/Advanced/ChangeDetection/TemplateRenderOptim')
+  () => import('@/pages/mainTabs/FrontEnd/Angular/Advanced/ChangeDetection/TemplateRenderOptim')
 );
 
 const changeDetection: RouteObject[] = [

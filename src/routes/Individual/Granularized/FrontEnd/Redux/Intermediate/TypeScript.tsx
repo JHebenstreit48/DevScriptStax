@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const TypedStoreAndDispatch = lazy(() => import('@/Pages/MainTabs/FrontEnd/Redux/Intermediate/TypeScript/TypedStoreAndDispatch'));
-const TypedHooksAndPayloadAction = lazy(() => import('@/Pages/MainTabs/FrontEnd/Redux/Intermediate/TypeScript/TypedHooksAndPayloadAction'));
+const TypedStoreAndDispatch = lazy(() => import('@/pages/mainTabs/FrontEnd/Redux/Intermediate/TypeScript/TypedStoreAndDispatch'));
+const TypedHooksAndPayloadAction = lazy(() => import('@/pages/mainTabs/FrontEnd/Redux/Intermediate/TypeScript/TypedHooksAndPayloadAction'));
 
 const TypeScript: RouteObject[] = [
   {

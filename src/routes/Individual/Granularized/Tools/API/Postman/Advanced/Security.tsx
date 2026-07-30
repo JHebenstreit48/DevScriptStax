@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const OAuthFlows = lazy(() => import('@/Pages/MainTabs/Tools/API/Postman/Advanced/Security/OAuthFlows'));
-const Certificates = lazy(() => import('@/Pages/MainTabs/Tools/API/Postman/Advanced/Security/Certificates'));
+const OAuthFlows = lazy(() => import('@/pages/mainTabs/Tools/API/Postman/Advanced/Security/OAuthFlows'));
+const Certificates = lazy(() => import('@/pages/mainTabs/Tools/API/Postman/Advanced/Security/Certificates'));
 
 const Security: RouteObject[] = [
   {

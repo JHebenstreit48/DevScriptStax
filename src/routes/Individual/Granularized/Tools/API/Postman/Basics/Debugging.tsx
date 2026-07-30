@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Console = lazy(() => import('@/Pages/MainTabs/Tools/API/Postman/Basics/Debugging/Console'));
-const Troubleshoot = lazy(() => import('@/Pages/MainTabs/Tools/API/Postman/Basics/Debugging/Troubleshoot'));
+const Console = lazy(() => import('@/pages/mainTabs/Tools/API/Postman/Basics/Debugging/Console'));
+const Troubleshoot = lazy(() => import('@/pages/mainTabs/Tools/API/Postman/Basics/Debugging/Troubleshoot'));
 
 const Debugging: RouteObject[] = [
   {

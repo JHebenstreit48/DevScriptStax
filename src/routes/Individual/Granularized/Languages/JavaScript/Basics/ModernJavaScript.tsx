@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const FeaturesIntroduction = lazy(() => import('@/Pages/MainTabs/Languages/JavaScript/Basics/ModernES6/FeaturesIntroduction'));
-const PromisesAndAsyncAwait = lazy(() => import('@/Pages/MainTabs/Languages/JavaScript/Basics/ModernES6/PromisesAndAsyncAwait'));
+const FeaturesIntroduction = lazy(() => import('@/pages/mainTabs/Languages/JavaScript/Basics/ModernES6/FeaturesIntroduction'));
+const PromisesAndAsyncAwait = lazy(() => import('@/pages/mainTabs/Languages/JavaScript/Basics/ModernES6/PromisesAndAsyncAwait'));
 
 const ModernJavaScript: RouteObject[] = [
   {

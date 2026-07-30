@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const TimeAndRandomnessControl = lazy(() => import('@/Pages/MainTabs/Languages/JavaScript/Testing/Advanced/Environment/TimeAndRandomnessControl'));
-const NetworkStrategies = lazy(() => import('@/Pages/MainTabs/Languages/JavaScript/Testing/Advanced/Environment/NetworkStrategies'));
+const TimeAndRandomnessControl = lazy(() => import('@/pages/mainTabs/Languages/JavaScript/Testing/Advanced/Environment/TimeAndRandomnessControl'));
+const NetworkStrategies = lazy(() => import('@/pages/mainTabs/Languages/JavaScript/Testing/Advanced/Environment/NetworkStrategies'));
 
 const Environment: RouteObject[] = [
   {

@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const SecurityAndComplianceInCircleCI = lazy(() => import('@/Pages/MainTabs/Tools/CICD/CircleCI/Advanced/Security/SecurityAndComplianceInCircleCI'));
-const ContextsAndSecrets = lazy(() => import('@/Pages/MainTabs/Tools/CICD/CircleCI/Advanced/Security/ContextsAndSecrets'));
+const SecurityAndComplianceInCircleCI = lazy(() => import('@/pages/mainTabs/Tools/CICD/CircleCI/Advanced/Security/SecurityAndComplianceInCircleCI'));
+const ContextsAndSecrets = lazy(() => import('@/pages/mainTabs/Tools/CICD/CircleCI/Advanced/Security/ContextsAndSecrets'));
 
 const Security: RouteObject[] = [
   {

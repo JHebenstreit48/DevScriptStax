@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const ContentSecurityPolicy = lazy(() => import('@/Pages/MainTabs/Languages/JavaScript/Advanced/Security/ClientSideProtection/ContentSecurityPolicy'));
-const CORSAndSameSiteCookies = lazy(() => import('@/Pages/MainTabs/Languages/JavaScript/Advanced/Security/ClientSideProtection/CORSAndSameSiteCookies'));
+const ContentSecurityPolicy = lazy(() => import('@/pages/mainTabs/Languages/JavaScript/Advanced/Security/ClientSideProtection/ContentSecurityPolicy'));
+const CORSAndSameSiteCookies = lazy(() => import('@/pages/mainTabs/Languages/JavaScript/Advanced/Security/ClientSideProtection/CORSAndSameSiteCookies'));
 
 const ClientSideProtection: RouteObject[] = [
   {

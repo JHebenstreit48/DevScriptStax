@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const RESTInSpring = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Spring/SpringBoot/Advanced/API/RESTInSpring'));
-const ExceptionHandling = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Spring/SpringBoot/Advanced/API/ExceptionHandling'));
+const RESTInSpring = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/Spring/SpringBoot/Advanced/API/RESTInSpring'));
+const ExceptionHandling = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/Spring/SpringBoot/Advanced/API/ExceptionHandling'));
 
 const API: RouteObject[] = [
   {

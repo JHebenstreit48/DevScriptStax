@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const PerformanceOptimization = lazy(() => import('@/Pages/MainTabs/Tools/CICD/Jenkins/Advanced/PerformanceAndScale/PerformanceOptimization'));
-const CachingAndArtifacts = lazy(() => import('@/Pages/MainTabs/Tools/CICD/Jenkins/Advanced/PerformanceAndScale/CachingAndArtifacts'));
+const PerformanceOptimization = lazy(() => import('@/pages/mainTabs/Tools/CICD/Jenkins/Advanced/PerformanceAndScale/PerformanceOptimization'));
+const CachingAndArtifacts = lazy(() => import('@/pages/mainTabs/Tools/CICD/Jenkins/Advanced/PerformanceAndScale/CachingAndArtifacts'));
 
 const PerformanceAndScale: RouteObject[] = [
   {

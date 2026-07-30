@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Mocktail = lazy(() => import('@/Pages/MainTabs/Languages/Dart/Testing/FakesAndMocks/Mocktail'));
-const HandRolledFakes = lazy(() => import('@/Pages/MainTabs/Languages/Dart/Testing/FakesAndMocks/HandRolledFakes'));
+const Mocktail = lazy(() => import('@/pages/mainTabs/Languages/Dart/Testing/FakesAndMocks/Mocktail'));
+const HandRolledFakes = lazy(() => import('@/pages/mainTabs/Languages/Dart/Testing/FakesAndMocks/HandRolledFakes'));
 
 const FakesAndMocks: RouteObject[] = [
   {

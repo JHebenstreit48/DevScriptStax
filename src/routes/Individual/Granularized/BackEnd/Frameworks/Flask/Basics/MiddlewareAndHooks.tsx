@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const RequestHooks = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Flask/Basics/MiddlewareAndHooks/RequestHooks'));
-const WSGIMiddleware = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Flask/Basics/MiddlewareAndHooks/WSGIMiddleware'));
+const RequestHooks = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/Flask/Basics/MiddlewareAndHooks/RequestHooks'));
+const WSGIMiddleware = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/Flask/Basics/MiddlewareAndHooks/WSGIMiddleware'));
 
 const MiddlewareAndHooks: RouteObject[] = [
   {

@@ -1,9 +1,9 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Introduction = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/NodeJs/Basics/Fundamentals/Introduction'));
-const EventLoopAndAsyncIO = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/NodeJs/Basics/Fundamentals/EventLoopAndAsyncIO'));
-const RuntimeAndGlobals = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/NodeJs/Basics/Fundamentals/RuntimeAndGlobals'));
+const Introduction = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/NodeJs/Basics/Fundamentals/Introduction'));
+const EventLoopAndAsyncIO = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/NodeJs/Basics/Fundamentals/EventLoopAndAsyncIO'));
+const RuntimeAndGlobals = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/NodeJs/Basics/Fundamentals/RuntimeAndGlobals'));
 
 const Fundamentals: RouteObject[] = [
   {

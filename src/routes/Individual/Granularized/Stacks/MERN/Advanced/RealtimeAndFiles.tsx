@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const SocketIOIntegration = lazy(() => import('@/Pages/MainTabs/Stacks/MERN/Advanced/RealtimeAndFiles/SocketIOIntegration'));
-const FileUploadsPipeline = lazy(() => import('@/Pages/MainTabs/Stacks/MERN/Advanced/RealtimeAndFiles/FileUploadsPipeline'));
+const SocketIOIntegration = lazy(() => import('@/pages/mainTabs/Stacks/MERN/Advanced/RealtimeAndFiles/SocketIOIntegration'));
+const FileUploadsPipeline = lazy(() => import('@/pages/mainTabs/Stacks/MERN/Advanced/RealtimeAndFiles/FileUploadsPipeline'));
 
 const RealtimeAndFiles: RouteObject[] = [
   {

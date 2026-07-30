@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const DisableAndInline = lazy(() => import('@/Pages/MainTabs/Tools/CodeQuality/StandardJS/Advanced/Customization/DisableAndInline'));
-const ExtendingWithESLint = lazy(() => import('@/Pages/MainTabs/Tools/CodeQuality/StandardJS/Advanced/Customization/ExtendingWithESLint'));
+const DisableAndInline = lazy(() => import('@/pages/mainTabs/Tools/CodeQuality/StandardJS/Advanced/Customization/DisableAndInline'));
+const ExtendingWithESLint = lazy(() => import('@/pages/mainTabs/Tools/CodeQuality/StandardJS/Advanced/Customization/ExtendingWithESLint'));
 
 const Customization: RouteObject[] = [
   {

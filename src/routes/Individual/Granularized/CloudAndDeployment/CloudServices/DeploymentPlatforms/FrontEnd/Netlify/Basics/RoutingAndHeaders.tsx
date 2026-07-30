@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const RedirectsAndRewrites = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/DeploymentPlatforms/FrontEnd/Netlify/Basics/RoutingAndHeaders/RedirectsAndRewrites'));
-const HeadersAndCORS = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/DeploymentPlatforms/FrontEnd/Netlify/Basics/RoutingAndHeaders/HeadersAndCORS'));
+const RedirectsAndRewrites = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/DeploymentPlatforms/FrontEnd/Netlify/Basics/RoutingAndHeaders/RedirectsAndRewrites'));
+const HeadersAndCORS = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/DeploymentPlatforms/FrontEnd/Netlify/Basics/RoutingAndHeaders/HeadersAndCORS'));
 
 const RoutingAndHeaders: RouteObject[] = [
   {

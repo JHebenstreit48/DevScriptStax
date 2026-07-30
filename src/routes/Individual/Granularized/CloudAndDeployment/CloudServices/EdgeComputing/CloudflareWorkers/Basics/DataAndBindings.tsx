@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const KVBasics = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/EdgeComputing/CloudflareWorkers/Basics/DataAndBindings/KVBasics'));
-const DurableObjects = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/EdgeComputing/CloudflareWorkers/Basics/DataAndBindings/DurableObjects'));
+const KVBasics = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/EdgeComputing/CloudflareWorkers/Basics/DataAndBindings/KVBasics'));
+const DurableObjects = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/EdgeComputing/CloudflareWorkers/Basics/DataAndBindings/DurableObjects'));
 
 const DataAndBindings: RouteObject[] = [
   {

@@ -1,9 +1,9 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Primitives = lazy(() => import('@/Pages/MainTabs/Languages/JavaScript/Basics/DataTypes/Primitives'));
-const ComplexDataTypes = lazy(() => import('@/Pages/MainTabs/Languages/JavaScript/Basics/DataTypes/Complex'));
-const TemplateLiterals = lazy(() => import('@/Pages/MainTabs/Languages/JavaScript/Basics/DataTypes/TemplateLiterals'));
+const Primitives = lazy(() => import('@/pages/mainTabs/Languages/JavaScript/Basics/DataTypes/Primitives'));
+const ComplexDataTypes = lazy(() => import('@/pages/mainTabs/Languages/JavaScript/Basics/DataTypes/Complex'));
+const TemplateLiterals = lazy(() => import('@/pages/mainTabs/Languages/JavaScript/Basics/DataTypes/TemplateLiterals'));
 
 const DataTypes: RouteObject[] = [
   {

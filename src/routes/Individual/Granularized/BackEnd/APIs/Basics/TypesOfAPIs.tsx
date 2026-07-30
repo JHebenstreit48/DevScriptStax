@@ -1,13 +1,13 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const PublicVsPrivate = lazy(() => import('@/Pages/MainTabs/BackEnd/APIs/Basics/TypesOfAPIs/PubVSPrivate'));
-const RestVSGraphVSSoap = lazy(() => import('@/Pages/MainTabs/BackEnd/APIs/Basics/TypesOfAPIs/RestVSGraphVSSOAP'));
+const PublicVsPrivate = lazy(() => import('@/pages/mainTabs/BackEnd/APIs/Basics/TypesOfAPIs/PubVSPrivate'));
+const RestVSGraphVSSoap = lazy(() => import('@/pages/mainTabs/BackEnd/APIs/Basics/TypesOfAPIs/RestVSGraphVSSOAP'));
 const MicroservicesAndAPIBasedArchitectures = lazy(
-  () => import('@/Pages/MainTabs/BackEnd/APIs/Basics/TypesOfAPIs/MicroservicesAndAPIBasedArchitectures')
+  () => import('@/pages/mainTabs/BackEnd/APIs/Basics/TypesOfAPIs/MicroservicesAndAPIBasedArchitectures')
 );
 const ThirdPartyAPIIntegrations = lazy(
-  () => import('@/Pages/MainTabs/BackEnd/APIs/Basics/TypesOfAPIs/ThirdPartyAPIIntegrations')
+  () => import('@/pages/mainTabs/BackEnd/APIs/Basics/TypesOfAPIs/ThirdPartyAPIIntegrations')
 );
 
 const TypesOfAPIs: RouteObject[] = [

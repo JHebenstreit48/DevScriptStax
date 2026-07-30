@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const IndexTypes = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/PostgreSQL/Intermediate/IndexesAndPerformance/IndexTypes'));
-const QueryPlansAndEXPLAIN = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/PostgreSQL/Intermediate/IndexesAndPerformance/QueryPlansAndEXPLAIN'));
+const IndexTypes = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/PostgreSQL/Intermediate/IndexesAndPerformance/IndexTypes'));
+const QueryPlansAndEXPLAIN = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/PostgreSQL/Intermediate/IndexesAndPerformance/QueryPlansAndEXPLAIN'));
 
 const IndexesAndPerformance: RouteObject[] = [
   {

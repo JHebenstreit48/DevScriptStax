@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const BasicsAndWrapping = lazy(() => import('@/Pages/MainTabs/Languages/Go/Advanced/Errors/BasicsAndWrapping'));
-const SentinelVsIsAs = lazy(() => import('@/Pages/MainTabs/Languages/Go/Advanced/Errors/SentinelVsIsAs'));
+const BasicsAndWrapping = lazy(() => import('@/pages/mainTabs/Languages/Go/Advanced/Errors/BasicsAndWrapping'));
+const SentinelVsIsAs = lazy(() => import('@/pages/mainTabs/Languages/Go/Advanced/Errors/SentinelVsIsAs'));
 
 const Errors: RouteObject[] = [
   {

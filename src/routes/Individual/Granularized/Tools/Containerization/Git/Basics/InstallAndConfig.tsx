@@ -1,9 +1,9 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Installing = lazy(() => import('@/Pages/MainTabs/Tools/Containerization/Git/Basics/InstallAndConfig/Installing'));
+const Installing = lazy(() => import('@/pages/mainTabs/Tools/Containerization/Git/Basics/InstallAndConfig/Installing'));
 const Configuration = lazy(
-  () => import('@/Pages/MainTabs/Tools/Containerization/Git/Basics/InstallAndConfig/Configuration')
+  () => import('@/pages/mainTabs/Tools/Containerization/Git/Basics/InstallAndConfig/Configuration')
 );
 
 const InstallAndConfig: RouteObject[] = [

@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const CoreConcepts = lazy(() => import('@/Pages/MainTabs/Glossary/BackEnd/Frameworks/ExpressJS/CoreConcepts'));
-const Middleware = lazy(() => import('@/Pages/MainTabs/Glossary/BackEnd/Frameworks/ExpressJS/Middleware'));
+const CoreConcepts = lazy(() => import('@/pages/mainTabs/Glossary/BackEnd/Frameworks/ExpressJS/CoreConcepts'));
+const Middleware = lazy(() => import('@/pages/mainTabs/Glossary/BackEnd/Frameworks/ExpressJS/Middleware'));
 
 const ExpressJS: RouteObject[] = [
   {

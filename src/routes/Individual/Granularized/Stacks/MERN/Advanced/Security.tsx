@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const TokenRotation = lazy(() => import('@/Pages/MainTabs/Stacks/MERN/Advanced/Security/TokenRotation'));
-const CookiesAndCSRF = lazy(() => import('@/Pages/MainTabs/Stacks/MERN/Advanced/Security/CookiesAndCSRF'));
+const TokenRotation = lazy(() => import('@/pages/mainTabs/Stacks/MERN/Advanced/Security/TokenRotation'));
+const CookiesAndCSRF = lazy(() => import('@/pages/mainTabs/Stacks/MERN/Advanced/Security/CookiesAndCSRF'));
 
 const Security: RouteObject[] = [
   {

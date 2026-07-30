@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const AutoprefixAndBrowserslist = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Postprocessors/Basics/CoreTasks/AutoprefixAndBrowserslist'));
-const FeaturePolyfills = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Postprocessors/Basics/CoreTasks/FeaturePolyfills'));
+const AutoprefixAndBrowserslist = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Tools/Postprocessors/Basics/CoreTasks/AutoprefixAndBrowserslist'));
+const FeaturePolyfills = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Tools/Postprocessors/Basics/CoreTasks/FeaturePolyfills'));
 
 const CoreTasks: RouteObject[] = [
   {

@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const CICD = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/Provisioning/ServerlessFramework/Advanced/Workflows/CICD'));
-const Monorepos = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/Provisioning/ServerlessFramework/Advanced/Workflows/Monorepos'));
+const CICD = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/Provisioning/ServerlessFramework/Advanced/Workflows/CICD'));
+const Monorepos = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/Provisioning/ServerlessFramework/Advanced/Workflows/Monorepos'));
 
 const Workflows: RouteObject[] = [
   {

@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const TTLAndArchival = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/MongoDB/Advanced/DataLifecycleAndGovernance/TTLAndArchival'));
-const SchemaValidation = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/MongoDB/Advanced/DataLifecycleAndGovernance/SchemaValidation'));
+const TTLAndArchival = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/MongoDB/Advanced/DataLifecycleAndGovernance/TTLAndArchival'));
+const SchemaValidation = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/MongoDB/Advanced/DataLifecycleAndGovernance/SchemaValidation'));
 
 const DataLifecycleAndGovernance: RouteObject[] = [
   {

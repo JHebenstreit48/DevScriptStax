@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Thymeleaf = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Spring/SpringBoot/Basics/ViewsAndStatic/Thymeleaf'));
-const StaticFiles = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Spring/SpringBoot/Basics/ViewsAndStatic/StaticFiles'));
+const Thymeleaf = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/Spring/SpringBoot/Basics/ViewsAndStatic/Thymeleaf'));
+const StaticFiles = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/Spring/SpringBoot/Basics/ViewsAndStatic/StaticFiles'));
 
 const ViewsAndStatic: RouteObject[] = [
   {

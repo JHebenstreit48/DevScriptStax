@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const CommonPlugins = lazy(() => import('@/Pages/MainTabs/Tools/PackageAndBundling/Bundling/Webpack/Basics/Plugins/CommonPlugins'));
-const HTMLAndAssets = lazy(() => import('@/Pages/MainTabs/Tools/PackageAndBundling/Bundling/Webpack/Basics/Plugins/HTMLAndAssets'));
+const CommonPlugins = lazy(() => import('@/pages/mainTabs/Tools/PackageAndBundling/Bundling/Webpack/Basics/Plugins/CommonPlugins'));
+const HTMLAndAssets = lazy(() => import('@/pages/mainTabs/Tools/PackageAndBundling/Bundling/Webpack/Basics/Plugins/HTMLAndAssets'));
 
 const Plugins: RouteObject[] = [
   {

@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const TailwindConfig = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Frameworks/TailwindCSS/Basics/ConfigBasics/TailwindConfig'));
-const ContentPathsAndJIT = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Frameworks/TailwindCSS/Basics/ConfigBasics/ContentPathsAndJIT'));
+const TailwindConfig = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Tools/Frameworks/TailwindCSS/Basics/ConfigBasics/TailwindConfig'));
+const ContentPathsAndJIT = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Tools/Frameworks/TailwindCSS/Basics/ConfigBasics/ContentPathsAndJIT'));
 
 const ConfigBasics: RouteObject[] = [
   {

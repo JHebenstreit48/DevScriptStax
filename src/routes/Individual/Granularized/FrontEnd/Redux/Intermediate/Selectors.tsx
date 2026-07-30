@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const CreateSelector = lazy(() => import('@/Pages/MainTabs/FrontEnd/Redux/Intermediate/Selectors/CreateSelector'));
-const MemoizationAndPitfalls = lazy(() => import('@/Pages/MainTabs/FrontEnd/Redux/Intermediate/Selectors/MemoizationAndPitfalls'));
+const CreateSelector = lazy(() => import('@/pages/mainTabs/FrontEnd/Redux/Intermediate/Selectors/CreateSelector'));
+const MemoizationAndPitfalls = lazy(() => import('@/pages/mainTabs/FrontEnd/Redux/Intermediate/Selectors/MemoizationAndPitfalls'));
 
 const Selectors: RouteObject[] = [
   {

@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Patterns = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/EdgeComputing/CloudflareWorkers/Advanced/DurableObjects/Patterns'));
-const AlarmsAndCoordination = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/EdgeComputing/CloudflareWorkers/Advanced/DurableObjects/AlarmsAndCoordination'));
+const Patterns = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/EdgeComputing/CloudflareWorkers/Advanced/DurableObjects/Patterns'));
+const AlarmsAndCoordination = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/EdgeComputing/CloudflareWorkers/Advanced/DurableObjects/AlarmsAndCoordination'));
 
 const DurableObjects: RouteObject[] = [
   {

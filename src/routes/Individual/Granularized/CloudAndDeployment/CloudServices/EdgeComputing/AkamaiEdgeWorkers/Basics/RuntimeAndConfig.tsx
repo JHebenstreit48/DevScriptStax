@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const JSRuntimeAndAPIs = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/EdgeComputing/AkamaiEdgeWorkers/Basics/RuntimeAndConfig/JSRuntimeAndAPIs'));
-const EnvAndSecrets = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/EdgeComputing/AkamaiEdgeWorkers/Basics/RuntimeAndConfig/EnvAndSecrets'));
+const JSRuntimeAndAPIs = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/EdgeComputing/AkamaiEdgeWorkers/Basics/RuntimeAndConfig/JSRuntimeAndAPIs'));
+const EnvAndSecrets = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/EdgeComputing/AkamaiEdgeWorkers/Basics/RuntimeAndConfig/EnvAndSecrets'));
 
 const RuntimeAndConfig: RouteObject[] = [
   {

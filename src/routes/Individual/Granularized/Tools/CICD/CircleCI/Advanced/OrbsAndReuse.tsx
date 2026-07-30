@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const UsingOrbsForReusability = lazy(() => import('@/Pages/MainTabs/Tools/CICD/CircleCI/Advanced/OrbsAndReuse/UsingOrbsForReusability'));
-const ReusableCommands = lazy(() => import('@/Pages/MainTabs/Tools/CICD/CircleCI/Advanced/OrbsAndReuse/ReusableCommands'));
+const UsingOrbsForReusability = lazy(() => import('@/pages/mainTabs/Tools/CICD/CircleCI/Advanced/OrbsAndReuse/UsingOrbsForReusability'));
+const ReusableCommands = lazy(() => import('@/pages/mainTabs/Tools/CICD/CircleCI/Advanced/OrbsAndReuse/ReusableCommands'));
 
 const OrbsAndReuse: RouteObject[] = [
   {

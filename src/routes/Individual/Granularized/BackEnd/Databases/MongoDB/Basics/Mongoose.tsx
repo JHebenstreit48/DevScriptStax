@@ -2,28 +2,28 @@ import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
 const Overview = lazy(
-  () => import('@/Pages/MainTabs/BackEnd/Databases/MongoDB/Basics/Mongoose/Overview')
+  () => import('@/pages/mainTabs/BackEnd/Databases/MongoDB/Basics/Mongoose/Overview')
 );
 const SchemasAndModels = lazy(
   () =>
-    import('@/Pages/MainTabs/BackEnd/Databases/MongoDB/Basics/Mongoose/SchemasAndModels')
+    import('@/pages/mainTabs/BackEnd/Databases/MongoDB/Basics/Mongoose/SchemasAndModels')
 );
 const QueriesAndFilters = lazy(
-  () => import('@/Pages/MainTabs/BackEnd/Databases/MongoDB/Basics/Mongoose/QueriesAndFilters')
+  () => import('@/pages/mainTabs/BackEnd/Databases/MongoDB/Basics/Mongoose/QueriesAndFilters')
 );
 const UpdatesAndWriteOps = lazy(
-  () => import('@/Pages/MainTabs/BackEnd/Databases/MongoDB/Basics/Mongoose/UpdatesAndWriteOps')
+  () => import('@/pages/mainTabs/BackEnd/Databases/MongoDB/Basics/Mongoose/UpdatesAndWriteOps')
 );
 const ValidationAndMiddleware = lazy(
   () =>
     import(
-      '@/Pages/MainTabs/BackEnd/Databases/MongoDB/Basics/Mongoose/ValidationAndMiddleware'
+      '@/pages/mainTabs/BackEnd/Databases/MongoDB/Basics/Mongoose/ValidationAndMiddleware'
     )
 );
 const PopulateAndRelationships = lazy(
   () =>
     import(
-      '@/Pages/MainTabs/BackEnd/Databases/MongoDB/Basics/Mongoose/PopulateAndRelationships'
+      '@/pages/mainTabs/BackEnd/Databases/MongoDB/Basics/Mongoose/PopulateAndRelationships'
     )
 );
 

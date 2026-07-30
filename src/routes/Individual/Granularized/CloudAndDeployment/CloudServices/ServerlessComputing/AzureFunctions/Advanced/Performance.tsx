@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const ColdStartsAndPremium = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/ServerlessComputing/AzureFunctions/Advanced/Performance/ColdStartsAndPremium'));
-const ConcurrencyAndThroughput = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/ServerlessComputing/AzureFunctions/Advanced/Performance/ConcurrencyAndThroughput'));
+const ColdStartsAndPremium = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/ServerlessComputing/AzureFunctions/Advanced/Performance/ColdStartsAndPremium'));
+const ConcurrencyAndThroughput = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/ServerlessComputing/AzureFunctions/Advanced/Performance/ConcurrencyAndThroughput'));
 
 const Performance: RouteObject[] = [
   {

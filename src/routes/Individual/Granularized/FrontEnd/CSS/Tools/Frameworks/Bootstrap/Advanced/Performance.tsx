@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const OptimizeAndPurgeCSS = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Frameworks/Bootstrap/Advanced/Performance/OptimizeAndPurgeCSS'));
-const ModularImports = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Frameworks/Bootstrap/Advanced/Performance/ModularImports'));
+const OptimizeAndPurgeCSS = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Tools/Frameworks/Bootstrap/Advanced/Performance/OptimizeAndPurgeCSS'));
+const ModularImports = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Tools/Frameworks/Bootstrap/Advanced/Performance/ModularImports'));
 
 const Performance: RouteObject[] = [
   {

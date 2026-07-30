@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const ServerlessYml = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/Provisioning/ServerlessFramework/Basics/Projects/ServerlessYml'));
-const StagesAndParams = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/Provisioning/ServerlessFramework/Basics/Projects/StagesAndParams'));
+const ServerlessYml = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/Provisioning/ServerlessFramework/Basics/Projects/ServerlessYml'));
+const StagesAndParams = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/Provisioning/ServerlessFramework/Basics/Projects/StagesAndParams'));
 
 const Projects: RouteObject[] = [
   {

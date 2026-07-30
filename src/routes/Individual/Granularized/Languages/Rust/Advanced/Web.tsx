@@ -1,9 +1,9 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const HTTPServers = lazy(() => import('@/Pages/MainTabs/Languages/Rust/Advanced/Web/HTTPServers'));
-const HTTPServers2 = lazy(() => import('@/Pages/MainTabs/Languages/Rust/Advanced/Web/HTTPServers'));
-const RequestResponse = lazy(() => import('@/Pages/MainTabs/Languages/Rust/Advanced/Web/RequestResponse'));
+const HTTPServers = lazy(() => import('@/pages/mainTabs/Languages/Rust/Advanced/Web/HTTPServers'));
+const HTTPServers2 = lazy(() => import('@/pages/mainTabs/Languages/Rust/Advanced/Web/HTTPServers'));
+const RequestResponse = lazy(() => import('@/pages/mainTabs/Languages/Rust/Advanced/Web/RequestResponse'));
 
 const Web: RouteObject[] = [
   {

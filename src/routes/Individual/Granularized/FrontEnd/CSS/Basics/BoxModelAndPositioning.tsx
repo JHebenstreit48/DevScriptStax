@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const BoxModel = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Basics/BoxModelAndPosition/BoxModel'));
-const Positioning = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Basics/BoxModelAndPosition/Positioning'));
+const BoxModel = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Basics/BoxModelAndPosition/BoxModel'));
+const Positioning = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Basics/BoxModelAndPosition/Positioning'));
 
 const BoxModelAndPosition: RouteObject[] = [
   {

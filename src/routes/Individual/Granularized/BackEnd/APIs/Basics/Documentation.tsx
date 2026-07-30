@@ -1,9 +1,9 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Tools = lazy(() => import('@/Pages/MainTabs/BackEnd/APIs/Basics/Documentation/Tools'));
-const BestPractices = lazy(() => import('@/Pages/MainTabs/BackEnd/APIs/Basics/Documentation/BestPractices'));
-const Examples = lazy(() => import('@/Pages/MainTabs/BackEnd/APIs/Basics/Documentation/Examples'));
+const Tools = lazy(() => import('@/pages/mainTabs/BackEnd/APIs/Basics/Documentation/Tools'));
+const BestPractices = lazy(() => import('@/pages/mainTabs/BackEnd/APIs/Basics/Documentation/BestPractices'));
+const Examples = lazy(() => import('@/pages/mainTabs/BackEnd/APIs/Basics/Documentation/Examples'));
 
 const Documentation: RouteObject[] = [
   {

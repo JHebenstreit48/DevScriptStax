@@ -1,10 +1,10 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Introduction = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/Firebase/Basics/Authentication/Overview'));
-const Implementation = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/Firebase/Basics/Authentication/Implementation'));
-const OAuthAndSocialLogins = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/Firebase/Basics/Authentication/OAuthAndSocialLogins'));
-const ManagingUsersAndPermissions = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/Firebase/Basics/Authentication/ManagingUsersAndPermissions'));
+const Introduction = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/Firebase/Basics/Authentication/Overview'));
+const Implementation = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/Firebase/Basics/Authentication/Implementation'));
+const OAuthAndSocialLogins = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/Firebase/Basics/Authentication/OAuthAndSocialLogins'));
+const ManagingUsersAndPermissions = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/Firebase/Basics/Authentication/ManagingUsersAndPermissions'));
 
 const Authentication: RouteObject[] = [
   {

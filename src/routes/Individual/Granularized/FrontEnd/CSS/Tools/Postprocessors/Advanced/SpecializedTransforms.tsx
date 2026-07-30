@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const RTL = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Postprocessors/Advanced/SpecializedTransforms/RTL'));
-const MediaQueryPacking = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Postprocessors/Advanced/SpecializedTransforms/MediaQueryPacking'));
+const RTL = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Tools/Postprocessors/Advanced/SpecializedTransforms/RTL'));
+const MediaQueryPacking = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Tools/Postprocessors/Advanced/SpecializedTransforms/MediaQueryPacking'));
 
 const SpecializedTransforms: RouteObject[] = [
   {

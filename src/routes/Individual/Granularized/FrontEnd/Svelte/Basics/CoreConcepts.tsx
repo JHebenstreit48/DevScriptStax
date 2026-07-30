@@ -1,10 +1,10 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Props = lazy(() => import('@/Pages/MainTabs/FrontEnd/Svelte/Basics/CoreConcepts/Props'));
-const Stores = lazy(() => import('@/Pages/MainTabs/FrontEnd/Svelte/Basics/CoreConcepts/Stores'));
-const Bindings = lazy(() => import('@/Pages/MainTabs/FrontEnd/Svelte/Basics/CoreConcepts/Bindings'));
-const Events = lazy(() => import('@/Pages/MainTabs/FrontEnd/Svelte/Basics/CoreConcepts/Events'));
+const Props = lazy(() => import('@/pages/mainTabs/FrontEnd/Svelte/Basics/CoreConcepts/Props'));
+const Stores = lazy(() => import('@/pages/mainTabs/FrontEnd/Svelte/Basics/CoreConcepts/Stores'));
+const Bindings = lazy(() => import('@/pages/mainTabs/FrontEnd/Svelte/Basics/CoreConcepts/Bindings'));
+const Events = lazy(() => import('@/pages/mainTabs/FrontEnd/Svelte/Basics/CoreConcepts/Events'));
 
 const CoreConcepts: RouteObject[] = [
   {

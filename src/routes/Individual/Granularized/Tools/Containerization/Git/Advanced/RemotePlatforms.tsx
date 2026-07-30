@@ -1,9 +1,9 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const GitHub = lazy(() => import('@/Pages/MainTabs/Tools/Containerization/Git/Advanced/RemotePlatforms/GitHub'));
-const GitLab = lazy(() => import('@/Pages/MainTabs/Tools/Containerization/Git/Advanced/RemotePlatforms/GitLab'));
-const GitHubAndGitLabCICD = lazy(() => import('@/Pages/MainTabs/Tools/Containerization/Git/Advanced/RemotePlatforms/GitHubAndGitLabCICD'));
+const GitHub = lazy(() => import('@/pages/mainTabs/Tools/Containerization/Git/Advanced/RemotePlatforms/GitHub'));
+const GitLab = lazy(() => import('@/pages/mainTabs/Tools/Containerization/Git/Advanced/RemotePlatforms/GitLab'));
+const GitHubAndGitLabCICD = lazy(() => import('@/pages/mainTabs/Tools/Containerization/Git/Advanced/RemotePlatforms/GitHubAndGitLabCICD'));
 
 const RemotePlatforms: RouteObject[] = [
   {

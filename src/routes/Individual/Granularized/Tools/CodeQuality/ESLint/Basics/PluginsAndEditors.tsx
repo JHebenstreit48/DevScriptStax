@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const UsingPlugins = lazy(() => import('@/Pages/MainTabs/Tools/CodeQuality/ESLint/Basics/PluginsAndEditors/UsingPlugins'));
-const VSCodeAndEditors = lazy(() => import('@/Pages/MainTabs/Tools/CodeQuality/ESLint/Basics/PluginsAndEditors/VSCodeAndEditors'));
+const UsingPlugins = lazy(() => import('@/pages/mainTabs/Tools/CodeQuality/ESLint/Basics/PluginsAndEditors/UsingPlugins'));
+const VSCodeAndEditors = lazy(() => import('@/pages/mainTabs/Tools/CodeQuality/ESLint/Basics/PluginsAndEditors/VSCodeAndEditors'));
 
 const PluginsAndEditors: RouteObject[] = [
   {

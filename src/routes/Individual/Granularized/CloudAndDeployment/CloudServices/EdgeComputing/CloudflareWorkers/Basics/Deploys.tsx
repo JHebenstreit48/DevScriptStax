@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const DevAndPreview = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/EdgeComputing/CloudflareWorkers/Basics/Deploys/DevAndPreview'));
-const ProductionDeploys = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/EdgeComputing/CloudflareWorkers/Basics/Deploys/ProductionDeploys'));
+const DevAndPreview = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/EdgeComputing/CloudflareWorkers/Basics/Deploys/DevAndPreview'));
+const ProductionDeploys = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/EdgeComputing/CloudflareWorkers/Basics/Deploys/ProductionDeploys'));
 
 const Deploys: RouteObject[] = [
   {

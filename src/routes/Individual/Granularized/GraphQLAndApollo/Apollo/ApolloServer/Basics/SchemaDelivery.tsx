@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const SDLFiles = lazy(() => import('@/Pages/MainTabs/GraphQLAndApollo/Apollo/ApolloServer/Basics/SchemaDelivery/SDLFiles'));
-const CodeFirst = lazy(() => import('@/Pages/MainTabs/GraphQLAndApollo/Apollo/ApolloServer/Basics/SchemaDelivery/CodeFirst'));
+const SDLFiles = lazy(() => import('@/pages/mainTabs/GraphQLAndApollo/Apollo/ApolloServer/Basics/SchemaDelivery/SDLFiles'));
+const CodeFirst = lazy(() => import('@/pages/mainTabs/GraphQLAndApollo/Apollo/ApolloServer/Basics/SchemaDelivery/CodeFirst'));
 
 const SchemaDelivery: RouteObject[] = [
   {

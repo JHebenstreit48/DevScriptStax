@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const UsingPlugins = lazy(() => import('@/Pages/MainTabs/Tools/CICD/Jenkins/Advanced/PluginsAndReuse/UsingPlugins'));
-const SharedLibraries = lazy(() => import('@/Pages/MainTabs/Tools/CICD/Jenkins/Advanced/PluginsAndReuse/SharedLibraries'));
+const UsingPlugins = lazy(() => import('@/pages/mainTabs/Tools/CICD/Jenkins/Advanced/PluginsAndReuse/UsingPlugins'));
+const SharedLibraries = lazy(() => import('@/pages/mainTabs/Tools/CICD/Jenkins/Advanced/PluginsAndReuse/SharedLibraries'));
 
 const PluginsAndReuse: RouteObject[] = [
   {

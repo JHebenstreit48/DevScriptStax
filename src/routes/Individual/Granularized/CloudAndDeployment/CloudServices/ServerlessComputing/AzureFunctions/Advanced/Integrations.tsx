@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const APIManagement = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/ServerlessComputing/AzureFunctions/Advanced/Integrations/APIManagement'));
-const EventGridAndStorage = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/ServerlessComputing/AzureFunctions/Advanced/Integrations/EventGridAndStorage'));
+const APIManagement = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/ServerlessComputing/AzureFunctions/Advanced/Integrations/APIManagement'));
+const EventGridAndStorage = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/ServerlessComputing/AzureFunctions/Advanced/Integrations/EventGridAndStorage'));
 
 const Integrations: RouteObject[] = [
   {

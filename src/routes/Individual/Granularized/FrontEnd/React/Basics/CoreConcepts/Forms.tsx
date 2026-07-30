@@ -4,14 +4,14 @@ import { RouteObject } from 'react-router-dom';
 const ControlledVsUncontrolled = lazy(
   () =>
     import(
-      '@/Pages/MainTabs/FrontEnd/React/Basics/CoreConcepts/Forms/ControlVsUncontrol'
+      '@/pages/mainTabs/FrontEnd/React/Basics/CoreConcepts/Forms/ControlVsUncontrol'
     )
 );
 
 const PatternsAndLibraries = lazy(
   () =>
     import(
-      '@/Pages/MainTabs/FrontEnd/React/Basics/CoreConcepts/Forms/PatternsAndLibraries'
+      '@/pages/mainTabs/FrontEnd/React/Basics/CoreConcepts/Forms/PatternsAndLibraries'
     )
 );
 

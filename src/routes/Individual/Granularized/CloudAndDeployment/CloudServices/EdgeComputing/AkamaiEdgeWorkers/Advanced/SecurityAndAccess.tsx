@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const TLSAndMTLS = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/EdgeComputing/AkamaiEdgeWorkers/Advanced/SecurityAndAccess/TLSAndMTLS'));
-const AuthAndJWT = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/EdgeComputing/AkamaiEdgeWorkers/Advanced/SecurityAndAccess/AuthAndJWT'));
+const TLSAndMTLS = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/EdgeComputing/AkamaiEdgeWorkers/Advanced/SecurityAndAccess/TLSAndMTLS'));
+const AuthAndJWT = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/EdgeComputing/AkamaiEdgeWorkers/Advanced/SecurityAndAccess/AuthAndJWT'));
 
 const SecurityAndAccess: RouteObject[] = [
   {

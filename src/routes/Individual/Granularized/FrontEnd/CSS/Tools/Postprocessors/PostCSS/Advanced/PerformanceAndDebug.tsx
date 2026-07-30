@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const SourceMapsAndDiagnostics = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Postprocessors/PostCSS/Advanced/PerformanceAndDebug/SourceMapsAndDiagnostics'));
-const CachingAndParallel = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Postprocessors/PostCSS/Advanced/PerformanceAndDebug/CachingAndParallel'));
+const SourceMapsAndDiagnostics = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Tools/Postprocessors/PostCSS/Advanced/PerformanceAndDebug/SourceMapsAndDiagnostics'));
+const CachingAndParallel = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Tools/Postprocessors/PostCSS/Advanced/PerformanceAndDebug/CachingAndParallel'));
 
 const PerformanceAndDebug: RouteObject[] = [
   {

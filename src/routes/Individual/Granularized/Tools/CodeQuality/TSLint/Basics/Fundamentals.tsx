@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Introduction = lazy(() => import('@/Pages/MainTabs/Tools/CodeQuality/TSLint/Basics/Fundamentals/Introduction'));
-const StatusAndDeprecation = lazy(() => import('@/Pages/MainTabs/Tools/CodeQuality/TSLint/Basics/Fundamentals/StatusAndDeprecation'));
+const Introduction = lazy(() => import('@/pages/mainTabs/Tools/CodeQuality/TSLint/Basics/Fundamentals/Introduction'));
+const StatusAndDeprecation = lazy(() => import('@/pages/mainTabs/Tools/CodeQuality/TSLint/Basics/Fundamentals/StatusAndDeprecation'));
 
 const Fundamentals: RouteObject[] = [
   {

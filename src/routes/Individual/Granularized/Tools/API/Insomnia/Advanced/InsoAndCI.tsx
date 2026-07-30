@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const InsoCLI = lazy(() => import('@/Pages/MainTabs/Tools/API/Insomnia/Advanced/InsoAndCI/InsoCLI'));
-const CIPipelines = lazy(() => import('@/Pages/MainTabs/Tools/API/Insomnia/Advanced/InsoAndCI/CIPipelines'));
+const InsoCLI = lazy(() => import('@/pages/mainTabs/Tools/API/Insomnia/Advanced/InsoAndCI/InsoCLI'));
+const CIPipelines = lazy(() => import('@/pages/mainTabs/Tools/API/Insomnia/Advanced/InsoAndCI/CIPipelines'));
 
 const InsoAndCI: RouteObject[] = [
   {

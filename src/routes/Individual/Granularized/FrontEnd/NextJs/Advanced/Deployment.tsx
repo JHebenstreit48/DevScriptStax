@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Vercel = lazy(() => import('@/Pages/MainTabs/FrontEnd/NextJs/Advanced/Deployment/Vercel'));
-const CustomPlatforms = lazy(() => import('@/Pages/MainTabs/FrontEnd/NextJs/Advanced/Deployment/CustomPlatforms'));
+const Vercel = lazy(() => import('@/pages/mainTabs/FrontEnd/NextJs/Advanced/Deployment/Vercel'));
+const CustomPlatforms = lazy(() => import('@/pages/mainTabs/FrontEnd/NextJs/Advanced/Deployment/CustomPlatforms'));
 
 const Deployment: RouteObject[] = [
   {

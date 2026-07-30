@@ -1,9 +1,9 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const IntroAndDifferences = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Preprocessors/SCSS/Fundamentals/IntroAndDifferences'));
-const SyntaxVsSass = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Preprocessors/SCSS/Fundamentals/SyntaxVsSass'));
-const WhySCSS = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Preprocessors/SCSS/Fundamentals/WhySCSS'));
+const IntroAndDifferences = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Tools/Preprocessors/SCSS/Fundamentals/IntroAndDifferences'));
+const SyntaxVsSass = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Tools/Preprocessors/SCSS/Fundamentals/SyntaxVsSass'));
+const WhySCSS = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Tools/Preprocessors/SCSS/Fundamentals/WhySCSS'));
 
 const Fundamentals: RouteObject[] = [
   {

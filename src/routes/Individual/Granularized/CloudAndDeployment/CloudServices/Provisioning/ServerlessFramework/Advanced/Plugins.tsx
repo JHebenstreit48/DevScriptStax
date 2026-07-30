@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const UsingPlugins = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/Provisioning/ServerlessFramework/Advanced/Plugins/UsingPlugins'));
-const AuthorPlugins = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/Provisioning/ServerlessFramework/Advanced/Plugins/AuthorPlugins'));
+const UsingPlugins = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/Provisioning/ServerlessFramework/Advanced/Plugins/UsingPlugins'));
+const AuthorPlugins = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/Provisioning/ServerlessFramework/Advanced/Plugins/AuthorPlugins'));
 
 const Plugins: RouteObject[] = [
   {

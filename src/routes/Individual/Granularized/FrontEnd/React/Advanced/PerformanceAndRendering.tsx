@@ -1,11 +1,11 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const PerformanceOptimization = lazy(() => import('@/Pages/MainTabs/FrontEnd/React/Advanced/PerformanceAndRendering/PerformanceOptimization'));
-const ServerSideRendering = lazy(() => import('@/Pages/MainTabs/FrontEnd/React/Advanced/PerformanceAndRendering/ServerSideRendering'));
-const StaticSiteGeneration = lazy(() => import('@/Pages/MainTabs/FrontEnd/React/Advanced/PerformanceAndRendering/StaticSiteGeneration'));
-const HybridRendering = lazy(() => import('@/Pages/MainTabs/FrontEnd/React/Advanced/PerformanceAndRendering/HybridRendering'));
-const ErrorBoundaries = lazy(() => import('@/Pages/MainTabs/FrontEnd/React/Advanced/PerformanceAndRendering/ErrorBoundaries'));
+const PerformanceOptimization = lazy(() => import('@/pages/mainTabs/FrontEnd/React/Advanced/PerformanceAndRendering/PerformanceOptimization'));
+const ServerSideRendering = lazy(() => import('@/pages/mainTabs/FrontEnd/React/Advanced/PerformanceAndRendering/ServerSideRendering'));
+const StaticSiteGeneration = lazy(() => import('@/pages/mainTabs/FrontEnd/React/Advanced/PerformanceAndRendering/StaticSiteGeneration'));
+const HybridRendering = lazy(() => import('@/pages/mainTabs/FrontEnd/React/Advanced/PerformanceAndRendering/HybridRendering'));
+const ErrorBoundaries = lazy(() => import('@/pages/mainTabs/FrontEnd/React/Advanced/PerformanceAndRendering/ErrorBoundaries'));
 
 const PerformanceAndRendering: RouteObject[] = [
   {

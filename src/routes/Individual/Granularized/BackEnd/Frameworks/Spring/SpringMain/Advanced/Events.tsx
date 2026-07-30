@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const ApplicationEvents = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Spring/SpringMain/Advanced/Events/ApplicationEvents'));
-const Listeners = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Spring/SpringMain/Advanced/Events/Listeners'));
+const ApplicationEvents = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/Spring/SpringMain/Advanced/Events/ApplicationEvents'));
+const Listeners = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/Spring/SpringMain/Advanced/Events/Listeners'));
 
 const Events: RouteObject[] = [
   {

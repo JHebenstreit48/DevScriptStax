@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const ConfigureStore = lazy(() => import('@/Pages/MainTabs/FrontEnd/Redux/Basics/StoreSetup/ConfigureStore'));
-const Slices = lazy(() => import('@/Pages/MainTabs/FrontEnd/Redux/Basics/StoreSetup/Slices'));
+const ConfigureStore = lazy(() => import('@/pages/mainTabs/FrontEnd/Redux/Basics/StoreSetup/ConfigureStore'));
+const Slices = lazy(() => import('@/pages/mainTabs/FrontEnd/Redux/Basics/StoreSetup/Slices'));
 
 const StoreSetup: RouteObject[] = [
   {

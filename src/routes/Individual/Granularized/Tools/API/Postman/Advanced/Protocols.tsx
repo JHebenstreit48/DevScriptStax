@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const GraphQLInPostman = lazy(() => import('@/Pages/MainTabs/Tools/API/Postman/Advanced/Protocols/GraphQLInPostman'));
-const GRPCAndWS = lazy(() => import('@/Pages/MainTabs/Tools/API/Postman/Advanced/Protocols/GRPCAndWS'));
+const GraphQLInPostman = lazy(() => import('@/pages/mainTabs/Tools/API/Postman/Advanced/Protocols/GraphQLInPostman'));
+const GRPCAndWS = lazy(() => import('@/pages/mainTabs/Tools/API/Postman/Advanced/Protocols/GRPCAndWS'));
 
 const Protocols: RouteObject[] = [
   {

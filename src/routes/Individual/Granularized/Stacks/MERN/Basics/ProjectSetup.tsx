@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const InitFEAndBE = lazy(() => import('@/Pages/MainTabs/Stacks/MERN/Basics/ProjectSetup/InitFEAndBE'));
-const EnvAndCORSBasics = lazy(() => import('@/Pages/MainTabs/Stacks/MERN/Basics/ProjectSetup/EnvAndCORSBasics'));
+const InitFEAndBE = lazy(() => import('@/pages/mainTabs/Stacks/MERN/Basics/ProjectSetup/InitFEAndBE'));
+const EnvAndCORSBasics = lazy(() => import('@/pages/mainTabs/Stacks/MERN/Basics/ProjectSetup/EnvAndCORSBasics'));
 
 const ProjectSetup: RouteObject[] = [
   {

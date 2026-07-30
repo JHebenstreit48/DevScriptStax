@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Gunicorn = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Django/Advanced/Deployment/Gunicorn'));
-const Scaling = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Django/Advanced/Deployment/Scaling'));
+const Gunicorn = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/Django/Advanced/Deployment/Gunicorn'));
+const Scaling = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/Django/Advanced/Deployment/Scaling'));
 
 const Deployment: RouteObject[] = [
   {

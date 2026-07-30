@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const TeamsAndRoles = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/DeploymentPlatforms/FrontEnd/Netlify/Advanced/EnterpriseAndTeams/TeamsAndRoles'));
-const AuditAndSSO = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/DeploymentPlatforms/FrontEnd/Netlify/Advanced/EnterpriseAndTeams/AuditAndSSO'));
+const TeamsAndRoles = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/DeploymentPlatforms/FrontEnd/Netlify/Advanced/EnterpriseAndTeams/TeamsAndRoles'));
+const AuditAndSSO = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/DeploymentPlatforms/FrontEnd/Netlify/Advanced/EnterpriseAndTeams/AuditAndSSO'));
 
 const EnterpriseAndTeams: RouteObject[] = [
   {

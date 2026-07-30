@@ -1,9 +1,9 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const AsyncAwait = lazy(() => import('@/Pages/MainTabs/Languages/Rust/Advanced/AsyncAndConcurrency/AsyncAwait'));
-const ThreadsAndChannels = lazy(() => import('@/Pages/MainTabs/Languages/Rust/Advanced/AsyncAndConcurrency/ThreadsAndChannels'));
-const TokioBasics = lazy(() => import('@/Pages/MainTabs/Languages/Rust/Advanced/AsyncAndConcurrency/TokioBasics'));
+const AsyncAwait = lazy(() => import('@/pages/mainTabs/Languages/Rust/Advanced/AsyncAndConcurrency/AsyncAwait'));
+const ThreadsAndChannels = lazy(() => import('@/pages/mainTabs/Languages/Rust/Advanced/AsyncAndConcurrency/ThreadsAndChannels'));
+const TokioBasics = lazy(() => import('@/pages/mainTabs/Languages/Rust/Advanced/AsyncAndConcurrency/TokioBasics'));
 
 const AsyncAndConcurrency: RouteObject[] = [
   {

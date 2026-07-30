@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const FileIO = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/NodeJs/Basics/FilesAndStreams/FileIO'));
-const StreamsBasics = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/NodeJs/Basics/FilesAndStreams/StreamsBasics'));
+const FileIO = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/NodeJs/Basics/FilesAndStreams/FileIO'));
+const StreamsBasics = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/NodeJs/Basics/FilesAndStreams/StreamsBasics'));
 
 const FilesAndStreams: RouteObject[] = [
   {

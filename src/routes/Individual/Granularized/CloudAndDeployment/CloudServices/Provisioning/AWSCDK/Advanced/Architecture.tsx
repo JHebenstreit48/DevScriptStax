@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const AppStructure = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/Provisioning/AWSCDK/Advanced/Architecture/AppStructure'));
-const CrossStackRefs = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/Provisioning/AWSCDK/Advanced/Architecture/CrossStackRefs'));
+const AppStructure = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/Provisioning/AWSCDK/Advanced/Architecture/AppStructure'));
+const CrossStackRefs = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/Provisioning/AWSCDK/Advanced/Architecture/CrossStackRefs'));
 
 const Architecture: RouteObject[] = [
   {

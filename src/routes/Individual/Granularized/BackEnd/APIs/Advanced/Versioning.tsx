@@ -1,9 +1,9 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const APIVersioningStrategies = lazy(() => import('@/Pages/MainTabs/BackEnd/APIs/Advanced/Versioning/APIVersioningStrategies'));
-const VersioningInRESTVsGraphQL = lazy(() => import('@/Pages/MainTabs/BackEnd/APIs/Advanced/Versioning/VersioningInRESTVsGraphQL'));
-const DeprecatingOldAPIVersions = lazy(() => import('@/Pages/MainTabs/BackEnd/APIs/Advanced/Versioning/DeprecatingOldAPIVersions'));
+const APIVersioningStrategies = lazy(() => import('@/pages/mainTabs/BackEnd/APIs/Advanced/Versioning/APIVersioningStrategies'));
+const VersioningInRESTVsGraphQL = lazy(() => import('@/pages/mainTabs/BackEnd/APIs/Advanced/Versioning/VersioningInRESTVsGraphQL'));
+const DeprecatingOldAPIVersions = lazy(() => import('@/pages/mainTabs/BackEnd/APIs/Advanced/Versioning/DeprecatingOldAPIVersions'));
 
 const Versioning: RouteObject[] = [
   {

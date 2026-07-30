@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const CLIAndScripts = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Postprocessors/PostCSS/Basics/Workflow/CLIAndScripts'));
-const ViteAndParcel = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Postprocessors/PostCSS/Basics/Workflow/ViteAndParcel'));
+const CLIAndScripts = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Tools/Postprocessors/PostCSS/Basics/Workflow/CLIAndScripts'));
+const ViteAndParcel = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Tools/Postprocessors/PostCSS/Basics/Workflow/ViteAndParcel'));
 
 const Workflow: RouteObject[] = [
   {

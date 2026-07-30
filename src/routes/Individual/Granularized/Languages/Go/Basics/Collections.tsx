@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const ArraysAndSlices = lazy(() => import('@/Pages/MainTabs/Languages/Go/Basics/Collections/ArraysAndSlices'));
-const Maps = lazy(() => import('@/Pages/MainTabs/Languages/Go/Basics/Collections/Maps'));
+const ArraysAndSlices = lazy(() => import('@/pages/mainTabs/Languages/Go/Basics/Collections/ArraysAndSlices'));
+const Maps = lazy(() => import('@/pages/mainTabs/Languages/Go/Basics/Collections/Maps'));
 
 const Collections: RouteObject[] = [
   {

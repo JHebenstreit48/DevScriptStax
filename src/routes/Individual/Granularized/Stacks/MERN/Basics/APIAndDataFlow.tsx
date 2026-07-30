@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const RESTConventionsAndDTOs = lazy(() => import('@/Pages/MainTabs/Stacks/MERN/Basics/APIAndDataFlow/RESTConventionsAndDTOs'));
-const ClientIntegration = lazy(() => import('@/Pages/MainTabs/Stacks/MERN/Basics/APIAndDataFlow/ClientIntegration'));
+const RESTConventionsAndDTOs = lazy(() => import('@/pages/mainTabs/Stacks/MERN/Basics/APIAndDataFlow/RESTConventionsAndDTOs'));
+const ClientIntegration = lazy(() => import('@/pages/mainTabs/Stacks/MERN/Basics/APIAndDataFlow/ClientIntegration'));
 
 const APIAndDataFlow: RouteObject[] = [
   {

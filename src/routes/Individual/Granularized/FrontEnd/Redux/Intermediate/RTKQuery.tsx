@@ -1,9 +1,9 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const QueriesAndMutations = lazy(() => import('@/Pages/MainTabs/FrontEnd/Redux/Intermediate/RTKQuery/QueriesAndMutations'));
-const CacheAndInvalidation = lazy(() => import('@/Pages/MainTabs/FrontEnd/Redux/Intermediate/RTKQuery/CacheAndInvalidation'));
-const ErrorHandlingAndRetries = lazy(() => import('@/Pages/MainTabs/FrontEnd/Redux/Intermediate/RTKQuery/ErrorHandlingAndRetries'));
+const QueriesAndMutations = lazy(() => import('@/pages/mainTabs/FrontEnd/Redux/Intermediate/RTKQuery/QueriesAndMutations'));
+const CacheAndInvalidation = lazy(() => import('@/pages/mainTabs/FrontEnd/Redux/Intermediate/RTKQuery/CacheAndInvalidation'));
+const ErrorHandlingAndRetries = lazy(() => import('@/pages/mainTabs/FrontEnd/Redux/Intermediate/RTKQuery/ErrorHandlingAndRetries'));
 
 const RTKQuery: RouteObject[] = [
   {

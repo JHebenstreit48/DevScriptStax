@@ -1,11 +1,11 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Strings = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/Redis/Basics/DataStructures/Strings'));
-const Lists = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/Redis/Basics/DataStructures/Lists'));
-const SetsAndSortedSets = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/Redis/Basics/DataStructures/SetsAndSortedSets'));
-const HashesAndBitmaps = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/Redis/Basics/DataStructures/HashesAndBitmaps'));
-const HyperLogLogAndStreams = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/Redis/Basics/DataStructures/HyperLogLogAndStreams'));
+const Strings = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/Redis/Basics/DataStructures/Strings'));
+const Lists = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/Redis/Basics/DataStructures/Lists'));
+const SetsAndSortedSets = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/Redis/Basics/DataStructures/SetsAndSortedSets'));
+const HashesAndBitmaps = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/Redis/Basics/DataStructures/HashesAndBitmaps'));
+const HyperLogLogAndStreams = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/Redis/Basics/DataStructures/HyperLogLogAndStreams'));
 
 const DataStructures: RouteObject[] = [
   {

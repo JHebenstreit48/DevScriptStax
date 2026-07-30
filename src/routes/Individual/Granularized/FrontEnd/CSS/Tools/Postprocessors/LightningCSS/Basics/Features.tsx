@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const AutoprefixAndTargets = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Postprocessors/LightningCSS/Basics/Features/AutoprefixAndTargets'));
-const ModernCSS = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Postprocessors/LightningCSS/Basics/Features/ModernCSS'));
+const AutoprefixAndTargets = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Tools/Postprocessors/LightningCSS/Basics/Features/AutoprefixAndTargets'));
+const ModernCSS = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Tools/Postprocessors/LightningCSS/Basics/Features/ModernCSS'));
 
 const Features: RouteObject[] = [
   {

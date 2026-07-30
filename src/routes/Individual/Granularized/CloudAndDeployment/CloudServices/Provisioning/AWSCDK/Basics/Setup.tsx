@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const InstallAndBootstrap = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/Provisioning/AWSCDK/Basics/Setup/InstallAndBootstrap'));
-const ProjectInit = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/Provisioning/AWSCDK/Basics/Setup/ProjectInit'));
+const InstallAndBootstrap = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/Provisioning/AWSCDK/Basics/Setup/InstallAndBootstrap'));
+const ProjectInit = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/Provisioning/AWSCDK/Basics/Setup/ProjectInit'));
 
 const Setup: RouteObject[] = [
   {

@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const ClientCerts = lazy(() => import('@/Pages/MainTabs/Tools/API/Insomnia/Advanced/Security/ClientCerts'));
-const CookieJarAndCSRF = lazy(() => import('@/Pages/MainTabs/Tools/API/Insomnia/Advanced/Security/CookieJarAndCSRF'));
+const ClientCerts = lazy(() => import('@/pages/mainTabs/Tools/API/Insomnia/Advanced/Security/ClientCerts'));
+const CookieJarAndCSRF = lazy(() => import('@/pages/mainTabs/Tools/API/Insomnia/Advanced/Security/CookieJarAndCSRF'));
 
 const Security: RouteObject[] = [
   {

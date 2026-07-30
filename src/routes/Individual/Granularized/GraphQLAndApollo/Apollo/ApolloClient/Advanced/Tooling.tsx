@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Codegen = lazy(() => import('@/Pages/MainTabs/GraphQLAndApollo/Apollo/ApolloClient/Advanced/Tooling/Codegen'));
-const DevTools = lazy(() => import('@/Pages/MainTabs/GraphQLAndApollo/Apollo/ApolloClient/Advanced/Tooling/DevTools'));
+const Codegen = lazy(() => import('@/pages/mainTabs/GraphQLAndApollo/Apollo/ApolloClient/Advanced/Tooling/Codegen'));
+const DevTools = lazy(() => import('@/pages/mainTabs/GraphQLAndApollo/Apollo/ApolloClient/Advanced/Tooling/DevTools'));
 
 const Tooling: RouteObject[] = [
   {

@@ -4,13 +4,13 @@ import { RouteObject } from 'react-router-dom';
 const BasicsAndSyntax = lazy(
   () =>
     import(
-      '@/Pages/MainTabs/Languages/Python/Basics/Fundamentals/BasicsAndSyntax'
+      '@/pages/mainTabs/Languages/Python/Basics/Fundamentals/BasicsAndSyntax'
     )
 );
 const ControlFlow = lazy(
   () =>
     import(
-      '@/Pages/MainTabs/Languages/Python/Basics/Fundamentals/ControlFlow'
+      '@/pages/mainTabs/Languages/Python/Basics/Fundamentals/ControlFlow'
     )
 );
 

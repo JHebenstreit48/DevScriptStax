@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const RESTInKoa = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/KoaJs/Advanced/APIPatterns/RESTInKoa'));
-const GraphQL = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/KoaJs/Advanced/APIPatterns/GraphQL'));
+const RESTInKoa = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/KoaJs/Advanced/APIPatterns/RESTInKoa'));
+const GraphQL = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/KoaJs/Advanced/APIPatterns/GraphQL'));
 
 const APIPatterns: RouteObject[] = [
   {

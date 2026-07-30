@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const GlobalStore = lazy(() => import('@/Pages/MainTabs/Tools/PackageAndBundling/PackageManagement/Pnpm/Basics/StoreBasics/GlobalStore'));
-const PruneAndClean = lazy(() => import('@/Pages/MainTabs/Tools/PackageAndBundling/PackageManagement/Pnpm/Basics/StoreBasics/PruneAndClean'));
+const GlobalStore = lazy(() => import('@/pages/mainTabs/Tools/PackageAndBundling/PackageManagement/Pnpm/Basics/StoreBasics/GlobalStore'));
+const PruneAndClean = lazy(() => import('@/pages/mainTabs/Tools/PackageAndBundling/PackageManagement/Pnpm/Basics/StoreBasics/PruneAndClean'));
 
 const StoreBasics: RouteObject[] = [
   {

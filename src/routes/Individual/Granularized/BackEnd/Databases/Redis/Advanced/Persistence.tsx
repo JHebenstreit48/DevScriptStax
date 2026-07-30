@@ -1,9 +1,9 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const RDBSnapshotting = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/Redis/Advanced/Persistence/RDBSnapshotting'));
-const AOF = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/Redis/Advanced/Persistence/AOF'));
-const HybridAndTuning = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/Redis/Advanced/Persistence/HybridAndTuning'));
+const RDBSnapshotting = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/Redis/Advanced/Persistence/RDBSnapshotting'));
+const AOF = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/Redis/Advanced/Persistence/AOF'));
+const HybridAndTuning = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/Redis/Advanced/Persistence/HybridAndTuning'));
 
 const Persistence: RouteObject[] = [
   {

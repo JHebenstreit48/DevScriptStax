@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const PluginAnatomy = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Postprocessors/PostCSS/Advanced/PluginAuthoring/PluginAnatomy'));
-const ASTWalkAndTransforms = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Postprocessors/PostCSS/Advanced/PluginAuthoring/ASTWalkAndTransforms'));
+const PluginAnatomy = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Tools/Postprocessors/PostCSS/Advanced/PluginAuthoring/PluginAnatomy'));
+const ASTWalkAndTransforms = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Tools/Postprocessors/PostCSS/Advanced/PluginAuthoring/ASTWalkAndTransforms'));
 
 const PluginAuthoring: RouteObject[] = [
   {

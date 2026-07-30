@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const NetworksAndDrivers = lazy(() => import('@/Pages/MainTabs/Tools/Containerization/Docker/Advanced/Networking/NetworksAndDrivers'));
-const PortsDNSConnectivity = lazy(() => import('@/Pages/MainTabs/Tools/Containerization/Docker/Advanced/Networking/PortsDNSConnectivity'));
+const NetworksAndDrivers = lazy(() => import('@/pages/mainTabs/Tools/Containerization/Docker/Advanced/Networking/NetworksAndDrivers'));
+const PortsDNSConnectivity = lazy(() => import('@/pages/mainTabs/Tools/Containerization/Docker/Advanced/Networking/PortsDNSConnectivity'));
 
 const Networking: RouteObject[] = [
   {

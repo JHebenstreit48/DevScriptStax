@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const FileAndCLI = lazy(() => import('@/Pages/MainTabs/Languages/Ruby/Basics/IOAndUtils/FileAndCLI'));
-const StringsAndRegex = lazy(() => import('@/Pages/MainTabs/Languages/Ruby/Basics/IOAndUtils/StringsAndRegex'));
+const FileAndCLI = lazy(() => import('@/pages/mainTabs/Languages/Ruby/Basics/IOAndUtils/FileAndCLI'));
+const StringsAndRegex = lazy(() => import('@/pages/mainTabs/Languages/Ruby/Basics/IOAndUtils/StringsAndRegex'));
 
 const IOAndUtils: RouteObject[] = [
   {

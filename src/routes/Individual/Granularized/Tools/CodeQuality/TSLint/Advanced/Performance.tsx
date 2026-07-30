@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const LargeProjects = lazy(() => import('@/Pages/MainTabs/Tools/CodeQuality/TSLint/Advanced/Performance/LargeProjects'));
-const CachingAndSpeed = lazy(() => import('@/Pages/MainTabs/Tools/CodeQuality/TSLint/Advanced/Performance/CachingAndSpeed'));
+const LargeProjects = lazy(() => import('@/pages/mainTabs/Tools/CodeQuality/TSLint/Advanced/Performance/LargeProjects'));
+const CachingAndSpeed = lazy(() => import('@/pages/mainTabs/Tools/CodeQuality/TSLint/Advanced/Performance/CachingAndSpeed'));
 
 const Performance: RouteObject[] = [
   {

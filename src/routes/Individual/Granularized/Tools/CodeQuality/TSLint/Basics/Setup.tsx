@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const InstallAndInit = lazy(() => import('@/Pages/MainTabs/Tools/CodeQuality/TSLint/Basics/Setup/InstallAndInit'));
-const TslintJson = lazy(() => import('@/Pages/MainTabs/Tools/CodeQuality/TSLint/Basics/Setup/TslintJson'));
+const InstallAndInit = lazy(() => import('@/pages/mainTabs/Tools/CodeQuality/TSLint/Basics/Setup/InstallAndInit'));
+const TslintJson = lazy(() => import('@/pages/mainTabs/Tools/CodeQuality/TSLint/Basics/Setup/TslintJson'));
 
 const Setup: RouteObject[] = [
   {

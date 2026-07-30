@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const TreeShakeAndSafelist = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Frameworks/TailwindCSS/Advanced/Performance/TreeShakeAndSafelist'));
-const DynamicClassPatterns = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Frameworks/TailwindCSS/Advanced/Performance/DynamicClassPatterns'));
+const TreeShakeAndSafelist = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Tools/Frameworks/TailwindCSS/Advanced/Performance/TreeShakeAndSafelist'));
+const DynamicClassPatterns = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Tools/Frameworks/TailwindCSS/Advanced/Performance/DynamicClassPatterns'));
 
 const Performance: RouteObject[] = [
   {

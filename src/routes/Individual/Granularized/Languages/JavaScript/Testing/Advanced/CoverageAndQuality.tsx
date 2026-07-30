@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const CoverageCaveats = lazy(() => import('@/Pages/MainTabs/Languages/JavaScript/Testing/Advanced/CoverageAndQuality/CoverageCaveats'));
-const AssertionsAndInvariants = lazy(() => import('@/Pages/MainTabs/Languages/JavaScript/Testing/Advanced/CoverageAndQuality/AssertionsAndInvariants'));
+const CoverageCaveats = lazy(() => import('@/pages/mainTabs/Languages/JavaScript/Testing/Advanced/CoverageAndQuality/CoverageCaveats'));
+const AssertionsAndInvariants = lazy(() => import('@/pages/mainTabs/Languages/JavaScript/Testing/Advanced/CoverageAndQuality/AssertionsAndInvariants'));
 
 const CoverageAndQuality: RouteObject[] = [
   {

@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Runtimes = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/ServerlessComputing/FirebaseFunctions/Basics/RuntimeAndConfig/Runtimes'));
-const EnvAndSecrets = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/ServerlessComputing/FirebaseFunctions/Basics/RuntimeAndConfig/EnvAndSecrets'));
+const Runtimes = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/ServerlessComputing/FirebaseFunctions/Basics/RuntimeAndConfig/Runtimes'));
+const EnvAndSecrets = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/ServerlessComputing/FirebaseFunctions/Basics/RuntimeAndConfig/EnvAndSecrets'));
 
 const RuntimeAndConfig: RouteObject[] = [
   {

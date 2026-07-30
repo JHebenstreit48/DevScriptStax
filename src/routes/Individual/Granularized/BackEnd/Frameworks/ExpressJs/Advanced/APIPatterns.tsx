@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const RESTInExpress = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/ExpressJs/Advanced/APIPatterns/RESTInExpress'));
-const GraphQL = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/ExpressJs/Advanced/APIPatterns/GraphQL'));
+const RESTInExpress = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/ExpressJs/Advanced/APIPatterns/RESTInExpress'));
+const GraphQL = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/ExpressJs/Advanced/APIPatterns/GraphQL'));
 
 const APIPatterns: RouteObject[] = [
   {

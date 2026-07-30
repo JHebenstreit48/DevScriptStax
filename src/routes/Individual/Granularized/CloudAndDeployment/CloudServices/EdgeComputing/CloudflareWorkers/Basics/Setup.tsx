@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const WranglerAndAuth = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/EdgeComputing/CloudflareWorkers/Basics/Setup/WranglerAndAuth'));
-const InitProject = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/EdgeComputing/CloudflareWorkers/Basics/Setup/InitProject'));
+const WranglerAndAuth = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/EdgeComputing/CloudflareWorkers/Basics/Setup/WranglerAndAuth'));
+const InitProject = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/EdgeComputing/CloudflareWorkers/Basics/Setup/InitProject'));
 
 const Setup: RouteObject[] = [
   {

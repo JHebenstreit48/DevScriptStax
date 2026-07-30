@@ -1,10 +1,10 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Overview = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/MongoDB/Intermediate/Aggregation/Overview'));
-const Pipelines = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/MongoDB/Intermediate/Aggregation/Pipelines'));
-const Operators = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/MongoDB/Intermediate/Aggregation/Operators'));
-const Optimization = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/MongoDB/Intermediate/Aggregation/Optimization'));
+const Overview = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/MongoDB/Intermediate/Aggregation/Overview'));
+const Pipelines = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/MongoDB/Intermediate/Aggregation/Pipelines'));
+const Operators = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/MongoDB/Intermediate/Aggregation/Operators'));
+const Optimization = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/MongoDB/Intermediate/Aggregation/Optimization'));
 
 const Aggregation: RouteObject[] = [
   {

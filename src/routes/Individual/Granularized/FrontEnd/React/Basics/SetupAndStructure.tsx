@@ -4,14 +4,14 @@ import { RouteObject } from 'react-router-dom';
 const Setup = lazy(
   () =>
     import(
-      '@/Pages/MainTabs/FrontEnd/React/Basics/SetupAndStructure/Setup'
+      '@/pages/mainTabs/FrontEnd/React/Basics/SetupAndStructure/Setup'
     )
 );
 
 const Structure = lazy(
   () =>
     import(
-      '@/Pages/MainTabs/FrontEnd/React/Basics/SetupAndStructure/Structure'
+      '@/pages/mainTabs/FrontEnd/React/Basics/SetupAndStructure/Structure'
     )
 );
 

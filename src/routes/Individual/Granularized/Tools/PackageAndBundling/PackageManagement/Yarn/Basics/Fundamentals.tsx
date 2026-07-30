@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const IntroToYarn = lazy(() => import('@/Pages/MainTabs/Tools/PackageAndBundling/PackageManagement/Yarn/Basics/Fundamentals/IntroToYarn'));
-const KeyConcepts = lazy(() => import('@/Pages/MainTabs/Tools/PackageAndBundling/PackageManagement/Yarn/Basics/Fundamentals/KeyConcepts'));
+const IntroToYarn = lazy(() => import('@/pages/mainTabs/Tools/PackageAndBundling/PackageManagement/Yarn/Basics/Fundamentals/IntroToYarn'));
+const KeyConcepts = lazy(() => import('@/pages/mainTabs/Tools/PackageAndBundling/PackageManagement/Yarn/Basics/Fundamentals/KeyConcepts'));
 
 const Fundamentals: RouteObject[] = [
   {

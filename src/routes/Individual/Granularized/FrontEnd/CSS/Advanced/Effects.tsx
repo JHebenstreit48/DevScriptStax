@@ -1,9 +1,9 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Transforms = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Advanced/Effects/Transforms'));
-const Transitions = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Advanced/Effects/Transitions'));
-const Animations = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Advanced/Effects/Animations'));
+const Transforms = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Advanced/Effects/Transforms'));
+const Transitions = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Advanced/Effects/Transitions'));
+const Animations = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Advanced/Effects/Animations'));
 
 const Effects: RouteObject[] = [
   {

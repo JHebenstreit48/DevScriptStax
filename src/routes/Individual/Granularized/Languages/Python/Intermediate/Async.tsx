@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const AsyncAwait = lazy(() => import('@/Pages/MainTabs/Languages/Python/Intermediate/Async/AsyncAwait'));
-const Asyncio = lazy(() => import('@/Pages/MainTabs/Languages/Python/Intermediate/Async/Asyncio'));
+const AsyncAwait = lazy(() => import('@/pages/mainTabs/Languages/Python/Intermediate/Async/AsyncAwait'));
+const Asyncio = lazy(() => import('@/pages/mainTabs/Languages/Python/Intermediate/Async/Asyncio'));
 
 const Async: RouteObject[] = [
   {

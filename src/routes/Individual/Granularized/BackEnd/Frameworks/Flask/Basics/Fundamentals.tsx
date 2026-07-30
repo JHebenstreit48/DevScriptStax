@@ -1,10 +1,10 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Overview = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Flask/Basics/Fundamentals/Overview'));
-const InstallAndSetup = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Flask/Basics/Fundamentals/InstallAndSetup'));
-const AppStructure = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Flask/Basics/Fundamentals/AppStructure'));
-const AppFactory = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Flask/Basics/Fundamentals/AppFactory'));
+const Overview = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/Flask/Basics/Fundamentals/Overview'));
+const InstallAndSetup = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/Flask/Basics/Fundamentals/InstallAndSetup'));
+const AppStructure = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/Flask/Basics/Fundamentals/AppStructure'));
+const AppFactory = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/Flask/Basics/Fundamentals/AppFactory'));
 
 const Fundamentals: RouteObject[] = [
   {

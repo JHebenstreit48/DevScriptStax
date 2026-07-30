@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const PackageAndDeploy = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/Provisioning/ServerlessFramework/Basics/Deploys/PackageAndDeploy'));
-const RemoveAndRollback = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/Provisioning/ServerlessFramework/Basics/Deploys/RemoveAndRollback'));
+const PackageAndDeploy = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/Provisioning/ServerlessFramework/Basics/Deploys/PackageAndDeploy'));
+const RemoveAndRollback = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/Provisioning/ServerlessFramework/Basics/Deploys/RemoveAndRollback'));
 
 const Deploys: RouteObject[] = [
   {

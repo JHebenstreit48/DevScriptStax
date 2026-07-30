@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const RootConfig = lazy(() => import('@/Pages/MainTabs/Tools/CodeQuality/Prettier/Advanced/Monorepos/RootConfig'));
-const ProjectOverrides = lazy(() => import('@/Pages/MainTabs/Tools/CodeQuality/Prettier/Advanced/Monorepos/ProjectOverrides'));
+const RootConfig = lazy(() => import('@/pages/mainTabs/Tools/CodeQuality/Prettier/Advanced/Monorepos/RootConfig'));
+const ProjectOverrides = lazy(() => import('@/pages/mainTabs/Tools/CodeQuality/Prettier/Advanced/Monorepos/ProjectOverrides'));
 
 const Monorepos: RouteObject[] = [
   {

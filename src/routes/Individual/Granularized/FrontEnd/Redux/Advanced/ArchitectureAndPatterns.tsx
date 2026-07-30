@@ -1,9 +1,9 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const FeatureFoldersAndSlices = lazy(() => import('@/Pages/MainTabs/FrontEnd/Redux/Advanced/ArchitectureAndPatterns/FeatureFoldersAndSlices'));
-const NormalizationAndEntityAdapter = lazy(() => import('@/Pages/MainTabs/FrontEnd/Redux/Advanced/ArchitectureAndPatterns/NormalizationAndEntityAdapter'));
-const CodeSplitting = lazy(() => import('@/Pages/MainTabs/FrontEnd/Redux/Advanced/ArchitectureAndPatterns/CodeSplitting'));
+const FeatureFoldersAndSlices = lazy(() => import('@/pages/mainTabs/FrontEnd/Redux/Advanced/ArchitectureAndPatterns/FeatureFoldersAndSlices'));
+const NormalizationAndEntityAdapter = lazy(() => import('@/pages/mainTabs/FrontEnd/Redux/Advanced/ArchitectureAndPatterns/NormalizationAndEntityAdapter'));
+const CodeSplitting = lazy(() => import('@/pages/mainTabs/FrontEnd/Redux/Advanced/ArchitectureAndPatterns/CodeSplitting'));
 
 const ArchitectureAndPatterns: RouteObject[] = [
   {

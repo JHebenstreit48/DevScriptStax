@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const WorkerThreads = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/NodeJs/Advanced/ConcurrencyAndProcesses/WorkerThreads'));
-const ChildProcessAndSpawn = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/NodeJs/Advanced/ConcurrencyAndProcesses/ChildProcessAndSpawn'));
+const WorkerThreads = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/NodeJs/Advanced/ConcurrencyAndProcesses/WorkerThreads'));
+const ChildProcessAndSpawn = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/NodeJs/Advanced/ConcurrencyAndProcesses/ChildProcessAndSpawn'));
 
 const ConcurrencyAndProcesses: RouteObject[] = [
   {

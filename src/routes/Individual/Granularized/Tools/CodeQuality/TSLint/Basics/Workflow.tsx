@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const CLIUsage = lazy(() => import('@/Pages/MainTabs/Tools/CodeQuality/TSLint/Basics/Workflow/CLIUsage'));
-const EditorIntegration = lazy(() => import('@/Pages/MainTabs/Tools/CodeQuality/TSLint/Basics/Workflow/EditorIntegration'));
+const CLIUsage = lazy(() => import('@/pages/mainTabs/Tools/CodeQuality/TSLint/Basics/Workflow/CLIUsage'));
+const EditorIntegration = lazy(() => import('@/pages/mainTabs/Tools/CodeQuality/TSLint/Basics/Workflow/EditorIntegration'));
 
 const Workflow: RouteObject[] = [
   {

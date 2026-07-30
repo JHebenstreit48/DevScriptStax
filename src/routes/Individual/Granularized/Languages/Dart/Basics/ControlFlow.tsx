@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Conditionals = lazy(() => import('@/Pages/MainTabs/Languages/Dart/Basics/ControlFlow/Conditionals'));
-const Loops = lazy(() => import('@/Pages/MainTabs/Languages/Dart/Basics/ControlFlow/Loops'));
+const Conditionals = lazy(() => import('@/pages/mainTabs/Languages/Dart/Basics/ControlFlow/Conditionals'));
+const Loops = lazy(() => import('@/pages/mainTabs/Languages/Dart/Basics/ControlFlow/Loops'));
 
 const ControlFlow: RouteObject[] = [
   {

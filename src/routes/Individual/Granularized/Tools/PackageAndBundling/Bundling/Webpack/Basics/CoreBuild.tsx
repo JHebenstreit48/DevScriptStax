@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const EntryAndOutput = lazy(() => import('@/Pages/MainTabs/Tools/PackageAndBundling/Bundling/Webpack/Basics/CoreBuild/EntryAndOutput'));
-const Loaders = lazy(() => import('@/Pages/MainTabs/Tools/PackageAndBundling/Bundling/Webpack/Basics/CoreBuild/Loaders'));
+const EntryAndOutput = lazy(() => import('@/pages/mainTabs/Tools/PackageAndBundling/Bundling/Webpack/Basics/CoreBuild/EntryAndOutput'));
+const Loaders = lazy(() => import('@/pages/mainTabs/Tools/PackageAndBundling/Bundling/Webpack/Basics/CoreBuild/Loaders'));
 
 const CoreBuild: RouteObject[] = [
   {

@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const EdgeFunctions = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/DeploymentPlatforms/FrontEnd/Vercel/Advanced/FunctionsAndEdge/EdgeFunctions'));
-const ServerlessFunctions = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/DeploymentPlatforms/FrontEnd/Vercel/Advanced/FunctionsAndEdge/ServerlessFunctions'));
+const EdgeFunctions = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/DeploymentPlatforms/FrontEnd/Vercel/Advanced/FunctionsAndEdge/EdgeFunctions'));
+const ServerlessFunctions = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/DeploymentPlatforms/FrontEnd/Vercel/Advanced/FunctionsAndEdge/ServerlessFunctions'));
 
 const FunctionsAndEdge: RouteObject[] = [
   {

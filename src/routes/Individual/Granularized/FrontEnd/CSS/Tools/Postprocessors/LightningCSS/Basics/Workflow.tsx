@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const CLIAndScripts = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Postprocessors/LightningCSS/Basics/Workflow/CLIAndScripts'));
-const SourceMaps = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Postprocessors/LightningCSS/Basics/Workflow/SourceMaps'));
+const CLIAndScripts = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Tools/Postprocessors/LightningCSS/Basics/Workflow/CLIAndScripts'));
+const SourceMaps = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Tools/Postprocessors/LightningCSS/Basics/Workflow/SourceMaps'));
 
 const Workflow: RouteObject[] = [
   {

@@ -1,9 +1,9 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const VariablesAndTypes = lazy(() => import('@/Pages/MainTabs/Languages/Go/Basics/CoreConcepts/VariablesAndTypes'));
-const StructsAndInterfaces = lazy(() => import('@/Pages/MainTabs/Languages/Go/Basics/CoreConcepts/StructsAndInterfaces'));
-const ConcurrencyIntro = lazy(() => import('@/Pages/MainTabs/Languages/Go/Basics/CoreConcepts/ConcurrencyIntro'));
+const VariablesAndTypes = lazy(() => import('@/pages/mainTabs/Languages/Go/Basics/CoreConcepts/VariablesAndTypes'));
+const StructsAndInterfaces = lazy(() => import('@/pages/mainTabs/Languages/Go/Basics/CoreConcepts/StructsAndInterfaces'));
+const ConcurrencyIntro = lazy(() => import('@/pages/mainTabs/Languages/Go/Basics/CoreConcepts/ConcurrencyIntro'));
 
 const CoreConcepts: RouteObject[] = [
   {

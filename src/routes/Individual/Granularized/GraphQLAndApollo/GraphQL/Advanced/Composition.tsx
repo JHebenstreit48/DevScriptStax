@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const FederationConcepts = lazy(() => import('@/Pages/MainTabs/GraphQLAndApollo/GraphQL/Advanced/Composition/FederationConcepts'));
-const SchemaStitchingConcepts = lazy(() => import('@/Pages/MainTabs/GraphQLAndApollo/GraphQL/Advanced/Composition/SchemaStitchingConcepts'));
+const FederationConcepts = lazy(() => import('@/pages/mainTabs/GraphQLAndApollo/GraphQL/Advanced/Composition/FederationConcepts'));
+const SchemaStitchingConcepts = lazy(() => import('@/pages/mainTabs/GraphQLAndApollo/GraphQL/Advanced/Composition/SchemaStitchingConcepts'));
 
 const Composition: RouteObject[] = [
   {

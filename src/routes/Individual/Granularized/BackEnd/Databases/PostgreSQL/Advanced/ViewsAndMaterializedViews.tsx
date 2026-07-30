@@ -1,10 +1,10 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const UnderstandingViews = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/PostgreSQL/Advanced/ViewsAndMaterializedViews/UnderstandingViews'));
-const CreatingAndUsingViews = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/PostgreSQL/Advanced/ViewsAndMaterializedViews/CreatingAndUsingViews'));
-const MaterializedViewsAndPerformance = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/PostgreSQL/Advanced/ViewsAndMaterializedViews/MaterializedViewsAndPerformance'));
-const RefreshingAndIndexingViews = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/PostgreSQL/Advanced/ViewsAndMaterializedViews/RefreshingAndIndexingViews'));
+const UnderstandingViews = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/PostgreSQL/Advanced/ViewsAndMaterializedViews/UnderstandingViews'));
+const CreatingAndUsingViews = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/PostgreSQL/Advanced/ViewsAndMaterializedViews/CreatingAndUsingViews'));
+const MaterializedViewsAndPerformance = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/PostgreSQL/Advanced/ViewsAndMaterializedViews/MaterializedViewsAndPerformance'));
+const RefreshingAndIndexingViews = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/PostgreSQL/Advanced/ViewsAndMaterializedViews/RefreshingAndIndexingViews'));
 
 const ViewsAndMaterializedViews: RouteObject[] = [
   {

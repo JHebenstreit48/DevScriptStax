@@ -1,9 +1,9 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const ReactIcons = lazy(() => import('@/Pages/MainTabs/FrontEnd/React/ToolsAndTesting/Tools/IconsAndAssets/ReactIcons'));
-const FontAwesome = lazy(() => import('@/Pages/MainTabs/FrontEnd/React/ToolsAndTesting/Tools/IconsAndAssets/FontAwesome'));
-const HeroiconsAndOthers = lazy(() => import('@/Pages/MainTabs/FrontEnd/React/ToolsAndTesting/Tools/IconsAndAssets/HeroiconsAndOthers'));
+const ReactIcons = lazy(() => import('@/pages/mainTabs/FrontEnd/React/ToolsAndTesting/Tools/IconsAndAssets/ReactIcons'));
+const FontAwesome = lazy(() => import('@/pages/mainTabs/FrontEnd/React/ToolsAndTesting/Tools/IconsAndAssets/FontAwesome'));
+const HeroiconsAndOthers = lazy(() => import('@/pages/mainTabs/FrontEnd/React/ToolsAndTesting/Tools/IconsAndAssets/HeroiconsAndOthers'));
 
 const IconsAndAssets: RouteObject[] = [
   {

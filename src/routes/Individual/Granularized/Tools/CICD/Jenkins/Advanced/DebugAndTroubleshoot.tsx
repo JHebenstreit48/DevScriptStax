@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const BuildLogsAndReplay = lazy(() => import('@/Pages/MainTabs/Tools/CICD/Jenkins/Advanced/DebugAndTroubleshoot/BuildLogsAndReplay'));
-const CommonFailures = lazy(() => import('@/Pages/MainTabs/Tools/CICD/Jenkins/Advanced/DebugAndTroubleshoot/CommonFailures'));
+const BuildLogsAndReplay = lazy(() => import('@/pages/mainTabs/Tools/CICD/Jenkins/Advanced/DebugAndTroubleshoot/BuildLogsAndReplay'));
+const CommonFailures = lazy(() => import('@/pages/mainTabs/Tools/CICD/Jenkins/Advanced/DebugAndTroubleshoot/CommonFailures'));
 
 const DebugAndTroubleshoot: RouteObject[] = [
   {

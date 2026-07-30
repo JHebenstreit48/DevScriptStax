@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const LoggingMiddleware = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/KoaJs/Advanced/Observability/LoggingMiddleware'));
-const MetricsAndTracing = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/KoaJs/Advanced/Observability/MetricsAndTracing'));
+const LoggingMiddleware = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/KoaJs/Advanced/Observability/LoggingMiddleware'));
+const MetricsAndTracing = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/KoaJs/Advanced/Observability/MetricsAndTracing'));
 
 const Observability: RouteObject[] = [
   {

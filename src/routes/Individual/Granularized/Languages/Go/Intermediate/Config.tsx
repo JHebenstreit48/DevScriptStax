@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const EnvVars = lazy(() => import('@/Pages/MainTabs/Languages/Go/Intermediate/Config/EnvVars'));
-const ConfigFiles = lazy(() => import('@/Pages/MainTabs/Languages/Go/Intermediate/Config/ConfigFiles'));
+const EnvVars = lazy(() => import('@/pages/mainTabs/Languages/Go/Intermediate/Config/EnvVars'));
+const ConfigFiles = lazy(() => import('@/pages/mainTabs/Languages/Go/Intermediate/Config/ConfigFiles'));
 
 const Config: RouteObject[] = [
   {

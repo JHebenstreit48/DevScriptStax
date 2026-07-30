@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const MockServers = lazy(() => import('@/Pages/MainTabs/Tools/API/Postman/Advanced/Mocking/MockServers'));
-const SimulatedAPIs = lazy(() => import('@/Pages/MainTabs/Tools/API/Postman/Advanced/Mocking/SimulatedAPIs'));
+const MockServers = lazy(() => import('@/pages/mainTabs/Tools/API/Postman/Advanced/Mocking/MockServers'));
+const SimulatedAPIs = lazy(() => import('@/pages/mainTabs/Tools/API/Postman/Advanced/Mocking/SimulatedAPIs'));
 
 const Mocking: RouteObject[] = [
   {

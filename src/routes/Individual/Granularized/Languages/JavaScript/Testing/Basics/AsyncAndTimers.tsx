@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const AsyncAwaitPatterns = lazy(() => import('@/Pages/MainTabs/Languages/JavaScript/Testing/Basics/AsyncAndTimers/AsyncAwaitPatterns'));
-const TimersAndMicrotasks = lazy(() => import('@/Pages/MainTabs/Languages/JavaScript/Testing/Basics/AsyncAndTimers/TimersAndMicrotasks'));
+const AsyncAwaitPatterns = lazy(() => import('@/pages/mainTabs/Languages/JavaScript/Testing/Basics/AsyncAndTimers/AsyncAwaitPatterns'));
+const TimersAndMicrotasks = lazy(() => import('@/pages/mainTabs/Languages/JavaScript/Testing/Basics/AsyncAndTimers/TimersAndMicrotasks'));
 
 const AsyncAndTimers: RouteObject[] = [
   {

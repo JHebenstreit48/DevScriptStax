@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const VolumesPersistence = lazy(() => import('@/Pages/MainTabs/Tools/Containerization/Docker/Advanced/VolumesAndStorage/VolumesPersistence'));
-const BindMountsAndBackup = lazy(() => import('@/Pages/MainTabs/Tools/Containerization/Docker/Advanced/VolumesAndStorage/BindMountsAndBackup'));
+const VolumesPersistence = lazy(() => import('@/pages/mainTabs/Tools/Containerization/Docker/Advanced/VolumesAndStorage/VolumesPersistence'));
+const BindMountsAndBackup = lazy(() => import('@/pages/mainTabs/Tools/Containerization/Docker/Advanced/VolumesAndStorage/BindMountsAndBackup'));
 
 const VolumesAndStorage: RouteObject[] = [
   {

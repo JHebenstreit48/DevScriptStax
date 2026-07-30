@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const APQSetup = lazy(() => import('@/Pages/MainTabs/GraphQLAndApollo/Apollo/ApolloServer/Advanced/PersistedQueries/APQSetup'));
-const CDNStrategy = lazy(() => import('@/Pages/MainTabs/GraphQLAndApollo/Apollo/ApolloServer/Advanced/PersistedQueries/CDNStrategy'));
+const APQSetup = lazy(() => import('@/pages/mainTabs/GraphQLAndApollo/Apollo/ApolloServer/Advanced/PersistedQueries/APQSetup'));
+const CDNStrategy = lazy(() => import('@/pages/mainTabs/GraphQLAndApollo/Apollo/ApolloServer/Advanced/PersistedQueries/CDNStrategy'));
 
 const PersistedQueries: RouteObject[] = [
   {

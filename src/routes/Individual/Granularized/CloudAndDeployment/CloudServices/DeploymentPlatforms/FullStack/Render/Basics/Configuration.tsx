@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const EnvVariablesAndSecrets = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/DeploymentPlatforms/FullStack/Render/Basics/Configuration/EnvVariablesAndSecrets'));
-const BuildAndStart = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/DeploymentPlatforms/FullStack/Render/Basics/Configuration/BuildAndStart'));
+const EnvVariablesAndSecrets = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/DeploymentPlatforms/FullStack/Render/Basics/Configuration/EnvVariablesAndSecrets'));
+const BuildAndStart = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/DeploymentPlatforms/FullStack/Render/Basics/Configuration/BuildAndStart'));
 
 const Config: RouteObject[] = [
   {

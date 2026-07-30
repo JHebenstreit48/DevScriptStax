@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Syntax = lazy(() => import('@/Pages/MainTabs/Languages/Dart/Basics/Language/Syntax'));
-const Types = lazy(() => import('@/Pages/MainTabs/Languages/Dart/Basics/Language/Types'));
+const Syntax = lazy(() => import('@/pages/mainTabs/Languages/Dart/Basics/Language/Syntax'));
+const Types = lazy(() => import('@/pages/mainTabs/Languages/Dart/Basics/Language/Types'));
 
 const Language: RouteObject[] = [
   {

@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Coverage = lazy(() => import('@/Pages/MainTabs/Languages/Dart/Testing/QualityAndCI/Coverage'));
-const CISetup = lazy(() => import('@/Pages/MainTabs/Languages/Dart/Testing/QualityAndCI/CISetup'));
+const Coverage = lazy(() => import('@/pages/mainTabs/Languages/Dart/Testing/QualityAndCI/Coverage'));
+const CISetup = lazy(() => import('@/pages/mainTabs/Languages/Dart/Testing/QualityAndCI/CISetup'));
 
 const QualityAndCI: RouteObject[] = [
   {

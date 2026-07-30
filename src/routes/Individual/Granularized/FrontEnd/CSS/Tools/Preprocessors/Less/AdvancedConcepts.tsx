@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const OperationsAndColors = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Preprocessors/Less/AdvancedConcepts/OperationsAndColors'));
-const ImportsAndScope = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Preprocessors/Less/AdvancedConcepts/ImportsAndScope'));
+const OperationsAndColors = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Tools/Preprocessors/Less/AdvancedConcepts/OperationsAndColors'));
+const ImportsAndScope = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Tools/Preprocessors/Less/AdvancedConcepts/ImportsAndScope'));
 
 const AdvancedConcepts: RouteObject[] = [
   {

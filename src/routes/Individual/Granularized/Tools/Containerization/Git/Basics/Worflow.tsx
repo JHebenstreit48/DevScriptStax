@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Workflow = lazy(() => import('@/Pages/MainTabs/Tools/Containerization/Git/Basics/Workflow/FullWorkflow'));
-const Nuances = lazy(() => import('@/Pages/MainTabs/Tools/Containerization/Git/Basics/Workflow/Nuances'));
+const Workflow = lazy(() => import('@/pages/mainTabs/Tools/Containerization/Git/Basics/Workflow/FullWorkflow'));
+const Nuances = lazy(() => import('@/pages/mainTabs/Tools/Containerization/Git/Basics/Workflow/Nuances'));
 
 const git: RouteObject[] = [
   {

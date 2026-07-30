@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const AzureCLIAndAuth = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/ServerlessComputing/AzureFunctions/Basics/Setup/AzureCLIAndAuth'));
-const FirstFunction = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/ServerlessComputing/AzureFunctions/Basics/Setup/FirstFunction'));
+const AzureCLIAndAuth = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/ServerlessComputing/AzureFunctions/Basics/Setup/AzureCLIAndAuth'));
+const FirstFunction = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/ServerlessComputing/AzureFunctions/Basics/Setup/FirstFunction'));
 
 const Setup: RouteObject[] = [
   {

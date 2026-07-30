@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const PointcutsAndProxies = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Spring/SpringMain/Advanced/AOPAdvanced/PointcutsAndProxies'));
-const TxAOP = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Spring/SpringMain/Advanced/AOPAdvanced/TxAOP'));
+const PointcutsAndProxies = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/Spring/SpringMain/Advanced/AOPAdvanced/PointcutsAndProxies'));
+const TxAOP = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/Spring/SpringMain/Advanced/AOPAdvanced/TxAOP'));
 
 const AOPAdvanced: RouteObject[] = [
   {

@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const JWTFlowOverview = lazy(() => import('@/Pages/MainTabs/Stacks/MERN/Basics/Auth/JWTFlowOverview'));
-const ProtectedRoutesAndGuards = lazy(() => import('@/Pages/MainTabs/Stacks/MERN/Basics/Auth/ProtectedRoutesAndGuards'));
+const JWTFlowOverview = lazy(() => import('@/pages/mainTabs/Stacks/MERN/Basics/Auth/JWTFlowOverview'));
+const ProtectedRoutesAndGuards = lazy(() => import('@/pages/mainTabs/Stacks/MERN/Basics/Auth/ProtectedRoutesAndGuards'));
 
 const Auth: RouteObject[] = [
   {

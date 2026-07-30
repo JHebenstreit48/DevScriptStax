@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Jinja2 = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Flask/Basics/TemplatesAndStatic/Jinja2'));
-const StaticFiles = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Flask/Basics/TemplatesAndStatic/StaticFiles'));
+const Jinja2 = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/Flask/Basics/TemplatesAndStatic/Jinja2'));
+const StaticFiles = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/Flask/Basics/TemplatesAndStatic/StaticFiles'));
 
 const TemplatesAndStatic: RouteObject[] = [
   {

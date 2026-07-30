@@ -1,9 +1,9 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const ParallelTestExecution = lazy(() => import('@/Pages/MainTabs/Testing/EndToEnd/Cypress/Advanced/TestOptimization/ParallelTestExecution'));
-const PerformanceTestingWithCypress = lazy(() => import('@/Pages/MainTabs/Testing/EndToEnd/Cypress/Advanced/TestOptimization/PerformanceTestingWithCypress'));
-const BestPracticesInCypress = lazy(() => import('@/Pages/MainTabs/Testing/EndToEnd/Cypress/Advanced/TestOptimization/BestPracticesInCypress'));
+const ParallelTestExecution = lazy(() => import('@/pages/mainTabs/Testing/End2End/Cypress/Advanced/TestOptimization/ParallelTestExecution'));
+const PerformanceTestingWithCypress = lazy(() => import('@/pages/mainTabs/Testing/End2End/Cypress/Advanced/TestOptimization/PerformanceTestingWithCypress'));
+const BestPracticesInCypress = lazy(() => import('@/pages/mainTabs/Testing/End2End/Cypress/Advanced/TestOptimization/BestPracticesInCypress'));
 
 const TestOptimization: RouteObject[] = [
   {

@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const JDBCTemplate = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Spring/SpringMain/Basics/Data/JDBCTemplate'));
-const Transactions = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Spring/SpringMain/Basics/Data/Transactions'));
+const JDBCTemplate = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/Spring/SpringMain/Basics/Data/JDBCTemplate'));
+const Transactions = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/Spring/SpringMain/Basics/Data/Transactions'));
 
 const Data: RouteObject[] = [
   {

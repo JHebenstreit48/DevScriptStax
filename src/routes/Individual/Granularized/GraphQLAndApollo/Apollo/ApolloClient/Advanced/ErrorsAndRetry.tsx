@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const ErrorHandling = lazy(() => import('@/Pages/MainTabs/GraphQLAndApollo/Apollo/ApolloClient/Advanced/ErrorsAndRetry/ErrorHandling'));
-const RetryLink = lazy(() => import('@/Pages/MainTabs/GraphQLAndApollo/Apollo/ApolloClient/Advanced/ErrorsAndRetry/RetryLink'));
+const ErrorHandling = lazy(() => import('@/pages/mainTabs/GraphQLAndApollo/Apollo/ApolloClient/Advanced/ErrorsAndRetry/ErrorHandling'));
+const RetryLink = lazy(() => import('@/pages/mainTabs/GraphQLAndApollo/Apollo/ApolloClient/Advanced/ErrorsAndRetry/RetryLink'));
 
 const ErrorsAndRetry: RouteObject[] = [
   {

@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Introduction = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/Provisioning/AWSCDK/Basics/Fundamentals/Introduction'));
-const StacksAndConstructs = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/Provisioning/AWSCDK/Basics/Fundamentals/StacksAndConstructs'));
+const Introduction = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/Provisioning/AWSCDK/Basics/Fundamentals/Introduction'));
+const StacksAndConstructs = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/Provisioning/AWSCDK/Basics/Fundamentals/StacksAndConstructs'));
 
 const Fundamentals: RouteObject[] = [
   {

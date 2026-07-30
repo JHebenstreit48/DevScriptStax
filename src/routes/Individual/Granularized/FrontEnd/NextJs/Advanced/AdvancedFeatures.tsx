@@ -1,10 +1,10 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const IncrementalStaticRegeneration = lazy(() => import('@/Pages/MainTabs/FrontEnd/NextJs/Advanced/AdvancedFeatures/IncrementalStaticRegeneration'));
-const ImageOptimization = lazy(() => import('@/Pages/MainTabs/FrontEnd/NextJs/Advanced/AdvancedFeatures/ImageOptimization'));
-const APIIntegrations = lazy(() => import('@/Pages/MainTabs/FrontEnd/NextJs/Advanced/AdvancedFeatures/APIIntegrations'));
-const CustomServer = lazy(() => import('@/Pages/MainTabs/FrontEnd/NextJs/Advanced/AdvancedFeatures/CustomServer'));
+const IncrementalStaticRegeneration = lazy(() => import('@/pages/mainTabs/FrontEnd/NextJs/Advanced/AdvancedFeatures/IncrementalStaticRegeneration'));
+const ImageOptimization = lazy(() => import('@/pages/mainTabs/FrontEnd/NextJs/Advanced/AdvancedFeatures/ImageOptimization'));
+const APIIntegrations = lazy(() => import('@/pages/mainTabs/FrontEnd/NextJs/Advanced/AdvancedFeatures/APIIntegrations'));
+const CustomServer = lazy(() => import('@/pages/mainTabs/FrontEnd/NextJs/Advanced/AdvancedFeatures/CustomServer'));
 
 const AdvancedFeatures: RouteObject[] = [
   {

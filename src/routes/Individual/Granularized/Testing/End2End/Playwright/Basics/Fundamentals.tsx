@@ -1,10 +1,10 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Introduction = lazy(() => import('@/Pages/MainTabs/Testing/End2End/Playwright/Basics/Fundamentals/Introduction'));
-const InstallAndSetup = lazy(() => import('@/Pages/MainTabs/Testing/End2End/Playwright/Basics/Fundamentals/InstallAndSetup'));
-const FirstTest = lazy(() => import('@/Pages/MainTabs/Testing/End2End/Playwright/Basics/Fundamentals/FirstTest'));
-const VsCypress = lazy(() => import('@/Pages/MainTabs/Testing/End2End/Playwright/Basics/Fundamentals/VsCypress'));
+const Introduction = lazy(() => import('@/pages/mainTabs/Testing/End2End/Playwright/Basics/Fundamentals/Introduction'));
+const InstallAndSetup = lazy(() => import('@/pages/mainTabs/Testing/End2End/Playwright/Basics/Fundamentals/InstallAndSetup'));
+const FirstTest = lazy(() => import('@/pages/mainTabs/Testing/End2End/Playwright/Basics/Fundamentals/FirstTest'));
+const VsCypress = lazy(() => import('@/pages/mainTabs/Testing/End2End/Playwright/Basics/Fundamentals/VsCypress'));
 
 const Fundamentals: RouteObject[] = [
   {

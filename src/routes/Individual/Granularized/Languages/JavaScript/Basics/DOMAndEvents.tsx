@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const DOMManipulation = lazy(() => import('@/Pages/MainTabs/Languages/JavaScript/Basics/DOMAndEvents/DOMManipulation'));
-const EventHandling = lazy(() => import('@/Pages/MainTabs/Languages/JavaScript/Basics/DOMAndEvents/EventHandle'));
+const DOMManipulation = lazy(() => import('@/pages/mainTabs/Languages/JavaScript/Basics/DOMAndEvents/DOMManipulation'));
+const EventHandling = lazy(() => import('@/pages/mainTabs/Languages/JavaScript/Basics/DOMAndEvents/EventHandle'));
 
 const DOMAndEvents: RouteObject[] = [
   {

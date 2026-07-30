@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const MockingAndStubbing = lazy(() => import('@/Pages/MainTabs/Languages/JavaScript/Testing/Basics/DoublesAndIsolation/MockingAndStubbing'));
-const FakesAndSpies = lazy(() => import('@/Pages/MainTabs/Languages/JavaScript/Testing/Basics/DoublesAndIsolation/FakesAndSpies'));
+const MockingAndStubbing = lazy(() => import('@/pages/mainTabs/Languages/JavaScript/Testing/Basics/DoublesAndIsolation/MockingAndStubbing'));
+const FakesAndSpies = lazy(() => import('@/pages/mainTabs/Languages/JavaScript/Testing/Basics/DoublesAndIsolation/FakesAndSpies'));
 
 const DoublesAndIsolation: RouteObject[] = [
   {

@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const JPAAndEntities = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Spring/SpringBoot/Basics/Data/JPAAndEntities'));
-const Repositories = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Spring/SpringBoot/Basics/Data/Repositories'));
+const JPAAndEntities = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/Spring/SpringBoot/Basics/Data/JPAAndEntities'));
+const Repositories = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/Spring/SpringBoot/Basics/Data/Repositories'));
 
 const Data: RouteObject[] = [
   {

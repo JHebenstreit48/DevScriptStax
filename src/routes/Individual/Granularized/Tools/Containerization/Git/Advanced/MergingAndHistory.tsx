@@ -1,9 +1,9 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const MergingAndConflictResolution = lazy(() => import('@/Pages/MainTabs/Tools/Containerization/Git/Advanced/MergingAndHistory/MergingAndConflictResolution'));
-const RebaseVsMerge = lazy(() => import('@/Pages/MainTabs/Tools/Containerization/Git/Advanced/MergingAndHistory/RebaseVsMerge'));
-const CherryPickAndRevert = lazy(() => import('@/Pages/MainTabs/Tools/Containerization/Git/Advanced/MergingAndHistory/CherryPickAndRevert'));
+const MergingAndConflictResolution = lazy(() => import('@/pages/mainTabs/Tools/Containerization/Git/Advanced/MergingAndHistory/MergingAndConflictResolution'));
+const RebaseVsMerge = lazy(() => import('@/pages/mainTabs/Tools/Containerization/Git/Advanced/MergingAndHistory/RebaseVsMerge'));
+const CherryPickAndRevert = lazy(() => import('@/pages/mainTabs/Tools/Containerization/Git/Advanced/MergingAndHistory/CherryPickAndRevert'));
 
 const MergingAndHistory: RouteObject[] = [
   {

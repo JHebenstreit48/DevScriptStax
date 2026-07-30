@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const RESTDataSource = lazy(() => import('@/Pages/MainTabs/GraphQLAndApollo/Apollo/ApolloServer/Advanced/DataSourceIntegrations/RESTDataSource'));
-const CustomDataSource = lazy(() => import('@/Pages/MainTabs/GraphQLAndApollo/Apollo/ApolloServer/Advanced/DataSourceIntegrations/CustomDataSource'));
+const RESTDataSource = lazy(() => import('@/pages/mainTabs/GraphQLAndApollo/Apollo/ApolloServer/Advanced/DataSourceIntegrations/RESTDataSource'));
+const CustomDataSource = lazy(() => import('@/pages/mainTabs/GraphQLAndApollo/Apollo/ApolloServer/Advanced/DataSourceIntegrations/CustomDataSource'));
 
 const DataSourceIntegrations: RouteObject[] = [
   {

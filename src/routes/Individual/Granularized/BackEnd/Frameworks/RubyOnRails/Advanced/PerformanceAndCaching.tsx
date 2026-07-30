@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Caching = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/RubyOnRails/Advanced/PerformanceAndCaching/Caching'));
-const ETagsAndConditionalGET = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/RubyOnRails/Advanced/PerformanceAndCaching/ETagsAndConditionalGET'));
+const Caching = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/RubyOnRails/Advanced/PerformanceAndCaching/Caching'));
+const ETagsAndConditionalGET = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/RubyOnRails/Advanced/PerformanceAndCaching/ETagsAndConditionalGET'));
 
 const PerformanceAndCaching: RouteObject[] = [
   {

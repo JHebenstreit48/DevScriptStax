@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const FixAndIgnore = lazy(() => import('@/Pages/MainTabs/Tools/CodeQuality/ESLint/Basics/Workflow/FixAndIgnore'));
-const ESLintPrettier = lazy(() => import('@/Pages/MainTabs/Tools/CodeQuality/ESLint/Basics/Workflow/ESLintPrettier'));
+const FixAndIgnore = lazy(() => import('@/pages/mainTabs/Tools/CodeQuality/ESLint/Basics/Workflow/FixAndIgnore'));
+const ESLintPrettier = lazy(() => import('@/pages/mainTabs/Tools/CodeQuality/ESLint/Basics/Workflow/ESLintPrettier'));
 
 const Workflow: RouteObject[] = [
   {

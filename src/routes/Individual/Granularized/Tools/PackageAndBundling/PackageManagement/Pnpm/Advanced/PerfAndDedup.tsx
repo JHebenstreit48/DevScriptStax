@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const GlobalStorePerf = lazy(() => import('@/Pages/MainTabs/Tools/PackageAndBundling/PackageManagement/Pnpm/Advanced/PerfAndDedup/GlobalStorePerf'));
-const DeduplicateAndOverrides = lazy(() => import('@/Pages/MainTabs/Tools/PackageAndBundling/PackageManagement/Pnpm/Advanced/PerfAndDedup/DeduplicateAndOverrides'));
+const GlobalStorePerf = lazy(() => import('@/pages/mainTabs/Tools/PackageAndBundling/PackageManagement/Pnpm/Advanced/PerfAndDedup/GlobalStorePerf'));
+const DeduplicateAndOverrides = lazy(() => import('@/pages/mainTabs/Tools/PackageAndBundling/PackageManagement/Pnpm/Advanced/PerfAndDedup/DeduplicateAndOverrides'));
 
 const PerfAndDedup: RouteObject[] = [
   {

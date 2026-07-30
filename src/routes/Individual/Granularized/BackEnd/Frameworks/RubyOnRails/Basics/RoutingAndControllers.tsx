@@ -1,9 +1,9 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Routing = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/RubyOnRails/Basics/RoutingAndControllers/Routing'));
-const Controllers = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/RubyOnRails/Basics/RoutingAndControllers/Controllers'));
-const ParamsAndStrongParams = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/RubyOnRails/Basics/RoutingAndControllers/ParamsAndStrongParams'));
+const Routing = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/RubyOnRails/Basics/RoutingAndControllers/Routing'));
+const Controllers = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/RubyOnRails/Basics/RoutingAndControllers/Controllers'));
+const ParamsAndStrongParams = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/RubyOnRails/Basics/RoutingAndControllers/ParamsAndStrongParams'));
 
 const RoutingAndControllers: RouteObject[] = [
   {

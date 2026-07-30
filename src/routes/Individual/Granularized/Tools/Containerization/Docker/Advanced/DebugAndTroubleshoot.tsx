@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const LogsExecInspect = lazy(() => import('@/Pages/MainTabs/Tools/Containerization/Docker/Advanced/DebugAndTroubleshoot/LogsExecInspect'));
-const CommonIssues = lazy(() => import('@/Pages/MainTabs/Tools/Containerization/Docker/Advanced/DebugAndTroubleshoot/CommonIssues'));
+const LogsExecInspect = lazy(() => import('@/pages/mainTabs/Tools/Containerization/Docker/Advanced/DebugAndTroubleshoot/LogsExecInspect'));
+const CommonIssues = lazy(() => import('@/pages/mainTabs/Tools/Containerization/Docker/Advanced/DebugAndTroubleshoot/CommonIssues'));
 
 const DebugAndTroubleshoot: RouteObject[] = [
   {

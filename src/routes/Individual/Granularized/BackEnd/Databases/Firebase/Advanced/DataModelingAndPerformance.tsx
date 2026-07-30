@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const ModelingStrategies = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/Firebase/Advanced/DataModelingAndPerformance/ModelingStrategies'));
-const IndexTuning = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/Firebase/Advanced/DataModelingAndPerformance/IndexTuning'));
+const ModelingStrategies = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/Firebase/Advanced/DataModelingAndPerformance/ModelingStrategies'));
+const IndexTuning = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/Firebase/Advanced/DataModelingAndPerformance/IndexTuning'));
 
 const DataModelingAndPerformance: RouteObject[] = [
   {

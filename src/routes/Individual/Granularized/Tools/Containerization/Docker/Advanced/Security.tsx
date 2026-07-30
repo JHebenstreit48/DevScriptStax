@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const BestPractices = lazy(() => import('@/Pages/MainTabs/Tools/Containerization/Docker/Advanced/Security/BestPractices'));
-const SecretsAndScanning = lazy(() => import('@/Pages/MainTabs/Tools/Containerization/Docker/Advanced/Security/SecretsAndScanning'));
+const BestPractices = lazy(() => import('@/pages/mainTabs/Tools/Containerization/Docker/Advanced/Security/BestPractices'));
+const SecretsAndScanning = lazy(() => import('@/pages/mainTabs/Tools/Containerization/Docker/Advanced/Security/SecretsAndScanning'));
 
 const Security: RouteObject[] = [
   {

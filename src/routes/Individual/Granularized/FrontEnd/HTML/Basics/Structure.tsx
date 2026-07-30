@@ -1,10 +1,10 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Attributes = lazy(() => import('@/Pages/MainTabs/FrontEnd/HTML/Basics/Structure/Attributes'));
-const Elements = lazy(() => import('@/Pages/MainTabs/FrontEnd/HTML/Basics/Structure/Elements'));
-const TextAndLinks = lazy(() => import('@/Pages/MainTabs/FrontEnd/HTML/Basics/Structure/TextAndLinks'));
-const Lists = lazy(() => import('@/Pages/MainTabs/FrontEnd/HTML/Basics/Structure/Lists'));
+const Attributes = lazy(() => import('@/pages/mainTabs/FrontEnd/HTML/Basics/Structure/Attributes'));
+const Elements = lazy(() => import('@/pages/mainTabs/FrontEnd/HTML/Basics/Structure/Elements'));
+const TextAndLinks = lazy(() => import('@/pages/mainTabs/FrontEnd/HTML/Basics/Structure/TextAndLinks'));
+const Lists = lazy(() => import('@/pages/mainTabs/FrontEnd/HTML/Basics/Structure/Lists'));
 
 const Structures: RouteObject[] = [
   {

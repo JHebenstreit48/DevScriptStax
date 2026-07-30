@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const HeadElements = lazy(() => import('@/Pages/MainTabs/FrontEnd/HTML/Intermediate/HeadAndMetadata/Head'));
-const MetaElements = lazy(() => import('@/Pages/MainTabs/FrontEnd/HTML/Intermediate/HeadAndMetadata/MetaElements'));
+const HeadElements = lazy(() => import('@/pages/mainTabs/FrontEnd/HTML/Intermediate/HeadAndMetadata/Head'));
+const MetaElements = lazy(() => import('@/pages/mainTabs/FrontEnd/HTML/Intermediate/HeadAndMetadata/MetaElements'));
 
 const HeadAndMeta: RouteObject[] = [
   {

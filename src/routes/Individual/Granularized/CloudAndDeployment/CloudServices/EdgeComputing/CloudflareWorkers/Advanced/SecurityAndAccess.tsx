@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const ZeroTrustAccess = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/EdgeComputing/CloudflareWorkers/Advanced/SecurityAndAccess/ZeroTrustAccess'));
-const SecretsAndPermissions = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/EdgeComputing/CloudflareWorkers/Advanced/SecurityAndAccess/SecretsAndPermissions'));
+const ZeroTrustAccess = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/EdgeComputing/CloudflareWorkers/Advanced/SecurityAndAccess/ZeroTrustAccess'));
+const SecretsAndPermissions = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/EdgeComputing/CloudflareWorkers/Advanced/SecurityAndAccess/SecretsAndPermissions'));
 
 const SecurityAndAccess: RouteObject[] = [
   {

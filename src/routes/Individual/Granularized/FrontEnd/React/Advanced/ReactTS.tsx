@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Introduction = lazy(() => import('@/Pages/MainTabs/FrontEnd/React/Advanced/ReactTS/Introduction'));
-const GenericsInComponents = lazy(() => import('@/Pages/MainTabs/FrontEnd/React/Advanced/ReactTS/GenericsInComponents'));
+const Introduction = lazy(() => import('@/pages/mainTabs/FrontEnd/React/Advanced/ReactTS/Introduction'));
+const GenericsInComponents = lazy(() => import('@/pages/mainTabs/FrontEnd/React/Advanced/ReactTS/GenericsInComponents'));
 
 const ReactTS: RouteObject[] = [
   {

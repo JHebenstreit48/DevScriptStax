@@ -1,10 +1,10 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Structure = lazy(() => import('@/Pages/MainTabs/Testing/End2End/Cypress/Basics/ProjectStructure/Structure'));
-const CypressCLIAndConfiguration = lazy(() => import('@/Pages/MainTabs/Testing/End2End/Cypress/Basics/ProjectStructure/CypressCLIAndConfiguration'));
-const TestFilePatterns = lazy(() => import('@/Pages/MainTabs/Testing/End2End/Cypress/Basics/ProjectStructure/TestFilePatterns'));
-const FixturesAndPlugins = lazy(() => import('@/Pages/MainTabs/Testing/End2End/Cypress/Basics/ProjectStructure/FixturesAndPlugins'));
+const Structure = lazy(() => import('@/pages/mainTabs/Testing/End2End/Cypress/Basics/ProjectStructure/Structure'));
+const CypressCLIAndConfiguration = lazy(() => import('@/pages/mainTabs/Testing/End2End/Cypress/Basics/ProjectStructure/CypressCLIAndConfiguration'));
+const TestFilePatterns = lazy(() => import('@/pages/mainTabs/Testing/End2End/Cypress/Basics/ProjectStructure/TestFilePatterns'));
+const FixturesAndPlugins = lazy(() => import('@/pages/mainTabs/Testing/End2End/Cypress/Basics/ProjectStructure/FixturesAndPlugins'));
 
 const ProjectStructure: RouteObject[] = [
   {

@@ -1,9 +1,9 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const GitStash = lazy(() => import('@/Pages/MainTabs/Tools/Containerization/Git/Advanced/Tools/GitStash'));
-const GitHooks = lazy(() => import('@/Pages/MainTabs/Tools/Containerization/Git/Advanced/Tools/GitHooks'));
-const GitSubmodules = lazy(() => import('@/Pages/MainTabs/Tools/Containerization/Git/Advanced/Tools/GitSubmodules'));
+const GitStash = lazy(() => import('@/pages/mainTabs/Tools/Containerization/Git/Advanced/Tools/GitStash'));
+const GitHooks = lazy(() => import('@/pages/mainTabs/Tools/Containerization/Git/Advanced/Tools/GitHooks'));
+const GitSubmodules = lazy(() => import('@/pages/mainTabs/Tools/Containerization/Git/Advanced/Tools/GitSubmodules'));
 
 const Tools: RouteObject[] = [
   {

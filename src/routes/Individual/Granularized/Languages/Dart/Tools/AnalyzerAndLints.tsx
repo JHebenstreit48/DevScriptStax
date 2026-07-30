@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const DartAnalyze = lazy(() => import('@/Pages/MainTabs/Languages/Dart/Tools/AnalyzerAndLints/DartAnalyze'));
-const LintsAndRules = lazy(() => import('@/Pages/MainTabs/Languages/Dart/Tools/AnalyzerAndLints/LintsAndRules'));
+const DartAnalyze = lazy(() => import('@/pages/mainTabs/Languages/Dart/Tools/AnalyzerAndLints/DartAnalyze'));
+const LintsAndRules = lazy(() => import('@/pages/mainTabs/Languages/Dart/Tools/AnalyzerAndLints/LintsAndRules'));
 
 const AnalyzerAndLints: RouteObject[] = [
   {

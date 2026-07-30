@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Optimization = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Preprocessors/Less/BestPractices/Optimization'));
-const Debugging = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Preprocessors/Less/BestPractices/Debugging'));
+const Optimization = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Tools/Preprocessors/Less/BestPractices/Optimization'));
+const Debugging = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Tools/Preprocessors/Less/BestPractices/Debugging'));
 
 const BestPractices: RouteObject[] = [
   {

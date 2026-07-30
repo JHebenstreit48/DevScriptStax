@@ -2,11 +2,11 @@ import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
 const PathAliases = lazy(
-  () => import('@/Pages/MainTabs/FrontEnd/Angular/Advanced/TypeScriptIntegration/PathAliases')
+  () => import('@/pages/mainTabs/FrontEnd/Angular/Advanced/TypeScriptIntegration/PathAliases')
 );
 
 const AdvancedAliases = lazy(
-  () => import('@/Pages/MainTabs/FrontEnd/Angular/Advanced/TypeScriptIntegration/AdvancedAliases')
+  () => import('@/pages/mainTabs/FrontEnd/Angular/Advanced/TypeScriptIntegration/AdvancedAliases')
 );
 
 const tsIntegration: RouteObject[] = [

@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const TryCatchAndErrorTypes = lazy(() => import('@/Pages/MainTabs/Languages/JavaScript/Basics/ErrorHandling/TryCatchAndErrorTypes'));
-const ErrorHandlingPatterns = lazy(() => import('@/Pages/MainTabs/Languages/JavaScript/Basics/ErrorHandling/ErrorHandlingPatterns'));
+const TryCatchAndErrorTypes = lazy(() => import('@/pages/mainTabs/Languages/JavaScript/Basics/ErrorHandling/TryCatchAndErrorTypes'));
+const ErrorHandlingPatterns = lazy(() => import('@/pages/mainTabs/Languages/JavaScript/Basics/ErrorHandling/ErrorHandlingPatterns'));
 
 const ErrorHandling: RouteObject[] = [
   {

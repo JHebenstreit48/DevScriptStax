@@ -1,9 +1,9 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const BasicRouting = lazy(() => import('@/Pages/MainTabs/FrontEnd/React/Intermediate/Routing/BasicRouting'));
-const NestedAndDynamicRoutes = lazy(() => import('@/Pages/MainTabs/FrontEnd/React/Intermediate/Routing/NestedAndDynamicRoutes'));
-const LazyLoadingWithSuspense = lazy(() => import('@/Pages/MainTabs/FrontEnd/React/Intermediate/Routing/LazyLoadingWithSuspense'));
+const BasicRouting = lazy(() => import('@/pages/mainTabs/FrontEnd/React/Intermediate/Routing/BasicRouting'));
+const NestedAndDynamicRoutes = lazy(() => import('@/pages/mainTabs/FrontEnd/React/Intermediate/Routing/NestedAndDynamicRoutes'));
+const LazyLoadingWithSuspense = lazy(() => import('@/pages/mainTabs/FrontEnd/React/Intermediate/Routing/LazyLoadingWithSuspense'));
 
 const Routing: RouteObject[] = [
   {

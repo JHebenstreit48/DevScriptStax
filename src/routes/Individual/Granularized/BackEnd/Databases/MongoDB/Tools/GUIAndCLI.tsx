@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Compass = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/MongoDB/Tools/GUIAndCLI/Compass'));
-const Atlas = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/MongoDB/Tools/GUIAndCLI/Atlas'));
+const Compass = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/MongoDB/Tools/GUIAndCLI/Compass'));
+const Atlas = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/MongoDB/Tools/GUIAndCLI/Atlas'));
 
 const GUIAndCLI: RouteObject[] = [
   {

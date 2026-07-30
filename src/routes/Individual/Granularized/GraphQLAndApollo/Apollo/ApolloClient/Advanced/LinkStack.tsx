@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const HttpLinkAndSplit = lazy(() => import('@/Pages/MainTabs/GraphQLAndApollo/Apollo/ApolloClient/Advanced/LinkStack/HttpLinkAndSplit'));
-const AuthLinkAndContext = lazy(() => import('@/Pages/MainTabs/GraphQLAndApollo/Apollo/ApolloClient/Advanced/LinkStack/AuthLinkAndContext'));
+const HttpLinkAndSplit = lazy(() => import('@/pages/mainTabs/GraphQLAndApollo/Apollo/ApolloClient/Advanced/LinkStack/HttpLinkAndSplit'));
+const AuthLinkAndContext = lazy(() => import('@/pages/mainTabs/GraphQLAndApollo/Apollo/ApolloClient/Advanced/LinkStack/AuthLinkAndContext'));
 
 const LinkStack: RouteObject[] = [
   {

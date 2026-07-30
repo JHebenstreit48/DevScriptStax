@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const CustomScalars = lazy(() => import('@/Pages/MainTabs/GraphQLAndApollo/GraphQL/Advanced/SchemaDesign/CustomScalars'));
-const InterfacesAndUnions = lazy(() => import('@/Pages/MainTabs/GraphQLAndApollo/GraphQL/Advanced/SchemaDesign/InterfacesAndUnions'));
+const CustomScalars = lazy(() => import('@/pages/mainTabs/GraphQLAndApollo/GraphQL/Advanced/SchemaDesign/CustomScalars'));
+const InterfacesAndUnions = lazy(() => import('@/pages/mainTabs/GraphQLAndApollo/GraphQL/Advanced/SchemaDesign/InterfacesAndUnions'));
 
 const SchemaDesign: RouteObject[] = [
   {

@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const CostOptimization = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/ServerlessComputing/AWSLambda/Advanced/CostAndScaling/CostOptimization'));
-const ScalingControls = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/ServerlessComputing/AWSLambda/Advanced/CostAndScaling/ScalingControls'));
+const CostOptimization = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/ServerlessComputing/AWSLambda/Advanced/CostAndScaling/CostOptimization'));
+const ScalingControls = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/ServerlessComputing/AWSLambda/Advanced/CostAndScaling/ScalingControls'));
 
 const CostAndScaling: RouteObject[] = [
   {

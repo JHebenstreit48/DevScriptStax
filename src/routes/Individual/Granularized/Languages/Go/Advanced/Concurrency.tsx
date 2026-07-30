@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const ContextAndCancel = lazy(() => import('@/Pages/MainTabs/Languages/Go/Advanced/Concurrency/ContextAndCancel'));
-const WorkerPools = lazy(() => import('@/Pages/MainTabs/Languages/Go/Advanced/Concurrency/WorkerPools'));
+const ContextAndCancel = lazy(() => import('@/pages/mainTabs/Languages/Go/Advanced/Concurrency/ContextAndCancel'));
+const WorkerPools = lazy(() => import('@/pages/mainTabs/Languages/Go/Advanced/Concurrency/WorkerPools'));
 
 const Concurrency: RouteObject[] = [
   {

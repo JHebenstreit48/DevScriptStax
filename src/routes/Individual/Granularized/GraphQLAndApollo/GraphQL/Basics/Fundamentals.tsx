@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Introduction = lazy(() => import('@/Pages/MainTabs/GraphQLAndApollo/GraphQL/Basics/Fundamentals/Introduction'));
-const KeyConcepts = lazy(() => import('@/Pages/MainTabs/GraphQLAndApollo/GraphQL/Basics/Fundamentals/KeyConcepts'));
+const Introduction = lazy(() => import('@/pages/mainTabs/GraphQLAndApollo/GraphQL/Basics/Fundamentals/Introduction'));
+const KeyConcepts = lazy(() => import('@/pages/mainTabs/GraphQLAndApollo/GraphQL/Basics/Fundamentals/KeyConcepts'));
 
 const Fundamentals: RouteObject[] = [
   {

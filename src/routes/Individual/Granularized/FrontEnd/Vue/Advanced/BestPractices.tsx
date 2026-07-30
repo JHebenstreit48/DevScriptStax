@@ -1,9 +1,9 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const PerformanceOptimization = lazy(() => import('@/Pages/MainTabs/FrontEnd/Vue/Advanced/BestPractices/PerformanceOptimization'));
-const FolderStructure = lazy(() => import('@/Pages/MainTabs/FrontEnd/Vue/Advanced/BestPractices/FolderStructure'));
-const Scalability = lazy(() => import('@/Pages/MainTabs/FrontEnd/Vue/Advanced/BestPractices/Scalability'));
+const PerformanceOptimization = lazy(() => import('@/pages/mainTabs/FrontEnd/Vue/Advanced/BestPractices/PerformanceOptimization'));
+const FolderStructure = lazy(() => import('@/pages/mainTabs/FrontEnd/Vue/Advanced/BestPractices/FolderStructure'));
+const Scalability = lazy(() => import('@/pages/mainTabs/FrontEnd/Vue/Advanced/BestPractices/Scalability'));
 
 const BestPractices: RouteObject[] = [
   {

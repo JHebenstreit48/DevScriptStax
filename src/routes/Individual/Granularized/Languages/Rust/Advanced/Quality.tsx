@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Testing = lazy(() => import('@/Pages/MainTabs/Languages/Rust/Advanced/Quality/Testing'));
-const Benchmarking = lazy(() => import('@/Pages/MainTabs/Languages/Rust/Advanced/Quality/Benchmarking'));
+const Testing = lazy(() => import('@/pages/mainTabs/Languages/Rust/Advanced/Quality/Testing'));
+const Benchmarking = lazy(() => import('@/pages/mainTabs/Languages/Rust/Advanced/Quality/Benchmarking'));
 
 const Quality: RouteObject[] = [
   {

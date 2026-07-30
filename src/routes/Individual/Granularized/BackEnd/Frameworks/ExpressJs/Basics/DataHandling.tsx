@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const JSONAndUrlencoded = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/ExpressJs/Basics/DataHandling/JSONAndUrlencoded'));
-const FileUploads = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/ExpressJs/Basics/DataHandling/FileUploads'));
+const JSONAndUrlencoded = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/ExpressJs/Basics/DataHandling/JSONAndUrlencoded'));
+const FileUploads = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/ExpressJs/Basics/DataHandling/FileUploads'));
 
 const DataHandling: RouteObject[] = [
   {

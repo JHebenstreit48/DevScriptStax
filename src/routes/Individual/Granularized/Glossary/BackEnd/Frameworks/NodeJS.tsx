@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const CoreConcepts = lazy(() => import('@/Pages/MainTabs/Glossary/BackEnd/Frameworks/NodeJS/CoreConcepts'));
-const CommonPackages = lazy(() => import('@/Pages/MainTabs/Glossary/BackEnd/Frameworks/NodeJS/CommonPackages'));
+const CoreConcepts = lazy(() => import('@/pages/mainTabs/Glossary/BackEnd/Frameworks/NodeJS/CoreConcepts'));
+const CommonPackages = lazy(() => import('@/pages/mainTabs/Glossary/BackEnd/Frameworks/NodeJS/CommonPackages'));
 
 const NodeJS: RouteObject[] = [
   {

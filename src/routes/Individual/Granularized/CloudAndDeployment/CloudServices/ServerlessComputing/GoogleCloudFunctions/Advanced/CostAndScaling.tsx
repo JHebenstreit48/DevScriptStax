@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const CostControls = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/ServerlessComputing/GoogleCloudFunctions/Advanced/CostAndScaling/CostControls'));
-const ConcurrencyAndThroughput = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/ServerlessComputing/GoogleCloudFunctions/Advanced/CostAndScaling/ConcurrencyAndThroughput'));
+const CostControls = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/ServerlessComputing/GoogleCloudFunctions/Advanced/CostAndScaling/CostControls'));
+const ConcurrencyAndThroughput = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/ServerlessComputing/GoogleCloudFunctions/Advanced/CostAndScaling/ConcurrencyAndThroughput'));
 
 const CostAndScaling: RouteObject[] = [
   {

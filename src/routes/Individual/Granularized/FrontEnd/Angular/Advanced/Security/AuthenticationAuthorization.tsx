@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const ImplementingAuthentication = lazy(() => import('@/Pages/MainTabs/FrontEnd/Angular/Advanced/Security/AuthenticationAuthorization/Authentication'));
-const RoleBasedAccessControl = lazy(() => import('@/Pages/MainTabs/FrontEnd/Angular/Advanced/Security/AuthenticationAuthorization/RBAC'));
+const ImplementingAuthentication = lazy(() => import('@/pages/mainTabs/FrontEnd/Angular/Advanced/Security/AuthenticationAuthorization/Authentication'));
+const RoleBasedAccessControl = lazy(() => import('@/pages/mainTabs/FrontEnd/Angular/Advanced/Security/AuthenticationAuthorization/RBAC'));
 
 const AuthenticationAuthorization: RouteObject[] = [
   {

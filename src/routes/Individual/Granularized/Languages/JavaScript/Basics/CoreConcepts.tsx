@@ -1,13 +1,13 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const SyntaxStructure = lazy(() => import('@/Pages/MainTabs/Languages/JavaScript/Basics/CoreConcepts/SyntaxAndStructure'));
-const JSVariables = lazy(() => import('@/Pages/MainTabs/Languages/JavaScript/Basics/CoreConcepts/Variables'));
-const Operators = lazy(() => import('@/Pages/MainTabs/Languages/JavaScript/Basics/CoreConcepts/Operators'));
-const BuiltInMethods = lazy(() => import('@/Pages/MainTabs/Languages/JavaScript/Basics/CoreConcepts/BuiltInMethods'));
-const Conditionals = lazy(() => import('@/Pages/MainTabs/Languages/JavaScript/Basics/CoreConcepts/Conditionals'));
-const Loops = lazy(() => import('@/Pages/MainTabs/Languages/JavaScript/Basics/CoreConcepts/Loops'));
-const ScopeAndContext = lazy(() => import('@/Pages/MainTabs/Languages/JavaScript/Basics/CoreConcepts/ScopeAndContext'));
+const SyntaxStructure = lazy(() => import('@/pages/mainTabs/Languages/JavaScript/Basics/CoreConcepts/SyntaxAndStructure'));
+const JSVariables = lazy(() => import('@/pages/mainTabs/Languages/JavaScript/Basics/CoreConcepts/Variables'));
+const Operators = lazy(() => import('@/pages/mainTabs/Languages/JavaScript/Basics/CoreConcepts/Operators'));
+const BuiltInMethods = lazy(() => import('@/pages/mainTabs/Languages/JavaScript/Basics/CoreConcepts/BuiltInMethods'));
+const Conditionals = lazy(() => import('@/pages/mainTabs/Languages/JavaScript/Basics/CoreConcepts/Conditionals'));
+const Loops = lazy(() => import('@/pages/mainTabs/Languages/JavaScript/Basics/CoreConcepts/Loops'));
+const ScopeAndContext = lazy(() => import('@/pages/mainTabs/Languages/JavaScript/Basics/CoreConcepts/ScopeAndContext'));
 
 const CoreConcepts: RouteObject[] = [
   {

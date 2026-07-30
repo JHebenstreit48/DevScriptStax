@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Annotations = lazy(() => import('@/Pages/MainTabs/Languages/Dart/Advanced/MetaAndAnno/Annotations'));
-const SourceGen = lazy(() => import('@/Pages/MainTabs/Languages/Dart/Advanced/MetaAndAnno/SourceGen'));
+const Annotations = lazy(() => import('@/pages/mainTabs/Languages/Dart/Advanced/MetaAndAnno/Annotations'));
+const SourceGen = lazy(() => import('@/pages/mainTabs/Languages/Dart/Advanced/MetaAndAnno/SourceGen'));
 
 const MetaAndAnno: RouteObject[] = [
   {

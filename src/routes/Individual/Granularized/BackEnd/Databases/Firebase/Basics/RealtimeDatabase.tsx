@@ -1,10 +1,10 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Introduction = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/Firebase/Basics/RealtimeDatabase/Introduction'));
-const StructureRules = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/Firebase/Basics/RealtimeDatabase/StructureRules'));
-const ReadingWritingData = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/Firebase/Basics/RealtimeDatabase/ReadingWritingData'));
-const ListenersSyncing = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/Firebase/Basics/RealtimeDatabase/ListenersSyncing'));
+const Introduction = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/Firebase/Basics/RealtimeDatabase/Introduction'));
+const StructureRules = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/Firebase/Basics/RealtimeDatabase/StructureRules'));
+const ReadingWritingData = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/Firebase/Basics/RealtimeDatabase/ReadingWritingData'));
+const ListenersSyncing = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/Firebase/Basics/RealtimeDatabase/ListenersSyncing'));
 
 const RealtimeDatabase: RouteObject[] = [
   {

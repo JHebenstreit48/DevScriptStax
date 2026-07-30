@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const SecurityRulesPatterns = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/Firebase/Advanced/RulesAndEmulator/SecurityRulesPatterns'));
-const EmulatorSuite = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/Firebase/Advanced/RulesAndEmulator/EmulatorSuite'));
+const SecurityRulesPatterns = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/Firebase/Advanced/RulesAndEmulator/SecurityRulesPatterns'));
+const EmulatorSuite = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/Firebase/Advanced/RulesAndEmulator/EmulatorSuite'));
 
 const RulesAndEmulator: RouteObject[] = [
   {

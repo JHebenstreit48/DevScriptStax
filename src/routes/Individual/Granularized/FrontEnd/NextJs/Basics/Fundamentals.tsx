@@ -1,10 +1,10 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Introduction = lazy(() => import('@/Pages/MainTabs/FrontEnd/NextJs/Basics/Fundamentals/Introduction'));
-const ProjectStructure = lazy(() => import('@/Pages/MainTabs/FrontEnd/NextJs/Basics/Fundamentals/ProjectStructure'));
-const Routing = lazy(() => import('@/Pages/MainTabs/FrontEnd/NextJs/Basics/Fundamentals/Routing'));
-const APIRoutes = lazy(() => import('@/Pages/MainTabs/FrontEnd/NextJs/Basics/Fundamentals/APIRoutes'));
+const Introduction = lazy(() => import('@/pages/mainTabs/FrontEnd/NextJs/Basics/Fundamentals/Introduction'));
+const ProjectStructure = lazy(() => import('@/pages/mainTabs/FrontEnd/NextJs/Basics/Fundamentals/ProjectStructure'));
+const Routing = lazy(() => import('@/pages/mainTabs/FrontEnd/NextJs/Basics/Fundamentals/Routing'));
+const APIRoutes = lazy(() => import('@/pages/mainTabs/FrontEnd/NextJs/Basics/Fundamentals/APIRoutes'));
 
 const Fundamentals: RouteObject[] = [
   {

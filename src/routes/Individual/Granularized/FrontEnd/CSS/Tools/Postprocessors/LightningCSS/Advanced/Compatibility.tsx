@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const TargetsAndBrowserslist = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Postprocessors/LightningCSS/Advanced/Compatibility/TargetsAndBrowserslist'));
-const InteropWithPostCSS = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Postprocessors/LightningCSS/Advanced/Compatibility/InteropWithPostCSS'));
+const TargetsAndBrowserslist = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Tools/Postprocessors/LightningCSS/Advanced/Compatibility/TargetsAndBrowserslist'));
+const InteropWithPostCSS = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Tools/Postprocessors/LightningCSS/Advanced/Compatibility/InteropWithPostCSS'));
 
 const Compatibility: RouteObject[] = [
   {

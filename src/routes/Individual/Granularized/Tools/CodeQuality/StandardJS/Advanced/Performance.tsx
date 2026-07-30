@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const LargeRepos = lazy(() => import('@/Pages/MainTabs/Tools/CodeQuality/StandardJS/Advanced/Performance/LargeRepos'));
-const CachingAndSpeed = lazy(() => import('@/Pages/MainTabs/Tools/CodeQuality/StandardJS/Advanced/Performance/CachingAndSpeed'));
+const LargeRepos = lazy(() => import('@/pages/mainTabs/Tools/CodeQuality/StandardJS/Advanced/Performance/LargeRepos'));
+const CachingAndSpeed = lazy(() => import('@/pages/mainTabs/Tools/CodeQuality/StandardJS/Advanced/Performance/CachingAndSpeed'));
 
 const Performance: RouteObject[] = [
   {

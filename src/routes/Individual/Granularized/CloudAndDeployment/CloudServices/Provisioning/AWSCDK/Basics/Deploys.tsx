@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const SynthesizeAndDiff = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/Provisioning/AWSCDK/Basics/Deploys/SynthesizeAndDiff'));
-const DeployAndDestroy = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/Provisioning/AWSCDK/Basics/Deploys/DeployAndDestroy'));
+const SynthesizeAndDiff = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/Provisioning/AWSCDK/Basics/Deploys/SynthesizeAndDiff'));
+const DeployAndDestroy = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/Provisioning/AWSCDK/Basics/Deploys/DeployAndDestroy'));
 
 const Deploys: RouteObject[] = [
   {

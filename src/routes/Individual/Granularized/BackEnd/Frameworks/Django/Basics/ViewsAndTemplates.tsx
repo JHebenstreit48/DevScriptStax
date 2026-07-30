@@ -1,10 +1,10 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Views = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Django/Basics/ViewsAndTemplates/Views'));
-const TemplateEngine = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Django/Basics/ViewsAndTemplates/TemplateEngine'));
-const ClassVsFunction = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Django/Basics/ViewsAndTemplates/ClassVsFunction'));
-const RenderingContext = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Django/Basics/ViewsAndTemplates/RenderingContext'));
+const Views = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/Django/Basics/ViewsAndTemplates/Views'));
+const TemplateEngine = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/Django/Basics/ViewsAndTemplates/TemplateEngine'));
+const ClassVsFunction = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/Django/Basics/ViewsAndTemplates/ClassVsFunction'));
+const RenderingContext = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/Django/Basics/ViewsAndTemplates/RenderingContext'));
 
 const ViewsAndTemplates: RouteObject[] = [
   {

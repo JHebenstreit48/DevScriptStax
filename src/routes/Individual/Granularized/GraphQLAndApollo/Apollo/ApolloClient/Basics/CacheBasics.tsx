@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Store = lazy(() => import('@/Pages/MainTabs/GraphQLAndApollo/Apollo/ApolloClient/Basics/CacheBasics/Store'));
-const Normalization = lazy(() => import('@/Pages/MainTabs/GraphQLAndApollo/Apollo/ApolloClient/Basics/CacheBasics/Normalization'));
+const Store = lazy(() => import('@/pages/mainTabs/GraphQLAndApollo/Apollo/ApolloClient/Basics/CacheBasics/Store'));
+const Normalization = lazy(() => import('@/pages/mainTabs/GraphQLAndApollo/Apollo/ApolloClient/Basics/CacheBasics/Normalization'));
 
 const CacheBasics: RouteObject[] = [
   {

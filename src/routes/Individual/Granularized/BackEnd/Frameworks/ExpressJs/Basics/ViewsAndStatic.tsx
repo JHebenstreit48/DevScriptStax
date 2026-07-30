@@ -1,9 +1,9 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const StaticFiles = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/ExpressJs/Basics/ViewsAndStatic/StaticFiles'));
-const EJS = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/ExpressJs/Basics/ViewsAndStatic/EJS'));
-const Handlebars = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/ExpressJs/Basics/ViewsAndStatic/Handlebars'));
+const StaticFiles = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/ExpressJs/Basics/ViewsAndStatic/StaticFiles'));
+const EJS = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/ExpressJs/Basics/ViewsAndStatic/EJS'));
+const Handlebars = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/ExpressJs/Basics/ViewsAndStatic/Handlebars'));
 
 const ViewsAndStatic: RouteObject[] = [
   {

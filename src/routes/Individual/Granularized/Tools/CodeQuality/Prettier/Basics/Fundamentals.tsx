@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Introduction = lazy(() => import('@/Pages/MainTabs/Tools/CodeQuality/Prettier/Basics/Fundamentals/Introduction'));
-const OptionsAndDefaults = lazy(() => import('@/Pages/MainTabs/Tools/CodeQuality/Prettier/Basics/Fundamentals/OptionsAndDefaults'));
+const Introduction = lazy(() => import('@/pages/mainTabs/Tools/CodeQuality/Prettier/Basics/Fundamentals/Introduction'));
+const OptionsAndDefaults = lazy(() => import('@/pages/mainTabs/Tools/CodeQuality/Prettier/Basics/Fundamentals/OptionsAndDefaults'));
 
 const Fundamentals: RouteObject[] = [
   {

@@ -2,12 +2,12 @@ import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
 const ObservableBasics = lazy(
-  () => import('@/Pages/MainTabs/FrontEnd/Angular/Advanced/RxJSAndReactive/ObservableBasics')
+  () => import('@/pages/mainTabs/FrontEnd/Angular/Advanced/RxJSAndReactive/ObservableBasics')
 );
 const SubjectsAndBehavior = lazy(
-  () => import('@/Pages/MainTabs/FrontEnd/Angular/Advanced/RxJSAndReactive/SubjectsAndBehavior')
+  () => import('@/pages/mainTabs/FrontEnd/Angular/Advanced/RxJSAndReactive/SubjectsAndBehavior')
 );
-const RxJSOperators = lazy(() => import('@/Pages/MainTabs/FrontEnd/Angular/Advanced/RxJSAndReactive/RxJSOperators'));
+const RxJSOperators = lazy(() => import('@/pages/mainTabs/FrontEnd/Angular/Advanced/RxJSAndReactive/RxJSOperators'));
 
 const rxJSAndReactive: RouteObject[] = [
   {

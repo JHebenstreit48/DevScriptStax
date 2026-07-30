@@ -1,10 +1,10 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Introduction = lazy(() => import('@/Pages/MainTabs/FrontEnd/Svelte/Basics/Fundamentals/Introduction'));
-const Setup = lazy(() => import('@/Pages/MainTabs/FrontEnd/Svelte/Basics/Fundamentals/Setup'));
-const Reactivity = lazy(() => import('@/Pages/MainTabs/FrontEnd/Svelte/Basics/Fundamentals/Reactivity'));
-const Components = lazy(() => import('@/Pages/MainTabs/FrontEnd/Svelte/Basics/Fundamentals/Components'));
+const Introduction = lazy(() => import('@/pages/mainTabs/FrontEnd/Svelte/Basics/Fundamentals/Introduction'));
+const Setup = lazy(() => import('@/pages/mainTabs/FrontEnd/Svelte/Basics/Fundamentals/Setup'));
+const Reactivity = lazy(() => import('@/pages/mainTabs/FrontEnd/Svelte/Basics/Fundamentals/Reactivity'));
+const Components = lazy(() => import('@/pages/mainTabs/FrontEnd/Svelte/Basics/Fundamentals/Components'));
 
 const Fundamentals: RouteObject[] = [
   {

@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const BuiltInDirectives = lazy(() => import('@/Pages/MainTabs/GraphQLAndApollo/GraphQL/Advanced/Directives/BuiltInDirectives'));
-const CustomDirectives = lazy(() => import('@/Pages/MainTabs/GraphQLAndApollo/GraphQL/Advanced/Directives/CustomDirectives'));
+const BuiltInDirectives = lazy(() => import('@/pages/mainTabs/GraphQLAndApollo/GraphQL/Advanced/Directives/BuiltInDirectives'));
+const CustomDirectives = lazy(() => import('@/pages/mainTabs/GraphQLAndApollo/GraphQL/Advanced/Directives/CustomDirectives'));
 
 const Directives: RouteObject[] = [
   {

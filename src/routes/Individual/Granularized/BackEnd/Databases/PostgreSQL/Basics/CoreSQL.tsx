@@ -1,9 +1,9 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const SchemasAndTables = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/PostgreSQL/Basics/CoreSQL/SchemasAndTables'));
-const CRUD = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/PostgreSQL/Basics/CoreSQL/CRUD'));
-const Query = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/PostgreSQL/Basics/CoreSQL/Query'));
+const SchemasAndTables = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/PostgreSQL/Basics/CoreSQL/SchemasAndTables'));
+const CRUD = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/PostgreSQL/Basics/CoreSQL/CRUD'));
+const Query = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/PostgreSQL/Basics/CoreSQL/Query'));
 
 const CoreSQL: RouteObject[] = [
   {

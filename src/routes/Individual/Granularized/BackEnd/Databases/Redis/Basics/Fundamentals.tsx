@@ -1,9 +1,9 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Introduction = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/Redis/Basics/Fundamentals/Introduction'));
-const InstallAndSetup = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/Redis/Basics/Fundamentals/InstallAndSetup'));
-const UseCases = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/Redis/Basics/Fundamentals/UseCases'));
+const Introduction = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/Redis/Basics/Fundamentals/Introduction'));
+const InstallAndSetup = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/Redis/Basics/Fundamentals/InstallAndSetup'));
+const UseCases = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/Redis/Basics/Fundamentals/UseCases'));
 
 const Fundamentals: RouteObject[] = [
   {

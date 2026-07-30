@@ -1,9 +1,9 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const MultiDomainTesting = lazy(() => import('@/Pages/MainTabs/Testing/EndToEnd/Cypress/Advanced/AdvancedScenarios/MultiDomainTesting'));
-const FileUploadsAndDownloads = lazy(() => import('@/Pages/MainTabs/Testing/EndToEnd/Cypress/Advanced/AdvancedScenarios/FileUploadsAndDownloads'));
-const WorkingWithIframes = lazy(() => import('@/Pages/MainTabs/Testing/EndToEnd/Cypress/Advanced/AdvancedScenarios/WorkingWithIframes'));
+const MultiDomainTesting = lazy(() => import('@/pages/mainTabs/Testing/End2End/Cypress/Advanced/AdvancedScenarios/MultiDomainTesting'));
+const FileUploadsAndDownloads = lazy(() => import('@/pages/mainTabs/Testing/End2End/Cypress/Advanced/AdvancedScenarios/FileUploadsAndDownloads'));
+const WorkingWithIframes = lazy(() => import('@/pages/mainTabs/Testing/End2End/Cypress/Advanced/AdvancedScenarios/WorkingWithIframes'));
 
 const AdvancedScenarios: RouteObject[] = [
   {

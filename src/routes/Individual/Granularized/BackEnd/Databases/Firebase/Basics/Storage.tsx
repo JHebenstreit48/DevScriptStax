@@ -1,11 +1,11 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Overview = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/Firebase/Basics/Storage/Overview'));
-const UploadingAndDownloadingFiles = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/Firebase/Basics/Storage/UploadingAndDownloadingFiles'));
-const SecurityRulesAndAccessControl = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/Firebase/Basics/Storage/SecurityRulesAndAccessControl'));
-const ManagingStorageCosts = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/Firebase/Basics/Storage/ManagingStorageCosts'));
-const AuditingAndFileCounts = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/Firebase/Basics/Storage/AuditingAndFileCounts'));
+const Overview = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/Firebase/Basics/Storage/Overview'));
+const UploadingAndDownloadingFiles = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/Firebase/Basics/Storage/UploadingAndDownloadingFiles'));
+const SecurityRulesAndAccessControl = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/Firebase/Basics/Storage/SecurityRulesAndAccessControl'));
+const ManagingStorageCosts = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/Firebase/Basics/Storage/ManagingStorageCosts'));
+const AuditingAndFileCounts = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/Firebase/Basics/Storage/AuditingAndFileCounts'));
 
 const Storage: RouteObject[] = [
   {

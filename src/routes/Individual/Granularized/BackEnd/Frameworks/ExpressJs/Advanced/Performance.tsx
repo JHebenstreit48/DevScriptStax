@@ -1,9 +1,9 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const CompressionAndETag = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/ExpressJs/Advanced/Performance/CompressionAndETag'));
-const StaticCacheControl = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/ExpressJs/Advanced/Performance/StaticCacheControl'));
-const RouterSplitting = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/ExpressJs/Advanced/Performance/RouterSplitting'));
+const CompressionAndETag = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/ExpressJs/Advanced/Performance/CompressionAndETag'));
+const StaticCacheControl = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/ExpressJs/Advanced/Performance/StaticCacheControl'));
+const RouterSplitting = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/ExpressJs/Advanced/Performance/RouterSplitting'));
 
 const Performance: RouteObject[] = [
   {

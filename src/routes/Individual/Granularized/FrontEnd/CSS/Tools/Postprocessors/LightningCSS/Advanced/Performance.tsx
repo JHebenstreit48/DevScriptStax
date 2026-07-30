@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const MinifyAndCompression = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Postprocessors/LightningCSS/Advanced/Performance/MinifyAndCompression'));
-const ParallelAndCache = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Postprocessors/LightningCSS/Advanced/Performance/ParallelAndCache'));
+const MinifyAndCompression = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Tools/Postprocessors/LightningCSS/Advanced/Performance/MinifyAndCompression'));
+const ParallelAndCache = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Tools/Postprocessors/LightningCSS/Advanced/Performance/ParallelAndCache'));
 
 const Performance: RouteObject[] = [
   {

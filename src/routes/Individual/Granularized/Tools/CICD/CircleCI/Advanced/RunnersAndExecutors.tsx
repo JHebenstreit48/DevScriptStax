@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Executors = lazy(() => import('@/Pages/MainTabs/Tools/CICD/CircleCI/Advanced/RunnersAndExecutors/Executors'));
-const SelfHostedRunners = lazy(() => import('@/Pages/MainTabs/Tools/CICD/CircleCI/Advanced/RunnersAndExecutors/SelfHostedRunners'));
+const Executors = lazy(() => import('@/pages/mainTabs/Tools/CICD/CircleCI/Advanced/RunnersAndExecutors/Executors'));
+const SelfHostedRunners = lazy(() => import('@/pages/mainTabs/Tools/CICD/CircleCI/Advanced/RunnersAndExecutors/SelfHostedRunners'));
 
 const RunnersAndExecutors: RouteObject[] = [
   {

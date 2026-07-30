@@ -1,9 +1,9 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const PerformanceOptimization = lazy(() => import('@/Pages/MainTabs/Languages/JavaScript/Advanced/PerformanceAndScalability/PerformanceOptimization'));
-const MemoryManagement = lazy(() => import('@/Pages/MainTabs/Languages/JavaScript/Advanced/PerformanceAndScalability/MemoryManagement'));
-const ScalabilityPrinciples = lazy(() => import('@/Pages/MainTabs/Languages/JavaScript/Advanced/PerformanceAndScalability/ScalabilityPrinciples'));
+const PerformanceOptimization = lazy(() => import('@/pages/mainTabs/Languages/JavaScript/Advanced/PerformanceAndScalability/PerformanceOptimization'));
+const MemoryManagement = lazy(() => import('@/pages/mainTabs/Languages/JavaScript/Advanced/PerformanceAndScalability/MemoryManagement'));
+const ScalabilityPrinciples = lazy(() => import('@/pages/mainTabs/Languages/JavaScript/Advanced/PerformanceAndScalability/ScalabilityPrinciples'));
 
 const PerformanceAndScalability: RouteObject[] = [
   {

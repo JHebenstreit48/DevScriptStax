@@ -2,13 +2,13 @@ import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
 const Basics = lazy(
-  () => import('@/Pages/MainTabs/FrontEnd/Angular/Basics/CoreConcepts/Routing/Basics')
+  () => import('@/pages/mainTabs/FrontEnd/Angular/Basics/CoreConcepts/Routing/Basics')
 );
 const GuardsAndResolvers = lazy(
-  () => import('@/Pages/MainTabs/FrontEnd/Angular/Basics/CoreConcepts/Routing/GuardsResolvers')
+  () => import('@/pages/mainTabs/FrontEnd/Angular/Basics/CoreConcepts/Routing/GuardsResolvers')
 );
 const LazyLoading = lazy(
-  () => import('@/Pages/MainTabs/FrontEnd/Angular/Basics/CoreConcepts/Routing/LazyLoading')
+  () => import('@/pages/mainTabs/FrontEnd/Angular/Basics/CoreConcepts/Routing/LazyLoading')
 );
 
 const Routing: RouteObject[] = [

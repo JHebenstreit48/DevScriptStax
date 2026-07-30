@@ -1,10 +1,10 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Reactivity = lazy(() => import('@/Pages/MainTabs/FrontEnd/Vue/Basics/CoreConcepts/Reactivity'));
-const Directives = lazy(() => import('@/Pages/MainTabs/FrontEnd/Vue/Basics/CoreConcepts/Directives'));
-const Routing = lazy(() => import('@/Pages/MainTabs/FrontEnd/Vue/Basics/CoreConcepts/Routing'));
-const StateManagement = lazy(() => import('@/Pages/MainTabs/FrontEnd/Vue/Basics/CoreConcepts/StateManagement'));
+const Reactivity = lazy(() => import('@/pages/mainTabs/FrontEnd/Vue/Basics/CoreConcepts/Reactivity'));
+const Directives = lazy(() => import('@/pages/mainTabs/FrontEnd/Vue/Basics/CoreConcepts/Directives'));
+const Routing = lazy(() => import('@/pages/mainTabs/FrontEnd/Vue/Basics/CoreConcepts/Routing'));
+const StateManagement = lazy(() => import('@/pages/mainTabs/FrontEnd/Vue/Basics/CoreConcepts/StateManagement'));
 
 const CoreConcepts: RouteObject[] = [
   {

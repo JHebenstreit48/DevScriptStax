@@ -1,9 +1,9 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const WiredTigerTuning = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/MongoDB/Advanced/StorageEngineAndInternals/WiredTigerTuning'));
-const CompressionAndJournaling = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/MongoDB/Advanced/StorageEngineAndInternals/CompressionAndJournaling'));
-const FilesystemAndHardwareNotes = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/MongoDB/Advanced/StorageEngineAndInternals/FilesystemAndHardwareNotes'));
+const WiredTigerTuning = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/MongoDB/Advanced/StorageEngineAndInternals/WiredTigerTuning'));
+const CompressionAndJournaling = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/MongoDB/Advanced/StorageEngineAndInternals/CompressionAndJournaling'));
+const FilesystemAndHardwareNotes = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/MongoDB/Advanced/StorageEngineAndInternals/FilesystemAndHardwareNotes'));
 
 const StorageEngineAndInternals: RouteObject[] = [
   {

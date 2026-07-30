@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const SecurityAndAuthentication = lazy(() => import('@/Pages/MainTabs/Tools/CICD/Jenkins/Advanced/Security/SecurityAndAuthentication'));
-const CredentialsAndSecrets = lazy(() => import('@/Pages/MainTabs/Tools/CICD/Jenkins/Advanced/Security/CredentialsAndSecrets'));
+const SecurityAndAuthentication = lazy(() => import('@/pages/mainTabs/Tools/CICD/Jenkins/Advanced/Security/SecurityAndAuthentication'));
+const CredentialsAndSecrets = lazy(() => import('@/pages/mainTabs/Tools/CICD/Jenkins/Advanced/Security/CredentialsAndSecrets'));
 
 const Security: RouteObject[] = [
   {

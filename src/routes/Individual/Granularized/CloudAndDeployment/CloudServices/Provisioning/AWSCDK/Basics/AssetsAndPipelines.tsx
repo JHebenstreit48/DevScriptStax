@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const AssetsAndBundling = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/Provisioning/AWSCDK/Basics/AssetsAndPipelines/AssetsAndBundling'));
-const CICDPipelines = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/Provisioning/AWSCDK/Basics/AssetsAndPipelines/CICDPipelines'));
+const AssetsAndBundling = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/Provisioning/AWSCDK/Basics/AssetsAndPipelines/AssetsAndBundling'));
+const CICDPipelines = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/Provisioning/AWSCDK/Basics/AssetsAndPipelines/CICDPipelines'));
 
 const AssetsAndPipelines: RouteObject[] = [
   {

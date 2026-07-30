@@ -1,10 +1,10 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Transitions = lazy(() => import('@/Pages/MainTabs/FrontEnd/Svelte/Advanced/Concepts/Transitions'));
-const Animations = lazy(() => import('@/Pages/MainTabs/FrontEnd/Svelte/Advanced/Concepts/Animations'));
-const ServerSideRendering = lazy(() => import('@/Pages/MainTabs/FrontEnd/Svelte/Advanced/Concepts/ServerSideRendering'));
-const ContextAPI = lazy(() => import('@/Pages/MainTabs/FrontEnd/Svelte/Advanced/Concepts/ContextAPI'));
+const Transitions = lazy(() => import('@/pages/mainTabs/FrontEnd/Svelte/Advanced/Concepts/Transitions'));
+const Animations = lazy(() => import('@/pages/mainTabs/FrontEnd/Svelte/Advanced/Concepts/Animations'));
+const ServerSideRendering = lazy(() => import('@/pages/mainTabs/FrontEnd/Svelte/Advanced/Concepts/ServerSideRendering'));
+const ContextAPI = lazy(() => import('@/pages/mainTabs/FrontEnd/Svelte/Advanced/Concepts/ContextAPI'));
 
 const Concepts: RouteObject[] = [
   {

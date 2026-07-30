@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Extensions = lazy(() => import('@/Pages/MainTabs/FrontEnd/Markdown/Intermediate/ExtendedSyntax/Extensions'));
-const CodeBlocksAndHighlighting = lazy(() => import('@/Pages/MainTabs/FrontEnd/Markdown/Intermediate/ExtendedSyntax/CodeBlocksAndHighlighting'));
+const Extensions = lazy(() => import('@/pages/mainTabs/FrontEnd/Markdown/Intermediate/ExtendedSyntax/Extensions'));
+const CodeBlocksAndHighlighting = lazy(() => import('@/pages/mainTabs/FrontEnd/Markdown/Intermediate/ExtendedSyntax/CodeBlocksAndHighlighting'));
 
 const ExtendedSyntax: RouteObject[] = [
   {

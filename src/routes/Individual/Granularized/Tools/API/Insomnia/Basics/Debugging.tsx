@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const TimelineAndConsole = lazy(() => import('@/Pages/MainTabs/Tools/API/Insomnia/Basics/Debugging/TimelineAndConsole'));
-const Troubleshoot = lazy(() => import('@/Pages/MainTabs/Tools/API/Insomnia/Basics/Debugging/Troubleshoot'));
+const TimelineAndConsole = lazy(() => import('@/pages/mainTabs/Tools/API/Insomnia/Basics/Debugging/TimelineAndConsole'));
+const Troubleshoot = lazy(() => import('@/pages/mainTabs/Tools/API/Insomnia/Basics/Debugging/Troubleshoot'));
 
 const Debugging: RouteObject[] = [
   {

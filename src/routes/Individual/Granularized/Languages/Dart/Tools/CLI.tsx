@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const DartRun = lazy(() => import('@/Pages/MainTabs/Languages/Dart/Tools/CLI/DartRun'));
-const DartFormat = lazy(() => import('@/Pages/MainTabs/Languages/Dart/Tools/CLI/DartFormat'));
+const DartRun = lazy(() => import('@/pages/mainTabs/Languages/Dart/Tools/CLI/DartRun'));
+const DartFormat = lazy(() => import('@/pages/mainTabs/Languages/Dart/Tools/CLI/DartFormat'));
 
 const CLI: RouteObject[] = [
   {

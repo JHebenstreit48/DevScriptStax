@@ -1,9 +1,9 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Optimization = lazy(() => import('@/Pages/MainTabs/Languages/Python/Advanced/Performance/Optimization'));
-const Profiling = lazy(() => import('@/Pages/MainTabs/Languages/Python/Advanced/Performance/Profiling'));
-const MemoryManagement = lazy(() => import('@/Pages/MainTabs/Languages/Python/Advanced/Performance/MemoryManagement'));
+const Optimization = lazy(() => import('@/pages/mainTabs/Languages/Python/Advanced/Performance/Optimization'));
+const Profiling = lazy(() => import('@/pages/mainTabs/Languages/Python/Advanced/Performance/Profiling'));
+const MemoryManagement = lazy(() => import('@/pages/mainTabs/Languages/Python/Advanced/Performance/MemoryManagement'));
 
 const Performance: RouteObject[] = [
   {

@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const BackendsAndHosts = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/EdgeComputing/FastlyCompute/Basics/Routing/BackendsAndHosts'));
-const EdgeDictionaries = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/EdgeComputing/FastlyCompute/Basics/Routing/EdgeDictionaries'));
+const BackendsAndHosts = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/EdgeComputing/FastlyCompute/Basics/Routing/BackendsAndHosts'));
+const EdgeDictionaries = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/EdgeComputing/FastlyCompute/Basics/Routing/EdgeDictionaries'));
 
 const Routing: RouteObject[] = [
   {

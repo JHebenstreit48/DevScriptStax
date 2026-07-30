@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const LanguagesAndSDKs = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/EdgeComputing/FastlyCompute/Basics/RuntimeAndConfig/LanguagesAndSDKs'));
-const EnvAndSecrets = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/EdgeComputing/FastlyCompute/Basics/RuntimeAndConfig/EnvAndSecrets'));
+const LanguagesAndSDKs = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/EdgeComputing/FastlyCompute/Basics/RuntimeAndConfig/LanguagesAndSDKs'));
+const EnvAndSecrets = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/EdgeComputing/FastlyCompute/Basics/RuntimeAndConfig/EnvAndSecrets'));
 
 const RuntimeAndConfig: RouteObject[] = [
   {

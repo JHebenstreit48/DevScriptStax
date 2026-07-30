@@ -1,9 +1,9 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const AuthenticationAndRoles = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/MongoDB/Advanced/SecurityAndCompliance/AuthenticationAndRoles'));
-const AuditingAndCompliance = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/MongoDB/Advanced/SecurityAndCompliance/AuditingAndCompliance'));
-const FieldLevelEncryption = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/MongoDB/Advanced/SecurityAndCompliance/FieldLevelEncryption'));
+const AuthenticationAndRoles = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/MongoDB/Advanced/SecurityAndCompliance/AuthenticationAndRoles'));
+const AuditingAndCompliance = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/MongoDB/Advanced/SecurityAndCompliance/AuditingAndCompliance'));
+const FieldLevelEncryption = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/MongoDB/Advanced/SecurityAndCompliance/FieldLevelEncryption'));
 
 const SecurityAndCompliance: RouteObject[] = [
   {

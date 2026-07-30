@@ -1,11 +1,11 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Create = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/MongoDB/Basics/CRUDOperations/Create'));
-const Read = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/MongoDB/Basics/CRUDOperations/Read'));
-const Update = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/MongoDB/Basics/CRUDOperations/Update'));
-const Delete = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/MongoDB/Basics/CRUDOperations/Delete'));
-const BulkOperations = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/MongoDB/Basics/CRUDOperations/BulkOperations'));
+const Create = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/MongoDB/Basics/CRUDOperations/Create'));
+const Read = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/MongoDB/Basics/CRUDOperations/Read'));
+const Update = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/MongoDB/Basics/CRUDOperations/Update'));
+const Delete = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/MongoDB/Basics/CRUDOperations/Delete'));
+const BulkOperations = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/MongoDB/Basics/CRUDOperations/BulkOperations'));
 
 const CRUDOperations: RouteObject[] = [
   {

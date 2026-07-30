@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const SassAndVariables = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Frameworks/Bootstrap/Advanced/Theming/SassAndVariables'));
-const CustomizeBuild = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Frameworks/Bootstrap/Advanced/Theming/CustomizeBuild'));
+const SassAndVariables = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Tools/Frameworks/Bootstrap/Advanced/Theming/SassAndVariables'));
+const CustomizeBuild = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Tools/Frameworks/Bootstrap/Advanced/Theming/CustomizeBuild'));
 
 const Theming: RouteObject[] = [
   {

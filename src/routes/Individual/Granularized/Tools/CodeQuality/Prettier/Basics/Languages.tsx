@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const TypeScript = lazy(() => import('@/Pages/MainTabs/Tools/CodeQuality/Prettier/Basics/Languages/TypeScript'));
-const ReactAndJSX = lazy(() => import('@/Pages/MainTabs/Tools/CodeQuality/Prettier/Basics/Languages/ReactAndJSX'));
+const TypeScript = lazy(() => import('@/pages/mainTabs/Tools/CodeQuality/Prettier/Basics/Languages/TypeScript'));
+const ReactAndJSX = lazy(() => import('@/pages/mainTabs/Tools/CodeQuality/Prettier/Basics/Languages/ReactAndJSX'));
 
 const Languages: RouteObject[] = [
   {

@@ -1,7 +1,7 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Introduction = lazy(() => import('@/Pages/MainTabs/BackEnd/APIs/Basics/HTTPClients/Foundations/Introduction'));
+const Introduction = lazy(() => import('@/pages/mainTabs/BackEnd/APIs/Basics/HTTPClients/Foundations/Introduction'));
 
 const Foundations: RouteObject[] = [
   {

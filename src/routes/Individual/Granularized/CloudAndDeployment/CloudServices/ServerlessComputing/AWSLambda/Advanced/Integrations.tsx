@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const APIGateway = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/ServerlessComputing/AWSLambda/Advanced/Integrations/APIGateway'));
-const EventBridgeSQSSNS = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/ServerlessComputing/AWSLambda/Advanced/Integrations/EventBridgeSQSSNS'));
+const APIGateway = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/ServerlessComputing/AWSLambda/Advanced/Integrations/APIGateway'));
+const EventBridgeSQSSNS = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/ServerlessComputing/AWSLambda/Advanced/Integrations/EventBridgeSQSSNS'));
 
 const Integrations: RouteObject[] = [
   {

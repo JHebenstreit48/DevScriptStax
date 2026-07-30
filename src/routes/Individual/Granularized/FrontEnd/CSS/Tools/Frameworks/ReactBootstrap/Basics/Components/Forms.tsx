@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const ControlsAndGroups = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Frameworks/ReactBootstrap/Basics/Components/Forms/ControlsAndGroups'));
-const ValidationStates = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Frameworks/ReactBootstrap/Basics/Components/Forms/ValidationStates'));
+const ControlsAndGroups = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Tools/Frameworks/ReactBootstrap/Basics/Components/Forms/ControlsAndGroups'));
+const ValidationStates = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Tools/Frameworks/ReactBootstrap/Basics/Components/Forms/ValidationStates'));
 
 const Forms: RouteObject[] = [
   {

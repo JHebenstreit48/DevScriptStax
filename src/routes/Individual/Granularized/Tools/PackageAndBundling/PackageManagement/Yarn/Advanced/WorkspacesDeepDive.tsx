@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const ProtocolsAndLinking = lazy(() => import('@/Pages/MainTabs/Tools/PackageAndBundling/PackageManagement/Yarn/Advanced/WorkspacesDeepDive/ProtocolsAndLinking'));
-const HoistingAndConstraints = lazy(() => import('@/Pages/MainTabs/Tools/PackageAndBundling/PackageManagement/Yarn/Advanced/WorkspacesDeepDive/HoistingAndConstraints'));
+const ProtocolsAndLinking = lazy(() => import('@/pages/mainTabs/Tools/PackageAndBundling/PackageManagement/Yarn/Advanced/WorkspacesDeepDive/ProtocolsAndLinking'));
+const HoistingAndConstraints = lazy(() => import('@/pages/mainTabs/Tools/PackageAndBundling/PackageManagement/Yarn/Advanced/WorkspacesDeepDive/HoistingAndConstraints'));
 
 const WorkspacesDeepDive: RouteObject[] = [
   {

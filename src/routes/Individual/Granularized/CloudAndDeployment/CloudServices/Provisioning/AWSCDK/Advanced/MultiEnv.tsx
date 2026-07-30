@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const AccountsAndRegions = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/Provisioning/AWSCDK/Advanced/MultiEnv/AccountsAndRegions'));
-const ParametersAndContext = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/Provisioning/AWSCDK/Advanced/MultiEnv/ParametersAndContext'));
+const AccountsAndRegions = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/Provisioning/AWSCDK/Advanced/MultiEnv/AccountsAndRegions'));
+const ParametersAndContext = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/Provisioning/AWSCDK/Advanced/MultiEnv/ParametersAndContext'));
 
 const MultiEnv: RouteObject[] = [
   {

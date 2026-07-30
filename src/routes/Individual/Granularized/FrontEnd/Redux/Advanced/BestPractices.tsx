@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const FolderStructure = lazy(() => import('@/Pages/MainTabs/FrontEnd/Redux/Advanced/BestPractices/FolderStructure'));
-const Scalability = lazy(() => import('@/Pages/MainTabs/FrontEnd/Redux/Advanced/BestPractices/Scalability'));
+const FolderStructure = lazy(() => import('@/pages/mainTabs/FrontEnd/Redux/Advanced/BestPractices/FolderStructure'));
+const Scalability = lazy(() => import('@/pages/mainTabs/FrontEnd/Redux/Advanced/BestPractices/Scalability'));
 
 const BestPractices: RouteObject[] = [
   {

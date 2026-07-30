@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const CoreToolsAndVSCode = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/ServerlessComputing/AzureFunctions/Basics/Deploys/CoreToolsAndVSCode'));
-const RegionsAndScaling = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/ServerlessComputing/AzureFunctions/Basics/Deploys/RegionsAndScaling'));
+const CoreToolsAndVSCode = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/ServerlessComputing/AzureFunctions/Basics/Deploys/CoreToolsAndVSCode'));
+const RegionsAndScaling = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/ServerlessComputing/AzureFunctions/Basics/Deploys/RegionsAndScaling'));
 
 const Deploys: RouteObject[] = [
   {

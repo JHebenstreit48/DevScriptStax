@@ -1,9 +1,9 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Controllers = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Spring/SpringBoot/Basics/WebMVC/Controllers'));
-const RoutingAndParams = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Spring/SpringBoot/Basics/WebMVC/RoutingAndParams'));
-const ValidationAndBinding = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Spring/SpringBoot/Basics/WebMVC/ValidationAndBinding'));
+const Controllers = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/Spring/SpringBoot/Basics/WebMVC/Controllers'));
+const RoutingAndParams = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/Spring/SpringBoot/Basics/WebMVC/RoutingAndParams'));
+const ValidationAndBinding = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/Spring/SpringBoot/Basics/WebMVC/ValidationAndBinding'));
 
 const WebMVC: RouteObject[] = [
   {

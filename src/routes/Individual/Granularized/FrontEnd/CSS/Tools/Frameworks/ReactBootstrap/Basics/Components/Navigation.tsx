@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const NavbarAndNav = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Frameworks/ReactBootstrap/Basics/Components/Navigation/NavbarAndNav'));
-const TabsAndBreadcrumbs = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Frameworks/ReactBootstrap/Basics/Components/Navigation/TabsAndBreadcrumbs'));
+const NavbarAndNav = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Tools/Frameworks/ReactBootstrap/Basics/Components/Navigation/NavbarAndNav'));
+const TabsAndBreadcrumbs = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Tools/Frameworks/ReactBootstrap/Basics/Components/Navigation/TabsAndBreadcrumbs'));
 
 const Navigation: RouteObject[] = [
   {

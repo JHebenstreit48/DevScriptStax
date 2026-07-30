@@ -53,7 +53,7 @@ export function derive(leaf: { urlPath: string; crumbs: string[] }): Derived {
   );
 
   const rel = [...topicPrefix, ...groupFolders, componentName].join('/');
-  const pageImportPath = `@/Pages/MainTabs/${sectionFolder}/${topicFolder}/${rel}`;
+  const pageImportPath = `@/pages/mainTabs/${sectionFolder}/${topicFolder}/${rel}`;
   const markdownFilePath = `${sectionFolder}/${topicFolder}/${rel}`;
 
   const parentGroup = groupFolders.at(-1) ?? topicPrefix.at(-1);

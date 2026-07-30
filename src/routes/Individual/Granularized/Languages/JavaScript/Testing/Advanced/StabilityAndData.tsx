@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const FlakyTestsAndRetries = lazy(() => import('@/Pages/MainTabs/Languages/JavaScript/Testing/Advanced/StabilityAndData/FlakyTestsAndRetries'));
-const BuildersAndFixtures = lazy(() => import('@/Pages/MainTabs/Languages/JavaScript/Testing/Advanced/StabilityAndData/BuildersAndFixtures'));
+const FlakyTestsAndRetries = lazy(() => import('@/pages/mainTabs/Languages/JavaScript/Testing/Advanced/StabilityAndData/FlakyTestsAndRetries'));
+const BuildersAndFixtures = lazy(() => import('@/pages/mainTabs/Languages/JavaScript/Testing/Advanced/StabilityAndData/BuildersAndFixtures'));
 
 const StabilityAndData: RouteObject[] = [
   {

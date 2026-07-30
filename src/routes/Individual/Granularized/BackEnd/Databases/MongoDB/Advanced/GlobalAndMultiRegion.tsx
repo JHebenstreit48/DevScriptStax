@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const ZonesAndTagAwareSharding = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/MongoDB/Advanced/GlobalAndMultiRegion/ZonesAndTagAwareSharding'));
-const DRAndCrossRegionStrategy = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/MongoDB/Advanced/GlobalAndMultiRegion/DRAndCrossRegionStrategy'));
+const ZonesAndTagAwareSharding = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/MongoDB/Advanced/GlobalAndMultiRegion/ZonesAndTagAwareSharding'));
+const DRAndCrossRegionStrategy = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/MongoDB/Advanced/GlobalAndMultiRegion/DRAndCrossRegionStrategy'));
 
 const GlobalAndMultiRegion: RouteObject[] = [
   {

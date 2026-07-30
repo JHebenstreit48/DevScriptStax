@@ -1,10 +1,10 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Overview = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Django/Basics/Fundamentals/Overview'));
-const DjangoVsOtherFrameworks = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Django/Basics/Fundamentals/DjangoVsOtherFrameworks'));
-const InstallAndSetup = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Django/Basics/Fundamentals/InstallAndSetup'));
-const ProjectStructure = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Django/Basics/Fundamentals/ProjectStructure'));
+const Overview = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/Django/Basics/Fundamentals/Overview'));
+const DjangoVsOtherFrameworks = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/Django/Basics/Fundamentals/DjangoVsOtherFrameworks'));
+const InstallAndSetup = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/Django/Basics/Fundamentals/InstallAndSetup'));
+const ProjectStructure = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/Django/Basics/Fundamentals/ProjectStructure'));
 
 const Fundamentals: RouteObject[] = [
   {

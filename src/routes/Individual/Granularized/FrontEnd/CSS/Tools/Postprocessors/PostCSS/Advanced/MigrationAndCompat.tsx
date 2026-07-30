@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const PostCSS8AndESM = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Postprocessors/PostCSS/Advanced/MigrationAndCompat/PostCSS8AndESM'));
-const CSSModulesAndTailwind = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Postprocessors/PostCSS/Advanced/MigrationAndCompat/CSSModulesAndTailwind'));
+const PostCSS8AndESM = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Tools/Postprocessors/PostCSS/Advanced/MigrationAndCompat/PostCSS8AndESM'));
+const CSSModulesAndTailwind = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Tools/Postprocessors/PostCSS/Advanced/MigrationAndCompat/CSSModulesAndTailwind'));
 
 const MigrationAndCompat: RouteObject[] = [
   {

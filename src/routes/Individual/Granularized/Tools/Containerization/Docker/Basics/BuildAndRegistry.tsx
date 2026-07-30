@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const BuildImages = lazy(() => import('@/Pages/MainTabs/Tools/Containerization/Docker/Basics/BuildAndRegistry/BuildImages'));
-const PushPullAndRegistry = lazy(() => import('@/Pages/MainTabs/Tools/Containerization/Docker/Basics/BuildAndRegistry/PushPullAndRegistry'));
+const BuildImages = lazy(() => import('@/pages/mainTabs/Tools/Containerization/Docker/Basics/BuildAndRegistry/BuildImages'));
+const PushPullAndRegistry = lazy(() => import('@/pages/mainTabs/Tools/Containerization/Docker/Basics/BuildAndRegistry/PushPullAndRegistry'));
 
 const BuildAndRegistry: RouteObject[] = [
   {

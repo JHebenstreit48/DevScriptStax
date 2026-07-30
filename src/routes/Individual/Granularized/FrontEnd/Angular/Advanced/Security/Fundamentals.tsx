@@ -1,9 +1,9 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Basics = lazy(() => import('@/Pages/MainTabs/FrontEnd/Angular/Advanced/Security/Fundamentals/Basics'));
-const XSSProtection = lazy(() => import('@/Pages/MainTabs/FrontEnd/Angular/Advanced/Security/Fundamentals/XSSProtection'));
-const CSRFProtection = lazy(() => import('@/Pages/MainTabs/FrontEnd/Angular/Advanced/Security/Fundamentals/CSRFProtection'));
+const Basics = lazy(() => import('@/pages/mainTabs/FrontEnd/Angular/Advanced/Security/Fundamentals/Basics'));
+const XSSProtection = lazy(() => import('@/pages/mainTabs/FrontEnd/Angular/Advanced/Security/Fundamentals/XSSProtection'));
+const CSRFProtection = lazy(() => import('@/pages/mainTabs/FrontEnd/Angular/Advanced/Security/Fundamentals/CSRFProtection'));
 
 const Fundamentals: RouteObject[] = [
   {

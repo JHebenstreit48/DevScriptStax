@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const LogsAndMetrics = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/ServerlessComputing/AzureFunctions/Basics/Observability/LogsAndMetrics'));
-const AppInsightsAndTraces = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/ServerlessComputing/AzureFunctions/Basics/Observability/AppInsightsAndTraces'));
+const LogsAndMetrics = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/ServerlessComputing/AzureFunctions/Basics/Observability/LogsAndMetrics'));
+const AppInsightsAndTraces = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/ServerlessComputing/AzureFunctions/Basics/Observability/AppInsightsAndTraces'));
 
 const Observability: RouteObject[] = [
   {

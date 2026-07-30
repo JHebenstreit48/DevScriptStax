@@ -1,10 +1,10 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const FileHandling = lazy(() => import('@/Pages/MainTabs/Languages/Python/Intermediate/FileAndData/FileHandling'));
-const CSVJSON = lazy(() => import('@/Pages/MainTabs/Languages/Python/Intermediate/FileAndData/CSVJSON'));
-const WebScraping = lazy(() => import('@/Pages/MainTabs/Languages/Python/Intermediate/FileAndData/WebScraping'));
-const APIRequests = lazy(() => import('@/Pages/MainTabs/Languages/Python/Intermediate/FileAndData/APIRequests'));
+const FileHandling = lazy(() => import('@/pages/mainTabs/Languages/Python/Intermediate/FileAndData/FileHandling'));
+const CSVJSON = lazy(() => import('@/pages/mainTabs/Languages/Python/Intermediate/FileAndData/CSVJSON'));
+const WebScraping = lazy(() => import('@/pages/mainTabs/Languages/Python/Intermediate/FileAndData/WebScraping'));
+const APIRequests = lazy(() => import('@/pages/mainTabs/Languages/Python/Intermediate/FileAndData/APIRequests'));
 
 const FileAndData: RouteObject[] = [
   {

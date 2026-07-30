@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const FixAndCI = lazy(() => import('@/Pages/MainTabs/Tools/CodeQuality/StandardJS/Basics/Workflow/FixAndCI'));
-const Monorepos = lazy(() => import('@/Pages/MainTabs/Tools/CodeQuality/StandardJS/Basics/Workflow/Monorepos'));
+const FixAndCI = lazy(() => import('@/pages/mainTabs/Tools/CodeQuality/StandardJS/Basics/Workflow/FixAndCI'));
+const Monorepos = lazy(() => import('@/pages/mainTabs/Tools/CodeQuality/StandardJS/Basics/Workflow/Monorepos'));
 
 const Workflow: RouteObject[] = [
   {

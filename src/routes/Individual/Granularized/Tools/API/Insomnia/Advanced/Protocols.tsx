@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const GraphQLInInsomnia = lazy(() => import('@/Pages/MainTabs/Tools/API/Insomnia/Advanced/Protocols/GraphQLInInsomnia'));
-const GRPCAndWS = lazy(() => import('@/Pages/MainTabs/Tools/API/Insomnia/Advanced/Protocols/GRPCAndWS'));
+const GraphQLInInsomnia = lazy(() => import('@/pages/mainTabs/Tools/API/Insomnia/Advanced/Protocols/GraphQLInInsomnia'));
+const GRPCAndWS = lazy(() => import('@/pages/mainTabs/Tools/API/Insomnia/Advanced/Protocols/GRPCAndWS'));
 
 const Protocols: RouteObject[] = [
   {

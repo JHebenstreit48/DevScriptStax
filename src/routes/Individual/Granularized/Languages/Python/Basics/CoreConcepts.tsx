@@ -1,9 +1,9 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const VariablesAndTypes = lazy(() => import('@/Pages/MainTabs/Languages/Python/Basics/CoreConcepts/VariablesAndTypes'));
-const FunctionsAndModules = lazy(() => import('@/Pages/MainTabs/Languages/Python/Basics/CoreConcepts/FunctionsAndModules'));
-const OOP = lazy(() => import('@/Pages/MainTabs/Languages/Python/Basics/CoreConcepts/OOP'));
+const VariablesAndTypes = lazy(() => import('@/pages/mainTabs/Languages/Python/Basics/CoreConcepts/VariablesAndTypes'));
+const FunctionsAndModules = lazy(() => import('@/pages/mainTabs/Languages/Python/Basics/CoreConcepts/FunctionsAndModules'));
+const OOP = lazy(() => import('@/pages/mainTabs/Languages/Python/Basics/CoreConcepts/OOP'));
 
 const CoreConcepts: RouteObject[] = [
   {

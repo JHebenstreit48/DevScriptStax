@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const InstallAndInit = lazy(() => import('@/Pages/MainTabs/Tools/CodeQuality/Prettier/Basics/Setup/InstallAndInit'));
-const ConfigFiles = lazy(() => import('@/Pages/MainTabs/Tools/CodeQuality/Prettier/Basics/Setup/ConfigFiles'));
+const InstallAndInit = lazy(() => import('@/pages/mainTabs/Tools/CodeQuality/Prettier/Basics/Setup/InstallAndInit'));
+const ConfigFiles = lazy(() => import('@/pages/mainTabs/Tools/CodeQuality/Prettier/Basics/Setup/ConfigFiles'));
 
 const Setup: RouteObject[] = [
   {

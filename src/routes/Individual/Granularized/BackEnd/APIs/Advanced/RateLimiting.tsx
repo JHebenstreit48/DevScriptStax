@@ -1,9 +1,9 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Importance = lazy(() => import('@/Pages/MainTabs/BackEnd/APIs/Advanced/RateLimiting/Importance'));
-const RateLimitingTechniques = lazy(() => import('@/Pages/MainTabs/BackEnd/APIs/Advanced/RateLimiting/RateLimitingTechniques'));
-const HandlingRateLimitsAsAConsumer = lazy(() => import('@/Pages/MainTabs/BackEnd/APIs/Advanced/RateLimiting/HandlingRateLimitsAsAConsumer'));
+const Importance = lazy(() => import('@/pages/mainTabs/BackEnd/APIs/Advanced/RateLimiting/Importance'));
+const RateLimitingTechniques = lazy(() => import('@/pages/mainTabs/BackEnd/APIs/Advanced/RateLimiting/RateLimitingTechniques'));
+const HandlingRateLimitsAsAConsumer = lazy(() => import('@/pages/mainTabs/BackEnd/APIs/Advanced/RateLimiting/HandlingRateLimitsAsAConsumer'));
 
 const RateLimiting: RouteObject[] = [
   {

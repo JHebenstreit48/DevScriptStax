@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const UseMutation = lazy(() => import('@/Pages/MainTabs/GraphQLAndApollo/Apollo/ApolloClient/Basics/Mutations/UseMutation'));
-const OptimisticUI = lazy(() => import('@/Pages/MainTabs/GraphQLAndApollo/Apollo/ApolloClient/Basics/Mutations/OptimisticUI'));
+const UseMutation = lazy(() => import('@/pages/mainTabs/GraphQLAndApollo/Apollo/ApolloClient/Basics/Mutations/UseMutation'));
+const OptimisticUI = lazy(() => import('@/pages/mainTabs/GraphQLAndApollo/Apollo/ApolloClient/Basics/Mutations/OptimisticUI'));
 
 const Mutations: RouteObject[] = [
   {

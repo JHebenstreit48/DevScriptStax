@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Basics = lazy(() => import('@/Pages/MainTabs/FrontEnd/Angular/Advanced/Animations/Basics'));
-const Triggers = lazy(() => import('@/Pages/MainTabs/FrontEnd/Angular/Advanced/Animations/Triggers'));
+const Basics = lazy(() => import('@/pages/mainTabs/FrontEnd/Angular/Advanced/Animations/Basics'));
+const Triggers = lazy(() => import('@/pages/mainTabs/FrontEnd/Angular/Advanced/Animations/Triggers'));
 
 const Animations: RouteObject[] = [
     {

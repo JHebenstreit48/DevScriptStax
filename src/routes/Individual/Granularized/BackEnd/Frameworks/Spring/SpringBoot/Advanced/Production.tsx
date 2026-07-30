@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Packaging = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Spring/SpringBoot/Advanced/Production/Packaging'));
-const GracefulShutdown = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Spring/SpringBoot/Advanced/Production/GracefulShutdown'));
+const Packaging = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/Spring/SpringBoot/Advanced/Production/Packaging'));
+const GracefulShutdown = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/Spring/SpringBoot/Advanced/Production/GracefulShutdown'));
 
 const Production: RouteObject[] = [
   {

@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const WasmBindgen = lazy(() => import('@/Pages/MainTabs/Languages/Rust/Advanced/WASM/WasmBindgen'));
-const WasmPack = lazy(() => import('@/Pages/MainTabs/Languages/Rust/Advanced/WASM/WasmPack'));
+const WasmBindgen = lazy(() => import('@/pages/mainTabs/Languages/Rust/Advanced/WASM/WasmBindgen'));
+const WasmPack = lazy(() => import('@/pages/mainTabs/Languages/Rust/Advanced/WASM/WasmPack'));
 
 const WASM: RouteObject[] = [
   {

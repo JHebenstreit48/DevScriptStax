@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const ImageOptimization = lazy(() => import('@/Pages/MainTabs/Tools/Containerization/Docker/Advanced/Performance/ImageOptimization'));
-const BuildCacheAndBuildx = lazy(() => import('@/Pages/MainTabs/Tools/Containerization/Docker/Advanced/Performance/BuildCacheAndBuildx'));
+const ImageOptimization = lazy(() => import('@/pages/mainTabs/Tools/Containerization/Docker/Advanced/Performance/ImageOptimization'));
+const BuildCacheAndBuildx = lazy(() => import('@/pages/mainTabs/Tools/Containerization/Docker/Advanced/Performance/BuildCacheAndBuildx'));
 
 const Performance: RouteObject[] = [
   {

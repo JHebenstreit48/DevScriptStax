@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const UnitVsIntegration = lazy(() => import('@/Pages/MainTabs/Languages/JavaScript/Testing/Basics/Fundamentals/UnitVsIntegration'));
-const TestPyramidAndScope = lazy(() => import('@/Pages/MainTabs/Languages/JavaScript/Testing/Basics/Fundamentals/TestPyramidAndScope'));
+const UnitVsIntegration = lazy(() => import('@/pages/mainTabs/Languages/JavaScript/Testing/Basics/Fundamentals/UnitVsIntegration'));
+const TestPyramidAndScope = lazy(() => import('@/pages/mainTabs/Languages/JavaScript/Testing/Basics/Fundamentals/TestPyramidAndScope'));
 
 const Fundamentals: RouteObject[] = [
   {

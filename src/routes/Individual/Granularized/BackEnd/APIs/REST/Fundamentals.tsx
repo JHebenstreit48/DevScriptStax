@@ -1,10 +1,10 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const CorePrincipleS = lazy(() => import('@/Pages/MainTabs/BackEnd/APIs/REST/Fundamentals/CorePrincipleS'));
-const StatelessnessAndClientServerModel = lazy(() => import('@/Pages/MainTabs/BackEnd/APIs/REST/Fundamentals/StatelessnessAndClientServerModel'));
-const RESTVsSOAPVsGraphQL = lazy(() => import('@/Pages/MainTabs/BackEnd/APIs/REST/Fundamentals/RESTVsSOAPVsGraphQL'));
-const CommonAPIMistakes = lazy(() => import('@/Pages/MainTabs/BackEnd/APIs/REST/Fundamentals/CommonAPIMistakes'));
+const CorePrincipleS = lazy(() => import('@/pages/mainTabs/BackEnd/APIs/REST/Fundamentals/CorePrincipleS'));
+const StatelessnessAndClientServerModel = lazy(() => import('@/pages/mainTabs/BackEnd/APIs/REST/Fundamentals/StatelessnessAndClientServerModel'));
+const RESTVsSOAPVsGraphQL = lazy(() => import('@/pages/mainTabs/BackEnd/APIs/REST/Fundamentals/RESTVsSOAPVsGraphQL'));
+const CommonAPIMistakes = lazy(() => import('@/pages/mainTabs/BackEnd/APIs/REST/Fundamentals/CommonAPIMistakes'));
 
 const Fundamentals: RouteObject[] = [
   {

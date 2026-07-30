@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const DurableFunctions = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/ServerlessComputing/AzureFunctions/Advanced/Architecture/DurableFunctions'));
-const RetriesAndPoisonQueues = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/ServerlessComputing/AzureFunctions/Advanced/Architecture/RetriesAndPoisonQueues'));
+const DurableFunctions = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/ServerlessComputing/AzureFunctions/Advanced/Architecture/DurableFunctions'));
+const RetriesAndPoisonQueues = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/ServerlessComputing/AzureFunctions/Advanced/Architecture/RetriesAndPoisonQueues'));
 
 const Architecture: RouteObject[] = [
   {

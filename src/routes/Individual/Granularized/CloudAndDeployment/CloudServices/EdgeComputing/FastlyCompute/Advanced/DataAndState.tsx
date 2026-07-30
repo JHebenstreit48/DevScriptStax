@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const EdgeDictionaries = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/EdgeComputing/FastlyCompute/Advanced/DataAndState/EdgeDictionaries'));
-const StreamingAndFanout = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/EdgeComputing/FastlyCompute/Advanced/DataAndState/StreamingAndFanout'));
+const EdgeDictionaries = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/EdgeComputing/FastlyCompute/Advanced/DataAndState/EdgeDictionaries'));
+const StreamingAndFanout = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/EdgeComputing/FastlyCompute/Advanced/DataAndState/StreamingAndFanout'));
 
 const DataAndState: RouteObject[] = [
   {

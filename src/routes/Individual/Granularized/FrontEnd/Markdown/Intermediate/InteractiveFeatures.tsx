@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const TaskLists = lazy(() => import('@/Pages/MainTabs/FrontEnd/Markdown/Intermediate/InteractiveFeatures/TaskLists'));
-const Footnotes = lazy(() => import('@/Pages/MainTabs/FrontEnd/Markdown/Intermediate/InteractiveFeatures/Footnotes'));
+const TaskLists = lazy(() => import('@/pages/mainTabs/FrontEnd/Markdown/Intermediate/InteractiveFeatures/TaskLists'));
+const Footnotes = lazy(() => import('@/pages/mainTabs/FrontEnd/Markdown/Intermediate/InteractiveFeatures/Footnotes'));
 
 const InteractiveFeatures: RouteObject[] = [
   {

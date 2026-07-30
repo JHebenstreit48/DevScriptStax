@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const BuildAndPackage = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/Provisioning/AWSSAM/Basics/BuildAndDeploy/BuildAndPackage'));
-const DeployAndStacks = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/Provisioning/AWSSAM/Basics/BuildAndDeploy/DeployAndStacks'));
+const BuildAndPackage = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/Provisioning/AWSSAM/Basics/BuildAndDeploy/BuildAndPackage'));
+const DeployAndStacks = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/Provisioning/AWSSAM/Basics/BuildAndDeploy/DeployAndStacks'));
 
 const BuildAndDeploy: RouteObject[] = [
   {

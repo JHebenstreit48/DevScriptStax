@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const IntroductionToJenkins = lazy(() => import('@/Pages/MainTabs/Tools/CICD/Jenkins/Basics/Fundamentals/IntroductionToJenkins'));
-const KeyConcepts = lazy(() => import('@/Pages/MainTabs/Tools/CICD/Jenkins/Basics/Fundamentals/KeyConcepts'));
+const IntroductionToJenkins = lazy(() => import('@/pages/mainTabs/Tools/CICD/Jenkins/Basics/Fundamentals/IntroductionToJenkins'));
+const KeyConcepts = lazy(() => import('@/pages/mainTabs/Tools/CICD/Jenkins/Basics/Fundamentals/KeyConcepts'));
 
 const Fundamentals: RouteObject[] = [
   {

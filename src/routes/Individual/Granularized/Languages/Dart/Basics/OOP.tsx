@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Classes = lazy(() => import('@/Pages/MainTabs/Languages/Dart/Basics/OOP/Classes'));
-const MixinsAndAbstract = lazy(() => import('@/Pages/MainTabs/Languages/Dart/Basics/OOP/MixinsAndAbstract'));
+const Classes = lazy(() => import('@/pages/mainTabs/Languages/Dart/Basics/OOP/Classes'));
+const MixinsAndAbstract = lazy(() => import('@/pages/mainTabs/Languages/Dart/Basics/OOP/MixinsAndAbstract'));
 
 const OOP: RouteObject[] = [
   {

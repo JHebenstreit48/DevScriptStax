@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const DevServerAndHMR = lazy(() => import('@/Pages/MainTabs/Tools/PackageAndBundling/Bundling/Webpack/Advanced/DevAndDX/DevServerAndHMR'));
-const SourceMaps = lazy(() => import('@/Pages/MainTabs/Tools/PackageAndBundling/Bundling/Webpack/Advanced/DevAndDX/SourceMaps'));
+const DevServerAndHMR = lazy(() => import('@/pages/mainTabs/Tools/PackageAndBundling/Bundling/Webpack/Advanced/DevAndDX/DevServerAndHMR'));
+const SourceMaps = lazy(() => import('@/pages/mainTabs/Tools/PackageAndBundling/Bundling/Webpack/Advanced/DevAndDX/SourceMaps'));
 
 const DevAndDX: RouteObject[] = [
   {

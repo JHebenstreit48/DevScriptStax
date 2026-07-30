@@ -1,12 +1,12 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Basics = lazy(() => import('@/Pages/MainTabs/Languages/JavaScript/Basics/Functions/Basics'));
-const ExpressionsAndIIFE = lazy(() => import('@/Pages/MainTabs/Languages/JavaScript/Basics/Functions/ExpressionsIIFE'));
-const Arrow = lazy(() => import('@/Pages/MainTabs/Languages/JavaScript/Basics/Functions/Arrow'));
-const ParametersAndArguments = lazy(() => import('@/Pages/MainTabs/Languages/JavaScript/Basics/Functions/ParamsAndArgs'));
-const HigherOrder = lazy(() => import('@/Pages/MainTabs/Languages/JavaScript/Basics/Functions/HigherOrder'));
-const ThisKeyword = lazy(() => import('@/Pages/MainTabs/Languages/JavaScript/Basics/Functions/ThisKeyword'));
+const Basics = lazy(() => import('@/pages/mainTabs/Languages/JavaScript/Basics/Functions/Basics'));
+const ExpressionsAndIIFE = lazy(() => import('@/pages/mainTabs/Languages/JavaScript/Basics/Functions/ExpressionsIIFE'));
+const Arrow = lazy(() => import('@/pages/mainTabs/Languages/JavaScript/Basics/Functions/Arrow'));
+const ParametersAndArguments = lazy(() => import('@/pages/mainTabs/Languages/JavaScript/Basics/Functions/ParamsAndArgs'));
+const HigherOrder = lazy(() => import('@/pages/mainTabs/Languages/JavaScript/Basics/Functions/HigherOrder'));
+const ThisKeyword = lazy(() => import('@/pages/mainTabs/Languages/JavaScript/Basics/Functions/ThisKeyword'));
 
 const Functions: RouteObject[] = [
   {

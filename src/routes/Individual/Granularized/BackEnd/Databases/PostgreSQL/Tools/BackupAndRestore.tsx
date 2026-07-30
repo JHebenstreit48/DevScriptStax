@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const PgDumpAndPgRestore = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/PostgreSQL/Tools/BackupAndRestore/PgDumpAndPgRestore'));
-const LogicalVsPhysicalBackups = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/PostgreSQL/Tools/BackupAndRestore/LogicalVsPhysicalBackups'));
+const PgDumpAndPgRestore = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/PostgreSQL/Tools/BackupAndRestore/PgDumpAndPgRestore'));
+const LogicalVsPhysicalBackups = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/PostgreSQL/Tools/BackupAndRestore/LogicalVsPhysicalBackups'));
 
 const BackupAndRestore: RouteObject[] = [
   {

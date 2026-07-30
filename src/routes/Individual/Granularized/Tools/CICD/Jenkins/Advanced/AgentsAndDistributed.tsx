@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const DistributedBuilds = lazy(() => import('@/Pages/MainTabs/Tools/CICD/Jenkins/Advanced/AgentsAndDistributed/DistributedBuilds'));
-const AgentsNodesAndLabels = lazy(() => import('@/Pages/MainTabs/Tools/CICD/Jenkins/Advanced/AgentsAndDistributed/AgentsNodesAndLabels'));
+const DistributedBuilds = lazy(() => import('@/pages/mainTabs/Tools/CICD/Jenkins/Advanced/AgentsAndDistributed/DistributedBuilds'));
+const AgentsNodesAndLabels = lazy(() => import('@/pages/mainTabs/Tools/CICD/Jenkins/Advanced/AgentsAndDistributed/AgentsNodesAndLabels'));
 
 const AgentsAndDistributed: RouteObject[] = [
   {

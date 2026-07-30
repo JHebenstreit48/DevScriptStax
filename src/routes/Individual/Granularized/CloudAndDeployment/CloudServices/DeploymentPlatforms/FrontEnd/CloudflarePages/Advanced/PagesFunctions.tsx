@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const FunctionsBasics = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/DeploymentPlatforms/FrontEnd/CloudflarePages/Advanced/PagesFunctions/FunctionsBasics'));
-const WranglerAndLocalDev = lazy(() => import('@/Pages/MainTabs/CloudAndDeployment/CloudServices/DeploymentPlatforms/FrontEnd/CloudflarePages/Advanced/PagesFunctions/WranglerAndLocalDev'));
+const FunctionsBasics = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/DeploymentPlatforms/FrontEnd/CloudflarePages/Advanced/PagesFunctions/FunctionsBasics'));
+const WranglerAndLocalDev = lazy(() => import('@/pages/mainTabs/CloudAndDeployment/CloudServices/DeploymentPlatforms/FrontEnd/CloudflarePages/Advanced/PagesFunctions/WranglerAndLocalDev'));
 
 const PagesFunctions: RouteObject[] = [
   {

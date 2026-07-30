@@ -1,10 +1,10 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const IntroToJSONAndJSONB = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/PostgreSQL/Advanced/JSONJSONB/IntroToJSONAndJSONB'));
-const StoringAndQuerying = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/PostgreSQL/Advanced/JSONJSONB/StoringAndQuerying'));
-const PerformanceConsiderations = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/PostgreSQL/Advanced/JSONJSONB/PerformanceConsiderations'));
-const IndexingJSONFields = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/PostgreSQL/Advanced/JSONJSONB/IndexingJSONFields'));
+const IntroToJSONAndJSONB = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/PostgreSQL/Advanced/JSONJSONB/IntroToJSONAndJSONB'));
+const StoringAndQuerying = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/PostgreSQL/Advanced/JSONJSONB/StoringAndQuerying'));
+const PerformanceConsiderations = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/PostgreSQL/Advanced/JSONJSONB/PerformanceConsiderations'));
+const IndexingJSONFields = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/PostgreSQL/Advanced/JSONJSONB/IndexingJSONFields'));
 
 const JSONJSONB: RouteObject[] = [
   {

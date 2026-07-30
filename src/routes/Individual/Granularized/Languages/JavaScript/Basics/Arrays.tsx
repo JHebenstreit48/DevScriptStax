@@ -1,9 +1,9 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Introduction = lazy(() => import('@/Pages/MainTabs/Languages/JavaScript/Basics/Arrays/Introduction'));
-const Methods = lazy(() => import('@/Pages/MainTabs/Languages/JavaScript/Basics/Arrays/Methods'));
-const AdvancedTechniques = lazy(() => import('@/Pages/MainTabs/Languages/JavaScript/Basics/Arrays/AdvancedTechniques'));
+const Introduction = lazy(() => import('@/pages/mainTabs/Languages/JavaScript/Basics/Arrays/Introduction'));
+const Methods = lazy(() => import('@/pages/mainTabs/Languages/JavaScript/Basics/Arrays/Methods'));
+const AdvancedTechniques = lazy(() => import('@/pages/mainTabs/Languages/JavaScript/Basics/Arrays/AdvancedTechniques'));
 
 const Arrays: RouteObject[] = [
   {

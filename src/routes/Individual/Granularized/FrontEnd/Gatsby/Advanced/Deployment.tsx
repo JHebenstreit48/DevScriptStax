@@ -1,9 +1,9 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const HostingOptions = lazy(() => import('@/Pages/MainTabs/FrontEnd/Gatsby/Advanced/Deployment/HostingOptions'));
-const BuildAndDeploy = lazy(() => import('@/Pages/MainTabs/FrontEnd/Gatsby/Advanced/Deployment/BuildAndDeploy'));
-const PreviewAndEnvVars = lazy(() => import('@/Pages/MainTabs/FrontEnd/Gatsby/Advanced/Deployment/PreviewAndEnvVars'));
+const HostingOptions = lazy(() => import('@/pages/mainTabs/FrontEnd/Gatsby/Advanced/Deployment/HostingOptions'));
+const BuildAndDeploy = lazy(() => import('@/pages/mainTabs/FrontEnd/Gatsby/Advanced/Deployment/BuildAndDeploy'));
+const PreviewAndEnvVars = lazy(() => import('@/pages/mainTabs/FrontEnd/Gatsby/Advanced/Deployment/PreviewAndEnvVars'));
 
 const Deployment: RouteObject[] = [
   {

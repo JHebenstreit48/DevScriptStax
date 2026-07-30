@@ -1,10 +1,10 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const UnderstandingEndpoints = lazy(() => import('@/Pages/MainTabs/BackEnd/APIs/REST/EndpointsAndResources/UnderstandingEndpoints'));
-const URLStructureAndParameters = lazy(() => import('@/Pages/MainTabs/BackEnd/APIs/REST/EndpointsAndResources/URLStructureAndParameters'));
-const QueryVsPathParameters = lazy(() => import('@/Pages/MainTabs/BackEnd/APIs/REST/EndpointsAndResources/QueryVsPathParameters'));
-const Pagination = lazy(() => import('@/Pages/MainTabs/BackEnd/APIs/REST/EndpointsAndResources/Pagination'));
+const UnderstandingEndpoints = lazy(() => import('@/pages/mainTabs/BackEnd/APIs/REST/EndpointsAndResources/UnderstandingEndpoints'));
+const URLStructureAndParameters = lazy(() => import('@/pages/mainTabs/BackEnd/APIs/REST/EndpointsAndResources/URLStructureAndParameters'));
+const QueryVsPathParameters = lazy(() => import('@/pages/mainTabs/BackEnd/APIs/REST/EndpointsAndResources/QueryVsPathParameters'));
+const Pagination = lazy(() => import('@/pages/mainTabs/BackEnd/APIs/REST/EndpointsAndResources/Pagination'));
 
 const EndpointsAndResources: RouteObject[] = [
   {

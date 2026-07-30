@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const TypeScriptConfig = lazy(() => import('@/Pages/MainTabs/Tools/CodeQuality/ESLint/Basics/Frameworks/TypeScriptConfig'));
-const ReactConfig = lazy(() => import('@/Pages/MainTabs/Tools/CodeQuality/ESLint/Basics/Frameworks/ReactConfig'));
+const TypeScriptConfig = lazy(() => import('@/pages/mainTabs/Tools/CodeQuality/ESLint/Basics/Frameworks/TypeScriptConfig'));
+const ReactConfig = lazy(() => import('@/pages/mainTabs/Tools/CodeQuality/ESLint/Basics/Frameworks/ReactConfig'));
 
 const Frameworks: RouteObject[] = [
   {

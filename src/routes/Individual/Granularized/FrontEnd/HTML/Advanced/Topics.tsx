@@ -1,13 +1,13 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Features = lazy(() => import('@/Pages/MainTabs/FrontEnd/HTML/Advanced/Topics/Features'));
-const WebAccessibility = lazy(() => import('@/Pages/MainTabs/FrontEnd/HTML/Advanced/Topics/WebAccessibility'));
-const SEOBestPractices = lazy(() => import('@/Pages/MainTabs/FrontEnd/HTML/Advanced/Topics/SEO'));
-const TemplatesAndSlots = lazy(() => import('@/Pages/MainTabs/FrontEnd/HTML/Advanced/Topics/TemplatesAndSlots'));
-const ResourceHintsAndPreloading = lazy(() => import('@/Pages/MainTabs/FrontEnd/HTML/Advanced/Topics/ResourceHintsAndPreloading'));
-const SecurityAndLinking = lazy(() => import('@/Pages/MainTabs/FrontEnd/HTML/Advanced/Topics/SecurityAndLink'));
-const SocialMetadata = lazy(() => import('@/Pages/MainTabs/FrontEnd/HTML/Advanced/Topics/SocialMetadata'));
+const Features = lazy(() => import('@/pages/mainTabs/FrontEnd/HTML/Advanced/Topics/Features'));
+const WebAccessibility = lazy(() => import('@/pages/mainTabs/FrontEnd/HTML/Advanced/Topics/WebAccessibility'));
+const SEOBestPractices = lazy(() => import('@/pages/mainTabs/FrontEnd/HTML/Advanced/Topics/SEO'));
+const TemplatesAndSlots = lazy(() => import('@/pages/mainTabs/FrontEnd/HTML/Advanced/Topics/TemplatesAndSlots'));
+const ResourceHintsAndPreloading = lazy(() => import('@/pages/mainTabs/FrontEnd/HTML/Advanced/Topics/ResourceHintsAndPreloading'));
+const SecurityAndLinking = lazy(() => import('@/pages/mainTabs/FrontEnd/HTML/Advanced/Topics/SecurityAndLink'));
+const SocialMetadata = lazy(() => import('@/pages/mainTabs/FrontEnd/HTML/Advanced/Topics/SocialMetadata'));
 
 const Topics: RouteObject[] = [
   {

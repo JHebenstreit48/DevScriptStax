@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const CompressionAndETag = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/KoaJs/Advanced/Performance/CompressionAndETag'));
-const StaticCacheControl = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/KoaJs/Advanced/Performance/StaticCacheControl'));
+const CompressionAndETag = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/KoaJs/Advanced/Performance/CompressionAndETag'));
+const StaticCacheControl = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/KoaJs/Advanced/Performance/StaticCacheControl'));
 
 const Performance: RouteObject[] = [
   {

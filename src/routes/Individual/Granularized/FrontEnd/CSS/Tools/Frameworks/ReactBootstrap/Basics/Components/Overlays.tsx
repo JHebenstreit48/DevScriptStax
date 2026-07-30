@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const ModalAndTooltip = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Frameworks/ReactBootstrap/Basics/Components/Overlays/ModalAndTooltip'));
-const PopoverAndOverlayTrigger = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Frameworks/ReactBootstrap/Basics/Components/Overlays/PopoverAndOverlayTrigger'));
+const ModalAndTooltip = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Tools/Frameworks/ReactBootstrap/Basics/Components/Overlays/ModalAndTooltip'));
+const PopoverAndOverlayTrigger = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Tools/Frameworks/ReactBootstrap/Basics/Components/Overlays/PopoverAndOverlayTrigger'));
 
 const Overlays: RouteObject[] = [
   {

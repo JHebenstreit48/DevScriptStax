@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const InstallAndInit = lazy(() => import('@/Pages/MainTabs/Tools/PackageAndBundling/PackageManagement/Pnpm/Basics/Setup/InstallAndInit'));
-const ConfigAndStore = lazy(() => import('@/Pages/MainTabs/Tools/PackageAndBundling/PackageManagement/Pnpm/Basics/Setup/ConfigAndStore'));
+const InstallAndInit = lazy(() => import('@/pages/mainTabs/Tools/PackageAndBundling/PackageManagement/Pnpm/Basics/Setup/InstallAndInit'));
+const ConfigAndStore = lazy(() => import('@/pages/mainTabs/Tools/PackageAndBundling/PackageManagement/Pnpm/Basics/Setup/ConfigAndStore'));
 
 const Setup: RouteObject[] = [
   {

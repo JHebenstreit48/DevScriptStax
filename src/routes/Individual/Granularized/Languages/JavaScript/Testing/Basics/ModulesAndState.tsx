@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const ESMCommonJSMocking = lazy(() => import('@/Pages/MainTabs/Languages/JavaScript/Testing/Basics/ModulesAndState/ESMCommonJSMocking'));
-const GlobalStateIsolation = lazy(() => import('@/Pages/MainTabs/Languages/JavaScript/Testing/Basics/ModulesAndState/GlobalStateIsolation'));
+const ESMCommonJSMocking = lazy(() => import('@/pages/mainTabs/Languages/JavaScript/Testing/Basics/ModulesAndState/ESMCommonJSMocking'));
+const GlobalStateIsolation = lazy(() => import('@/pages/mainTabs/Languages/JavaScript/Testing/Basics/ModulesAndState/GlobalStateIsolation'));
 
 const ModulesAndState: RouteObject[] = [
   {

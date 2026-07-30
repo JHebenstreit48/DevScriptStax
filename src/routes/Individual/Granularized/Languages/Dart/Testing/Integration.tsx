@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const HTTPMocking = lazy(() => import('@/Pages/MainTabs/Languages/Dart/Testing/Integration/HTTPMocking'));
-const FileIO = lazy(() => import('@/Pages/MainTabs/Languages/Dart/Testing/Integration/FileIO'));
+const HTTPMocking = lazy(() => import('@/pages/mainTabs/Languages/Dart/Testing/Integration/HTTPMocking'));
+const FileIO = lazy(() => import('@/pages/mainTabs/Languages/Dart/Testing/Integration/FileIO'));
 
 const Integration: RouteObject[] = [
   {

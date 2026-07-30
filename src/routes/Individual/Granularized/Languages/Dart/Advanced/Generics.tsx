@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const TypeParams = lazy(() => import('@/Pages/MainTabs/Languages/Dart/Advanced/Generics/TypeParams'));
-const Typedefs = lazy(() => import('@/Pages/MainTabs/Languages/Dart/Advanced/Generics/Typedefs'));
+const TypeParams = lazy(() => import('@/pages/mainTabs/Languages/Dart/Advanced/Generics/TypeParams'));
+const Typedefs = lazy(() => import('@/pages/mainTabs/Languages/Dart/Advanced/Generics/Typedefs'));
 
 const Generics: RouteObject[] = [
   {

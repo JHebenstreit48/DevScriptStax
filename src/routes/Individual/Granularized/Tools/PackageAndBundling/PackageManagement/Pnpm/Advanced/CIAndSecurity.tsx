@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const CIIntegration = lazy(() => import('@/Pages/MainTabs/Tools/PackageAndBundling/PackageManagement/Pnpm/Advanced/CIAndSecurity/CIIntegration'));
-const LockfileAndAudit = lazy(() => import('@/Pages/MainTabs/Tools/PackageAndBundling/PackageManagement/Pnpm/Advanced/CIAndSecurity/LockfileAndAudit'));
+const CIIntegration = lazy(() => import('@/pages/mainTabs/Tools/PackageAndBundling/PackageManagement/Pnpm/Advanced/CIAndSecurity/CIIntegration'));
+const LockfileAndAudit = lazy(() => import('@/pages/mainTabs/Tools/PackageAndBundling/PackageManagement/Pnpm/Advanced/CIAndSecurity/LockfileAndAudit'));
 
 const CIAndSecurity: RouteObject[] = [
   {

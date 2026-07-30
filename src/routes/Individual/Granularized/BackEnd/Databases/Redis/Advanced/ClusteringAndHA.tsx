@@ -1,9 +1,9 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Replication = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/Redis/Advanced/ClusteringAndHA/Replication'));
-const Sentinel = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/Redis/Advanced/ClusteringAndHA/Sentinel'));
-const RedisClusterAndSharding = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/Redis/Advanced/ClusteringAndHA/RedisClusterAndSharding'));
+const Replication = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/Redis/Advanced/ClusteringAndHA/Replication'));
+const Sentinel = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/Redis/Advanced/ClusteringAndHA/Sentinel'));
+const RedisClusterAndSharding = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/Redis/Advanced/ClusteringAndHA/RedisClusterAndSharding'));
 
 const ClusteringAndHA: RouteObject[] = [
   {

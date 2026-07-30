@@ -1,10 +1,10 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Introduction = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Preprocessors/Less/Fundamentals/Introduction'));
-const SyntaxAndBasics = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Preprocessors/Less/Fundamentals/SyntaxAndBasics'));
-const VariablesAndNesting = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Preprocessors/Less/Fundamentals/VariablesAndNesting'));
-const MixinsAndFunctions = lazy(() => import('@/Pages/MainTabs/FrontEnd/CSS/Tools/Preprocessors/Less/Fundamentals/MixinsAndFunctions'));
+const Introduction = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Tools/Preprocessors/Less/Fundamentals/Introduction'));
+const SyntaxAndBasics = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Tools/Preprocessors/Less/Fundamentals/SyntaxAndBasics'));
+const VariablesAndNesting = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Tools/Preprocessors/Less/Fundamentals/VariablesAndNesting'));
+const MixinsAndFunctions = lazy(() => import('@/pages/mainTabs/FrontEnd/CSS/Tools/Preprocessors/Less/Fundamentals/MixinsAndFunctions'));
 
 const Fundamentals: RouteObject[] = [
   {

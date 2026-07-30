@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const CLIAndConfig = lazy(() => import('@/Pages/MainTabs/Testing/End2End/Playwright/Basics/Running/CLIAndConfig'));
-const UIModeAndHeadless = lazy(() => import('@/Pages/MainTabs/Testing/End2End/Playwright/Basics/Running/UIModeAndHeadless'));
+const CLIAndConfig = lazy(() => import('@/pages/mainTabs/Testing/End2End/Playwright/Basics/Running/CLIAndConfig'));
+const UIModeAndHeadless = lazy(() => import('@/pages/mainTabs/Testing/End2End/Playwright/Basics/Running/UIModeAndHeadless'));
 
 const Running: RouteObject[] = [
   {

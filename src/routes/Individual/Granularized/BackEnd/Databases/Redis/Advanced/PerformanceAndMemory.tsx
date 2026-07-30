@@ -1,9 +1,9 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const MemoryOptimization = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/Redis/Advanced/PerformanceAndMemory/MemoryOptimization'));
-const EvictionPolicies = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/Redis/Advanced/PerformanceAndMemory/EvictionPolicies'));
-const LatencyAndPipelining = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/Redis/Advanced/PerformanceAndMemory/LatencyAndPipelining'));
+const MemoryOptimization = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/Redis/Advanced/PerformanceAndMemory/MemoryOptimization'));
+const EvictionPolicies = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/Redis/Advanced/PerformanceAndMemory/EvictionPolicies'));
+const LatencyAndPipelining = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/Redis/Advanced/PerformanceAndMemory/LatencyAndPipelining'));
 
 const PerformanceAndMemory: RouteObject[] = [
   {

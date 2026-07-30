@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const ConfigFormats = lazy(() => import('@/Pages/MainTabs/Tools/CodeQuality/ESLint/Basics/ConfigBasics/ConfigFormats'));
-const UnderstandingRules = lazy(() => import('@/Pages/MainTabs/Tools/CodeQuality/ESLint/Basics/ConfigBasics/UnderstandingRules'));
+const ConfigFormats = lazy(() => import('@/pages/mainTabs/Tools/CodeQuality/ESLint/Basics/ConfigBasics/ConfigFormats'));
+const UnderstandingRules = lazy(() => import('@/pages/mainTabs/Tools/CodeQuality/ESLint/Basics/ConfigBasics/UnderstandingRules'));
 
 const ConfigBasics: RouteObject[] = [
   {

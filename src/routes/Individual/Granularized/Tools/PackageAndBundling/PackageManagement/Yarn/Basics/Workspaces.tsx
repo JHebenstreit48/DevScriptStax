@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const IntroToWorkspaces = lazy(() => import('@/Pages/MainTabs/Tools/PackageAndBundling/PackageManagement/Yarn/Basics/Workspaces/IntroToWorkspaces'));
-const MonorepoSetup = lazy(() => import('@/Pages/MainTabs/Tools/PackageAndBundling/PackageManagement/Yarn/Basics/Workspaces/MonorepoSetup'));
+const IntroToWorkspaces = lazy(() => import('@/pages/mainTabs/Tools/PackageAndBundling/PackageManagement/Yarn/Basics/Workspaces/IntroToWorkspaces'));
+const MonorepoSetup = lazy(() => import('@/pages/mainTabs/Tools/PackageAndBundling/PackageManagement/Yarn/Basics/Workspaces/MonorepoSetup'));
 
 const Workspaces: RouteObject[] = [
   {

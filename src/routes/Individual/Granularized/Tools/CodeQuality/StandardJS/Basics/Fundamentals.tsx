@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Introduction = lazy(() => import('@/Pages/MainTabs/Tools/CodeQuality/StandardJS/Basics/Fundamentals/Introduction'));
-const RulesAndPhilosophy = lazy(() => import('@/Pages/MainTabs/Tools/CodeQuality/StandardJS/Basics/Fundamentals/RulesAndPhilosophy'));
+const Introduction = lazy(() => import('@/pages/mainTabs/Tools/CodeQuality/StandardJS/Basics/Fundamentals/Introduction'));
+const RulesAndPhilosophy = lazy(() => import('@/pages/mainTabs/Tools/CodeQuality/StandardJS/Basics/Fundamentals/RulesAndPhilosophy'));
 
 const Fundamentals: RouteObject[] = [
   {

@@ -1,9 +1,9 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const TestHooks = lazy(() => import('@/Pages/MainTabs/Testing/End2End/Cypress/Intermediate/OrganizingTests/TestHooks'));
-const TestSuitesAndStructure = lazy(() => import('@/Pages/MainTabs/Testing/End2End/Cypress/Intermediate/OrganizingTests/TestSuitesAndStructure'));
-const UsingTagsAndFilters = lazy(() => import('@/Pages/MainTabs/Testing/End2End/Cypress/Intermediate/OrganizingTests/UsingTagsAndFilters'));
+const TestHooks = lazy(() => import('@/pages/mainTabs/Testing/End2End/Cypress/Intermediate/OrganizingTests/TestHooks'));
+const TestSuitesAndStructure = lazy(() => import('@/pages/mainTabs/Testing/End2End/Cypress/Intermediate/OrganizingTests/TestSuitesAndStructure'));
+const UsingTagsAndFilters = lazy(() => import('@/pages/mainTabs/Testing/End2End/Cypress/Intermediate/OrganizingTests/UsingTagsAndFilters'));
 
 const OrganizingTests: RouteObject[] = [
   {

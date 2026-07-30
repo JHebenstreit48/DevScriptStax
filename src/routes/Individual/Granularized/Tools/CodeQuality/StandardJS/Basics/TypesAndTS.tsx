@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const TsStandard = lazy(() => import('@/Pages/MainTabs/Tools/CodeQuality/StandardJS/Basics/TypesAndTS/TsStandard'));
-const TypeScriptProjects = lazy(() => import('@/Pages/MainTabs/Tools/CodeQuality/StandardJS/Basics/TypesAndTS/TypeScriptProjects'));
+const TsStandard = lazy(() => import('@/pages/mainTabs/Tools/CodeQuality/StandardJS/Basics/TypesAndTS/TsStandard'));
+const TypeScriptProjects = lazy(() => import('@/pages/mainTabs/Tools/CodeQuality/StandardJS/Basics/TypesAndTS/TypeScriptProjects'));
 
 const TypesAndTS: RouteObject[] = [
   {

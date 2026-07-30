@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const SecurityConsiderations = lazy(() => import('@/Pages/MainTabs/Tools/CodeQuality/Prettier/Advanced/SecurityAndPolicy/SecurityConsiderations'));
-const OrgStandards = lazy(() => import('@/Pages/MainTabs/Tools/CodeQuality/Prettier/Advanced/SecurityAndPolicy/OrgStandards'));
+const SecurityConsiderations = lazy(() => import('@/pages/mainTabs/Tools/CodeQuality/Prettier/Advanced/SecurityAndPolicy/SecurityConsiderations'));
+const OrgStandards = lazy(() => import('@/pages/mainTabs/Tools/CodeQuality/Prettier/Advanced/SecurityAndPolicy/OrgStandards'));
 
 const SecurityAndPolicy: RouteObject[] = [
   {

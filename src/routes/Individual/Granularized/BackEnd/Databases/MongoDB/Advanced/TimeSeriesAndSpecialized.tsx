@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const TimeSeriesCollections = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/MongoDB/Advanced/TimeSeriesAndSpecialized/TimeSeriesCollections'));
-const CappedCollectionsAndTailableCursors = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/MongoDB/Advanced/TimeSeriesAndSpecialized/CappedCollectionsAndTailableCursors'));
+const TimeSeriesCollections = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/MongoDB/Advanced/TimeSeriesAndSpecialized/TimeSeriesCollections'));
+const CappedCollectionsAndTailableCursors = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/MongoDB/Advanced/TimeSeriesAndSpecialized/CappedCollectionsAndTailableCursors'));
 
 const TimeSeriesAndSpecialized: RouteObject[] = [
   {

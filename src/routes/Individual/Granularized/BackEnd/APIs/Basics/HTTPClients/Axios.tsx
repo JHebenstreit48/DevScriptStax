@@ -1,11 +1,11 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Introduction = lazy(() => import('@/Pages/MainTabs/BackEnd/APIs/Basics/HTTPClients/Axios/Introduction'));
-const HTTPMethods = lazy(() => import('@/Pages/MainTabs/BackEnd/APIs/Basics/HTTPClients/Axios/HTTPMethods'));
-const ErrorHandling = lazy(() => import('@/Pages/MainTabs/BackEnd/APIs/Basics/HTTPClients/Axios/ErrorHandling'));
-const Interceptors = lazy(() => import('@/Pages/MainTabs/BackEnd/APIs/Basics/HTTPClients/Axios/Interceptors'));
-const Configuration = lazy(() => import('@/Pages/MainTabs/BackEnd/APIs/Basics/HTTPClients/Axios/Configuration'));
+const Introduction = lazy(() => import('@/pages/mainTabs/BackEnd/APIs/Basics/HTTPClients/Axios/Introduction'));
+const HTTPMethods = lazy(() => import('@/pages/mainTabs/BackEnd/APIs/Basics/HTTPClients/Axios/HTTPMethods'));
+const ErrorHandling = lazy(() => import('@/pages/mainTabs/BackEnd/APIs/Basics/HTTPClients/Axios/ErrorHandling'));
+const Interceptors = lazy(() => import('@/pages/mainTabs/BackEnd/APIs/Basics/HTTPClients/Axios/Interceptors'));
+const Configuration = lazy(() => import('@/pages/mainTabs/BackEnd/APIs/Basics/HTTPClients/Axios/Configuration'));
 
 const Axios: RouteObject[] = [
   {

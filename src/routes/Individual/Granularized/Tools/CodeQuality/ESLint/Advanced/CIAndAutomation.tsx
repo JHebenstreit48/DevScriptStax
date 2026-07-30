@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const CICDPipelines = lazy(() => import('@/Pages/MainTabs/Tools/CodeQuality/ESLint/Advanced/CIAndAutomation/CICDPipelines'));
-const Monorepos = lazy(() => import('@/Pages/MainTabs/Tools/CodeQuality/ESLint/Advanced/CIAndAutomation/Monorepos'));
+const CICDPipelines = lazy(() => import('@/pages/mainTabs/Tools/CodeQuality/ESLint/Advanced/CIAndAutomation/CICDPipelines'));
+const Monorepos = lazy(() => import('@/pages/mainTabs/Tools/CodeQuality/ESLint/Advanced/CIAndAutomation/Monorepos'));
 
 const CIAndAutomation: RouteObject[] = [
   {

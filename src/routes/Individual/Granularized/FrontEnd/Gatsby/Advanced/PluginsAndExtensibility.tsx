@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const CustomPlugins = lazy(() => import('@/Pages/MainTabs/FrontEnd/Gatsby/Advanced/PluginsAndExtensibility/CustomPlugins'));
-const NodeAPIs = lazy(() => import('@/Pages/MainTabs/FrontEnd/Gatsby/Advanced/PluginsAndExtensibility/NodeAPIs'));
+const CustomPlugins = lazy(() => import('@/pages/mainTabs/FrontEnd/Gatsby/Advanced/PluginsAndExtensibility/CustomPlugins'));
+const NodeAPIs = lazy(() => import('@/pages/mainTabs/FrontEnd/Gatsby/Advanced/PluginsAndExtensibility/NodeAPIs'));
 
 const PluginsAndExtensibility: RouteObject[] = [
   {

@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const CoreRules = lazy(() => import('@/Pages/MainTabs/Tools/CodeQuality/TSLint/Basics/Rules/CoreRules'));
-const SeverityAndOptions = lazy(() => import('@/Pages/MainTabs/Tools/CodeQuality/TSLint/Basics/Rules/SeverityAndOptions'));
+const CoreRules = lazy(() => import('@/pages/mainTabs/Tools/CodeQuality/TSLint/Basics/Rules/CoreRules'));
+const SeverityAndOptions = lazy(() => import('@/pages/mainTabs/Tools/CodeQuality/TSLint/Basics/Rules/SeverityAndOptions'));
 
 const Rules: RouteObject[] = [
   {

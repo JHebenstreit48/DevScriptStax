@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const AssetPipelineImportmap = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/RubyOnRails/Basics/AssetsAndConfig/AssetPipelineImportmap'));
-const Environments = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/RubyOnRails/Basics/AssetsAndConfig/Environments'));
+const AssetPipelineImportmap = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/RubyOnRails/Basics/AssetsAndConfig/AssetPipelineImportmap'));
+const Environments = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/RubyOnRails/Basics/AssetsAndConfig/Environments'));
 
 const AssetsAndConfig: RouteObject[] = [
   {

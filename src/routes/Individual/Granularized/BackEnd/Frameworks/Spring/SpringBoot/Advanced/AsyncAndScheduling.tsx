@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const AsyncAndExecutors = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Spring/SpringBoot/Advanced/AsyncAndScheduling/AsyncAndExecutors'));
-const Scheduling = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/Spring/SpringBoot/Advanced/AsyncAndScheduling/Scheduling'));
+const AsyncAndExecutors = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/Spring/SpringBoot/Advanced/AsyncAndScheduling/AsyncAndExecutors'));
+const Scheduling = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/Spring/SpringBoot/Advanced/AsyncAndScheduling/Scheduling'));
 
 const AsyncAndScheduling: RouteObject[] = [
   {

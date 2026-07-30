@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const OptimizingRepositories = lazy(() => import('@/Pages/MainTabs/Tools/Containerization/Git/Advanced/PerformanceAndSecurity/OptimizingRepositories'));
-const SecurityBestPractices = lazy(() => import('@/Pages/MainTabs/Tools/Containerization/Git/Advanced/PerformanceAndSecurity/SecurityBestPractices'));
+const OptimizingRepositories = lazy(() => import('@/pages/mainTabs/Tools/Containerization/Git/Advanced/PerformanceAndSecurity/OptimizingRepositories'));
+const SecurityBestPractices = lazy(() => import('@/pages/mainTabs/Tools/Containerization/Git/Advanced/PerformanceAndSecurity/SecurityBestPractices'));
 
 const PerformanceAndSecurity: RouteObject[] = [
   {

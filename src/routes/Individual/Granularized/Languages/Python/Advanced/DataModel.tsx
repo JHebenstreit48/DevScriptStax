@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const DunderMethods = lazy(() => import('@/Pages/MainTabs/Languages/Python/Advanced/DataModel/DunderMethods'));
-const IteratorsAndGenerators = lazy(() => import('@/Pages/MainTabs/Languages/Python/Advanced/DataModel/IteratorsAndGenerators'));
+const DunderMethods = lazy(() => import('@/pages/mainTabs/Languages/Python/Advanced/DataModel/DunderMethods'));
+const IteratorsAndGenerators = lazy(() => import('@/pages/mainTabs/Languages/Python/Advanced/DataModel/IteratorsAndGenerators'));
 
 const DataModel: RouteObject[] = [
   {

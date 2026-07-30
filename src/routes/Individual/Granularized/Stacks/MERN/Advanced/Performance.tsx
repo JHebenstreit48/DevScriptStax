@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const ClientCachingPatterns = lazy(() => import('@/Pages/MainTabs/Stacks/MERN/Advanced/Performance/ClientCachingPatterns'));
-const APIPaginationAndFilters = lazy(() => import('@/Pages/MainTabs/Stacks/MERN/Advanced/Performance/APIPaginationAndFilters'));
+const ClientCachingPatterns = lazy(() => import('@/pages/mainTabs/Stacks/MERN/Advanced/Performance/ClientCachingPatterns'));
+const APIPaginationAndFilters = lazy(() => import('@/pages/mainTabs/Stacks/MERN/Advanced/Performance/APIPaginationAndFilters'));
 
 const Performance: RouteObject[] = [
   {

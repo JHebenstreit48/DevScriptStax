@@ -1,10 +1,10 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const CompositionAPI = lazy(() => import('@/Pages/MainTabs/FrontEnd/Vue/Advanced/FrameworkFeatures/CompositionAPI'));
-const Mixins = lazy(() => import('@/Pages/MainTabs/FrontEnd/Vue/Advanced/FrameworkFeatures/Mixins'));
-const Transitions = lazy(() => import('@/Pages/MainTabs/FrontEnd/Vue/Advanced/FrameworkFeatures/Transitions'));
-const ServerSideRendering = lazy(() => import('@/Pages/MainTabs/FrontEnd/Vue/Advanced/FrameworkFeatures/ServerSideRendering'));
+const CompositionAPI = lazy(() => import('@/pages/mainTabs/FrontEnd/Vue/Advanced/FrameworkFeatures/CompositionAPI'));
+const Mixins = lazy(() => import('@/pages/mainTabs/FrontEnd/Vue/Advanced/FrameworkFeatures/Mixins'));
+const Transitions = lazy(() => import('@/pages/mainTabs/FrontEnd/Vue/Advanced/FrameworkFeatures/Transitions'));
+const ServerSideRendering = lazy(() => import('@/pages/mainTabs/FrontEnd/Vue/Advanced/FrameworkFeatures/ServerSideRendering'));
 
 const FrameworkFeatures: RouteObject[] = [
   {

@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const WithPrettier = lazy(() => import('@/Pages/MainTabs/Tools/CodeQuality/StandardJS/Advanced/Interoperability/WithPrettier'));
-const WithESLint = lazy(() => import('@/Pages/MainTabs/Tools/CodeQuality/StandardJS/Advanced/Interoperability/WithESLint'));
+const WithPrettier = lazy(() => import('@/pages/mainTabs/Tools/CodeQuality/StandardJS/Advanced/Interoperability/WithPrettier'));
+const WithESLint = lazy(() => import('@/pages/mainTabs/Tools/CodeQuality/StandardJS/Advanced/Interoperability/WithESLint'));
 
 const Interoperability: RouteObject[] = [
   {

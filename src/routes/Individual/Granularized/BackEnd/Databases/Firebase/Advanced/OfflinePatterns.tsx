@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const SDKOfflineAndCaching = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/Firebase/Advanced/OfflinePatterns/SDKOfflineAndCaching'));
-const SyncAndConflictResolution = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/Firebase/Advanced/OfflinePatterns/SyncAndConflictResolution'));
+const SDKOfflineAndCaching = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/Firebase/Advanced/OfflinePatterns/SDKOfflineAndCaching'));
+const SyncAndConflictResolution = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/Firebase/Advanced/OfflinePatterns/SyncAndConflictResolution'));
 
 const OfflinePatterns: RouteObject[] = [
   {

@@ -1,9 +1,9 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const UsersAndACLs = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/Redis/Advanced/SecurityAndOps/UsersAndACLs'));
-const TLSAndAuth = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/Redis/Advanced/SecurityAndOps/TLSAndAuth'));
-const BackupAndRestore = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/Redis/Advanced/SecurityAndOps/BackupAndRestore'));
+const UsersAndACLs = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/Redis/Advanced/SecurityAndOps/UsersAndACLs'));
+const TLSAndAuth = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/Redis/Advanced/SecurityAndOps/TLSAndAuth'));
+const BackupAndRestore = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/Redis/Advanced/SecurityAndOps/BackupAndRestore'));
 
 const SecurityAndOps: RouteObject[] = [
   {

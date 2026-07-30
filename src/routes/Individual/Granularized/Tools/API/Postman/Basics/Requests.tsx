@@ -1,9 +1,9 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const BuildRequests = lazy(() => import('@/Pages/MainTabs/Tools/API/Postman/Basics/Requests/BuildRequests'));
-const ParamsAndHeaders = lazy(() => import('@/Pages/MainTabs/Tools/API/Postman/Basics/Requests/ParamsAndHeaders'));
-const BodiesAndFiles = lazy(() => import('@/Pages/MainTabs/Tools/API/Postman/Basics/Requests/BodiesAndFiles'));
+const BuildRequests = lazy(() => import('@/pages/mainTabs/Tools/API/Postman/Basics/Requests/BuildRequests'));
+const ParamsAndHeaders = lazy(() => import('@/pages/mainTabs/Tools/API/Postman/Basics/Requests/ParamsAndHeaders'));
+const BodiesAndFiles = lazy(() => import('@/pages/mainTabs/Tools/API/Postman/Basics/Requests/BodiesAndFiles'));
 
 const Requests: RouteObject[] = [
   {

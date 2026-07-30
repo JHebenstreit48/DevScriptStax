@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const CustomRules = lazy(() => import('@/Pages/MainTabs/Tools/CodeQuality/TSLint/Advanced/Customization/CustomRules'));
-const RuleSetsAndExtends = lazy(() => import('@/Pages/MainTabs/Tools/CodeQuality/TSLint/Advanced/Customization/RuleSetsAndExtends'));
+const CustomRules = lazy(() => import('@/pages/mainTabs/Tools/CodeQuality/TSLint/Advanced/Customization/CustomRules'));
+const RuleSetsAndExtends = lazy(() => import('@/pages/mainTabs/Tools/CodeQuality/TSLint/Advanced/Customization/RuleSetsAndExtends'));
 
 const Customization: RouteObject[] = [
   {

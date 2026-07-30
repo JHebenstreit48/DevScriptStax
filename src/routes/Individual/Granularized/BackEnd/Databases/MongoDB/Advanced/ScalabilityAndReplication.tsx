@@ -1,10 +1,10 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const ReplicaSets = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/MongoDB/Advanced/ScalabilityAndReplication/ReplicaSets'));
-const Sharding = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/MongoDB/Advanced/ScalabilityAndReplication/Sharding'));
-const HighAvailability = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/MongoDB/Advanced/ScalabilityAndReplication/HighAvailability'));
-const ScalingBestPractices = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/MongoDB/Advanced/ScalabilityAndReplication/ScalingBestPractices'));
+const ReplicaSets = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/MongoDB/Advanced/ScalabilityAndReplication/ReplicaSets'));
+const Sharding = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/MongoDB/Advanced/ScalabilityAndReplication/Sharding'));
+const HighAvailability = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/MongoDB/Advanced/ScalabilityAndReplication/HighAvailability'));
+const ScalingBestPractices = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/MongoDB/Advanced/ScalabilityAndReplication/ScalingBestPractices'));
 
 const ScalabilityAndReplication: RouteObject[] = [
   {

@@ -1,9 +1,9 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const InstallingPostgreSQL = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/PostgreSQL/Basics/SetupAndConfiguration/InstallingPostgreSQL'));
-const BasicConfiguration = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/PostgreSQL/Basics/SetupAndConfiguration/BasicConfiguration'));
-const StarterOptimization = lazy(() => import('@/Pages/MainTabs/BackEnd/Databases/PostgreSQL/Basics/SetupAndConfiguration/StarterOptimization'));
+const InstallingPostgreSQL = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/PostgreSQL/Basics/SetupAndConfiguration/InstallingPostgreSQL'));
+const BasicConfiguration = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/PostgreSQL/Basics/SetupAndConfiguration/BasicConfiguration'));
+const StarterOptimization = lazy(() => import('@/pages/mainTabs/BackEnd/Databases/PostgreSQL/Basics/SetupAndConfiguration/StarterOptimization'));
 
 const SetupAndConfiguration: RouteObject[] = [
   {

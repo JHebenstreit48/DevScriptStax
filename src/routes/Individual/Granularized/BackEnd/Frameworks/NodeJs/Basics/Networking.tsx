@@ -1,8 +1,8 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const HTTPServer = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/NodeJs/Basics/Networking/HTTPServer'));
-const HTTPClient = lazy(() => import('@/Pages/MainTabs/BackEnd/Frameworks/NodeJs/Basics/Networking/HTTPClient'));
+const HTTPServer = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/NodeJs/Basics/Networking/HTTPServer'));
+const HTTPClient = lazy(() => import('@/pages/mainTabs/BackEnd/Frameworks/NodeJs/Basics/Networking/HTTPClient'));
 
 const Networking: RouteObject[] = [
   {
