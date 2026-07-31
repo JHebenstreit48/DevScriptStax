@@ -15,11 +15,20 @@
     border-radius: 3px;
     padding: 0 0.15em;
     box-shadow: 0 0 8px $cyan-a40;
-    transition: background 0.3s ease, box-shadow 0.3s ease;
+    transition:
+      background 0.3s ease,
+      box-shadow 0.3s ease;
 
     @include phone-portrait {
       box-shadow: none;
     }
+  }
+
+  .emphasis mark.searchHighlight,
+  .secondEmphasis mark.searchHighlight,
+  .codeSnip mark.searchHighlight {
+    color: $cyan-glow !important;
+    background: $cyan-a40 !important;
   }
 }
 

@@ -10,8 +10,14 @@ function escapeRegExp(str: string): string {
   return str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
 
-function findAndWrapFirstMatch(root: HTMLElement, terms: string[]): HTMLElement | null {
-  const pattern = new RegExp(`(${terms.map(escapeRegExp).join("|")})`, "i");
+function buildMatchPattern(rawTerm: string, terms: string[]): RegExp {
+  const phrase = escapeRegExp(rawTerm.trim());
+  const alternatives = terms.map((t) => `(?<![a-z0-9])${escapeRegExp(t)}(?![a-z0-9])`);
+  return new RegExp(`(${phrase}|${alternatives.join("|")})`, "i");
+}
+
+function findAndWrapFirstMatch(root: HTMLElement, rawTerm: string, terms: string[]): HTMLElement | null {
+  const pattern = buildMatchPattern(rawTerm, terms);
 
   const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
     acceptNode: (node) =>
@@ -49,7 +55,7 @@ export function useHighlightOnArrival(containerRef: RefObject<HTMLElement>) {
 
     const tryHighlight = () => {
       if (cancelled || !containerRef.current) return;
-      markEl = findAndWrapFirstMatch(containerRef.current, terms);
+      markEl = findAndWrapFirstMatch(containerRef.current, highlightTerm, terms);
 
       if (markEl) {
         markEl.scrollIntoView({ block: "center", behavior: "smooth" });
