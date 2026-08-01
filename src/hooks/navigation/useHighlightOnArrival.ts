@@ -1,17 +1,22 @@
-import { useEffect, RefObject } from "react";
-import { useSearchParams } from "react-router-dom";
+import { useEffect, useRef, RefObject } from "react";
+import { useSearchParams, useLocation } from "react-router-dom";
 
 const HIGHLIGHT_PARAM = "highlight";
 const HIGHLIGHT_CLASS = "searchHighlight";
-const MAX_ATTEMPTS = 20;
-const ATTEMPT_INTERVAL = 150;
+const OBSERVER_TIMEOUT = 8000;
 
 function escapeRegExp(str: string): string {
   return str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
 
-function findAndWrapFirstMatch(root: HTMLElement, terms: string[]): HTMLElement | null {
-  const pattern = new RegExp(`(${terms.map(escapeRegExp).join("|")})`, "i");
+function buildMatchPattern(rawTerm: string, terms: string[]): RegExp {
+  const phrase = escapeRegExp(rawTerm.trim());
+  const alternatives = terms.map((t) => `(?<![a-z0-9])${escapeRegExp(t)}(?![a-z0-9])`);
+  return new RegExp(`(${phrase}|${alternatives.join("|")})`, "i");
+}
+
+function findAndWrapFirstMatch(root: HTMLElement, rawTerm: string, terms: string[]): HTMLElement | null {
+  const pattern = buildMatchPattern(rawTerm, terms);
 
   const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
     acceptNode: (node) =>
@@ -29,55 +34,114 @@ function findAndWrapFirstMatch(root: HTMLElement, terms: string[]): HTMLElement 
   range.setEnd(textNode, match.index + match[0].length);
 
   const mark = document.createElement("mark");
-  mark.className = HIGHLIGHT_CLASS;
   range.surroundContents(mark);
 
   return mark;
 }
 
+function unwrapMark(mark: HTMLElement) {
+  const parent = mark.parentNode;
+  if (!parent) return;
+
+  while (mark.firstChild) {
+    parent.insertBefore(mark.firstChild, mark);
+  }
+  parent.removeChild(mark);
+  parent.normalize();
+}
+
 export function useHighlightOnArrival(containerRef: RefObject<HTMLElement>) {
   const [searchParams, setSearchParams] = useSearchParams();
+  const location = useLocation();
   const highlightTerm = searchParams.get(HIGHLIGHT_PARAM);
+  const epochRef = useRef(0);
 
   useEffect(() => {
+    const myEpoch = ++epochRef.current;
+    const isCurrent = () => epochRef.current === myEpoch;
+
     if (!highlightTerm || !containerRef.current) return;
 
     const terms = highlightTerm.split(/\s+/).filter(Boolean);
-    let attempts = 0;
     let markEl: HTMLElement | null = null;
-    let cancelled = false;
+    let settled = false;
 
-    const tryHighlight = () => {
-      if (cancelled || !containerRef.current) return;
-      markEl = findAndWrapFirstMatch(containerRef.current, terms);
-
-      if (markEl) {
-        markEl.scrollIntoView({ block: "center", behavior: "smooth" });
-      } else if (attempts < MAX_ATTEMPTS) {
-        attempts += 1;
-        setTimeout(tryHighlight, ATTEMPT_INTERVAL);
-      }
+    const activateHighlight = (el: HTMLElement) => {
+      requestAnimationFrame(() => {
+        if (!isCurrent()) return;
+        requestAnimationFrame(() => {
+          if (!isCurrent()) return;
+          el.classList.add(HIGHLIGHT_CLASS);
+        });
+      });
     };
 
-    tryHighlight();
+    const attemptHighlight = (): boolean => {
+      if (!isCurrent() || settled || !containerRef.current || markEl) return false;
+
+      const found = findAndWrapFirstMatch(containerRef.current, highlightTerm, terms);
+      if (found) {
+        markEl = found;
+        settled = true;
+        markEl.scrollIntoView({ block: "center", behavior: "smooth" });
+        activateHighlight(markEl);
+        return true;
+      }
+      return false;
+    };
+
+    let cleanupObserver: (() => void) | undefined;
+
+    if (!attemptHighlight()) {
+      const observer = new MutationObserver(() => {
+        if (!isCurrent()) {
+          observer.disconnect();
+          return;
+        }
+        attemptHighlight();
+        if (settled) observer.disconnect();
+      });
+
+      observer.observe(containerRef.current, { childList: true, subtree: true, characterData: true });
+
+      const timeout = setTimeout(() => {
+        observer.disconnect();
+      }, OBSERVER_TIMEOUT);
+
+      cleanupObserver = () => {
+        observer.disconnect();
+        clearTimeout(timeout);
+      };
+    }
 
     const clearHighlight = (e: MouseEvent) => {
-      if (markEl && !markEl.contains(e.target as Node)) {
-        markEl.classList.remove(HIGHLIGHT_CLASS);
-        document.removeEventListener("click", clearHighlight);
+      if (!isCurrent() || !markEl || markEl.contains(e.target as Node)) return;
 
-        const next = new URLSearchParams(searchParams);
+      const target = e.target as HTMLElement;
+      if (target.closest("a")) return;
+
+      unwrapMark(markEl);
+      markEl = null;
+      document.removeEventListener("click", clearHighlight);
+
+      setSearchParams((prev) => {
+        if (prev.get(HIGHLIGHT_PARAM) !== highlightTerm) return prev;
+        const next = new URLSearchParams(prev);
         next.delete(HIGHLIGHT_PARAM);
-        setSearchParams(next, { replace: true });
-      }
+        return next;
+      }, { replace: true });
     };
 
     document.addEventListener("click", clearHighlight);
 
     return () => {
-      cancelled = true;
+      settled = true;
+      cleanupObserver?.();
+      if (markEl) {
+        unwrapMark(markEl);
+        markEl = null;
+      }
       document.removeEventListener("click", clearHighlight);
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [highlightTerm, containerRef]);
+  }, [highlightTerm, location.key, containerRef]);
 }

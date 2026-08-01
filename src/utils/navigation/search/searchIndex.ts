@@ -1,5 +1,4 @@
 import pages from '@/domain/navigation/mainTabs';
-
 import { flattenNavigation } from '@/utils/navigation/search/flattenNavigation';
 import { fetchAllNotesBodies } from '@/utils/notes/fetchAllNotesBodies';
 import { stripMarkdown } from '@/utils/navigation/search/stripMarkdown';
