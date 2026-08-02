@@ -3,7 +3,7 @@ import PageTitle from '@/components/pageComponents/pageTitle';
 import Notes from '@/components/pageComponents/notes/notes';
 
 const MediaElements = () => {
-  const markdownFilePath = 'FrontEnd/HTML/Intermediate/MediaAndEmbeds/Media';
+  const markdownFilePath = 'FrontEnd/HTML/Basics/MediaAndEmbeds/Media';
 
   return (
     <>

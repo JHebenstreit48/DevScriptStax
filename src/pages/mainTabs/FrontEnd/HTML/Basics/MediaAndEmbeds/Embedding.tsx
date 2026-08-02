@@ -2,13 +2,13 @@ import PageLayout from '@/components/navigationUI/pageLayout';
 import PageTitle from '@/components/pageComponents/pageTitle';
 import Notes from '@/components/pageComponents/notes/notes';
 
-const Captions = () => {
-    const markdownFilePath = 'FrontEnd/HTMLNotes/Intermediate/TabularData/Captions';
+const Embedding = () => {
+    const markdownFilePath = 'FrontEnd/HTML/Basics/MediaAndEmbeds/Embedding';
 
     return (
         <>
             <PageLayout>
-            <PageTitle title="Captions and Groups" />
+            <PageTitle title="Embedding Content" />
             <Notes
                 filePath={markdownFilePath}
             />
@@ -17,4 +17,4 @@ const Captions = () => {
     );
 };
 
-export default Captions;
+export default Embedding;

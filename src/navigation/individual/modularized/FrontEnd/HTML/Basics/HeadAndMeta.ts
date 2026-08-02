@@ -5,11 +5,11 @@ const HeadAndMeta: Subpage = {
   subpages: [
     {
       name: 'Head Elements',
-      path: '/front-end/html/basics/head-and-meta/head',
+      path: '/front-end/html/basics/head-and-metadata/head-elements',
     },
     {
       name: 'Meta Elements',
-      path: '/front-end/html/basics/head-and-meta/meta',
+      path: '/front-end/html/basics/head-and-metadata/meta-elements',
     },
   ],
 };

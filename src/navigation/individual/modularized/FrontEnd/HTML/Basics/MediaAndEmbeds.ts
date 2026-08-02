@@ -5,11 +5,11 @@ const MediaAndEmbeds: Subpage = {
   subpages: [
     {
       name: 'Media Elements',
-      path: '/front-end/html/basics/media-and-embeds/media',
+      path: '/front-end/html/basics/media-and-embeds/media-elements',
     },
     {
       name: 'Embedding Content',
-      path: '/front-end/html/basics/media-and-embeds/embedding',
+      path: '/front-end/html/basics/media-and-embeds/embedding-content',
     },
   ],
 };
