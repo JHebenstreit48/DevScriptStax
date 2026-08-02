@@ -6,11 +6,11 @@ const Triggers = lazy(() => import('@/pages/mainTabs/FrontEnd/Angular/Advanced/A
 
 const Animations: RouteObject[] = [
     {
-        path: '/angular/advanced/animations/basics',
+        path: '/front-end/angular/advanced/animations/basics',
         element: <Basics />,
     },
     {
-        path: '/angular/advanced/animations/triggers',
+        path: '/front-end/angular/advanced/animations/triggers',
         element: <Triggers />,
     }
 ];

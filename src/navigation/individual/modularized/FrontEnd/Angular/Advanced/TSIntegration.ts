@@ -5,11 +5,11 @@ const TSIntegration: Subpage = {
   subpages: [
     {
       name: "Path Aliases",
-      path: "/angular/advanced/ts-integration/path-aliases",
+      path: "/front-end/angular/advanced/ts-integration/path-aliases",
     },
     {
       name: "Advanced Aliases",
-      path: "/angular/advanced/ts-integration/advanced-aliases",
+      path: "/front-end/angular/advanced/ts-integration/advanced-aliases",
     },
   ],
 };

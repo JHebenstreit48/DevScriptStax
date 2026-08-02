@@ -6,11 +6,11 @@ const History = lazy(() => import('@/pages/mainTabs/FrontEnd/HTML/Basics/Fundame
 
 const Fundamentals: RouteObject[] = [
   {
-    path: '/html/basics/fundamentals/introduction',
+    path: '/front-end/html/basics/fundamentals/introduction',
     element: <Introduction />,
   },
   {
-    path: '/html/basics/fundamentals/history',
+    path: '/front-end/html/basics/fundamentals/history',
     element: <History />,
   },
 ];

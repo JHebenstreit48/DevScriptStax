@@ -11,11 +11,11 @@ const AdvancedAliases = lazy(
 
 const tsIntegration: RouteObject[] = [
   {
-    path: '/angular/advanced/ts-integration/path-aliases',
+    path: '/front-end/angular/advanced/ts-integration/path-aliases',
     element: <PathAliases />,
   },
   {
-    path: '/angular/advanced/ts-integration/advanced-aliases',
+    path: '/front-end/angular/advanced/ts-integration/advanced-aliases',
     element: <AdvancedAliases />,
   },
 ];

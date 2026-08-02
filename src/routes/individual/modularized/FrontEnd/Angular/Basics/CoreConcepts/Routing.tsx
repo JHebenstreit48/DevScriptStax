@@ -13,15 +13,15 @@ const LazyLoading = lazy(
 
 const Routing: RouteObject[] = [
   {
-    path: '/angular/core-concepts/routing/basics',
+    path: '/front-end/angular/basics/core-concepts/routing/basics',
     element: <Basics />,
   },
   {
-    path: '/angular/core-concepts/routing/guards-and-resolvers',
+    path: '/front-end/angular/basics/core-concepts/routing/guards-and-resolvers',
     element: <GuardsAndResolvers />,
   },
   {
-    path: '/angular/core-concepts/routing/lazy-loading',
+    path: '/front-end/angular/basics/core-concepts/routing/lazy-loading',
     element: <LazyLoading />,
   },
 ];

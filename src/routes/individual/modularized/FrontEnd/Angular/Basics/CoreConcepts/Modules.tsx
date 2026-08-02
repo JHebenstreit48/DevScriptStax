@@ -10,11 +10,11 @@ const LazyLoading = lazy(
 
 const Modules: RouteObject[] = [
   {
-    path: '/angular/core-concepts/modules/basics',
+    path: '/front-end/angular/basics/core-concepts/modules/basics',
     element: <Basics />,
   },
   {
-    path: '/angular/core-concepts/lazy-loading',
+    path: '/front-end/angular/basics/core-concepts/lazy-loading',
     element: <LazyLoading />,
   },
 ];

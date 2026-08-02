@@ -6,11 +6,11 @@ const Semantics = lazy(() => import('@/pages/mainTabs/FrontEnd/HTML/Basics/Forms
 
 const FormsSemantics: RouteObject[] = [
   {
-    path: '/html/basics/forms-and-semantics/forms',
+    path: '/front-end/html/basics/forms-and-semantics/forms',
     element: <Forms />,
   },
   {
-    path: '/html/basics/forms-and-semantics/semantics',
+    path: '/front-end/html/basics/forms-and-semantics/semantics',
     element: <Semantics />,
   },
 ];

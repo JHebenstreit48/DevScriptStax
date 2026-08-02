@@ -18,7 +18,7 @@ describe('DevScriptStax Navigation: Angular Basics', () => {
       cy.contains('Introduction').click();
   
       // Confirm path
-      cy.url().should('include', '/angular/basics/fundamentals/intro');
+      cy.url().should('include', '/front-end/angular/basics/fundamentals/intro');
   
       // Confirm page content exists
       cy.contains('Introduction'); // Or whatever heading/text appears on the page

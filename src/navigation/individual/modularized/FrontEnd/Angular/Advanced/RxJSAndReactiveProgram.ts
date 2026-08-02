@@ -5,15 +5,15 @@ const RxJSAndReactive: Subpage = {
   subpages: [
     {
       name: "Observables Basics",
-      path: "/angular/advanced/rxjs/observables",
+      path: "/front-end/angular/advanced/rxjs/observables",
     },
     {
       name: "Subjects/Behavior",
-      path: "/angular/advanced/rxjs/subjects",
+      path: "/front-end/angular/advanced/rxjs/subjects",
     },
     {
       name: "RxJS Operators",
-      path: "/angular/advanced/rxjs/operators",
+      path: "/front-end/angular/advanced/rxjs/operators",
     },
   ],
 };

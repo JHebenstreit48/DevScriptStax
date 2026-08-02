@@ -5,19 +5,19 @@ const Structure: Subpage = {
   subpages: [
     {
       name: 'Elements & Tags',
-      path: '/html/basics/structure/elements-and-tags',
+      path: '/front-end/html/basics/structure/elements-and-tags',
     },
     {
       name: 'Attributes',
-      path: '/html/basics/structure/attributes',
+      path: '/front-end/html/basics/structure/attributes',
     },
     {
       name: 'Text & Links',
-      path: '/html/basics/structure/text-and-links'
+      path: '/front-end/html/basics/structure/text-and-links'
     },
     {
       name: 'Lists',
-      path: '/html/basics/structure/lists'
+      path: '/front-end/html/basics/structure/lists'
     }
   ],
 };

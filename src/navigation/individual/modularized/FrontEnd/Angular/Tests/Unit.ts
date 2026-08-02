@@ -5,15 +5,15 @@ const Unit: Subpage = {
   subpages: [
     {
       name: 'Introduction',
-      path: '/angular/testing/unit/introduction',
+      path: '/front-end/angular/testing/unit/introduction',
     }, // Basics
     {
       name: 'Components',
-      path: '/angular/testing/unit/components',
+      path: '/front-end/angular/testing/unit/components',
     }, // TestBed, ComponentFixture
     {
       name: 'Services',
-      path: '/angular/testing/unit/services',
+      path: '/front-end/angular/testing/unit/services',
     }, // HttpClientTestingModule, spies
   ],
 };

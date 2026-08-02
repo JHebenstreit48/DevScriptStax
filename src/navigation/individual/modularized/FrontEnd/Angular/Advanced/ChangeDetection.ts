@@ -5,15 +5,15 @@ const ChangeDetection: Subpage = {
   subpages: [
     {
       name: "Basics",
-      path: "/angular/advanced/change-detection/basics",
+      path: "/front-end/angular/advanced/change-detection/basics",
     },
     {
       name: "Optimizing",
-      path: "/angular/advanced/change-detection/optimizing",
+      path: "/front-end/angular/advanced/change-detection/optimizing",
     },
     {
       name: "Template Rendering Optimization",
-      path: "/angular/advanced/change-detection/template-optimization",
+      path: "/front-end/angular/advanced/change-detection/template-optimization",
     },
   ],
 };

@@ -3,7 +3,7 @@ import PageTitle from '@/components/pageComponents/pageTitle';
 import Notes from '@/components/pageComponents/notes/notes';
 
 const MetaElements = () => {
-  const markdownFilePath = 'FrontEnd/HTML/Intermediate/HeadAndMetadata/Meta';
+  const markdownFilePath = 'FrontEnd/HTML/Basics/HeadAndMetadata/Meta';
 
   return (
     <>

@@ -9,15 +9,15 @@ const TemplateRenderOptim = lazy(
 
 const changeDetection: RouteObject[] = [
   {
-    path: '/angular/advanced/change-detection/basics',
+    path: '/front-end/angular/advanced/change-detection/basics',
     element: <Basics />,
   },
   {
-    path: '/angular/advanced/change-detection/optimizing',
+    path: '/front-end/angular/advanced/change-detection/optimizing',
     element: <Optimizing />,
   },
   {
-    path: '/angular/advanced/change-detection/template-optimization',
+    path: '/front-end/angular/advanced/change-detection/template-optimization',
     element: <TemplateRenderOptim />,
   },
 ];

@@ -8,19 +8,19 @@ const Lists = lazy(() => import('@/pages/mainTabs/FrontEnd/HTML/Basics/Structure
 
 const Structures: RouteObject[] = [
   {
-    path: '/html/basics/structure/elements-and-tags',
+    path: '/front-end/html/basics/structure/elements-and-tags',
     element: <Elements />,
   },
   {
-    path: '/html/basics/structure/attributes',
+    path: '/front-end/html/basics/structure/attributes',
     element: <Attributes />,
   },
   {
-    path: '/html/basics/structure/text-and-links',
+    path: '/front-end/html/basics/structure/text-and-links',
     element: <TextAndLinks />,
   },
   {
-    path: '/html/basics/structure/lists',
+    path: '/front-end/html/basics/structure/lists',
     element: <Lists />,
   }
 ];

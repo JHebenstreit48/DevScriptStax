@@ -11,15 +11,15 @@ const RxJSOperators = lazy(() => import('@/pages/mainTabs/FrontEnd/Angular/Advan
 
 const rxJSAndReactive: RouteObject[] = [
   {
-    path: '/angular/advanced/rxjs/observables',
+    path: '/front-end/angular/advanced/rxjs/observables',
     element: <ObservableBasics />,
   },
   {
-    path: '/angular/advanced/rxjs/subjects',
+    path: '/front-end/angular/advanced/rxjs/subjects',
     element: <SubjectsAndBehavior />,
   },
   {
-    path: '/angular/advanced/rxjs/operators',
+    path: '/front-end/angular/advanced/rxjs/operators',
     element: <RxJSOperators />,
   },
 ];

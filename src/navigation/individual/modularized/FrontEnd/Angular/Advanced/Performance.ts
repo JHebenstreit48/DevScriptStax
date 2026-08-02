@@ -5,11 +5,11 @@ const Performance: Subpage = {
   subpages: [
     {
       name: "Bundle Optimization",
-      path: "/angular/advanced/performance/bundle-optimization",
+      path: "/front-end/angular/advanced/performance/bundle-optimization",
     },
     {
       name: "Budgets & Profiling",
-      path: "/angular/advanced/performance/budgets-profiling",
+      path: "/front-end/angular/advanced/performance/budgets-profiling",
     },
   ],
 };

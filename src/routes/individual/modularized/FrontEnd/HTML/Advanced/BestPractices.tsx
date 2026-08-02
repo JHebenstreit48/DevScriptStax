@@ -8,19 +8,19 @@ const Accessibility = lazy(() => import('@/pages/mainTabs/FrontEnd/HTML/Advanced
 
 const BestPractices: RouteObject[] = [
   {
-    path: '/html/advanced/bestpractices/standards',
+    path: '/front-end/html/advanced/bestpractices/standards',
     element: <CodeStandards />,
   },
   {
-    path: '/html/advanced/bestpractices/performance',
+    path: '/front-end/html/advanced/bestpractices/performance',
     element: <PerformanceOptimization />,
   },
   {
-    path: '/html/advanced/bestpractices/semantic-landmarks-and-outline',
+    path: '/front-end/html/advanced/bestpractices/semantic-landmarks-and-outline',
     element: <SemanticLandmarks />,
   },
   {
-    path: '/html/advanced/bestpractices/accessibility-patterns',
+    path: '/front-end/html/advanced/bestpractices/accessibility-patterns',
     element: <Accessibility />,
   },
 ];

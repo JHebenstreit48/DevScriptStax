@@ -13,15 +13,15 @@ const NamingConventions = lazy(
 
 const Structure: RouteObject[] = [
   {
-    path: '/angular/basics/structure/project-structure',
+    path: '/front-end/angular/basics/structure/project-structure',
     element: <ProjectStructure />,
   },
   {
-    path: '/angular/basics/structure/config-files',
+    path: '/front-end/angular/basics/structure/config-files',
     element: <ConfigFiles />,
   },
   {
-    path: '/angular/basics/structure/naming-conventions',
+    path: '/front-end/angular/basics/structure/naming-conventions',
     element: <NamingConventions />,
   },
 ];

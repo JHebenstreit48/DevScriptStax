@@ -5,11 +5,11 @@ const Services: Subpage = {
   subpages: [
     {
       name: "Basics",
-      path: "/angular/core-concepts/services/basics",
+      path: "/front-end/angular/basics/core-concepts/services/basics",
     },
     {
       name: "Dependency Injection (DI)",
-      path: "/angular/core-concepts/services/dependency-injection",
+      path: "/front-end/angular/basics/core-concepts/services/dependency-injection",
     },
   ],
 };
