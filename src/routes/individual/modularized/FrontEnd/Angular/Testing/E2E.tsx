@@ -6,11 +6,11 @@ const Writing = lazy(() => import('@/pages/mainTabs/FrontEnd/Angular/Testing/E2E
 
 const EndToEnd: RouteObject[] = [
   {
-    path: '/angular/testing/e2e/introduction',
+    path: '/front-end/angular/testing/e2e/introduction',
     element: <Introduction />,
   },
   {
-    path: '/angular/testing/e2e/writing',
+    path: '/front-end/angular/testing/e2e/writing',
     element: <Writing />,
   },
 ];

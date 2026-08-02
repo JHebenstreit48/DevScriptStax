@@ -7,15 +7,15 @@ const Services = lazy(() => import('@/pages/mainTabs/FrontEnd/Angular/Testing/Un
 
 const Unit: RouteObject[] = [
   {
-    path: '/angular/testing/unit/introduction',
+    path: '/front-end/angular/testing/unit/introduction',
     element: <Introduction />,
   },
   {
-    path: '/angular/testing/unit/components',
+    path: '/front-end/angular/testing/unit/components',
     element: <Components />,
   },
   {
-    path: '/angular/testing/unit/services',
+    path: '/front-end/angular/testing/unit/services',
     element: <Services />,
   },
 ];

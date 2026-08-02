@@ -5,11 +5,11 @@ const EndToEnd: Subpage = {
   subpages: [
     {
       name: 'Introduction',
-      path: '/angular/testing/e2e/introduction',
+      path: '/front-end/angular/testing/e2e/introduction',
     }, // Protractor, Cypress
     {
       name: 'Writing',
-      path: '/angular/testing/e2e/writing',
+      path: '/front-end/angular/testing/e2e/writing',
     }, // Best practices
   ],
 };

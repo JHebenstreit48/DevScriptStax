@@ -5,11 +5,11 @@ const Animations: Subpage = {
   subpages: [
     {
       name: "Basics",
-      path: "/angular/advanced/animations/basics",
+      path: "/front-end/angular/advanced/animations/basics",
     },
     {
       name: "Triggers",
-      path: "/angular/advanced/animations/triggers",
+      path: "/front-end/angular/advanced/animations/triggers",
     },
   ],
 };

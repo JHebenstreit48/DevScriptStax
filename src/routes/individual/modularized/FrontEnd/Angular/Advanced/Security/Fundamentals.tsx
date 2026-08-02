@@ -7,15 +7,15 @@ const CSRFProtection = lazy(() => import('@/pages/mainTabs/FrontEnd/Angular/Adva
 
 const Fundamentals: RouteObject[] = [
   {
-    path: '/angular/advanced/security/fundamentals/basics',
+    path: '/front-end/angular/advanced/security/fundamentals/basics',
     element: <Basics />,
   },
   {
-    path: '/angular/advanced/security/fundamentals/xss-protection',
+    path: '/front-end/angular/advanced/security/fundamentals/xss-protection',
     element: <XSSProtection />,
   },
   {
-    path: '/angular/advanced/security/fundamentals/csrf-protection',
+    path: '/front-end/angular/advanced/security/fundamentals/csrf-protection',
     element: <CSRFProtection />,
   },
 ];

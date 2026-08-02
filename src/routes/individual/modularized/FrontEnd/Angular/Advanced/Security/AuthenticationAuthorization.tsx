@@ -6,11 +6,11 @@ const RoleBasedAccessControl = lazy(() => import('@/pages/mainTabs/FrontEnd/Angu
 
 const AuthenticationAuthorization: RouteObject[] = [
   {
-    path: '/angular/advanced/security/authentication-and-authorization/authentication',
+    path: '/front-end/angular/advanced/security/authentication-and-authorization/authentication',
     element: <ImplementingAuthentication />,
   },
   {
-    path: '/angular/advanced/security/authentication-and-authorization/rbac',
+    path: '/front-end/angular/advanced/security/authentication-and-authorization/rbac',
     element: <RoleBasedAccessControl />,
   },
 ];

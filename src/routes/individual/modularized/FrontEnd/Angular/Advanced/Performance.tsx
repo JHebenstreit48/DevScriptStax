@@ -11,11 +11,11 @@ const BudgetsProfiling = lazy(
 
 const performance: RouteObject[] = [
   {
-    path: '/angular/advanced/performance/bundle-optimization',
+    path: '/front-end/angular/advanced/performance/bundle-optimization',
     element: <BundleOptimization />,
   },
   {
-    path: '/angular/advanced/performance/budgets-profiling',
+    path: '/front-end/angular/advanced/performance/budgets-profiling',
     element: <BudgetsProfiling />,
   },
 ];

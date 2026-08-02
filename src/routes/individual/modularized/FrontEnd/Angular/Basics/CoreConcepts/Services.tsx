@@ -10,11 +10,11 @@ const DependencyInject = lazy(
 
 const Services: RouteObject[] = [
   {
-    path: '/angular/core-concepts/services/basics',
+    path: '/front-end/angular/basics/core-concepts/services/basics',
     element: <Basics />,
   },
   {
-    path: '/angular/core-concepts/services/dependency-injection',
+    path: '/front-end/angular/basics/core-concepts/services/dependency-injection',
     element: <DependencyInject />,
   },
 ];

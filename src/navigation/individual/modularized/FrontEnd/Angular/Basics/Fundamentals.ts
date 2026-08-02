@@ -5,15 +5,15 @@ const Fundamentals: Subpage = {
   subpages: [
     {
       name: "Introduction",
-      path: "/angular/basics/fundamentals/introduction",
+      path: "/front-end/angular/basics/fundamentals/introduction",
     },
     {
       name: "Creating/Running",
-      path: "/angular/basics/fundamentals/creating-and-running",
+      path: "/front-end/angular/basics/fundamentals/creating-and-running",
     },
     {
       name: "CLI",
-      path: "/angular/basics/fundamentals/cli",
+      path: "/front-end/angular/basics/fundamentals/cli",
     },
   ],
 };
