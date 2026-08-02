@@ -11,31 +11,31 @@ const SocialMetadata = lazy(() => import('@/pages/mainTabs/FrontEnd/HTML/Advance
 
 const Topics: RouteObject[] = [
   {
-    path: '/html/advanced/topics/html5-features',
+    path: '/front-end/html/advanced/topics/html5-features',
     element: <Features />,
   },
   {
-    path: '/html/advanced/topics/accessibility',
+    path: '/front-end/html/advanced/topics/accessibility',
     element: <WebAccessibility />,
   },
   {
-    path: '/html/advanced/topics/seo-best-practices',
+    path: '/front-end/html/advanced/topics/seo-best-practices',
     element: <SEOBestPractices />,
   },
   {
-    path: '/html/advanced/topics/templates-and-slots',
+    path: '/front-end/html/advanced/topics/templates-and-slots',
     element: <TemplatesAndSlots />,
   },
   {
-    path: '/html/advanced/topics/resource-hints-and-preloading',
+    path: '/front-end/html/advanced/topics/resource-hints-and-preloading',
     element: <ResourceHintsAndPreloading />,
   },
   {
-    path: '/html/advanced/topics/security-and-linking',
+    path: '/front-end/html/advanced/topics/security-and-linking',
     element: <SecurityAndLinking />,
   },
   {
-    path: '/html/advanced/topics/social-metadata',
+    path: '/front-end/html/advanced/topics/social-metadata',
     element: <SocialMetadata />,
   },
 ];

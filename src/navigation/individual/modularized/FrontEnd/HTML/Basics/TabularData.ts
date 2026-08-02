@@ -5,11 +5,11 @@ const TabularData: Subpage = {
   subpages: [
     {
       name: 'Tables',
-      path: '/html/intermediate/tabular-data/tables',
+      path: '/front-end/html/intermediate/tabular-data/tables',
     },
     {
       name: 'Captions and Groups',
-      path: '/html/intermediate/tabular-data/captions',
+      path: '/front-end/html/intermediate/tabular-data/captions',
     },
   ],
 };

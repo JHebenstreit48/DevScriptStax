@@ -6,11 +6,11 @@ const Captions = lazy(() => import('@/pages/mainTabs/FrontEnd/HTML/Intermediate/
 
 const TabularData: RouteObject[] = [
   {
-    path: '/html/intermediate/tabular-data/tables',
+    path: '/front-end/html/intermediate/tabular-data/tables',
     element: <Tables />,
   },
   {
-    path: '/html/intermediate/tabular-data/captions',
+    path: '/front-end/html/intermediate/tabular-data/captions',
     element: <Captions />,
   },
 ];

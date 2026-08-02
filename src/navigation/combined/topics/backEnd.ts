@@ -6,7 +6,7 @@ import Databases from '@/navigation/individual/topics/BackEnd/Databases';
 import Frameworks from '@/navigation/individual/topics/BackEnd/Frameworks';
 import WebServers from '@/navigation/individual/topics/BackEnd/WebServers';
 const backEnd: Subpage = {
-  name: 'Backend',
+  name: 'Back End',
   subpages: [
     APIs,
     AuthenticationAuthorization,

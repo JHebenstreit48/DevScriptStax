@@ -8,11 +8,11 @@ const Embedding = lazy(() => import('@/pages/mainTabs/FrontEnd/HTML/Intermediate
 
 const MediaAndEmbeds: RouteObject[] = [
   {
-    path: '/html/intermediate/media-and-embeds/media',
+    path: '/front-end/html/intermediate/media-and-embeds/media',
     element: <MediaElements />,
   },
   {
-    path: '/html/intermediate/media-and-embeds/embedding',
+    path: '/front-end/html/intermediate/media-and-embeds/embedding',
     element: <Embedding />,
   },
 ];

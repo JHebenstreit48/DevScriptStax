@@ -5,11 +5,11 @@ const FormsAndSemantics: Subpage = {
   subpages: [
     {
       name: 'Forms',
-      path: '/html/basics/forms-and-semantics/forms',
+      path: '/front-end/html/basics/forms-and-semantics/forms',
     },
     {
       name: 'Semantic Elements',
-      path: '/html/basics/forms-and-semantics/semantics',
+      path: '/front-end/html/basics/forms-and-semantics/semantics',
     },
   ],
 };

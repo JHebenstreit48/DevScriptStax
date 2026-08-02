@@ -11,11 +11,15 @@ const Advanced: Subpage =
       [
         {
           name: 'Image Performance (loading / decoding / fetchpriority)',
-          path: '/html/images/image-performance'
+          path: '/front-end/html/images/advanced/performance/image-performance'
         },
         {
           name: 'Preloading LCP Images',
-          path: '/html/images/preloading-lcp'
+          path: '/front-end/html/images/advanced/performance/preloading-lcp'
+        },
+        {
+          name: 'Optimization Pipeline',
+          path: '/front-end/html/images/advanced/performance/optimization-pipeline'
         }
       ]
     },
@@ -25,11 +29,19 @@ const Advanced: Subpage =
       [
         {
           name: 'CDN & Client Hints (DPR / Width)',
-          path: '/html/images/cdn-and-client-hints'
+          path: '/front-end/html/images/advanced/delivery/cdn-and-client-hints'
         },
         {
           name: 'Format Fallbacks & Negotiation',
-          path: '/html/images/format-fallbacks'
+          path: '/front-end/html/images/advanced/delivery/format-fallbacks'
+        },
+        {
+          name: 'Responsive Images (srcset / sizes)',
+          path: '/front-end/html/images/advanced/delivery/responsive-images'
+        },
+        {
+          name: 'Art Direction (<picture> / media)',
+          path: '/front-end/html/images/advanced/delivery/art-direction'
         }
       ]
     }

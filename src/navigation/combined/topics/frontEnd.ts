@@ -12,7 +12,7 @@ import NextJS from '@/navigation/individual/topics/FrontEnd/NextJS';
 import Gatsby from '@/navigation/individual/topics/FrontEnd/Gatsby';
 
 const frontEnd: Subpage = {
-  name: 'Frontend',
+  name: 'Front End',
   subpages: [
     HTML,
     CSS,

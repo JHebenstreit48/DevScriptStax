@@ -6,11 +6,11 @@ const MetaElements = lazy(() => import('@/pages/mainTabs/FrontEnd/HTML/Intermedi
 
 const HeadAndMeta: RouteObject[] = [
   {
-    path: '/html/intermediate/head-and-meta/head',
+    path: '/front-end/html/intermediate/head-and-meta/head',
     element: <HeadElements />,
   },
   {
-    path: '/html/intermediate/head-and-meta/meta',
+    path: '/front-end/html/intermediate/head-and-meta/meta',
     element: <MetaElements />,
   },
 ];

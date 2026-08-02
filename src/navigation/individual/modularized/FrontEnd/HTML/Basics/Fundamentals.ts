@@ -5,11 +5,11 @@ const Fundamentals: Subpage = {
   subpages: [
     {
       name: 'Introduction',
-      path: '/html/basics/fundamentals/introduction',
+      path: '/front-end/html/basics/fundamentals/introduction',
     },
     {
       name: 'History',
-      path: '/html/basics/fundamentals/history',
+      path: '/front-end/html/basics/fundamentals/history',
     },
   ],
 };
