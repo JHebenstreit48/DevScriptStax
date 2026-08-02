@@ -1,19 +1,12 @@
 import { dbNotes, SITE_ID } from "@/firebase/client";
 import { collection, getDocs, limit, query, where } from "firebase/firestore";
+import type { FirestoreMarkdownDoc } from "@/types/notes/adapter";
 
-// Normalize repo-style path → Firestore fullPath (strip .md, trim leading slash)
 const toFullPath = (filePath: string): string => {
   let fp = filePath.replace(/\\/g, "/");
   if (fp.toLowerCase().endsWith(".md")) fp = fp.slice(0, -3);
   if (fp.startsWith("/")) fp = fp.slice(1);
   return fp;
-};
-
-type FirestoreNoteDoc = {
-  siteId: string;
-  fullPath: string;
-  bodyMd?: string;
-  status?: "published" | "draft";
 };
 
 export async function fetchMarkdown(filePath: string): Promise<string> {
@@ -30,7 +23,7 @@ export async function fetchMarkdown(filePath: string): Promise<string> {
   const snap = await getDocs(q);
   if (snap.empty) throw new Error(`Note not found: ${fullPath}`);
 
-  const data = snap.docs[0].data() as unknown as FirestoreNoteDoc;
+  const data = snap.docs[0].data() as unknown as FirestoreMarkdownDoc;
 
   if (data.status && data.status !== "published") {
     throw new Error(`Note is not published: ${fullPath}`);
