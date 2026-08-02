@@ -1,18 +1,7 @@
 import { dbNotes, SITE_ID } from '@/firebase/client';
 import { collection, getDocs, limit, query, where } from "firebase/firestore";
+import type { NoteUpdateInfo, FirestoreUpdateDoc } from "@/types/notes/adapter";
 
-export type NoteMeta = {
-  sourceUpdatedAt: Date | null;
-};
-
-type FirestoreNoteDoc = {
-  siteId: string;
-  fullPath: string;
-  sourceUpdatedAt?: any; // Firestore Timestamp
-  status?: "published" | "draft";
-};
-
-// Normalize repo-style path → Firestore fullPath (strip .md, trim leading slash)
 const toFullPath = (filePath: string): string => {
   let fp = filePath.replace(/\\/g, "/");
   if (fp.toLowerCase().endsWith(".md")) fp = fp.slice(0, -3);
@@ -20,7 +9,7 @@ const toFullPath = (filePath: string): string => {
   return fp;
 };
 
-export async function fetchNoteMeta(filePath: string): Promise<NoteMeta> {
+export async function fetchNoteMeta(filePath: string): Promise<NoteUpdateInfo> {
   const fullPath = toFullPath(filePath);
 
   const col = collection(dbNotes, "posts");
@@ -34,7 +23,7 @@ export async function fetchNoteMeta(filePath: string): Promise<NoteMeta> {
   const snap = await getDocs(q);
   if (snap.empty) return { sourceUpdatedAt: null };
 
-  const data = snap.docs[0].data() as unknown as FirestoreNoteDoc;
+  const data = snap.docs[0].data() as unknown as FirestoreUpdateDoc;
 
   // Only serve published (mirrors your markdown guard)
   if (data.status && data.status !== "published") return { sourceUpdatedAt: null };
