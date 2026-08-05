@@ -1,22 +1,22 @@
 import type { Subpage } from '@/types/navigation';
 
-import FrontEnd from '@/navigation/individual/topics/Glossary/FrontEnd';
-import Languages from '@/navigation/individual/topics/Glossary/Languages';
-import Backend from '@/navigation/individual/topics/Glossary/BackEnd';
-// import CloudOps from '@/navigation/individual/topics/Glossary/CloudOps';
-import Testing from '@/navigation/individual/topics/Glossary/Testing';
-// import Tools from '@/navigation/individual/topics/Glossary/Tools';
-// import GraphQL from '@/navigation/individual/topics/Glossary/GraphQL';
-// import Stacks from '@/navigation/individual/topics/Glossary/Stacks';
+import FrontEnd from '@/navigation/individual/topics/glossaryAndResources/FrontEnd';
+import Languages from '@/navigation/individual/topics/glossaryAndResources/Languages';
+import Backend from '@/navigation/individual/topics/glossaryAndResources/BackEnd';
+// import CloudOps from '@/navigation/individual/topics/glossaryAndResources/CloudOps';
+// import TestingAndTools from '@/navigation/individual/topics/glossaryAndResources/TestingAndTools';
+// import Tools from '@/navigation/individual/topics/glossaryAndResources/Tools';
+// import GraphQL from '@/navigation/individual/topics/glossaryAndResources/GraphQL';
+// import Stacks from '@/navigation/individual/topics/glossaryAndResources/Stacks';
 
 const glossary: Subpage = {
-  name: 'Glossary',
+  name: 'Glossary & Resources',
   subpages: [
     FrontEnd,
     Languages,
     Backend,
     // CloudOps,
-    Testing,
+    // TestingAndTools,
     // Tools,
     // GraphQL,
     // Stacks

@@ -1,0 +1,12 @@
+import type { Subpage } from '@/types/navigation';
+
+import Cypress from '@/navigation/individual/modularized/glossaryAndResources/Testing/EndToEnd/Cypress';
+
+const EndToEnd: Subpage = {
+  name: 'End To End',
+  subpages: [
+    Cypress,
+  ],
+};
+
+export default EndToEnd;

@@ -33,15 +33,15 @@ export async function loadTopic(key: TopicKey): Promise<Subpage>
     case 'cloudAndDeployment':
       return (await import('@/navigation/combined/topics/cloudAndDeployment')).default;
     case 'testing':
-      return (await import('@/navigation/combined/topics/testing')).default;
+      return (await import('@/navigation/combined/topics/toolsAndTesting/testing')).default;
     case 'tools':
-      return (await import('@/navigation/combined/topics/tools')).default;
+      return (await import('@/navigation/combined/topics/toolsAndTesting/tools')).default;
     case 'languages':
       return (await import('@/navigation/combined/topics/languages')).default;
     case 'graphQLAndApollo':
-      return (await import('@/navigation/combined/topics/graphQLAndApollo')).default;
+      return (await import('@/navigation/individual/topics/BackEnd/graphQLAndApollo')).default;
     case 'stacks':
-      return (await import('@/navigation/combined/topics/stacks')).default;
+      return (await import('@/navigation/individual/topics/BackEnd/stacks')).default;
     default:
       throw new Error(`Unknown topic key: ${key as string}`);
   }

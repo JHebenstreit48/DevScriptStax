@@ -1,7 +1,7 @@
 import { RouteObject } from "react-router-dom";
 
-import Testing from '@/routes/individual/topics/Glossary/Testing';
-import BackEnd from '@/routes/individual/topics/Glossary/BackEnd';
+import Testing from '@/routes/individual/topics/glossaryAndResources/Testing';
+import BackEnd from '@/routes/individual/topics/glossaryAndResources/BackEnd';
 
 const glossary: RouteObject[] = [
   ...Testing,

@@ -1,0 +1,18 @@
+import { lazy } from 'react';
+import { RouteObject } from 'react-router-dom';
+
+const VSCodeAndEditors = lazy(() => import('@/pages/mainTabs/toolsAndTesting/Tools/CodeQuality/StandardJS/Basics/EditorsAndCLI/VSCodeAndEditors'));
+const CLIUsage = lazy(() => import('@/pages/mainTabs/toolsAndTesting/Tools/CodeQuality/StandardJS/Basics/EditorsAndCLI/CLIUsage'));
+
+const EditorsAndCLI: RouteObject[] = [
+  {
+    path: '/standardjs/basics/editors-cli/vscode-editors',
+    element: <VSCodeAndEditors />,
+  },
+  {
+    path: '/standardjs/basics/editors-cli/cli-usage',
+    element: <CLIUsage />,
+  },
+];
+
+export default EditorsAndCLI;
