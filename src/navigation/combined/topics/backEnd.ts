@@ -5,8 +5,8 @@ import AuthenticationAuthorization from '@/navigation/individual/topics/BackEnd/
 import Databases from '@/navigation/individual/topics/BackEnd/Databases';
 import Frameworks from '@/navigation/individual/topics/BackEnd/Frameworks';
 import WebServers from '@/navigation/individual/topics/BackEnd/WebServers';
-// import GraphQLAndApollo from '@/navigation/individual/topics/BackEnd/GraphQLAndApollo';
-// import Stacks from '@/navigation/individual/topics/BackEnd/Stacks';
+import GraphQLAndApollo from '@/navigation/individual/topics/BackEnd/graphQLAndApollo';
+import Stacks from '@/navigation/individual/topics/BackEnd/stacks';
 
 const backEnd: Subpage = {
   name: 'Back End',
@@ -16,7 +16,8 @@ const backEnd: Subpage = {
     Databases,
     Frameworks,
     WebServers,
-    // GraphQLAndApollo
+    GraphQLAndApollo,
+    Stacks
   ]
 };
 

@@ -4,7 +4,7 @@ import frontEnd from '@/navigation/combined/topics/frontEnd';
 import languages from '@/navigation/combined/topics/languages';
 import backEnd from '@/navigation/combined/topics/backEnd';
 import cloudAndDeployment from '@/navigation/combined/topics/cloudAndDeployment';
-import testingAndTools from '@/navigation/combined/topics/testing';
+import toolsAndTesting from '@/navigation/combined/topics/toolsAndTesting';
 import glossaryAndResources from '@/navigation/combined/topics/glossary';
 
 const pages: Subpage[] = [
@@ -12,7 +12,7 @@ const pages: Subpage[] = [
   languages,
   backEnd,
   cloudAndDeployment,
-  testingAndTools,
+  toolsAndTesting,
   glossaryAndResources
 ];
 

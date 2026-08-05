@@ -4,7 +4,7 @@ import GraphQL from '@/navigation/individual/topics/BackEnd/GraphQLAndApollo/Gra
 import Apollo from '@/navigation/individual/topics/BackEnd/GraphQLAndApollo/Apollo';
 
 const graphQLAndApollo: Subpage = {
-  name: 'GraphQL',
+  name: 'GraphQL & Apollo',
   subpages: [
     GraphQL,
     Apollo
