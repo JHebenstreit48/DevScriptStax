@@ -1,8 +1,8 @@
 import type { Subpage } from '@/types/navigation';
 
-import EndToEnd from '@/navigation/individual/topics/Testing/End2End';
-import Framework from '@/navigation/individual/topics/Testing/Framework';
-import Unit from '@/navigation/individual/topics/Testing/Unit';
+import EndToEnd from '@/navigation/individual/topics/toolsAndTesting/Testing/End2End';
+import Framework from '@/navigation/individual/topics/toolsAndTesting/Testing/Framework';
+import Unit from '@/navigation/individual/topics/toolsAndTesting/Testing/Unit';
 
 const testing: Subpage = {
   name: 'Testing',
